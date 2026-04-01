@@ -73,17 +73,60 @@ const DATA = {
     { competitor: "PostHog", slug: "sandbox environments", threat: 8, kd: 10, date: "" },
   ],
   youtube: {
-    gb_outliers: [
-      { title: "Faster Shipping Means You Need Testing More", views: 1336, mult: 5.9 },
-      { title: "Why Experimentation Matters from Ronny Kohavi", views: 855, mult: 3.8 },
-      { title: "Turn Experiment Results Into a Team Moment", views: 502, mult: 2.2 },
-    ],
-    competitor_outliers: [
-      { competitor: "Optimizely", title: "AI search now knows more than you type…", views: 435, mult: 4.3 },
-      { competitor: "Harness", title: "What is Load Testing? 60 Seconds", views: 840, mult: 6.0 },
-      { competitor: "Amplitude Exp", title: "Meet the Amplitude AI Platform", views: 647, mult: 6.0 },
-      { competitor: "Statsig", title: "Advanced methods for faster experimentation", views: 305, mult: 2.4 },
-      { competitor: "PostHog", title: "Startup interview questions that matter", views: 4706, mult: 5.5 },
+    channels: [
+      { name: "GrowthBook", avg_views: 226, video_count: 20, videos: [
+        { title: "Faster Shipping Means You Need Testing More", views: 1336, mult: 5.9, date: "2026-03-23", url: "https://www.youtube.com/watch?v=uKeE193-ZR0", is_outlier: true },
+        { title: "Why Experimentation Matters from Ronny Kohavi", views: 855, mult: 3.8, date: "2026-03-09", url: "https://www.youtube.com/watch?v=hCdsYUmkWcg", is_outlier: true },
+        { title: "Turn Experiment Results Into a Team Moment", views: 502, mult: 2.2, date: "2026-03-30", url: "https://www.youtube.com/watch?v=ei_eosUMlHI", is_outlier: true },
+        { title: "Test Your AI Changes. Every Single One.", views: 270, mult: 1.2, date: "2026-03-27", url: "https://www.youtube.com/watch?v=4-iSPAnz5ag", is_outlier: false },
+        { title: "High Engagement Can Be a Red Flag", views: 209, mult: 0.9, date: "2026-03-12", url: "https://www.youtube.com/watch?v=vxrrg-K9oVE", is_outlier: false },
+      ]},
+      { name: "LaunchDarkly", avg_views: 82, video_count: 20, videos: [
+        { title: "InFocus - AWS: Move from model launch to live test in hours", views: 215, mult: 2.6, date: "2026-03-12", url: "https://www.youtube.com/watch?v=arDf4b1fa4w", is_outlier: true },
+        { title: "Building an Observable Multiagent Architecture with Opentelemetry", views: 145, mult: 1.8, date: "2026-03-06", url: "https://www.youtube.com/watch?v=5zxMrxIuN0Y", is_outlier: false },
+        { title: "InFocus - Poka: Ship AI faster without redeploys", views: 129, mult: 1.6, date: "2026-03-12", url: "https://www.youtube.com/watch?v=qsh8ClQZv3A", is_outlier: false },
+      ]},
+      { name: "Statsig", avg_views: 128, video_count: 4, videos: [
+        { title: "Advanced methods for faster experimentation", views: 305, mult: 2.4, date: "2026-01-29", url: "https://www.youtube.com/watch?v=uxV0teHXBjA", is_outlier: true },
+        { title: "Brex x Statsig Customer Story", views: 89, mult: 0.7, date: "2026-01-12", url: "https://www.youtube.com/watch?v=EZcplcvRJxU", is_outlier: false },
+        { title: "Life360 x Statsig Customer Story", views: 67, mult: 0.5, date: "2026-01-09", url: "https://www.youtube.com/watch?v=-d0AHF_LGis", is_outlier: false },
+      ]},
+      { name: "Optimizely", avg_views: 100, video_count: 20, videos: [
+        { title: "AI search now knows more than you type...", views: 435, mult: 4.3, date: "2026-03-20", url: "https://www.youtube.com/watch?v=miRcqXTLxew", is_outlier: true },
+        { title: "Worse content is winning in AI search... here's why", views: 231, mult: 2.3, date: "2026-03-24", url: "https://www.youtube.com/watch?v=RKOV2O3tnp8", is_outlier: true },
+        { title: "People built more in days than years with AI", views: 216, mult: 2.2, date: "2026-03-17", url: "https://www.youtube.com/watch?v=ElxKJGQkTGE", is_outlier: true },
+        { title: "How AI actually judges good content", views: 181, mult: 1.8, date: "2026-03-30", url: "https://www.youtube.com/watch?v=bIuLnZCAW48", is_outlier: false },
+        { title: "The $2M reason we replaced our digital platform: CompTIA CEO", views: 168, mult: 1.7, date: "2026-03-23", url: "https://www.youtube.com/watch?v=gJJNPh9_6fs", is_outlier: false },
+      ]},
+      { name: "Harness", avg_views: 139, video_count: 20, videos: [
+        { title: "What is Load Testing? Explained in 60 Seconds", views: 840, mult: 6.0, date: "2026-03-25", url: "https://www.youtube.com/watch?v=FnbyQBGigpg", is_outlier: true },
+        { title: "What is Disaster Recovery Testing? Explained in 60 seconds", views: 367, mult: 2.6, date: "2026-03-27", url: "https://www.youtube.com/watch?v=Airf_IXxiEA", is_outlier: true },
+        { title: "Harness AI + MCP server: A Single Prompt to Accelerate the Software Delivery Lifecycle", views: 327, mult: 2.4, date: "2026-03-06", url: "https://www.youtube.com/watch?v=9ryOw-9foO0", is_outlier: true },
+        { title: "Secure AI Coding with Harness SAST and SCA on Windsurf", views: 228, mult: 1.6, date: "2026-03-26", url: "https://www.youtube.com/watch?v=GyJjNKvwgpA", is_outlier: false },
+        { title: "Crown Jewels In, Crown Jewels Out - The Hidden Risk of AI", views: 143, mult: 1.0, date: "2026-02-10", url: "https://www.youtube.com/watch?v=wzY303nno4Y", is_outlier: false },
+      ]},
+      { name: "Eppo", avg_views: 0, video_count: 0, no_recent: true, videos: [] },
+      { name: "Amplitude Exp", avg_views: 108, video_count: 20, videos: [
+        { title: "The new way to do analytics - meet the Amplitude AI Platform", views: 647, mult: 6.0, date: "2026-02-17", url: "https://www.youtube.com/watch?v=sOTEc15fxPE", is_outlier: true },
+        { title: "Amplitude AI Agents: Your Own Personal Data Analysts", views: 495, mult: 4.6, date: "2026-02-17", url: "https://www.youtube.com/watch?v=1qqlVRJE_aY", is_outlier: true },
+        { title: "Agent Analytics: Inside the Black Box | Amplitude AI", views: 184, mult: 1.7, date: "2026-03-19", url: "https://www.youtube.com/watch?v=w79kHtcp5Kw", is_outlier: false },
+        { title: "Amplitude AI: Your unfair advantage", views: 170, mult: 1.6, date: "2026-03-12", url: "https://www.youtube.com/watch?v=dA2bfWPK2Bs", is_outlier: false },
+      ]},
+      { name: "Unleash", avg_views: 178, video_count: 2, videos: [
+        { title: "Live Webinar: Designing for Failure and Speed in Agentic AI Workflows", views: 234, mult: 1.3, date: "2026-02-24", url: "https://www.youtube.com/watch?v=cA0aCzV0MMY", is_outlier: false },
+        { title: "FeatureOps as Strategy: Governing Hyper-Growth at Lloyds", views: 122, mult: 0.7, date: "2026-01-19", url: "https://www.youtube.com/watch?v=4dT3gUYvE0c", is_outlier: false },
+      ]},
+      { name: "Flagsmith", avg_views: 49, video_count: 3, videos: [
+        { title: "Feature Flag Cleanup at Scale: How to Eliminate Technical Debt with AI", views: 73, mult: 1.5, date: "2026-03-19", url: "https://www.youtube.com/watch?v=CYBBpLdAavo", is_outlier: false },
+        { title: "Feature Flags: A Safety Net in the AI Era", views: 62, mult: 1.3, date: "2026-01-28", url: "https://www.youtube.com/watch?v=6D4gtW7XrTI", is_outlier: false },
+      ]},
+      { name: "PostHog", avg_views: 857, video_count: 20, videos: [
+        { title: "The startup interview questions that actually matter", views: 4706, mult: 5.5, date: "2026-02-11", url: "https://www.youtube.com/watch?v=KVMZgY2KNto", is_outlier: true },
+        { title: "PostHog AI can now search the web", views: 2290, mult: 2.7, date: "2026-02-06", url: "https://www.youtube.com/watch?v=gf3fbNWCuf4", is_outlier: true },
+        { title: "Introducing Logs by PostHog", views: 2147, mult: 2.5, date: "2026-02-19", url: "https://www.youtube.com/watch?v=e_SICQg2Wak", is_outlier: true },
+        { title: "We built an open-source developer toy...", views: 784, mult: 0.9, date: "2026-02-13", url: "https://www.youtube.com/watch?v=7jQd858EWGc", is_outlier: false },
+        { title: "PostHog: The Documentary (Full Version)", views: 755, mult: 0.9, date: "2026-03-23", url: "https://www.youtube.com/watch?v=dGaSxBs3OsU", is_outlier: false },
+      ]},
     ],
   },
 };
@@ -432,51 +475,107 @@ export default function CompyDashboard() {
         </>)}
 
         {/* ── YOUTUBE ── */}
-        {tab === "youtube" && (<>
-          {/* Narrative digest */}
-          <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
-            <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.success}` }) }}>
-              <div style={{ fontSize: 12, fontWeight: 700, color: C.success, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>GrowthBook YouTube</div>
-              <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50" }}>
-                GrowthBook's 'Faster Shipping Means You Need Testing More' is running at 5.9× channel average with 1,336 views, making it the standout video this week. 'Why Experimentation Matters from Ronny Kohavi' is at 3.8× with 855 views and 'Turn Experiment Results Into a Team Moment' is at 2.2× with 502 views — the Kohavi content franchise is clearly resonating and warrants a follow-on series.
-              </p>
-            </div>
-            <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.accent}` }) }}>
-              <div style={{ fontSize: 12, fontWeight: 700, color: C.accent, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>Competitor YouTube</div>
-              <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50" }}>
-                On the competitor side, Harness's 60-second load testing explainer hit 840 views at 6.0× their channel average — the short-form explainer format is working well for them. Amplitude had two AI-themed outliers: the AI Platform launch video at 6.0× (647 views) and AI Agents at 4.6× (495 views), reinforcing their AI positioning push across all channels. PostHog's startup interview questions video was the biggest absolute number at 4,706 views (5.5×), and Optimizely's 'AI search now knows more than you type' hit 4.3× — AI search content is clearly resonating across the competitive landscape right now.
-              </p>
-            </div>
-          </div>
+        {tab === "youtube" && (() => {
+          const channels = d.youtube.channels;
+          const gbCh = channels.find(c => c.name === "GrowthBook") || { videos: [], avg_views: 0, video_count: 0 };
+          const gbOutliers = (gbCh.videos || []).filter(v => v.is_outlier).sort((a, b) => b.mult - a.mult);
+          const compOutliers = channels
+            .filter(c => c.name !== "GrowthBook")
+            .flatMap(c => (c.videos || []).filter(v => v.is_outlier).map(v => ({ ...v, competitor: c.name })))
+            .sort((a, b) => b.mult - a.mult);
 
-          <Section title="GrowthBook YouTube Outliers (2×+ channel avg)">
-            <Table
-              headers={["Title", "Views", "Multiplier"]}
-              rows={d.youtube.gb_outliers.map(v => [
-                v.title,
-                v.views.toLocaleString(),
-                <span style={{ fontWeight: 700, color: C.success }}>{v.mult}×</span>
-              ])}
-            />
-            <p style={{ fontSize: 13, color: C.muted, marginTop: 10 }}>
-              The Kohavi content franchise is clearly resonating — warrants a follow-on series.
-            </p>
-          </Section>
+          const gbNarrative = gbOutliers.length === 0
+            ? "No GrowthBook videos exceeded 2× channel average this week."
+            : (() => {
+                const top = gbOutliers[0];
+                let line = `GrowthBook's '${top.title}' is running at ${top.mult}× channel average with ${top.views.toLocaleString()} views`;
+                if (gbOutliers.length > 1) {
+                  const others = gbOutliers.slice(1, 3).map(v => `'${v.title}' at ${v.mult}× with ${v.views.toLocaleString()} views`).join("; ");
+                  line += `, followed by ${others}`;
+                }
+                return line + ".";
+              })();
 
-          <Section title="Competitor YouTube Outliers (2×+ channel avg)">
-            <Table
-              headers={["Competitor", "Title", "Views", "Multiplier"]}
-              rows={d.youtube.competitor_outliers.map(v => [
-                <span style={{ color: COMP_COLORS[v.competitor] || C.primary, fontWeight: 600 }}>{v.competitor}</span>,
-                v.title, v.views.toLocaleString(),
-                <span style={{ fontWeight: 700, color: C.accent }}>{v.mult}×</span>
-              ])}
-            />
-            <p style={{ fontSize: 13, color: C.muted, marginTop: 10 }}>
-              AI search content is resonating across the competitive landscape — Optimizely and Amplitude both have outlier AI-themed videos this week.
-            </p>
-          </Section>
-        </>)}
+          const compNarrative = compOutliers.length === 0
+            ? "No competitor videos exceeded 2× channel average this week."
+            : "On the competitor side: " + compOutliers.slice(0, 4).map(v =>
+                `${v.competitor}'s '${v.title.slice(0, 55)}${v.title.length > 55 ? "…" : ""}' at ${v.mult}× (${v.views.toLocaleString()} views)`
+              ).join("; ") + ".";
+
+          return (<>
+            <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
+              <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.success}` }) }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: C.success, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>GrowthBook YouTube</div>
+                <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50" }}>{gbNarrative}</p>
+              </div>
+              <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.accent}` }) }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: C.accent, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>Competitor YouTube</div>
+                <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50" }}>{compNarrative}</p>
+              </div>
+            </div>
+
+            <Section title="All Channels — YouTube Tracker (90-day window, 2× outlier threshold)">
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                <thead>
+                  <tr style={{ background: "#1B4F72" }}>
+                    {["Channel", "Videos (90d)", "Avg Views", "Outliers", "Title", "Views", "Mult", "Date", "Link"].map(h => (
+                      <th key={h} style={{ padding: "6px 8px", color: "#fff", textAlign: "left", fontWeight: 700, whiteSpace: "nowrap" }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {channels.map((ch, ci) => {
+                    const isGB = ch.name === "GrowthBook";
+                    const outlierVids = (ch.videos || []).filter(v => v.is_outlier);
+                    const topNonOutliers = (ch.videos || []).filter(v => !v.is_outlier).sort((a, b) => b.views - a.views).slice(0, 2);
+                    const displayVids = ch.no_recent ? [] : [...outlierVids, ...topNonOutliers];
+                    const outlierCount = outlierVids.length;
+                    const rowBg = isGB ? "#F0FFF4" : (ci % 2 === 0 ? "#fff" : "#F8F9FA");
+                    const chColor = isGB ? C.success : (COMP_COLORS[ch.name] || C.primary);
+
+                    if (ch.no_recent) {
+                      return (
+                        <tr key={ch.name} style={{ background: rowBg }}>
+                          <td style={{ padding: "5px 8px", fontWeight: 700, color: chColor }}>{ch.name}</td>
+                          <td style={{ padding: "5px 8px", color: C.muted, textAlign: "center" }}>0</td>
+                          <td style={{ padding: "5px 8px", color: C.muted, textAlign: "right" }}>—</td>
+                          <td style={{ padding: "5px 8px", color: C.muted, textAlign: "center" }}>0</td>
+                          <td style={{ padding: "5px 8px", color: C.muted, fontStyle: "italic" }}>No uploads in last 90 days</td>
+                          <td colSpan={4} />
+                        </tr>
+                      );
+                    }
+
+                    return displayVids.map((v, vi) => (
+                      <tr key={`${ch.name}-${vi}`} style={{ background: rowBg, borderBottom: "1px solid #E9ECEF" }}>
+                        {vi === 0 ? (
+                          <>
+                            <td style={{ padding: "5px 8px", fontWeight: 700, color: chColor, verticalAlign: "top" }}>{ch.name}</td>
+                            <td style={{ padding: "5px 8px", color: C.muted, verticalAlign: "top", textAlign: "center" }}>{ch.video_count}</td>
+                            <td style={{ padding: "5px 8px", color: C.muted, verticalAlign: "top", textAlign: "right" }}>{(ch.avg_views || 0).toLocaleString()}</td>
+                            <td style={{ padding: "5px 8px", color: outlierCount > 0 ? C.danger : C.muted, fontWeight: outlierCount > 0 ? 700 : 400, verticalAlign: "top", textAlign: "center" }}>{outlierCount}</td>
+                          </>
+                        ) : (
+                          <><td /><td /><td /><td /></>
+                        )}
+                        <td style={{ padding: "5px 8px", maxWidth: 280 }}>{v.is_outlier ? "🔥 " : "📊 "}{v.title}</td>
+                        <td style={{ padding: "5px 8px", textAlign: "right", whiteSpace: "nowrap" }}>{v.views.toLocaleString()}</td>
+                        <td style={{ padding: "5px 8px", fontWeight: 700, color: isGB ? C.success : C.accent, whiteSpace: "nowrap" }}>{v.mult}×</td>
+                        <td style={{ padding: "5px 8px", color: C.muted, whiteSpace: "nowrap" }}>{v.date}</td>
+                        <td style={{ padding: "5px 8px" }}>
+                          <a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent }}>▶ Watch</a>
+                        </td>
+                      </tr>
+                    ));
+                  })}
+                </tbody>
+              </table>
+              <p style={{ fontSize: 12, color: C.muted, marginTop: 10 }}>
+                🔥 = 2× or more views vs channel's 90-day average. 📊 = top non-outlier videos for context. Source: YouTube Data API v3.
+              </p>
+            </Section>
+          </>);
+        })()}
 
         {/* ── NEW CONTENT ── */}
         {tab === "content" && (<>
