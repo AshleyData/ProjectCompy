@@ -1,180 +1,145 @@
 import { useState } from "react";
 
-// Embedded data — Sally generates this directly from the collectors, no JSON file
-const WEEKS = {
-  "2026-03-28": {
-    gsc: {
-      clicks: 3500, impressions: 103000, ctr: 3.4, avg_position: 9.8,
-      clicks_last: 3630, impressions_last: 98200,
-      wow_clicks: -3.6, wow_impressions: 4.9,
-      trailing_28d_clicks: 9668, trailing_28d_impressions: 447101,
-      mom_clicks: 0.5, mom_impressions: 3.2,
-      comparison_pages: [
-        { page: "vs-LaunchDarkly", views: 7, change: -1 },
-        { page: "vs-PostHog", views: 3, change: -2 },
-        { page: "vs-VWO", views: 2, change: 0 },
-        { page: "vs-Optimizely", views: 2, change: -3 },
-      ],
-    },
-    exec_summary: [
-      "GrowthBook impressions grew 4.9% WoW to 103K, but clicks dipped 3.6% to 3,500. The decline is concentrated on the homepage (-67 clicks), likely a branded search fluctuation rather than a content problem. Blog content is performing well — \"How to A/B Test AI\" hit position 8.2 in its first week with 10,240 impressions. The trailing 28-day trend is stable: 9,668 clicks (+0.5% MoM).",
-      "The biggest strategic gap: LaunchDarkly's Bayesian vs. frequentist page pulls an estimated 1,370 monthly visitors while GrowthBook has no equivalent SEO-optimized page. Their multi-armed bandits doc gets 402 visitors vs. GrowthBook's 13. These are core topics where GrowthBook has deep technical credibility but is losing search demand to documentation pages.",
-      "LaunchDarkly refreshed its feature flags and experimentation product pages (threat 7-8). Optimizely pushed updates across web experimentation and feature experimentation — a coordinated SEO play for category terms. Amplitude published a \"best feature flag tools\" roundup (KD 30, threat 8) that directly intercepts buyers evaluating GrowthBook."
+const WEEK = "2026-03-30";
+
+const DATA = {
+  gsc: {
+    clicks: 3418, impressions: 110304, ctr: 3.10, avg_position: 9.54,
+    clicks_last: 3572, impressions_last: 104554,
+    wow_clicks: -4.3, wow_impressions: 5.5,
+    trailing_28d_clicks: 14532, mom_clicks: -1.8,
+    branded: 1856, nonbranded: 243, anonymized: 1319,
+  },
+  exec_summary: [
+    "GrowthBook's overall click volume dipped modestly this week, from 3,572 to 3,418 clicks (-4.3%), but impressions actually grew from 104,554 to 110,304 (+5.5%), suggesting broader visibility even as conversion to clicks softened. The homepage accounts for the vast majority of the click decline (down 81 clicks, from 1,851 to 1,770), which looks like normal branded search fluctuation rather than a structural problem. On the bright side, the AI A/B testing guide surged from 1 to 10 clicks, the /products/experiments page gained 5 clicks, and the GrowthBook vs. LaunchDarkly comparison page doubled from 4 to 8 clicks — all meaningful directional signals.",
+    "The most important strategic finding this week is Amplitude's aggressive push into comparison and 'best-of' content targeting startup and developer audiences. Four of the five top opportunities this week are Amplitude Experiment URLs covering 'best feature flag tools for startups,' 'best mobile ab testing for developers,' 'best product experimentation tools for startups,' and 'top ab testing platforms.' These comparison pages are low-friction, high-intent destinations that intercept buyers mid-research. GrowthBook has a credible story for every one of these queries — open-source, developer-friendly, startup-accessible — but lacks dedicated content to compete for them.",
+    "Competitor content activity was quiet this week with no new tracked posts from LaunchDarkly, Statsig, Optimizely, Eppo, or others surfacing in the data. LaunchDarkly continues to hold a strong position on the 'feature flags' keyword (KD 38), which remains the top-ranked opportunity. The absence of new competitor content is actually a tactical window — publishing now on the 'best-of' and comparison queries means GrowthBook can establish positions before competitors refresh or expand their own coverage.",
+  ],
+  opportunities: [
+    { rank: 1, topic: "Feature Flags", competitor: "LaunchDarkly", score: 75.0, kd: 38, bucket: "Quick Win", why: "LaunchDarkly's feature flags platform page ranks for core feature flag queries with KD 38. GrowthBook has a strong feature flags product but no dedicated ranking page competing for this term." },
+    { rank: 2, topic: "Best Feature Flag Tools for Startups", competitor: "Amplitude Exp", score: 75.0, kd: "n/a", bucket: "Quick Win", why: "Amplitude's comparison page targets startup buyers at the moment of vendor selection. Startups are GrowthBook's core audience. KD n/a = brand-new page, effectively zero competition." },
+    { rank: 3, topic: "Best Mobile A/B Testing for Developers", competitor: "Amplitude Exp", score: 75.0, kd: "n/a", bucket: "Quick Win", why: "Developers are GrowthBook's primary persona. Amplitude owns this bottom-of-funnel query unopposed. No KD data — page too new for DataForSEO tracking." },
+    { rank: 4, topic: "Best Product Experimentation Tools for Startups", competitor: "Amplitude Exp", score: 75.0, kd: "n/a", bucket: "Quick Win", why: "Third in Amplitude's startup experimentation cluster. Publishing all three GrowthBook equivalents in one sprint builds topical authority fast." },
+    { rank: 5, topic: "Top A/B Testing Platforms", competitor: "Amplitude Exp", score: 75.0, kd: "n/a", bucket: "Quick Win", why: "High-intent comparison query. Amplitude is establishing itself as the go-to resource for buyers evaluating A/B testing platforms — GrowthBook is absent." },
+  ],
+  top_movers: {
+    gains: [
+      { url: "blog: How to A/B Test AI", clicks: 10, prior: 1, change: 9 },
+      { url: "/products/experiments", clicks: 15, prior: 10, change: 5 },
+      { url: "/compare/growthbook-vs-launchdarkly", clicks: 8, prior: 4, change: 4 },
+      { url: "blog: GrowthBook vs LaunchDarkly", clicks: 5, prior: 3, change: 2 },
+      { url: "blog.growthbook.io/", clicks: 8, prior: 6, change: 2 },
     ],
-    content_recs: [
-      { action: "Write", topic: "multi-armed bandits for A/B testing", reason: "KD 5, LaunchDarkly's doc pulls 402 ETV vs GrowthBook's 13. Winnable keyword with demonstrated demand.", priority: "high" },
-      { action: "Write", topic: "Bayesian vs. frequentist statistics for A/B testing", reason: "LaunchDarkly dominates at 1,370 ETV. GrowthBook's stats engine is a core differentiator — this gap shouldn't exist.", priority: "high" },
-      { action: "Refresh", topic: "/compare/growthbook-vs-launchdarkly", reason: "Led comparison traffic at 7 views. LD just updated experimentation + feature flags pages. Comparison needs to reflect their current positioning.", priority: "medium" },
-      { action: "Write", topic: "Power calculation and sample size guide", reason: "KD 5, Amplitude ranks, GrowthBook absent. Mid-funnel buyers who are already experiment-aware.", priority: "medium" },
-      { action: "Refresh", topic: "What Are Feature Flags blog post", reason: "27 ETV, flat growth. Counter Amplitude's new 'best feature flag tools' roundup with a comparison table.", priority: "medium" },
+    declines: [
+      { url: "growthbook.io/ (homepage)", clicks: 1770, prior: 1851, change: -81 },
+      { url: "blog: What Are Feature Flags?", clicks: 7, prior: 14, change: -7 },
+      { url: "/products/ai-mcp", clicks: 2, prior: 6, change: -4 },
+      { url: "blog: Release 4.3 Faster Experiments", clicks: 2, prior: 5, change: -3 },
+      { url: "/demo", clicks: 3, prior: 6, change: -3 },
     ],
-    competitors: [
-      { name: "Optimizely", etv: 530527, pages: 80, surging: 19, top_page: "What is A/B testing?", top_etv: 249883 },
-      { name: "Amplitude", etv: 296390, pages: 82, surging: 15, top_page: "Agent Analytics", top_etv: 12400 },
-      { name: "Statsig", etv: 243082, pages: 106, surging: 22, top_page: "Experimental control explained", top_etv: 45482 },
-      { name: "Harness", etv: 186803, pages: 106, surging: 19, top_page: "What is A/B Testing?", top_etv: 92685 },
-      { name: "LaunchDarkly", etv: 20921, pages: 120, surging: 16, top_page: "Smoke Testing Guide", top_etv: 4925 },
-      { name: "Eppo", etv: 11299, pages: 39, surging: 20, top_page: "Bayesian vs Frequentist", top_etv: 3200 },
-      { name: "PostHog", etv: 10193, pages: 135, surging: 8, top_page: "Product Engineer vs Software Engineer", top_etv: 898 },
-      { name: "Unleash", etv: 3330, pages: 15, surging: 3, top_page: "Trunk-Based Development", top_etv: 2060 },
-      { name: "Flagsmith", etv: 1087, pages: 18, surging: 2, top_page: "Flagsmith vs LaunchDarkly", top_etv: 320 },
-      { name: "GrowthBook", etv: 185, pages: 8, surging: 4, top_page: "What is A/B Testing", top_etv: 50, note: "ETV underreports — GSC shows ~9,700 clicks/mo. 45% branded traffic." },
+  },
+  striking_distance: [
+    { query: "ab testing software", position: 8.7, impressions: 882, clicks: 0, opportunity: "High" },
+    { query: "what is a/b testing", position: 15.0, impressions: 763, clicks: 1, opportunity: "Medium" },
+    { query: "ab testing tools", position: 14.3, impressions: 656, clicks: 1, opportunity: "Medium" },
+    { query: "a/b testing tools", position: 13.9, impressions: 610, clicks: 0, opportunity: "Medium" },
+    { query: "ab testing tool", position: 11.7, impressions: 555, clicks: 1, opportunity: "High" },
+    { query: "launchdarkly alternatives", position: 11.6, impressions: 529, clicks: 0, opportunity: "High" },
+    { query: "model a/b testing", position: 9.2, impressions: 526, clicks: 0, opportunity: "High" },
+    { query: "experimentation platform", position: 9.6, impressions: 518, clicks: 1, opportunity: "High" },
+  ],
+  competitors: [
+    { name: "Optimizely", etv: 592025, pages: 275, top_page: "What is A/B testing?", top_etv: 251651 },
+    { name: "Statsig", etv: 350426, pages: 389, top_page: "What is an experimental control?", top_etv: 49870 },
+    { name: "Amplitude Exp", etv: 296500, pages: 82, top_page: "Correlation vs Causation", top_etv: 123936 },
+    { name: "Harness", etv: 187421, pages: 106, top_page: "What is A/B Testing?", top_etv: 92685 },
+    { name: "LaunchDarkly", etv: 25074, pages: 153, top_page: "Smoke Testing Guide", top_etv: 5011 },
+    { name: "Eppo", etv: 11482, pages: 39, top_page: "A/B testing vs. split testing", top_etv: 4212 },
+    { name: "PostHog", etv: 10679, pages: 135, top_page: "Product engineer vs software engineer", top_etv: 898 },
+    { name: "Unleash", etv: 3376, pages: 15, top_page: "Trunk-Based Development", top_etv: 2081 },
+    { name: "Flagsmith", etv: 1092, pages: 18, top_page: "Canary Deployment", top_etv: 258 },
+    { name: "GrowthBook", etv: 186, pages: 8, top_page: "What is A/B Testing?", top_etv: 51, note: "ETV underreports — GSC shows ~9,700 clicks/mo. 45% branded." },
+  ],
+  new_content: [
+    { competitor: "Amplitude Exp", slug: "best feature flag tools for startups", threat: 7, kd: "n/a", date: "2026-03-20" },
+    { competitor: "Amplitude Exp", slug: "best mobile ab testing for developers", threat: 7, kd: "n/a", date: "2026-03-24" },
+    { competitor: "LaunchDarkly", slug: "feature flags", threat: 7, kd: 38, date: "2026-03-25" },
+    { competitor: "Optimizely", slug: "experience optimization", threat: 7, kd: "n/a", date: "2026-03-02" },
+    { competitor: "Harness", slug: "argocd vs harness", threat: 8, kd: 0, date: "" },
+    { competitor: "Harness", slug: "github actions vs harness", threat: 8, kd: 0, date: "" },
+    { competitor: "Harness", slug: "ai code agent", threat: 7, kd: 25, date: "" },
+    { competitor: "Flagsmith", slug: "trunk based development vs gitflow", threat: 7, kd: 3, date: "" },
+    { competitor: "Flagsmith", slug: "flagsmith vs launchdarkly", threat: 7, kd: 0, date: "" },
+    { competitor: "PostHog", slug: "sandbox environments", threat: 8, kd: 10, date: "" },
+  ],
+  youtube: {
+    gb_outliers: [
+      { title: "Faster Shipping Means You Need Testing More", views: 1336, mult: 5.9 },
+      { title: "Why Experimentation Matters from Ronny Kohavi", views: 855, mult: 3.8 },
+      { title: "Turn Experiment Results Into a Team Moment", views: 502, mult: 2.2 },
     ],
-    top_movers: {
-      gains: [
-        { url: "/products/experiments", clicks_this: 16, clicks_last: 9, change: 7, position: 3.1 },
-        { url: "blog: How to A/B Test AI", clicks_this: 9, clicks_last: 2, change: 7, position: 8.5 },
-        { url: "blog: Release 4.3 Faster Experiments", clicks_this: 6, clicks_last: 2, change: 4, position: 5.2 },
-      ],
-      declines: [
-        { url: "growthbook.io/ (homepage)", clicks_this: 1843, clicks_last: 1910, change: -67, position: 14.9 },
-        { url: "/products/ai-mcp", clicks_this: 2, clicks_last: 9, change: -7, position: 4.3 },
-        { url: "blog: Feedback Loops/Agentic Coding", clicks_this: 2, clicks_last: 7, change: -5, position: 6.8 },
-        { url: "blog: CUPED post", clicks_this: 1, clicks_last: 5, change: -4, position: 8.3 },
-        { url: "/compare/growthbook-vs-statsig", clicks_this: 1, clicks_last: 5, change: -4, position: 11.2 },
-      ],
-    },
-    striking_distance: [
-      { query: "ab testing software", position: 9.4, impressions: 914, clicks: 0, trend: "up" },
-      { query: "what is a/b testing", position: 14.6, impressions: 807, clicks: 1, trend: "down" },
-      { query: "ab testing tools", position: 14.5, impressions: 637, clicks: 1, trend: "up" },
-      { query: "model a/b testing", position: 8.3, impressions: 619, clicks: 0, trend: "up" },
-      { query: "a/b testing tools", position: 14.4, impressions: 573, clicks: 0, trend: "up" },
-      { query: "experimentation platform", position: 10.1, impressions: 559, clicks: 1, trend: "up" },
-      { query: "launchdarkly alternatives", position: 12.0, impressions: 536, clicks: 0, trend: "up" },
-      { query: "ab testing tool", position: 12.0, impressions: 528, clicks: 1, trend: "up" },
+    competitor_outliers: [
+      { competitor: "Optimizely", title: "AI search now knows more than you type…", views: 435, mult: 4.3 },
+      { competitor: "Harness", title: "What is Load Testing? 60 Seconds", views: 840, mult: 6.0 },
+      { competitor: "Amplitude Exp", title: "Meet the Amplitude AI Platform", views: 647, mult: 6.0 },
+      { competitor: "Statsig", title: "Advanced methods for faster experimentation", views: 305, mult: 2.4 },
+      { competitor: "PostHog", title: "Startup interview questions that matter", views: 4706, mult: 5.5 },
     ],
-    opportunities: [
-      { rank: 1, topic: "A/B Rollouts", score: 83.9, competitor: "LaunchDarkly", kd: 4, category: "Quick Win" },
-      { rank: 2, topic: "AB Split Test", score: 83.4, competitor: "Statsig", kd: 8, category: "Quick Win" },
-      { rank: 3, topic: "Multi-Armed Bandits", score: 82.8, competitor: "LaunchDarkly", kd: 5, category: "Quick Win" },
-      { rank: 4, topic: "Power Calculation & Sample Size", score: 80.3, competitor: "Amplitude", kd: 5, category: "Quick Win" },
-      { rank: 5, topic: "Feature Experimentation", score: 80.0, competitor: "Optimizely", kd: 16, category: "Strategic" },
-    ],
-    youtube: {
-      gb_outliers: [],
-      competitor_outliers: [
-        { competitor: "Eppo", title: "A/B Testing vs Multi-Armed Bandits", views: 1513, avg: 380, mult: 4.0 },
-        { competitor: "PostHog", title: "Startup interview questions that matter", views: 4660, avg: 840, mult: 5.5 },
-        { competitor: "Harness", title: "What is Load Testing? 60 Seconds", views: 836, avg: 112, mult: 7.5 },
-        { competitor: "Optimizely", title: "AI search now knows more than you type", views: 434, avg: 95, mult: 4.6 },
-        { competitor: "Amplitude", title: "Meet the Amplitude AI Platform", views: 623, avg: 103, mult: 6.0 },
-      ],
-      keyword_rankings: [
-        { keyword: "growthbook tutorial", gb_rank: 1, top_comp: "-", top_rank: "-" },
-        { keyword: "growthbook feature flags", gb_rank: 1, top_comp: "-", top_rank: "-" },
-        { keyword: "open source feature flags", gb_rank: 5, top_comp: "Unleash", top_rank: 2 },
-        { keyword: "experimentation platform", gb_rank: "-", top_comp: "Statsig", top_rank: 2 },
-        { keyword: "feature flags python", gb_rank: "-", top_comp: "Unleash", top_rank: 2 },
-        { keyword: "a/b testing tutorial", gb_rank: "-", top_comp: "Optimizely", top_rank: 1 },
-      ],
-    },
-    new_content: [
-      { competitor: "Amplitude", count: 124, highlight: "AI visibility comparison page (KD 0, threat 9/10)" },
-      { competitor: "Harness", count: 129, highlight: "Bulk content push across DevOps academy" },
-      { competitor: "Optimizely", count: 49, highlight: "Glossary + solution pages, YouTube AI search play" },
-      { competitor: "LaunchDarkly", count: 45, highlight: "Platform architecture, experimentation product pages" },
-      { competitor: "Eppo", count: 20, highlight: "Product update monthly roundups" },
-      { competitor: "Flagsmith", count: 13, highlight: "vs-LaunchDarkly comparison, technical debt blog" },
-      { competitor: "Statsig", count: 6, highlight: "Autotune, Holdouts, Metrics feature pages" },
-      { competitor: "Unleash", count: 6, highlight: "MCP feature flags, AI agent sandboxing blogs" },
-    ],
-    aeo: { tracked: 30, triggering: 20, gb_cited: 0 },
   },
 };
 
-const COLORS = {
+const C = {
   primary: "#1B4F72", accent: "#2E86C1", success: "#1E8449",
-  warning: "#D4AC0D", danger: "#C0392B", light: "#F8F9FA",
-  muted: "#6C757D", white: "#FFFFFF", border: "#DEE2E6",
+  warning: "#D4AC0D", danger: "#C0392B", muted: "#6C757D",
+  white: "#FFFFFF", border: "#DEE2E6", bg: "#F0F2F5",
 };
-
 const COMP_COLORS = {
-  Optimizely: "#6C3483", Amplitude: "#2874A6", Statsig: "#1ABC9C",
+  Optimizely: "#6C3483", "Amplitude Exp": "#2874A6", Statsig: "#1ABC9C",
   Harness: "#D35400", LaunchDarkly: "#2C3E50", Eppo: "#E74C3C",
-  PostHog: "#F39C12", Unleash: "#16A085", Flagsmith: "#8E44AD",
-  GrowthBook: "#1E8449",
+  PostHog: "#F39C12", Unleash: "#16A085", Flagsmith: "#8E44AD", GrowthBook: "#1E8449",
 };
 
-function MetricCard({ label, value, change, small }) {
-  const isPositive = change > 0;
-  const arrow = change > 0 ? "↑" : change < 0 ? "↓" : "→";
-  const changeColor = isPositive ? COLORS.success : change < 0 ? COLORS.danger : COLORS.muted;
+function card(extra = {}) {
+  return { background: C.white, borderRadius: 8, border: `1px solid ${C.border}`, ...extra };
+}
+
+function MetricCard({ label, value, change, sub }) {
+  const color = change > 0 ? C.success : change < 0 ? C.danger : C.muted;
+  const arrow = change > 0 ? "↑" : change < 0 ? "↓" : "";
   return (
-    <div style={{ background: COLORS.white, borderRadius: 8, padding: small ? "12px 16px" : "16px 20px", border: `1px solid ${COLORS.border}`, flex: 1, minWidth: small ? 120 : 160 }}>
-      <div style={{ fontSize: 12, color: COLORS.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
-      <div style={{ fontSize: small ? 20 : 28, fontWeight: 700, color: COLORS.primary, marginTop: 4 }}>{value}</div>
-      {change !== undefined && (
-        <div style={{ fontSize: 13, color: changeColor, marginTop: 2 }}>
-          {arrow} {Math.abs(change)}% WoW
-        </div>
-      )}
+    <div style={{ ...card({ padding: "16px 20px", flex: 1, minWidth: 150 }) }}>
+      <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
+      <div style={{ fontSize: 26, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{value}</div>
+      {change !== undefined && <div style={{ fontSize: 13, color }}>{arrow} {Math.abs(change)}% WoW</div>}
+      {sub && <div style={{ fontSize: 12, color: C.muted, marginTop: 2 }}>{sub}</div>}
     </div>
   );
 }
 
-function BarChart({ data, labelKey, valueKey, maxWidth = 500, color = COLORS.accent, formatValue }) {
-  const max = Math.max(...data.map(d => d[valueKey]));
+function Bar({ label, value, max, color }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-      {data.map((d, i) => (
-        <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <div style={{ width: 120, fontSize: 13, textAlign: "right", color: COLORS.muted, flexShrink: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-            {d[labelKey]}
-          </div>
-          <div style={{ flex: 1, maxWidth, background: "#EBF5FB", borderRadius: 4, height: 24, position: "relative" }}>
-            <div style={{
-              width: `${(d[valueKey] / max) * 100}%`, height: "100%", borderRadius: 4,
-              background: d[labelKey] === "GrowthBook" ? COLORS.success : (COMP_COLORS[d[labelKey]] || color),
-              minWidth: 2
-            }} />
-          </div>
-          <div style={{ width: 80, fontSize: 13, fontWeight: 600, color: COLORS.primary }}>
-            {formatValue ? formatValue(d[valueKey]) : d[valueKey].toLocaleString()}
-          </div>
-        </div>
-      ))}
+    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5 }}>
+      <div style={{ width: 130, fontSize: 13, textAlign: "right", color: C.muted, flexShrink: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{label}</div>
+      <div style={{ flex: 1, background: "#EBF5FB", borderRadius: 4, height: 22 }}>
+        <div style={{ width: `${(value / max) * 100}%`, height: "100%", borderRadius: 4, background: color || C.accent, minWidth: 3 }} />
+      </div>
+      <div style={{ width: 75, fontSize: 13, fontWeight: 600, color: C.primary }}>{value.toLocaleString()}</div>
     </div>
   );
 }
 
-function DataTable({ headers, rows, compact }) {
+function Table({ headers, rows, compact }) {
+  const p = compact ? "5px 8px" : "8px 12px";
   return (
     <div style={{ overflowX: "auto" }}>
       <table style={{ width: "100%", borderCollapse: "collapse", fontSize: compact ? 12 : 13 }}>
         <thead>
-          <tr>
-            {headers.map((h, i) => (
-              <th key={i} style={{ padding: compact ? "6px 8px" : "8px 12px", textAlign: "left", background: COLORS.primary, color: COLORS.white, fontWeight: 600, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.3, whiteSpace: "nowrap" }}>{h}</th>
-            ))}
-          </tr>
+          <tr>{headers.map((h, i) => <th key={i} style={{ padding: p, textAlign: "left", background: C.primary, color: C.white, fontSize: 11, textTransform: "uppercase", letterSpacing: 0.3, whiteSpace: "nowrap" }}>{h}</th>)}</tr>
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} style={{ background: i % 2 === 0 ? COLORS.white : "#F8F9FA" }}>
-              {row.map((cell, j) => (
-                <td key={j} style={{ padding: compact ? "5px 8px" : "8px 12px", borderBottom: `1px solid ${COLORS.border}`, whiteSpace: j === 0 ? "normal" : "nowrap" }}>{cell}</td>
-              ))}
+            <tr key={i} style={{ background: i % 2 === 0 ? C.white : "#F8F9FA" }}>
+              {row.map((cell, j) => <td key={j} style={{ padding: p, borderBottom: `1px solid ${C.border}` }}>{cell}</td>)}
             </tr>
           ))}
         </tbody>
@@ -183,291 +148,273 @@ function DataTable({ headers, rows, compact }) {
   );
 }
 
-function TrendBadge({ value }) {
-  if (value === "up") return <span style={{ color: COLORS.success, fontWeight: 600 }}>↑</span>;
-  if (value === "down") return <span style={{ color: COLORS.danger, fontWeight: 600 }}>↓</span>;
-  return <span style={{ color: COLORS.muted }}>→</span>;
-}
-
-function PriorityBadge({ level }) {
-  const colors = { high: COLORS.danger, medium: COLORS.warning, low: COLORS.muted };
-  return (
-    <span style={{ background: colors[level] || COLORS.muted, color: COLORS.white, padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600, textTransform: "uppercase" }}>{level}</span>
-  );
-}
-
 function Section({ title, children }) {
   return (
-    <div style={{ marginBottom: 32 }}>
-      <h2 style={{ fontSize: 18, fontWeight: 700, color: COLORS.primary, borderBottom: `2px solid ${COLORS.accent}`, paddingBottom: 8, marginBottom: 16 }}>{title}</h2>
+    <div style={{ marginBottom: 28 }}>
+      <h2 style={{ fontSize: 16, fontWeight: 700, color: C.primary, borderBottom: `2px solid ${C.accent}`, paddingBottom: 6, marginBottom: 14 }}>{title}</h2>
       {children}
     </div>
   );
 }
 
+function BucketBadge({ bucket }) {
+  const bg = bucket === "Quick Win" ? C.success : bucket === "Content Gap" ? C.warning : C.danger;
+  return <span style={{ background: bg, color: C.white, padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600 }}>{bucket}</span>;
+}
+
+function OpportunityBadge({ opp }) {
+  const bg = opp === "High" ? C.danger : opp === "Medium" ? C.warning : C.muted;
+  return <span style={{ background: bg, color: C.white, padding: "2px 6px", borderRadius: 8, fontSize: 11 }}>{opp}</span>;
+}
+
 const TABS = [
-  { id: "summary", label: "Summary" },
-  { id: "competitors", label: "Competitors" },
-  { id: "gsc", label: "GSC Detail" },
-  { id: "opportunities", label: "Opportunities" },
-  { id: "youtube", label: "YouTube" },
-  { id: "content", label: "New Content" },
+  { id: "summary", label: "📊 Summary" },
+  { id: "opportunities", label: "🎯 Opportunities" },
+  { id: "competitors", label: "🏁 Competitors" },
+  { id: "gsc", label: "📈 GSC Detail" },
+  { id: "youtube", label: "▶️ YouTube" },
+  { id: "content", label: "🆕 New Content" },
 ];
 
 export default function CompyDashboard() {
-  const weeks = Object.keys(WEEKS).sort().reverse();
-  const [selectedWeek, setSelectedWeek] = useState(weeks[0]);
-  const [activeTab, setActiveTab] = useState("summary");
-  const data = WEEKS[selectedWeek];
+  const [tab, setTab] = useState("summary");
+  const d = DATA;
 
   return (
-    <div style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", background: "#F0F2F5", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", background: C.bg, minHeight: "100vh" }}>
+
       {/* Header */}
-      <div style={{ background: COLORS.primary, padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div style={{ background: C.primary, padding: "14px 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
-          <div style={{ color: COLORS.white, fontSize: 20, fontWeight: 700 }}>Compy Weekly Brief</div>
-          <div style={{ color: "#AED6F1", fontSize: 13 }}>GrowthBook Competitive Intelligence</div>
+          <div style={{ color: C.white, fontSize: 18, fontWeight: 700 }}>🔍 Compy Weekly Brief</div>
+          <div style={{ color: "#AED6F1", fontSize: 12 }}>GrowthBook Competitive Intelligence · Week of {WEEK}</div>
         </div>
-        <select
-          value={selectedWeek}
-          onChange={e => setSelectedWeek(e.target.value)}
-          style={{ padding: "8px 12px", borderRadius: 6, border: "none", fontSize: 14, background: COLORS.white, color: COLORS.primary, fontWeight: 600, cursor: "pointer" }}
-        >
-          {weeks.map(w => <option key={w} value={w}>Week of {w}</option>)}
-        </select>
+        <div style={{ color: "#AED6F1", fontSize: 12, textAlign: "right" }}>
+          GSC: 3,418 clicks · -4.3% WoW<br />
+          110K impressions · +5.5% WoW
+        </div>
       </div>
 
-      {/* Tab bar */}
-      <div style={{ background: COLORS.white, borderBottom: `1px solid ${COLORS.border}`, display: "flex", gap: 0, overflowX: "auto" }}>
-        {TABS.map(tab => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            style={{
-              padding: "12px 20px", border: "none", background: "none", cursor: "pointer",
-              fontSize: 14, fontWeight: activeTab === tab.id ? 700 : 400,
-              color: activeTab === tab.id ? COLORS.accent : COLORS.muted,
-              borderBottom: activeTab === tab.id ? `3px solid ${COLORS.accent}` : "3px solid transparent",
-              whiteSpace: "nowrap",
-            }}
-          >{tab.label}</button>
+      {/* Tabs */}
+      <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, display: "flex", overflowX: "auto" }}>
+        {TABS.map(t => (
+          <button key={t.id} onClick={() => setTab(t.id)} style={{
+            padding: "11px 18px", border: "none", background: "none", cursor: "pointer", fontSize: 13,
+            fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? C.accent : C.muted, whiteSpace: "nowrap",
+            borderBottom: tab === t.id ? `3px solid ${C.accent}` : "3px solid transparent",
+          }}>{t.label}</button>
         ))}
       </div>
 
       {/* Content */}
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "24px 20px" }}>
 
-        {activeTab === "summary" && (
-          <>
-            {/* Scorecard */}
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 24 }}>
-              <MetricCard label="Clicks" value={data.gsc.clicks.toLocaleString()} change={data.gsc.wow_clicks} />
-              <MetricCard label="Impressions" value={(data.gsc.impressions / 1000).toFixed(0) + "K"} change={data.gsc.wow_impressions} />
-              <MetricCard label="CTR" value={data.gsc.ctr + "%"} />
-              <MetricCard label="Avg Position" value={data.gsc.avg_position} />
+        {/* ── SUMMARY ── */}
+        {tab === "summary" && (<>
+          {/* Scorecard row */}
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 24 }}>
+            <MetricCard label="Clicks" value="3,418" change={-4.3} sub="3,572 prior week" />
+            <MetricCard label="Impressions" value="110K" change={5.5} sub="104K prior week" />
+            <MetricCard label="CTR" value="3.10%" sub="-0.31pp WoW" />
+            <MetricCard label="Avg Position" value="9.54" sub="-0.13 WoW" />
+            <MetricCard label="28-Day Clicks" value="14,532" sub="-1.8% MoM" />
+          </div>
+
+          {/* Click breakdown */}
+          <Section title="Click Breakdown (This Week)">
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              {[
+                { label: "Branded", value: "1,856", note: "queries containing 'growthbook'" },
+                { label: "Non-Branded", value: "243", note: "organic discovery traffic" },
+                { label: "Anonymized", value: "1,319", note: "low-volume queries (GSC privacy)" },
+              ].map((b, i) => (
+                <div key={i} style={{ ...card({ padding: "14px 18px", flex: 1, minWidth: 160 }) }}>
+                  <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase" }}>{b.label}</div>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{b.value}</div>
+                  <div style={{ fontSize: 12, color: C.muted }}>{b.note}</div>
+                </div>
+              ))}
             </div>
+          </Section>
 
-            {/* Executive Summary */}
-            <Section title="Executive Summary">
-              <div style={{ background: COLORS.white, borderRadius: 8, padding: 20, border: `1px solid ${COLORS.border}` }}>
-                {data.exec_summary.map((para, i) => (
-                  <p key={i} style={{ margin: i === 0 ? 0 : "16px 0 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14 }}>{para}</p>
-                ))}
-              </div>
-            </Section>
+          {/* Executive Summary */}
+          <Section title="Executive Summary">
+            <div style={{ ...card({ padding: 20 }) }}>
+              {d.exec_summary.map((p, i) => (
+                <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14 }}>{p}</p>
+              ))}
+            </div>
+          </Section>
 
-            {/* Comparison Pages */}
-            <Section title="Comparison Pages">
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                {data.gsc.comparison_pages.map((p, i) => (
-                  <div key={i} style={{ background: COLORS.white, borderRadius: 8, padding: "12px 16px", border: `1px solid ${COLORS.border}`, minWidth: 140 }}>
-                    <div style={{ fontSize: 12, color: COLORS.muted }}>{p.page}</div>
-                    <div style={{ fontSize: 22, fontWeight: 700, color: COLORS.primary }}>{p.views}</div>
-                    <div style={{ fontSize: 12, color: p.change >= 0 ? COLORS.success : COLORS.danger }}>
-                      {p.change >= 0 ? "+" : ""}{p.change} vs last week
+          {/* Top 5 opportunities preview */}
+          <Section title="Top 5 Content Opportunities">
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {d.opportunities.map((o, i) => (
+                <div key={i} style={{ ...card({ padding: "14px 18px", display: "flex", alignItems: "flex-start", gap: 14 }) }}>
+                  <div style={{ fontSize: 24, fontWeight: 800, color: C.accent, width: 32, textAlign: "center", flexShrink: 0 }}>#{o.rank}</div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 3, flexWrap: "wrap" }}>
+                      <span style={{ fontWeight: 700, fontSize: 14, color: C.primary }}>{o.topic}</span>
+                      <BucketBadge bucket={o.bucket} />
                     </div>
+                    <div style={{ fontSize: 13, color: C.muted, marginBottom: 4 }}>Lead: {o.competitor} · KD {o.kd} · Score {o.score}</div>
+                    <div style={{ fontSize: 12, color: "#555", lineHeight: 1.5 }}>{o.why}</div>
                   </div>
-                ))}
-              </div>
-            </Section>
+                </div>
+              ))}
+            </div>
+          </Section>
+        </>)}
 
-            {/* Content Recommendations */}
-            <Section title="Content Recommendations">
-              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                {data.content_recs.map((rec, i) => (
-                  <div key={i} style={{ background: COLORS.white, borderRadius: 8, padding: "14px 18px", border: `1px solid ${COLORS.border}`, display: "flex", gap: 12, alignItems: "flex-start" }}>
-                    <div style={{ background: COLORS.accent, color: COLORS.white, borderRadius: "50%", width: 28, height: 28, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, flexShrink: 0 }}>{i + 1}</div>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 4 }}>
-                        <span style={{ fontWeight: 700, color: COLORS.primary, fontSize: 14 }}>{rec.action}: {rec.topic}</span>
-                        <PriorityBadge level={rec.priority} />
-                      </div>
-                      <div style={{ fontSize: 13, color: COLORS.muted, lineHeight: 1.5 }}>{rec.reason}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Section>
-          </>
-        )}
+        {/* ── OPPORTUNITIES ── */}
+        {tab === "opportunities" && (<>
+          <Section title="Top 5 Content Opportunities">
+            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14 }}>
+              Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance.
+              ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
+            </p>
+            <Table
+              headers={["Rank", "Topic", "Competitor", "Score", "KD", "Bucket", "Why It Matters"]}
+              rows={d.opportunities.map(o => [
+                `#${o.rank}`, o.topic, o.competitor, o.score, o.kd,
+                <BucketBadge bucket={o.bucket} />, <span style={{ fontSize: 12, color: "#555" }}>{o.why}</span>
+              ])}
+            />
+          </Section>
 
-        {activeTab === "competitors" && (
-          <>
-            <Section title="Competitor Organic Traffic (ETV)">
-              <BarChart
-                data={[...data.competitors].sort((a, b) => a.etv - b.etv)}
-                labelKey="name"
-                valueKey="etv"
-                maxWidth={600}
-              />
-              <div style={{ marginTop: 8, fontSize: 12, color: COLORS.muted, fontStyle: "italic" }}>
-                Note: GrowthBook ETV underreports actual traffic. GSC shows ~9,700 clicks/mo (45% branded). ETV measures non-branded organic only.
-              </div>
-            </Section>
+          <Section title="Striking Distance (Positions 8–20)">
+            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14 }}>
+              Pages ranking just outside the top 10 — incremental optimization could move these into click territory.
+            </p>
+            <Table
+              headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
+              rows={d.striking_distance.map(q => [
+                q.query, q.position, q.impressions.toLocaleString(), q.clicks,
+                <OpportunityBadge opp={q.opportunity} />
+              ])}
+              compact
+            />
+          </Section>
+        </>)}
 
-            <Section title="Competitor Detail">
-              <DataTable
-                headers={["Competitor", "Total ETV", "Pages", "Surging", "Top Page", "Top Page ETV"]}
-                rows={data.competitors.map(c => [
-                  c.name,
-                  c.etv.toLocaleString(),
-                  c.pages,
-                  c.surging,
-                  c.top_page,
-                  c.top_etv.toLocaleString(),
-                ])}
-              />
-            </Section>
-          </>
-        )}
-
-        {activeTab === "gsc" && (
-          <>
-            <Section title="28-Day Trend">
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 20 }}>
-                <MetricCard label="28d Clicks" value={data.gsc.trailing_28d_clicks.toLocaleString()} change={data.gsc.mom_clicks} small />
-                <MetricCard label="28d Impressions" value={(data.gsc.trailing_28d_impressions / 1000).toFixed(0) + "K"} change={data.gsc.mom_impressions} small />
-              </div>
-            </Section>
-
-            <Section title="Top Movers — Gains">
-              <DataTable
-                headers={["URL", "This Week", "Last Week", "Change", "Position"]}
-                rows={data.top_movers.gains.map(m => [
-                  m.url, m.clicks_this, m.clicks_last,
-                  <span style={{ color: COLORS.success, fontWeight: 600 }}>+{m.change}</span>,
-                  m.position
-                ])}
-                compact
-              />
-            </Section>
-
-            <Section title="Top Movers — Declines">
-              <DataTable
-                headers={["URL", "This Week", "Last Week", "Change", "Position"]}
-                rows={data.top_movers.declines.map(m => [
-                  m.url, m.clicks_this, m.clicks_last,
-                  <span style={{ color: COLORS.danger, fontWeight: 600 }}>{m.change}</span>,
-                  m.position
-                ])}
-                compact
-              />
-            </Section>
-
-            <Section title="Striking Distance (Positions 8-20)">
-              <DataTable
-                headers={["Query", "Position", "Trend", "Impressions", "Clicks"]}
-                rows={data.striking_distance.map(q => [
-                  q.query, q.position, <TrendBadge value={q.trend} />, q.impressions.toLocaleString(), q.clicks
-                ])}
-                compact
-              />
-            </Section>
-          </>
-        )}
-
-        {activeTab === "opportunities" && (
-          <>
-            <Section title="Top 5 Content Opportunities">
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                {data.opportunities.map((opp, i) => (
-                  <div key={i} style={{ background: COLORS.white, borderRadius: 8, padding: "16px 20px", border: `1px solid ${COLORS.border}`, display: "flex", alignItems: "center", gap: 16 }}>
-                    <div style={{ fontSize: 28, fontWeight: 800, color: COLORS.accent, width: 36, textAlign: "center" }}>#{opp.rank}</div>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontWeight: 700, fontSize: 15, color: COLORS.primary }}>{opp.topic}</div>
-                      <div style={{ fontSize: 13, color: COLORS.muted, marginTop: 2 }}>Lead: {opp.competitor} · KD {opp.kd}</div>
-                    </div>
-                    <div style={{ textAlign: "right" }}>
-                      <div style={{ fontSize: 20, fontWeight: 700, color: COLORS.accent }}>{opp.score}</div>
-                      <div style={{ fontSize: 11, color: COLORS.muted }}>{opp.category}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Section>
-          </>
-        )}
-
-        {activeTab === "youtube" && (
-          <>
-            <Section title="Competitor YouTube Outliers (2x+ channel avg)">
-              <DataTable
-                headers={["Competitor", "Video", "Views", "Channel Avg", "Multiplier"]}
-                rows={data.youtube.competitor_outliers.map(v => [
-                  v.competitor, v.title, v.views.toLocaleString(), v.avg, v.mult + "x"
-                ])}
-              />
-            </Section>
-
-            <Section title="YouTube Keyword Rankings">
-              <DataTable
-                headers={["Keyword", "GrowthBook Rank", "Top Competitor", "Their Rank"]}
-                rows={data.youtube.keyword_rankings.map(k => [
-                  k.keyword,
-                  k.gb_rank === "-" ? <span style={{ color: COLORS.danger }}>Not ranking</span> : <span style={{ fontWeight: 700, color: COLORS.success }}>#{k.gb_rank}</span>,
-                  k.top_comp,
-                  k.top_rank === "-" ? "-" : `#${k.top_rank}`
-                ])}
-              />
-            </Section>
-
-            <Section title="AI Search Visibility">
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                <MetricCard label="Keywords Tracked" value={data.aeo.tracked} small />
-                <MetricCard label="Triggering AI Overviews" value={data.aeo.triggering} small />
-                <MetricCard label="GrowthBook Cited" value={data.aeo.gb_cited} small />
-              </div>
-              <p style={{ fontSize: 13, color: COLORS.muted, marginTop: 12 }}>
-                GrowthBook has 0 AI Overview citations across {data.aeo.triggering} keywords that trigger AIOs. Priority actions: add FAQ schema to key blog posts, restructure opening paragraphs for AI extractability.
+        {/* ── COMPETITORS ── */}
+        {tab === "competitors" && (<>
+          <Section title="Competitor Organic Traffic (ETV)">
+            <div style={{ ...card({ padding: "18px 20px" }) }}>
+              {(() => {
+                const max = Math.max(...d.competitors.map(c => c.etv));
+                return d.competitors.map(c => (
+                  <Bar key={c.name} label={c.name} value={c.etv} max={max} color={COMP_COLORS[c.name] || C.accent} />
+                ));
+              })()}
+              <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, marginBottom: 0 }}>
+                Note: GrowthBook ETV (~186) underreports actual traffic. GSC shows ~9,700 clicks/mo — 45% is branded search, which ETV doesn't count.
               </p>
-            </Section>
-          </>
-        )}
+            </div>
+          </Section>
 
-        {activeTab === "content" && (
-          <>
-            <Section title="New Competitor Pages Detected">
-              <BarChart
-                data={[...data.new_content].sort((a, b) => a.count - b.count)}
-                labelKey="competitor"
-                valueKey="count"
-                maxWidth={400}
-              />
-            </Section>
+          <Section title="Competitor Detail">
+            <Table
+              headers={["Competitor", "Total ETV", "Pages", "Top Page", "Top Page ETV"]}
+              rows={d.competitors.map(c => [
+                <span style={{ fontWeight: 600, color: COMP_COLORS[c.name] || C.primary }}>{c.name}</span>,
+                c.etv.toLocaleString(), c.pages, c.top_page, c.top_etv.toLocaleString()
+              ])}
+            />
+          </Section>
+        </>)}
 
-            <Section title="Highlights by Competitor">
-              <DataTable
-                headers={["Competitor", "New Pages", "Notable"]}
-                rows={data.new_content.map(c => [c.competitor, c.count, c.highlight])}
-              />
-            </Section>
-          </>
-        )}
+        {/* ── GSC DETAIL ── */}
+        {tab === "gsc" && (<>
+          <Section title="Top Movers — Gains">
+            <Table
+              headers={["Page", "This Week", "Prior Week", "Change"]}
+              rows={d.top_movers.gains.map(m => [
+                m.url, m.clicks, m.prior,
+                <span style={{ color: C.success, fontWeight: 700 }}>+{m.change}</span>
+              ])}
+              compact
+            />
+          </Section>
+
+          <Section title="Top Movers — Declines">
+            <Table
+              headers={["Page", "This Week", "Prior Week", "Change"]}
+              rows={d.top_movers.declines.map(m => [
+                m.url, m.clicks, m.prior,
+                <span style={{ color: C.danger, fontWeight: 700 }}>{m.change}</span>
+              ])}
+              compact
+            />
+          </Section>
+
+          <Section title="Striking Distance (Positions 8–20)">
+            <Table
+              headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
+              rows={d.striking_distance.map(q => [
+                q.query, q.position, q.impressions.toLocaleString(), q.clicks,
+                <OpportunityBadge opp={q.opportunity} />
+              ])}
+              compact
+            />
+          </Section>
+        </>)}
+
+        {/* ── YOUTUBE ── */}
+        {tab === "youtube" && (<>
+          <Section title="GrowthBook YouTube Outliers (2×+ channel avg)">
+            <Table
+              headers={["Title", "Views", "Multiplier"]}
+              rows={d.youtube.gb_outliers.map(v => [
+                v.title,
+                v.views.toLocaleString(),
+                <span style={{ fontWeight: 700, color: C.success }}>{v.mult}×</span>
+              ])}
+            />
+            <p style={{ fontSize: 13, color: C.muted, marginTop: 10 }}>
+              The Kohavi content franchise is clearly resonating — warrants a follow-on series.
+            </p>
+          </Section>
+
+          <Section title="Competitor YouTube Outliers (2×+ channel avg)">
+            <Table
+              headers={["Competitor", "Title", "Views", "Multiplier"]}
+              rows={d.youtube.competitor_outliers.map(v => [
+                <span style={{ color: COMP_COLORS[v.competitor] || C.primary, fontWeight: 600 }}>{v.competitor}</span>,
+                v.title, v.views.toLocaleString(),
+                <span style={{ fontWeight: 700, color: C.accent }}>{v.mult}×</span>
+              ])}
+            />
+            <p style={{ fontSize: 13, color: C.muted, marginTop: 10 }}>
+              AI search content is resonating across the competitive landscape — Optimizely and Amplitude both have outlier AI-themed videos this week.
+            </p>
+          </Section>
+        </>)}
+
+        {/* ── NEW CONTENT ── */}
+        {tab === "content" && (<>
+          <Section title="New Competitor Pages This Week (High-Threat)">
+            <Table
+              headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
+              rows={d.new_content.map(n => [
+                <span style={{ color: COMP_COLORS[n.competitor] || C.primary, fontWeight: 600 }}>{n.competitor}</span>,
+                n.slug,
+                n.date || "—",
+                <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span>,
+                n.kd
+              ])}
+            />
+            <p style={{ fontSize: 12, color: C.muted, marginTop: 10 }}>
+              Amplitude's comparison content cluster (best feature flag tools for startups, best mobile A/B testing for developers) is the highest-priority threat — brand new pages with effectively zero competition.
+            </p>
+          </Section>
+        </>)}
+
       </div>
 
       {/* Footer */}
-      <div style={{ borderTop: `1px solid ${COLORS.border}`, padding: "16px 24px", textAlign: "center", color: COLORS.muted, fontSize: 12, background: COLORS.white }}>
-        Compy · GrowthBook Competitive Intelligence · Generated {selectedWeek} · Data: GSC + DataforSEO + YouTube API
+      <div style={{ borderTop: `1px solid ${C.border}`, padding: "14px 24px", textAlign: "center", color: C.muted, fontSize: 12, background: C.white }}>
+        Compy · GrowthBook Competitive Intelligence · {WEEK} · Data: GSC + DataForSEO + YouTube API
       </div>
     </div>
   );
