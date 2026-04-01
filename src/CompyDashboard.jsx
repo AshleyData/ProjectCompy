@@ -519,7 +519,7 @@ export default function CompyDashboard() {
                 <thead>
                   <tr style={{ background: "#1B4F72" }}>
                     {["Channel", "Videos (90d)", "Avg Views", "Outliers", "Title", "Views", "Mult", "Date", "Link"].map(h => (
-                      <th key={h} style={{ padding: "6px 8px", color: "#fff", textAlign: "left", fontWeight: 700, whiteSpace: "nowrap" }}>{h}</th>
+                      <th key={h} style={{ padding: "6px 8px", color: "#fff", textAlign: "left", fontWeight: 700, whiteSpace: "nowrap", ...(h === "Title" ? { minWidth: 360 } : {}) }}>{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -558,7 +558,7 @@ export default function CompyDashboard() {
                         ) : (
                           <><td /><td /><td /><td /></>
                         )}
-                        <td style={{ padding: "5px 8px", maxWidth: 280 }}>{v.is_outlier ? "🔥 " : "📊 "}{v.title}</td>
+                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480 }}>{v.is_outlier ? "🔥 " : "📊 "}{v.title}</td>
                         <td style={{ padding: "5px 8px", textAlign: "right", whiteSpace: "nowrap" }}>{v.views.toLocaleString()}</td>
                         <td style={{ padding: "5px 8px", fontWeight: 700, color: isGB ? C.success : C.accent, whiteSpace: "nowrap" }}>{v.mult}×</td>
                         <td style={{ padding: "5px 8px", color: C.muted, whiteSpace: "nowrap" }}>{v.date}</td>
