@@ -96,14 +96,23 @@ export default function CompyDashboard() {
   const [loadError, setLoadError] = useState(null);
 
   useEffect(() => {
-    // Try to load the most recent data file
-    const dates = ["2026-04-02", "2026-03-30"];
+    // Generate candidate dates: last 8 Saturdays from today
+    const candidates = [];
+    const d0 = new Date();
+    // Roll back to most recent Saturday
+    const dow = d0.getDay(); // 0=Sun,6=Sat
+    const daysBack = dow === 6 ? 0 : (dow + 1); // days since last Sat
+    for (let i = 0; i < 8; i++) {
+      const dt = new Date(d0);
+      dt.setDate(d0.getDate() - daysBack - i * 7);
+      candidates.push(dt.toISOString().slice(0, 10));
+    }
     const tryLoad = (i) => {
-      if (i >= dates.length) {
+      if (i >= candidates.length) {
         setLoadError("No data file found.");
         return;
       }
-      fetch(`/data/${dates[i]}.json`)
+      fetch(`/data/${candidates[i]}.json`)
         .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(data => setD(data))
         .catch(() => tryLoad(i + 1));
@@ -250,7 +259,7 @@ export default function CompyDashboard() {
                 ));
               })()}
               <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, marginBottom: 0, textAlign: "left" }}>
-                Note: GrowthBook ETV (~186) underreports actual traffic. GSC shows ~9,700 clicks/mo — 45% is branded search, which ETV doesn't count.
+                Note: GrowthBook ETV underreports actual organic traffic — branded search (~45% of clicks) is not counted by DataForSEO. See GSC tab for real click data.
               </p>
             </div>
           </Section>
@@ -416,7 +425,7 @@ export default function CompyDashboard() {
               ])}
             />
             <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
-              Amplitude's comparison content cluster (best feature flag tools for startups, best mobile A/B testing for developers) is the highest-priority threat — brand new pages with effectively zero competition.
+              Pages scored 7–10 threat. Threat = competitor domain authority × keyword difficulty × topic relevance. Higher = more urgent to respond.
             </p>
           </Section>
         </>)}
