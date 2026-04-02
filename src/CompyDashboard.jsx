@@ -479,8 +479,8 @@ export default function CompyDashboard() {
             <Table
               headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
               rows={d.new_content.map(n => [
-                <span style={{ color: COMP_COLORS[n.competitor] || C.primary, fontWeight: 600 }}>{n.competitor}</span>,
-                n.slug,
+                <span style={{ color: COMP_COLORS[n.competitor] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{n.competitor}</span>,
+                <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
                 n.date || "—",
                 <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span>,
                 n.kd
