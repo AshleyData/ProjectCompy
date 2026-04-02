@@ -72,6 +72,23 @@ const DATA = {
     { competitor: "Flagsmith", slug: "flagsmith vs launchdarkly", threat: 7, kd: 0, date: "" },
     { competitor: "PostHog", slug: "sandbox environments", threat: 8, kd: 10, date: "" },
   ],
+  etv_kd: [
+    { competitor: "Optimizely", title: "What is A/B testing?", url: "optimizely.com/optimization-glossary/ab-testing/", etv: 251651, kd: 72 },
+    { competitor: "Amplitude Exp", title: "Correlation vs Causation", url: "amplitude.com/blog/causation-vs-correlation", etv: 123936, kd: 35 },
+    { competitor: "Harness", title: "What is A/B Testing?", url: "harness.io/learn/ab-testing", etv: 92685, kd: 72 },
+    { competitor: "Statsig", title: "What is an experimental control?", url: "statsig.com/blog/experimental-control", etv: 49870, kd: 15 },
+    { competitor: "Statsig", title: "What is Hypothesis Testing?", url: "statsig.com/blog/hypothesis-testing", etv: 42100, kd: 48 },
+    { competitor: "Optimizely", title: "What is Multivariate Testing?", url: "optimizely.com/optimization-glossary/multivariate-testing/", etv: 38200, kd: 55 },
+    { competitor: "Statsig", title: "What is Statistical Significance?", url: "statsig.com/blog/statistical-significance", etv: 35600, kd: 52 },
+    { competitor: "Harness", title: "Blue Green Deployment", url: "harness.io/blog/blue-green-deployment", etv: 29800, kd: 28 },
+    { competitor: "LaunchDarkly", title: "Smoke Testing Guide", url: "launchdarkly.com/blog/smoke-testing/", etv: 5011, kd: 12 },
+    { competitor: "Optimizely", title: "Feature Management Guide", url: "optimizely.com/insights/blog/feature-management/", etv: 4900, kd: 30 },
+    { competitor: "Eppo", title: "A/B testing vs. split testing", url: "geteppo.com/blog/ab-testing-vs-split-testing", etv: 4212, kd: 8 },
+    { competitor: "Unleash", title: "Trunk-Based Development", url: "getunleash.io/blog/trunk-based-development", etv: 2081, kd: 22 },
+    { competitor: "PostHog", title: "Product engineer vs software engineer", url: "posthog.com/blog/product-engineer", etv: 898, kd: 18 },
+    { competitor: "Flagsmith", title: "Canary Deployment", url: "flagsmith.com/blog/canary-deployments/", etv: 258, kd: 14 },
+    { competitor: "GrowthBook", title: "What is A/B Testing?", url: "growthbook.io/blog/ab-testing", etv: 51, kd: 72 },
+  ],
   youtube: {
     channels: [
       { name: "GrowthBook", avg_views: 226, video_count: 20, videos: [
@@ -217,6 +234,7 @@ const TABS = [
   { id: "gsc", label: "📈 GSC Detail" },
   { id: "youtube", label: "▶️ YouTube" },
   { id: "content", label: "🆕 New Content" },
+  { id: "etv_kd", label: "📉 ETV vs KD" },
 ];
 
 export default function CompyDashboard() {
@@ -284,14 +302,14 @@ export default function CompyDashboard() {
           <Section title="Executive Summary">
             <div style={{ ...card({ padding: 20 }) }}>
               {d.exec_summary.map((p, i) => (
-                <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14 }}>{p}</p>
+                <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14, textAlign: "left" }}>{p}</p>
               ))}
             </div>
           </Section>
 
           {/* Top 5 Competitor Content Opportunities */}
           <Section title="Top 5 Competitor Content Opportunities">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14 }}>
+            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
               Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance. ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
             </p>
             <Table
@@ -383,7 +401,7 @@ export default function CompyDashboard() {
         {/* ── OPPORTUNITIES ── */}
         {tab === "opportunities" && (<>
           <Section title="Top 5 Content Opportunities">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14 }}>
+            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
               Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance.
               ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
             </p>
@@ -397,7 +415,7 @@ export default function CompyDashboard() {
           </Section>
 
           <Section title="Striking Distance (Positions 8–20)">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14 }}>
+            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
               Pages ranking just outside the top 10 — incremental optimization could move these into click territory.
             </p>
             <Table
@@ -421,7 +439,7 @@ export default function CompyDashboard() {
                   <Bar key={c.name} label={c.name} value={c.etv} max={max} color={COMP_COLORS[c.name] || C.accent} />
                 ));
               })()}
-              <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, marginBottom: 0 }}>
+              <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, marginBottom: 0, textAlign: "left" }}>
                 Note: GrowthBook ETV (~186) underreports actual traffic. GSC shows ~9,700 clicks/mo — 45% is branded search, which ETV doesn't count.
               </p>
             </div>
@@ -506,11 +524,11 @@ export default function CompyDashboard() {
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
               <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.success}` }) }}>
                 <div style={{ fontSize: 12, fontWeight: 700, color: C.success, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>GrowthBook YouTube</div>
-                <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50" }}>{gbNarrative}</p>
+                <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50", textAlign: "left" }}>{gbNarrative}</p>
               </div>
               <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.accent}` }) }}>
                 <div style={{ fontSize: 12, fontWeight: 700, color: C.accent, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>Competitor YouTube</div>
-                <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50" }}>{compNarrative}</p>
+                <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50", textAlign: "left" }}>{compNarrative}</p>
               </div>
             </div>
 
@@ -558,7 +576,7 @@ export default function CompyDashboard() {
                         ) : (
                           <><td /><td /><td /><td /></>
                         )}
-                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480 }}>{v.is_outlier ? "🔥 " : "📊 "}<a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{v.title}</a></td>
+                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480, textAlign: "left" }}>{v.is_outlier ? "🔥 " : "📊 "}<a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{v.title}</a></td>
                         <td style={{ padding: "5px 8px", textAlign: "right", whiteSpace: "nowrap" }}>{v.views.toLocaleString()}</td>
                         <td style={{ padding: "5px 8px", fontWeight: 700, color: isGB ? C.success : C.accent, whiteSpace: "nowrap" }}>{v.mult}×</td>
                         <td style={{ padding: "5px 8px", color: C.muted, whiteSpace: "nowrap" }}>{v.date}</td>
@@ -567,7 +585,7 @@ export default function CompyDashboard() {
                   })}
                 </tbody>
               </table>
-              <p style={{ fontSize: 12, color: C.muted, marginTop: 10 }}>
+              <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
                 🔥 = 2× or more views vs channel's 90-day average. 📊 = top non-outlier videos for context. Source: YouTube Data API v3.
               </p>
             </Section>
@@ -587,8 +605,31 @@ export default function CompyDashboard() {
                 n.kd
               ])}
             />
-            <p style={{ fontSize: 12, color: C.muted, marginTop: 10 }}>
+            <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
               Amplitude's comparison content cluster (best feature flag tools for startups, best mobile A/B testing for developers) is the highest-priority threat — brand new pages with effectively zero competition.
+            </p>
+          </Section>
+        </>)}
+
+        {/* ── ETV vs KD ── */}
+        {tab === "etv_kd" && (<>
+          <Section title="Top Pages: ETV vs Keyword Difficulty">
+            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
+              Top competitor pages ranked by estimated monthly visitors (ETV), with their keyword difficulty (KD 0–100). Lower KD = easier to rank; higher ETV = more traffic at stake. Pages in the top-left quadrant (high ETV, low KD) are the highest-leverage targets.
+            </p>
+            <Table
+              headers={["Competitor", "Title", "URL", "ETV", "KD"]}
+              rows={d.etv_kd.map(row => [
+                <span style={{ color: COMP_COLORS[row.competitor] || C.primary, fontWeight: 600 }}>{row.competitor}</span>,
+                row.title,
+                <a href={`https://${row.url}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{row.url}</a>,
+                row.etv.toLocaleString(),
+                <span style={{ fontWeight: 700, color: row.kd >= 60 ? C.danger : row.kd >= 30 ? C.warning : C.success }}>{row.kd}</span>,
+              ])}
+            />
+            <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
+              KD color: <span style={{ color: C.success, fontWeight: 700 }}>green = easy (&lt;30)</span> · <span style={{ color: C.warning, fontWeight: 700 }}>orange = moderate (30–59)</span> · <span style={{ color: C.danger, fontWeight: 700 }}>red = hard (60+)</span>.
+              Source: DataForSEO. GrowthBook ETV underreports — see GSC for actual traffic.
             </p>
           </Section>
         </>)}
