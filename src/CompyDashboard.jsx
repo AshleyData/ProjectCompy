@@ -197,8 +197,22 @@ export default function CompyDashboard() {
             </div>
           </Section>
 
+          {/* Content Recommendations — LLM-generated action items */}
+          {(d.content_recommendations || []).length > 0 && (
+            <Section title="Content Recommendations">
+              <div style={{ ...card({ padding: "16px 20px" }) }}>
+                {d.content_recommendations.map((rec, i) => (
+                  <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start", padding: "8px 0", borderBottom: i < d.content_recommendations.length - 1 ? `1px solid ${C.border}` : "none" }}>
+                    <div style={{ fontSize: 18, fontWeight: 800, color: C.accent, width: 24, flexShrink: 0, lineHeight: 1.4 }}>{i + 1}</div>
+                    <div style={{ fontSize: 13, color: "#2C3E50", lineHeight: 1.6 }}>{rec}</div>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
+
           {/* Top 5 Content Opportunities — live data */}
-          <Section title="Top 5 Content Opportunities">
+          <Section title="Top 5 Competitor Content Opportunities">
             <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
               Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance. ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
             </p>
