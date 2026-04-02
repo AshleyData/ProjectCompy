@@ -254,7 +254,7 @@ export default function CompyDashboard() {
             <Table
               headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
               rows={d.striking_distance.map(q => [
-                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
+                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
                 q.position, q.impressions.toLocaleString(), q.clicks,
                 <OpportunityBadge opp={q.opportunity} />
               ])}
@@ -296,7 +296,7 @@ export default function CompyDashboard() {
             <Table
               headers={["Page", "This Week", "Prior Week", "Change"]}
               rows={d.top_movers.gains.map(m => [
-                m.url, m.clicks, m.prior,
+                <span style={{ display: "block", textAlign: "left" }}>{m.url}</span>, m.clicks, m.prior,
                 <span style={{ color: C.success, fontWeight: 700 }}>+{m.change}</span>
               ])}
               compact
@@ -307,7 +307,7 @@ export default function CompyDashboard() {
             <Table
               headers={["Page", "This Week", "Prior Week", "Change"]}
               rows={d.top_movers.declines.map(m => [
-                m.url, m.clicks, m.prior,
+                <span style={{ display: "block", textAlign: "left" }}>{m.url}</span>, m.clicks, m.prior,
                 <span style={{ color: C.danger, fontWeight: 700 }}>{m.change}</span>
               ])}
               compact
@@ -318,7 +318,7 @@ export default function CompyDashboard() {
             <Table
               headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
               rows={d.striking_distance.map(q => [
-                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
+                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
                 q.position, q.impressions.toLocaleString(), q.clicks,
                 <OpportunityBadge opp={q.opportunity} />
               ])}
