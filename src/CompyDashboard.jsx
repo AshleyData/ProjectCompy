@@ -96,15 +96,12 @@ export default function CompyDashboard() {
   const [loadError, setLoadError] = useState(null);
 
   useEffect(() => {
-    // Generate candidate dates: last 8 Saturdays from today
+    // Try today and each of the last 21 days to find the most recent data file
     const candidates = [];
     const d0 = new Date();
-    // Roll back to most recent Saturday
-    const dow = d0.getDay(); // 0=Sun,6=Sat
-    const daysBack = dow === 6 ? 0 : (dow + 1); // days since last Sat
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 21; i++) {
       const dt = new Date(d0);
-      dt.setDate(d0.getDate() - daysBack - i * 7);
+      dt.setDate(d0.getDate() - i);
       candidates.push(dt.toISOString().slice(0, 10));
     }
     const tryLoad = (i) => {
