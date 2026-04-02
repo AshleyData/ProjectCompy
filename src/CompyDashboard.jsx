@@ -97,7 +97,7 @@ export default function CompyDashboard() {
 
   useEffect(() => {
     // Try to load the most recent data file
-    const dates = ["2026-03-30"];
+    const dates = ["2026-04-02", "2026-03-30"];
     const tryLoad = (i) => {
       if (i >= dates.length) {
         setLoadError("No data file found.");
