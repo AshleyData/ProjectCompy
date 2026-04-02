@@ -259,24 +259,6 @@ export default function CompyDashboard() {
             />
           </Section>
 
-          {/* Top 5 opportunities preview */}
-          <Section title="Top 5 Content Opportunities">
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {d.opportunities.map((o, i) => (
-                <div key={i} style={{ ...card({ padding: "14px 18px", display: "flex", alignItems: "flex-start", gap: 14 }) }}>
-                  <div style={{ fontSize: 24, fontWeight: 800, color: C.accent, width: 32, textAlign: "center", flexShrink: 0 }}>#{o.rank}</div>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 3, flexWrap: "wrap" }}>
-                      <span style={{ fontWeight: 700, fontSize: 14, color: C.primary }}>{o.topic}</span>
-                      <BucketBadge bucket={o.bucket} />
-                    </div>
-                    <div style={{ fontSize: 13, color: C.muted, marginBottom: 4 }}>Lead: {o.competitor} · KD {o.kd} · Score {o.score}</div>
-                    <div style={{ fontSize: 12, color: "#555", lineHeight: 1.5 }}>{o.why}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Section>
         </>)}
 
         {/* ── OPPORTUNITIES ── */}
