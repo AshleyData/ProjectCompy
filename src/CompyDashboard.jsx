@@ -188,74 +188,21 @@ export default function CompyDashboard() {
             </div>
           </Section>
 
-          {/* Top 5 Competitor Content Opportunities */}
-          <Section title="Top 5 Competitor Content Opportunities">
+          {/* Top 5 Content Opportunities — live data */}
+          <Section title="Top 5 Content Opportunities">
             <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
               Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance. ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
             </p>
             <Table
-              headers={["What to Write", "Score", "KD", "Bucket", "Why It Matters"]}
-              rows={[
-                [
-                  <span><strong>Feature Flags</strong><br /><a href="https://launchdarkly.com/platform/feature-flags" style={{ fontSize: 11, color: C.accent }} target="_blank" rel="noopener noreferrer">launchdarkly.com/platform/feature-flags</a></span>,
-                  "75.0", "38", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>LaunchDarkly's feature flags platform page ranks for core feature flag queries with KD 38. GrowthBook has a strong feature flags product but no dedicated ranking page competing for this term.</span>
-                ],
-                [
-                  <span><strong>Best Feature Flag Tools for Startups</strong><br /><a href="https://amplitude.com/compare/best-feature-flag-tools-for-startups" style={{ fontSize: 11, color: C.accent }} target="_blank" rel="noopener noreferrer">amplitude.com/compare/best-feature-flag-tools-for-startups</a></span>,
-                  "75.0", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Amplitude's comparison page targets startup buyers at the moment of vendor selection. Startups are GrowthBook's core audience. KD n/a = brand-new page, effectively zero competition.</span>
-                ],
-                [
-                  <span><strong>Best Mobile A/B Testing for Developers</strong><br /><a href="https://amplitude.com/compare/best-mobile-ab-testing-for-developers" style={{ fontSize: 11, color: C.accent }} target="_blank" rel="noopener noreferrer">amplitude.com/compare/best-mobile-ab-testing-for-developers</a></span>,
-                  "75.0", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Developers are GrowthBook's primary persona. Amplitude owns this bottom-of-funnel query unopposed. No KD data — page too new for DataForSEO tracking.</span>
-                ],
-                [
-                  <span><strong>Best Product Experimentation Tools for Startups</strong><br /><a href="https://amplitude.com/compare/best-product-experimentation-tools-for-startups" style={{ fontSize: 11, color: C.accent }} target="_blank" rel="noopener noreferrer">amplitude.com/compare/best-product-experimentation-tools-for-startups</a></span>,
-                  "75.0", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Third in Amplitude's startup experimentation cluster. Publishing all three GrowthBook equivalents in one sprint builds topical authority fast.</span>
-                ],
-                [
-                  <span><strong>Top A/B Testing Platforms</strong><br /><a href="https://amplitude.com/compare/top-ab-testing-platforms" style={{ fontSize: 11, color: C.accent }} target="_blank" rel="noopener noreferrer">amplitude.com/compare/top-ab-testing-platforms</a></span>,
-                  "75.0", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>High-intent comparison query. Amplitude is establishing itself as the go-to resource for buyers evaluating A/B testing platforms — GrowthBook is absent.</span>
-                ],
-              ]}
-            />
-          </Section>
-
-          {/* Content Recommendations */}
-          <Section title="Content Recommendations">
-            <Table
-              headers={["Action", "Score", "KD", "Bucket", "Rationale"]}
-              rows={[
-                [
-                  <span style={{ fontSize: 13 }}>Write a /compare or /blog page targeting <strong>'Best feature flag tools for startups'</strong></span>,
-                  "75", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Frame GrowthBook as the open-source, startup-friendly alternative. Amplitude owns this query unopposed. Low KD, high buyer intent — highest-leverage quick win.</span>
-                ],
-                [
-                  <span style={{ fontSize: 13 }}>Write a developer-focused guide targeting <strong>'Best mobile A/B testing for developers'</strong></span>,
-                  "75", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Lead with GrowthBook's SDK-first, open-source positioning. Developers are the primary buyer persona and Amplitude currently has no competition here.</span>
-                ],
-                [
-                  <span style={{ fontSize: 13 }}>Write a startup experimentation guide targeting <strong>'Best product experimentation tools for startups'</strong></span>,
-                  "75", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Third in the startup cluster. Publish all three as a sprint to build topical authority and intercept Amplitude's funnel at multiple entry points.</span>
-                ],
-                [
-                  <span style={{ fontSize: 13 }}>Write a page targeting <strong>'Top A/B testing platforms'</strong> — position GrowthBook as the open-source, warehouse-native option</span>,
-                  "75", "n/a", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>Amplitude is building a comparison content moat. GrowthBook needs at least one 'best-of' page to compete in this category before the gap widens further.</span>
-                ],
-                [
-                  <span style={{ fontSize: 13 }}>Refresh /compare/growthbook-vs-launchdarkly to address feature flags + experimentation use cases</span>,
-                  "75", "38", <BucketBadge bucket="Quick Win" />,
-                  <span style={{ fontSize: 12, color: "#555" }}>LaunchDarkly's feature flags page (KD 38) is the #1 ranked opportunity. The compare page got minimal clicks this week. Adding feature flags and experimentation depth would intercept buyers evaluating LaunchDarkly directly.</span>
-                ],
-              ]}
+              headers={["Rank", "Topic", "Competitor", "Score", "KD", "Bucket", "Why It Matters"]}
+              rows={d.opportunities.map(o => [
+                `#${o.rank}`,
+                <span style={{ display: "block", textAlign: "left" }}>{o.topic}</span>,
+                <span style={{ display: "block", textAlign: "left" }}>{o.competitor}</span>,
+                o.score, o.kd,
+                <BucketBadge bucket={o.bucket} />,
+                <span style={{ fontSize: 12, color: "#555" }}>{o.why}</span>
+              ])}
             />
           </Section>
 
