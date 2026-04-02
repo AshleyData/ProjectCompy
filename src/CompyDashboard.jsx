@@ -311,6 +311,27 @@ export default function CompyDashboard() {
               compact
             />
           </Section>
+
+          {(d.compare_pages || []).length > 0 && (
+            <Section title="Compare Pages (GSC)">
+              <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
+                GrowthBook /compare/ page performance from Google Search Console. Clicks, impressions, and average position this week vs prior week.
+              </p>
+              <Table
+                headers={["Page", "Position", "Impressions", "Clicks (7d)", "WoW", "Clicks (28d)", "28d Δ"]}
+                rows={(d.compare_pages || []).map(p => [
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{p.label}</a>,
+                  p.position,
+                  p.impressions.toLocaleString(),
+                  p.clicks_this,
+                  <span style={{ color: p.clicks_delta > 0 ? C.success : p.clicks_delta < 0 ? C.danger : C.muted, fontWeight: 700 }}>{p.clicks_delta > 0 ? "+" : ""}{p.clicks_delta}</span>,
+                  p.clicks_28d,
+                  <span style={{ color: p.clicks_28d_delta > 0 ? C.success : p.clicks_28d_delta < 0 ? C.danger : C.muted, fontWeight: 700 }}>{p.clicks_28d_delta > 0 ? "+" : ""}{p.clicks_28d_delta}</span>,
+                ])}
+                compact
+              />
+            </Section>
+          )}
         </>)}
 
         {/* ── YOUTUBE ── */}
