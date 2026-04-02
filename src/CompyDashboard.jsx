@@ -240,7 +240,8 @@ export default function CompyDashboard() {
             <Table
               headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
               rows={d.striking_distance.map(q => [
-                q.query, q.position, q.impressions.toLocaleString(), q.clicks,
+                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
+                q.position, q.impressions.toLocaleString(), q.clicks,
                 <OpportunityBadge opp={q.opportunity} />
               ])}
               compact
@@ -303,7 +304,8 @@ export default function CompyDashboard() {
             <Table
               headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
               rows={d.striking_distance.map(q => [
-                q.query, q.position, q.impressions.toLocaleString(), q.clicks,
+                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
+                q.position, q.impressions.toLocaleString(), q.clicks,
                 <OpportunityBadge opp={q.opportunity} />
               ])}
               compact
