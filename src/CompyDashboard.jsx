@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {
   BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
-  ScatterChart, Scatter, LineChart, Line,
+  ScatterChart, Scatter, ZAxis, LineChart, Line,
   CartesianGrid, ResponsiveContainer, Cell,
 } from "recharts";
 
@@ -65,6 +65,7 @@ function Table({ headers, rows, compact }) {
     </div>
   );
 }
+const DataTable = Table;
 
 function Section({ title, children }) {
   return (
@@ -93,6 +94,7 @@ const TABS = [
   { id: "youtube", label: "▶️ YouTube" },
   { id: "content", label: "🆕 New Content" },
   { id: "etv_kd", label: "📉 ETV vs KD" },
+  { id: "growthbook", label: "📗 GrowthBook" },
 ];
 
 export default function CompyDashboard() {
@@ -627,6 +629,113 @@ export default function CompyDashboard() {
             </p>
           </Section>
         </>)}
+
+        {/* ── GROWTHBOOK ── */}
+        {tab === "growthbook" && (() => {
+          const gbPages = Array.isArray(d.gb_pages) ? d.gb_pages : [];
+          const gbSorted = [...gbPages].sort((a, b) => (b.clicks || 0) - (a.clicks || 0));
+          const top20Bars = gbSorted
+            .slice(0, 20)
+            .map((p) => ({
+              ...p,
+              label: (p.url || "").replace(/^https?:\/\//, ""),
+            }))
+            .sort((a, b) => (a.clicks || 0) - (b.clicks || 0));
+          const scatterData = gbPages
+            .filter((p) => typeof p.avg_position === "number" && typeof p.clicks === "number")
+            .map((p) => ({
+              x: p.avg_position,
+              y: p.clicks,
+              z: p.impressions || 0,
+              url: p.url || "",
+              shortUrl: (p.url || "").replace(/^https?:\/\//, ""),
+            }));
+
+          return (
+            <>
+              <Section title="Top GrowthBook Pages by GSC Clicks (28 days)">
+                {top20Bars.length === 0 ? (
+                  <div style={{ ...card({ padding: "16px 20px", color: C.muted }) }}>
+                    GrowthBook page data will appear after the next weekly run.
+                  </div>
+                ) : (
+                  <ResponsiveContainer width="100%" height={580}>
+                    <BarChart data={top20Bars} layout="vertical" margin={{ left: 10, right: 50, top: 4, bottom: 4 }}>
+                      <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                      <XAxis type="number" tick={{ fontSize: 11 }} />
+                      <YAxis type="category" dataKey="label" tick={{ fontSize: 10 }} width={360} />
+                      <RTooltip formatter={(v) => [Number(v || 0).toLocaleString(), "Clicks"]} />
+                      <RBar dataKey="clicks" radius={[0, 4, 4, 0]} fill={C.green || "#4CAF50"} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                )}
+              </Section>
+
+              <Section title="GrowthBook Pages: Clicks vs Position">
+                {scatterData.length === 0 ? (
+                  <div style={{ ...card({ padding: "16px 20px", color: C.muted }) }}>
+                    No GrowthBook page points available yet.
+                  </div>
+                ) : (
+                  <ResponsiveContainer width="100%" height={400}>
+                    <ScatterChart margin={{ left: 20, right: 30, top: 10, bottom: 20 }}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis
+                        type="number"
+                        dataKey="x"
+                        name="Avg Position (lower = better)"
+                        domain={[20, 1]}
+                        label={{ value: "Avg Position (lower = better)", position: "insideBottom", offset: -10, fontSize: 12 }}
+                        tick={{ fontSize: 11 }}
+                      />
+                      <YAxis
+                        type="number"
+                        dataKey="y"
+                        name="Clicks (28d)"
+                        label={{ value: "Clicks (28d)", angle: -90, position: "insideLeft", fontSize: 12 }}
+                        tick={{ fontSize: 11 }}
+                      />
+                      <ZAxis type="number" dataKey="z" range={[40, 200]} name="Impressions" />
+                      <RTooltip
+                        cursor={{ strokeDasharray: "3 3" }}
+                        content={({ payload }) => {
+                          if (!payload || !payload.length) return null;
+                          const p = payload[0].payload || {};
+                          const shown = (p.shortUrl || "").length > 80 ? `${p.shortUrl.slice(0, 80)}...` : (p.shortUrl || "");
+                          return (
+                            <div style={{ background: "#fff", border: `1px solid ${C.border}`, padding: "8px 12px", fontSize: 12, maxWidth: 300 }}>
+                              <div style={{ fontWeight: 700, marginBottom: 4 }}>{shown}</div>
+                              <div>Clicks: <strong>{Number(p.y || 0).toLocaleString()}</strong></div>
+                              <div>Position: <strong>{Number(p.x || 0).toFixed(2)}</strong></div>
+                            </div>
+                          );
+                        }}
+                      />
+                      <Scatter data={scatterData} fill="#4CAF50" />
+                    </ScatterChart>
+                  </ResponsiveContainer>
+                )}
+              </Section>
+
+              <Section title="GrowthBook Pages — Full GSC Data">
+                <DataTable
+                  headers={["URL", "Clicks", "Impressions", "CTR", "Avg Position"]}
+                  rows={gbSorted.map((row) => {
+                    const ctrRaw = Number(row.ctr || 0);
+                    const ctrPct = ctrRaw <= 1 ? ctrRaw * 100 : ctrRaw;
+                    return [
+                      <a href={row.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{row.url}</a>,
+                      Number(row.clicks || 0).toLocaleString(),
+                      Number(row.impressions || 0).toLocaleString(),
+                      `${ctrPct.toFixed(2)}%`,
+                      Number(row.avg_position || 0).toFixed(2),
+                    ];
+                  })}
+                />
+              </Section>
+            </>
+          );
+        })()}
 
       </div>
 
