@@ -539,12 +539,17 @@ export default function CompyDashboard() {
         {tab === "etv_kd" && (<>
           {/* Chart 3 — Top 20 pages by ETV */}
           {(d.etv_kd || []).length > 0 && (() => {
-            // Sort ascending so Recharts (bottom-to-top rendering) puts largest on top
-            const top20 = d.etv_kd.slice(0, 20).map(r => ({
-              label: (r.url || "").replace(/^https?:\/\//, ""),
-              etv: r.etv,
-              competitor: r.competitor,
-            })).sort((a, b) => a.etv - b.etv);
+            // Sort descending first to get top 20, then ascending so Recharts
+            // (bottom-to-top rendering) puts the largest bar at the top visually
+            const top20 = [...d.etv_kd]
+              .sort((a, b) => b.etv - a.etv)
+              .slice(0, 20)
+              .map(r => ({
+                label: (r.url || "").replace(/^https?:\/\//, ""),
+                etv: r.etv,
+                competitor: r.competitor,
+              }))
+              .sort((a, b) => a.etv - b.etv);
             return (
               <Section title="Top 20 Competitor Pages by Estimated Traffic">
                 <ResponsiveContainer width="100%" height={580}>
