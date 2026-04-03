@@ -1,4 +1,9 @@
 import { useState, useEffect } from "react";
+import {
+  BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
+  ScatterChart, Scatter, LineChart, Line,
+  CartesianGrid, ResponsiveContainer, Cell,
+} from "recharts";
 
 
 const C = {
@@ -276,6 +281,41 @@ export default function CompyDashboard() {
             </div>
           </Section>
 
+          {/* Chart 5 — ETV trend over time, GrowthBook on secondary Y-axis */}
+          {d.etv_trend && Object.keys(d.etv_trend).length > 0 && (() => {
+            const allDates = [...new Set(Object.values(d.etv_trend).flatMap(pts => pts.map(p => p.date)))].sort();
+            const lineData = allDates.map(date => {
+              const row = { date: date.slice(5).replace("-", "/") }; // "03/27"
+              Object.entries(d.etv_trend).forEach(([comp, pts]) => {
+                const pt = pts.find(p => p.date === date);
+                row[comp] = pt ? pt.etv : null;
+              });
+              return row;
+            });
+            const mainComps = Object.keys(d.etv_trend).filter(c => c !== "GrowthBook");
+            return (
+              <Section title="Competitor Total ETV — Weekly Trend">
+                <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
+                  GrowthBook (right axis, green) plotted separately due to scale difference — DataForSEO undercounts branded traffic.
+                </p>
+                <ResponsiveContainer width="100%" height={340}>
+                  <LineChart data={lineData} margin={{ left: 10, right: 60, top: 10, bottom: 10 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="date" tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="left" tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} tick={{ fontSize: 11 }} />
+                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11, fill: C.success }} tickFormatter={v => v} domain={["auto", "auto"]} />
+                    <RTooltip formatter={(v, name) => [v != null ? v.toLocaleString() : "—", name]} />
+                    <Legend />
+                    {mainComps.map(comp => (
+                      <Line key={comp} yAxisId="left" type="monotone" dataKey={comp} stroke={COMP_COLORS[comp] || C.accent} strokeWidth={2} dot={false} connectNulls />
+                    ))}
+                    <Line yAxisId="right" type="monotone" dataKey="GrowthBook" stroke={C.success} strokeWidth={2.5} strokeDasharray="5 3" dot={{ r: 3 }} connectNulls />
+                  </LineChart>
+                </ResponsiveContainer>
+              </Section>
+            );
+          })()}
+
           <Section title="Competitor Detail">
             <Table
               headers={["Competitor", "Total ETV", "Pages", "Top Page", "Top Page ETV"]}
@@ -447,6 +487,26 @@ export default function CompyDashboard() {
 
         {/* ── NEW CONTENT ── */}
         {tab === "content" && (<>
+          {(() => {
+            const counts = {};
+            (d.new_content || []).forEach(n => { counts[n.competitor] = (counts[n.competitor] || 0) + 1; });
+            const chartData = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([name, count]) => ({ name, count }));
+            return chartData.length > 0 ? (
+              <Section title="New Pages Published This Week">
+                <ResponsiveContainer width="100%" height={Math.max(120, chartData.length * 40)}>
+                  <BarChart data={chartData} layout="vertical" margin={{ left: 100, right: 30, top: 4, bottom: 4 }}>
+                    <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                    <XAxis type="number" tick={{ fontSize: 11 }} allowDecimals={false} />
+                    <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={95} />
+                    <RTooltip formatter={(v) => [v, "New pages"]} />
+                    <RBar dataKey="count" radius={[0, 4, 4, 0]}>
+                      {chartData.map((entry, i) => <Cell key={i} fill={COMP_COLORS[entry.name] || C.accent} />)}
+                    </RBar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </Section>
+            ) : null;
+          })()}
           <Section title="New Competitor Pages This Week (High-Threat)">
             <Table
               headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
@@ -466,6 +526,70 @@ export default function CompyDashboard() {
 
         {/* ── ETV vs KD ── */}
         {tab === "etv_kd" && (<>
+          {/* Chart 3 — Top 20 pages by ETV */}
+          {(d.etv_kd || []).length > 0 && (() => {
+            const top20 = d.etv_kd.slice(0, 20).map(r => ({
+              label: (r.url || "").replace(/^www\./, "").split("/").slice(0, 3).join("/").slice(0, 38),
+              etv: r.etv,
+              competitor: r.competitor,
+            })).reverse();
+            return (
+              <Section title="Top 20 Competitor Pages by Estimated Traffic">
+                <ResponsiveContainer width="100%" height={540}>
+                  <BarChart data={top20} layout="vertical" margin={{ left: 200, right: 50, top: 4, bottom: 4 }}>
+                    <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                    <XAxis type="number" tick={{ fontSize: 11 }} tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} />
+                    <YAxis type="category" dataKey="label" tick={{ fontSize: 10 }} width={195} />
+                    <RTooltip formatter={(v) => [v.toLocaleString(), "Est. monthly traffic"]} />
+                    <RBar dataKey="etv" radius={[0, 4, 4, 0]}>
+                      {top20.map((entry, i) => <Cell key={i} fill={COMP_COLORS[entry.competitor] || C.accent} />)}
+                    </RBar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </Section>
+            );
+          })()}
+
+          {/* Chart 4 — ETV vs KD scatter */}
+          {(d.etv_kd || []).length > 0 && (() => {
+            const byComp = {};
+            (d.etv_kd || []).forEach(r => {
+              if (r.kd == null) return;
+              if (!byComp[r.competitor]) byComp[r.competitor] = [];
+              byComp[r.competitor].push({ x: r.kd, y: r.etv, title: r.title, url: r.url });
+            });
+            const comps = Object.keys(byComp).sort();
+            return (
+              <Section title="ETV vs Keyword Difficulty — Competitor Pages">
+                <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
+                  Top-left quadrant (low KD, high ETV) = highest-leverage content opportunities. Each dot = one competitor page.
+                </p>
+                <ResponsiveContainer width="100%" height={400}>
+                  <ScatterChart margin={{ left: 20, right: 30, top: 10, bottom: 20 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis type="number" dataKey="x" name="KD" domain={[0, 100]} label={{ value: "Keyword Difficulty", position: "insideBottom", offset: -10, fontSize: 12 }} tick={{ fontSize: 11 }} />
+                    <YAxis type="number" dataKey="y" name="ETV" tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} tick={{ fontSize: 11 }} />
+                    <RTooltip cursor={{ strokeDasharray: "3 3" }} content={({ payload }) => {
+                      if (!payload || !payload.length) return null;
+                      const p = payload[0].payload;
+                      return (
+                        <div style={{ background: "#fff", border: `1px solid ${C.border}`, padding: "8px 12px", fontSize: 12, maxWidth: 260 }}>
+                          <div style={{ fontWeight: 700, marginBottom: 4 }}>{payload[0].name || ""}</div>
+                          <div style={{ color: C.muted, marginBottom: 2 }}>{(p.title || "").slice(0, 55)}</div>
+                          <div>ETV: <strong>{(p.y || 0).toLocaleString()}</strong> · KD: <strong>{p.x}</strong></div>
+                        </div>
+                      );
+                    }} />
+                    <Legend />
+                    {comps.map(comp => (
+                      <Scatter key={comp} name={comp} data={byComp[comp]} fill={COMP_COLORS[comp] || C.accent} opacity={0.8} />
+                    ))}
+                  </ScatterChart>
+                </ResponsiveContainer>
+              </Section>
+            );
+          })()}
+
           <Section title="Top Pages: ETV vs Keyword Difficulty">
             <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
               Top competitor pages ranked by estimated monthly visitors (ETV), with their keyword difficulty (KD 0–100). Lower KD = easier to rank; higher ETV = more traffic at stake. Pages in the top-left quadrant (high ETV, low KD) are the highest-leverage targets.
