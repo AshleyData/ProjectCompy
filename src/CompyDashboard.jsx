@@ -489,10 +489,11 @@ export default function CompyDashboard() {
         {tab === "content" && (<>
           {(() => {
             const counts = {};
-            (d.new_content || []).forEach(n => { counts[n.competitor] = (counts[n.competitor] || 0) + 1; });
-            // Add GrowthBook from GSC new content
-            const gbCount = (d.gb_new_content || []).length;
-            if (gbCount > 0) counts["GrowthBook"] = gbCount;
+            (d.new_content || []).forEach(n => {
+              // Normalise "GrowthBook Blog" and "GrowthBook Site" → "GrowthBook"
+              const name = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
+              counts[name] = (counts[name] || 0) + 1;
+            });
             const chartData = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([name, count]) => ({ name, count }));
             return chartData.length > 0 ? (
               <Section title="New Pages Published This Week">
@@ -516,37 +517,22 @@ export default function CompyDashboard() {
           <Section title="New Competitor Pages This Week (High-Threat)">
             <Table
               headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
-              rows={d.new_content.map(n => [
-                <span style={{ color: COMP_COLORS[n.competitor] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{n.competitor}</span>,
+              rows={d.new_content.map(n => {
+                const dispName = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
+                return [
+                <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
                 <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
                 n.date || "—",
-                <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span>,
-                n.kd
-              ])}
+                <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : n.threat > 0 ? C.warning : C.success }}>{n.threat > 0 ? `${n.threat}/10` : "own"}</span>,
+                n.kd || "—"
+              ]; })}
             />
             <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
               Pages scored 7–10 threat. Threat = competitor domain authority × keyword difficulty × topic relevance. Higher = more urgent to respond.
             </p>
           </Section>
 
-          {(d.gb_new_content || []).length > 0 && (
-            <Section title="GrowthBook New Content (Last 90 Days)">
-              <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
-                GrowthBook pages published in the last 90 days, tracked via Google Search Console. Clicks and impressions from this week.
-              </p>
-              <Table
-                headers={["Page", "Position", "Impressions", "Clicks", "Trend"]}
-                rows={(d.gb_new_content || []).sort((a, b) => b.clicks - a.clicks).map(p => [
-                  <a href={p.url} target="_blank" rel="noopener noreferrer" style={{ color: C.success, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{p.slug}</a>,
-                  p.position,
-                  p.impressions.toLocaleString(),
-                  p.clicks,
-                  <span style={{ fontSize: 16 }}>{p.traj}</span>,
-                ])}
-                compact
-              />
-            </Section>
-          )}
+
         </>)}
 
         {/* ── ETV vs KD ── */}
