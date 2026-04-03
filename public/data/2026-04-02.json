@@ -1,5 +1,5 @@
 {
-  "week": "2026-03-30",
+  "week": "2026-04-02",
   "gsc": {
     "clicks": 3481,
     "impressions": 114423,
@@ -15,11 +15,17 @@
     "anonymized": 1341
   },
   "exec_summary": [
-    "GrowthBook clicks slipped 4.3% week-over-week (3,418 vs. 3,572), but the headline number is less alarming than it looks. The homepage alone accounts for 1,770 clicks this week vs. 1,851 last week, an 81-click drop that is almost certainly branded search noise, not a meaningful organic loss. Impressions actually grew 5.5% (110,304 vs. 104,554), signaling improving crawl coverage. The AI testing guide (/blog/how-to-a-b-test-ai-a-practical-guide/) had the strongest momentum, jumping from 1 to 10 clicks, and the LaunchDarkly comparison page doubled from 4 to 8 clicks.",
-    "The single most important finding this week is Amplitude's aggressive push into comparison and category pages. Four of the top five opportunities are Amplitude-owned URLs targeting high-intent queries like 'best feature flag tools for startups,' 'best mobile AB testing for developers,' and 'top AB testing platforms.' These are exactly the queries that capture buyers at the moment of evaluation, and GrowthBook has no direct content competing for them. Amplitude is effectively owning the comparison layer of the funnel for GrowthBook's core audience.",
-    "No new competitor content was published this week in the feature flags or experimentation space that registered as a surge, and LaunchDarkly's core feature flags page remains the top-ranked threat at KD 38. The quiet week from competitors is a window to move on the Amplitude comparison gaps before they compound further."
+    "GrowthBook clicks grew modestly to 3,481 this week, up from 3,464 (+0.5%), while impressions jumped 10.2% to 114,423 and average position improved from 9.56 to 9.1. The homepage (/) accounts for the largest single decline at -32 clicks, but that is branded search fluctuation and not a signal of broader organic weakness. Comparison page data returned no tracked views this week, which looks like a data quality gap rather than a real drop to zero.",
+    "The most important strategic finding this week is Amplitude's aggressive push into comparison and category pages targeting startup and developer audiences. Four of the top five opportunities this week are Amplitude-owned pages covering feature flag tools for startups, mobile A/B testing for developers, product experimentation tools, and top A/B testing platforms. These are high-intent, bottom-of-funnel queries where GrowthBook has a credible story to tell but currently no dedicated content competing for them. Missing these means Amplitude is capturing evaluation-stage traffic from exactly the buyers GrowthBook should be winning.",
+    "No competitor published new content this week that is directly relevant to feature flags or experimentation. Competitor content surge data is also flat. The quieter week externally makes it a good window to close the content gaps Amplitude has been quietly building out."
   ],
-  "content_recommendations": [],
+  "content_recommendations": [
+    "1. Write a /compare or /blog page targeting 'Best feature flag tools for startups' \u2014 Amplitude owns this query unopposed with a brand-new page (KD n/a = zero competition). Startups are GrowthBook's core audience and this is a high-intent, bottom-of-funnel query.",
+    "2. Write a developer-focused guide targeting 'Best mobile A/B testing for developers' \u2014 Amplitude's comparison page targets GrowthBook's primary buyer persona. No competition currently.",
+    "3. Write a startup experimentation guide targeting 'Best product experimentation tools for startups' \u2014 Third in Amplitude's cluster. Publishing all three as a sprint builds topical authority and intercepts Amplitude's funnel at multiple entry points.",
+    "4. Refresh /compare/growthbook-vs-launchdarkly \u2014 LaunchDarkly's feature flags page (KD 38) is the top-ranked keyword opportunity. The compare page is ranking at position 8.4 with 23 clicks in 28 days \u2014 optimization here has clear upside.",
+    "5. Write a page targeting 'Top A/B testing platforms' \u2014 Amplitude is building a comparison content moat. GrowthBook needs at least one best-of page to compete in this category before the gap widens further."
+  ],
   "opportunities": [
     {
       "rank": 1,
@@ -46,7 +52,7 @@
       "topic": "a/b split testing",
       "competitor": "Optimizely",
       "score": 83.2,
-      "kd": 0.0,
+      "kd": "n/a",
       "bucket": "Quick Win",
       "url": "",
       "why": "Optimizely ranks for 'a/b split testing' while GrowthBook has weak or no coverage. Score 83.2."
@@ -56,7 +62,7 @@
       "topic": "multi bandit",
       "competitor": "LaunchDarkly",
       "score": 82.8,
-      "kd": 17.0,
+      "kd": "n/a",
       "bucket": "Quick Win",
       "url": "",
       "why": "LaunchDarkly ranks for 'multi bandit' while GrowthBook has weak or no coverage. Score 82.8."
@@ -89,6 +95,13 @@
         "position": 17.2
       },
       {
+        "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
+        "clicks": 5,
+        "prior": 1,
+        "change": 4,
+        "position": 8.0
+      },
+      {
         "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/",
         "clicks": 5,
         "prior": 1,
@@ -96,11 +109,18 @@
         "position": 7.0
       },
       {
-        "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
-        "clicks": 5,
-        "prior": 1,
-        "change": 4,
-        "position": 8.0
+        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+        "clicks": 6,
+        "prior": 4,
+        "change": 2,
+        "position": 7.1
+      },
+      {
+        "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
+        "clicks": 7,
+        "prior": 5,
+        "change": 2,
+        "position": 8.4
       }
     ],
     "declines": [
@@ -133,18 +153,18 @@
         "position": 5.2
       },
       {
-        "url": "https://www.growthbook.io/customers",
-        "clicks": 2,
-        "prior": 5,
-        "change": -3,
-        "position": 3.2
-      },
-      {
         "url": "https://blog.growthbook.io/",
         "clicks": 5,
         "prior": 8,
         "change": -3,
         "position": 2.3
+      },
+      {
+        "url": "https://www.growthbook.io/customers",
+        "clicks": 2,
+        "prior": 5,
+        "change": -3,
+        "position": 3.2
       }
     ]
   },
@@ -224,57 +244,57 @@
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
       "label": "Vs Launchdarkly",
-      "clicks_this": 8,
-      "clicks_last": 4,
-      "clicks_delta": 4,
-      "impressions": 1656,
-      "position": 9.2,
-      "clicks_28d": 26,
-      "clicks_28d_delta": 15
+      "clicks_this": 7,
+      "clicks_last": 5,
+      "clicks_delta": 2,
+      "impressions": 1898,
+      "position": 8.4,
+      "clicks_28d": 23,
+      "clicks_28d_delta": 9
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-optimizely",
       "label": "Vs Optimizely",
-      "clicks_this": 1,
+      "clicks_this": 2,
       "clicks_last": 3,
-      "clicks_delta": -2,
-      "impressions": 1854,
-      "position": 7.2,
-      "clicks_28d": 23,
+      "clicks_delta": -1,
+      "impressions": 2040,
+      "position": 7.5,
+      "clicks_28d": 17,
+      "clicks_28d_delta": 3
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
+      "label": "Vs Posthog",
+      "clicks_this": 5,
+      "clicks_last": 4,
+      "clicks_delta": 1,
+      "impressions": 394,
+      "position": 6.1,
+      "clicks_28d": 14,
       "clicks_28d_delta": 14
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
       "label": "Vs Statsig",
-      "clicks_this": 1,
-      "clicks_last": 2,
-      "clicks_delta": -1,
-      "impressions": 624,
-      "position": 7.6,
+      "clicks_this": 5,
+      "clicks_last": 1,
+      "clicks_delta": 4,
+      "impressions": 705,
+      "position": 8.0,
       "clicks_28d": 13,
-      "clicks_28d_delta": -3
-    },
-    {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
-      "label": "Vs Posthog",
-      "clicks_this": 4,
-      "clicks_last": 4,
-      "clicks_delta": 0,
-      "impressions": 409,
-      "position": 6.6,
-      "clicks_28d": 13,
-      "clicks_28d_delta": 13
+      "clicks_28d_delta": -5
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
       "label": "Vs Vwo",
-      "clicks_this": 3,
-      "clicks_last": 0,
-      "clicks_delta": 3,
-      "impressions": 859,
-      "position": 7.1,
-      "clicks_28d": 6,
-      "clicks_28d_delta": -4
+      "clicks_this": 2,
+      "clicks_last": 1,
+      "clicks_delta": 1,
+      "impressions": 840,
+      "position": 7.3,
+      "clicks_28d": 4,
+      "clicks_28d_delta": -8
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-split",
@@ -282,29 +302,18 @@
       "clicks_this": 0,
       "clicks_last": 1,
       "clicks_delta": -1,
-      "impressions": 126,
-      "position": 6.9,
+      "impressions": 120,
+      "position": 7.0,
       "clicks_28d": 3,
       "clicks_28d_delta": 3
-    },
-    {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
-      "label": "Vs Adobe Target",
-      "clicks_this": 0,
-      "clicks_last": 1,
-      "clicks_delta": -1,
-      "impressions": 85,
-      "position": 9.6,
-      "clicks_28d": 2,
-      "clicks_28d_delta": 2
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
       "label": "Vs Ab Tasty",
       "clicks_this": 0,
-      "clicks_last": 1,
-      "clicks_delta": -1,
-      "impressions": 256,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 242,
       "position": 7.6,
       "clicks_28d": 2,
       "clicks_28d_delta": 2
@@ -315,19 +324,30 @@
       "clicks_this": 0,
       "clicks_last": 2,
       "clicks_delta": -2,
-      "impressions": 340,
-      "position": 6.4,
+      "impressions": 363,
+      "position": 6.8,
       "clicks_28d": 2,
       "clicks_28d_delta": 2
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-absmartly",
-      "label": "Vs Absmartly",
+      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
+      "label": "Vs Adobe Target",
       "clicks_this": 0,
+      "clicks_last": 1,
+      "clicks_delta": -1,
+      "impressions": 67,
+      "position": 7.9,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
+      "label": "Vs Kameleoon",
+      "clicks_this": 1,
       "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 173,
-      "position": 7.5,
+      "clicks_delta": 1,
+      "impressions": 63,
+      "position": 7.8,
       "clicks_28d": 1,
       "clicks_28d_delta": 1
     }
@@ -588,269 +608,281 @@
   },
   "new_content": [
     {
-      "competitor": "GrowthBook Site",
-      "slug": "warehouse-native",
-      "url": "https://www.growthbook.io/products/warehouse-native",
+      "competitor": "LaunchDarkly",
+      "slug": "platform-overview",
+      "url": "https://launchdarkly.com/product-demo/platform-overview",
+      "threat": 7,
+      "kd": 11.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "launchdarkly",
+      "url": "https://amplitude.com/compare/launchdarkly",
+      "threat": 7,
+      "kd": 22.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "cortland-management",
+      "url": "https://www.optimizely.com/insights/cortland-management",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "experience-optimization",
+      "url": "https://www.optimizely.com/solutions/experience-optimization",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "LaunchDarkly",
+      "slug": "experimentation",
+      "url": "https://launchdarkly.com/platform/experimentation",
       "threat": 6,
-      "kd": 2.0,
+      "kd": 15.0,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "product-analytics",
-      "url": "https://www.growthbook.io/products/product-analytics",
-      "threat": 5,
-      "kd": 27.0,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Blog",
-      "slug": "growthbook-version-4-3",
-      "url": "https://blog.growthbook.io/growthbook-version-4-3",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Blog",
-      "slug": "growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging",
-      "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Blog",
-      "slug": "how-khan-academy-optimizes-ai-tutoring-with-experimentation",
-      "url": "https://blog.growthbook.io/how-khan-academy-optimizes-ai-tutoring-with-experimentation",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Blog",
-      "slug": "the-best-a-b-testing-platforms-of-2025",
-      "url": "https://blog.growthbook.io/the-best-a-b-testing-platforms-of-2025",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Blog",
-      "slug": "what-are-feature-flags",
-      "url": "https://blog.growthbook.io/what-are-feature-flags",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-ab-tasty",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-absmartly",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-absmartly",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-adobe-target",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-conductrics",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-conductrics",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-eppo",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-eppo",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-kameleoon",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-launchdarkly",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-optimizely",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-optimizely",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-posthog",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-salesforce-mc-personalization",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-salesforce-mc-personalization",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-sitespect",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-sitespect",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-split",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-statsig",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-vs-vwo",
-      "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "experiments",
-      "url": "https://www.growthbook.io/products/experiments",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-03-30"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "feature-flagging",
-      "url": "https://www.growthbook.io/products/feature-flagging",
-      "threat": 4,
+      "competitor": "LaunchDarkly",
+      "slug": "feature-flags",
+      "url": "https://launchdarkly.com/platform/feature-flags",
+      "threat": 6,
       "kd": 38.0,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "managed-warehouse",
-      "url": "https://www.growthbook.io/products/managed-warehouse",
-      "threat": 4,
+      "competitor": "Harness",
+      "slug": "application-security-testing",
+      "url": "https://www.harness.io/products/application-security-testing",
+      "threat": 6,
+      "kd": 17.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "cloud-cost-management",
+      "url": "https://www.harness.io/products/cloud-cost-management",
+      "threat": 6,
+      "kd": 28.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "ci-cloud",
+      "url": "https://www.harness.io/products/continuous-integration/ci-cloud",
+      "threat": 6,
+      "kd": 29.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "api-testing",
+      "url": "https://www.harness.io/products/web-application-and-api-protection/api-testing",
+      "threat": 6,
+      "kd": 25.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "custom-pr-agent",
+      "url": "https://amplitude.com/blog/custom-pr-agent",
+      "threat": 6,
       "kd": null,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "10-things-to-do-before-running-an-experiment",
-      "url": "https://www.growthbook.io/resources/10-things-to-do-before-running-an-experiment",
-      "threat": 4,
+      "competitor": "Amplitude Exp",
+      "slug": "fast-company-2026",
+      "url": "https://amplitude.com/blog/fast-company-2026",
+      "threat": 6,
       "kd": null,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "7-steps-to-better-experiment-design",
-      "url": "https://www.growthbook.io/resources/7-steps-to-better-experiment-design",
-      "threat": 4,
+      "competitor": "Amplitude Exp",
+      "slug": "healthcare-ai",
+      "url": "https://amplitude.com/blog/healthcare-ai",
+      "threat": 6,
       "kd": null,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "a-b-testing-playbook-for-ai-powered-apps",
-      "url": "https://www.growthbook.io/resources/a-b-testing-playbook-for-ai-powered-apps",
-      "threat": 4,
+      "competitor": "Amplitude Exp",
+      "slug": "engineering",
+      "url": "https://amplitude.com/blog/tag/engineering",
+      "threat": 6,
       "kd": null,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "experimentation-roi-calculator",
-      "url": "https://www.growthbook.io/resources/experimentation-roi-calculator",
-      "threat": 4,
+      "competitor": "Amplitude Exp",
+      "slug": "adobe",
+      "url": "https://amplitude.com/compare/adobe",
+      "threat": 6,
       "kd": null,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "ai",
-      "url": "https://www.growthbook.io/solutions/ai",
-      "threat": 4,
+      "competitor": "Amplitude Exp",
+      "slug": "best-ai-visibility-monitoring-tools",
+      "url": "https://amplitude.com/compare/best-ai-visibility-monitoring-tools",
+      "threat": 6,
       "kd": null,
       "date": "2026-03-30"
     },
     {
-      "competitor": "GrowthBook Site",
-      "slug": "edtech",
-      "url": "https://www.growthbook.io/solutions/edtech",
-      "threat": 4,
-      "kd": 59.0,
+      "competitor": "Amplitude Exp",
+      "slug": "best-ai-visibility-tools",
+      "url": "https://amplitude.com/compare/best-ai-visibility-tools",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-enterprise-heatmap-platforms",
+      "url": "https://amplitude.com/compare/best-enterprise-heatmap-platforms",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-feature-flag-tools-for-startups",
+      "url": "https://amplitude.com/compare/best-feature-flag-tools-for-startups",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-heatmap-tools-startups",
+      "url": "https://amplitude.com/compare/best-heatmap-tools-startups",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-mobile-ab-testing-for-developers",
+      "url": "https://amplitude.com/compare/best-mobile-ab-testing-for-developers",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-no-code-product-tour-tools",
+      "url": "https://amplitude.com/compare/best-no-code-product-tour-tools",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-product-analytics-tools-early-stage-startups",
+      "url": "https://amplitude.com/compare/best-product-analytics-tools-early-stage-startups",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-product-experimentation-tools-for-startups",
+      "url": "https://amplitude.com/compare/best-product-experimentation-tools-for-startups",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-product-tour-software-growth-teams",
+      "url": "https://amplitude.com/compare/best-product-tour-software-growth-teams",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-product-tour-software-product-teams",
+      "url": "https://amplitude.com/compare/best-product-tour-software-product-teams",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "fullstory",
+      "url": "https://amplitude.com/compare/fullstory",
+      "threat": 6,
+      "kd": 34.0,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "google-analytics",
+      "url": "https://amplitude.com/compare/google-analytics",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "mixpanel",
+      "url": "https://amplitude.com/compare/mixpanel",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-03-30"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "optimizely",
+      "url": "https://amplitude.com/compare/optimizely",
+      "threat": 6,
+      "kd": null,
       "date": "2026-03-30"
     }
   ],
   "gb_new_content": [
     {
       "competitor": "GrowthBook",
-      "slug": "How To A B Test Ai A Practical Guide",
-      "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide/",
+      "slug": "What Is A B Testing",
+      "url": "https://blog.growthbook.io/what-is-a-b-testing/",
       "threat": 0,
       "kd": null,
-      "date": "2026-03-30",
-      "clicks": 20,
-      "impressions": 10033,
-      "position": 8.2,
+      "date": "2026-04-02",
+      "clicks": 21,
+      "impressions": 20764,
+      "position": 13.9,
       "traj": "\u2191"
     },
     {
       "competitor": "GrowthBook",
-      "slug": "What Are Feature Flags",
-      "url": "https://blog.growthbook.io/what-are-feature-flags/",
+      "slug": "Guide To Multi Arm Bandits What Is It And Why You Probably Shouldnt Use It",
+      "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/",
       "threat": 0,
       "kd": null,
-      "date": "2026-03-30",
-      "clicks": 26,
-      "impressions": 26848,
-      "position": 12.6,
+      "date": "2026-04-02",
+      "clicks": 9,
+      "impressions": 2077,
+      "position": 10.1,
+      "traj": "\u2191"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "How To A B Test Ai A Practical Guide",
+      "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide/",
+      "threat": 0,
+      "kd": null,
+      "date": "2026-04-02",
+      "clicks": 19,
+      "impressions": 9150,
+      "position": 8.5,
       "traj": "\u2193"
     },
     {
@@ -859,11 +891,23 @@
       "url": "https://blog.growthbook.io/release-4-3-faster-experiments/",
       "threat": 0,
       "kd": null,
-      "date": "2026-03-30",
-      "clicks": 19,
-      "impressions": 3333,
-      "position": 5.4,
+      "date": "2026-04-02",
+      "clicks": 16,
+      "impressions": 2953,
+      "position": 5.3,
       "traj": "\u2193"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "Feedback Loops Are The Next Breakthrough In Agentic Coding",
+      "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+      "threat": 0,
+      "kd": null,
+      "date": "2026-04-02",
+      "clicks": 18,
+      "impressions": 3517,
+      "position": 6.6,
+      "traj": "\u2191"
     },
     {
       "competitor": "GrowthBook",
@@ -871,11 +915,23 @@
       "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
       "threat": 0,
       "kd": null,
-      "date": "2026-03-30",
-      "clicks": 12,
-      "impressions": 5829,
-      "position": 7.3,
+      "date": "2026-04-02",
+      "clicks": 11,
+      "impressions": 5924,
+      "position": 7.2,
       "traj": "\u2191"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "What Are Feature Flags",
+      "url": "https://blog.growthbook.io/what-are-feature-flags/",
+      "threat": 0,
+      "kd": null,
+      "date": "2026-04-02",
+      "clicks": 30,
+      "impressions": 30064,
+      "position": 11.3,
+      "traj": "\u2193"
     },
     {
       "competitor": "GrowthBook",
@@ -883,11 +939,11 @@
       "url": "https://blog.growthbook.io/a-b-testing-in-the-age-of-ai/",
       "threat": 0,
       "kd": null,
-      "date": "2026-03-30",
+      "date": "2026-04-02",
       "clicks": 16,
-      "impressions": 2976,
-      "position": 6.5,
-      "traj": "\u2192"
+      "impressions": 3094,
+      "position": 6.8,
+      "traj": "\u2193"
     }
   ],
   "etv_kd": [
@@ -1106,7 +1162,7 @@
     "channels": [
       {
         "name": "Optimizely",
-        "avg_views": 97,
+        "avg_views": 98,
         "video_count": 20,
         "no_recent": false,
         "videos": [
@@ -1120,7 +1176,7 @@
           },
           {
             "title": "AI helps run 90% of this marketing team",
-            "views": 136,
+            "views": 138,
             "mult": 1.4,
             "date": "2026-03-26",
             "url": "https://www.youtube.com/watch?v=yG8FnM3gdcE",
@@ -1144,7 +1200,7 @@
           },
           {
             "title": "Vertical AI vs horizontal AI: which wins?",
-            "views": 34,
+            "views": 36,
             "mult": 0.4,
             "date": "2026-03-25",
             "url": "https://www.youtube.com/watch?v=v80G1_CK08E",
@@ -1160,15 +1216,15 @@
           },
           {
             "title": "How AI search decides who to cite | 4 signals explained",
-            "views": 63,
-            "mult": 0.6,
+            "views": 64,
+            "mult": 0.7,
             "date": "2026-03-23",
             "url": "https://www.youtube.com/watch?v=JPdcO-20Qi4",
             "is_outlier": false
           },
           {
             "title": "The $2M reason we replaced our digital platform: CompTIA CEO",
-            "views": 165,
+            "views": 168,
             "mult": 1.7,
             "date": "2026-03-23",
             "url": "https://www.youtube.com/watch?v=gJJNPh9_6fs",
@@ -1185,7 +1241,7 @@
           {
             "title": "AI search now knows more than you type\u2026",
             "views": 434,
-            "mult": 4.5,
+            "mult": 4.4,
             "date": "2026-03-20",
             "url": "https://www.youtube.com/watch?v=miRcqXTLxew",
             "is_outlier": true
@@ -1208,7 +1264,7 @@
           },
           {
             "title": "What to get right when launching a new CMS",
-            "views": 20,
+            "views": 21,
             "mult": 0.2,
             "date": "2026-03-18",
             "url": "https://www.youtube.com/watch?v=M35hognw43s",
@@ -1232,7 +1288,7 @@
           },
           {
             "title": "Too many marketing tools? The Royal Mint found a better way",
-            "views": 8,
+            "views": 9,
             "mult": 0.1,
             "date": "2026-03-15",
             "url": "https://www.youtube.com/watch?v=wrnKanl71_s",
@@ -1240,7 +1296,7 @@
           },
           {
             "title": "How Alaska Airlines scales personalization on one backend",
-            "views": 20,
+            "views": 23,
             "mult": 0.2,
             "date": "2026-03-13",
             "url": "https://www.youtube.com/watch?v=xETWELCa2s0",
@@ -1248,7 +1304,7 @@
           },
           {
             "title": "The mobile UX fix that DOUBLED Road Scholar's conversion rate",
-            "views": 107,
+            "views": 108,
             "mult": 1.1,
             "date": "2026-03-11",
             "url": "https://www.youtube.com/watch?v=Zs3q1TG-Y5Y",
@@ -1320,7 +1376,7 @@
         "videos": [
           {
             "title": "Agent Analytics: Inside the Black Box | Amplitude AI",
-            "views": 169,
+            "views": 170,
             "mult": 1.6,
             "date": "2026-03-19",
             "url": "https://www.youtube.com/watch?v=w79kHtcp5Kw",
@@ -1328,7 +1384,7 @@
           },
           {
             "title": "Primary vs Guardrail Metrics Explained",
-            "views": 49,
+            "views": 51,
             "mult": 0.5,
             "date": "2026-03-13",
             "url": "https://www.youtube.com/watch?v=rdXdHJyEcJw",
@@ -1360,8 +1416,8 @@
           },
           {
             "title": "How to Build Mobile Guides and Surveys | Amplitude for Product Teams",
-            "views": 56,
-            "mult": 0.5,
+            "views": 59,
+            "mult": 0.6,
             "date": "2026-03-11",
             "url": "https://www.youtube.com/watch?v=gCOgG4bckRY",
             "is_outlier": false
@@ -1482,21 +1538,21 @@
       },
       {
         "name": "Harness",
-        "avg_views": 129,
+        "avg_views": 131,
         "video_count": 20,
         "no_recent": false,
         "videos": [
           {
             "title": "What is Disaster Recovery Testing? Explained in 60 seconds | Resilience Testing | Harness",
-            "views": 332,
-            "mult": 2.6,
+            "views": 334,
+            "mult": 2.5,
             "date": "2026-03-27",
             "url": "https://www.youtube.com/watch?v=Airf_IXxiEA",
             "is_outlier": true
           },
           {
             "title": "Women\u2019s Day Panel: Navigating the Future of Engineering in the Age of AI",
-            "views": 17,
+            "views": 18,
             "mult": 0.1,
             "date": "2026-03-26",
             "url": "https://www.youtube.com/watch?v=lrppkBV7qu8",
@@ -1504,7 +1560,7 @@
           },
           {
             "title": "Secure AI Coding with Harness SAST & SCA on Cursor",
-            "views": 33,
+            "views": 37,
             "mult": 0.3,
             "date": "2026-03-26",
             "url": "https://www.youtube.com/watch?v=LXSEv5X47lw",
@@ -1512,8 +1568,8 @@
           },
           {
             "title": "Secure AI Coding with Harness SAST & SCA on Windsurf",
-            "views": 100,
-            "mult": 0.8,
+            "views": 129,
+            "mult": 1.0,
             "date": "2026-03-26",
             "url": "https://www.youtube.com/watch?v=GyJjNKvwgpA",
             "is_outlier": false
@@ -1521,7 +1577,7 @@
           {
             "title": "What is Load Testing? Explained in 60 Seconds | Resilience Testing | 2026 | Harness",
             "views": 839,
-            "mult": 6.5,
+            "mult": 6.4,
             "date": "2026-03-25",
             "url": "https://www.youtube.com/watch?v=FnbyQBGigpg",
             "is_outlier": true
@@ -1544,7 +1600,7 @@
           },
           {
             "title": "What Are Blue-Green Deployments? | Understanding the Trade-offs",
-            "views": 72,
+            "views": 73,
             "mult": 0.6,
             "date": "2026-03-18",
             "url": "https://www.youtube.com/watch?v=_11XiMN09fY",
@@ -1624,7 +1680,7 @@
           },
           {
             "title": "\"Crown Jewels In, Crown Jewels Out\" \u2013 The Hidden Risk of AI",
-            "views": 136,
+            "views": 140,
             "mult": 1.1,
             "date": "2026-02-10",
             "url": "https://www.youtube.com/watch?v=wzY303nno4Y",
@@ -1776,7 +1832,7 @@
           },
           {
             "title": "LaunchDarkly. Observe. See production in real time.",
-            "views": 38,
+            "views": 39,
             "mult": 0.5,
             "date": "2026-02-24",
             "url": "https://www.youtube.com/watch?v=DY2MW_Yn8-w",
@@ -1825,13 +1881,13 @@
       },
       {
         "name": "PostHog",
-        "avg_views": 847,
+        "avg_views": 849,
         "video_count": 20,
         "no_recent": false,
         "videos": [
           {
             "title": "PostHog: The Documentary (Full Version)",
-            "views": 727,
+            "views": 732,
             "mult": 0.9,
             "date": "2026-03-23",
             "url": "https://www.youtube.com/watch?v=dGaSxBs3OsU",
@@ -1839,7 +1895,7 @@
           },
           {
             "title": "Automatically group LLM traces by behavior \u2014 PostHog Clusters Demo",
-            "views": 450,
+            "views": 452,
             "mult": 0.5,
             "date": "2026-03-11",
             "url": "https://www.youtube.com/watch?v=OlOMc70-k8A",
@@ -1863,7 +1919,7 @@
           },
           {
             "title": "How to use the PostHog MCP in v0 by Vercel (Feature Flags & A/B Testing)",
-            "views": 432,
+            "views": 433,
             "mult": 0.5,
             "date": "2026-02-25",
             "url": "https://www.youtube.com/watch?v=l7IXtdDZCYA",
@@ -1879,7 +1935,7 @@
           },
           {
             "title": "Introducing Logs by PostHog",
-            "views": 2084,
+            "views": 2099,
             "mult": 2.5,
             "date": "2026-02-19",
             "url": "https://www.youtube.com/watch?v=e_SICQg2Wak",
@@ -1888,7 +1944,7 @@
           {
             "title": "Do you have PMF? #startup #jobinterview",
             "views": 636,
-            "mult": 0.8,
+            "mult": 0.7,
             "date": "2026-02-19",
             "url": "https://www.youtube.com/watch?v=g-pDFnKd3a8",
             "is_outlier": false
@@ -1911,7 +1967,7 @@
           },
           {
             "title": "Don't make this interview mistake! #startuplife #jobinterview",
-            "views": 462,
+            "views": 464,
             "mult": 0.5,
             "date": "2026-02-16",
             "url": "https://www.youtube.com/watch?v=aBzq4UuxE_4",
@@ -1919,7 +1975,7 @@
           },
           {
             "title": "We built an open-source developer toy... #opensource #opensourcehardware",
-            "views": 781,
+            "views": 782,
             "mult": 0.9,
             "date": "2026-02-13",
             "url": "https://www.youtube.com/watch?v=7jQd858EWGc",
@@ -1935,7 +1991,7 @@
           },
           {
             "title": "Customize your PostHog sidebar",
-            "views": 434,
+            "views": 438,
             "mult": 0.5,
             "date": "2026-02-12",
             "url": "https://www.youtube.com/watch?v=6dhCzaqGni4",
@@ -1943,7 +1999,7 @@
           },
           {
             "title": "The startup interview questions that actually matter (most engineers skip these)",
-            "views": 4677,
+            "views": 4681,
             "mult": 5.5,
             "date": "2026-02-11",
             "url": "https://www.youtube.com/watch?v=KVMZgY2KNto",
@@ -1959,7 +2015,7 @@
           },
           {
             "title": "PostHog MCP + Replit: How PostHog AI debugged my production error",
-            "views": 501,
+            "views": 502,
             "mult": 0.6,
             "date": "2026-02-10",
             "url": "https://www.youtube.com/watch?v=HTOpmfb0UG4",
@@ -2017,13 +2073,13 @@
       },
       {
         "name": "Flagsmith",
-        "avg_views": 45,
+        "avg_views": 46,
         "video_count": 3,
         "no_recent": false,
         "videos": [
           {
             "title": "Releasing in the AI Era: How Feature Flags Keep You in Control",
-            "views": 1,
+            "views": 2,
             "mult": 0.0,
             "date": "2026-03-29",
             "url": "https://www.youtube.com/watch?v=kkWz3GJeALs",
@@ -2040,7 +2096,7 @@
           {
             "title": "Feature Flags: A Safety Net in the AI Era",
             "views": 62,
-            "mult": 1.4,
+            "mult": 1.3,
             "date": "2026-01-28",
             "url": "https://www.youtube.com/watch?v=6D4gtW7XrTI",
             "is_outlier": false
@@ -2087,7 +2143,7 @@
           },
           {
             "title": "Shipping Faster, Safely: Truist\u2019s SVP on AI, Developer Experience, and Human-in-the-Loop Banking",
-            "views": 49,
+            "views": 50,
             "mult": 0.2,
             "date": "2026-03-18",
             "url": "https://www.youtube.com/watch?v=Zp2ly3a4vBQ",
@@ -2175,7 +2231,7 @@
           },
           {
             "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-            "views": 568,
+            "views": 569,
             "mult": 2.5,
             "date": "2026-03-03",
             "url": "https://www.youtube.com/watch?v=WyANaD5pZdw",
