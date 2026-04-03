@@ -554,17 +554,17 @@ export default function CompyDashboard() {
           {/* Chart 3 — Top 20 pages by ETV */}
           {(d.etv_kd || []).length > 0 && (() => {
             const top20 = d.etv_kd.slice(0, 20).map(r => ({
-              label: (r.url || "").replace(/^www\./, "").split("/").slice(0, 3).join("/").slice(0, 38),
+              label: (r.url || "").replace(/^https?:\/\//, ""),
               etv: r.etv,
               competitor: r.competitor,
             })).reverse();
             return (
               <Section title="Top 20 Competitor Pages by Estimated Traffic">
-                <ResponsiveContainer width="100%" height={540}>
-                  <BarChart data={top20} layout="vertical" margin={{ left: 200, right: 50, top: 4, bottom: 4 }}>
+                <ResponsiveContainer width="100%" height={580}>
+                  <BarChart data={top20} layout="vertical" margin={{ left: 10, right: 50, top: 4, bottom: 4 }}>
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                     <XAxis type="number" tick={{ fontSize: 11 }} tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} />
-                    <YAxis type="category" dataKey="label" tick={{ fontSize: 10 }} width={195} />
+                    <YAxis type="category" dataKey="label" tick={{ fontSize: 10 }} width={360} />
                     <RTooltip formatter={(v) => [v.toLocaleString(), "Est. monthly traffic"]} />
                     <RBar dataKey="etv" radius={[0, 4, 4, 0]}>
                       {top20.map((entry, i) => <Cell key={i} fill={COMP_COLORS[entry.competitor] || C.accent} />)}
