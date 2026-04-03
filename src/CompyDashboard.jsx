@@ -490,20 +490,26 @@ export default function CompyDashboard() {
           {(() => {
             const counts = {};
             (d.new_content || []).forEach(n => { counts[n.competitor] = (counts[n.competitor] || 0) + 1; });
+            // Add GrowthBook from GSC new content
+            const gbCount = (d.gb_new_content || []).length;
+            if (gbCount > 0) counts["GrowthBook"] = gbCount;
             const chartData = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([name, count]) => ({ name, count }));
             return chartData.length > 0 ? (
               <Section title="New Pages Published This Week">
-                <ResponsiveContainer width="100%" height={Math.max(120, chartData.length * 40)}>
-                  <BarChart data={chartData} layout="vertical" margin={{ left: 100, right: 30, top: 4, bottom: 4 }}>
+                <ResponsiveContainer width="100%" height={Math.max(120, chartData.length * 44)}>
+                  <BarChart data={chartData} layout="vertical" margin={{ left: 120, right: 40, top: 4, bottom: 4 }}>
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                     <XAxis type="number" tick={{ fontSize: 11 }} allowDecimals={false} />
-                    <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={95} />
-                    <RTooltip formatter={(v) => [v, "New pages"]} />
+                    <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={115} />
+                    <RTooltip formatter={(v, _, props) => [v, props.payload.name === "GrowthBook" ? "New blog posts (GSC)" : "New pages (sitemap)"]} />
                     <RBar dataKey="count" radius={[0, 4, 4, 0]}>
                       {chartData.map((entry, i) => <Cell key={i} fill={COMP_COLORS[entry.name] || C.accent} />)}
                     </RBar>
                   </BarChart>
                 </ResponsiveContainer>
+                <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: "left" }}>
+                  Competitor counts from sitemap monitoring. GrowthBook count from GSC new blog posts (&lt;90 days old).
+                </p>
               </Section>
             ) : null;
           })()}
@@ -522,6 +528,25 @@ export default function CompyDashboard() {
               Pages scored 7–10 threat. Threat = competitor domain authority × keyword difficulty × topic relevance. Higher = more urgent to respond.
             </p>
           </Section>
+
+          {(d.gb_new_content || []).length > 0 && (
+            <Section title="GrowthBook New Content (Last 90 Days)">
+              <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
+                GrowthBook pages published in the last 90 days, tracked via Google Search Console. Clicks and impressions from this week.
+              </p>
+              <Table
+                headers={["Page", "Position", "Impressions", "Clicks", "Trend"]}
+                rows={(d.gb_new_content || []).sort((a, b) => b.clicks - a.clicks).map(p => [
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" style={{ color: C.success, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{p.slug}</a>,
+                  p.position,
+                  p.impressions.toLocaleString(),
+                  p.clicks,
+                  <span style={{ fontSize: 16 }}>{p.traj}</span>,
+                ])}
+                compact
+              />
+            </Section>
+          )}
         </>)}
 
         {/* ── ETV vs KD ── */}
