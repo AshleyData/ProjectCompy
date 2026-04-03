@@ -523,8 +523,8 @@ export default function CompyDashboard() {
                 <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
                 <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
                 n.date || "—",
-                <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : n.threat > 0 ? C.warning : C.success }}>{n.threat > 0 ? `${n.threat}/10` : "own"}</span>,
-                n.kd || "—"
+                <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span>,
+                n.kd != null ? n.kd : "—"
               ]; })}
             />
             <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
