@@ -736,11 +736,11 @@ export default function CompyDashboard() {
 
               <Section title="GrowthBook Pages — Full GSC Data">
                 <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
-                  All pages including homepage. Sorted by clicks (28-day GSC window).
+                  Pages with ≥2 clicks, sorted largest first (28-day GSC window).
                 </p>
                 <DataTable
                   headers={["URL", "Clicks", "Impressions", "CTR", "Avg Position"]}
-                  rows={gbSorted.map((row) => {
+                  rows={gbSorted.filter((row) => (row.clicks || 0) >= 2).map((row) => {
                     const ctrRaw = Number(row.ctr || 0);
                     const ctrPct = ctrRaw <= 1 ? ctrRaw * 100 : ctrRaw;
                     return [
