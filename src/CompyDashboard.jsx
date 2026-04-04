@@ -492,11 +492,17 @@ export default function CompyDashboard() {
           {(() => {
             const counts = {};
             (d.new_content || []).forEach(n => {
-              // Normalise "GrowthBook Blog" and "GrowthBook Site" → "GrowthBook"
-              const name = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
-              counts[name] = (counts[name] || 0) + 1;
+              // Normalise "GrowthBook Blog" / "GrowthBook Site" → skip; GrowthBook counted separately below
+              if (n.competitor.startsWith("GrowthBook")) return;
+              counts[n.competitor] = (counts[n.competitor] || 0) + 1;
             });
-            const chartData = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([name, count]) => ({ name, count }));
+            // GrowthBook new content comes from GSC gb_new_content, not sitemap
+            const gbNewCount = (d.gb_new_content || []).length;
+            if (gbNewCount > 0) counts["GrowthBook"] = gbNewCount;
+            // Sort descending then reverse so Recharts (bottom-to-top) puts largest on top
+            const chartData = Object.entries(counts)
+              .sort((a, b) => a[1] - b[1])
+              .map(([name, count]) => ({ name, count }));
             return chartData.length > 0 ? (
               <Section title="New Pages Published This Week">
                 <ResponsiveContainer width="100%" height={Math.max(120, chartData.length * 44)}>
