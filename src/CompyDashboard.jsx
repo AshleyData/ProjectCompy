@@ -104,25 +104,27 @@ export default function CompyDashboard() {
   const [availableDates, setAvailableDates] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  // On mount: probe the last 12 Saturdays to find available data files
+  // On mount: probe the last 60 days, fetch files that exist and have real GSC data (gb_pages > 0)
   useEffect(() => {
-    // Generate the last 12 Saturdays (day 6)
-    const saturdays = [];
+    const candidates = [];
     const d0 = new Date();
-    // Walk back to find the most recent Saturday, then go back 12 weeks
-    for (let weeksBack = 0; weeksBack < 12; weeksBack++) {
+    for (let i = 0; i < 60; i++) {
       const dt = new Date(d0);
-      const dayOfWeek = dt.getDay(); // 0=Sun ... 6=Sat
-      const daysToLastSat = (dayOfWeek === 6) ? (weeksBack * 7) : (dayOfWeek + 1 + (weeksBack * 7));
-      dt.setDate(d0.getDate() - daysToLastSat);
-      saturdays.push(dt.toISOString().slice(0, 10));
+      dt.setDate(d0.getDate() - i);
+      candidates.push(dt.toISOString().slice(0, 10));
     }
 
-    // Probe all Saturdays in parallel
+    // Fetch each candidate fully so we can check data quality
     Promise.all(
-      saturdays.map(date =>
-        fetch(`/data/${date}.json`, { method: "HEAD" })
-          .then(r => r.ok ? date : null)
+      candidates.map(date =>
+        fetch(`/data/${date}.json`)
+          .then(r => r.ok ? r.json() : null)
+          .then(data => {
+            if (!data) return null;
+            // Only include runs with real GSC page data
+            const hasPages = Array.isArray(data.gb_pages) && data.gb_pages.length > 0;
+            return hasPages ? date : null;
+          })
           .catch(() => null)
       )
     ).then(results => {
