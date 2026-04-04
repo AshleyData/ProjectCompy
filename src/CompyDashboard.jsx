@@ -499,9 +499,9 @@ export default function CompyDashboard() {
             // GrowthBook new content comes from GSC gb_new_content, not sitemap
             const gbNewCount = (d.gb_new_content || []).length;
             if (gbNewCount > 0) counts["GrowthBook"] = gbNewCount;
-            // Sort descending then reverse so Recharts (bottom-to-top) puts largest on top
+            // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
             const chartData = Object.entries(counts)
-              .sort((a, b) => a[1] - b[1])
+              .sort((a, b) => b[1] - a[1])
               .map(([name, count]) => ({ name, count }));
             return chartData.length > 0 ? (
               <Section title="New Pages Published This Week">
@@ -547,8 +547,7 @@ export default function CompyDashboard() {
         {tab === "etv_kd" && (<>
           {/* Chart 3 — Top 20 pages by ETV */}
           {(d.etv_kd || []).length > 0 && (() => {
-            // Sort descending first to get top 20, then ascending so Recharts
-            // (bottom-to-top rendering) puts the largest bar at the top visually
+            // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
             const top20 = [...d.etv_kd]
               .sort((a, b) => b.etv - a.etv)
               .slice(0, 20)
@@ -556,8 +555,7 @@ export default function CompyDashboard() {
                 label: (r.url || "").replace(/^https?:\/\//, ""),
                 etv: r.etv,
                 competitor: r.competitor,
-              }))
-              .sort((a, b) => a.etv - b.etv);
+              }));
             return (
               <Section title="Top 20 Competitor Pages by Estimated Traffic">
                 <ResponsiveContainer width="100%" height={580}>
@@ -644,14 +642,14 @@ export default function CompyDashboard() {
           // Graphs: exclude homepage (growthbook.io/) and pages with ≤1 click
           const isHomepage = (p) => (p.url || "").replace(/^https?:\/\//, "").replace(/\/$/, "") === "www.growthbook.io";
           const gbGraphPages = gbPages.filter((p) => !isHomepage(p) && (p.clicks || 0) > 1);
+          // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
           const top20Bars = [...gbGraphPages]
             .sort((a, b) => (b.clicks || 0) - (a.clicks || 0))
             .slice(0, 20)
             .map((p) => ({
               ...p,
               label: (p.url || "").replace(/^https?:\/\//, ""),
-            }))
-            .sort((a, b) => (a.clicks || 0) - (b.clicks || 0));
+            }));
           const scatterData = gbGraphPages
             .filter((p) => typeof p.avg_position === "number" && typeof p.clicks === "number")
             .map((p) => ({
