@@ -276,17 +276,6 @@
       "clicks_28d_delta": 14
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
-      "label": "Vs Split",
-      "clicks_this": 0,
-      "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 131,
-      "position": 7.1,
-      "clicks_28d": 3,
-      "clicks_28d_delta": 3
-    },
-    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
       "label": "Vs Vwo",
       "clicks_this": 1,
@@ -298,15 +287,15 @@
       "clicks_28d_delta": -9
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
-      "label": "Vs Adobe Target",
+      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
+      "label": "Vs Split",
       "clicks_this": 0,
       "clicks_last": 0,
       "clicks_delta": 0,
-      "impressions": 82,
-      "position": 7.7,
-      "clicks_28d": 2,
-      "clicks_28d_delta": 2
+      "impressions": 131,
+      "position": 7.1,
+      "clicks_28d": 3,
+      "clicks_28d_delta": 3
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
@@ -331,13 +320,24 @@
       "clicks_28d_delta": 2
     },
     {
-      "url": "https://www.growthbook.io/compare/optimizely-new---grid",
-      "label": "Optimizely New   Grid",
+      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
+      "label": "Vs Adobe Target",
       "clicks_this": 0,
       "clicks_last": 0,
       "clicks_delta": 0,
-      "impressions": 24,
-      "position": 9.3,
+      "impressions": 82,
+      "position": 7.7,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
+      "label": "Vs Kameleoon",
+      "clicks_this": 1,
+      "clicks_last": 0,
+      "clicks_delta": 1,
+      "impressions": 80,
+      "position": 7.5,
       "clicks_28d": 1,
       "clicks_28d_delta": 1
     }
@@ -349,6 +349,13 @@
       "impressions": 81947,
       "avg_position": 13.47,
       "ctr": 0.10587330835784105
+    },
+    {
+      "url": "https://www.growthbook.io/pricing",
+      "clicks": 425,
+      "impressions": 18323,
+      "avg_position": 2.08,
+      "ctr": 0.023194891666211866
     },
     {
       "url": "https://www.growthbook.io/products/experiments",
@@ -2680,6 +2687,18 @@
     },
     {
       "competitor": "GrowthBook",
+      "slug": "Growthbook Vs Launchdarkly Why Developers Choose Growthbook For Feature Flagging",
+      "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 11,
+      "impressions": 6041,
+      "position": 7.1,
+      "traj": "\u2193"
+    },
+    {
+      "competitor": "GrowthBook",
       "slug": "Release 4 3 Faster Experiments",
       "url": "https://blog.growthbook.io/release-4-3-faster-experiments/",
       "threat": null,
@@ -2701,18 +2720,6 @@
       "impressions": 19924,
       "position": 14.1,
       "traj": "\u2191"
-    },
-    {
-      "competitor": "GrowthBook",
-      "slug": "Growthbook Vs Launchdarkly Why Developers Choose Growthbook For Feature Flagging",
-      "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-04",
-      "clicks": 11,
-      "impressions": 6041,
-      "position": 7.1,
-      "traj": "\u2193"
     },
     {
       "competitor": "GrowthBook",
