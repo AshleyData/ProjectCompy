@@ -523,20 +523,39 @@ export default function CompyDashboard() {
             ) : null;
           })()}
           <Section title="New Competitor Pages This Week (High-Threat)">
-            <Table
-              headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
-              rows={d.new_content.map(n => {
-                const dispName = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
-                return [
-                <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
-                <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
-                n.date || "—",
-                <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span>,
-                n.kd != null ? n.kd : "—"
-              ]; })}
-            />
+            {(() => {
+              // Merge competitor sitemap pages + GrowthBook GSC new content
+              const gbRows = (d.gb_new_content || []).map(p => ({
+                competitor: "GrowthBook",
+                slug: p.slug || (p.url || "").replace(/\/$/, "").split("/").pop() || p.url,
+                url: p.url,
+                date: p.date || "—",
+                threat: null,
+                kd: null,
+                clicks: p.clicks,
+              }));
+              const allRows = [...(d.new_content || []).map(n => ({
+                ...n,
+                competitor: n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor,
+              })), ...gbRows];
+              return (
+                <Table
+                  headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
+                  rows={allRows.map(n => {
+                    const dispName = n.competitor;
+                    return [
+                      <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
+                      <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
+                      n.date || "—",
+                      n.threat != null ? <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span> : <span style={{ color: C.muted }}>—</span>,
+                      n.kd != null ? n.kd : "—"
+                    ];
+                  })}
+                />
+              );
+            })()}
             <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
-              Pages scored 7–10 threat. Threat = competitor domain authority × keyword difficulty × topic relevance. Higher = more urgent to respond.
+              Competitors: pages scored ≥5 threat (domain authority × keyword difficulty × topic relevance). GrowthBook: new blog posts &lt;90 days old from GSC.
             </p>
           </Section>
 
