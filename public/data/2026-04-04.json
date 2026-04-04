@@ -1,0 +1,4093 @@
+{
+  "week": "2026-04-04",
+  "gsc": {
+    "clicks": 4775,
+    "impressions": 116772,
+    "ctr": 4.09,
+    "avg_position": 8.68,
+    "clicks_last": 3501,
+    "wow_clicks": 36.4,
+    "wow_impressions": 13.1,
+    "trailing_28d_clicks": 15881,
+    "mom_clicks": 7.9,
+    "branded": 2988,
+    "nonbranded": 359,
+    "anonymized": 1428
+  },
+  "exec_summary": [
+    "GrowthBook had a strong week overall, with clicks up 36% (3,501 to 4,775) and impressions up 13% (103,247 to 116,772). However, the homepage (/) drove the majority of that gain, adding 1,143 clicks on its own -- likely branded search or a direct traffic surge -- so the underlying content-driven growth is more modest. The comparison page /compare/growthbook-vs-statsig was a bright spot, jumping from 1 to 9 clicks, while the LaunchDarkly comparison page dipped 5 clicks and should be monitored.",
+    "The most important strategic finding this week is that GrowthBook has zero AI Overview citations across all tracked keywords, and AI referral traffic from ChatGPT and Perplexity is effectively flat. As AI-generated answers increasingly absorb top-of-funnel queries around A/B testing and feature flags, being absent from those citations is a growing revenue risk. Building structured, definition-forward content that mirrors how AI systems synthesize answers should be an immediate priority.",
+    "No competitor content surges or new publications were detected this week in the feature flagging and experimentation space. Optimizely and Amplitude Experiment both have high-opportunity pages on experimentation messaging and Bayesian statistics respectively that are outranking GrowthBook, but there is no new activity to flag. The competitive landscape was quiet, which makes this a good week to close content gaps rather than react."
+  ],
+  "content_recommendations": [
+    "1. Write a dedicated guide on 'Bayesian Statistics for A/B Testing' targeting the keyword Amplitude Experiment ranks for (KD 22, composite score 75). This is a Quick Win opportunity -- low difficulty, high relevance, and GrowthBook's statistical engine is a core differentiator that should own this conversation.",
+    "2. Expand the /compare/growthbook-vs-statsig page now while momentum is building (clicks grew 8x WoW from 1 to 9). Add a detailed feature comparison table, pricing breakdown, and a section on statistical methodology differences to capture users actively evaluating alternatives.",
+    "3. Refresh the /compare/growthbook-vs-launchdarkly page, which dropped from 7 to 2 clicks this week. It is GrowthBook's most commercially important comparison page and should not be losing ground -- audit for freshness, add updated pricing, and ensure it targets 'LaunchDarkly alternative' queries explicitly.",
+    "4. Write a 'Feature Flag Testing' guide to compete with Flagsmith's ranking content (composite score 70, KD 0). A KD of zero means this is essentially uncontested -- GrowthBook should be able to rank quickly with a thorough, developer-oriented post.",
+    "5. Optimize the /blog/how-to-a-b-test-ai-a-practical-guide/ post, which lost 7 clicks this week (9 to 2). Given the rising interest in AI experimentation, this page should be gaining traffic, not losing it -- review for keyword targeting gaps and add structured definitions that improve AI Overview citability."
+  ],
+  "opportunities": [
+    {
+      "rank": 1,
+      "topic": "experimentation messaging and roadmap",
+      "competitor": "Optimizely",
+      "score": 75.0,
+      "kd": "n/a",
+      "bucket": "Quick Win",
+      "url": "",
+      "why": "Optimizely ranks for 'experimentation messaging and roadmap' while GrowthBook has weak or no coverage. Score 75.0."
+    },
+    {
+      "rank": 2,
+      "topic": "bayesian statistics",
+      "competitor": "Amplitude Exp",
+      "score": 75.0,
+      "kd": "n/a",
+      "bucket": "Quick Win",
+      "url": "",
+      "why": "Amplitude Exp ranks for 'bayesian statistics' while GrowthBook has weak or no coverage. Score 75.0."
+    },
+    {
+      "rank": 3,
+      "topic": "defacto increased experimentation 4x",
+      "competitor": "Amplitude Exp",
+      "score": 70.0,
+      "kd": "n/a",
+      "bucket": "Content Gap",
+      "url": "",
+      "why": "Amplitude Exp ranks for 'defacto increased experimentation 4x' while GrowthBook has weak or no coverage. Score 70.0."
+    },
+    {
+      "rank": 4,
+      "topic": "feature flag testing",
+      "competitor": "Flagsmith",
+      "score": 70.0,
+      "kd": 0.0,
+      "bucket": "Content Gap",
+      "url": "",
+      "why": "Flagsmith ranks for 'feature flag testing' while GrowthBook has weak or no coverage. Score 70.0."
+    }
+  ],
+  "top_movers": {
+    "gains": [
+      {
+        "url": "https://www.growthbook.io/",
+        "clicks": 2986,
+        "prior": 1843,
+        "change": 1143,
+        "position": 10.3
+      },
+      {
+        "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
+        "clicks": 9,
+        "prior": 1,
+        "change": 8,
+        "position": 7.9
+      },
+      {
+        "url": "https://blog.growthbook.io/what-is-a-b-testing/",
+        "clicks": 9,
+        "prior": 3,
+        "change": 6,
+        "position": 14.7
+      },
+      {
+        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+        "clicks": 7,
+        "prior": 2,
+        "change": 5,
+        "position": 7.0
+      },
+      {
+        "url": "https://www.growthbook.io/products/product-analytics",
+        "clicks": 7,
+        "prior": 2,
+        "change": 5,
+        "position": 4.9
+      },
+      {
+        "url": "https://blog.growthbook.io/what-are-feature-flags/",
+        "clicks": 13,
+        "prior": 10,
+        "change": 3,
+        "position": 9.5
+      }
+    ],
+    "declines": [
+      {
+        "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide/",
+        "clicks": 2,
+        "prior": 9,
+        "change": -7,
+        "position": 8.8
+      },
+      {
+        "url": "https://blog.growthbook.io/release-4-3-faster-experiments/",
+        "clicks": 0,
+        "prior": 6,
+        "change": -6,
+        "position": 9.0
+      },
+      {
+        "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
+        "clicks": 0,
+        "prior": 6,
+        "change": -6,
+        "position": 6.9
+      },
+      {
+        "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
+        "clicks": 2,
+        "prior": 7,
+        "change": -5,
+        "position": 7.7
+      },
+      {
+        "url": "https://www.growthbook.io/customers/khan-academy",
+        "clicks": 1,
+        "prior": 5,
+        "change": -4,
+        "position": 7.4
+      },
+      {
+        "url": "https://www.growthbook.io/products/experiments",
+        "clicks": 14,
+        "prior": 16,
+        "change": -2,
+        "position": 3.7
+      }
+    ]
+  },
+  "striking_distance": [
+    {
+      "query": "what is a/b testing",
+      "position": 15.98,
+      "impressions": 686,
+      "clicks": 1,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "a/b testing tools",
+      "position": 12.34,
+      "impressions": 670,
+      "clicks": 0,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "ab testing tools",
+      "position": 12.89,
+      "impressions": 643,
+      "clicks": 1,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "betterme engineering process feature flags experiments",
+      "position": 9.07,
+      "impressions": 619,
+      "clicks": 0,
+      "opportunity": "High"
+    },
+    {
+      "query": "ab testing tool",
+      "position": 10.31,
+      "impressions": 589,
+      "clicks": 1,
+      "opportunity": "High"
+    },
+    {
+      "query": "launchdarkly alternatives",
+      "position": 11.09,
+      "impressions": 572,
+      "clicks": 0,
+      "opportunity": "High"
+    },
+    {
+      "query": "what is feature flagging",
+      "position": 8.26,
+      "impressions": 498,
+      "clicks": 0,
+      "opportunity": "High"
+    },
+    {
+      "query": "experimentation platform",
+      "position": 9.44,
+      "impressions": 390,
+      "clicks": 1,
+      "opportunity": "High"
+    },
+    {
+      "query": "what is a feature flag",
+      "position": 13.41,
+      "impressions": 389,
+      "clicks": 0,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "growthbook api",
+      "position": 9.03,
+      "impressions": 380,
+      "clicks": 10,
+      "opportunity": "High"
+    }
+  ],
+  "compare_pages": [
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
+      "label": "Vs Launchdarkly",
+      "clicks_this": 2,
+      "clicks_last": 7,
+      "clicks_delta": -5,
+      "impressions": 1852,
+      "position": 7.7,
+      "clicks_28d": 20,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
+      "label": "Vs Statsig",
+      "clicks_this": 9,
+      "clicks_last": 1,
+      "clicks_delta": 8,
+      "impressions": 797,
+      "position": 7.9,
+      "clicks_28d": 17,
+      "clicks_28d_delta": -1
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-optimizely",
+      "label": "Vs Optimizely",
+      "clicks_this": 3,
+      "clicks_last": 3,
+      "clicks_delta": 0,
+      "impressions": 2043,
+      "position": 7.5,
+      "clicks_28d": 15,
+      "clicks_28d_delta": -2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
+      "label": "Vs Posthog",
+      "clicks_this": 2,
+      "clicks_last": 4,
+      "clicks_delta": -2,
+      "impressions": 321,
+      "position": 5.8,
+      "clicks_28d": 14,
+      "clicks_28d_delta": 14
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
+      "label": "Vs Split",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 131,
+      "position": 7.1,
+      "clicks_28d": 3,
+      "clicks_28d_delta": 3
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
+      "label": "Vs Vwo",
+      "clicks_this": 1,
+      "clicks_last": 2,
+      "clicks_delta": -1,
+      "impressions": 860,
+      "position": 7.4,
+      "clicks_28d": 3,
+      "clicks_28d_delta": -9
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
+      "label": "Vs Adobe Target",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 82,
+      "position": 7.7,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
+      "label": "Vs Ab Tasty",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 247,
+      "position": 7.5,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-conductrics",
+      "label": "Vs Conductrics",
+      "clicks_this": 0,
+      "clicks_last": 1,
+      "clicks_delta": -1,
+      "impressions": 362,
+      "position": 6.7,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/optimizely-new---grid",
+      "label": "Optimizely New   Grid",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 24,
+      "position": 9.3,
+      "clicks_28d": 1,
+      "clicks_28d_delta": 1
+    }
+  ],
+  "gb_pages": [
+    {
+      "url": "https://www.growthbook.io/",
+      "clicks": 8676,
+      "impressions": 81947,
+      "avg_position": 13.47,
+      "ctr": 0.10587330835784105
+    },
+    {
+      "url": "https://www.growthbook.io/products/experiments",
+      "clicks": 44,
+      "impressions": 10905,
+      "avg_position": 3.23,
+      "ctr": 0.0040348464007336085
+    },
+    {
+      "url": "https://blog.growthbook.io/what-are-feature-flags/",
+      "clicks": 35,
+      "impressions": 32811,
+      "avg_position": 11.01,
+      "ctr": 0.0010667154308006462
+    },
+    {
+      "url": "https://blog.growthbook.io/",
+      "clicks": 29,
+      "impressions": 3432,
+      "avg_position": 3.01,
+      "ctr": 0.00844988344988345
+    },
+    {
+      "url": "https://blog.growthbook.io/what-is-a-b-testing/",
+      "clicks": 22,
+      "impressions": 19924,
+      "avg_position": 14.09,
+      "ctr": 0.00110419594458944
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
+      "clicks": 20,
+      "impressions": 4249,
+      "avg_position": 9.39,
+      "ctr": 0.004706989879971758
+    },
+    {
+      "url": "https://www.growthbook.io/solutions/ai",
+      "clicks": 20,
+      "impressions": 769,
+      "avg_position": 6.47,
+      "ctr": 0.02600780234070221
+    },
+    {
+      "url": "https://blog.growthbook.io/a-b-testing-in-the-age-of-ai/",
+      "clicks": 19,
+      "impressions": 3515,
+      "avg_position": 6.9,
+      "ctr": 0.005405405405405406
+    },
+    {
+      "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+      "clicks": 19,
+      "impressions": 3455,
+      "avg_position": 6.55,
+      "ctr": 0.005499276410998553
+    },
+    {
+      "url": "https://www.growthbook.io/products/product-analytics",
+      "clicks": 19,
+      "impressions": 4436,
+      "avg_position": 5.51,
+      "ctr": 0.004283137962128043
+    },
+    {
+      "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide/",
+      "clicks": 18,
+      "impressions": 8772,
+      "avg_position": 8.56,
+      "ctr": 0.002051983584131327
+    },
+    {
+      "url": "https://www.growthbook.io/customers",
+      "clicks": 18,
+      "impressions": 580,
+      "avg_position": 4.06,
+      "ctr": 0.03103448275862069
+    },
+    {
+      "url": "https://www.growthbook.io/products/ai-mcp",
+      "clicks": 18,
+      "impressions": 3128,
+      "avg_position": 4.25,
+      "ctr": 0.005754475703324808
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
+      "clicks": 17,
+      "impressions": 1556,
+      "avg_position": 8.04,
+      "ctr": 0.010925449871465296
+    },
+    {
+      "url": "https://growthbook.io/",
+      "clicks": 16,
+      "impressions": 14142,
+      "avg_position": 8.51,
+      "ctr": 0.001131381699901004
+    },
+    {
+      "url": "https://www.growthbook.io/demo",
+      "clicks": 16,
+      "impressions": 1114,
+      "avg_position": 6.26,
+      "ctr": 0.01436265709156194
+    },
+    {
+      "url": "https://www.growthbook.io/get-started",
+      "clicks": 16,
+      "impressions": 9353,
+      "avg_position": 2.37,
+      "ctr": 0.0017106810648989629
+    },
+    {
+      "url": "https://blog.growthbook.io/release-4-3-faster-experiments/",
+      "clicks": 15,
+      "impressions": 2612,
+      "avg_position": 5.37,
+      "ctr": 0.005742725880551302
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-optimizely",
+      "clicks": 15,
+      "impressions": 3300,
+      "avg_position": 7.52,
+      "ctr": 0.004545454545454545
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
+      "clicks": 14,
+      "impressions": 1531,
+      "avg_position": 6.27,
+      "ctr": 0.009144350097975179
+    },
+    {
+      "url": "https://blog.growthbook.io/introducing-multi-armed-bandits-in-growthbook/",
+      "clicks": 13,
+      "impressions": 583,
+      "avg_position": 6.76,
+      "ctr": 0.022298456260720412
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
+      "clicks": 11,
+      "impressions": 6041,
+      "avg_position": 7.06,
+      "ctr": 0.0018208905810296308
+    },
+    {
+      "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/",
+      "clicks": 10,
+      "impressions": 4049,
+      "avg_position": 9.16,
+      "ctr": 0.0024697456162015314
+    },
+    {
+      "url": "https://blog.growthbook.io/ai-evals-vs-a-b-testing-why-you-need-both-to-ship-genai/",
+      "clicks": 10,
+      "impressions": 4321,
+      "avg_position": 6.66,
+      "ctr": 0.0023142791020597086
+    },
+    {
+      "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/",
+      "clicks": 10,
+      "impressions": 2165,
+      "avg_position": 9.68,
+      "ctr": 0.004618937644341801
+    },
+    {
+      "url": "https://www.growthbook.io/compare",
+      "clicks": 10,
+      "impressions": 3549,
+      "avg_position": 7.42,
+      "ctr": 0.002817695125387433
+    },
+    {
+      "url": "https://www.growthbook.io/products/managed-warehouse",
+      "clicks": 10,
+      "impressions": 828,
+      "avg_position": 5.5,
+      "ctr": 0.012077294685990338
+    },
+    {
+      "url": "https://blog.growthbook.io/customize-your-experimentation-workflow-with-custom-fields-and-shareable-experiments/",
+      "clicks": 9,
+      "impressions": 216,
+      "avg_position": 7.79,
+      "ctr": 0.041666666666666664
+    },
+    {
+      "url": "https://blog.growthbook.io/the-hidden-complexities-of-building-your-own-a-b-testing-platform/",
+      "clicks": 9,
+      "impressions": 4714,
+      "avg_position": 7.07,
+      "ctr": 0.0019092066185829445
+    },
+    {
+      "url": "https://blog.growthbook.io/5-ways-to-use-feature-flags-for-smarter-releases/",
+      "clicks": 8,
+      "impressions": 3098,
+      "avg_position": 9.87,
+      "ctr": 0.0025823111684958036
+    },
+    {
+      "url": "https://blog.growthbook.io/cuped-for-faster-experimentation-in-growthbook/",
+      "clicks": 8,
+      "impressions": 2470,
+      "avg_position": 8.12,
+      "ctr": 0.0032388663967611335
+    },
+    {
+      "url": "https://status2.growthbook.io/",
+      "clicks": 8,
+      "impressions": 158,
+      "avg_position": 3.94,
+      "ctr": 0.05063291139240506
+    },
+    {
+      "url": "https://blog.growthbook.io/guide-to-geo/",
+      "clicks": 7,
+      "impressions": 20188,
+      "avg_position": 15.06,
+      "ctr": 0.00034674063800277393
+    },
+    {
+      "url": "https://blog.growthbook.io/type-safe-feature-flags-in-react/",
+      "clicks": 7,
+      "impressions": 1979,
+      "avg_position": 7.5,
+      "ctr": 0.0035371399696816574
+    },
+    {
+      "url": "https://www.growthbook.io/ab-testing-for-engineers",
+      "clicks": 7,
+      "impressions": 1898,
+      "avg_position": 5.86,
+      "ctr": 0.0036880927291886197
+    },
+    {
+      "url": "https://www.growthbook.io/customers/khan-academy",
+      "clicks": 7,
+      "impressions": 258,
+      "avg_position": 6.63,
+      "ctr": 0.027131782945736434
+    },
+    {
+      "url": "https://www.growthbook.io/products/warehouse-native",
+      "clicks": 7,
+      "impressions": 1000,
+      "avg_position": 5.72,
+      "ctr": 0.007
+    },
+    {
+      "url": "https://blog.growthbook.io/better-visual-editor-experiments/",
+      "clicks": 6,
+      "impressions": 404,
+      "avg_position": 5.82,
+      "ctr": 0.01485148514851485
+    },
+    {
+      "url": "https://blog.growthbook.io/the-benchmarks-are-lying/",
+      "clicks": 6,
+      "impressions": 3577,
+      "avg_position": 6.73,
+      "ctr": 0.0016773832820799553
+    },
+    {
+      "url": "https://trust.growthbook.io/",
+      "clicks": 6,
+      "impressions": 768,
+      "avg_position": 6.02,
+      "ctr": 0.0078125
+    },
+    {
+      "url": "https://blog.growthbook.io/client-side-feature-flagging/",
+      "clicks": 5,
+      "impressions": 1094,
+      "avg_position": 7.76,
+      "ctr": 0.004570383912248629
+    },
+    {
+      "url": "https://blog.growthbook.io/experimentation-program-mistakes-to-avoid/",
+      "clicks": 5,
+      "impressions": 3038,
+      "avg_position": 6.84,
+      "ctr": 0.0016458196181698486
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-4-1/",
+      "clicks": 5,
+      "impressions": 1178,
+      "avg_position": 7.88,
+      "ctr": 0.004244482173174873
+    },
+    {
+      "url": "https://blog.growthbook.io/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator/",
+      "clicks": 5,
+      "impressions": 1517,
+      "avg_position": 7.54,
+      "ctr": 0.0032959789057350032
+    },
+    {
+      "url": "https://www.growthbook.io/customers/dropbox",
+      "clicks": 5,
+      "impressions": 517,
+      "avg_position": 8.84,
+      "ctr": 0.009671179883945842
+    },
+    {
+      "url": "https://www.growthbook.io/our-community",
+      "clicks": 5,
+      "impressions": 176,
+      "avg_position": 9.65,
+      "ctr": 0.028409090909090908
+    },
+    {
+      "url": "https://www.growthbook.io/resources/experimentation-roi-calculator",
+      "clicks": 5,
+      "impressions": 431,
+      "avg_position": 8.89,
+      "ctr": 0.01160092807424594
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/",
+      "clicks": 4,
+      "impressions": 128,
+      "avg_position": 6.41,
+      "ctr": 0.03125
+    },
+    {
+      "url": "https://blog.growthbook.io/changing-running-experiments-safely-and-flexibly-in-growthbook/",
+      "clicks": 4,
+      "impressions": 255,
+      "avg_position": 6.56,
+      "ctr": 0.01568627450980392
+    },
+    {
+      "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/",
+      "clicks": 4,
+      "impressions": 264,
+      "avg_position": 8.61,
+      "ctr": 0.015151515151515152
+    },
+    {
+      "url": "https://blog.growthbook.io/holdouts-in-growthbook/",
+      "clicks": 4,
+      "impressions": 1664,
+      "avg_position": 7.99,
+      "ctr": 0.002403846153846154
+    },
+    {
+      "url": "https://blog.growthbook.io/introducing-the-first-mcp-server-for-experimentation-and-feature-management/",
+      "clicks": 4,
+      "impressions": 1773,
+      "avg_position": 6.5,
+      "ctr": 0.0022560631697687537
+    },
+    {
+      "url": "https://blog.growthbook.io/new-rest-apis/",
+      "clicks": 4,
+      "impressions": 735,
+      "avg_position": 6.51,
+      "ctr": 0.005442176870748299
+    },
+    {
+      "url": "https://blog.growthbook.io/release-4-2-product-analytics/",
+      "clicks": 4,
+      "impressions": 3264,
+      "avg_position": 6.25,
+      "ctr": 0.0012254901960784314
+    },
+    {
+      "url": "https://blog.growthbook.io/stale-feature-flag-detection/",
+      "clicks": 4,
+      "impressions": 615,
+      "avg_position": 7.41,
+      "ctr": 0.0065040650406504065
+    },
+    {
+      "url": "https://www.growthbook.io/fair-use",
+      "clicks": 4,
+      "impressions": 443,
+      "avg_position": 6.79,
+      "ctr": 0.009029345372460496
+    },
+    {
+      "url": "https://www.growthbook.io/migrate-from-statsig-to-growthbook",
+      "clicks": 4,
+      "impressions": 712,
+      "avg_position": 6.07,
+      "ctr": 0.0056179775280898875
+    },
+    {
+      "url": "https://www.growthbook.io/products/feature-flagging",
+      "clicks": 4,
+      "impressions": 5045,
+      "avg_position": 4.89,
+      "ctr": 0.0007928642220019821
+    },
+    {
+      "url": "https://www.growthbook.io/subprocessors",
+      "clicks": 4,
+      "impressions": 183,
+      "avg_position": 7.69,
+      "ctr": 0.02185792349726776
+    },
+    {
+      "url": "https://blog.growthbook.io/dark-patterns-a-b-testing/",
+      "clicks": 3,
+      "impressions": 986,
+      "avg_position": 4.98,
+      "ctr": 0.0030425963488843813
+    },
+    {
+      "url": "https://blog.growthbook.io/fully-typesafe-sdk/",
+      "clicks": 3,
+      "impressions": 141,
+      "avg_position": 7.23,
+      "ctr": 0.02127659574468085
+    },
+    {
+      "url": "https://blog.growthbook.io/growth-books-a-b-testing-library-for-python/",
+      "clicks": 3,
+      "impressions": 1266,
+      "avg_position": 6.49,
+      "ctr": 0.002369668246445498
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-4-0/",
+      "clicks": 3,
+      "impressions": 1042,
+      "avg_position": 7.21,
+      "ctr": 0.0028790786948176585
+    },
+    {
+      "url": "https://blog.growthbook.io/how-khan-academy-optimizes-ai-tutoring-with-experimentation/",
+      "clicks": 3,
+      "impressions": 1567,
+      "avg_position": 5.18,
+      "ctr": 0.0019144862795149968
+    },
+    {
+      "url": "https://blog.growthbook.io/measuring-a-b-test-impacts-on-website-latency-using-quantile-metrics-in-growthbook/",
+      "clicks": 3,
+      "impressions": 547,
+      "avg_position": 6.79,
+      "ctr": 0.005484460694698354
+    },
+    {
+      "url": "https://blog.growthbook.io/sql-explorer-time-to-be-the-marco-polo-of-your-data/",
+      "clicks": 3,
+      "impressions": 168,
+      "avg_position": 7.81,
+      "ctr": 0.017857142857142856
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
+      "clicks": 3,
+      "impressions": 1017,
+      "avg_position": 7.79,
+      "ctr": 0.0029498525073746312
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
+      "clicks": 3,
+      "impressions": 2096,
+      "avg_position": 7.68,
+      "ctr": 0.0014312977099236641
+    },
+    {
+      "url": "https://www.growthbook.io/customers/toom",
+      "clicks": 3,
+      "impressions": 57,
+      "avg_position": 8.93,
+      "ctr": 0.05263157894736842
+    },
+    {
+      "url": "https://www.growthbook.io/customers/upstart",
+      "clicks": 3,
+      "impressions": 405,
+      "avg_position": 8.31,
+      "ctr": 0.007407407407407408
+    },
+    {
+      "url": "https://www.growthbook.io/growthbook-for-databricks",
+      "clicks": 3,
+      "impressions": 422,
+      "avg_position": 7.77,
+      "ctr": 0.0071090047393364926
+    },
+    {
+      "url": "https://blog.growthbook.io/7-000-github-stars-top-open-source-platform/",
+      "clicks": 2,
+      "impressions": 2577,
+      "avg_position": 6.86,
+      "ctr": 0.0007760962359332557
+    },
+    {
+      "url": "https://blog.growthbook.io/a-b-testing-platforms-build-vs-buy/",
+      "clicks": 2,
+      "impressions": 666,
+      "avg_position": 6.55,
+      "ctr": 0.003003003003003003
+    },
+    {
+      "url": "https://blog.growthbook.io/automatically-track-click-events-from-webflow-in-google-analytics/",
+      "clicks": 2,
+      "impressions": 203,
+      "avg_position": 19.71,
+      "ctr": 0.009852216748768473
+    },
+    {
+      "url": "https://blog.growthbook.io/building-in-the-ai-era-lessons-from-past-technological-revolutions/",
+      "clicks": 2,
+      "impressions": 1220,
+      "avg_position": 5.97,
+      "ctr": 0.001639344262295082
+    },
+    {
+      "url": "https://blog.growthbook.io/creating-an-auth0-custom-login-ui-with-code/",
+      "clicks": 2,
+      "impressions": 180,
+      "avg_position": 12.67,
+      "ctr": 0.011111111111111112
+    },
+    {
+      "url": "https://blog.growthbook.io/experiment-metrics-simplified-retention-count-distinct-max/",
+      "clicks": 2,
+      "impressions": 640,
+      "avg_position": 6.5,
+      "ctr": 0.003125
+    },
+    {
+      "url": "https://blog.growthbook.io/fact-table-query-optimization/",
+      "clicks": 2,
+      "impressions": 365,
+      "avg_position": 6.11,
+      "ctr": 0.005479452054794521
+    },
+    {
+      "url": "https://blog.growthbook.io/flavors-of-experimentation-in-growthbook/",
+      "clicks": 2,
+      "impressions": 745,
+      "avg_position": 7.05,
+      "ctr": 0.0026845637583892616
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-2/",
+      "clicks": 2,
+      "impressions": 139,
+      "avg_position": 6.29,
+      "ctr": 0.014388489208633094
+    },
+    {
+      "url": "https://blog.growthbook.io/holdouts-deep-dive/",
+      "clicks": 2,
+      "impressions": 468,
+      "avg_position": 11.85,
+      "ctr": 0.004273504273504274
+    },
+    {
+      "url": "https://blog.growthbook.io/vibe-shipping/",
+      "clicks": 2,
+      "impressions": 211,
+      "avg_position": 9.97,
+      "ctr": 0.009478672985781991
+    },
+    {
+      "url": "https://shop.growthbook.io/",
+      "clicks": 2,
+      "impressions": 441,
+      "avg_position": 5.07,
+      "ctr": 0.0045351473922902496
+    },
+    {
+      "url": "https://trust.growthbook.io/controls",
+      "clicks": 2,
+      "impressions": 173,
+      "avg_position": 6.23,
+      "ctr": 0.011560693641618497
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
+      "clicks": 2,
+      "impressions": 586,
+      "avg_position": 7.14,
+      "ctr": 0.0034129692832764505
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
+      "clicks": 2,
+      "impressions": 920,
+      "avg_position": 12.15,
+      "ctr": 0.002173913043478261
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-conductrics",
+      "clicks": 2,
+      "impressions": 1037,
+      "avg_position": 6.89,
+      "ctr": 0.0019286403085824494
+    },
+    {
+      "url": "https://www.growthbook.io/customers/breeze-airways",
+      "clicks": 2,
+      "impressions": 175,
+      "avg_position": 5.89,
+      "ctr": 0.011428571428571429
+    },
+    {
+      "url": "https://blog.growthbook.io/announcing-growthbook-2-5/",
+      "clicks": 1,
+      "impressions": 154,
+      "avg_position": 8.19,
+      "ctr": 0.006493506493506494
+    },
+    {
+      "url": "https://blog.growthbook.io/author/jeremy/",
+      "clicks": 1,
+      "impressions": 201,
+      "avg_position": 5.24,
+      "ctr": 0.004975124378109453
+    },
+    {
+      "url": "https://blog.growthbook.io/author/luke/",
+      "clicks": 1,
+      "impressions": 18,
+      "avg_position": 7.67,
+      "ctr": 0.05555555555555555
+    },
+    {
+      "url": "https://blog.growthbook.io/author/lukesonnet/",
+      "clicks": 1,
+      "impressions": 99,
+      "avg_position": 6.22,
+      "ctr": 0.010101010101010102
+    },
+    {
+      "url": "https://blog.growthbook.io/author/ryan/",
+      "clicks": 1,
+      "impressions": 83,
+      "avg_position": 7.24,
+      "ctr": 0.012048192771084338
+    },
+    {
+      "url": "https://blog.growthbook.io/custom-prelaunch-checklists/",
+      "clicks": 1,
+      "impressions": 32,
+      "avg_position": 11.0,
+      "ctr": 0.03125
+    },
+    {
+      "url": "https://blog.growthbook.io/cut-experimentation-costs-by-82-percent/",
+      "clicks": 1,
+      "impressions": 889,
+      "avg_position": 6.03,
+      "ctr": 0.0011248593925759281
+    },
+    {
+      "url": "https://blog.growthbook.io/experiment-decision-framework-for-automated-shipping-recommendations/",
+      "clicks": 1,
+      "impressions": 183,
+      "avg_position": 9.34,
+      "ctr": 0.00546448087431694
+    },
+    {
+      "url": "https://blog.growthbook.io/experiment-with-mcp/",
+      "clicks": 1,
+      "impressions": 831,
+      "avg_position": 7.11,
+      "ctr": 0.0012033694344163659
+    },
+    {
+      "url": "https://blog.growthbook.io/growth-book-now-supports-clickhouse/",
+      "clicks": 1,
+      "impressions": 49,
+      "avg_position": 7.65,
+      "ctr": 0.02040816326530612
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-2-0-data-day/",
+      "clicks": 1,
+      "impressions": 17,
+      "avg_position": 4.94,
+      "ctr": 0.058823529411764705
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-2-0-developer-day/",
+      "clicks": 1,
+      "impressions": 27,
+      "avg_position": 6.67,
+      "ctr": 0.037037037037037035
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-2-0-product-day/",
+      "clicks": 1,
+      "impressions": 16,
+      "avg_position": 4.12,
+      "ctr": 0.0625
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-hits-6-000-stars-on-github-whats-driving-our-growth/",
+      "clicks": 1,
+      "impressions": 298,
+      "avg_position": 5.87,
+      "ctr": 0.003355704697986577
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-is-now-soc-2-compliant/",
+      "clicks": 1,
+      "impressions": 560,
+      "avg_position": 3.53,
+      "ctr": 0.0017857142857142857
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-launch-month-week-4/",
+      "clicks": 1,
+      "impressions": 118,
+      "avg_position": 7.91,
+      "ctr": 0.00847457627118644
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-2-0/",
+      "clicks": 1,
+      "impressions": 11,
+      "avg_position": 12.18,
+      "ctr": 0.09090909090909091
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-5/",
+      "clicks": 1,
+      "impressions": 44,
+      "avg_position": 11.09,
+      "ctr": 0.022727272727272728
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-9/",
+      "clicks": 1,
+      "impressions": 241,
+      "avg_position": 6.52,
+      "ctr": 0.004149377593360996
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-3-4/",
+      "clicks": 1,
+      "impressions": 609,
+      "avg_position": 8.68,
+      "ctr": 0.0016420361247947454
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-3-5/",
+      "clicks": 1,
+      "impressions": 353,
+      "avg_position": 7.15,
+      "ctr": 0.0028328611898017
+    },
+    {
+      "url": "https://blog.growthbook.io/integration-growthbook-rollbar-error-monitoring/",
+      "clicks": 1,
+      "impressions": 125,
+      "avg_position": 9.38,
+      "ctr": 0.008
+    },
+    {
+      "url": "https://blog.growthbook.io/introducing-the-growthbook-schema-browser/",
+      "clicks": 1,
+      "impressions": 77,
+      "avg_position": 6.4,
+      "ctr": 0.012987012987012988
+    },
+    {
+      "url": "https://blog.growthbook.io/the-best-a-b-testing-platforms-of-2025/",
+      "clicks": 1,
+      "impressions": 19004,
+      "avg_position": 8.07,
+      "ctr": 5.2620500947169015e-05
+    },
+    {
+      "url": "https://blog.growthbook.io/visual-editor/",
+      "clicks": 1,
+      "impressions": 116,
+      "avg_position": 7.34,
+      "ctr": 0.008620689655172414
+    },
+    {
+      "url": "https://shop.growthbook.io/products/growthbook-logo-unisex-t-shirt",
+      "clicks": 1,
+      "impressions": 34,
+      "avg_position": 1.85,
+      "ctr": 0.029411764705882353
+    },
+    {
+      "url": "https://shop.growthbook.io/products/growthbook-mascot-hardcover-bound-notebook",
+      "clicks": 1,
+      "impressions": 3,
+      "avg_position": 6.67,
+      "ctr": 0.3333333333333333
+    },
+    {
+      "url": "https://shop.growthbook.io/products/keep-calm-and-test-on-t-shirt",
+      "clicks": 1,
+      "impressions": 80,
+      "avg_position": 3.67,
+      "ctr": 0.0125
+    },
+    {
+      "url": "https://slack.growthbook.io/",
+      "clicks": 1,
+      "impressions": 23,
+      "avg_position": 7.17,
+      "ctr": 0.043478260869565216
+    },
+    {
+      "url": "https://trust.growthbook.io/subprocessors",
+      "clicks": 1,
+      "impressions": 22,
+      "avg_position": 12.41,
+      "ctr": 0.045454545454545456
+    },
+    {
+      "url": "https://www.growthbook.io/acceptable-use-policy",
+      "clicks": 1,
+      "impressions": 39,
+      "avg_position": 6.38,
+      "ctr": 0.02564102564102564
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-absmartly",
+      "clicks": 1,
+      "impressions": 947,
+      "avg_position": 7.7,
+      "ctr": 0.0010559662090813093
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
+      "clicks": 1,
+      "impressions": 757,
+      "avg_position": 8.94,
+      "ctr": 0.001321003963011889
+    },
+    {
+      "url": "https://www.growthbook.io/compare/optimizely-new---grid",
+      "clicks": 1,
+      "impressions": 24,
+      "avg_position": 9.33,
+      "ctr": 0.041666666666666664
+    },
+    {
+      "url": "https://www.growthbook.io/products/insights",
+      "clicks": 1,
+      "impressions": 682,
+      "avg_position": 7.43,
+      "ctr": 0.001466275659824047
+    },
+    {
+      "url": "https://www.growthbook.io/solutions/edtech",
+      "clicks": 1,
+      "impressions": 168,
+      "avg_position": 9.65,
+      "ctr": 0.005952380952380952
+    },
+    {
+      "url": "http://www.growthbook.io/",
+      "clicks": 0,
+      "impressions": 6,
+      "avg_position": 1.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/4000-stars/",
+      "clicks": 0,
+      "impressions": 88,
+      "avg_position": 12.56,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/a-tesla-ux-problem-mixing-states-and-actions/",
+      "clicks": 0,
+      "impressions": 38,
+      "avg_position": 12.45,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/alternative-to-google-optimize-modernize-your-a-b-testing-with-growthbook/",
+      "clicks": 0,
+      "impressions": 35,
+      "avg_position": 4.54,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/announcing-growth-book-open-source-release/",
+      "clicks": 0,
+      "impressions": 242,
+      "avg_position": 8.14,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/announcing-growthbook-on-jsr/",
+      "clicks": 0,
+      "impressions": 129,
+      "avg_position": 6.89,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/appetite-for-risk-a-b-testing-in-fast-paced-environments/",
+      "clicks": 0,
+      "impressions": 117,
+      "avg_position": 10.47,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/",
+      "clicks": 0,
+      "impressions": 358,
+      "avg_position": 8.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/10/",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 3.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/2/",
+      "clicks": 0,
+      "impressions": 5,
+      "avg_position": 5.8,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/3/",
+      "clicks": 0,
+      "impressions": 10,
+      "avg_position": 6.9,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/4/",
+      "clicks": 0,
+      "impressions": 21,
+      "avg_position": 9.14,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/5/",
+      "clicks": 0,
+      "impressions": 4,
+      "avg_position": 4.75,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/7/",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 5.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/8/",
+      "clicks": 0,
+      "impressions": 5,
+      "avg_position": 22.4,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/archive/page/9/",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 8.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/ashley/",
+      "clicks": 0,
+      "impressions": 81,
+      "avg_position": 7.25,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/page/2/",
+      "clicks": 0,
+      "impressions": 66,
+      "avg_position": 7.64,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/page/3/",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 8.43,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/page/4/",
+      "clicks": 0,
+      "impressions": 5,
+      "avg_position": 7.6,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/page/5/",
+      "clicks": 0,
+      "impressions": 16,
+      "avg_position": 13.88,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/page/6/",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 19.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/graham/page/7/",
+      "clicks": 0,
+      "impressions": 6,
+      "avg_position": 31.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/author/ryan/page/2/",
+      "clicks": 0,
+      "impressions": 22,
+      "avg_position": 4.45,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/auto-fact-tables-impact-analysis-performance-boosts/",
+      "clicks": 0,
+      "impressions": 236,
+      "avg_position": 6.13,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/bayesian-model-updates-in-growthbook-3-0/",
+      "clicks": 0,
+      "impressions": 376,
+      "avg_position": 6.2,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/code-references/",
+      "clicks": 0,
+      "impressions": 117,
+      "avg_position": 8.52,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/content/images/2026/03/data-src-image-33a176fc-d924-4112-a87b-874a507591b2.png",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 15.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/content/images/2026/03/data-src-image-34ee25a7-be16-4bfb-92d4-2ec0bb9a9726.png",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 9.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/content/images/size/w1200/2025/06/flags-1.png",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 43.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/content/images/size/w1200/2025/09/Blog---Features-Fail---Green.png",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 30.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/convincing-leadership-to-adopt-a-b-testing/",
+      "clicks": 0,
+      "impressions": 291,
+      "avg_position": 8.08,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/faster-feature-releases-on-growthbook-cloud/",
+      "clicks": 0,
+      "impressions": 188,
+      "avg_position": 5.5,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/feature-flagging-at-scale-5-power-tools-you-shouldnt-skip/",
+      "clicks": 0,
+      "impressions": 367,
+      "avg_position": 12.34,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/go-golang-sdk-for-feature-flagging-and-experimentation/",
+      "clicks": 0,
+      "impressions": 83,
+      "avg_position": 8.51,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/goodharts-law-and-the-dangers-of-metric-selection-with-a-b-testing/",
+      "clicks": 0,
+      "impressions": 519,
+      "avg_position": 7.18,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growth-book-0-2-3-shipped/",
+      "clicks": 0,
+      "impressions": 9,
+      "avg_position": 20.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growth-book-0-3-0-is-here/",
+      "clicks": 0,
+      "impressions": 10,
+      "avg_position": 21.8,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-0-4-0-august-update/",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 6.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-0-5-0-released/",
+      "clicks": 0,
+      "impressions": 48,
+      "avg_position": 10.21,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-0-6-0-released/",
+      "clicks": 0,
+      "impressions": 2,
+      "avg_position": 38.5,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-0-9-0-north-star-metrics-ad-hoc-reports-and-huge-performance-improvements-ef-b8-8f/",
+      "clicks": 0,
+      "impressions": 2,
+      "avg_position": 9.5,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-1-0-0-is-here-feature-flagging-chrome-devtools-extension-and-more/",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 3.29,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-1-1-0-android-sdk-ui-improvements-and-more/",
+      "clicks": 0,
+      "impressions": 68,
+      "avg_position": 7.53,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-hits-3-000-stars-on-github/",
+      "clicks": 0,
+      "impressions": 95,
+      "avg_position": 7.32,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-launch-month-week-1/",
+      "clicks": 0,
+      "impressions": 229,
+      "avg_position": 7.33,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-launch-month-week-2/",
+      "clicks": 0,
+      "impressions": 59,
+      "avg_position": 8.56,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-launch-month-week-3/",
+      "clicks": 0,
+      "impressions": 67,
+      "avg_position": 7.91,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-now-supports-databricks/",
+      "clicks": 0,
+      "impressions": 24,
+      "avg_position": 5.96,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-3/",
+      "clicks": 0,
+      "impressions": 53,
+      "avg_position": 12.47,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-4/",
+      "clicks": 0,
+      "impressions": 5,
+      "avg_position": 16.8,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-6/",
+      "clicks": 0,
+      "impressions": 4,
+      "avg_position": 7.5,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-7-0/",
+      "clicks": 0,
+      "impressions": 11,
+      "avg_position": 6.27,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-8/",
+      "clicks": 0,
+      "impressions": 196,
+      "avg_position": 9.84,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-1-9/",
+      "clicks": 0,
+      "impressions": 51,
+      "avg_position": 6.76,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-1/",
+      "clicks": 0,
+      "impressions": 11,
+      "avg_position": 4.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-3/",
+      "clicks": 0,
+      "impressions": 77,
+      "avg_position": 10.36,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-4/",
+      "clicks": 0,
+      "impressions": 23,
+      "avg_position": 6.52,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-6/",
+      "clicks": 0,
+      "impressions": 108,
+      "avg_position": 9.96,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-2-8/",
+      "clicks": 0,
+      "impressions": 229,
+      "avg_position": 7.42,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-3-0/",
+      "clicks": 0,
+      "impressions": 269,
+      "avg_position": 6.84,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-3-2/",
+      "clicks": 0,
+      "impressions": 150,
+      "avg_position": 7.25,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-3-3/",
+      "clicks": 0,
+      "impressions": 450,
+      "avg_position": 7.91,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-3-6/",
+      "clicks": 0,
+      "impressions": 626,
+      "avg_position": 7.21,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/growthbook-version-4-3/",
+      "clicks": 0,
+      "impressions": 60,
+      "avg_position": 4.42,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/membership/",
+      "clicks": 0,
+      "impressions": 15,
+      "avg_position": 6.73,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/new-feature-save-time-with-automatic-metric-generation/",
+      "clicks": 0,
+      "impressions": 102,
+      "avg_position": 8.64,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/new-growthbook-version-0-8-0/",
+      "clicks": 0,
+      "impressions": 54,
+      "avg_position": 9.7,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/new-growthbook-version-2-7/",
+      "clicks": 0,
+      "impressions": 122,
+      "avg_position": 7.21,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/objective-a-b-test-prioritization/",
+      "clicks": 0,
+      "impressions": 656,
+      "avg_position": 8.31,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/page/2/",
+      "clicks": 0,
+      "impressions": 62,
+      "avg_position": 5.66,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/page/3/",
+      "clicks": 0,
+      "impressions": 38,
+      "avg_position": 7.63,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/page/4/",
+      "clicks": 0,
+      "impressions": 37,
+      "avg_position": 5.68,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/page/5/",
+      "clicks": 0,
+      "impressions": 18,
+      "avg_position": 20.89,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/simpler-faster-sql-queries/",
+      "clicks": 0,
+      "impressions": 83,
+      "avg_position": 7.9,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/tag/data-science/",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 1.71,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/tag/feature-flags/",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 1.71,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/tag/new-features/",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 1.71,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/tag/release/",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 1.71,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/tag/stats-engine/",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 8.38,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/tags/",
+      "clicks": 0,
+      "impressions": 47,
+      "avg_position": 6.87,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/vercel/",
+      "clicks": 0,
+      "impressions": 1072,
+      "avg_position": 6.56,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/what-are-feature-flags/#3-flag-evaluation",
+      "clicks": 0,
+      "impressions": 26,
+      "avg_position": 7.92,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/what-are-feature-flags/#by-purpose",
+      "clicks": 0,
+      "impressions": 26,
+      "avg_position": 7.92,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/what-are-feature-flags/#by-time-span",
+      "clicks": 0,
+      "impressions": 26,
+      "avg_position": 7.92,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/when-companies-adopt-feature-flags/",
+      "clicks": 0,
+      "impressions": 301,
+      "avg_position": 16.65,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://blog.growthbook.io/why-fintechs-should-shrink-their-attack-surface-not-just-get-certified/",
+      "clicks": 0,
+      "impressions": 159,
+      "avg_position": 6.15,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/collections/all",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 4.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/ab-tests-a-real-product-hero-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 6.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/aut-data-aut-nihil-either-data-or-nothing",
+      "clicks": 0,
+      "impressions": 9,
+      "avg_position": 8.56,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/beware-of-hippos-notebook",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 3.43,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/camelbak-sports-water-bottle-bpa-free",
+      "clicks": 0,
+      "impressions": 34,
+      "avg_position": 37.76,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/control-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 2,
+      "avg_position": 8.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/dad-hat",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 89.57,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/dad-hat-1",
+      "clicks": 0,
+      "impressions": 11,
+      "avg_position": 7.27,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/data-driven-dad-hat-baseball-cap",
+      "clicks": 0,
+      "impressions": 33,
+      "avg_position": 11.52,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/data-nerd-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 32,
+      "avg_position": 5.56,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/database-hat",
+      "clicks": 0,
+      "impressions": 50,
+      "avg_position": 8.74,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/dd-data-driven-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 26,
+      "avg_position": 6.54,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/experiment-organic-dad-hat",
+      "clicks": 0,
+      "impressions": 6,
+      "avg_position": 13.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/experiment-upside-down-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 6,
+      "avg_position": 6.5,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/got-data-garment-dyed-heavyweight-t-shirt",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 8.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/growthbook-baseball-hat",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 3.75,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/growthbook-embroidered-dad-hat-under-armour%C2%AE",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 5.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/growthbook-quarter-zip-pullover",
+      "clicks": 0,
+      "impressions": 2,
+      "avg_position": 4.5,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/growthbook-visor",
+      "clicks": 0,
+      "impressions": 2,
+      "avg_position": 3.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/icy-data-driven-t-shirt",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 12.62,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/if-you-think-this-shirt-is-bad-you-should-see-the-other-variation-t-shirt",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 2.33,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/inconclusive-af-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 7.38,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/keep-calm-and-trust-data-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 6,
+      "avg_position": 7.33,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/no-hippo-crossed-out-t-shirt",
+      "clicks": 0,
+      "impressions": 28,
+      "avg_position": 5.18,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/oversized-vibe-coder-tie-dye-t-shirt",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 9.12,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/significantly-insignificant-unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 7.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/statistical-advisory-inconclusive-af-unisex-garment-dyed-heavyweight-t-shirt",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 8.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/statistical-advisory-insignificant-results-unisex-garment-dyed-heavyweight-t-shirt",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 6.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/test-me-embroidered-hoodie",
+      "clicks": 0,
+      "impressions": 8,
+      "avg_position": 1.88,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/toggle-dad-hat",
+      "clicks": 0,
+      "impressions": 5,
+      "avg_position": 6.4,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/trust-me-ive-tested-it-unisex-garment-dyed-heavyweight-t-shirt",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 7.0,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/unisex-ai-made-this-t-shit",
+      "clicks": 0,
+      "impressions": 22,
+      "avg_position": 6.27,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://shop.growthbook.io/products/unisex-t-shirt",
+      "clicks": 0,
+      "impressions": 3,
+      "avg_position": 6.67,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://status2.growthbook.io/incidents",
+      "clicks": 0,
+      "impressions": 96,
+      "avg_position": 3.82,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://status2.growthbook.io/incidents/2026-01/2026-03",
+      "clicks": 0,
+      "impressions": 7,
+      "avg_position": 4.29,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/a/experimentation-platform",
+      "clicks": 0,
+      "impressions": 569,
+      "avg_position": 4.45,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/a/feature-flags",
+      "clicks": 0,
+      "impressions": 552,
+      "avg_position": 5.65,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-salesforce-mc-personalization",
+      "clicks": 0,
+      "impressions": 281,
+      "avg_position": 6.4,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-sitespect",
+      "clicks": 0,
+      "impressions": 383,
+      "avg_position": 9.39,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/migrate-to-growthbook-for-experimentation",
+      "clicks": 0,
+      "impressions": 61,
+      "avg_position": 9.84,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/newsletter",
+      "clicks": 0,
+      "impressions": 132,
+      "avg_position": 7.14,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/resources/a-b-testing-playbook-for-ai-powered-apps",
+      "clicks": 0,
+      "impressions": 57,
+      "avg_position": 7.23,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/solutions/fintech",
+      "clicks": 0,
+      "impressions": 344,
+      "avg_position": 8.39,
+      "ctr": 0.0
+    },
+    {
+      "url": "https://www.growthbook.io/solutions/health-tech",
+      "clicks": 0,
+      "impressions": 276,
+      "avg_position": 10.25,
+      "ctr": 0.0
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Optimizely",
+      "etv": 239952,
+      "pages": 269,
+      "top_page": "https://www.optimizely.com/optimization-glossary/ab-testing/",
+      "top_etv": 54372
+    },
+    {
+      "name": "Statsig",
+      "etv": 136524,
+      "pages": 385,
+      "top_page": "https://www.statsig.com/perspectives/experimental-control-explained",
+      "top_etv": 9038
+    },
+    {
+      "name": "Harness",
+      "etv": 120248,
+      "pages": 104,
+      "top_page": "https://www.harness.io/harness-devops-academy/ab-testing",
+      "top_etv": 49631
+    },
+    {
+      "name": "Amplitude Exp",
+      "etv": 112665,
+      "pages": 75,
+      "top_page": "https://amplitude.com/explore/experiment/t-test",
+      "top_etv": 19056
+    },
+    {
+      "name": "LaunchDarkly",
+      "etv": 14505,
+      "pages": 136,
+      "top_page": "https://launchdarkly.com/blog/what-are-feature-flags/",
+      "top_etv": 1310
+    },
+    {
+      "name": "Eppo",
+      "etv": 7637,
+      "pages": 35,
+      "top_page": "https://www.geteppo.com/blog/ab-testing-vs-split-testing",
+      "top_etv": 3436
+    },
+    {
+      "name": "PostHog",
+      "etv": 7481,
+      "pages": 133,
+      "top_page": "https://posthog.com/blog/product-engineer-vs-software-engineer",
+      "top_etv": 498
+    },
+    {
+      "name": "Unleash",
+      "etv": 2518,
+      "pages": 10,
+      "top_page": "https://www.getunleash.io/blog/how-to-implement-trunk-based-development-a-practical-guide",
+      "top_etv": 1618
+    },
+    {
+      "name": "Flagsmith",
+      "etv": 854,
+      "pages": 15,
+      "top_page": "https://www.flagsmith.com/blog/canary-deployment",
+      "top_etv": 249
+    },
+    {
+      "name": "GrowthBook",
+      "etv": 75,
+      "pages": 4,
+      "top_page": "https://blog.growthbook.io/what-is-a-b-testing/",
+      "top_etv": 39
+    }
+  ],
+  "etv_trend": {
+    "Amplitude Exp": [
+      {
+        "date": "2026-03-27",
+        "etv": 296390
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 296500
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 109505
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 109505
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 112665
+      }
+    ],
+    "Eppo": [
+      {
+        "date": "2026-03-27",
+        "etv": 11299
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 11482
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 7383
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 7383
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 7637
+      }
+    ],
+    "Flagsmith": [
+      {
+        "date": "2026-03-27",
+        "etv": 1087
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 1092
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 640
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 640
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 854
+      }
+    ],
+    "GrowthBook": [
+      {
+        "date": "2026-03-27",
+        "etv": 182
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 186
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 36
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 36
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 75
+      }
+    ],
+    "Harness": [
+      {
+        "date": "2026-03-27",
+        "etv": 186803
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 187421
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 120391
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 120391
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 120248
+      }
+    ],
+    "LaunchDarkly": [
+      {
+        "date": "2026-03-27",
+        "etv": 20921
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 21184
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 12223
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 13631
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 14505
+      }
+    ],
+    "Optimizely": [
+      {
+        "date": "2026-03-27",
+        "etv": 530527
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 529426
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 209548
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 232695
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 239952
+      }
+    ],
+    "PostHog": [
+      {
+        "date": "2026-03-27",
+        "etv": 10193
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 10679
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 6998
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 6998
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 7481
+      }
+    ],
+    "Statsig": [
+      {
+        "date": "2026-03-27",
+        "etv": 243082
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 243453
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 104420
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 141982
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 136524
+      }
+    ],
+    "Unleash": [
+      {
+        "date": "2026-03-27",
+        "etv": 3330
+      },
+      {
+        "date": "2026-03-28",
+        "etv": 3376
+      },
+      {
+        "date": "2026-03-29",
+        "etv": 2554
+      },
+      {
+        "date": "2026-03-30",
+        "etv": 2554
+      },
+      {
+        "date": "2026-04-04",
+        "etv": 2518
+      }
+    ]
+  },
+  "new_content": [
+    {
+      "competitor": "Optimizely",
+      "slug": "experimentation-messaging-and-roadmap",
+      "url": "https://www.optimizely.com/insights/experimentation-messaging-and-roadmap",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "minneapolis-roadshow",
+      "url": "https://www.optimizely.com/insights/minneapolis-roadshow",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "authentication-vs-authorization",
+      "url": "https://www.harness.io/blog/authentication-vs-authorization",
+      "threat": 7,
+      "kd": 12.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "bayesian-statistics",
+      "url": "https://amplitude.com/blog/bayesian-statistics",
+      "threat": 7,
+      "kd": 22.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "testing-ai-agents",
+      "url": "https://posthog.com/blog/testing-ai-agents",
+      "threat": 7,
+      "kd": 6.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "production-ready",
+      "url": "https://posthog.com/docs/feature-flags/production-ready",
+      "threat": 7,
+      "kd": 0.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "what-is-argo-cd",
+      "url": "https://www.harness.io/blog/what-is-argo-cd",
+      "threat": 6,
+      "kd": 16.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "defacto-increased-experimentation-4x",
+      "url": "https://amplitude.com/blog/defacto-increased-experimentation-4x",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "sxsw-2026",
+      "url": "https://amplitude.com/blog/sxsw-2026",
+      "threat": 6,
+      "kd": 40.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "contentsquare",
+      "url": "https://amplitude.com/compare/contentsquare",
+      "threat": 6,
+      "kd": 49.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Unleash",
+      "slug": "blog",
+      "url": "https://www.getunleash.io/en/blog",
+      "threat": 6,
+      "kd": 2.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Flagsmith",
+      "slug": "feature-flag-testing",
+      "url": "https://www.flagsmith.com/blog/feature-flag-testing",
+      "threat": 6,
+      "kd": 0.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "sandbox-environments",
+      "url": "https://posthog.com/docs/api/sandbox-environments",
+      "threat": 6,
+      "kd": 10.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "identity-resolution",
+      "url": "https://posthog.com/docs/product-analytics/identity-resolution",
+      "threat": 6,
+      "kd": 21.0,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "announcing-snowflake-support-for-harness-db-devops",
+      "url": "https://www.harness.io/blog/announcing-snowflake-support-for-harness-db-devops",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "ci-cd-best-practices",
+      "url": "https://www.harness.io/blog/ci-cd-best-practices",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "cost-awareness-in-ci-cd-pipelines-a-finops-guide",
+      "url": "https://www.harness.io/blog/cost-awareness-in-ci-cd-pipelines-a-finops-guide",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "defeating-context-rot-mastering-the-flow-of-ai-sessions",
+      "url": "https://www.harness.io/blog/defeating-context-rot-mastering-the-flow-of-ai-sessions",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "from-chaos-to-confidence-debunking-the-3-biggest-myths-of-chaos-engineering",
+      "url": "https://www.harness.io/blog/from-chaos-to-confidence-debunking-the-3-biggest-myths-of-chaos-engineering",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "harness-ai-december-2025-updates",
+      "url": "https://www.harness.io/blog/harness-ai-december-2025-updates",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "harness-ai-february-2026-updates",
+      "url": "https://www.harness.io/blog/harness-ai-february-2026-updates",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-release-confidently-at-ai-speed",
+      "url": "https://www.harness.io/blog/how-to-release-confidently-at-ai-speed",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-scale-sandbox-environments-with-an-internal-developer-portal",
+      "url": "https://www.harness.io/blog/how-to-scale-sandbox-environments-with-an-internal-developer-portal",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "introducing-zero-trust-architecture-for-software-delivery",
+      "url": "https://www.harness.io/blog/introducing-zero-trust-architecture-for-software-delivery",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "making-deploys-safe-shouldnt-be-hard",
+      "url": "https://www.harness.io/blog/making-deploys-safe-shouldnt-be-hard",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "operationalizing-production-data-testing-with-harness-database-devops",
+      "url": "https://www.harness.io/blog/operationalizing-production-data-testing-with-harness-database-devops",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "regression-testing-in-ci-cd-deliver-faster-without-the-fear",
+      "url": "https://www.harness.io/blog/regression-testing-in-ci-cd-deliver-faster-without-the-fear",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "release-orchestration-bridges-the-ai-delivery-gap",
+      "url": "https://www.harness.io/blog/release-orchestration-bridges-the-ai-delivery-gap",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "shift-left-finops-proactive-cloud-cost-control",
+      "url": "https://www.harness.io/blog/shift-left-finops-proactive-cloud-cost-control",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "shipped-in-march-2026",
+      "url": "https://www.harness.io/blog/shipped-in-march-2026",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-04"
+    }
+  ],
+  "gb_new_content": [
+    {
+      "competitor": "GrowthBook",
+      "slug": "How To A B Test Ai A Practical Guide",
+      "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 18,
+      "impressions": 8772,
+      "position": 8.6,
+      "traj": "\u2193"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "Release 4 3 Faster Experiments",
+      "url": "https://blog.growthbook.io/release-4-3-faster-experiments/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 15,
+      "impressions": 2612,
+      "position": 5.4,
+      "traj": "\u2193"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "What Is A B Testing",
+      "url": "https://blog.growthbook.io/what-is-a-b-testing/",
+      "threat": 3,
+      "kd": 66.0,
+      "date": "2026-04-04",
+      "clicks": 22,
+      "impressions": 19924,
+      "position": 14.1,
+      "traj": "\u2191"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "Growthbook Vs Launchdarkly Why Developers Choose Growthbook For Feature Flagging",
+      "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 11,
+      "impressions": 6041,
+      "position": 7.1,
+      "traj": "\u2193"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "Feedback Loops Are The Next Breakthrough In Agentic Coding",
+      "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 19,
+      "impressions": 3455,
+      "position": 6.5,
+      "traj": "\u2191"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "What Are Feature Flags",
+      "url": "https://blog.growthbook.io/what-are-feature-flags/",
+      "threat": 5,
+      "kd": 24.0,
+      "date": "2026-04-04",
+      "clicks": 35,
+      "impressions": 32811,
+      "position": 11.0,
+      "traj": "\u2191"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "Guide To Multi Arm Bandits What Is It And Why You Probably Shouldnt Use It",
+      "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 10,
+      "impressions": 2165,
+      "position": 9.7,
+      "traj": "\u2191"
+    },
+    {
+      "competitor": "GrowthBook",
+      "slug": "A B Testing In The Age Of Ai",
+      "url": "https://blog.growthbook.io/a-b-testing-in-the-age-of-ai/",
+      "threat": null,
+      "kd": null,
+      "date": "2026-04-04",
+      "clicks": 19,
+      "impressions": 3515,
+      "position": 6.9,
+      "traj": "\u2192"
+    }
+  ],
+  "etv_kd": [
+    {
+      "competitor": "Optimizely",
+      "title": "What is A/B testing? With examples",
+      "url": "https://www.optimizely.com/optimization-glossary/ab-testing/",
+      "etv": 54372,
+      "kd": 63.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is conversion rate optimization (CRO)?",
+      "url": "https://www.optimizely.com/optimization-glossary/conversion-rate-optimization/",
+      "etv": 50904,
+      "kd": 32.0
+    },
+    {
+      "competitor": "Harness",
+      "title": "What is A/B Testing?",
+      "url": "https://www.harness.io/harness-devops-academy/ab-testing",
+      "etv": 49631,
+      "kd": 63.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "What is a T-test? How to Use and Interpret T-test Results",
+      "url": "https://amplitude.com/explore/experiment/t-test",
+      "etv": 19056,
+      "kd": 26.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is a unique selling point (USP)? With examples",
+      "url": "https://www.optimizely.com/optimization-glossary/unique-selling-point/",
+      "etv": 18172,
+      "kd": 42.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is search engine marketing (SEM)?",
+      "url": "https://www.optimizely.com/optimization-glossary/search-engine-marketing/",
+      "etv": 15244,
+      "kd": 52.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "Correlation vs Causation: Learn the Difference",
+      "url": "https://amplitude.com/blog/causation-correlation",
+      "etv": 14822,
+      "kd": 23.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "Amplitude",
+      "url": "https://amplitude.com/docs/sdks/ampli",
+      "etv": 10062,
+      "kd": 11.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is commerce?",
+      "url": "https://www.optimizely.com/optimization-glossary/commerce/",
+      "etv": 9120,
+      "kd": 82.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "Understanding Confidence Intervals and How to Calculate ...",
+      "url": "https://amplitude.com/explore/experiment/confidence-intervals",
+      "etv": 7314,
+      "kd": 42.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is trunk-based development?",
+      "url": "https://www.optimizely.com/optimization-glossary/trunk-based-development/",
+      "etv": 6895,
+      "kd": 21.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is search engine optimization (SEO)?",
+      "url": "https://www.optimizely.com/optimization-glossary/search-engine-optimization/",
+      "etv": 6061,
+      "kd": 74.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "What is Amplitude?",
+      "url": "https://amplitude.com/docs/get-started/what-is-amplitude",
+      "etv": 5502,
+      "kd": 20.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is a call-to-action (CTA)?",
+      "url": "https://www.optimizely.com/optimization-glossary/call-to-action/",
+      "etv": 5495,
+      "kd": 73.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is a content management system (CMS)?",
+      "url": "https://www.optimizely.com/optimization-glossary/content-management-system/",
+      "etv": 5461,
+      "kd": 48.0
+    },
+    {
+      "competitor": "Statsig",
+      "title": "Upper confidence bound: what it means for statistical ...",
+      "url": "https://www.statsig.com/perspectives/upper-confidence-bound-statistics",
+      "etv": 5348,
+      "kd": 0.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is average order value (AOV)?",
+      "url": "https://www.optimizely.com/optimization-glossary/average-order-value/",
+      "etv": 3993,
+      "kd": 21.0
+    },
+    {
+      "competitor": "Statsig",
+      "title": "90% vs. 95% confidence interval: which to use?",
+      "url": "https://www.statsig.com/perspectives/confidence-interval-90-vs-95",
+      "etv": 3896,
+      "kd": 9.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is a heatmap? benefits, limitations and examples",
+      "url": "https://www.optimizely.com/optimization-glossary/heatmap/",
+      "etv": 3730,
+      "kd": 70.0
+    },
+    {
+      "competitor": "Eppo",
+      "title": "A/B testing vs. split testing: Which should you use?",
+      "url": "https://www.geteppo.com/blog/ab-testing-vs-split-testing",
+      "etv": 3436,
+      "kd": 21.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "P Values: What They Are and How to Calculate Them",
+      "url": "https://amplitude.com/explore/experiment/p-values",
+      "etv": 3401,
+      "kd": 26.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "What Exponential Growth Really Looks Like (And How to ...",
+      "url": "https://amplitude.com/blog/exponential-growth",
+      "etv": 3342,
+      "kd": 30.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is lead generation?",
+      "url": "https://www.optimizely.com/optimization-glossary/lead-generation/",
+      "etv": 3174,
+      "kd": 82.0
+    },
+    {
+      "competitor": "Harness",
+      "title": "The Seven Phases of the Software Development Life Cycle",
+      "url": "https://www.harness.io/blog/software-development-life-cycle-phases",
+      "etv": 3005,
+      "kd": 45.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is an ecommerce platform?",
+      "url": "https://www.optimizely.com/optimization-glossary/ecommerce-platform/",
+      "etv": 2979,
+      "kd": 42.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is a null hypothesis?",
+      "url": "https://www.optimizely.com/optimization-glossary/null-hypothesis/",
+      "etv": 2799,
+      "kd": 8.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is lifetime value (LTV)?",
+      "url": "https://www.optimizely.com/optimization-glossary/lifetime-value/",
+      "etv": 2782,
+      "kd": 53.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is an A/A test?",
+      "url": "https://www.optimizely.com/optimization-glossary/aa-testing/",
+      "etv": 2774,
+      "kd": 0.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is B2B commerce?",
+      "url": "https://www.optimizely.com/optimization-glossary/b2b-ecommerce/",
+      "etv": 2330,
+      "kd": 36.0
+    },
+    {
+      "competitor": "Statsig",
+      "title": "A/B testing vs. split testing: is there a difference?",
+      "url": "https://www.statsig.com/perspectives/ab-testing-vs-split-testing",
+      "etv": 2321,
+      "kd": 21.0
+    }
+  ],
+  "youtube": {
+    "channels": [
+      {
+        "name": "Optimizely",
+        "avg_views": 98,
+        "video_count": 20,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "4 signals AI uses to decide what content to cite",
+            "views": 10,
+            "mult": 0.1,
+            "date": "2026-03-27",
+            "url": "https://www.youtube.com/watch?v=pRKg4f5R3xA",
+            "is_outlier": false
+          },
+          {
+            "title": "AI helps run 90% of this marketing team",
+            "views": 138,
+            "mult": 1.4,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=yG8FnM3gdcE",
+            "is_outlier": false
+          },
+          {
+            "title": "How Diligent routes all marketing through one AI system (Control Watchtower)",
+            "views": 29,
+            "mult": 0.3,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=d7w-UKI4nxA",
+            "is_outlier": false
+          },
+          {
+            "title": "Most people get vertical AI wrong",
+            "views": 109,
+            "mult": 1.1,
+            "date": "2026-03-25",
+            "url": "https://www.youtube.com/watch?v=SYPhVeeeZ6I",
+            "is_outlier": false
+          },
+          {
+            "title": "Vertical AI vs horizontal AI: which wins?",
+            "views": 36,
+            "mult": 0.4,
+            "date": "2026-03-25",
+            "url": "https://www.youtube.com/watch?v=v80G1_CK08E",
+            "is_outlier": false
+          },
+          {
+            "title": "Worse content is winning in AI search\u2026 here\u2019s why",
+            "views": 231,
+            "mult": 2.4,
+            "date": "2026-03-24",
+            "url": "https://www.youtube.com/watch?v=RKOV2O3tnp8",
+            "is_outlier": true
+          },
+          {
+            "title": "How AI search decides who to cite | 4 signals explained",
+            "views": 64,
+            "mult": 0.7,
+            "date": "2026-03-23",
+            "url": "https://www.youtube.com/watch?v=JPdcO-20Qi4",
+            "is_outlier": false
+          },
+          {
+            "title": "The $2M reason we replaced our digital platform: CompTIA CEO",
+            "views": 168,
+            "mult": 1.7,
+            "date": "2026-03-23",
+            "url": "https://www.youtube.com/watch?v=gJJNPh9_6fs",
+            "is_outlier": false
+          },
+          {
+            "title": "How a CEO decides if a new digital platform is worth it",
+            "views": 12,
+            "mult": 0.1,
+            "date": "2026-03-23",
+            "url": "https://www.youtube.com/watch?v=ZnyWNWhYnYg",
+            "is_outlier": false
+          },
+          {
+            "title": "AI search now knows more than you type\u2026",
+            "views": 434,
+            "mult": 4.4,
+            "date": "2026-03-20",
+            "url": "https://www.youtube.com/watch?v=miRcqXTLxew",
+            "is_outlier": true
+          },
+          {
+            "title": "Why AI search queries are getting wildly specific",
+            "views": 59,
+            "mult": 0.6,
+            "date": "2026-03-20",
+            "url": "https://www.youtube.com/watch?v=zhGxrWSwiB0",
+            "is_outlier": false
+          },
+          {
+            "title": "The CMS built for AI search: Optimizely CMS & Opal",
+            "views": 62,
+            "mult": 0.6,
+            "date": "2026-03-19",
+            "url": "https://www.youtube.com/watch?v=jN-nX0CFzvc",
+            "is_outlier": false
+          },
+          {
+            "title": "What to get right when launching a new CMS",
+            "views": 21,
+            "mult": 0.2,
+            "date": "2026-03-18",
+            "url": "https://www.youtube.com/watch?v=M35hognw43s",
+            "is_outlier": false
+          },
+          {
+            "title": "People built more in days than years with AI \ud83e\udd2f",
+            "views": 215,
+            "mult": 2.2,
+            "date": "2026-03-17",
+            "url": "https://www.youtube.com/watch?v=ElxKJGQkTGE",
+            "is_outlier": true
+          },
+          {
+            "title": "The AI inflection point: Why AI agents suddenly feel 10x more powerful",
+            "views": 38,
+            "mult": 0.4,
+            "date": "2026-03-17",
+            "url": "https://www.youtube.com/watch?v=ClV-q6mXJTw",
+            "is_outlier": false
+          },
+          {
+            "title": "Too many marketing tools? The Royal Mint found a better way",
+            "views": 9,
+            "mult": 0.1,
+            "date": "2026-03-15",
+            "url": "https://www.youtube.com/watch?v=wrnKanl71_s",
+            "is_outlier": false
+          },
+          {
+            "title": "How Alaska Airlines scales personalization on one backend",
+            "views": 23,
+            "mult": 0.2,
+            "date": "2026-03-13",
+            "url": "https://www.youtube.com/watch?v=xETWELCa2s0",
+            "is_outlier": false
+          },
+          {
+            "title": "The mobile UX fix that DOUBLED Road Scholar's conversion rate",
+            "views": 108,
+            "mult": 1.1,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=Zs3q1TG-Y5Y",
+            "is_outlier": false
+          },
+          {
+            "title": "How AI agents helps build test variations without developers",
+            "views": 184,
+            "mult": 1.9,
+            "date": "2026-03-10",
+            "url": "https://www.youtube.com/watch?v=5fiRarryJa4",
+            "is_outlier": false
+          },
+          {
+            "title": "Why marketing teams outgrow bespoke CMS setups",
+            "views": 10,
+            "mult": 0.1,
+            "date": "2026-03-09",
+            "url": "https://www.youtube.com/watch?v=L12PcUfBMvI",
+            "is_outlier": false
+          }
+        ]
+      },
+      {
+        "name": "Statsig",
+        "avg_views": 127,
+        "video_count": 4,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Advanced methods for faster experimentation",
+            "views": 303,
+            "mult": 2.4,
+            "date": "2026-01-29",
+            "url": "https://www.youtube.com/watch?v=uxV0teHXBjA",
+            "is_outlier": true
+          },
+          {
+            "title": "NextDoor x Statsig Customer Story",
+            "views": 49,
+            "mult": 0.4,
+            "date": "2026-01-26",
+            "url": "https://www.youtube.com/watch?v=TlAg-_LjEOc",
+            "is_outlier": false
+          },
+          {
+            "title": "Brex x Statsig Customer Story",
+            "views": 89,
+            "mult": 0.7,
+            "date": "2026-01-12",
+            "url": "https://www.youtube.com/watch?v=EZcplcvRJxU",
+            "is_outlier": false
+          },
+          {
+            "title": "Life360 x Statsig Customer Story",
+            "views": 67,
+            "mult": 0.5,
+            "date": "2026-01-09",
+            "url": "https://www.youtube.com/watch?v=-d0AHF_LGis",
+            "is_outlier": false
+          }
+        ]
+      },
+      {
+        "name": "Amplitude Exp",
+        "avg_views": 104,
+        "video_count": 20,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Agent Analytics: Inside the Black Box | Amplitude AI",
+            "views": 170,
+            "mult": 1.6,
+            "date": "2026-03-19",
+            "url": "https://www.youtube.com/watch?v=w79kHtcp5Kw",
+            "is_outlier": false
+          },
+          {
+            "title": "Primary vs Guardrail Metrics Explained",
+            "views": 51,
+            "mult": 0.5,
+            "date": "2026-03-13",
+            "url": "https://www.youtube.com/watch?v=rdXdHJyEcJw",
+            "is_outlier": false
+          },
+          {
+            "title": "Amplitude AI: Your unfair advantage",
+            "views": 156,
+            "mult": 1.5,
+            "date": "2026-03-12",
+            "url": "https://www.youtube.com/watch?v=dA2bfWPK2Bs",
+            "is_outlier": false
+          },
+          {
+            "title": "How to Find Every Event Triggered in Your Account",
+            "views": 27,
+            "mult": 0.3,
+            "date": "2026-03-12",
+            "url": "https://www.youtube.com/watch?v=WIdnuoirU9I",
+            "is_outlier": false
+          },
+          {
+            "title": "Meet Amplitude AI Assistant: Use Behavioral Context to Personalize Customer Chats",
+            "views": 145,
+            "mult": 1.4,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=07H02hQJpME",
+            "is_outlier": false
+          },
+          {
+            "title": "How to Build Mobile Guides and Surveys | Amplitude for Product Teams",
+            "views": 59,
+            "mult": 0.6,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=gCOgG4bckRY",
+            "is_outlier": false
+          },
+          {
+            "title": "How to Trace Analytics Events Back to the UI",
+            "views": 31,
+            "mult": 0.3,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=v4EOqqoeVfM",
+            "is_outlier": false
+          },
+          {
+            "title": "KPIs First: The Right Way to Set Up Amplitude",
+            "views": 36,
+            "mult": 0.3,
+            "date": "2026-03-10",
+            "url": "https://www.youtube.com/watch?v=E95GqxrsLTM",
+            "is_outlier": false
+          },
+          {
+            "title": "How to Find Your Highest LTV Users",
+            "views": 27,
+            "mult": 0.3,
+            "date": "2026-03-09",
+            "url": "https://www.youtube.com/watch?v=tFhFK9Qn9JU",
+            "is_outlier": false
+          },
+          {
+            "title": "Can You Build Complex Derived Properties in Amplitude?",
+            "views": 30,
+            "mult": 0.3,
+            "date": "2026-03-06",
+            "url": "https://www.youtube.com/watch?v=ur4-l46O6Ns",
+            "is_outlier": false
+          },
+          {
+            "title": "The Missing Timestamp That Breaks Cohort Analysis",
+            "views": 19,
+            "mult": 0.2,
+            "date": "2026-03-05",
+            "url": "https://www.youtube.com/watch?v=APYLgmoPKV4",
+            "is_outlier": false
+          },
+          {
+            "title": "Amplitude Has Entered the Chat: Global Agent in Slack and Teams",
+            "views": 81,
+            "mult": 0.8,
+            "date": "2026-03-04",
+            "url": "https://www.youtube.com/watch?v=DWjf5TGnOhY",
+            "is_outlier": false
+          },
+          {
+            "title": "How to A/B Test Mobile Users Only",
+            "views": 32,
+            "mult": 0.3,
+            "date": "2026-03-04",
+            "url": "https://www.youtube.com/watch?v=qMYamtqTsRw",
+            "is_outlier": false
+          },
+          {
+            "title": "161 Experiment Chart Why v1 2",
+            "views": 12,
+            "mult": 0.1,
+            "date": "2026-03-03",
+            "url": "https://www.youtube.com/watch?v=eizAlVViBl8",
+            "is_outlier": false
+          },
+          {
+            "title": "The Hidden Metric Behind Cart Abandonment",
+            "views": 14,
+            "mult": 0.1,
+            "date": "2026-03-02",
+            "url": "https://www.youtube.com/watch?v=efl1vXkaM_A",
+            "is_outlier": false
+          },
+          {
+            "title": "This Tiny Experiment Setting Impacts Your UX",
+            "views": 20,
+            "mult": 0.2,
+            "date": "2026-02-28",
+            "url": "https://www.youtube.com/watch?v=N0sz76WTnPA",
+            "is_outlier": false
+          },
+          {
+            "title": "Dynamic Cohorts and A/B Testing: What Actually Happens",
+            "views": 28,
+            "mult": 0.3,
+            "date": "2026-02-27",
+            "url": "https://www.youtube.com/watch?v=uelO3dlJXtg",
+            "is_outlier": false
+          },
+          {
+            "title": "What Actually Happens When You Run Web Experiments?",
+            "views": 21,
+            "mult": 0.2,
+            "date": "2026-02-26",
+            "url": "https://www.youtube.com/watch?v=yY8URRNQy98",
+            "is_outlier": false
+          },
+          {
+            "title": "The new way to do analytics\u2014meet the Amplitude AI Platform",
+            "views": 630,
+            "mult": 6.1,
+            "date": "2026-02-17",
+            "url": "https://www.youtube.com/watch?v=sOTEc15fxPE",
+            "is_outlier": true
+          },
+          {
+            "title": "Amplitude AI Agents: Your Own Personal Data Analysts",
+            "views": 489,
+            "mult": 4.7,
+            "date": "2026-02-17",
+            "url": "https://www.youtube.com/watch?v=1qqlVRJE_aY",
+            "is_outlier": true
+          }
+        ]
+      },
+      {
+        "name": "Harness",
+        "avg_views": 131,
+        "video_count": 20,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "What is Disaster Recovery Testing? Explained in 60 seconds | Resilience Testing | Harness",
+            "views": 334,
+            "mult": 2.5,
+            "date": "2026-03-27",
+            "url": "https://www.youtube.com/watch?v=Airf_IXxiEA",
+            "is_outlier": true
+          },
+          {
+            "title": "Women\u2019s Day Panel: Navigating the Future of Engineering in the Age of AI",
+            "views": 18,
+            "mult": 0.1,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=lrppkBV7qu8",
+            "is_outlier": false
+          },
+          {
+            "title": "Secure AI Coding with Harness SAST & SCA on Cursor",
+            "views": 37,
+            "mult": 0.3,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=LXSEv5X47lw",
+            "is_outlier": false
+          },
+          {
+            "title": "Secure AI Coding with Harness SAST & SCA on Windsurf",
+            "views": 129,
+            "mult": 1.0,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=GyJjNKvwgpA",
+            "is_outlier": false
+          },
+          {
+            "title": "What is Load Testing? Explained in 60 Seconds | Resilience Testing | 2026 | Harness",
+            "views": 839,
+            "mult": 6.4,
+            "date": "2026-03-25",
+            "url": "https://www.youtube.com/watch?v=FnbyQBGigpg",
+            "is_outlier": true
+          },
+          {
+            "title": "Rolling Deployments Explained: Seamless Software Delivery",
+            "views": 52,
+            "mult": 0.4,
+            "date": "2026-03-24",
+            "url": "https://www.youtube.com/watch?v=VPm5GW_O1Pg",
+            "is_outlier": false
+          },
+          {
+            "title": "Harness AI for Argo CD",
+            "views": 67,
+            "mult": 0.5,
+            "date": "2026-03-20",
+            "url": "https://www.youtube.com/watch?v=yWN7pFE1xQY",
+            "is_outlier": false
+          },
+          {
+            "title": "What Are Blue-Green Deployments? | Understanding the Trade-offs",
+            "views": 73,
+            "mult": 0.6,
+            "date": "2026-03-18",
+            "url": "https://www.youtube.com/watch?v=_11XiMN09fY",
+            "is_outlier": false
+          },
+          {
+            "title": "Liquibase MongoDB Extension Tutorial | Install & Use the Harness Community Extension",
+            "views": 80,
+            "mult": 0.6,
+            "date": "2026-03-16",
+            "url": "https://www.youtube.com/watch?v=srJ5c1K4oVM",
+            "is_outlier": false
+          },
+          {
+            "title": "Dependency Firewall for Harness Artifact Registry",
+            "views": 45,
+            "mult": 0.3,
+            "date": "2026-03-10",
+            "url": "https://www.youtube.com/watch?v=Fh0YDU9RaPQ",
+            "is_outlier": false
+          },
+          {
+            "title": "Harness AI + MCP server: A Single Prompt to Accelerate the Software Development Lifecycle",
+            "views": 326,
+            "mult": 2.5,
+            "date": "2026-03-06",
+            "url": "https://www.youtube.com/watch?v=9ryOw-9foO0",
+            "is_outlier": true
+          },
+          {
+            "title": "Managing AI Models and Datasets with Harness Artifact Registry | AI/ML Artifact Management",
+            "views": 88,
+            "mult": 0.7,
+            "date": "2026-02-26",
+            "url": "https://www.youtube.com/watch?v=UGV-3VI4QnM",
+            "is_outlier": false
+          },
+          {
+            "title": "Harness AI Feb2026 Updates",
+            "views": 46,
+            "mult": 0.4,
+            "date": "2026-02-25",
+            "url": "https://www.youtube.com/watch?v=IT00suzhyq4",
+            "is_outlier": false
+          },
+          {
+            "title": "Scaling Argo CD Past 50 Clusters: GitOps, Pipelines, & Governance",
+            "views": 113,
+            "mult": 0.9,
+            "date": "2026-02-25",
+            "url": "https://www.youtube.com/watch?v=DomhcK5ZYjA",
+            "is_outlier": false
+          },
+          {
+            "title": "Your Agent Has Gone Rogue: Dissecting Emerging Attacks Against DevSecOps AI Tools",
+            "views": 27,
+            "mult": 0.2,
+            "date": "2026-02-23",
+            "url": "https://www.youtube.com/watch?v=LoQUng2dnvM",
+            "is_outlier": false
+          },
+          {
+            "title": "From YAML Chaos to Self-Service: Standardizing Delivery with an Internal Developer Portal",
+            "views": 50,
+            "mult": 0.4,
+            "date": "2026-02-19",
+            "url": "https://www.youtube.com/watch?v=WGSUO5oBnRc",
+            "is_outlier": false
+          },
+          {
+            "title": "You\u2019re not overspending, you\u2019re under saving",
+            "views": 19,
+            "mult": 0.1,
+            "date": "2026-02-17",
+            "url": "https://www.youtube.com/watch?v=YkGEbFX7Eo8",
+            "is_outlier": false
+          },
+          {
+            "title": "\"Crown Jewels In, Crown Jewels Out\" \u2013 The Hidden Risk of AI",
+            "views": 140,
+            "mult": 1.1,
+            "date": "2026-02-10",
+            "url": "https://www.youtube.com/watch?v=wzY303nno4Y",
+            "is_outlier": false
+          },
+          {
+            "title": "Harness Resilience Testing",
+            "views": 106,
+            "mult": 0.8,
+            "date": "2026-02-09",
+            "url": "https://www.youtube.com/watch?v=ghXqnIbqs2Y",
+            "is_outlier": false
+          },
+          {
+            "title": "Cloud Cost Optimization Isn't Broken , The Approach Is",
+            "views": 24,
+            "mult": 0.2,
+            "date": "2026-02-06",
+            "url": "https://www.youtube.com/watch?v=wGWqvDBzyiU",
+            "is_outlier": false
+          }
+        ]
+      },
+      {
+        "name": "LaunchDarkly",
+        "avg_views": 80,
+        "video_count": 20,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Control Your Multi-Agent System with LaunchDarkly Agent Graphs",
+            "views": 31,
+            "mult": 0.4,
+            "date": "2026-03-27",
+            "url": "https://www.youtube.com/watch?v=XBIpTwb_KC4",
+            "is_outlier": false
+          },
+          {
+            "title": "InFocus - Honeycomb: Post-Merge Control #LaunchDarkly #FeatureFlags #DevOps",
+            "views": 78,
+            "mult": 1.0,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=tok0ONzyDFY",
+            "is_outlier": false
+          },
+          {
+            "title": "InFocus - Honeycomb: Accept Code is Never Going to Be Perfect #LaunchDarkly #DevOps #FeatureFlags",
+            "views": 15,
+            "mult": 0.2,
+            "date": "2026-03-24",
+            "url": "https://www.youtube.com/watch?v=1NwdWpSBlNg",
+            "is_outlier": false
+          },
+          {
+            "title": "InFocus - Honeycomb: Confidence to Code with AI #LaunchDarkly #FeatureFlags #DevOps #AIDevelopment",
+            "views": 95,
+            "mult": 1.2,
+            "date": "2026-03-19",
+            "url": "https://www.youtube.com/watch?v=eReqg-mAo7Y",
+            "is_outlier": false
+          },
+          {
+            "title": "InFocus - Honeycomb: Granular Control #LaunchDarkly #FeatureFlags #SoftwareDelivery #AIDevelopment",
+            "views": 92,
+            "mult": 1.1,
+            "date": "2026-03-17",
+            "url": "https://www.youtube.com/watch?v=vlc-DOjibQM",
+            "is_outlier": false
+          },
+          {
+            "title": "InFocus - Poka: Flagging not so violent content #LaunchDarkly #AIConfigs #FeatureFlags #DevTools",
+            "views": 67,
+            "mult": 0.8,
+            "date": "2026-03-16",
+            "url": "https://www.youtube.com/watch?v=HNax8V-eBU8",
+            "is_outlier": false
+          },
+          {
+            "title": "Data Points #LaunchDarkly #AIDevelopment #FeatureFlags #AIConfigs  #ContinuousDelivery #AIGovernance",
+            "views": 78,
+            "mult": 1.0,
+            "date": "2026-03-13",
+            "url": "https://www.youtube.com/watch?v=i_pqhVKGAyI",
+            "is_outlier": false
+          },
+          {
+            "title": "InFocus - AWS: Move from model launch to live test in hours #LaunchDarkly #AWS #AIConfigs",
+            "views": 215,
+            "mult": 2.7,
+            "date": "2026-03-12",
+            "url": "https://www.youtube.com/watch?v=arDf4b1fa4w",
+            "is_outlier": true
+          },
+          {
+            "title": "InFocus - Poka: Ship AI faster without redeploys #LaunchDarkly #FeatureFlags #AIConfigs #DevTools",
+            "views": 129,
+            "mult": 1.6,
+            "date": "2026-03-12",
+            "url": "https://www.youtube.com/watch?v=qsh8ClQZv3A",
+            "is_outlier": false
+          },
+          {
+            "title": "Supercharge Your AI Development with LaunchDarkly's AI Configs Agent Skills",
+            "views": 97,
+            "mult": 1.2,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=vj5ovQ41Vw0",
+            "is_outlier": false
+          },
+          {
+            "title": "Building an Observable Multiagent Architecture with Opentelemetry and LaunchDarkly",
+            "views": 141,
+            "mult": 1.8,
+            "date": "2026-03-06",
+            "url": "https://www.youtube.com/watch?v=5zxMrxIuN0Y",
+            "is_outlier": false
+          },
+          {
+            "title": "control risk in real-time",
+            "views": 71,
+            "mult": 0.9,
+            "date": "2026-02-25",
+            "url": "https://www.youtube.com/watch?v=uOYMaxjhyas",
+            "is_outlier": false
+          },
+          {
+            "title": "scaling with confidence",
+            "views": 82,
+            "mult": 1.0,
+            "date": "2026-02-24",
+            "url": "https://www.youtube.com/watch?v=aVwvY5K39o8",
+            "is_outlier": false
+          },
+          {
+            "title": "LaunchDarkly. Stats. We\u2019re LaunchDarkly. Trusted at scale.",
+            "views": 29,
+            "mult": 0.4,
+            "date": "2026-02-24",
+            "url": "https://www.youtube.com/watch?v=Jb1qkhdLFuI",
+            "is_outlier": false
+          },
+          {
+            "title": "LaunchDarkly. Release. Ease features into production with precision.",
+            "views": 38,
+            "mult": 0.5,
+            "date": "2026-02-24",
+            "url": "https://www.youtube.com/watch?v=rxmHS-VulTU",
+            "is_outlier": false
+          },
+          {
+            "title": "LaunchDarkly. Observe. See production in real time.",
+            "views": 39,
+            "mult": 0.5,
+            "date": "2026-02-24",
+            "url": "https://www.youtube.com/watch?v=DY2MW_Yn8-w",
+            "is_outlier": false
+          },
+          {
+            "title": "LaunchDarkly. Iterate. Test in production. Learn what actually works.",
+            "views": 22,
+            "mult": 0.3,
+            "date": "2026-02-24",
+            "url": "https://www.youtube.com/watch?v=FSGiTaXizD0",
+            "is_outlier": false
+          },
+          {
+            "title": "experiment safely in production",
+            "views": 88,
+            "mult": 1.1,
+            "date": "2026-02-23",
+            "url": "https://www.youtube.com/watch?v=bBBUvhyE2oo",
+            "is_outlier": false
+          },
+          {
+            "title": "Vega AI: automatic root cause analysis for production alerts | AI-powered alert investigation",
+            "views": 128,
+            "mult": 1.6,
+            "date": "2026-01-29",
+            "url": "https://www.youtube.com/watch?v=UmAJlR3x8lQ",
+            "is_outlier": false
+          },
+          {
+            "title": "How to track performance across front-end, back-end, and LLM systems | Insight Visualization",
+            "views": 69,
+            "mult": 0.9,
+            "date": "2026-01-27",
+            "url": "https://www.youtube.com/watch?v=kOLixG-agts",
+            "is_outlier": false
+          }
+        ]
+      },
+      {
+        "name": "Eppo",
+        "avg_views": 0,
+        "video_count": 0,
+        "no_recent": true,
+        "videos": []
+      },
+      {
+        "name": "PostHog",
+        "avg_views": 849,
+        "video_count": 20,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "PostHog: The Documentary (Full Version)",
+            "views": 732,
+            "mult": 0.9,
+            "date": "2026-03-23",
+            "url": "https://www.youtube.com/watch?v=dGaSxBs3OsU",
+            "is_outlier": false
+          },
+          {
+            "title": "Automatically group LLM traces by behavior \u2014 PostHog Clusters Demo",
+            "views": 452,
+            "mult": 0.5,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=OlOMc70-k8A",
+            "is_outlier": false
+          },
+          {
+            "title": "Using PostHog AI to investigate traffic spikes \u2013\u00a0PostHog AI Tutorial",
+            "views": 299,
+            "mult": 0.4,
+            "date": "2026-03-04",
+            "url": "https://www.youtube.com/watch?v=06uDklPgObw",
+            "is_outlier": false
+          },
+          {
+            "title": "Steve the Horse presents: PostHog Logs #posthog #changelog",
+            "views": 216,
+            "mult": 0.3,
+            "date": "2026-03-04",
+            "url": "https://www.youtube.com/watch?v=rO1MOgi1xNE",
+            "is_outlier": false
+          },
+          {
+            "title": "How to use the PostHog MCP in v0 by Vercel (Feature Flags & A/B Testing)",
+            "views": 433,
+            "mult": 0.5,
+            "date": "2026-02-25",
+            "url": "https://www.youtube.com/watch?v=l7IXtdDZCYA",
+            "is_outlier": false
+          },
+          {
+            "title": "You can build ANYTHING",
+            "views": 566,
+            "mult": 0.7,
+            "date": "2026-02-20",
+            "url": "https://www.youtube.com/watch?v=wzdaDqZ3HI0",
+            "is_outlier": false
+          },
+          {
+            "title": "Introducing Logs by PostHog",
+            "views": 2099,
+            "mult": 2.5,
+            "date": "2026-02-19",
+            "url": "https://www.youtube.com/watch?v=e_SICQg2Wak",
+            "is_outlier": true
+          },
+          {
+            "title": "Do you have PMF? #startup #jobinterview",
+            "views": 636,
+            "mult": 0.7,
+            "date": "2026-02-19",
+            "url": "https://www.youtube.com/watch?v=g-pDFnKd3a8",
+            "is_outlier": false
+          },
+          {
+            "title": "What is your zombie \ud83e\udddf apocalypse plan?",
+            "views": 460,
+            "mult": 0.5,
+            "date": "2026-02-18",
+            "url": "https://www.youtube.com/watch?v=CwKlB-LNpe4",
+            "is_outlier": false
+          },
+          {
+            "title": "RED FLAGS \ud83d\udea9 when interviewing at a startup #startup #jobinterview",
+            "views": 544,
+            "mult": 0.6,
+            "date": "2026-02-17",
+            "url": "https://www.youtube.com/watch?v=fUWN6INPWVo",
+            "is_outlier": false
+          },
+          {
+            "title": "Don't make this interview mistake! #startuplife #jobinterview",
+            "views": 464,
+            "mult": 0.5,
+            "date": "2026-02-16",
+            "url": "https://www.youtube.com/watch?v=aBzq4UuxE_4",
+            "is_outlier": false
+          },
+          {
+            "title": "We built an open-source developer toy... #opensource #opensourcehardware",
+            "views": 782,
+            "mult": 0.9,
+            "date": "2026-02-13",
+            "url": "https://www.youtube.com/watch?v=7jQd858EWGc",
+            "is_outlier": false
+          },
+          {
+            "title": "We take Slack emojis very seriously... #posthog #startuplife",
+            "views": 478,
+            "mult": 0.6,
+            "date": "2026-02-12",
+            "url": "https://www.youtube.com/watch?v=gFBygWDhInQ",
+            "is_outlier": false
+          },
+          {
+            "title": "Customize your PostHog sidebar",
+            "views": 438,
+            "mult": 0.5,
+            "date": "2026-02-12",
+            "url": "https://www.youtube.com/watch?v=6dhCzaqGni4",
+            "is_outlier": false
+          },
+          {
+            "title": "The startup interview questions that actually matter (most engineers skip these)",
+            "views": 4681,
+            "mult": 5.5,
+            "date": "2026-02-11",
+            "url": "https://www.youtube.com/watch?v=KVMZgY2KNto",
+            "is_outlier": true
+          },
+          {
+            "title": "PostHog AI just got more powerful #analyticstools #aitools #posthog",
+            "views": 263,
+            "mult": 0.3,
+            "date": "2026-02-11",
+            "url": "https://www.youtube.com/watch?v=XdHozF7JLT0",
+            "is_outlier": false
+          },
+          {
+            "title": "PostHog MCP + Replit: How PostHog AI debugged my production error",
+            "views": 502,
+            "mult": 0.6,
+            "date": "2026-02-10",
+            "url": "https://www.youtube.com/watch?v=HTOpmfb0UG4",
+            "is_outlier": false
+          },
+          {
+            "title": "Customize your sidebar in PostHog #analyticstools",
+            "views": 249,
+            "mult": 0.3,
+            "date": "2026-02-09",
+            "url": "https://www.youtube.com/watch?v=UncfLMlG6wY",
+            "is_outlier": false
+          },
+          {
+            "title": "They had just 24 hours to make a videogame #hackathon #startuplife",
+            "views": 402,
+            "mult": 0.5,
+            "date": "2026-02-07",
+            "url": "https://www.youtube.com/watch?v=cuAt5AjDbio",
+            "is_outlier": false
+          },
+          {
+            "title": "PostHog AI can now search the web",
+            "views": 2288,
+            "mult": 2.7,
+            "date": "2026-02-06",
+            "url": "https://www.youtube.com/watch?v=gf3fbNWCuf4",
+            "is_outlier": true
+          }
+        ]
+      },
+      {
+        "name": "Unleash",
+        "avg_views": 178,
+        "video_count": 2,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Live Webinar: Designing for Failure and Speed in Agentic AI Workflows with FeatureOps",
+            "views": 233,
+            "mult": 1.3,
+            "date": "2026-02-24",
+            "url": "https://www.youtube.com/watch?v=cA0aCzV0MMY",
+            "is_outlier": false
+          },
+          {
+            "title": "FeatureOps as Strategy: Governing Hyper-Growth at Lloyds",
+            "views": 122,
+            "mult": 0.7,
+            "date": "2026-01-19",
+            "url": "https://www.youtube.com/watch?v=4dT3gUYvE0c",
+            "is_outlier": false
+          }
+        ]
+      },
+      {
+        "name": "Flagsmith",
+        "avg_views": 46,
+        "video_count": 3,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Releasing in the AI Era: How Feature Flags Keep You in Control",
+            "views": 2,
+            "mult": 0.0,
+            "date": "2026-03-29",
+            "url": "https://www.youtube.com/watch?v=kkWz3GJeALs",
+            "is_outlier": false
+          },
+          {
+            "title": "Feature Flag Cleanup at Scale: How to Eliminate Technical Debt with AI (MCP Explained)",
+            "views": 73,
+            "mult": 1.6,
+            "date": "2026-03-19",
+            "url": "https://www.youtube.com/watch?v=CYBBpLdAavo",
+            "is_outlier": false
+          },
+          {
+            "title": "Feature Flags: A Safety Net in the AI Era",
+            "views": 62,
+            "mult": 1.3,
+            "date": "2026-01-28",
+            "url": "https://www.youtube.com/watch?v=6D4gtW7XrTI",
+            "is_outlier": false
+          }
+        ]
+      },
+      {
+        "name": "GrowthBook",
+        "avg_views": 225,
+        "video_count": 20,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Test Your AI Changes. Every Single One.",
+            "views": 269,
+            "mult": 1.2,
+            "date": "2026-03-27",
+            "url": "https://www.youtube.com/watch?v=4-iSPAnz5ag",
+            "is_outlier": false
+          },
+          {
+            "title": "From MVP to MVT: LinkedIn and Intuit\u2019s Playbook for Experimentation Everywhere",
+            "views": 13,
+            "mult": 0.1,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=xYjaTbaW9jI",
+            "is_outlier": false
+          },
+          {
+            "title": "Unit Tests Can't Save Your AI App",
+            "views": 207,
+            "mult": 0.9,
+            "date": "2026-03-26",
+            "url": "https://www.youtube.com/watch?v=4gRxN8fpDb8",
+            "is_outlier": false
+          },
+          {
+            "title": "Faster Shipping Means You Need Testing More",
+            "views": 1336,
+            "mult": 5.9,
+            "date": "2026-03-23",
+            "url": "https://www.youtube.com/watch?v=uKeE193-ZR0",
+            "is_outlier": true
+          },
+          {
+            "title": "Shipping Faster, Safely: Truist\u2019s SVP on AI, Developer Experience, and Human-in-the-Loop Banking",
+            "views": 50,
+            "mult": 0.2,
+            "date": "2026-03-18",
+            "url": "https://www.youtube.com/watch?v=Zp2ly3a4vBQ",
+            "is_outlier": false
+          },
+          {
+            "title": "Microsoft\u2019s Marco Casalaina on Evals, Go\u2011Live Metrics & Copilot Velocity",
+            "views": 42,
+            "mult": 0.2,
+            "date": "2026-03-17",
+            "url": "https://www.youtube.com/watch?v=-qhUICzf7w4",
+            "is_outlier": false
+          },
+          {
+            "title": "High Engagement Can Be a Red Flag",
+            "views": 209,
+            "mult": 0.9,
+            "date": "2026-03-12",
+            "url": "https://www.youtube.com/watch?v=vxrrg-K9oVE",
+            "is_outlier": false
+          },
+          {
+            "title": "Is your team celebrating the wrong thing?",
+            "views": 3,
+            "mult": 0.0,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=w2AKoqzpVog",
+            "is_outlier": false
+          },
+          {
+            "title": "Unlock Product Success: Why Most Ideas Fail (And How To Win) #shorts",
+            "views": 80,
+            "mult": 0.4,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=GXc00ZNcplM",
+            "is_outlier": false
+          },
+          {
+            "title": "Experimentation at Scale: Upwork\u2019s VP of Engineering on Blast Radius, CPQI, and AI-Driven Ops",
+            "views": 69,
+            "mult": 0.3,
+            "date": "2026-03-11",
+            "url": "https://www.youtube.com/watch?v=P3NWm8IPKY0",
+            "is_outlier": false
+          },
+          {
+            "title": "Use the GrowthBook MCP Server to Review Your Entire Experimentation Program #growthbook #abtesting",
+            "views": 193,
+            "mult": 0.9,
+            "date": "2026-03-10",
+            "url": "https://www.youtube.com/watch?v=ELwjWQzVez4",
+            "is_outlier": false
+          },
+          {
+            "title": "The Pricing Dilemma When AI Makes Your Product More Valuable",
+            "views": 146,
+            "mult": 0.6,
+            "date": "2026-03-10",
+            "url": "https://www.youtube.com/watch?v=vougyC-NC8M",
+            "is_outlier": false
+          },
+          {
+            "title": "Why Experimentation Matters from Ronny Kohavi",
+            "views": 854,
+            "mult": 3.8,
+            "date": "2026-03-09",
+            "url": "https://www.youtube.com/watch?v=hCdsYUmkWcg",
+            "is_outlier": true
+          },
+          {
+            "title": "Use Cursor Automations for Agentic Stale Feature Flag Removal",
+            "views": 81,
+            "mult": 0.4,
+            "date": "2026-03-07",
+            "url": "https://www.youtube.com/watch?v=-6WS7rsaDBE",
+            "is_outlier": false
+          },
+          {
+            "title": "From Spreadsheets to AI: How Moxie Pest Control Boosted Conversions 5% with Data and Call Coaching",
+            "views": 66,
+            "mult": 0.3,
+            "date": "2026-03-06",
+            "url": "https://www.youtube.com/watch?v=sI2F4bFDkcI",
+            "is_outlier": false
+          },
+          {
+            "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+            "views": 569,
+            "mult": 2.5,
+            "date": "2026-03-03",
+            "url": "https://www.youtube.com/watch?v=WyANaD5pZdw",
+            "is_outlier": true
+          },
+          {
+            "title": "Stop Running Experiments, Start Earning Them",
+            "views": 68,
+            "mult": 0.3,
+            "date": "2026-03-01",
+            "url": "https://www.youtube.com/watch?v=cvpkYG953yc",
+            "is_outlier": false
+          },
+          {
+            "title": "Type-Safe Feature Flags in React",
+            "views": 46,
+            "mult": 0.2,
+            "date": "2026-02-23",
+            "url": "https://www.youtube.com/watch?v=GJ7sDbgTpBc",
+            "is_outlier": false
+          },
+          {
+            "title": "GrowthBook 4.3 Release: Faster Experiments & Deeper Insights",
+            "views": 153,
+            "mult": 0.7,
+            "date": "2026-02-19",
+            "url": "https://www.youtube.com/watch?v=ZZAR3_tV9EU",
+            "is_outlier": false
+          },
+          {
+            "title": "Migrate from Statsig to GrowthBook in Minutes, Not Months",
+            "views": 39,
+            "mult": 0.2,
+            "date": "2026-01-16",
+            "url": "https://www.youtube.com/watch?v=6bYVm-px-As",
+            "is_outlier": false
+          }
+        ]
+      }
+    ]
+  }
+}
