@@ -633,15 +633,20 @@ export default function CompyDashboard() {
         {/* ── GROWTHBOOK ── */}
         {tab === "growthbook" && (() => {
           const gbPages = Array.isArray(d.gb_pages) ? d.gb_pages : [];
+          // Table: full list sorted by clicks desc (homepage included)
           const gbSorted = [...gbPages].sort((a, b) => (b.clicks || 0) - (a.clicks || 0));
-          const top20Bars = gbSorted
+          // Graphs: exclude homepage (growthbook.io/) and pages with ≤1 click
+          const isHomepage = (p) => (p.url || "").replace(/^https?:\/\//, "").replace(/\/$/, "") === "www.growthbook.io";
+          const gbGraphPages = gbPages.filter((p) => !isHomepage(p) && (p.clicks || 0) > 1);
+          const top20Bars = [...gbGraphPages]
+            .sort((a, b) => (b.clicks || 0) - (a.clicks || 0))
             .slice(0, 20)
             .map((p) => ({
               ...p,
               label: (p.url || "").replace(/^https?:\/\//, ""),
             }))
             .sort((a, b) => (a.clicks || 0) - (b.clicks || 0));
-          const scatterData = gbPages
+          const scatterData = gbGraphPages
             .filter((p) => typeof p.avg_position === "number" && typeof p.clicks === "number")
             .map((p) => ({
               x: p.avg_position,
@@ -654,6 +659,9 @@ export default function CompyDashboard() {
           return (
             <>
               <Section title="Top GrowthBook Pages by GSC Clicks (28 days)">
+                <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
+                  Homepage (growthbook.io) and pages with ≤1 click excluded — see full table below.
+                </p>
                 {top20Bars.length === 0 ? (
                   <div style={{ ...card({ padding: "16px 20px", color: C.muted }) }}>
                     GrowthBook page data will appear after the next weekly run.
@@ -672,6 +680,9 @@ export default function CompyDashboard() {
               </Section>
 
               <Section title="GrowthBook Pages: Clicks vs Position">
+                <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
+                  Homepage and pages with ≤1 click excluded. Dot size = impressions. Pages in the top-left quadrant (low position, high clicks) are your strongest performers.
+                </p>
                 {scatterData.length === 0 ? (
                   <div style={{ ...card({ padding: "16px 20px", color: C.muted }) }}>
                     No GrowthBook page points available yet.
@@ -718,6 +729,9 @@ export default function CompyDashboard() {
               </Section>
 
               <Section title="GrowthBook Pages — Full GSC Data">
+                <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
+                  All pages including homepage. Sorted by clicks (28-day GSC window).
+                </p>
                 <DataTable
                   headers={["URL", "Clicks", "Impressions", "CTR", "Avg Position"]}
                   rows={gbSorted.map((row) => {
