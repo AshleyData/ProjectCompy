@@ -104,18 +104,23 @@ export default function CompyDashboard() {
   const [availableDates, setAvailableDates] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  // On mount: probe last 21 days to find all available data files
+  // On mount: probe the last 12 Saturdays to find available data files
   useEffect(() => {
-    const candidates = [];
+    // Generate the last 12 Saturdays (day 6)
+    const saturdays = [];
     const d0 = new Date();
-    for (let i = 0; i < 21; i++) {
+    // Walk back to find the most recent Saturday, then go back 12 weeks
+    for (let weeksBack = 0; weeksBack < 12; weeksBack++) {
       const dt = new Date(d0);
-      dt.setDate(d0.getDate() - i);
-      candidates.push(dt.toISOString().slice(0, 10));
+      const dayOfWeek = dt.getDay(); // 0=Sun ... 6=Sat
+      const daysToLastSat = (dayOfWeek === 6) ? (weeksBack * 7) : (dayOfWeek + 1 + (weeksBack * 7));
+      dt.setDate(d0.getDate() - daysToLastSat);
+      saturdays.push(dt.toISOString().slice(0, 10));
     }
-    // Probe all candidates in parallel, collect the ones that exist
+
+    // Probe all Saturdays in parallel
     Promise.all(
-      candidates.map(date =>
+      saturdays.map(date =>
         fetch(`/data/${date}.json`, { method: "HEAD" })
           .then(r => r.ok ? date : null)
           .catch(() => null)
@@ -126,7 +131,6 @@ export default function CompyDashboard() {
       if (found.length === 0) {
         setLoadError("No data file found.");
       } else {
-        // Load the most recent
         loadDate(found[0]);
         setSelectedDate(found[0]);
       }
