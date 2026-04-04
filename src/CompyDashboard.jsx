@@ -530,8 +530,8 @@ export default function CompyDashboard() {
                 slug: p.slug || (p.url || "").replace(/\/$/, "").split("/").pop() || p.url,
                 url: p.url,
                 date: p.date || "—",
-                threat: null,
-                kd: null,
+                threat: p.threat ?? null,
+                kd: p.kd ?? null,
                 clicks: p.clicks,
               }));
               const allRows = [...(d.new_content || []).map(n => ({
