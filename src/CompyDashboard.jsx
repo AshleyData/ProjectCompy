@@ -101,9 +101,11 @@ export default function CompyDashboard() {
   const [tab, setTab] = useState("summary");
   const [d, setD] = useState(null);
   const [loadError, setLoadError] = useState(null);
+  const [availableDates, setAvailableDates] = useState([]);
+  const [selectedDate, setSelectedDate] = useState(null);
 
+  // On mount: probe last 21 days to find all available data files
   useEffect(() => {
-    // Try today and each of the last 21 days to find the most recent data file
     const candidates = [];
     const d0 = new Date();
     for (let i = 0; i < 21; i++) {
@@ -111,18 +113,32 @@ export default function CompyDashboard() {
       dt.setDate(d0.getDate() - i);
       candidates.push(dt.toISOString().slice(0, 10));
     }
-    const tryLoad = (i) => {
-      if (i >= candidates.length) {
+    // Probe all candidates in parallel, collect the ones that exist
+    Promise.all(
+      candidates.map(date =>
+        fetch(`/data/${date}.json`, { method: "HEAD" })
+          .then(r => r.ok ? date : null)
+          .catch(() => null)
+      )
+    ).then(results => {
+      const found = results.filter(Boolean);
+      setAvailableDates(found);
+      if (found.length === 0) {
         setLoadError("No data file found.");
-        return;
+      } else {
+        // Load the most recent
+        loadDate(found[0]);
+        setSelectedDate(found[0]);
       }
-      fetch(`/data/${candidates[i]}.json`)
-        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(data => setD(data))
-        .catch(() => tryLoad(i + 1));
-    };
-    tryLoad(0);
+    });
   }, []);
+
+  const loadDate = (date) => {
+    fetch(`/data/${date}.json`)
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(data => { setD(data); setSelectedDate(date); })
+      .catch(() => setLoadError(`Failed to load data for ${date}.`));
+  };
 
   if (!d) {
     return (
@@ -144,9 +160,27 @@ export default function CompyDashboard() {
           <div style={{ color: C.white, fontSize: 18, fontWeight: 700 }}>🔍 Compy Weekly Brief</div>
           <div style={{ color: "#AED6F1", fontSize: 12 }}>GrowthBook Competitive Intelligence · Week of {d.week || "—"}</div>
         </div>
-        <div style={{ color: "#AED6F1", fontSize: 12, textAlign: "right" }}>
-          GSC: {(d.gsc.clicks||0).toLocaleString()} clicks · {d.gsc.wow_clicks > 0 ? "+" : ""}{d.gsc.wow_clicks}% WoW<br />
-          {Math.round((d.gsc.impressions||0)/1000)}K impressions · {d.gsc.wow_impressions > 0 ? "+" : ""}{d.gsc.wow_impressions}% WoW
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          {availableDates.length > 1 && (
+            <select
+              value={selectedDate || ""}
+              onChange={e => loadDate(e.target.value)}
+              style={{
+                background: "rgba(255,255,255,0.12)", color: C.white, border: "1px solid rgba(255,255,255,0.3)",
+                borderRadius: 6, padding: "5px 10px", fontSize: 12, cursor: "pointer", outline: "none",
+              }}
+            >
+              {availableDates.map(date => (
+                <option key={date} value={date} style={{ background: C.primary, color: C.white }}>
+                  {date}
+                </option>
+              ))}
+            </select>
+          )}
+          <div style={{ color: "#AED6F1", fontSize: 12, textAlign: "right" }}>
+            GSC: {(d.gsc.clicks||0).toLocaleString()} clicks · {d.gsc.wow_clicks > 0 ? "+" : ""}{d.gsc.wow_clicks}% WoW<br />
+            {Math.round((d.gsc.impressions||0)/1000)}K impressions · {d.gsc.wow_impressions > 0 ? "+" : ""}{d.gsc.wow_impressions}% WoW
+          </div>
         </div>
       </div>
 
