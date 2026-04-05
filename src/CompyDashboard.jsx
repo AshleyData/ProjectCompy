@@ -335,10 +335,10 @@ export default function CompyDashboard() {
             <ResponsiveContainer width="100%" height={380}>
               <ScatterChart margin={{ top: 20, right: 30, bottom: 30, left: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="pages" name="Pages" type="number" domain={[0, 'dataMax + 40']}
+                <XAxis dataKey="x" name="Pages" type="number" domain={[0, 'dataMax + 40']}
                   label={{ value: 'Pages of Content', position: 'insideBottom', offset: -15, fontSize: 12, fill: C.muted }}
                   tick={{ fontSize: 11 }} />
-                <YAxis dataKey="da" name="Domain Authority" type="number" domain={[25, 90]}
+                <YAxis dataKey="y" name="Domain Authority" type="number" domain={[25, 90]}
                   label={{ value: 'Domain Authority (Moz)', angle: -90, position: 'insideLeft', offset: 10, fontSize: 12, fill: C.muted }}
                   tick={{ fontSize: 11 }} />
                 <ZAxis dataKey="z" range={[80, 2400]} name="ETV" />
@@ -346,28 +346,37 @@ export default function CompyDashboard() {
                   cursor={{ strokeDasharray: "3 3" }}
                   content={({ active, payload }) => {
                     if (!active || !payload || !payload.length) return null;
-                    const p = payload[0].payload;
+                    const pt = payload[0].payload;
                     return (
                       <div style={{ background: C.white, border: `1px solid ${C.border}`, padding: "10px 14px", borderRadius: 6, fontSize: 13 }}>
-                        <div style={{ fontWeight: 700, color: COMP_COLORS[p.name] || C.primary, marginBottom: 4 }}>{p.name}</div>
-                        <div>Domain Authority: <b>{p.da}</b></div>
-                        <div>Pages: <b>{p.pages}</b></div>
-                        <div>ETV: <b>{p.etv.toLocaleString()}</b></div>
+                        <div style={{ fontWeight: 700, color: COMP_COLORS[pt.name] || C.primary, marginBottom: 4 }}>{pt.name}</div>
+                        <div>Domain Authority: <b>{pt.y}</b></div>
+                        <div>Pages: <b>{pt.x}</b></div>
+                        <div>ETV: <b>{pt.etv.toLocaleString()}</b></div>
                       </div>
                     );
                   }}
                 />
-                {d.competitors.map(c => (
-                  <Scatter
-                    key={c.name}
-                    name={c.name}
-                    data={[{ name: c.name, pages: c.pages, da: c.da || 0, etv: c.etv, z: Math.sqrt(c.etv + 1) }]}
-                    fill={COMP_COLORS[c.name] || C.accent}
-                    stroke={c.name === 'GrowthBook' ? '#000' : (COMP_COLORS[c.name] || C.accent)}
-                    strokeWidth={c.name === 'GrowthBook' ? 2.5 : 0.5}
-                    opacity={0.85}
-                  />
-                ))}
+                <Scatter
+                  name="Competitors"
+                  data={d.competitors.map(c => ({ name: c.name, x: c.pages, y: c.da || 0, etv: c.etv, z: Math.sqrt(c.etv + 1) }))}
+                  shape={(props) => {
+                    const { cx, cy, payload } = props;
+                    const r = Math.sqrt(props.r * props.r);
+                    const color = COMP_COLORS[payload.name] || C.accent;
+                    const isGB = payload.name === 'GrowthBook';
+                    return (
+                      <circle cx={cx} cy={cy} r={Math.max(r, 6)}
+                        fill={color} fillOpacity={0.82}
+                        stroke={isGB ? '#000' : color}
+                        strokeWidth={isGB ? 2.5 : 0.8} />
+                    );
+                  }}
+                >
+                  {d.competitors.map(c => (
+                    <Cell key={c.name} fill={COMP_COLORS[c.name] || C.accent} />
+                  ))}
+                </Scatter>
                 <Legend
                   payload={d.competitors.map(c => ({ value: c.name, type: 'circle', color: COMP_COLORS[c.name] || C.accent }))}
                   wrapperStyle={{ fontSize: 12, paddingTop: 10 }}
