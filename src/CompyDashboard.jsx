@@ -707,9 +707,10 @@ export default function CompyDashboard() {
           const gbPages = Array.isArray(d.gb_pages) ? d.gb_pages : [];
           // Table: full list sorted by clicks desc (homepage included)
           const gbSorted = [...gbPages].sort((a, b) => (b.clicks || 0) - (a.clicks || 0));
-          // Graphs: exclude homepage (growthbook.io/) and pages with ≤1 click
+          // Graphs: exclude homepage, /pricing, and pages with ≤1 click
           const isHomepage = (p) => (p.url || "").replace(/^https?:\/\//, "").replace(/\/$/, "") === "www.growthbook.io";
-          const gbGraphPages = gbPages.filter((p) => !isHomepage(p) && (p.clicks || 0) > 1);
+          const isPricing = (p) => (p.url || "").includes("/pricing");
+          const gbGraphPages = gbPages.filter((p) => !isHomepage(p) && !isPricing(p) && (p.clicks || 0) > 1);
           // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
           const top20Bars = [...gbGraphPages]
             .sort((a, b) => (b.clicks || 0) - (a.clicks || 0))
@@ -732,7 +733,7 @@ export default function CompyDashboard() {
             <>
               <Section title="Top GrowthBook Pages by GSC Clicks (28 days)">
                 <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
-                  Homepage (growthbook.io) and pages with ≤1 click excluded — see full table below.
+                  Homepage and /pricing excluded from charts — see full table below.
                 </p>
                 {top20Bars.length === 0 ? (
                   <div style={{ ...card({ padding: "16px 20px", color: C.muted }) }}>
@@ -753,7 +754,7 @@ export default function CompyDashboard() {
 
               <Section title="GrowthBook Pages: Clicks vs Position">
                 <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
-                  Homepage and pages with ≤1 click excluded. Dot size = impressions. Pages in the top-left quadrant (low position, high clicks) are your strongest performers.
+                  Homepage and /pricing excluded. Dot size = impressions. Pages in the top-left quadrant (low position, high clicks) are your strongest performers.
                 </p>
                 {scatterData.length === 0 ? (
                   <div style={{ ...card({ padding: "16px 20px", color: C.muted }) }}>
