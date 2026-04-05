@@ -536,13 +536,13 @@ export default function CompyDashboard() {
           {(() => {
             const counts = {};
             (d.new_content || []).forEach(n => {
-              // Normalise "GrowthBook Blog" / "GrowthBook Site" → skip; GrowthBook counted separately below
-              if (n.competitor.startsWith("GrowthBook")) return;
-              counts[n.competitor] = (counts[n.competitor] || 0) + 1;
+              // Normalise "GrowthBook Blog" / "GrowthBook Site" → "GrowthBook"
+              const name = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
+              counts[name] = (counts[name] || 0) + 1;
             });
-            // GrowthBook new content comes from GSC gb_new_content, not sitemap
-            const gbNewCount = (d.gb_new_content || []).length;
-            if (gbNewCount > 0) counts["GrowthBook"] = gbNewCount;
+            // Also count GSC-based GrowthBook new blog content (gb_new_content)
+            const gbGscCount = (d.gb_new_content || []).length;
+            if (gbGscCount > 0) counts["GrowthBook"] = (counts["GrowthBook"] || 0) + gbGscCount;
             // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
             const chartData = Object.entries(counts)
               .sort((a, b) => b[1] - a[1])
@@ -554,34 +554,39 @@ export default function CompyDashboard() {
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                     <XAxis type="number" tick={{ fontSize: 11 }} allowDecimals={false} />
                     <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={115} />
-                    <RTooltip formatter={(v, _, props) => [v, props.payload.name === "GrowthBook" ? "New blog posts (GSC)" : "New pages (sitemap)"]} />
+                    <RTooltip formatter={(v, _, props) => [v, props.payload.name === "GrowthBook" ? "New pages (sitemap + GSC)" : "New pages (sitemap)"]} />
                     <RBar dataKey="count" radius={[0, 4, 4, 0]}>
                       {chartData.map((entry, i) => <Cell key={i} fill={COMP_COLORS[entry.name] || C.accent} />)}
                     </RBar>
                   </BarChart>
                 </ResponsiveContainer>
                 <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: "left" }}>
-                  Competitor counts from sitemap monitoring. GrowthBook count from GSC new blog posts (&lt;90 days old).
+                  All counts from sitemap monitoring (week-over-week diff). GrowthBook includes both main site (www.growthbook.io) and blog new pages.
                 </p>
               </Section>
             ) : null;
           })()}
           <Section title="New Competitor Pages This Week (High-Threat)">
             {(() => {
-              // Merge competitor sitemap pages + GrowthBook GSC new content
-              const gbRows = (d.gb_new_content || []).map(p => ({
-                competitor: "GrowthBook",
-                slug: p.slug || (p.url || "").replace(/\/$/, "").split("/").pop() || p.url,
-                url: p.url,
-                date: p.date || "—",
-                threat: p.threat ?? null,
-                kd: p.kd ?? null,
-                clicks: p.clicks,
-              }));
-              const allRows = [...(d.new_content || []).map(n => ({
+              // Sitemap-based rows (competitors + GrowthBook Blog/Site)
+              const sitemapRows = (d.new_content || []).map(n => ({
                 ...n,
                 competitor: n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor,
-              })), ...gbRows];
+              }));
+              // GSC-based GrowthBook blog rows (deduplicate against sitemap rows)
+              const sitemapUrls = new Set(sitemapRows.map(r => r.url));
+              const gbGscRows = (d.gb_new_content || [])
+                .filter(p => !sitemapUrls.has(p.url))
+                .map(p => ({
+                  competitor: "GrowthBook",
+                  slug: p.slug || (p.url || "").replace(/\/$/, "").split("/").pop() || p.url,
+                  url: p.url,
+                  date: p.date || "—",
+                  threat: p.threat ?? null,
+                  kd: p.kd ?? null,
+                  clicks: p.clicks,
+                }));
+              const allRows = [...sitemapRows, ...gbGscRows];
               return (
                 <Table
                   headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
