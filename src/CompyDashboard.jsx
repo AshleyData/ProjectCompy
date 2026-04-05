@@ -104,8 +104,9 @@ export default function CompyDashboard() {
   const [availableDates, setAvailableDates] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  // On mount: probe the last 60 days, fetch files that exist and have real GSC data (gb_pages > 0)
+  // On mount: find and load the most recent data file immediately, then populate dropdown
   useEffect(() => {
+    // Build candidate dates: last 60 days
     const candidates = [];
     const d0 = new Date();
     for (let i = 0; i < 60; i++) {
@@ -114,29 +115,32 @@ export default function CompyDashboard() {
       candidates.push(dt.toISOString().slice(0, 10));
     }
 
-    // Fetch each candidate fully so we can check data quality
-    Promise.all(
-      candidates.map(date =>
-        fetch(`/data/${date}.json`)
-          .then(r => r.ok ? r.json() : null)
-          .then(data => {
-            if (!data) return null;
-            // Only include runs with real GSC page data
-            const hasPages = Array.isArray(data.gb_pages) && data.gb_pages.length > 0;
-            return hasPages ? date : null;
-          })
-          .catch(() => null)
-      )
-    ).then(results => {
-      const found = results.filter(Boolean);
-      setAvailableDates(found);
-      if (found.length === 0) {
-        setLoadError("No data file found.");
-      } else {
-        loadDate(found[0]);
-        setSelectedDate(found[0]);
+    // Walk candidates in order, load the first one that has real data (gb_pages > 0)
+    const tryLoad = (i, found) => {
+      if (i >= candidates.length) {
+        // Done scanning — populate dropdown with all found dates
+        if (found.length === 0) setLoadError("No data file found.");
+        else setAvailableDates(found);
+        return;
       }
-    });
+      const date = candidates[i];
+      fetch(`/data/${date}.json`)
+        .then(r => r.ok ? r.json() : null)
+        .then(data => {
+          const hasData = data && Array.isArray(data.gb_pages) && data.gb_pages.length > 0;
+          if (hasData) {
+            // Load the first valid date immediately so dashboard renders right away
+            if (found.length === 0) {
+              setD(data);
+              setSelectedDate(date);
+            }
+            found.push(date);
+          }
+          tryLoad(i + 1, found);
+        })
+        .catch(() => tryLoad(i + 1, found));
+    };
+    tryLoad(0, []);
   }, []);
 
   const loadDate = (date) => {
