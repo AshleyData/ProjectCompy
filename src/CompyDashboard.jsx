@@ -94,7 +94,7 @@ function BubbleChart({ competitors }) {
         X-axis: pages of content &nbsp;|&nbsp; Y-axis: Moz Domain Authority &nbsp;|&nbsp; Bubble size: estimated organic traffic (ETV)
       </p>
       <div style={{ overflowX: 'auto' }}>
-        <svg width={W} height={H} style={{ display: 'block', margin: '0 auto' }}>
+        <svg width="100%" height={H} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" style={{ display: 'block', margin: '0 auto', minWidth: 320 }}>
           {yTicks.map(v => (
             <line key={"y"+v} x1={ml} x2={ml+plotW} y1={toY(v)} y2={toY(v)} stroke="#DEE2E6" strokeWidth={1} strokeDasharray="4 3" />
           ))}
