@@ -125,7 +125,7 @@ function BubbleChart({ competitors }) {
             return (
               <g key={c.name} onMouseEnter={() => setTooltip({c,cx,cy})} onMouseLeave={() => setTooltip(null)} style={{cursor:'pointer'}}>
                 <circle cx={cx} cy={cy} r={r} fill={color} fillOpacity={0.72}
-                  stroke={isGB ? '#111' : color} strokeWidth={isGB ? 3 : 1} />
+                  stroke={color} strokeWidth={1} />
                 <text x={cx} y={cy - r - 4} textAnchor="middle" fontSize={10} fill={color}
                   fontWeight={isGB ? 700 : 500}>{c.name}</text>
               </g>
