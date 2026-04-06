@@ -199,32 +199,32 @@ export default function CompyDashboard() {
       candidates.push(dt.toISOString().slice(0, 10));
     }
 
-    // Walk candidates in order, load the first one that has real data (gb_pages > 0)
-    const tryLoad = (i, found) => {
-      if (i >= candidates.length) {
-        // Done scanning — populate dropdown with all found dates
-        if (found.length === 0) setLoadError("No data file found.");
-        else setAvailableDates(found);
-        return;
-      }
-      const date = candidates[i];
-      fetch(`/data/${date}.json`)
-        .then(r => r.ok ? r.json() : null)
-        .then(data => {
+    // Walk candidates SEQUENTIALLY (not in parallel) — stop as soon as the first valid file is found,
+    // then continue scanning the rest only to build the dropdown (never overwrite d after first load).
+    let loaded = false;
+    const tryLoad = async () => {
+      const found = [];
+      for (let i = 0; i < candidates.length; i++) {
+        const date = candidates[i];
+        try {
+          const r = await fetch(`/data/${date}.json`);
+          if (!r.ok) continue;
+          const data = await r.json();
           const hasData = data && Array.isArray(data.gb_pages) && data.gb_pages.length > 0;
           if (hasData) {
-            // Load the first valid date immediately so dashboard renders right away
-            if (found.length === 0) {
+            if (!loaded) {
+              loaded = true;
               setD(data);
               setSelectedDate(date);
             }
             found.push(date);
           }
-          tryLoad(i + 1, found);
-        })
-        .catch(() => tryLoad(i + 1, found));
+        } catch (_) { /* skip */ }
+      }
+      if (found.length === 0) setLoadError("No data file found.");
+      else setAvailableDates(found);
     };
-    tryLoad(0, []);
+    tryLoad();
   }, []);
 
   const loadDate = (date) => {
