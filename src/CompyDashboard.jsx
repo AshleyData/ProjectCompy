@@ -76,6 +76,90 @@ function Section({ title, children }) {
   );
 }
 
+function BubbleChart({ competitors }) {
+  const [tooltip, setTooltip] = useState(null);
+  const W = 700, H = 360;
+  const ml = 55, mr = 24, mt = 20, mb = 52;
+  const plotW = W - ml - mr, plotH = H - mt - mb;
+  const maxPages = 430, minDA = 25, maxDA = 90;
+  const maxETV = Math.max(...competitors.map(c => c.etv));
+  const toX = p => ml + (p / maxPages) * plotW;
+  const toY = da => mt + plotH - ((da - minDA) / (maxDA - minDA)) * plotH;
+  const toR = etv => 6 + Math.sqrt(etv / maxETV) * 38;
+  const xTicks = [0, 100, 200, 300, 400];
+  const yTicks = [30, 40, 50, 60, 70, 80, 90];
+  return (
+    <Section title="Content Volume vs. Domain Authority">
+      <p style={{ fontSize: 12, color: C.muted, marginBottom: 8, textAlign: "left" }}>
+        X-axis: pages of content &nbsp;|&nbsp; Y-axis: Moz Domain Authority &nbsp;|&nbsp; Bubble size: estimated organic traffic (ETV)
+      </p>
+      <div style={{ overflowX: 'auto' }}>
+        <svg width={W} height={H} style={{ display: 'block', margin: '0 auto' }}>
+          {yTicks.map(v => (
+            <line key={"y"+v} x1={ml} x2={ml+plotW} y1={toY(v)} y2={toY(v)} stroke="#DEE2E6" strokeWidth={1} strokeDasharray="4 3" />
+          ))}
+          {xTicks.map(v => (
+            <line key={"x"+v} x1={toX(v)} x2={toX(v)} y1={mt} y2={mt+plotH} stroke="#DEE2E6" strokeWidth={1} strokeDasharray="4 3" />
+          ))}
+          <line x1={ml} x2={ml+plotW} y1={mt+plotH} y2={mt+plotH} stroke="#999" strokeWidth={1.5} />
+          <line x1={ml} x2={ml} y1={mt} y2={mt+plotH} stroke="#999" strokeWidth={1.5} />
+          {xTicks.map(v => (
+            <g key={"xt"+v}>
+              <line x1={toX(v)} x2={toX(v)} y1={mt+plotH} y2={mt+plotH+5} stroke="#999" />
+              <text x={toX(v)} y={mt+plotH+18} textAnchor="middle" fontSize={11} fill="#6C757D">{v}</text>
+            </g>
+          ))}
+          {yTicks.map(v => (
+            <g key={"yt"+v}>
+              <line x1={ml-5} x2={ml} y1={toY(v)} y2={toY(v)} stroke="#999" />
+              <text x={ml-9} y={toY(v)+4} textAnchor="end" fontSize={11} fill="#6C757D">{v}</text>
+            </g>
+          ))}
+          <text x={ml+plotW/2} y={H-8} textAnchor="middle" fontSize={12} fill="#6C757D">Pages of Content</text>
+          <text x={14} y={mt+plotH/2} textAnchor="middle" fontSize={12} fill="#6C757D"
+            transform={`rotate(-90,14,${mt+plotH/2})`}>Domain Authority</text>
+          {[...competitors].sort((a,b) => b.etv - a.etv).map(c => {
+            const cx = toX(c.pages), cy = toY(c.da || 0), r = toR(c.etv);
+            const color = COMP_COLORS[c.name] || C.accent;
+            const isGB = c.name === 'GrowthBook';
+            return (
+              <g key={c.name} onMouseEnter={() => setTooltip({c,cx,cy})} onMouseLeave={() => setTooltip(null)} style={{cursor:'pointer'}}>
+                <circle cx={cx} cy={cy} r={r} fill={color} fillOpacity={0.72}
+                  stroke={isGB ? '#111' : color} strokeWidth={isGB ? 3 : 1} />
+                <text x={cx} y={cy - r - 4} textAnchor="middle" fontSize={10} fill={color}
+                  fontWeight={isGB ? 700 : 500}>{c.name}</text>
+              </g>
+            );
+          })}
+          {tooltip && (()=>{
+            const {c, cx, cy} = tooltip;
+            const bx = Math.min(cx+14, W-185), by = Math.max(Math.min(cy-15, H-80), mt);
+            return (
+              <g>
+                <rect x={bx} y={by} width={172} height={70} rx={6} fill="white" stroke="#DEE2E6" strokeWidth={1} />
+                <text x={bx+10} y={by+19} fontSize={12} fontWeight={700} fill={COMP_COLORS[c.name]||C.primary}>{c.name}</text>
+                <text x={bx+10} y={by+36} fontSize={11} fill="#333">{"DA: "}{c.da||0}{"   Pages: "}{c.pages}</text>
+                <text x={bx+10} y={by+53} fontSize={11} fill="#333">{"ETV: "}{c.etv.toLocaleString()}</text>
+              </g>
+            );
+          })()}
+        </svg>
+      </div>
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'6px 14px', marginTop:10, justifyContent:'center' }}>
+        {competitors.map(c => (
+          <div key={c.name} style={{ display:'flex', alignItems:'center', gap:5, fontSize:12 }}>
+            <span style={{ display:'inline-block', width:10, height:10, borderRadius:'50%', background: COMP_COLORS[c.name]||C.accent }} />
+            <span style={{ color: C.muted }}>{c.name}</span>
+          </div>
+        ))}
+      </div>
+      <p style={{ fontSize:11, color:C.muted, textAlign:'left', marginTop:8 }}>
+        DA scores from Moz (fetched 2026-04-03). GrowthBook ETV undercounts branded traffic (~45% of clicks).
+      </p>
+    </Section>
+  );
+}
+
 function BucketBadge({ bucket }) {
   const bg = bucket === "Quick Win" ? C.success : bucket === "Content Gap" ? C.warning : C.danger;
   return <span style={{ background: bg, color: C.white, padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600 }}>{bucket}</span>;
@@ -327,54 +411,8 @@ export default function CompyDashboard() {
             </div>
           </Section>
 
-          {/* Bubble Chart — Content Volume vs DA vs ETV */}
-          <Section title="Content Volume vs. Domain Authority">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
-              X-axis: pages of content tracked &nbsp;|&nbsp; Y-axis: Moz Domain Authority &nbsp;|&nbsp; Bubble size: estimated organic traffic (ETV).
-            </p>
-            <ResponsiveContainer width="100%" height={400}>
-              <ScatterChart margin={{ top: 20, right: 30, bottom: 40, left: 40 }}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" dataKey="x" name="Pages" domain={[0, 430]}
-                  label={{ value: 'Pages of Content', position: 'insideBottom', offset: -20, fontSize: 12, fill: C.muted }}
-                  tick={{ fontSize: 11 }} />
-                <YAxis type="number" dataKey="y" name="Domain Authority" domain={[25, 90]}
-                  label={{ value: 'Domain Authority', angle: -90, position: 'insideLeft', offset: 15, fontSize: 12, fill: C.muted }}
-                  tick={{ fontSize: 11 }} />
-                <ZAxis type="number" dataKey="z" range={[100, 3000]} name="ETV" />
-                <RTooltip
-                  cursor={{ strokeDasharray: "3 3" }}
-                  content={({ active, payload }) => {
-                    if (!active || !payload || !payload.length) return null;
-                    const pt = payload[0].payload;
-                    return (
-                      <div style={{ background: C.white, border: `1px solid ${C.border}`, padding: "10px 14px", borderRadius: 6, fontSize: 13 }}>
-                        <div style={{ fontWeight: 700, color: COMP_COLORS[pt.name] || C.primary, marginBottom: 4 }}>{pt.name}</div>
-                        <div>Domain Authority: <b>{pt.y}</b></div>
-                        <div>Pages: <b>{pt.x}</b></div>
-                        <div>ETV: <b>{pt.etv.toLocaleString()}</b></div>
-                      </div>
-                    );
-                  }}
-                />
-                {d.competitors.map(c => (
-                  <Scatter
-                    key={c.name}
-                    name={c.name}
-                    data={[{ name: c.name, x: c.pages, y: c.da || 0, etv: c.etv, z: Math.sqrt(c.etv + 1) }]}
-                    fill={COMP_COLORS[c.name] || C.accent}
-                    fillOpacity={0.85}
-                    stroke={c.name === 'GrowthBook' ? '#000000' : (COMP_COLORS[c.name] || C.accent)}
-                    strokeWidth={c.name === 'GrowthBook' ? 2.5 : 0.5}
-                  />
-                ))}
-                <Legend wrapperStyle={{ fontSize: 12, paddingTop: 16 }} />
-              </ScatterChart>
-            </ResponsiveContainer>
-            <p style={{ fontSize: 11, color: C.muted, textAlign: 'left', marginTop: 4 }}>
-              Note: GrowthBook ETV undercounts branded traffic (~45% of clicks). DA scores from Moz (fetched 2026-04-03).
-            </p>
-          </Section>
+          {/* Bubble Chart — Content Volume vs DA vs ETV (pure SVG) */}
+          <BubbleChart competitors={d.competitors} />
 
           {/* Chart 5 — ETV trend over time, GrowthBook on secondary Y-axis */}
           {d.etv_trend && Object.keys(d.etv_trend).length > 0 && (() => {
