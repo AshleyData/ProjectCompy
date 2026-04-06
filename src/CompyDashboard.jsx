@@ -330,18 +330,18 @@ export default function CompyDashboard() {
           {/* Bubble Chart — Content Volume vs DA vs ETV */}
           <Section title="Content Volume vs. Domain Authority">
             <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
-              X-axis: pages of content tracked &nbsp;|&nbsp; Y-axis: Moz Domain Authority &nbsp;|&nbsp; Bubble size: estimated organic traffic (ETV). Bubble size is square-root scaled.
+              X-axis: pages of content tracked &nbsp;|&nbsp; Y-axis: Moz Domain Authority &nbsp;|&nbsp; Bubble size: estimated organic traffic (ETV).
             </p>
-            <ResponsiveContainer width="100%" height={380}>
-              <ScatterChart margin={{ top: 20, right: 30, bottom: 30, left: 20 }}>
+            <ResponsiveContainer width="100%" height={400}>
+              <ScatterChart margin={{ top: 20, right: 30, bottom: 40, left: 40 }}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="x" name="Pages" type="number" domain={[0, 'dataMax + 40']}
-                  label={{ value: 'Pages of Content', position: 'insideBottom', offset: -15, fontSize: 12, fill: C.muted }}
+                <XAxis type="number" dataKey="x" name="Pages" domain={[0, 430]}
+                  label={{ value: 'Pages of Content', position: 'insideBottom', offset: -20, fontSize: 12, fill: C.muted }}
                   tick={{ fontSize: 11 }} />
-                <YAxis dataKey="y" name="Domain Authority" type="number" domain={[25, 90]}
-                  label={{ value: 'Domain Authority (Moz)', angle: -90, position: 'insideLeft', offset: 10, fontSize: 12, fill: C.muted }}
+                <YAxis type="number" dataKey="y" name="Domain Authority" domain={[25, 90]}
+                  label={{ value: 'Domain Authority', angle: -90, position: 'insideLeft', offset: 15, fontSize: 12, fill: C.muted }}
                   tick={{ fontSize: 11 }} />
-                <ZAxis dataKey="z" range={[80, 2400]} name="ETV" />
+                <ZAxis type="number" dataKey="z" range={[100, 3000]} name="ETV" />
                 <RTooltip
                   cursor={{ strokeDasharray: "3 3" }}
                   content={({ active, payload }) => {
@@ -357,30 +357,18 @@ export default function CompyDashboard() {
                     );
                   }}
                 />
-                <Scatter
-                  name="Competitors"
-                  data={d.competitors.map(c => ({ name: c.name, x: c.pages, y: c.da || 0, etv: c.etv, z: Math.sqrt(c.etv + 1) }))}
-                  shape={(props) => {
-                    const { cx, cy, payload } = props;
-                    const r = Math.sqrt(props.r * props.r);
-                    const color = COMP_COLORS[payload.name] || C.accent;
-                    const isGB = payload.name === 'GrowthBook';
-                    return (
-                      <circle cx={cx} cy={cy} r={Math.max(r, 6)}
-                        fill={color} fillOpacity={0.82}
-                        stroke={isGB ? '#000' : color}
-                        strokeWidth={isGB ? 2.5 : 0.8} />
-                    );
-                  }}
-                >
-                  {d.competitors.map(c => (
-                    <Cell key={c.name} fill={COMP_COLORS[c.name] || C.accent} />
-                  ))}
-                </Scatter>
-                <Legend
-                  payload={d.competitors.map(c => ({ value: c.name, type: 'circle', color: COMP_COLORS[c.name] || C.accent }))}
-                  wrapperStyle={{ fontSize: 12, paddingTop: 10 }}
-                />
+                {d.competitors.map(c => (
+                  <Scatter
+                    key={c.name}
+                    name={c.name}
+                    data={[{ name: c.name, x: c.pages, y: c.da || 0, etv: c.etv, z: Math.sqrt(c.etv + 1) }]}
+                    fill={COMP_COLORS[c.name] || C.accent}
+                    fillOpacity={0.85}
+                    stroke={c.name === 'GrowthBook' ? '#000000' : (COMP_COLORS[c.name] || C.accent)}
+                    strokeWidth={c.name === 'GrowthBook' ? 2.5 : 0.5}
+                  />
+                ))}
+                <Legend wrapperStyle={{ fontSize: 12, paddingTop: 16 }} />
               </ScatterChart>
             </ResponsiveContainer>
             <p style={{ fontSize: 11, color: C.muted, textAlign: 'left', marginTop: 4 }}>
