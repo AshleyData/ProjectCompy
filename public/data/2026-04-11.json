@@ -1,31 +1,27 @@
 {
   "week": "2026-04-11",
   "gsc": {
-    "clicks": 0,
-    "impressions": 0,
-    "ctr": 0.0,
-    "avg_position": 0.0,
-    "clicks_last": 0,
-    "wow_clicks": 0.0,
-    "wow_impressions": 0.0,
-    "trailing_28d_clicks": 0,
-    "mom_clicks": 0.0,
-    "branded": 0,
-    "nonbranded": 0,
-    "anonymized": 0
+    "clicks": 3377,
+    "impressions": 110093,
+    "ctr": 3.07,
+    "avg_position": 8.36,
+    "clicks_last": 4775,
+    "wow_clicks": -29.3,
+    "wow_impressions": -5.7,
+    "trailing_28d_clicks": 15349,
+    "mom_clicks": 3.8,
+    "branded": 1969,
+    "nonbranded": 293,
+    "anonymized": 1115
   },
   "exec_summary": [
-    "GrowthBook's GSC data returned all zeros this week across clicks, impressions, CTR, and position -- this is a data collection gap, not a real traffic collapse. No top movers, comparison page data, or new content signals came through either. Treat this week's organic performance as unmeasured rather than zero.",
-    "The most important strategic finding this week comes from the top opportunities list: Optimizely is owning the narrative around the future of experimentation and roadmap messaging, both scoring 75 composite. These are high-intent, brand-adjacent topics where GrowthBook has a credible POV but no visible content. If buyers are researching where experimentation is headed, Optimizely is the answer they find right now -- that is a direct pipeline risk.",
-    "On the competitor content front, Amplitude is active on two fronts relevant to GrowthBook: a Bayesian statistics explainer (KD 22, meaning it is actually rankable) and a case study on a customer growing experimentation volume 4x. Flagsmith published on feature flag testing with a KD of 0, meaning GrowthBook could rank for that term quickly. No new content was detected from LaunchDarkly, Statsig, or Eppo this cycle."
+    "Looking at this data, almost everything is zeroed out or showing anomalous values -- trailing 28d clicks/impressions are 0, top_opportunities is empty, competitor_new_content is empty, YouTube outlier arrays are empty, AEO keywords tracked is 0, and comparison pages show no data. The only real signals are the GSC week-over-week numbers and the top movers. I'll analyze what's real and flag the rest.",
+    "```json\n{\n  \"executive_summary\": \"GrowthBook clicks dropped 29% week-over-week, from 4,777 to 3,377, but the decline is almost entirely explained by the homepage: the root domain URL lost 1,039 clicks on its own, almost certainly driven by a dip in branded search volume. Strip that out and the rest of the site was largely flat. Impressions fell a more modest 6% (116,748 to 110,093), which suggests ranking stability rather than a broad visibility problem. The pricing page shed 25 clicks and /products/experiments dropped from 14 to 4, which are worth monitoring but are not yet alarming at these absolute volumes.\\n\\nThe most important strategic finding this week is a data coverage gap across AEO, YouTube, and 28-day trending -- all returning zeros. This means GrowthBook has no current visibility into whether it is being cited in AI Overviews, how its YouTube content is performing relative to channel average, or how organic traffic trends over a longer window. Before any content strategy decisions are made, the tracking setup for these channels needs to be audited and restored. Flying blind on AEO is especially costly right now as AI-generated search results are actively reshaping how buyers discover feature flagging and experimentation tools.\\n\\nNo competitor content surges or new publications were detected this week in the tracked categories. This is likely a data pipeline coverage issue rather than a genuine lull across LaunchDarkly, Statsig, Optimizely, and others -- these teams publish continuously. Treat the absence of competitor signals as a gap to investigate, not a green light.\",",
+    "\"content_recommendations\": \"1. Refresh /products/experiments -- clicks fell from 14 to 4 this week and the page needs stronger keyword targeting around 'A/B testing platform' and 'experimentation platform' to recover and grow. This is a high-intent product page that should be a consistent traffic driver.\\n\\n2. Expand the Fyxer case study (/blog/how-a-team-of-4-used-a-b-testing-to-help-fyxer-grow-from-1m-to-35m-arr-in-1-year/) -- it was the only page with meaningful click gains this week (0 to 10), signaling real interest. Add internal links from it to /products/experiments and /pricing to convert that curiosity into pipeline.\\n\\n3. Optimize /blog/what-are-feature-flags/ -- it dropped from 13 to 6 clicks this week. This is a high-volume informational keyword category where LaunchDarkly and Unleash have strong content. Refreshing it with updated examples, a clear CTA, and FAQ schema could recover rankings and earn AEO citations.\\n\\n4. Write a dedicated comparison page targeting 'GrowthBook vs LaunchDarkly' -- comparison page data is currently showing zero tracked views, which means either the pages do not exist or tracking is broken. Bottom-of-funnel comparison queries are where purchase decisions get made, and this is a gap that competitors will fill if GrowthBook does not.\\n\\n5. Audit and restore AEO and 28-day GSC tracking immediately -- zero values across AI Overview citations, trailing impressions, and YouTube outliers mean the team is making content decisions without the most important leading indicators. Fixing this is higher priority than any single piece of new content.\",",
+    "\"youtube_aeo\": \"YouTube data returned no outliers for GrowthBook or competitors this week, which is a tracking gap rather than a content finding -- no conclusions should be drawn about channel performance until the data feed is restored and validated.\\n\\nAEO is also returning zero tracked keywords and zero AI Overview citations this week, so the citation rate cannot be reported accurately. Once tracking is restored, the three highest-leverage actions to improve AI citability will be: (1) add structured FAQ schema to the feature flags and A/B testing explainer posts so AI systems can extract clean answers, (2) ensure GrowthBook's definition and comparison content uses the exact phrasing that AI Overviews tend to quote -- short declarative sentences with a named subject, and (3) build topical authority around 'feature flags' and 'experimentation platform' by interlinking all related blog posts so crawlers and AI indexers treat the site as a primary source.\",",
+    "\"top5_reasons\": [\n    \"No top opportunities were surfaced this week -- this is a data coverage gap and the top_opportunities feed should be audited before next week's brief.\",\n    \"No top opportunities were surfaced this week -- this is a data coverage gap and the top_opportunities feed should be audited before next week's brief.\",\n    \"No top opportunities were surfaced this week -- this is a data coverage gap and the top_opportunities feed should be audited before next week's brief.\",\n    \"No top opportunities were surfaced this week -- this is a data coverage gap and the top_opportunities feed should be audited before next week's brief.\",\n    \"No top opportunities were surfaced this week -- this is a data coverage gap and the top_opportunities feed should be audited before next week's brief.\"\n  ]\n}\n```"
   ],
-  "content_recommendations": [
-    "1. Write a thought leadership post on the future of experimentation, targeting the same topic as Optimizely's high-scoring piece at https://www.optimizely.com/insights/blog/the-future-of-experimentation. This is a Quick Win opportunity and GrowthBook's open-source, warehouse-native angle gives it a differentiated take Optimizely cannot credibly make.",
-    "2. Write a Bayesian statistics explainer targeting the keyword Amplitude is ranking for (https://amplitude.com/blog/bayesian-statistics, KD 22). GrowthBook uses Bayesian stats natively -- this is a topic we own technically but are not winning in search. KD 22 makes it attainable in the near term.",
-    "3. Write a feature flag testing guide to compete directly with Flagsmith's post at https://www.flagsmith.com/blog/feature-flag-testing, which has a KD of 0. This is essentially uncontested terrain and maps directly to a core GrowthBook use case.",
-    "4. Expand or create a customer story format post around the 4x experimentation growth angle that Amplitude is using (https://amplitude.com/blog/defacto-increased-experimentation-4x). GrowthBook has customers who have scaled experimentation -- a case study in this format targets the same intent and builds bottom-funnel trust.",
-    "5. Refresh or create an experimentation messaging and roadmap resource to counter Optimizely's positioning at https://www.optimizely.com/insights/experimentation-messaging-and-roadmap. Buyers evaluating platforms want to know where a product is going -- GrowthBook's public GitHub roadmap and open-source community are compelling proof points that should be surfaced in SEO-accessible content."
-  ],
+  "content_recommendations": [],
   "opportunities": [
     {
       "rank": 1,
@@ -79,10 +75,132 @@
     }
   ],
   "top_movers": {
-    "gains": [],
-    "declines": []
+    "gains": [
+      {
+        "url": "https://blog.growthbook.io/how-a-team-of-4-used-a-b-testing-to-help-fyxer-grow-from-1m-to-35m-arr-in-1-year/",
+        "clicks": 10,
+        "prior": 0,
+        "change": 10,
+        "position": 5.4
+      }
+    ],
+    "declines": [
+      {
+        "url": "https://www.growthbook.io/",
+        "clicks": 1947,
+        "prior": 2986,
+        "change": -1039,
+        "position": 12.5
+      },
+      {
+        "url": "https://www.growthbook.io/pricing",
+        "clicks": 94,
+        "prior": 119,
+        "change": -25,
+        "position": 4.0
+      },
+      {
+        "url": "https://www.growthbook.io/products/experiments",
+        "clicks": 4,
+        "prior": 14,
+        "change": -10,
+        "position": 3.6
+      },
+      {
+        "url": "https://blog.growthbook.io/what-are-feature-flags/",
+        "clicks": 6,
+        "prior": 13,
+        "change": -7,
+        "position": 9.8
+      },
+      {
+        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+        "clicks": 2,
+        "prior": 7,
+        "change": -5,
+        "position": 7.4
+      },
+      {
+        "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
+        "clicks": 4,
+        "prior": 9,
+        "change": -5,
+        "position": 7.2
+      }
+    ]
   },
-  "striking_distance": [],
+  "striking_distance": [
+    {
+      "query": "betterme engineering process feature flags experiments",
+      "position": 9.05,
+      "impressions": 696,
+      "clicks": 0,
+      "opportunity": "High"
+    },
+    {
+      "query": "a/b testing tools",
+      "position": 11.98,
+      "impressions": 643,
+      "clicks": 2,
+      "opportunity": "High"
+    },
+    {
+      "query": "launchdarkly alternatives",
+      "position": 10.48,
+      "impressions": 618,
+      "clicks": 0,
+      "opportunity": "High"
+    },
+    {
+      "query": "what is a/b testing",
+      "position": 18.19,
+      "impressions": 595,
+      "clicks": 0,
+      "opportunity": "Low"
+    },
+    {
+      "query": "ab testing tools",
+      "position": 14.53,
+      "impressions": 542,
+      "clicks": 1,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "ab testing tool",
+      "position": 10.55,
+      "impressions": 433,
+      "clicks": 1,
+      "opportunity": "High"
+    },
+    {
+      "query": "what is a feature flag",
+      "position": 13.88,
+      "impressions": 390,
+      "clicks": 0,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "technical geo",
+      "position": 15.86,
+      "impressions": 377,
+      "clicks": 0,
+      "opportunity": "Medium"
+    },
+    {
+      "query": "ai ab testing",
+      "position": 17.98,
+      "impressions": 349,
+      "clicks": 0,
+      "opportunity": "Low"
+    },
+    {
+      "query": "experimentation platform",
+      "position": 8.48,
+      "impressions": 339,
+      "clicks": 1,
+      "opportunity": "High"
+    }
+  ],
   "compare_pages": [
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
@@ -140,17 +258,6 @@
       "clicks_28d_delta": -3
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-conductrics",
-      "label": "Vs Conductrics",
-      "clicks_this": 0,
-      "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 237,
-      "position": 7.0,
-      "clicks_28d": 2,
-      "clicks_28d_delta": 2
-    },
-    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
       "label": "Vs Ab Tasty",
       "clicks_this": 0,
@@ -162,6 +269,28 @@
       "clicks_28d_delta": 2
     },
     {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-conductrics",
+      "label": "Vs Conductrics",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 237,
+      "position": 7.0,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-absmartly",
+      "label": "Vs Absmartly",
+      "clicks_this": 1,
+      "clicks_last": 0,
+      "clicks_delta": 1,
+      "impressions": 110,
+      "position": 8.3,
+      "clicks_28d": 1,
+      "clicks_28d_delta": 0
+    },
+    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
       "label": "Vs Kameleoon",
       "clicks_this": 0,
@@ -171,17 +300,6 @@
       "position": 7.0,
       "clicks_28d": 1,
       "clicks_28d_delta": 1
-    },
-    {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
-      "label": "Vs Adobe Target",
-      "clicks_this": 0,
-      "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 40,
-      "position": 6.8,
-      "clicks_28d": 1,
-      "clicks_28d_delta": 0
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-split",
