@@ -1,30 +1,30 @@
 {
   "week": "2026-04-11",
   "gsc": {
-    "clicks": 3377,
-    "impressions": 110093,
-    "ctr": 3.07,
-    "avg_position": 8.36,
-    "clicks_last": 4775,
-    "wow_clicks": -29.3,
-    "wow_impressions": -5.7,
-    "trailing_28d_clicks": 15349,
-    "mom_clicks": 3.8,
-    "branded": 1969,
-    "nonbranded": 293,
-    "anonymized": 1115
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": 0.0,
+    "avg_position": 0.0,
+    "clicks_last": 0,
+    "wow_clicks": 0.0,
+    "wow_impressions": 0.0,
+    "trailing_28d_clicks": 0,
+    "mom_clicks": 0.0,
+    "branded": 0,
+    "nonbranded": 0,
+    "anonymized": 0
   },
   "exec_summary": [
-    "GrowthBook clicks dropped 29% week-over-week, from 4,777 to 3,377. The decline is almost entirely explained by the homepage, which lost 1,039 clicks on its own -- almost certainly a branded search fluctuation rather than a structural SEO problem. The /pricing page and /products/experiments page each declined modestly, and the feature flags blog post slipped 7 clicks, but none of those moves are alarming in isolation. The Fyxer case study is a bright spot, picking up 10 clicks from zero last week.",
-    "The single most important strategic finding this week is the content gap around 'Feature Flag Testing' where Flagsmith holds a ranking page with near-zero keyword difficulty. GrowthBook has a direct product overlap here and no apparent competing content. A targeted post on feature flag testing patterns -- with code examples and a GrowthBook integration angle -- could rank quickly and pull in mid-funnel traffic that Flagsmith is currently capturing from developers evaluating flag tooling.",
-    "On the competitor front, no new content was published this week by tracked competitors in the feature flagging or experimentation space. That is a short window of relative quiet that GrowthBook can use to publish into keyword gaps before the larger platforms re-accelerate their content programs."
+    "GrowthBook's GSC data returned all zeros this week across clicks, impressions, CTR, and position -- this is a data collection gap, not a real traffic collapse. No top movers, comparison page data, or new content signals came through either. Treat this week's organic performance as unmeasured rather than zero.",
+    "The most important strategic finding this week comes from the top opportunities list: Optimizely is owning the narrative around the future of experimentation and roadmap messaging, both scoring 75 composite. These are high-intent, brand-adjacent topics where GrowthBook has a credible POV but no visible content. If buyers are researching where experimentation is headed, Optimizely is the answer they find right now -- that is a direct pipeline risk.",
+    "On the competitor content front, Amplitude is active on two fronts relevant to GrowthBook: a Bayesian statistics explainer (KD 22, meaning it is actually rankable) and a case study on a customer growing experimentation volume 4x. Flagsmith published on feature flag testing with a KD of 0, meaning GrowthBook could rank for that term quickly. No new content was detected from LaunchDarkly, Statsig, or Eppo this cycle."
   ],
   "content_recommendations": [
-    "1. Write a dedicated 'Feature Flag Testing' guide targeting the Flagsmith-owned topic (KD 0). This is a direct product overlap with essentially no ranking resistance -- GrowthBook should own this term before Flagsmith compounds its authority on it.",
-    "2. Expand the Bayesian statistics content on the blog. Amplitude holds a ranking page here at KD 22, which is within reach. GrowthBook's stats engine is a core differentiator and a well-structured explainer linking to docs can convert curious data scientists into evaluators.",
-    "3. Refresh /blog/what-are-feature-flags/ which dropped from 13 to 6 clicks this week. It is a foundational informational page that should anchor internal links from newer flag-related content. Add a 2024 update section, a comparison table, and links to the feature flag testing piece once written.",
-    "4. Write a case study companion piece to the Fyxer post -- a 'how to run growth experiments with a small team' angle. The Fyxer post just came off zero clicks to 10, meaning it is beginning to get indexed traction. Supporting it with a related piece now amplifies both URLs.",
-    "5. Optimize /solutions/ai which fell from 6 to 1 click. AI experimentation is a high-interest topic right now. Audit whether the page targets a specific keyword with search volume or is purely navigational, and either tighten the on-page copy around a rankable query or consolidate it into a stronger blog post."
+    "1. Write a thought leadership post on the future of experimentation, targeting the same topic as Optimizely's high-scoring piece at https://www.optimizely.com/insights/blog/the-future-of-experimentation. This is a Quick Win opportunity and GrowthBook's open-source, warehouse-native angle gives it a differentiated take Optimizely cannot credibly make.",
+    "2. Write a Bayesian statistics explainer targeting the keyword Amplitude is ranking for (https://amplitude.com/blog/bayesian-statistics, KD 22). GrowthBook uses Bayesian stats natively -- this is a topic we own technically but are not winning in search. KD 22 makes it attainable in the near term.",
+    "3. Write a feature flag testing guide to compete directly with Flagsmith's post at https://www.flagsmith.com/blog/feature-flag-testing, which has a KD of 0. This is essentially uncontested terrain and maps directly to a core GrowthBook use case.",
+    "4. Expand or create a customer story format post around the 4x experimentation growth angle that Amplitude is using (https://amplitude.com/blog/defacto-increased-experimentation-4x). GrowthBook has customers who have scaled experimentation -- a case study in this format targets the same intent and builds bottom-funnel trust.",
+    "5. Refresh or create an experimentation messaging and roadmap resource to counter Optimizely's positioning at https://www.optimizely.com/insights/experimentation-messaging-and-roadmap. Buyers evaluating platforms want to know where a product is going -- GrowthBook's public GitHub roadmap and open-source community are compelling proof points that should be surfaced in SEO-accessible content."
   ],
   "opportunities": [
     {
@@ -49,6 +49,16 @@
     },
     {
       "rank": 3,
+      "topic": "the future of experimentation",
+      "competitor": "Optimizely",
+      "score": 75.0,
+      "kd": "n/a",
+      "bucket": "Quick Win",
+      "url": "",
+      "why": "Optimizely ranks for 'the future of experimentation' while GrowthBook has weak or no coverage. Score 75.0."
+    },
+    {
+      "rank": 4,
       "topic": "defacto increased experimentation 4x",
       "competitor": "Amplitude Exp",
       "score": 70.0,
@@ -58,7 +68,7 @@
       "why": "Amplitude Exp ranks for 'defacto increased experimentation 4x' while GrowthBook has weak or no coverage. Score 70.0."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "topic": "feature flag testing",
       "competitor": "Flagsmith",
       "score": 70.0,
@@ -69,132 +79,10 @@
     }
   ],
   "top_movers": {
-    "gains": [
-      {
-        "url": "https://blog.growthbook.io/how-a-team-of-4-used-a-b-testing-to-help-fyxer-grow-from-1m-to-35m-arr-in-1-year/",
-        "clicks": 10,
-        "prior": 0,
-        "change": 10,
-        "position": 5.4
-      }
-    ],
-    "declines": [
-      {
-        "url": "https://www.growthbook.io/",
-        "clicks": 1947,
-        "prior": 2986,
-        "change": -1039,
-        "position": 12.5
-      },
-      {
-        "url": "https://www.growthbook.io/pricing",
-        "clicks": 94,
-        "prior": 119,
-        "change": -25,
-        "position": 4.0
-      },
-      {
-        "url": "https://www.growthbook.io/products/experiments",
-        "clicks": 4,
-        "prior": 14,
-        "change": -10,
-        "position": 3.6
-      },
-      {
-        "url": "https://blog.growthbook.io/what-are-feature-flags/",
-        "clicks": 6,
-        "prior": 13,
-        "change": -7,
-        "position": 9.8
-      },
-      {
-        "url": "https://www.growthbook.io/solutions/ai",
-        "clicks": 1,
-        "prior": 6,
-        "change": -5,
-        "position": 5.2
-      },
-      {
-        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
-        "clicks": 2,
-        "prior": 7,
-        "change": -5,
-        "position": 7.4
-      }
-    ]
+    "gains": [],
+    "declines": []
   },
-  "striking_distance": [
-    {
-      "query": "betterme engineering process feature flags experiments",
-      "position": 9.05,
-      "impressions": 696,
-      "clicks": 0,
-      "opportunity": "High"
-    },
-    {
-      "query": "a/b testing tools",
-      "position": 11.98,
-      "impressions": 643,
-      "clicks": 2,
-      "opportunity": "High"
-    },
-    {
-      "query": "launchdarkly alternatives",
-      "position": 10.48,
-      "impressions": 618,
-      "clicks": 0,
-      "opportunity": "High"
-    },
-    {
-      "query": "what is a/b testing",
-      "position": 18.19,
-      "impressions": 595,
-      "clicks": 0,
-      "opportunity": "Low"
-    },
-    {
-      "query": "ab testing tools",
-      "position": 14.53,
-      "impressions": 542,
-      "clicks": 1,
-      "opportunity": "Medium"
-    },
-    {
-      "query": "ab testing tool",
-      "position": 10.55,
-      "impressions": 433,
-      "clicks": 1,
-      "opportunity": "High"
-    },
-    {
-      "query": "what is a feature flag",
-      "position": 13.88,
-      "impressions": 390,
-      "clicks": 0,
-      "opportunity": "Medium"
-    },
-    {
-      "query": "technical geo",
-      "position": 15.86,
-      "impressions": 377,
-      "clicks": 0,
-      "opportunity": "Medium"
-    },
-    {
-      "query": "ai ab testing",
-      "position": 17.98,
-      "impressions": 349,
-      "clicks": 0,
-      "opportunity": "Low"
-    },
-    {
-      "query": "experimentation platform",
-      "position": 8.48,
-      "impressions": 339,
-      "clicks": 1,
-      "opportunity": "High"
-    }
-  ],
+  "striking_distance": [],
   "compare_pages": [
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
@@ -2491,27 +2379,11 @@
       "date": "2026-04-11"
     },
     {
-      "competitor": "Harness",
-      "slug": "authentication-vs-authorization",
-      "url": "https://www.harness.io/blog/authentication-vs-authorization",
-      "threat": 7,
-      "kd": 12.0,
-      "date": "2026-04-11"
-    },
-    {
       "competitor": "Amplitude Exp",
       "slug": "bayesian-statistics",
       "url": "https://amplitude.com/blog/bayesian-statistics",
       "threat": 7,
       "kd": 22.0,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "PostHog",
-      "slug": "testing-ai-agents",
-      "url": "https://posthog.com/blog/testing-ai-agents",
-      "threat": 7,
-      "kd": 6.0,
       "date": "2026-04-11"
     },
     {
@@ -2523,11 +2395,51 @@
       "date": "2026-04-11"
     },
     {
-      "competitor": "Harness",
-      "slug": "what-is-argo-cd",
-      "url": "https://www.harness.io/blog/what-is-argo-cd",
-      "threat": 6,
-      "kd": 16.0,
+      "competitor": "Optimizely",
+      "slug": "anz-ai-ccelerate-opal-workshop-melbourne",
+      "url": "https://www.optimizely.com/insights/anz-ai-ccelerate-opal-workshop-melbourne",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "20-questions-that-make-or-break-your-b2b-commerce-decision",
+      "url": "https://www.optimizely.com/insights/blog/20-questions-that-make-or-break-your-b2b-commerce-decision",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "leaving-sitecore",
+      "url": "https://www.optimizely.com/insights/blog/leaving-sitecore",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "the-future-of-experimentation",
+      "url": "https://www.optimizely.com/insights/blog/the-future-of-experimentation",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Optimizely",
+      "slug": "whats-new-in-optimizely-opal-april-2026",
+      "url": "https://www.optimizely.com/insights/whats-new-in-optimizely-opal-april-2026",
+      "threat": 7,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "zoneless-angular",
+      "url": "https://posthog.com/questions/zoneless-angular",
+      "threat": 7,
+      "kd": 0.0,
       "date": "2026-04-11"
     },
     {
@@ -2572,18 +2484,82 @@
     },
     {
       "competitor": "PostHog",
-      "slug": "sandbox-environments",
-      "url": "https://posthog.com/docs/api/sandbox-environments",
-      "threat": 6,
-      "kd": 10.0,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "PostHog",
       "slug": "identity-resolution",
       "url": "https://posthog.com/docs/product-analytics/identity-resolution",
       "threat": 6,
       "kd": 21.0,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "LaunchDarkly",
+      "slug": "agent-control",
+      "url": "https://launchdarkly.com/product-demo/agent-control",
+      "threat": 6,
+      "kd": 23.0,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "marketing-agents-prioritize",
+      "url": "https://amplitude.com/blog/marketing-agents-prioritize",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "sample-size-calculator-assumptions",
+      "url": "https://amplitude.com/blog/sample-size-calculator-assumptions",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "temporal-increased-signups-by-doubling-down-on-plg",
+      "url": "https://amplitude.com/blog/temporal-increased-signups-by-doubling-down-on-plg",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "path-to-purchase-worksheet",
+      "url": "https://amplitude.com/resources/path-to-purchase-worksheet",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "authentication-vs-authorization",
+      "url": "https://www.harness.io/blog/authentication-vs-authorization",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "testing-ai-agents",
+      "url": "https://posthog.com/blog/testing-ai-agents",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "what-is-argo-cd",
+      "url": "https://www.harness.io/blog/what-is-argo-cd",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-11"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "sandbox-environments",
+      "url": "https://posthog.com/docs/api/sandbox-environments",
+      "threat": 5,
+      "kd": null,
       "date": "2026-04-11"
     },
     {
@@ -2622,94 +2598,6 @@
       "competitor": "Harness",
       "slug": "from-chaos-to-confidence-debunking-the-3-biggest-myths-of-chaos-engineering",
       "url": "https://www.harness.io/blog/from-chaos-to-confidence-debunking-the-3-biggest-myths-of-chaos-engineering",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "harness-ai-december-2025-updates",
-      "url": "https://www.harness.io/blog/harness-ai-december-2025-updates",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "harness-ai-february-2026-updates",
-      "url": "https://www.harness.io/blog/harness-ai-february-2026-updates",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "how-to-release-confidently-at-ai-speed",
-      "url": "https://www.harness.io/blog/how-to-release-confidently-at-ai-speed",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "how-to-scale-sandbox-environments-with-an-internal-developer-portal",
-      "url": "https://www.harness.io/blog/how-to-scale-sandbox-environments-with-an-internal-developer-portal",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "introducing-zero-trust-architecture-for-software-delivery",
-      "url": "https://www.harness.io/blog/introducing-zero-trust-architecture-for-software-delivery",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "making-deploys-safe-shouldnt-be-hard",
-      "url": "https://www.harness.io/blog/making-deploys-safe-shouldnt-be-hard",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "operationalizing-production-data-testing-with-harness-database-devops",
-      "url": "https://www.harness.io/blog/operationalizing-production-data-testing-with-harness-database-devops",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "regression-testing-in-ci-cd-deliver-faster-without-the-fear",
-      "url": "https://www.harness.io/blog/regression-testing-in-ci-cd-deliver-faster-without-the-fear",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "release-orchestration-bridges-the-ai-delivery-gap",
-      "url": "https://www.harness.io/blog/release-orchestration-bridges-the-ai-delivery-gap",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "shift-left-finops-proactive-cloud-cost-control",
-      "url": "https://www.harness.io/blog/shift-left-finops-proactive-cloud-cost-control",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-04-11"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "shipped-in-march-2026",
-      "url": "https://www.harness.io/blog/shipped-in-march-2026",
       "threat": 5,
       "kd": null,
       "date": "2026-04-11"
