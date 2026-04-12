@@ -320,6 +320,47 @@ export default function CompyDashboard() {
             </div>
           </Section>
 
+          {d.ga4?.main_site && (
+            <Section title="Site Traffic (GA4)">
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+                <MetricCard
+                  label="Sessions (main site)"
+                  value={(d.ga4?.main_site?.sessions ?? 0).toLocaleString()}
+                  change={d.ga4?.main_site?.wow_sessions_pct}
+                  sub="vs prior week"
+                />
+                <MetricCard
+                  label="Users (main site)"
+                  value={(d.ga4?.main_site?.users ?? 0).toLocaleString()}
+                  change={d.ga4?.main_site?.wow_users_pct}
+                  sub="vs prior week"
+                />
+                <MetricCard
+                  label="Sessions (docs)"
+                  value={(d.ga4?.docs?.sessions ?? 0).toLocaleString()}
+                  change={d.ga4?.docs?.wow_sessions_pct}
+                  sub="vs prior week"
+                />
+                <MetricCard
+                  label="Pageviews (main)"
+                  value={(d.ga4?.main_site?.pageviews ?? 0).toLocaleString()}
+                  sub="Apr 4–10"
+                />
+              </div>
+              <div style={{ ...card({ padding: "12px 14px" }) }}>
+                {(d.ga4?.main_site?.channels || []).slice(0, 6).map((ch, i, arr) => (
+                  <Bar
+                    key={ch.channel || i}
+                    label={ch.channel || "Unknown"}
+                    value={ch.sessions ?? 0}
+                    max={arr?.[0]?.sessions || 1}
+                    color={C.accent}
+                  />
+                ))}
+              </div>
+            </Section>
+          )}
+
           {/* Executive Summary */}
           <Section title="Executive Summary">
             <div style={{ ...card({ padding: 20 }) }}>
