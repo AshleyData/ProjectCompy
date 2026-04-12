@@ -674,7 +674,7 @@ export default function CompyDashboard() {
             });
             // Also count GSC-based GrowthBook new blog content (gb_new_content)
             const gbGscCount = (d.gb_new_content || []).length;
-            if (gbGscCount > 0) counts["GrowthBook"] = (counts["GrowthBook"] || 0) + gbGscCount;
+            counts["GrowthBook"] = (counts["GrowthBook"] || 0) + gbGscCount;
             // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
             const chartData = Object.entries(counts)
               .sort((a, b) => b[1] - a[1])
