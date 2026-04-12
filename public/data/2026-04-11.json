@@ -2934,6 +2934,70 @@
       "kd": 11.0
     }
   ],
+  "ga4": {
+    "main_site": {
+      "sessions": 9913,
+      "users": 6412,
+      "pageviews": 13612,
+      "bounce_rate": 0.6288711792595582,
+      "wow_sessions_pct": -16.8,
+      "wow_users_pct": -21.5,
+      "prior_sessions": 11916,
+      "week_start": "2026-04-04",
+      "week_end": "2026-04-10",
+      "channels": [
+        {
+          "channel": "Direct",
+          "sessions": 4337
+        },
+        {
+          "channel": "Organic Search",
+          "sessions": 4313
+        },
+        {
+          "channel": "Paid Search",
+          "sessions": 503
+        },
+        {
+          "channel": "Referral",
+          "sessions": 395
+        },
+        {
+          "channel": "Email",
+          "sessions": 150
+        },
+        {
+          "channel": "Unassigned",
+          "sessions": 101
+        },
+        {
+          "channel": "Organic Social",
+          "sessions": 82
+        },
+        {
+          "channel": "Paid Social",
+          "sessions": 11
+        },
+        {
+          "channel": "Paid Other",
+          "sessions": 8
+        },
+        {
+          "channel": "Organic Video",
+          "sessions": 2
+        }
+      ],
+      "snapshot_date": "2026-04-11"
+    },
+    "docs": {
+      "sessions": 5363,
+      "users": 3359,
+      "wow_sessions_pct": 6.0,
+      "week_start": "2026-04-04",
+      "week_end": "2026-04-10",
+      "snapshot_date": "2026-04-11"
+    }
+  },
   "youtube": {
     "channels": [
       {
