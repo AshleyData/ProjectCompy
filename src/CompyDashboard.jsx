@@ -672,9 +672,9 @@ export default function CompyDashboard() {
               const name = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
               counts[name] = (counts[name] || 0) + 1;
             });
-            // Also count GSC-based GrowthBook new blog content (gb_new_content)
-            const gbGscCount = (d.gb_new_content || []).length;
-            counts["GrowthBook"] = (counts["GrowthBook"] || 0) + gbGscCount;
+            // GrowthBook new pages: prefer sitemap count (same source as competitors), fall back to GSC-based list
+            const gbSitemapCount = d.gb_sitemap_new_count ?? (d.gb_new_content || []).length;
+            counts["GrowthBook"] = (counts["GrowthBook"] || 0) + gbSitemapCount;
             // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
             const chartData = Object.entries(counts)
               .sort((a, b) => b[1] - a[1])
