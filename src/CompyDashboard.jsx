@@ -294,32 +294,17 @@ export default function CompyDashboard() {
 
         {/* ── SUMMARY ── */}
         {tab === "summary" && (<>
-          {/* Scorecard row */}
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 24 }}>
-            <MetricCard label="Clicks" value={d.gsc.clicks.toLocaleString()} change={d.gsc.wow_clicks} sub={`${d.gsc.clicks_last.toLocaleString()} prior week`} />
-            <MetricCard label="Impressions" value={`${Math.round(d.gsc.impressions/1000)}K`} change={d.gsc.wow_impressions} sub="prior week" />
-            <MetricCard label="CTR" value={`${d.gsc.ctr.toFixed(2)}%`} sub="WoW" />
-            <MetricCard label="Avg Position" value={d.gsc.avg_position} sub="WoW" />
-            <MetricCard label="28-Day Clicks" value={d.gsc.trailing_28d_clicks.toLocaleString()} sub={`${d.gsc.mom_clicks > 0 ? "+" : ""}${d.gsc.mom_clicks}% MoM`} />
-          </div>
 
-          {/* Click breakdown */}
-          <Section title="Click Breakdown (This Week)">
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              {[
-                { label: "Branded", value: d.gsc.branded.toLocaleString(), note: "queries containing 'growthbook'" },
-                { label: "Non-Branded", value: d.gsc.nonbranded.toLocaleString(), note: "organic discovery traffic" },
-                { label: "Anonymized", value: d.gsc.anonymized.toLocaleString(), note: "low-volume queries (GSC privacy)" },
-              ].map((b, i) => (
-                <div key={i} style={{ ...card({ padding: "14px 18px", flex: 1, minWidth: 160 }) }}>
-                  <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase" }}>{b.label}</div>
-                  <div style={{ fontSize: 24, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{b.value}</div>
-                  <div style={{ fontSize: 12, color: C.muted }}>{b.note}</div>
-                </div>
+          {/* Executive Summary */}
+          <Section title="Executive Summary">
+            <div style={{ ...card({ padding: 20 }) }}>
+              {d.exec_summary.map((p, i) => (
+                <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14, textAlign: "left" }}>{p}</p>
               ))}
             </div>
           </Section>
 
+          {/* GA4 Traffic */}
           {d.ga4?.main_site && (
             <Section title="Site Traffic (GA4)">
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
@@ -344,7 +329,7 @@ export default function CompyDashboard() {
                 <MetricCard
                   label="Pageviews (main)"
                   value={(d.ga4?.main_site?.pageviews ?? 0).toLocaleString()}
-                  sub="Apr 4–10"
+                  sub={`${d.ga4.main_site.week_start} – ${d.ga4.main_site.week_end}`}
                 />
               </div>
               <div style={{ ...card({ padding: "12px 14px" }) }}>
@@ -361,11 +346,30 @@ export default function CompyDashboard() {
             </Section>
           )}
 
-          {/* Executive Summary */}
-          <Section title="Executive Summary">
-            <div style={{ ...card({ padding: 20 }) }}>
-              {d.exec_summary.map((p, i) => (
-                <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14, textAlign: "left" }}>{p}</p>
+          {/* GSC Scorecard row */}
+          <Section title="Search Performance (GSC)">
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+              <MetricCard label="Clicks" value={d.gsc.clicks.toLocaleString()} change={d.gsc.wow_clicks} sub={`${d.gsc.clicks_last.toLocaleString()} prior week`} />
+              <MetricCard label="Impressions" value={`${Math.round(d.gsc.impressions/1000)}K`} change={d.gsc.wow_impressions} sub="prior week" />
+              <MetricCard label="CTR" value={`${d.gsc.ctr.toFixed(2)}%`} sub="WoW" />
+              <MetricCard label="Avg Position" value={d.gsc.avg_position} sub="WoW" />
+              <MetricCard label="28-Day Clicks" value={d.gsc.trailing_28d_clicks.toLocaleString()} sub={`${d.gsc.mom_clicks > 0 ? "+" : ""}${d.gsc.mom_clicks}% MoM`} />
+            </div>
+          </Section>
+
+          {/* Click breakdown */}
+          <Section title="Click Breakdown (This Week)">
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              {[
+                { label: "Branded", value: d.gsc.branded.toLocaleString(), note: "queries containing 'growthbook'" },
+                { label: "Non-Branded", value: d.gsc.nonbranded.toLocaleString(), note: "organic discovery traffic" },
+                { label: "Anonymized", value: d.gsc.anonymized.toLocaleString(), note: "low-volume queries (GSC privacy)" },
+              ].map((b, i) => (
+                <div key={i} style={{ ...card({ padding: "14px 18px", flex: 1, minWidth: 160 }) }}>
+                  <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase" }}>{b.label}</div>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{b.value}</div>
+                  <div style={{ fontSize: 12, color: C.muted }}>{b.note}</div>
+                </div>
               ))}
             </div>
           </Section>
