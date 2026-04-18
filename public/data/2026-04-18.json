@@ -16,16 +16,16 @@
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-04-11 to 2026-04-17): growthbook.io had 11,899 sessions and 7,937 users (+20.0% week over week).",
-    "GrowthBook clicks dropped 30% week over week, from 4,888 to 3,412, but this is almost entirely a homepage story. The root domain alone shed 1,311 clicks, likely a branded search fluctuation rather than a broad organic decline. Strip out the homepage and the rest of the site held relatively steady. Bright spots: the Fyxer A/B testing case study jumped from 2 to 11 clicks, the GrowthBook vs. LaunchDarkly comparison page gained 6 clicks, and the \"what is A/B testing\" post ticked up to 11 clicks. Pricing and demo page declines are worth watching but are small in absolute terms.",
-    "The most important strategic finding this week is a data coverage gap across comparison pages, AEO, and YouTube. All three tracking buckets returned zero values, which means either instrumentation is broken or tracking setup is incomplete. This matters because comparison pages, AI Overview citations, and YouTube are three of the highest-ROI channels for a product like GrowthBook -- competitors are actively investing in all three. Restoring visibility into these channels should be treated as urgent, not a backlog item.",
-    "No competitor content surges or new posts were detected in the experimentation or feature flagging space this week. That is a quiet cycle, but given the tracking gaps noted above, it is worth verifying the competitor monitoring pipeline is functioning before concluding the landscape was actually silent."
+    "GrowthBook clicks dropped 30% week-over-week, from 4,888 to 3,412, but this is almost entirely a homepage story: the root domain (/) shed 1,311 clicks on its own, likely a fluctuation in branded search volume. Strip that out and the rest of the site held relatively steady. Comparison pages showed a small bright spot, with the GrowthBook vs. LaunchDarkly page gaining 6 clicks and the Fyxer A/B testing case study climbing 9 clicks to 11 total. Impressions actually grew 16% to 123,560, which suggests visibility is expanding even if click-through softened this week.",
+    "The most important strategic finding this week is the content gap around feature flag testing and Bayesian statistics, two topics where competitors Flagsmith and Amplitude Experiment hold indexed pages that GrowthBook does not. Flagsmith's feature-flag-testing post has a keyword difficulty of 0, meaning GrowthBook could rank for it quickly with minimal link equity. Bayesian statistics sits at KD 22 and is a natural fit for GrowthBook's statistical engine messaging. Both represent fast, low-cost ranking opportunities in keywords that map directly to GrowthBook's core product surface.",
+    "Optimizely published or surfaced two notable experimentation-focused pieces this week: one on the future of experimentation and one on their experimentation messaging and roadmap. These are thought-leadership plays aimed at enterprise buyers evaluating platforms, the same audience GrowthBook targets with its open-source-to-cloud story. No new content from Statsig, LaunchDarkly, or Eppo surfaced this cycle, making this a relatively quiet week on the competitor content front."
   ],
   "content_recommendations": [
-    "1. Expand the GrowthBook vs. LaunchDarkly comparison page -- it gained 6 clicks this week and is one of the few pages trending up. Comparison pages are high-intent and convert well; a deeper feature and pricing breakdown could accelerate its climb.",
-    "2. Refresh the GrowthBook vs. Statsig comparison page -- it dropped from 9 to 4 clicks this week, a 56% decline. Statsig is a direct competitor in experimentation and this page is losing ground at exactly the moment buyers are evaluating alternatives.",
-    "3. Expand the Fyxer A/B testing case study -- it surged from 2 to 11 clicks after likely minimal promotion. A case study showing 1M to 35M ARR growth is a strong proof point; adding SEO-targeted headings and a broader distribution push could make this a consistent traffic driver.",
-    "4. Write a structured guide targeting \"what is A/B testing\" adjacent long-tail keywords -- the core page is at 11 clicks and growing, suggesting demand. Supporting cluster content (e.g., \"how to run your first A/B test,\" \"A/B testing sample size calculator\") would capture mid-funnel traffic that the single page cannot cover.",
-    "5. Optimize the demo and pricing pages for non-branded intent -- both declined this week and the demo page hit zero clicks. These pages are conversion-critical; adding FAQ schema, addressing common objections, and targeting bottom-of-funnel keywords like \"GrowthBook pricing\" or \"open source feature flags cost\" would help stabilize them."
+    "1. Write a dedicated 'Feature Flag Testing' guide targeting the exact keyword Flagsmith ranks for (KD 0). This is a zero-competition gap that maps directly to GrowthBook's core product and could rank within weeks.",
+    "2. Expand the Bayesian statistics content on the site or publish a standalone explainer. Amplitude Experiment holds this term at KD 22, and GrowthBook's statistical engine is Bayesian-first, making this a credibility and SEO win in one move.",
+    "3. Refresh the GrowthBook vs. Statsig comparison page, which dropped 5 clicks this week to just 4. With Statsig investing heavily in product marketing, keeping that page current and defensible is a priority before the gap widens.",
+    "4. Optimize the homepage for non-branded queries. The 1,311-click drop on the root domain this week is a reminder of how concentrated branded risk is on a single URL. Adding or strengthening mid-funnel keyword targeting on the homepage reduces that dependency.",
+    "5. Write a response to Optimizely's 'Future of Experimentation' framing with GrowthBook's own POV. Optimizely is actively shaping the enterprise narrative around experimentation roadmaps, and GrowthBook needs a counterpoint that highlights open-source flexibility and warehouse-native stats as the actual future."
   ],
   "opportunities": [
     {
@@ -244,17 +244,6 @@
       "clicks_28d_delta": -2
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
-      "label": "Vs Posthog",
-      "clicks_this": 1,
-      "clicks_last": 0,
-      "clicks_delta": 1,
-      "impressions": 111,
-      "position": 6.6,
-      "clicks_28d": 10,
-      "clicks_28d_delta": 5
-    },
-    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-optimizely",
       "label": "Vs Optimizely",
       "clicks_this": 2,
@@ -264,6 +253,17 @@
       "position": 7.2,
       "clicks_28d": 10,
       "clicks_28d_delta": -14
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
+      "label": "Vs Posthog",
+      "clicks_this": 1,
+      "clicks_last": 0,
+      "clicks_delta": 1,
+      "impressions": 111,
+      "position": 6.6,
+      "clicks_28d": 10,
+      "clicks_28d_delta": 5
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
@@ -288,6 +288,28 @@
       "clicks_28d_delta": 2
     },
     {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
+      "label": "Vs Split",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 150,
+      "position": 7.5,
+      "clicks_28d": 1,
+      "clicks_28d_delta": -1
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
+      "label": "Vs Kameleoon",
+      "clicks_this": 0,
+      "clicks_last": 1,
+      "clicks_delta": -1,
+      "impressions": 66,
+      "position": 7.9,
+      "clicks_28d": 1,
+      "clicks_28d_delta": 1
+    },
+    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-ab-tasty",
       "label": "Vs Ab Tasty",
       "clicks_this": 0,
@@ -306,28 +328,6 @@
       "clicks_delta": 1,
       "impressions": 113,
       "position": 8.1,
-      "clicks_28d": 1,
-      "clicks_28d_delta": 0
-    },
-    {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
-      "label": "Vs Split",
-      "clicks_this": 0,
-      "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 150,
-      "position": 7.5,
-      "clicks_28d": 1,
-      "clicks_28d_delta": -1
-    },
-    {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-adobe-target",
-      "label": "Vs Adobe Target",
-      "clicks_this": 0,
-      "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 67,
-      "position": 6.1,
       "clicks_28d": 1,
       "clicks_28d_delta": 0
     }
@@ -2692,27 +2692,11 @@
       "date": "2026-04-18"
     },
     {
-      "competitor": "PostHog",
-      "slug": "sidebar-dashboard",
-      "url": "https://posthog.com/docs/vscode-extension/sidebar-dashboard",
-      "threat": 7,
-      "kd": 0.0,
-      "date": "2026-04-18"
-    },
-    {
       "competitor": "LaunchDarkly",
       "slug": "agent-control",
       "url": "https://launchdarkly.com/product-demo/agent-control",
       "threat": 6,
       "kd": 23.0,
-      "date": "2026-04-18"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "ci-cd-best-practices",
-      "url": "https://www.harness.io/blog/ci-cd-best-practices",
-      "threat": 6,
-      "kd": 19.0,
       "date": "2026-04-18"
     },
     {
@@ -2833,6 +2817,22 @@
       "url": "https://amplitude.com/compare/contentsquare",
       "threat": 6,
       "kd": 49.0,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "product-analytics-guide",
+      "url": "https://amplitude.com/explore/analytics/product-analytics-guide",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "path-to-purchase-worksheet",
+      "url": "https://amplitude.com/resources/path-to-purchase-worksheet",
+      "threat": 6,
+      "kd": null,
       "date": "2026-04-18"
     }
   ],
@@ -3115,7 +3115,7 @@
     },
     "docs": {
       "sessions": 4599,
-      "users": 2523,
+      "users": 2524,
       "wow_sessions_pct": -15.7,
       "week_start": "2026-04-11",
       "week_end": "2026-04-17",
