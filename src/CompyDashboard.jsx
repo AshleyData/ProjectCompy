@@ -583,6 +583,13 @@ export default function CompyDashboard() {
         {tab === "youtube" && (() => {
           const channels = d.youtube.channels;
           const gbCh = channels.find(c => c.name === "GrowthBook") || { videos: [], avg_views: 0, video_count: 0 };
+          const runDate = new Date((d.week || "").toString() + "T00:00:00");
+          const cutoff14 = new Date(runDate);
+          cutoff14.setDate(cutoff14.getDate() - 14);
+          const cutoffStr = cutoff14.toISOString().slice(0, 10);
+          const gbAllRecent = (gbCh.videos || [])
+            .filter(v => v.date && v.date >= cutoffStr)
+            .sort((a, b) => new Date(b.date) - new Date(a.date));
           const gbOutliers = (gbCh.videos || []).filter(v => v.is_outlier).sort((a, b) => b.mult - a.mult);
           const compOutliers = channels
             .filter(c => c.name !== "GrowthBook")
@@ -618,6 +625,29 @@ export default function CompyDashboard() {
                 <p style={{ margin: 0, fontSize: 13, lineHeight: 1.65, color: "#2C3E50", textAlign: "left" }}>{compNarrative}</p>
               </div>
             </div>
+
+            <Section title="GrowthBook — Recent Videos (Last 14 Days)">
+              {gbAllRecent.length === 0 ? (
+                <p style={{ color: '#888', fontSize: 13 }}>No GrowthBook videos published in the last 14 days.</p>
+              ) : (
+                <Table
+                  headers={["Published", "Title", "Views", "vs Avg", "Outlier?"]}
+                  rows={gbAllRecent.map(v => ([
+                    v.date,
+                    <a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{v.title}</a>,
+                    (v.views || 0).toLocaleString(),
+                    <span style={{ color: v.mult != null && v.mult >= 2 ? C.success : "inherit", fontWeight: v.mult != null && v.mult >= 2 ? 700 : 400 }}>
+                      {v.mult != null ? v.mult.toFixed(1) + "×" : "—"}
+                    </span>,
+                    v.is_outlier ? <span style={{ color: C.success, fontWeight: 700 }}>🔥 Yes</span> : <span style={{ color: C.muted }}>No</span>,
+                  ]))}
+                  compact
+                />
+              )}
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 8 }}>
+                All GrowthBook videos published in the last 14 days, sorted by date. Channel avg: {gbCh.avg_views?.toLocaleString() || '—'} views.
+              </p>
+            </Section>
 
             <Section title="All Channels — YouTube Tracker (90-day window, 2× outlier threshold)">
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
@@ -890,6 +920,39 @@ export default function CompyDashboard() {
 
           return (
             <>
+              {(d.homepage_weekly || []).length > 0 && (
+                <Section title="Homepage Clicks by Week (2026)">
+                  <ResponsiveContainer width="100%" height={220}>
+                    <LineChart data={d.homepage_weekly} margin={{ left: 10, right: 20, top: 8, bottom: 8 }}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#333" />
+                      <XAxis
+                        dataKey="week"
+                        tick={{ fontSize: 10, fill: C.muted }}
+                        tickFormatter={w => w ? w.slice(5) : w}
+                        interval="preserveStartEnd"
+                      />
+                      <YAxis tick={{ fontSize: 10, fill: C.muted }} tickFormatter={v => v.toLocaleString()} width={55} />
+                      <RTooltip
+                        contentStyle={{ background: C.card, border: `1px solid ${C.border}`, borderRadius: 6, fontSize: 12 }}
+                        formatter={(v) => [v.toLocaleString(), "Clicks"]}
+                        labelFormatter={(w) => `Week of ${w}`}
+                      />
+                      <Line
+                        type="monotone"
+                        dataKey="clicks"
+                        stroke={COMP_COLORS["GrowthBook"] || C.accent}
+                        strokeWidth={2}
+                        dot={false}
+                        activeDot={{ r: 4 }}
+                      />
+                    </LineChart>
+                  </ResponsiveContainer>
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: 'left' }}>
+                    Weekly homepage (www.growthbook.io/) clicks from Google Search Console. Week = Mon-Sun.
+                  </p>
+                </Section>
+              )}
+
               <Section title="Top GrowthBook Pages by GSC Clicks (28 days)">
                 <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginBottom: 8, marginTop: 0 }}>
                   Homepage and /pricing excluded from charts — see full table below.
