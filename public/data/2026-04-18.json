@@ -2684,14 +2684,6 @@
       "date": "2026-04-18"
     },
     {
-      "competitor": "Harness",
-      "slug": "authentication-vs-authorization",
-      "url": "https://www.harness.io/blog/authentication-vs-authorization",
-      "threat": 7,
-      "kd": 12.0,
-      "date": "2026-04-18"
-    },
-    {
       "competitor": "Amplitude Exp",
       "slug": "bayesian-statistics",
       "url": "https://amplitude.com/blog/bayesian-statistics",
@@ -2701,10 +2693,10 @@
     },
     {
       "competitor": "PostHog",
-      "slug": "error-tracking",
-      "url": "https://posthog.com/r/error-tracking",
+      "slug": "sidebar-dashboard",
+      "url": "https://posthog.com/docs/vscode-extension/sidebar-dashboard",
       "threat": 7,
-      "kd": 3.0,
+      "kd": 0.0,
       "date": "2026-04-18"
     },
     {
@@ -2721,14 +2713,6 @@
       "url": "https://www.harness.io/blog/ci-cd-best-practices",
       "threat": 6,
       "kd": 19.0,
-      "date": "2026-04-18"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "what-is-argo-cd",
-      "url": "https://www.harness.io/blog/what-is-argo-cd",
-      "threat": 6,
-      "kd": 16.0,
       "date": "2026-04-18"
     },
     {
@@ -2833,6 +2817,22 @@
       "url": "https://amplitude.com/compare/best-hotjar-alternatives",
       "threat": 6,
       "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-mixpanel-alternatives",
+      "url": "https://amplitude.com/compare/best-mixpanel-alternatives",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "contentsquare",
+      "url": "https://amplitude.com/compare/contentsquare",
+      "threat": 6,
+      "kd": 49.0,
       "date": "2026-04-18"
     }
   ],
