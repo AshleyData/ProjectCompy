@@ -406,6 +406,10 @@ export default function CompyDashboard() {
             />
           </Section>
 
+          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+            📅 GSC: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'} · GA4: {d.ga4?.main_site?.week_start || '—'} to {d.ga4?.main_site?.week_end || '—'} · Run: {d.week || '—'}
+          </p>
+
         </>)}
 
         {/* ── OPPORTUNITIES ── */}
@@ -438,6 +442,10 @@ export default function CompyDashboard() {
               compact
             />
           </Section>
+
+          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+            📅 Opportunity data: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'} (GSC) · Run: {d.week || '—'}
+          </p>
         </>)}
 
         {/* ── COMPETITORS ── */}
@@ -503,6 +511,10 @@ export default function CompyDashboard() {
               ])}
             />
           </Section>
+
+          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+            📅 ETV snapshot: {d.week || '—'} (DataForSEO) · GSC compare: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'}
+          </p>
         </>)}
 
         {/* ── GSC DETAIL ── */}
@@ -561,6 +573,10 @@ export default function CompyDashboard() {
               />
             </Section>
           )}
+
+          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+            📅 GSC window: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'} (Mon–Sun, 1-week lag)
+          </p>
         </>)}
 
         {/* ── YOUTUBE ── */}
@@ -660,6 +676,10 @@ export default function CompyDashboard() {
                 🔥 = 2× or more views vs channel's 90-day average. 📊 = top non-outlier videos for context. Source: YouTube Data API v3.
               </p>
             </Section>
+
+            <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+              📅 YouTube: 90-day lookback from {d.week || '—'} · Outlier = 2× channel average
+            </p>
           </>);
         })()}
 
@@ -740,6 +760,9 @@ export default function CompyDashboard() {
             </p>
           </Section>
 
+          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+            📅 New pages: since prior weekly run · Run: {d.week || '—'}
+          </p>
 
         </>)}
 
@@ -832,6 +855,10 @@ export default function CompyDashboard() {
               Source: DataForSEO. GrowthBook ETV underreports — see GSC for actual traffic.
             </p>
           </Section>
+
+          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
+            📅 ETV + KD snapshot: {d.week || '—'} (DataForSEO)
+          </p>
         </>)}
 
         {/* ── GROWTHBOOK ── */}

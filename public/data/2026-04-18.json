@@ -12,7 +12,9 @@
     "mom_clicks": 3.4,
     "branded": 1938,
     "nonbranded": 253,
-    "anonymized": 1221
+    "anonymized": 1221,
+    "week_start": "2026-04-06",
+    "week_end": "2026-04-12"
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-04-11 to 2026-04-17): growthbook.io had 11,899 sessions and 7,937 users (+20.0% week over week).",
@@ -2832,6 +2834,566 @@
       "slug": "path-to-purchase-worksheet",
       "url": "https://amplitude.com/resources/path-to-purchase-worksheet",
       "threat": 6,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Flagsmith",
+      "slug": "feature-flag-testing",
+      "url": "https://www.flagsmith.com/blog/feature-flag-testing",
+      "threat": 6,
+      "kd": 0.0,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "event-filter",
+      "url": "https://posthog.com/docs/api/event-filter",
+      "threat": 6,
+      "kd": 11.0,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "authentication-vs-authorization",
+      "url": "https://www.harness.io/blog/authentication-vs-authorization",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "error-tracking",
+      "url": "https://posthog.com/r/error-tracking",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "ci-cd-best-practices",
+      "url": "https://www.harness.io/blog/ci-cd-best-practices",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "what-is-argo-cd",
+      "url": "https://www.harness.io/blog/what-is-argo-cd",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "cloudflare-ai-gateway",
+      "url": "https://posthog.com/docs/llm-analytics/installation/cloudflare-ai-gateway",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "LaunchDarkly",
+      "slug": "agent-graphs-multi-agent-ai-workflows",
+      "url": "https://launchdarkly.com/blog/agent-graphs-multi-agent-ai-workflows",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "LaunchDarkly",
+      "slug": "restore-previous-flag-version",
+      "url": "https://launchdarkly.com/changelog/restore-previous-flag-version",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "agentic-coding-and-the-new-role-of-internal-developer-portals",
+      "url": "https://www.harness.io/blog/agentic-coding-and-the-new-role-of-internal-developer-portals",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "ai-for-gitops-tame-your-argo-sprawl",
+      "url": "https://www.harness.io/blog/ai-for-gitops-tame-your-argo-sprawl",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "an-introduction-to-disaster-recovery-testing-what-you-need-to-know-2026",
+      "url": "https://www.harness.io/blog/an-introduction-to-disaster-recovery-testing-what-you-need-to-know-2026",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "announcing-snowflake-support-for-harness-db-devops",
+      "url": "https://www.harness.io/blog/announcing-snowflake-support-for-harness-db-devops",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "ansible-vs-terraform-explained-key-differences-for-modern-infrastructure-automation",
+      "url": "https://www.harness.io/blog/ansible-vs-terraform-explained-key-differences-for-modern-infrastructure-automation",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "building-enterprise-ai",
+      "url": "https://www.harness.io/blog/building-enterprise-ai",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "building-governance-auditability-and-visibility-into-database-devops",
+      "url": "https://www.harness.io/blog/building-governance-auditability-and-visibility-into-database-devops",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "cloud-cost-visibility-at-scale-why-it-fails-how-to-fix-it",
+      "url": "https://www.harness.io/blog/cloud-cost-visibility-at-scale-why-it-fails-how-to-fix-it",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "cost-awareness-in-ci-cd-pipelines-a-finops-guide",
+      "url": "https://www.harness.io/blog/cost-awareness-in-ci-cd-pipelines-a-finops-guide",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "defeating-context-rot-mastering-the-flow-of-ai-sessions",
+      "url": "https://www.harness.io/blog/defeating-context-rot-mastering-the-flow-of-ai-sessions",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "from-chaos-to-confidence-debunking-the-3-biggest-myths-of-chaos-engineering",
+      "url": "https://www.harness.io/blog/from-chaos-to-confidence-debunking-the-3-biggest-myths-of-chaos-engineering",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "harness-ai-december-2025-updates",
+      "url": "https://www.harness.io/blog/harness-ai-december-2025-updates",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "harness-ai-february-2026-updates",
+      "url": "https://www.harness.io/blog/harness-ai-february-2026-updates",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-build-a-developer-self-service-platform-that-actually-works",
+      "url": "https://www.harness.io/blog/how-to-build-a-developer-self-service-platform-that-actually-works",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-implement-self-service-infrastructure-without-losing-control",
+      "url": "https://www.harness.io/blog/how-to-implement-self-service-infrastructure-without-losing-control",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-release-confidently-at-ai-speed",
+      "url": "https://www.harness.io/blog/how-to-release-confidently-at-ai-speed",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-safely-move-a-db-column",
+      "url": "https://www.harness.io/blog/how-to-safely-move-a-db-column",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-scale-sandbox-environments-with-an-internal-developer-portal",
+      "url": "https://www.harness.io/blog/how-to-scale-sandbox-environments-with-an-internal-developer-portal",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "introducing-zero-trust-architecture-for-software-delivery",
+      "url": "https://www.harness.io/blog/introducing-zero-trust-architecture-for-software-delivery",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "making-deploys-safe-shouldnt-be-hard",
+      "url": "https://www.harness.io/blog/making-deploys-safe-shouldnt-be-hard",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "operationalizing-production-data-testing-with-harness-database-devops",
+      "url": "https://www.harness.io/blog/operationalizing-production-data-testing-with-harness-database-devops",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "phil-christianson-on-balancing-innovation-and-reliability-in-modern-product-teams",
+      "url": "https://www.harness.io/blog/phil-christianson-on-balancing-innovation-and-reliability-in-modern-product-teams",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "regression-testing-in-ci-cd-deliver-faster-without-the-fear",
+      "url": "https://www.harness.io/blog/regression-testing-in-ci-cd-deliver-faster-without-the-fear",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "release-orchestration-bridges-the-ai-delivery-gap",
+      "url": "https://www.harness.io/blog/release-orchestration-bridges-the-ai-delivery-gap",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "shift-left-finops-proactive-cloud-cost-control",
+      "url": "https://www.harness.io/blog/shift-left-finops-proactive-cloud-cost-control",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "shipped-in-march-2026",
+      "url": "https://www.harness.io/blog/shipped-in-march-2026",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "site-reliability-engineering-sre-101-everything-you-need-to-know",
+      "url": "https://www.harness.io/blog/site-reliability-engineering-sre-101-everything-you-need-to-know",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "streamline-your-workflows-with-environment-management",
+      "url": "https://www.harness.io/blog/streamline-your-workflows-with-environment-management",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "teampcp-trivy-open-vs-governed-execution-pipelines",
+      "url": "https://www.harness.io/blog/teampcp-trivy-open-vs-governed-execution-pipelines",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "terraform-variable-management-at-scale-centralizing-iac-with-variable-sets-and-provider-registry-in-harness-iacm",
+      "url": "https://www.harness.io/blog/terraform-variable-management-at-scale-centralizing-iac-with-variable-sets-and-provider-registry-in-harness-iacm",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "terraform-vendor-lock-in-how-to-escape-it",
+      "url": "https://www.harness.io/blog/terraform-vendor-lock-in-how-to-escape-it",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "testing-ai-with-ai",
+      "url": "https://www.harness.io/blog/testing-ai-with-ai",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "the-dangerous-myth-we-have-sca-so-were-covered",
+      "url": "https://www.harness.io/blog/the-dangerous-myth-we-have-sca-so-were-covered",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "the-mckinsey-incident-is-a-warning-shot-for-ai-native-design",
+      "url": "https://www.harness.io/blog/the-mckinsey-incident-is-a-warning-shot-for-ai-native-design",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "the-pipeline-that-never-reached-production",
+      "url": "https://www.harness.io/blog/the-pipeline-that-never-reached-production",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "unlocking-security-potential-for-ai-introducing-the-harness-waap-mcp-server",
+      "url": "https://www.harness.io/blog/unlocking-security-potential-for-ai-introducing-the-harness-waap-mcp-server",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "warehouse-native-experimentation-ga",
+      "url": "https://www.harness.io/blog/warehouse-native-experimentation-ga",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "why-connected-platforms-will-power-the-next-generation-of-ai-in-engineering",
+      "url": "https://www.harness.io/blog/why-connected-platforms-will-power-the-next-generation-of-ai-in-engineering",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "why-dr-testing-can-no-longer-be-an-afterthought",
+      "url": "https://www.harness.io/blog/why-dr-testing-can-no-longer-be-an-afterthought",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "why-harness-ai-uses-knowledge-graph",
+      "url": "https://www.harness.io/blog/why-harness-ai-uses-knowledge-graph",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "why-self-service-workflows-arent-enough-for-managing-environments",
+      "url": "https://www.harness.io/blog/why-self-service-workflows-arent-enough-for-managing-environments",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "women-in-tech-journeys-grit-and-the-future-were-building",
+      "url": "https://www.harness.io/blog/women-in-tech-journeys-grit-and-the-future-were-building",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "your-ai-agents-are-only-as-good-as-your-data",
+      "url": "https://www.harness.io/blog/your-ai-agents-are-only-as-good-as-your-data",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "your-repo-is-a-knowledge-graph-you-just-dont-query-it-yet",
+      "url": "https://www.harness.io/blog/your-repo-is-a-knowledge-graph-you-just-dont-query-it-yet",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-integrate-opentofu-with-your-ci-cd-pipeline-for-scalable-deployments",
+      "url": "https://www.harness.io/harness-devops-academy/how-to-integrate-opentofu-with-your-ci-cd-pipeline-for-scalable-deployments",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-rethink-software-releases-in-the-age-of-ai",
+      "url": "https://www.harness.io/on-demand-video/how-to-rethink-software-releases-in-the-age-of-ai",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "environment-management",
+      "url": "https://www.harness.io/products/internal-developer-portal/environment-management",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "demystifying-ai-sast-how-ai-helps-sast-finally-work",
+      "url": "https://www.harness.io/resources/demystifying-ai-sast-how-ai-helps-sast-finally-work",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "from-chaos-to-control-vol-1",
+      "url": "https://www.harness.io/resources/from-chaos-to-control-vol-1",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "how-to-rethink-software-releases-in-the-age-of-ai",
+      "url": "https://www.harness.io/resources/how-to-rethink-software-releases-in-the-age-of-ai",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "integrating-database-devops-the-path-to-seamless-ci-cd-and-guaranteed-data-integrity",
+      "url": "https://www.harness.io/resources/integrating-database-devops-the-path-to-seamless-ci-cd-and-guaranteed-data-integrity",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "risks-in-ai-native-systems",
+      "url": "https://www.harness.io/resources/risks-in-ai-native-systems",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "tag-you-re-it-the-backbone-of-finops",
+      "url": "https://www.harness.io/resources/tag-you-re-it-the-backbone-of-finops",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "Harness",
+      "slug": "why-ai-necessitates-a-platform-model",
+      "url": "https://www.harness.io/resources/why-ai-necessitates-a-platform-model",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "lifecycle-messaging",
+      "url": "https://posthog.com/blog/lifecycle-messaging",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "standup-bot-revenge",
+      "url": "https://posthog.com/blog/standup-bot-revenge",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "lifecycle-messaging",
+      "url": "https://posthog.com/blog/tags/lifecycle-messaging",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "testing-ai-agents",
+      "url": "https://posthog.com/blog/testing-ai-agents",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "untangling-rayon-and-tokio",
+      "url": "https://posthog.com/blog/untangling-rayon-and-tokio",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "your-lifecycle-emails-are-wrong",
+      "url": "https://posthog.com/blog/your-lifecycle-emails-are-wrong",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-18"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "bdr",
+      "url": "https://posthog.com/careers/bdr",
+      "threat": 5,
       "kd": null,
       "date": "2026-04-18"
     }
