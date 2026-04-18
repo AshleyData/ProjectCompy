@@ -585,7 +585,7 @@ export default function CompyDashboard() {
           const gbCh = channels.find(c => c.name === "GrowthBook") || { videos: [], avg_views: 0, video_count: 0 };
           const runDate = new Date((d.week || "").toString() + "T00:00:00");
           const cutoff14 = new Date(runDate);
-          cutoff14.setDate(cutoff14.getDate() - 14);
+          cutoff14.setDate(cutoff14.getDate() - 21);
           const cutoffStr = cutoff14.toISOString().slice(0, 10);
           const gbAllRecent = (gbCh.videos || [])
             .filter(v => v.date && v.date >= cutoffStr)
@@ -626,9 +626,9 @@ export default function CompyDashboard() {
               </div>
             </div>
 
-            <Section title="GrowthBook — Recent Videos (Last 14 Days)">
+            <Section title="GrowthBook — Recent Videos (Last 21 Days)">
               {gbAllRecent.length === 0 ? (
-                <p style={{ color: '#888', fontSize: 13 }}>No GrowthBook videos published in the last 14 days.</p>
+                <p style={{ color: '#888', fontSize: 13 }}>No GrowthBook videos published in the last 21 days.</p>
               ) : (
                 <Table
                   headers={["Published", "Title", "Views", "vs Avg", "Outlier?"]}
@@ -645,7 +645,7 @@ export default function CompyDashboard() {
                 />
               )}
               <p style={{ fontSize: 11, color: C.muted, marginTop: 8 }}>
-                All GrowthBook videos published in the last 14 days, sorted by date. Channel avg: {gbCh.avg_views?.toLocaleString() || '—'} views.
+                All GrowthBook videos published in the last 21 days, sorted by date. Channel avg: {gbCh.avg_views?.toLocaleString() || '—'} views.
               </p>
             </Section>
 
