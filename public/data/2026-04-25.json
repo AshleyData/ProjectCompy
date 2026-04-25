@@ -3120,6 +3120,38 @@
     },
     {
       "competitor": "GrowthBook Site",
+      "slug": "deployment-options",
+      "url": "https://www.growthbook.io/platform/deployment-options",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "integrations",
+      "url": "https://www.growthbook.io/platform/integrations",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "security",
+      "url": "https://www.growthbook.io/platform/security",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "vulnerability",
+      "url": "https://www.growthbook.io/platform/security/vulnerability",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25"
+    },
+    {
+      "competitor": "GrowthBook Site",
       "slug": "designing-a-b-testing-experiments-for-long-term-growth",
       "url": "https://www.growthbook.io/blog/designing-a-b-testing-experiments-for-long-term-growth",
       "threat": 0,
@@ -3352,6 +3384,58 @@
     }
   ],
   "gb_new_content": [
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "Deployment Options",
+      "url": "https://www.growthbook.io/platform/deployment-options",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25",
+      "clicks": 0,
+      "impressions": 0,
+      "position": 0.0,
+      "traj": "",
+      "source": "sitemap"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "Integrations",
+      "url": "https://www.growthbook.io/platform/integrations",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25",
+      "clicks": 0,
+      "impressions": 0,
+      "position": 0.0,
+      "traj": "",
+      "source": "sitemap"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "Security",
+      "url": "https://www.growthbook.io/platform/security",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25",
+      "clicks": 0,
+      "impressions": 0,
+      "position": 0.0,
+      "traj": "",
+      "source": "sitemap"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "Vulnerability",
+      "url": "https://www.growthbook.io/platform/security/vulnerability",
+      "threat": 5,
+      "kd": null,
+      "date": "2026-04-25",
+      "clicks": 0,
+      "impressions": 0,
+      "position": 0.0,
+      "traj": "",
+      "source": "sitemap"
+    },
     {
       "competitor": "GrowthBook Site",
       "slug": "Designing A B Testing Experiments For Long Term Growth",
@@ -3730,7 +3814,7 @@
       "source": "sitemap"
     }
   ],
-  "gb_sitemap_new_count": 29,
+  "gb_sitemap_new_count": 33,
   "etv_kd": [
     {
       "competitor": "Optimizely",
