@@ -3160,22 +3160,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "ai-experimentation-dinner-sf-may-2026",
-      "url": "https://www.growthbook.io/events/ai-experimentation-dinner-sf-may-2026",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "khan-academy-experimentation-journey",
-      "url": "https://www.growthbook.io/events/khan-academy-experimentation-journey",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "insights",
       "url": "https://www.growthbook.io/insights",
       "threat": 0,
@@ -3424,32 +3408,6 @@
       "competitor": "GrowthBook Site",
       "slug": "Why A B Test Your Ai",
       "url": "https://www.growthbook.io/blog/why-a-b-test-your-ai",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Ai Experimentation Dinner Sf May 2026",
-      "url": "https://www.growthbook.io/events/ai-experimentation-dinner-sf-may-2026",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Khan Academy Experimentation Journey",
-      "url": "https://www.growthbook.io/events/khan-academy-experimentation-journey",
       "threat": null,
       "kd": null,
       "date": "2026-04-25",
@@ -3772,7 +3730,7 @@
       "source": "sitemap"
     }
   ],
-  "gb_sitemap_new_count": 31,
+  "gb_sitemap_new_count": 29,
   "etv_kd": [
     {
       "competitor": "Optimizely",
