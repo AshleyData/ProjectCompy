@@ -3160,78 +3160,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "customers",
-      "url": "https://www.growthbook.io/customers",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "breeze-airways",
-      "url": "https://www.growthbook.io/customers/breeze-airways",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "dropbox",
-      "url": "https://www.growthbook.io/customers/dropbox",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "floward",
-      "url": "https://www.growthbook.io/customers/floward",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "khan-academy",
-      "url": "https://www.growthbook.io/customers/khan-academy",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "lingokids",
-      "url": "https://www.growthbook.io/customers/lingokids",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "toom",
-      "url": "https://www.growthbook.io/customers/toom",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "treatwell",
-      "url": "https://www.growthbook.io/customers/treatwell",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "upstart",
-      "url": "https://www.growthbook.io/customers/upstart",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "ai-experimentation-dinner-sf-may-2026",
       "url": "https://www.growthbook.io/events/ai-experimentation-dinner-sf-may-2026",
       "threat": 0,
@@ -3242,38 +3170,6 @@
       "competitor": "GrowthBook Site",
       "slug": "khan-academy-experimentation-journey",
       "url": "https://www.growthbook.io/events/khan-academy-experimentation-journey",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "ai-software",
-      "url": "https://www.growthbook.io/industry/ai-software",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "edtech",
-      "url": "https://www.growthbook.io/industry/edtech",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "fintech",
-      "url": "https://www.growthbook.io/industry/fintech",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "healthtech",
-      "url": "https://www.growthbook.io/industry/healthtech",
       "threat": 0,
       "kd": null,
       "date": "2026-04-25"
@@ -3448,70 +3344,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "deployment-options",
-      "url": "https://www.growthbook.io/platform/deployment-options",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "integrations",
-      "url": "https://www.growthbook.io/platform/integrations",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "mcp-server",
-      "url": "https://www.growthbook.io/platform/mcp-server",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "security",
-      "url": "https://www.growthbook.io/platform/security",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "vulnerability",
-      "url": "https://www.growthbook.io/platform/security/vulnerability",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "warehouse-native",
-      "url": "https://www.growthbook.io/platform/warehouse-native",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "experimentation",
-      "url": "https://www.growthbook.io/products/experimentation",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "feature-flags",
-      "url": "https://www.growthbook.io/products/feature-flags",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "data-science",
       "url": "https://www.growthbook.io/roles/data-science",
       "threat": 0,
@@ -3603,123 +3435,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "Customers",
-      "url": "https://www.growthbook.io/customers",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Breeze Airways",
-      "url": "https://www.growthbook.io/customers/breeze-airways",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Dropbox",
-      "url": "https://www.growthbook.io/customers/dropbox",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Floward",
-      "url": "https://www.growthbook.io/customers/floward",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Khan Academy",
-      "url": "https://www.growthbook.io/customers/khan-academy",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Lingokids",
-      "url": "https://www.growthbook.io/customers/lingokids",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Toom",
-      "url": "https://www.growthbook.io/customers/toom",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Treatwell",
-      "url": "https://www.growthbook.io/customers/treatwell",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Upstart",
-      "url": "https://www.growthbook.io/customers/upstart",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "Ai Experimentation Dinner Sf May 2026",
       "url": "https://www.growthbook.io/events/ai-experimentation-dinner-sf-may-2026",
       "threat": null,
@@ -3735,58 +3450,6 @@
       "competitor": "GrowthBook Site",
       "slug": "Khan Academy Experimentation Journey",
       "url": "https://www.growthbook.io/events/khan-academy-experimentation-journey",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Ai Software",
-      "url": "https://www.growthbook.io/industry/ai-software",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Edtech",
-      "url": "https://www.growthbook.io/industry/edtech",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Fintech",
-      "url": "https://www.growthbook.io/industry/fintech",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Healthtech",
-      "url": "https://www.growthbook.io/industry/healthtech",
       "threat": null,
       "kd": null,
       "date": "2026-04-25",
@@ -4071,110 +3734,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "Deployment Options",
-      "url": "https://www.growthbook.io/platform/deployment-options",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Integrations",
-      "url": "https://www.growthbook.io/platform/integrations",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Mcp Server",
-      "url": "https://www.growthbook.io/platform/mcp-server",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Security",
-      "url": "https://www.growthbook.io/platform/security",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Vulnerability",
-      "url": "https://www.growthbook.io/platform/security/vulnerability",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Warehouse Native",
-      "url": "https://www.growthbook.io/platform/warehouse-native",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Experimentation",
-      "url": "https://www.growthbook.io/products/experimentation",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Feature Flags",
-      "url": "https://www.growthbook.io/products/feature-flags",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "Data Science",
       "url": "https://www.growthbook.io/roles/data-science",
       "threat": null,
@@ -4213,7 +3772,7 @@
       "source": "sitemap"
     }
   ],
-  "gb_sitemap_new_count": 52,
+  "gb_sitemap_new_count": 31,
   "etv_kd": [
     {
       "competitor": "Optimizely",
