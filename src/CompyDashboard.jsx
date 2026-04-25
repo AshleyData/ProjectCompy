@@ -754,10 +754,12 @@ export default function CompyDashboard() {
               const sitemapRows = (d.new_content || []).map(n => ({
                 ...n,
                 competitor: n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor,
+                source: n.source || "sitemap",
               }));
-              // GSC-based GrowthBook blog rows (deduplicate against sitemap rows)
+              // GSC/sitemap-based GrowthBook rows from gb_new_content (already merged in Python)
+              // Deduplicate against sitemapRows to avoid double-counting
               const sitemapUrls = new Set(sitemapRows.map(r => r.url));
-              const gbGscRows = (d.gb_new_content || [])
+              const gbRows = (d.gb_new_content || [])
                 .filter(p => !sitemapUrls.has(p.url))
                 .map(p => ({
                   competitor: "GrowthBook",
@@ -766,23 +768,40 @@ export default function CompyDashboard() {
                   date: p.date || "—",
                   threat: p.threat ?? null,
                   kd: p.kd ?? null,
-                  clicks: p.clicks,
+                  clicks: p.clicks ?? 0,
+                  source: p.source || "gsc",
                 }));
-              const allRows = [...sitemapRows, ...gbGscRows];
+              const allRows = [...sitemapRows, ...gbRows];
+              // Compute counts for header
+              const gbAllRows = allRows.filter(r => r.competitor === "GrowthBook");
+              const gbSitemapCount = gbAllRows.filter(r => r.source === "sitemap").length;
+              const gbGscCount = gbAllRows.filter(r => r.source === "gsc").length;
               return (
-                <Table
-                  headers={["Competitor", "Page / Topic", "Published", "Threat", "KD"]}
-                  rows={allRows.map(n => {
-                    const dispName = n.competitor;
-                    return [
-                      <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
-                      <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
-                      n.date || "—",
-                      n.threat != null ? <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span> : <span style={{ color: C.muted }}>—</span>,
-                      n.kd != null ? n.kd : "—"
-                    ];
-                  })}
-                />
+                <>
+                  {gbAllRows.length > 0 && (
+                    <p style={{ fontSize: 12, color: C.muted, marginBottom: 8, textAlign: "left" }}>
+                      <strong style={{ color: C.primary }}>GrowthBook:</strong> {gbAllRows.length} new page{gbAllRows.length !== 1 ? "s" : ""} this week
+                      {" "}({gbSitemapCount} from sitemap, {gbGscCount} from GSC)
+                    </p>
+                  )}
+                  <Table
+                    headers={["Competitor", "Page / Topic", "Published", "Threat", "KD", "Source"]}
+                    rows={allRows.map(n => {
+                      const dispName = n.competitor;
+                      const isSitemapOnly = n.source === "sitemap" && (n.clicks === 0 || n.clicks == null);
+                      return [
+                        <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
+                        <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
+                        n.date || "—",
+                        n.threat != null ? <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span> : <span style={{ color: C.muted }}>—</span>,
+                        n.kd != null ? n.kd : "—",
+                        isSitemapOnly
+                          ? <span style={{ color: C.muted, fontSize: 11 }} title="Sitemap detected — no GSC data yet">Sitemap</span>
+                          : <span style={{ color: C.accent, fontSize: 11 }}>{n.source === "gsc" ? "GSC" : "Sitemap"}</span>
+                      ];
+                    })}
+                  />
+                </>
               );
             })()}
             <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
