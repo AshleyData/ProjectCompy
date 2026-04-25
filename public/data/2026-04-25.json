@@ -3120,14 +3120,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "about",
-      "url": "https://www.growthbook.io/about",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "designing-a-b-testing-experiments-for-long-term-growth",
       "url": "https://www.growthbook.io/blog/designing-a-b-testing-experiments-for-long-term-growth",
       "threat": 0,
@@ -3162,22 +3154,6 @@
       "competitor": "GrowthBook Site",
       "slug": "why-a-b-test-your-ai",
       "url": "https://www.growthbook.io/blog/why-a-b-test-your-ai",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "why-fintechs-should-shrink-their-attack-surface-not-just-get-certified",
-      "url": "https://www.growthbook.io/blog/why-fintechs-should-shrink-their-attack-surface-not-just-get-certified",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "careers",
-      "url": "https://www.growthbook.io/careers",
       "threat": 0,
       "kd": null,
       "date": "2026-04-25"
@@ -3266,22 +3242,6 @@
       "competitor": "GrowthBook Site",
       "slug": "khan-academy-experimentation-journey",
       "url": "https://www.growthbook.io/events/khan-academy-experimentation-journey",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "get-started",
-      "url": "https://www.growthbook.io/get-started",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "guides",
-      "url": "https://www.growthbook.io/guides",
       "threat": 0,
       "kd": null,
       "date": "2026-04-25"
@@ -3488,14 +3448,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "our-community",
-      "url": "https://www.growthbook.io/our-community",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "deployment-options",
       "url": "https://www.growthbook.io/platform/deployment-options",
       "threat": 0,
@@ -3581,30 +3533,9 @@
       "threat": 0,
       "kd": null,
       "date": "2026-04-25"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "why-growthbook",
-      "url": "https://www.growthbook.io/why-growthbook",
-      "threat": 0,
-      "kd": null,
-      "date": "2026-04-25"
     }
   ],
   "gb_new_content": [
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "About",
-      "url": "https://www.growthbook.io/about",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
     {
       "competitor": "GrowthBook Site",
       "slug": "Designing A B Testing Experiments For Long Term Growth",
@@ -3661,32 +3592,6 @@
       "competitor": "GrowthBook Site",
       "slug": "Why A B Test Your Ai",
       "url": "https://www.growthbook.io/blog/why-a-b-test-your-ai",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Why Fintechs Should Shrink Their Attack Surface Not Just Get Certified",
-      "url": "https://www.growthbook.io/blog/why-fintechs-should-shrink-their-attack-surface-not-just-get-certified",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Careers",
-      "url": "https://www.growthbook.io/careers",
       "threat": null,
       "kd": null,
       "date": "2026-04-25",
@@ -3830,32 +3735,6 @@
       "competitor": "GrowthBook Site",
       "slug": "Khan Academy Experimentation Journey",
       "url": "https://www.growthbook.io/events/khan-academy-experimentation-journey",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Get Started",
-      "url": "https://www.growthbook.io/get-started",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Guides",
-      "url": "https://www.growthbook.io/guides",
       "threat": null,
       "kd": null,
       "date": "2026-04-25",
@@ -4192,19 +4071,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "Our Community",
-      "url": "https://www.growthbook.io/our-community",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "Deployment Options",
       "url": "https://www.growthbook.io/platform/deployment-options",
       "threat": null,
@@ -4345,22 +4211,9 @@
       "position": 0.0,
       "traj": "",
       "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "Why Growthbook",
-      "url": "https://www.growthbook.io/why-growthbook",
-      "threat": null,
-      "kd": null,
-      "date": "2026-04-25",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
     }
   ],
-  "gb_sitemap_new_count": 59,
+  "gb_sitemap_new_count": 52,
   "etv_kd": [
     {
       "competitor": "Optimizely",
