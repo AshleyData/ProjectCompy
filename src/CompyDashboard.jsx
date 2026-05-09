@@ -298,7 +298,7 @@ export default function CompyDashboard() {
           {/* Executive Summary */}
           <Section title="Executive Summary">
             <div style={{ ...card({ padding: 20 }) }}>
-              {d.exec_summary.map((p, i) => (
+              {(Array.isArray(d.exec_summary) ? d.exec_summary : (d.exec_summary || "").split("\n\n").filter(Boolean)).map((p, i) => (
                 <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14, textAlign: "left" }}>{p}</p>
               ))}
             </div>
@@ -375,18 +375,18 @@ export default function CompyDashboard() {
           </Section>
 
           {/* Content Recommendations — LLM-generated action items */}
-          {(d.content_recommendations || []).length > 0 && (
+          {(() => { const _recs = Array.isArray(d.content_recommendations) ? d.content_recommendations : (d.content_recommendations || "").split("\n").filter(l => /^\d+\./.test(l.trim())); return _recs.length > 0 && (
             <Section title="Content Recommendations">
               <div style={{ ...card({ padding: "16px 20px" }) }}>
-                {d.content_recommendations.map((rec, i) => (
-                  <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start", padding: "8px 0", borderBottom: i < d.content_recommendations.length - 1 ? `1px solid ${C.border}` : "none" }}>
+                {_recs.map((rec, i) => (
+                  <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start", padding: "8px 0", borderBottom: i < _recs.length - 1 ? `1px solid ${C.border}` : "none" }}>
                     <div style={{ fontSize: 18, fontWeight: 800, color: C.accent, width: 24, flexShrink: 0, lineHeight: 1.4 }}>{i + 1}</div>
                     <div style={{ fontSize: 13, color: "#2C3E50", lineHeight: 1.6 }}>{rec}</div>
                   </div>
                 ))}
               </div>
             </Section>
-          )}
+          ); })()}
 
           {/* Top 5 Content Opportunities — live data */}
           <Section title="Top 5 Competitor Content Opportunities">
