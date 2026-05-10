@@ -18,16 +18,21 @@
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-05-03 to 2026-05-09): growthbook.io had 12,818 sessions and 7,874 users (+9.5% week over week).",
-    "GrowthBook's organic search clicks fell 9.1% WoW to 3,432 (GSC, organic only), while impressions actually rose 15.6% to 166,840 -- a sign of broader visibility with lower click-through. The homepage accounts for the bulk of the decline: branded clicks on \"/\" dropped 172, from 2,107 to 1,935, so this is not a broad organic problem. Meanwhile, GA4 sessions across growthbook.io (all traffic: direct, paid, organic, etc.) rose 9.5% WoW to 12,818 -- a healthy counter-signal. Docs sessions also grew 5.7% to 4,862. Comparison pages were flat to slightly soft at 15 views (vs. 18 prior week), with the vs-PostHog page the biggest 28-day decliner (4 vs. 14 clicks). No new GrowthBook content was published this week.",
-    "The most important strategic finding this week is Optimizely's coordinated vertical-use-case content push. They published at least 10 new blog posts mapping experimentation use cases to specific industries -- financial services, healthcare, and retail -- with page-level specificity (homepage tests, checkout tests, mobile pages, offer pages). This is a deliberate content moat strategy targeting buyers who search for experimentation solutions within their industry. GrowthBook has no equivalent vertical-use-case content, and these are quick-win opportunities where Optimizely has no established rankings yet.",
-    "Optimizely dominated new competitor content this week with 10 vertical-use-case pages spanning retail, financial services, and healthcare experimentation. LaunchDarkly showed mixed ETV signals: their mobile app A/B testing page surged 84% in estimated traffic, while several feature flag and SDK pages declined sharply (Bayesian/frequentist guide down 74.9%, feature flags for JavaScript down 78.9%). On YouTube, LaunchDarkly's \"The Future of Agent Configs\" pulled 42,243 views at 24.2x their channel average -- a large signal that AI agent configuration content resonates with their audience. No new competitor sitemap pages were detected from Statsig, Harness, Eppo, Unleash, Flagsmith, or PostHog this week, which likely reflects a monitoring gap rather than a content pause from all those companies simultaneously."
+    "## Week of 2026-05-10",
+    "**Site performance**\n- **Overall (GA4, all traffic):** 12,818 sessions (+9.5% WoW) | 7,874 users | Docs: 4,862 sessions (+5.7% WoW)\n- **Overall (GSC, organic search):** 3,432 clicks (-9.1% WoW) | 166,840 impressions (+15.6% WoW)\n- **Homepage (/):** 9,557 sessions (+17.5% WoW) all-traffic | 1,938 clicks (-8.2% WoW) organic | 25,739 impressions (+12.8% WoW)\n- **Pricing (/pricing):** 1,216 sessions (-4.8% WoW) all-traffic | 92 clicks (-21.4% WoW) organic | 6,770 impressions (+29.8% WoW)\n- **All other pages:** 4,747 sessions (-8.7% WoW) all-traffic | 1,360 clicks (-10.3% WoW) organic | 256,383 impressions (+20.5% WoW)",
+    "Homepage GA4 sessions up +17.5% while organic clicks fell -8.2% \u2014 strong AI-search-displacement signal. Pricing impressions up +29.8% but organic clicks down -21.4% and GA4 sessions down -4.8%; worth watching next week to see if impressions convert.",
+    "**New competitor activity**\n- **Optimizely** launched a coordinated 10-post campaign this week targeting vertical-specific experimentation use cases: financial services (homepage, mobile, offer page), healthcare (homepage), and retail (category, checkout, homepage, product, search results, subscription). All scored threat 7, relevance tier 1. This is a deliberate SEO land-grab for \"[industry] A/B testing\" and \"experimentation use cases\" queries. GrowthBook has no comparable vertical content.\n- **LaunchDarkly** \"The Future of Agent Configs\" YouTube video hit 42,243 views at 24.2x channel average \u2014 by far the biggest competitor video spike this week. This signals strong audience interest in AI/agent infrastructure, a space adjacent to feature flags. GrowthBook's own top video this week (514 A/B tests in 1 year, 2,722 views, 10.6x channel avg) shows GrowthBook can compete on YouTube but is currently outgunned on AI-adjacent content.\n- **Amplitude** pushed two AI-platform videos above 5x channel average this week (\"meet the Amplitude AI Platform\" at 7.7x, \"Amplitude AI Agents\" at 5.2x). They are actively positioning AI analytics as a category.",
+    "**New GrowthBook content**\n- 10 new pages noticed this week (all detected via sitemap, publish dates unknown):\n  - **/insights/best-mobile-app-analytics-tools** (KD 15 \u2014 only page with a KD score, low competition)\n  - **/blog/12-common-feature-flag-mistakes-to-avoid**\n  - **/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained**\n  - **/blog/new-feature-save-time-with-automatic-metric-generation**\n  - **/guides/7-steps-to-better-experiment-design**\n  - **/guides/the-a-b-testing-playbook-for-al-powered-apps**\n  - **/insights/alternatives-posthog-developers**\n  - **/insights/best-ab-testing-tools-product-analytics**\n  - **/insights/best-ab-testing-tools-product-managers**\n  - **/insights/best-open-source-product-analytics-tools**\n- None have GSC impressions yet \u2014 all too new to index. The AI/apps guide and the PostHog-alternatives page are most strategically timed given current competitive activity.",
+    "**Organic movers worth watching**\n- **\"experimentation platform\"** at position 13.1 (428 impressions) and **\"ab testing platform\"** at position 10.1 (414 impressions) are in striking distance. The Optimizely vertical campaign will compete for downstream intent on these same queries.\n- **\"feature flagging open source\"** at position 9.7 (372 impressions) \u2014 one nudge from page 1. Given GrowthBook's open-source positioning, this is a high-priority push.\n- **/blog/what-is-a-b-testing** gained +3 clicks, **/platform/deployment-options** went from 0 to 5 clicks \u2014 early traction on newer pages.\n- **/solutions/ai** dropped from 8 to 2 clicks and **/demo** dropped from 6 to 0 \u2014 both worth a GA4 spot-check to confirm whether AI-source traffic is compensating.",
+    "**Recommended actions**\n- Optimizely just published 10 vertical use-case posts in one week. Write at least one GrowthBook counterpart targeting \"A/B testing for financial services\" or \"experimentation use cases healthcare\" before these pages gain authority. The Optimizely pages are brand-new with no KD data yet \u2014 window is open now.\n- **\"feature flagging open source\"** is at position 9.7 with 372 impressions \u2014 closest striking-distance term to page 1. Refresh the most relevant landing page with updated internal links and schema to push it over.\n- The LaunchDarkly \"agent configs\" video at 42k views signals that AI/agent infrastructure is a high-engagement YouTube topic right now. GrowthBook's A/B-testing-for-AI guide (new this week) should be turned into a YouTube short or video to capture the same interest.\n- Check GA4 on **/solutions/ai** and **/demo** separately \u2014 both lost 6 organic clicks each this week. If GA4 all-traffic is also down, these pages need attention; if GA4 is flat, it is AI-search displacement and the pages are fine.",
+    "**Data quality flags**\n- ETV WoW percentages (e.g., GrowthBook blog showing +1,239%) are baseline-rotation artifacts from the pipeline fix. Absolute ETV values are usable; WoW % are not. Treat as unreliable through 2026-05-24.\n- No new pages detected from **Statsig, LaunchDarkly, Harness, Eppo, Unleash, Flagsmith, PostHog** this week \u2014 likely a monitoring gap across multiple competitors, not a simultaneous content pause."
   ],
   "content_recommendations": [
-    "1. Write a vertical use-case guide: \"A/B Testing Use Cases for Fintech and Financial Services\" -- Optimizely just published three financial services experimentation pages this week (homepage, mobile, offer page) and has no established rankings yet. Moving quickly gives GrowthBook a window to rank before Optimizely builds authority in this sub-niche.",
-    "2. Write a vertical use-case guide: \"Experimentation Use Cases for Healthcare\" -- same logic as above; Optimizely's healthcare homepage post is brand new with no KD data available, meaning the keyword landscape is open. GrowthBook's open-source positioning is a strong differentiator for cost-sensitive healthcare orgs.",
-    "3. Expand the \"/blog/what-are-feature-flags\" post -- it jumped from 1 to 6 clicks WoW (a 5-click gain, the second-largest mover this week) and LaunchDarkly's own \"Feature Flags 101\" page still holds 1,320 ETV. Capturing more of this high-volume query with a more comprehensive guide is a direct competitive play.",
-    "4. Optimize for \"a/b testing tools\" and \"experimentation platform\" -- these two queries sit at positions 19.24 and 13.1 respectively with 404 and 428 impressions each. Both are just outside page-one range; a targeted refresh of the relevant landing pages or a new comparison-style post could push them into top-10 and meaningfully grow click volume.",
-    "5. Refresh the \"/compare/growthbook-vs-posthog\" page -- 28-day clicks collapsed from 14 to 4 (a 71% drop) even though it sits at position 5.1, the best average position of any comparison page. High ranking with low clicks usually means a title or meta description mismatch; fixing the snippet is a fast, high-leverage fix."
+    "1. Write \"A/B Testing for Financial Services: A Practical Guide\" targeting the use-case queries Optimizely just claimed with 3 new posts this week. Their pages are brand-new with no established KD \u2014 GrowthBook can compete immediately with a detailed, open-source-angle piece.",
+    "2. Refresh the page targeting \"feature flagging open source\" (currently position 9.7, 372 impressions) with updated internal links, a clear H1 match, and FAQ schema to push it onto page 1 before a competitor closes the gap.",
+    "3. Expand the new \"/guides/the-a-b-testing-playbook-for-al-powered-apps\" page with distribution support (email, social, YouTube clip) \u2014 LaunchDarkly's 42k-view AI/agent video confirms this is a high-demand topic and GrowthBook already has the content asset.",
+    "4. Write \"Experimentation Use Cases for Healthcare\" to counter Optimizely's new healthcare homepage post (threat score 7, tier 1). Healthcare is an underserved vertical in GrowthBook's content library and Optimizely just signaled it is a priority keyword cluster.",
+    "5. Optimize \"/insights/best-mobile-app-analytics-tools\" (KD 15, the only new page with a measurable KD this week) for early indexing \u2014 low competition means this page can rank quickly with basic on-page SEO and a handful of internal links."
   ],
   "opportunities": [
     {
@@ -142,18 +147,18 @@
         "position": 3.2
       },
       {
-        "url": "https://www.growthbook.io/demo",
-        "clicks": 0,
-        "prior": 6,
-        "change": -6,
-        "position": 10.5
-      },
-      {
         "url": "https://www.growthbook.io/solutions/ai",
         "clicks": 2,
         "prior": 8,
         "change": -6,
         "position": 6.9
+      },
+      {
+        "url": "https://www.growthbook.io/demo",
+        "clicks": 0,
+        "prior": 6,
+        "change": -6,
+        "position": 10.5
       },
       {
         "url": "https://www.growthbook.io/products/warehouse-native",
@@ -293,17 +298,6 @@
       "clicks_28d_delta": -10
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-absmartly",
-      "label": "Vs Absmartly",
-      "clicks_this": 0,
-      "clicks_last": 0,
-      "clicks_delta": 0,
-      "impressions": 32,
-      "position": 8.8,
-      "clicks_28d": 2,
-      "clicks_28d_delta": 1
-    },
-    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-sitespect",
       "label": "Vs Sitespect",
       "clicks_this": 1,
@@ -313,6 +307,17 @@
       "position": 6.7,
       "clicks_28d": 2,
       "clicks_28d_delta": 2
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-absmartly",
+      "label": "Vs Absmartly",
+      "clicks_this": 0,
+      "clicks_last": 0,
+      "clicks_delta": 0,
+      "impressions": 32,
+      "position": 8.8,
+      "clicks_28d": 2,
+      "clicks_28d_delta": 1
     },
     {
       "url": "https://www.growthbook.io/compare/growthbook-vs-kameleoon",
@@ -326,17 +331,6 @@
       "clicks_28d_delta": 0
     },
     {
-      "url": "https://www.growthbook.io/compare/growthbook-vs-split",
-      "label": "Vs Split",
-      "clicks_this": 0,
-      "clicks_last": 1,
-      "clicks_delta": -1,
-      "impressions": 73,
-      "position": 7.8,
-      "clicks_28d": 1,
-      "clicks_28d_delta": 0
-    },
-    {
       "url": "https://www.growthbook.io/compare/growthbook-vs-eppo",
       "label": "Vs Eppo",
       "clicks_this": 1,
@@ -344,6 +338,17 @@
       "clicks_delta": 1,
       "impressions": 626,
       "position": 7.1,
+      "clicks_28d": 1,
+      "clicks_28d_delta": 1
+    },
+    {
+      "url": "https://www.growthbook.io/compare/growthbook-vs-salesforce-mc-personalization",
+      "label": "Vs Salesforce Mc Personalization",
+      "clicks_this": 1,
+      "clicks_last": 0,
+      "clicks_delta": 1,
+      "impressions": 77,
+      "position": 7.9,
       "clicks_28d": 1,
       "clicks_28d_delta": 1
     }
@@ -2761,6 +2766,14 @@
     },
     {
       "competitor": "Optimizely",
+      "slug": "datasnipper",
+      "url": "https://www.optimizely.com/insights/datasnipper",
+      "threat": 8,
+      "kd": 27.0,
+      "date": "2026-05-10"
+    },
+    {
+      "competitor": "Optimizely",
       "slug": "ai-use-case-discovery-stop-automating-the-fun-parts-of-your-job",
       "url": "https://www.optimizely.com/insights/blog/ai-use-case-discovery-stop-automating-the-fun-parts-of-your-job",
       "threat": 7,
@@ -2889,14 +2902,6 @@
     },
     {
       "competitor": "Optimizely",
-      "slug": "datasnipper",
-      "url": "https://www.optimizely.com/insights/datasnipper",
-      "threat": 7,
-      "kd": null,
-      "date": "2026-05-10"
-    },
-    {
-      "competitor": "Optimizely",
       "slug": "melbourne-executive-dinner-jeremy-oliver",
       "url": "https://www.optimizely.com/insights/melbourne-executive-dinner-jeremy-oliver",
       "threat": 7,
@@ -2953,18 +2958,18 @@
     },
     {
       "competitor": "Amplitude Exp",
-      "slug": "overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/overview",
-      "threat": 7,
-      "kd": 29.0,
-      "date": "2026-05-10"
-    },
-    {
-      "competitor": "Amplitude Exp",
       "slug": "tags",
       "url": "https://amplitude.com/docs/guides-and-surveys/tags",
       "threat": 7,
       "kd": 21.0,
+      "date": "2026-05-10"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "overview",
+      "url": "https://amplitude.com/docs/guides-and-surveys/overview",
+      "threat": 6,
+      "kd": 29.0,
       "date": "2026-05-10"
     },
     {
@@ -3009,14 +3014,6 @@
     },
     {
       "competitor": "Amplitude Exp",
-      "slug": "survey-overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/survey-overview",
-      "threat": 6,
-      "kd": 55.0,
-      "date": "2026-05-10"
-    },
-    {
-      "competitor": "Amplitude Exp",
       "slug": "guides-and-surveys-flutter-sdk",
       "url": "https://amplitude.com/docs/sdks/guides-and-surveys/guides-and-surveys-flutter-sdk",
       "threat": 6,
@@ -3041,10 +3038,34 @@
     },
     {
       "competitor": "PostHog",
+      "slug": "worktrees",
+      "url": "https://posthog.com/docs/posthog-code/worktrees",
+      "threat": 6,
+      "kd": 13.0,
+      "date": "2026-05-10"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "adyen-integration",
+      "url": "https://posthog.com/questions/adyen-integration",
+      "threat": 6,
+      "kd": 12.0,
+      "date": "2026-05-10"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "survey-overview",
+      "url": "https://amplitude.com/docs/guides-and-surveys/survey-overview",
+      "threat": 5,
+      "kd": 55.0,
+      "date": "2026-05-10"
+    },
+    {
+      "competitor": "PostHog",
       "slug": "notebooks-2",
       "url": "https://posthog.com/docs/api/notebooks-2",
-      "threat": 6,
-      "kd": 17.0,
+      "threat": 5,
+      "kd": null,
       "date": "2026-05-10"
     },
     {
@@ -3107,22 +3128,6 @@
       "competitor": "Harness",
       "slug": "ai-writes-the-code-who-delivers-it-safely",
       "url": "https://www.harness.io/blog/ai-writes-the-code-who-delivers-it-safely",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-05-10"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "artifacts-comic-volume-1",
-      "url": "https://www.harness.io/blog/artifacts-comic-volume-1",
-      "threat": 5,
-      "kd": null,
-      "date": "2026-05-10"
-    },
-    {
-      "competitor": "Harness",
-      "slug": "building-for-resilience-an-engineering-guide-to-the-mythos-era",
-      "url": "https://www.harness.io/blog/building-for-resilience-an-engineering-guide-to-the-mythos-era",
       "threat": 5,
       "kd": null,
       "date": "2026-05-10"
@@ -3321,14 +3326,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "python-experiments",
-      "url": "https://www.growthbook.io/insights/python-experiments",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-10"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "top-alternatives-split-devops-teams",
       "url": "https://www.growthbook.io/insights/top-alternatives-split-devops-teams",
       "threat": 4,
@@ -3341,6 +3338,14 @@
       "url": "https://www.growthbook.io/insights/top-alternatives-statsig-data-science-teams",
       "threat": 4,
       "kd": null,
+      "date": "2026-05-10"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "python-experiments",
+      "url": "https://www.growthbook.io/insights/python-experiments",
+      "threat": 3,
+      "kd": 80.0,
       "date": "2026-05-10"
     }
   ],
@@ -3659,19 +3664,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "Python Experiments",
-      "url": "https://www.growthbook.io/insights/python-experiments",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-10",
-      "clicks": 0,
-      "impressions": 0,
-      "position": 0.0,
-      "traj": "",
-      "source": "sitemap"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "Top Alternatives Split Devops Teams",
       "url": "https://www.growthbook.io/insights/top-alternatives-split-devops-teams",
       "threat": 4,
@@ -3689,6 +3681,19 @@
       "url": "https://www.growthbook.io/insights/top-alternatives-statsig-data-science-teams",
       "threat": 4,
       "kd": null,
+      "date": "2026-05-10",
+      "clicks": 0,
+      "impressions": 0,
+      "position": 0.0,
+      "traj": "",
+      "source": "sitemap"
+    },
+    {
+      "competitor": "GrowthBook Site",
+      "slug": "Python Experiments",
+      "url": "https://www.growthbook.io/insights/python-experiments",
+      "threat": 3,
+      "kd": 80.0,
       "date": "2026-05-10",
       "clicks": 0,
       "impressions": 0,
@@ -4048,7 +4053,7 @@
           },
           {
             "title": "This is what modern experimentation looks like | Optimizely Experience Optimization demo",
-            "views": 159,
+            "views": 161,
             "mult": 1.4,
             "date": "2026-04-22",
             "url": "https://www.youtube.com/watch?v=E9m4cD3WCUs",
@@ -4345,13 +4350,13 @@
       },
       {
         "name": "Amplitude Exp",
-        "avg_views": 125,
+        "avg_views": 126,
         "video_count": 42,
         "no_recent": false,
         "videos": [
           {
             "title": "How to Answer Analytics Questions with AI Agents | Amplitude Quickstart, Ep. 15",
-            "views": 27,
+            "views": 29,
             "mult": 0.2,
             "date": "2026-05-04",
             "url": "https://www.youtube.com/watch?v=zhTZJAr_y4c",
@@ -4359,7 +4364,7 @@
           },
           {
             "title": "How to Automate Analytics with AI Agents | Amplitude Quickstart, Ep. 14",
-            "views": 49,
+            "views": 50,
             "mult": 0.4,
             "date": "2026-05-04",
             "url": "https://www.youtube.com/watch?v=3sn1H39Mwo0",
@@ -4407,7 +4412,7 @@
           },
           {
             "title": "How to Build Conversion Funnels | Amplitude Quickstart, Ep. 8",
-            "views": 9,
+            "views": 10,
             "mult": 0.1,
             "date": "2026-05-04",
             "url": "https://www.youtube.com/watch?v=G7bTxM90PSY",
@@ -4471,7 +4476,7 @@
           },
           {
             "title": "Meet Amplitude AI Assistant: A Better Support Agent",
-            "views": 60,
+            "views": 61,
             "mult": 0.5,
             "date": "2026-04-21",
             "url": "https://www.youtube.com/watch?v=w_4MZ31fYok",
@@ -4487,7 +4492,7 @@
           },
           {
             "title": "Meet the Amplitude AI Analytics Platform | Amplitude Quickstart, Ep. 1",
-            "views": 418,
+            "views": 419,
             "mult": 3.3,
             "date": "2026-04-06",
             "url": "https://www.youtube.com/watch?v=GVFdRXXZXn4",
@@ -4680,7 +4685,7 @@
           {
             "title": "How Do I Catch Churn Before It Happens? | Amplitude on Amplitude",
             "views": 119,
-            "mult": 1.0,
+            "mult": 0.9,
             "date": "2026-02-11",
             "url": "https://www.youtube.com/watch?v=X3LnUzN6Uvk",
             "is_outlier": false
@@ -4689,13 +4694,13 @@
       },
       {
         "name": "Harness",
-        "avg_views": 166,
+        "avg_views": 167,
         "video_count": 50,
         "no_recent": false,
         "videos": [
           {
             "title": "GitOps Operations via Harness DevOps AI Agent",
-            "views": 15,
+            "views": 16,
             "mult": 0.1,
             "date": "2026-05-08",
             "url": "https://www.youtube.com/watch?v=joeyv2_yHAM",
@@ -4719,15 +4724,15 @@
           },
           {
             "title": "Jenkins Shorts",
-            "views": 36,
-            "mult": 0.2,
+            "views": 42,
+            "mult": 0.3,
             "date": "2026-05-07",
             "url": "https://www.youtube.com/watch?v=X_wzgwzpIUo",
             "is_outlier": false
           },
           {
             "title": "Scale Amazon ECS Automatically with Harness C",
-            "views": 12,
+            "views": 13,
             "mult": 0.1,
             "date": "2026-05-07",
             "url": "https://www.youtube.com/watch?v=ObnOjEyeOss",
@@ -4792,7 +4797,7 @@
           {
             "title": "Chaos Engineering Principles Before You Break Anything | Resilience Testing | Harness",
             "views": 292,
-            "mult": 1.8,
+            "mult": 1.7,
             "date": "2026-05-05",
             "url": "https://www.youtube.com/watch?v=NBUv0eA8Zp8",
             "is_outlier": false
@@ -4839,7 +4844,7 @@
           },
           {
             "title": "Harness Plugin for Cursor Demo",
-            "views": 153,
+            "views": 154,
             "mult": 0.9,
             "date": "2026-04-30",
             "url": "https://www.youtube.com/watch?v=vseTgl0um_k",
@@ -4847,8 +4852,8 @@
           },
           {
             "title": "Harness Cursor Plugin Demo: AI for Software Delivery from Your IDE",
-            "views": 241,
-            "mult": 1.5,
+            "views": 242,
+            "mult": 1.4,
             "date": "2026-04-29",
             "url": "https://www.youtube.com/watch?v=nEAuWwkjCbs",
             "is_outlier": false
@@ -5024,7 +5029,7 @@
           {
             "title": "What is Load Testing? Explained in 60 Seconds | Resilience Testing | 2026 | Harness",
             "views": 857,
-            "mult": 5.2,
+            "mult": 5.1,
             "date": "2026-03-25",
             "url": "https://www.youtube.com/watch?v=FnbyQBGigpg",
             "is_outlier": true
@@ -5056,7 +5061,7 @@
           {
             "title": "Liquibase MongoDB Extension Tutorial | Install & Use the Harness Community Extension",
             "views": 108,
-            "mult": 0.7,
+            "mult": 0.6,
             "date": "2026-03-16",
             "url": "https://www.youtube.com/watch?v=srJ5c1K4oVM",
             "is_outlier": false
@@ -5079,7 +5084,7 @@
           },
           {
             "title": "Managing AI Models and Datasets with Harness Artifact Registry | AI/ML Artifact Management",
-            "views": 111,
+            "views": 112,
             "mult": 0.7,
             "date": "2026-02-26",
             "url": "https://www.youtube.com/watch?v=UGV-3VI4QnM",
@@ -5320,7 +5325,7 @@
       },
       {
         "name": "PostHog",
-        "avg_views": 1181,
+        "avg_views": 1183,
         "video_count": 23,
         "no_recent": false,
         "videos": [
@@ -5334,7 +5339,7 @@
           },
           {
             "title": "PostHog's next chapter",
-            "views": 1228,
+            "views": 1233,
             "mult": 1.0,
             "date": "2026-05-05",
             "url": "https://www.youtube.com/watch?v=fsCEXfe5vKA",
@@ -5342,7 +5347,7 @@
           },
           {
             "title": "What is PostHog? (Official Demo & Tutorial)",
-            "views": 5409,
+            "views": 5431,
             "mult": 4.6,
             "date": "2026-04-23",
             "url": "https://www.youtube.com/watch?v=1FZji2L-LmM",
@@ -5366,7 +5371,7 @@
           },
           {
             "title": "PostHog: The Documentary (Full Version)",
-            "views": 1541,
+            "views": 1542,
             "mult": 1.3,
             "date": "2026-03-23",
             "url": "https://www.youtube.com/watch?v=dGaSxBs3OsU",
@@ -5438,7 +5443,7 @@
           },
           {
             "title": "RED FLAGS \ud83d\udea9 when interviewing at a startup #startup #jobinterview",
-            "views": 572,
+            "views": 573,
             "mult": 0.5,
             "date": "2026-02-17",
             "url": "https://www.youtube.com/watch?v=fUWN6INPWVo",
@@ -5478,7 +5483,7 @@
           },
           {
             "title": "The one question that predicts startup success (and most candidates never ask it)",
-            "views": 5338,
+            "views": 5341,
             "mult": 4.5,
             "date": "2026-02-11",
             "url": "https://www.youtube.com/watch?v=KVMZgY2KNto",
