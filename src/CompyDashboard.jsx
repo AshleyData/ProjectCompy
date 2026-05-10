@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 import {
   BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
   ScatterChart, Scatter, ZAxis, LineChart, Line,
@@ -295,12 +296,25 @@ export default function CompyDashboard() {
         {/* ── SUMMARY ── */}
         {tab === "summary" && (<>
 
-          {/* Executive Summary */}
+          {/* Executive Summary — rendered as markdown so the new bulleted format
+              (headers, **bold**, lists) displays correctly. Falls back to plain
+              text for the legacy 3-paragraph format. */}
           <Section title="Executive Summary">
-            <div style={{ ...card({ padding: 20 }) }}>
-              {(Array.isArray(d.exec_summary) ? d.exec_summary : (d.exec_summary || "").split("\n\n").filter(Boolean)).map((p, i) => (
-                <p key={i} style={{ margin: i === 0 ? 0 : "14px 0 0", lineHeight: 1.65, color: "#2C3E50", fontSize: 14, textAlign: "left" }}>{p}</p>
-              ))}
+            <div style={{ ...card({ padding: 20 }), lineHeight: 1.65, color: "#2C3E50", fontSize: 14, textAlign: "left" }}>
+              <ReactMarkdown
+                components={{
+                  h1: ({ children }) => <h2 style={{ margin: "16px 0 8px", fontSize: 18, color: C.primary }}>{children}</h2>,
+                  h2: ({ children }) => <h3 style={{ margin: "16px 0 8px", fontSize: 16, color: C.primary }}>{children}</h3>,
+                  h3: ({ children }) => <h4 style={{ margin: "14px 0 6px", fontSize: 14, color: C.primary }}>{children}</h4>,
+                  p:  ({ children }) => <p style={{ margin: "8px 0" }}>{children}</p>,
+                  ul: ({ children }) => <ul style={{ margin: "6px 0 10px 20px", paddingLeft: 0 }}>{children}</ul>,
+                  li: ({ children }) => <li style={{ margin: "4px 0" }}>{children}</li>,
+                  strong: ({ children }) => <strong style={{ color: "#1B2631" }}>{children}</strong>,
+                  code: ({ children }) => <code style={{ background: "#F4F6F7", padding: "1px 4px", borderRadius: 3, fontSize: 13 }}>{children}</code>,
+                }}
+              >
+                {Array.isArray(d.exec_summary) ? d.exec_summary.join("\n\n") : (d.exec_summary || "")}
+              </ReactMarkdown>
             </div>
           </Section>
 
