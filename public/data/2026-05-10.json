@@ -5867,5 +5867,455 @@
         ]
       }
     ]
+  },
+  "semrush": {
+    "snapshot_date": "2026-05-14",
+    "top3_count": 18,
+    "top10_count": 73,
+    "top20_count": 254,
+    "total_tracked": 1203,
+    "top10_mom": null,
+    "prev_snapshot_date": null,
+    "new_top10": [],
+    "top10_keywords": [
+      {
+        "keyword": "growthbook",
+        "position": 1,
+        "search_volume": 1600,
+        "url": ""
+      },
+      {
+        "keyword": "growth book",
+        "position": 1,
+        "search_volume": 480,
+        "url": ""
+      },
+      {
+        "keyword": "growthbook pricing",
+        "position": 1,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "growthbook pricing tiers",
+        "position": 1,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing tools with feature flags",
+        "position": 1,
+        "search_volume": 140,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing documentation",
+        "position": 1,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "growthbook logo",
+        "position": 1,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "what are some alternatives to growthbook",
+        "position": 2,
+        "search_volume": 140,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing open source",
+        "position": 2,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "growthbook alternatives for experimentation",
+        "position": 2,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "growthbook github",
+        "position": 2,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "tools for a/b testing and feature flags",
+        "position": 2,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "ai for a/b testing tutorial",
+        "position": 2,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "clarity heatmaps",
+        "position": 2,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing ai news",
+        "position": 2,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "best open-source experimentation platforms",
+        "position": 3,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "a/b test platform",
+        "position": 3,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "novelty effect ab testing",
+        "position": 3,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "feature flagging news today",
+        "position": 4,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing terminology",
+        "position": 4,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "filter flags",
+        "position": 4,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "fully managed alternatives to growthbook",
+        "position": 4,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "web ab testing tools",
+        "position": 4,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "ab testing platform",
+        "position": 5,
+        "search_volume": 210,
+        "url": ""
+      },
+      {
+        "keyword": "split.io holdout group",
+        "position": 5,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "segment event tracker",
+        "position": 5,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "cuped",
+        "position": 6,
+        "search_volume": 1000,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing software",
+        "position": 6,
+        "search_volume": 480,
+        "url": ""
+      },
+      {
+        "keyword": "experimentation platform",
+        "position": 6,
+        "search_volume": 110,
+        "url": ""
+      },
+      {
+        "keyword": "need something like growthbook but fully managed",
+        "position": 6,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "clarity heatmap",
+        "position": 6,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "what role do feedback loops play in agentic ai systems",
+        "position": 6,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "sequential testing ab test",
+        "position": 6,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "alternatives to growthbook for feature flagging and experimentation",
+        "position": 6,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "how to use ai for ab test",
+        "position": 6,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "experiment template",
+        "position": 7,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "multiple testing correction",
+        "position": 7,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "open source feature flagging platforms",
+        "position": 7,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "feature flags vs separate tools for a/b testing",
+        "position": 7,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "ai ab testing",
+        "position": 7,
+        "search_volume": 210,
+        "url": ""
+      },
+      {
+        "keyword": "aggregation statistics",
+        "position": 7,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "a/a testing",
+        "position": 7,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "segment event tracking",
+        "position": 7,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "experimentation template",
+        "position": 7,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "what are bandits",
+        "position": 8,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "experim",
+        "position": 8,
+        "search_volume": 320,
+        "url": ""
+      },
+      {
+        "keyword": "experiment platform news",
+        "position": 8,
+        "search_volume": 90,
+        "url": ""
+      },
+      {
+        "keyword": "teste a/b",
+        "position": 8,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "how to set up a/b test for prompt variations",
+        "position": 8,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "segment track",
+        "position": 8,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "segment events",
+        "position": 8,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "feature flag open source",
+        "position": 8,
+        "search_volume": 170,
+        "url": ""
+      },
+      {
+        "keyword": "open source feature flagging",
+        "position": 8,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "buying test data infrastructure",
+        "position": 8,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "how to use ai for a/b testing statistics",
+        "position": 9,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "feature flag release",
+        "position": 9,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "opstart case study",
+        "position": 9,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "best generative ai optimization techniques 2025",
+        "position": 10,
+        "search_volume": 590,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing data science",
+        "position": 10,
+        "search_volume": 210,
+        "url": ""
+      },
+      {
+        "keyword": "feature flag platform news today",
+        "position": 10,
+        "search_volume": 140,
+        "url": ""
+      },
+      {
+        "keyword": "model a/b testing",
+        "position": 10,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "ai for ab testing",
+        "position": 10,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "segment event",
+        "position": 10,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "technical geo",
+        "position": 10,
+        "search_volume": 110,
+        "url": ""
+      },
+      {
+        "keyword": "how to integrate feature flags with a/b testing",
+        "position": 10,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "optimizely vs",
+        "position": 10,
+        "search_volume": 30,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing tutorial",
+        "position": 10,
+        "search_volume": 70,
+        "url": ""
+      },
+      {
+        "keyword": "best feature flag management and experimentation tools 2025",
+        "position": 10,
+        "search_volume": 40,
+        "url": ""
+      },
+      {
+        "keyword": "mab testing",
+        "position": 10,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "a/b testing means",
+        "position": 10,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "a a test",
+        "position": 10,
+        "search_volume": 50,
+        "url": ""
+      },
+      {
+        "keyword": "multiple comparison correction",
+        "position": 10,
+        "search_volume": 140,
+        "url": ""
+      },
+      {
+        "keyword": "best feature flags for typescript",
+        "position": 10,
+        "search_volume": 50,
+        "url": ""
+      }
+    ]
   }
 }
