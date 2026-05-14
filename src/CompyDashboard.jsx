@@ -1081,268 +1081,252 @@ export default function CompyDashboard() {
 
         {/* ── SEO SCORECARD ── */}
         {tab === "seo_scorecard" && (() => {
-          // AthenaHQ: use live data when available (d.athenahq), else show April sample
           const aeo = d.athenahq || {
             share_of_voice: 10.6, share_of_voice_mom: 0.9,
             mention_rate: 34.1, mention_rate_mom: 4.4,
             citation_rate: 7.0, citation_rate_mom: 2.4,
-            is_sample: true,
-            history: [],
+            is_sample: true, history: [],
           };
-          const aeoIsSample = aeo.is_sample === true;
+          const aeoIsSample = !d.athenahq;
+          const sem = d.semrush || {};
+          const hw = d.homepage_weekly || [];
 
-          // SEMrush: use live data when available, else show placeholder
-          const sem = d.semrush || null;
+          // 4-week branded clicks from homepage_weekly (last 4 vs prior 4)
+          const last4w = hw.slice(-4);
+          const prev4w = hw.slice(-8, -4);
+          const sum4w = arr => arr.reduce((s, w) => s + (w.clicks || 0), 0);
+          const branded4wCur = sum4w(last4w);
+          const branded4wPrv = sum4w(prev4w);
+          const branded4wPct = prev4w.length === 4 && branded4wPrv > 0
+            ? +((branded4wCur - branded4wPrv) / branded4wPrv * 100).toFixed(1) : null;
 
-          // Page split (added in later pipeline runs — optional)
-          const pageSplit = d.gsc?.page_split || null;
+          // Monthly branded from homepage_weekly
+          const mbMap = {};
+          hw.forEach(w => { const m = w.week.slice(0, 7); mbMap[m] = (mbMap[m] || 0) + (w.clicks || 0); });
+          const monthlyBranded = Object.entries(mbMap).sort(([a],[b]) => a.localeCompare(b))
+            .map(([mo, clicks]) => ({ label: mo.slice(5), v: clicks }));
 
-          // Pending card helper
-          const PendingCard = ({ label, source }) => (
-            <div style={{ ...card({ padding: "16px 20px", flex: 1, minWidth: 150, borderTop: `3px solid ${C.border}` }) }}>
-              <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
-              <div style={{ fontSize: 22, fontWeight: 700, color: C.muted, margin: "6px 0 2px" }}>—</div>
-              <div style={{ fontSize: 11, color: C.muted, fontStyle: "italic" }}>{source}</div>
-            </div>
+          // AEO trend history (needs ≥2 months to chart)
+          const aeoHist = (aeo.history || []).length >= 2 ? aeo.history : null;
+
+          // ── KPI card ──────────────────────────────────────────────
+          const KpiCard = ({ label, value, pct, period, pending, sample }) => {
+            const clr = (pct == null) ? C.muted : pct > 0 ? C.success : pct < 0 ? C.danger : C.muted;
+            return (
+              <div style={{ ...card({ padding: "13px 16px", flex: 1, minWidth: 130 }), position: "relative" }}>
+                {sample && <div style={{ position:"absolute", top:4, right:6, fontSize:9, background:"#F0D060", color:"#7A6000", padding:"1px 4px", borderRadius:3, fontWeight:700 }}>SAMPLE</div>}
+                <div style={{ fontSize: 10, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
+                <div style={{ fontSize: 20, fontWeight: 700, color: pending ? C.muted : C.primary, margin: "3px 0 2px" }}>
+                  {pending ? "—" : value}
+                </div>
+                <div style={{ fontSize: 11, color: clr }}>
+                  {pct != null
+                    ? `${pct > 0 ? "↑" : pct < 0 ? "↓" : ""} ${Math.abs(pct)}% ${period}`
+                    : <span style={{ color: C.muted, fontStyle: "italic" }}>— {period}</span>}
+                </div>
+              </div>
+            );
+          };
+
+          // ── Group label ────────────────────────────────────────────
+          const GL = ({ txt, color = C.primary }) => (
+            <div style={{ fontSize: 11, fontWeight: 700, color, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6, marginTop: 2 }}>{txt}</div>
           );
 
-          return (<>
-            {/* ── KPI STRIP ── */}
-            <Section title="SEO + AEO at a Glance">
-              <div style={{ fontSize: 12, color: C.muted, marginBottom: 14 }}>
-                Weekly data from GA4 + GSC · 28-day rolling where noted · SEMrush and AthenaHQ integrations pending
+          // ── Trend chart (or placeholder) ───────────────────────────
+          const TrendLine = ({ data, color, label, isPct, h = 130 }) => {
+            if (!data || data.length < 2) return (
+              <div style={{ height: h, ...card({ background: "#F8F9FA", display:"flex", alignItems:"center", justifyContent:"center", padding:8 }) }}>
+                <div style={{ fontSize: 11, color: C.muted, textAlign:"center" }}>Building history…</div>
               </div>
+            );
+            return (
+              <ResponsiveContainer width="100%" height={h}>
+                <LineChart data={data} margin={{ left: 2, right: 8, top: 6, bottom: 2 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="label" tick={{ fontSize: 9 }} />
+                  <YAxis tick={{ fontSize: 9 }} width={38}
+                    tickFormatter={v => isPct ? `${v}%` : v >= 1000 ? `${(v/1000).toFixed(0)}k` : v} />
+                  <RTooltip formatter={v => [isPct ? `${v}%` : v.toLocaleString(), label]} />
+                  <Line type="monotone" dataKey="v" stroke={color} strokeWidth={2} dot={false} connectNulls />
+                </LineChart>
+              </ResponsiveContainer>
+            );
+          };
 
-              {/* Row 1: SEO */}
-              <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>📈 SEO</div>
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 20 }}>
-                <MetricCard
-                  label="Organic Sessions (GA4)"
-                  value={(d.ga4?.main_site?.sessions ?? 0).toLocaleString()}
-                  change={d.ga4?.main_site?.wow_sessions_pct}
-                  sub="WoW · growthbook.io"
-                />
-                <MetricCard
-                  label="Docs Sessions (GA4)"
-                  value={(d.ga4?.docs?.sessions ?? 0).toLocaleString()}
-                  change={d.ga4?.docs?.wow_sessions_pct}
-                  sub="WoW · docs.growthbook.io"
-                />
-                <MetricCard
-                  label="Organic Clicks (28-day)"
-                  value={(d.gsc?.trailing_28d_clicks ?? 0).toLocaleString()}
-                  change={d.gsc?.mom_clicks}
-                  sub="MoM rolling · GSC"
-                />
-                <MetricCard
-                  label="Branded Clicks (weekly)"
-                  value={(d.gsc?.branded ?? 0).toLocaleString()}
-                  sub={`${(d.gsc?.nonbranded ?? 0).toLocaleString()} non-branded`}
-                />
-                {sem
-                  ? <MetricCard label="Keywords in Top 10" value={sem.top10_count} change={sem.top10_mom} sub="MoM · SEMrush" />
-                  : <PendingCard label="Keywords in Top 10" source="SEMrush · pending API key" />
-                }
-                <PendingCard label="Organic Sign-ups" source="Source TBD" />
+          // ── 7 metric definitions (used across all sections) ────────
+          const SEO_METRICS = [
+            { id:"sessions", label:"Organic Sessions",    color: C.accent },
+            { id:"branded",  label:"Branded Clicks",      color: C.success },
+            { id:"top10",    label:"Top 10 Keywords",     color: "#8B4513" },
+            { id:"signups",  label:"Organic Sign-ups",    color: "#6A5ACD" },
+          ];
+          const AEO_METRICS = [
+            { id:"sov",      label:"AI Share of Voice",  color: "#E67E22", isPct: true },
+            { id:"mention",  label:"AI Mention Rate",    color: "#1ABC9C", isPct: true },
+            { id:"citation", label:"AI Citation Rate",   color: "#E74C3C", isPct: true },
+          ];
+          const ALL_METRICS = [...SEO_METRICS, ...AEO_METRICS];
+
+          // ── Per-metric data for each section ───────────────────────
+          const wowData = {
+            sessions: { value: (d.ga4?.main_site?.sessions ?? 0).toLocaleString(), pct: d.ga4?.main_site?.wow_sessions_pct },
+            branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
+            top10:    { value: sem.top10_count ?? "—", pct: sem.top10_mom ?? null },
+            signups:  { pending: true },
+            sov:      { value: `${aeo.share_of_voice}%`, pct: aeo.share_of_voice_mom, sample: aeoIsSample },
+            mention:  { value: `${aeo.mention_rate}%`,   pct: aeo.mention_rate_mom,   sample: aeoIsSample },
+            citation: { value: `${aeo.citation_rate}%`,  pct: aeo.citation_rate_mom,  sample: aeoIsSample },
+          };
+
+          const fourWkData = {
+            sessions: { pending: true },
+            branded:  { value: branded4wCur.toLocaleString(), pct: branded4wPct },
+            top10:    { pending: true },
+            signups:  { pending: true },
+            sov:      { value: `${aeo.share_of_voice}%`, pct: null, sample: aeoIsSample },
+            mention:  { value: `${aeo.mention_rate}%`,   pct: null, sample: aeoIsSample },
+            citation: { value: `${aeo.citation_rate}%`,  pct: null, sample: aeoIsSample },
+          };
+
+          const weeklyCharts = {
+            sessions: null,
+            branded:  hw.map(w => ({ label: w.week.slice(5), v: w.clicks })),
+            top10:    null,
+            signups:  null,
+            sov:      null,
+            mention:  null,
+            citation: null,
+          };
+
+          const monthlyCharts = {
+            sessions: null,
+            branded:  monthlyBranded,
+            top10:    null,
+            signups:  null,
+            sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
+            mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
+            citation: aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.citation_rate }))  : null,
+          };
+
+          // ── Row of KPI cards for one section ──────────────────────
+          const KpiSection = ({ dataMap, period }) => (
+            <>
+              <GL txt="📈 SEO" />
+              <div style={{ display:"flex", gap:10, flexWrap:"wrap", marginBottom:14 }}>
+                {SEO_METRICS.map(m => <KpiCard key={m.id} label={m.label} period={period} {...dataMap[m.id]} />)}
               </div>
+              <GL txt="🤖 AEO — AI Visibility" color={C.accent} />
+              {aeoIsSample && <div style={{ fontSize:11, color:"#7A6000", background:"#FFF9E6", border:"1px solid #F0D060", borderRadius:4, padding:"4px 10px", marginBottom:6 }}>Sample data (Apr 2026) — connect AthenaHQ API for live figures</div>}
+              <div style={{ display:"flex", gap:10, flexWrap:"wrap" }}>
+                {AEO_METRICS.map(m => <KpiCard key={m.id} label={m.label} period={period} {...dataMap[m.id]} />)}
+              </div>
+            </>
+          );
 
-              {/* Row 2: AEO */}
-              <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>🤖 AI Visibility (AthenaHQ)</div>
-              {aeoIsSample && (
-                <div style={{ background: "#FFF9E6", border: "1px solid #F0D060", borderRadius: 6, padding: "7px 14px", fontSize: 12, color: "#7A6000", marginBottom: 10 }}>
-                  ⚠️ Sample data from April 2026 — shown for layout preview. Live data available once AthenaHQ API is connected.
-                </div>
-              )}
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                {[
-                  { label: "Share of Voice", value: `${aeo.share_of_voice}%`, mom: aeo.share_of_voice_mom, desc: "% of AI responses mentioning GrowthBook in category" },
-                  { label: "Mention Rate", value: `${aeo.mention_rate}%`, mom: aeo.mention_rate_mom, desc: "% of queries where GrowthBook is named" },
-                  { label: "Citation Rate", value: `${aeo.citation_rate}%`, mom: aeo.citation_rate_mom, desc: "% of AI responses citing growthbook.io" },
-                ].map((m, i) => (
-                  <div key={i} style={{ ...card({ padding: "16px 20px", flex: 1, minWidth: 160, borderTop: `3px solid ${C.accent}` }) }}>
-                    <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{m.label}</div>
-                    <div style={{ fontSize: 26, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{m.value}</div>
-                    <div style={{ fontSize: 13, color: m.mom > 0 ? C.success : m.mom < 0 ? C.danger : C.muted }}>
-                      {m.mom > 0 ? "↑" : m.mom < 0 ? "↓" : ""} {Math.abs(m.mom)}% MoM
-                    </div>
-                    <div style={{ fontSize: 11, color: C.muted, marginTop: 4 }}>{m.desc}</div>
+          // ── Grid of 7 trend charts ─────────────────────────────────
+          const ChartGrid = ({ chartMap }) => (
+            <>
+              <GL txt="📈 SEO" />
+              <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(240px, 1fr))", gap:14, marginBottom:16 }}>
+                {SEO_METRICS.map(m => (
+                  <div key={m.id}>
+                    <div style={{ fontSize:11, fontWeight:600, color:C.primary, marginBottom:4 }}>{m.label}</div>
+                    <TrendLine data={chartMap[m.id]} color={m.color} label={m.label} isPct={m.isPct} />
                   </div>
                 ))}
               </div>
-            </Section>
-
-            {/* ── TRAFFIC TRENDS ── */}
-            <Section title="Organic Traffic Trends">
-              <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
-
-                {/* Branded / Homepage Clicks weekly trend */}
-                {(d.homepage_weekly || []).length > 0 && (
-                  <div style={{ flex: 1, minWidth: 300 }}>
-                    <div style={{ fontSize: 13, fontWeight: 600, color: C.primary, marginBottom: 8 }}>Branded Clicks — Homepage (GSC, weekly)</div>
-                    <ResponsiveContainer width="100%" height={200}>
-                      <LineChart data={d.homepage_weekly} margin={{ left: 10, right: 20, top: 8, bottom: 8 }}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="week" tick={{ fontSize: 10 }} tickFormatter={w => w ? w.slice(5) : w} interval="preserveStartEnd" />
-                        <YAxis tick={{ fontSize: 10 }} tickFormatter={v => v.toLocaleString()} width={50} />
-                        <RTooltip formatter={(v) => [v.toLocaleString(), "Homepage clicks"]} labelFormatter={w => `Week of ${w}`} />
-                        <Line type="monotone" dataKey="clicks" stroke={C.success} strokeWidth={2} dot={{ r: 3 }} activeDot={{ r: 5 }} />
-                      </LineChart>
-                    </ResponsiveContainer>
-                    <div style={{ fontSize: 11, color: C.muted, marginTop: 4 }}>
-                      Homepage (www.growthbook.io/) clicks from GSC — primary branded search signal.
-                    </div>
+              <GL txt="🤖 AEO — AI Visibility" color={C.accent} />
+              {aeoIsSample && <div style={{ fontSize:11, color:"#7A6000", background:"#FFF9E6", border:"1px solid #F0D060", borderRadius:4, padding:"4px 10px", marginBottom:6 }}>Sample data — trend charts available once AthenaHQ API is connected</div>}
+              <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(240px, 1fr))", gap:14 }}>
+                {AEO_METRICS.map(m => (
+                  <div key={m.id}>
+                    <div style={{ fontSize:11, fontWeight:600, color:C.accent, marginBottom:4 }}>{m.label}</div>
+                    <TrendLine data={chartMap[m.id]} color={m.color} label={m.label} isPct={m.isPct} />
                   </div>
-                )}
-
-                {/* GA4 sessions: no historical trend yet — show current + a coming-soon placeholder */}
-                <div style={{ flex: 1, minWidth: 300 }}>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: C.primary, marginBottom: 8 }}>All-Site Sessions (GA4, weekly)</div>
-                  <div style={{ ...card({ padding: 16, height: 200, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", background: "#F8F9FA" }) }}>
-                    <div style={{ fontSize: 32, fontWeight: 700, color: C.primary }}>{(d.ga4?.main_site?.sessions ?? 0).toLocaleString()}</div>
-                    <div style={{ fontSize: 13, color: C.muted, marginTop: 4 }}>sessions this week</div>
-                    <div style={{ fontSize: 13, color: d.ga4?.main_site?.wow_sessions_pct > 0 ? C.success : C.danger, marginTop: 6, fontWeight: 600 }}>
-                      {d.ga4?.main_site?.wow_sessions_pct > 0 ? "↑" : "↓"} {Math.abs(d.ga4?.main_site?.wow_sessions_pct ?? 0)}% WoW
-                    </div>
-                    <div style={{ fontSize: 11, color: C.muted, marginTop: 12, textAlign: "center", maxWidth: 220 }}>
-                      Weekly trend chart will populate as pipeline runs accumulate historical data
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
+            </>
+          );
+
+          return (<>
+            {/* ── SECTION 1: WoW ── */}
+            <Section title="1 — This Week vs Prior Week">
+              <KpiSection dataMap={wowData} period="WoW" />
             </Section>
 
-            {/* ── PAGE-LEVEL BREAKDOWN ── */}
-            {pageSplit && (
-              <Section title="Traffic Breakdown by Page (This Week)">
-                <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                  {[
-                    { label: "Homepage (/)", data: pageSplit.homepage },
-                    { label: "Pricing (/pricing)", data: pageSplit.pricing },
-                    { label: "Docs (docs.growthbook.io)", data: pageSplit.docs },
-                    { label: "All Other Pages", data: pageSplit.all_other },
-                  ].map((b, i) => b.data && (
-                    <div key={i} style={{ ...card({ padding: "14px 18px", flex: 1, minWidth: 180 }) }}>
-                      <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase" }}>{b.label}</div>
-                      <div style={{ fontSize: 22, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{(b.data.clicks ?? 0).toLocaleString()} clicks</div>
-                      <div style={{ fontSize: 12, color: b.data.clicks_wow_pct > 0 ? C.success : b.data.clicks_wow_pct < 0 ? C.danger : C.muted }}>
-                        {b.data.clicks_wow_pct > 0 ? "↑" : b.data.clicks_wow_pct < 0 ? "↓" : ""} {Math.abs(b.data.clicks_wow_pct ?? 0)}% WoW clicks
-                      </div>
-                      <div style={{ fontSize: 11, color: C.muted }}>{(b.data.impressions ?? 0).toLocaleString()} impressions</div>
-                    </div>
-                  ))}
-                </div>
-                <div style={{ fontSize: 11, color: C.muted, marginTop: 8 }}>
-                  Note: per-page sum won't equal overall total — GSC aggregate and per-page queries use different counting methods.
-                </div>
-              </Section>
-            )}
+            {/* ── SECTION 2: 4-Week ── */}
+            <Section title="2 — Last 4 Weeks vs Prior 4 Weeks">
+              <KpiSection dataMap={fourWkData} period="4-week" />
+              {prev4w.length < 4 && (
+                <p style={{ fontSize: 11, color: C.muted, marginTop: 8 }}>
+                  Sessions, keywords, and AEO 4-week comparisons will populate as more weekly pipeline runs accumulate. Branded clicks use homepage GSC history.
+                </p>
+              )}
+            </Section>
 
-            {/* ── KEYWORD RANKINGS (SEMRUSH) ── */}
-            <Section title="Keyword Rankings (SEMrush)">
-              {sem ? (
+            {/* ── SECTION 3: Weekly Charts ── */}
+            <Section title="3 — Weekly Trends">
+              <ChartGrid chartMap={weeklyCharts} />
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 10 }}>
+                Branded clicks: homepage GSC data (available now). Sessions, keywords, sign-ups, and AEO charts build as weekly pipeline runs accumulate.
+              </p>
+            </Section>
+
+            {/* ── SECTION 4: Monthly Charts ── */}
+            <Section title="4 — Monthly Trends">
+              <ChartGrid chartMap={monthlyCharts} />
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 10 }}>
+                Branded clicks aggregated monthly from GSC homepage data. Other metrics build as data accumulates.
+              </p>
+            </Section>
+
+            {/* ── SECTION 5: New Keywords ── */}
+            <Section title="5 — New Keywords Entering Top 10">
+              {(sem.new_top10 || []).length > 0 ? (
                 <>
-                  <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 16 }}>
-                    <MetricCard label="Keywords in Top 10" value={sem.top10_count} change={sem.top10_mom} sub="MoM" />
-                    <MetricCard label="Keywords in Top 3" value={sem.top3_count ?? "—"} sub="this month" />
-                    <MetricCard label="New Top-10 Keywords" value={sem.new_top10?.length ?? 0} sub="entered top 10 this month" />
-                    <MetricCard label="AI Overview Appearances" value={sem.aio_count ?? "—"} sub="this month" />
-                  </div>
-                  {(sem.new_top10 || []).length > 0 && (
-                    <Table
-                      headers={["Keyword", "Position", "Change", "AI Overview?"]}
-                      rows={sem.new_top10.map(k => [
-                        k.keyword,
-                        k.position,
-                        k.prev_position ? `${k.prev_position} → ${k.position}` : "New",
-                        k.aio ? <span style={{ color: C.success, fontWeight: 700 }}>✓</span> : "—",
-                      ])}
-                    />
-                  )}
+                  <p style={{ fontSize: 12, color: C.muted, marginBottom: 10 }}>
+                    {sem.new_top10.length} keyword{sem.new_top10.length !== 1 ? "s" : ""} newly entered top 10 since {sem.prev_snapshot_date || "last snapshot"}.
+                  </p>
+                  <Table
+                    headers={["Keyword", "Position", "Previous", "Search Vol"]}
+                    rows={sem.new_top10.map(k => [
+                      k.keyword,
+                      <span style={{ fontWeight: 700, color: C.success }}>{k.position}</span>,
+                      k.prev_position ?? <span style={{ color: C.muted }}>New</span>,
+                      (k.search_volume || 0).toLocaleString(),
+                    ])}
+                  />
+                </>
+              ) : (sem.top10_keywords || []).length > 0 ? (
+                <>
+                  <p style={{ fontSize: 12, color: C.muted, marginBottom: 10 }}>
+                    Showing all {sem.top10_keywords.length} current top-10 keywords. Week-over-week "new" tracking starts after the second SEMrush snapshot.
+                  </p>
+                  <Table
+                    headers={["Position", "Keyword", "Search Volume", "URL"]}
+                    rows={sem.top10_keywords.map(k => [
+                      <span style={{ fontWeight: 700, color: C.primary }}>{k.position}</span>,
+                      k.keyword,
+                      (k.search_volume || 0).toLocaleString(),
+                      <a href={k.url} target="_blank" rel="noopener noreferrer"
+                         style={{ fontSize: 11, color: C.accent, textDecoration: "none" }}
+                         onMouseOver={e => e.currentTarget.style.textDecoration = "underline"}
+                         onMouseOut={e => e.currentTarget.style.textDecoration = "none"}>
+                        {(k.url || "").replace(/^https?:\/\//, "").slice(0, 55)}
+                      </a>,
+                    ])}
+                  />
                 </>
               ) : (
-                <div style={{ ...card({ padding: 28, textAlign: "center" }) }}>
-                  <div style={{ fontSize: 28, marginBottom: 10 }}>🔑</div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: C.primary, marginBottom: 8 }}>SEMrush Integration Pending</div>
-                  <div style={{ fontSize: 13, color: C.muted, lineHeight: 1.8, maxWidth: 400, margin: "0 auto" }}>
-                    Once connected, this section will show:<br />
-                    · Total keywords ranking in top 10 (trend over time)<br />
-                    · New keywords entering top 10 this month<br />
-                    · Keywords with position changes ≥5<br />
-                    · AI Overview (AIO) appearances<br />
-                    · Position distribution: top 3 / 4–10 / 11–20
-                  </div>
-                  <div style={{ fontSize: 12, color: C.muted, marginTop: 12, fontStyle: "italic" }}>
-                    Provide SEMrush API key to enable · Monthly pull, low API cost
-                  </div>
-                </div>
+                <p style={{ fontSize: 13, color: C.muted }}>No keyword data yet — SEMrush snapshot pending.</p>
               )}
-            </Section>
-
-            {/* ── AI VISIBILITY TRENDS (ATHENAHQ) ── */}
-            <Section title="AI Visibility Trends (AthenaHQ)">
-              {aeoIsSample && (
-                <div style={{ background: "#FFF9E6", border: "1px solid #F0D060", borderRadius: 6, padding: "7px 14px", fontSize: 12, color: "#7A6000", marginBottom: 14 }}>
-                  ⚠️ Charts below use sample data. Live monthly trend data will appear once AthenaHQ API is connected and 2+ months of data have been collected.
-                </div>
-              )}
-              {(aeo.history || []).length >= 2 ? (
-                <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
-                  {[
-                    { key: "share_of_voice", label: "Share of Voice (%)", color: C.accent },
-                    { key: "mention_rate", label: "Mention Rate (%)", color: C.success },
-                    { key: "citation_rate", label: "Citation Rate (%)", color: C.warning },
-                  ].map(({ key, label, color }) => (
-                    <div key={key} style={{ flex: 1, minWidth: 250 }}>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: C.primary, marginBottom: 8 }}>{label}</div>
-                      <ResponsiveContainer width="100%" height={160}>
-                        <LineChart data={aeo.history} margin={{ left: 0, right: 16, top: 8, bottom: 4 }}>
-                          <CartesianGrid strokeDasharray="3 3" />
-                          <XAxis dataKey="month" tick={{ fontSize: 10 }} />
-                          <YAxis tick={{ fontSize: 10 }} unit="%" domain={["auto", "auto"]} width={38} />
-                          <RTooltip formatter={(v) => [`${v}%`, label]} />
-                          <Line type="monotone" dataKey={key} stroke={color} strokeWidth={2} dot={{ r: 3 }} />
-                        </LineChart>
-                      </ResponsiveContainer>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-                  {[
-                    { label: "Share of Voice", value: `${aeo.share_of_voice}%`, mom: aeo.share_of_voice_mom, color: C.accent },
-                    { label: "Mention Rate", value: `${aeo.mention_rate}%`, mom: aeo.mention_rate_mom, color: C.success },
-                    { label: "Citation Rate", value: `${aeo.citation_rate}%`, mom: aeo.citation_rate_mom, color: C.warning },
-                  ].map((m, i) => (
-                    <div key={i} style={{ flex: 1, minWidth: 200 }}>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: C.primary, marginBottom: 8 }}>{m.label}</div>
-                      <div style={{ ...card({ padding: 16, height: 140, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", background: "#F8F9FA", borderTop: `3px solid ${m.color}` }) }}>
-                        <div style={{ fontSize: 30, fontWeight: 700, color: C.primary }}>{m.value}</div>
-                        <div style={{ fontSize: 13, color: m.mom > 0 ? C.success : C.danger, marginTop: 4 }}>
-                          {m.mom > 0 ? "↑" : "↓"} {Math.abs(m.mom)}% MoM
-                        </div>
-                        <div style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: "center" }}>
-                          Trend chart populates after 2+ months
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-              <div style={{ marginTop: 16, ...card({ padding: "12px 16px", background: "#F0F7FF" }) }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 4 }}>About these metrics</div>
-                <div style={{ fontSize: 12, color: C.muted, lineHeight: 1.7 }}>
-                  <strong>Share of Voice:</strong> % of AI responses (across tracked queries) that mention GrowthBook at least once.<br />
-                  <strong>Mention Rate:</strong> % of queries where GrowthBook is named among results.<br />
-                  <strong>Citation Rate:</strong> % of AI responses that include a direct link to growthbook.io.<br />
-                  Source: AthenaHQ.ai · Measured monthly across a defined set of category-relevant queries.
-                </div>
-              </div>
             </Section>
 
             <p style={{ fontSize: 11, color: "#888", marginTop: 16, paddingTop: 8, borderTop: "1px solid #333", textAlign: "left" }}>
-              📅 GA4: {d.ga4?.main_site?.week_start || "—"} to {d.ga4?.main_site?.week_end || "—"} ·
-              GSC: {d.gsc?.week_start || "—"} to {d.gsc?.week_end || "—"} ·
-              GSC 28-day trailing · SEMrush: pending · AthenaHQ: {aeoIsSample ? "sample data (Apr 2026)" : "live"}
+              📅 GA4: {d.ga4?.main_site?.week_start || "—"} – {d.ga4?.main_site?.week_end || "—"} ·
+              GSC: {d.gsc?.week_start || "—"} – {d.gsc?.week_end || "—"} ·
+              SEMrush: {sem.snapshot_date || "—"} · AEO: {aeoIsSample ? "sample (Apr 2026)" : "live"}
             </p>
           </>);
         })()}
