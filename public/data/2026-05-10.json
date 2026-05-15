@@ -6317,5 +6317,31 @@
         "url": ""
       }
     ]
+  },
+  "athenahq": {
+    "share_of_voice": 10.6,
+    "share_of_voice_mom": 0.9,
+    "mention_rate": 25.8,
+    "mention_rate_mom": 3.2,
+    "citation_rate": 7.0,
+    "citation_rate_mom": 2.4,
+    "is_sample": false,
+    "history": [
+      {
+        "month": "2026-04-17",
+        "share_of_voice": 9.7,
+        "mention_rate": 22.6,
+        "citation_rate": 4.6
+      },
+      {
+        "month": "2026-05-01",
+        "share_of_voice": 10.6,
+        "mention_rate": 25.8,
+        "citation_rate": 7.0
+      }
+    ],
+    "period_start": "2026-04-09",
+    "period_end": "2026-05-14",
+    "snapshot_date": "2026-05-14"
   }
 }
