@@ -1106,8 +1106,15 @@ export default function CompyDashboard() {
           const monthlyBranded = Object.entries(mbMap).sort(([a],[b]) => a.localeCompare(b))
             .map(([mo, clicks]) => ({ label: mo.slice(5), v: clicks }));
 
-          // AEO trend history (needs ≥2 months to chart)
+          // AEO trend history (needs ≥2 points to chart)
           const aeoHist = (aeo.history || []).length >= 2 ? aeo.history : null;
+
+          // AEO period-over-period pp delta (oldest vs newest snapshot in history)
+          const aeo4wMom = aeoHist ? {
+            sov:      +((aeoHist[aeoHist.length-1].share_of_voice ?? 0) - (aeoHist[0].share_of_voice ?? 0)).toFixed(1),
+            mention:  +((aeoHist[aeoHist.length-1].mention_rate   ?? 0) - (aeoHist[0].mention_rate   ?? 0)).toFixed(1),
+            citation: +((aeoHist[aeoHist.length-1].citation_rate  ?? 0) - (aeoHist[0].citation_rate  ?? 0)).toFixed(1),
+          } : { sov: null, mention: null, citation: null };
 
           // ── KPI card ──────────────────────────────────────────────
           const KpiCard = ({ label, value, pct, period, pending, sample }) => {
@@ -1184,9 +1191,9 @@ export default function CompyDashboard() {
             branded:  { value: branded4wCur.toLocaleString(), pct: branded4wPct },
             top10:    { pending: true },
             signups:  { pending: true },
-            sov:      { value: `${aeo.share_of_voice}%`, pct: null, sample: aeoIsSample },
-            mention:  { value: `${aeo.mention_rate}%`,   pct: null, sample: aeoIsSample },
-            citation: { value: `${aeo.citation_rate}%`,  pct: null, sample: aeoIsSample },
+            sov:      { value: `${aeo.share_of_voice}%`, pct: aeo4wMom.sov,      sample: aeoIsSample },
+            mention:  { value: `${aeo.mention_rate}%`,   pct: aeo4wMom.mention,  sample: aeoIsSample },
+            citation: { value: `${aeo.citation_rate}%`,  pct: aeo4wMom.citation, sample: aeoIsSample },
           };
 
           const weeklyCharts = {
@@ -1194,9 +1201,9 @@ export default function CompyDashboard() {
             branded:  hw.map(w => ({ label: w.week.slice(5), v: w.clicks })),
             top10:    null,
             signups:  null,
-            sov:      null,
-            mention:  null,
-            citation: null,
+            sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
+            mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
+            citation: aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.citation_rate }))  : null,
           };
 
           const monthlyCharts = {
