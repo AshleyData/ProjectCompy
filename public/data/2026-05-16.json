@@ -18,20 +18,21 @@
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-05-09 to 2026-05-15): growthbook.io had 12,030 sessions and 7,769 users (-5.5% week over week).",
-    "## Week of 2026-05-16",
+    "## Week of 2026-05-23",
     "**Site performance**\n- **Overall (GA4, all traffic):** 12,030 sessions (-5.5% WoW) | 7,769 users\n- **Overall (GSC, organic search):** 3,530 clicks (+2.9% WoW) | 153,105 impressions (-8.2% WoW)\n- **Homepage (/):** 8,605 GA4 sessions (-10.0% WoW) all-traffic | 1,999 GSC clicks (+3.1% WoW) organic | 27,256 GSC impressions (+5.9% WoW)\n- **Pricing (/pricing):** 1,235 GA4 sessions (-0.5% WoW) all-traffic | 80 GSC clicks (-13.0% WoW) organic | 6,355 GSC impressions (-6.1% WoW)\n- **Docs (docs.growthbook.io):** 4,478 GA4 sessions (-7.7% WoW) all-traffic | 1,263 GSC clicks (+7.4% WoW) organic | 126,449 GSC impressions (-6.3% WoW)\n- **All other pages:** 4,786 GA4 sessions (-0.9% WoW) all-traffic | 214 GSC clicks (+16.3% WoW) organic | 99,181 GSC impressions (-18.3% WoW)",
-    "All-other-pages organic clicks up +16.3% WoW with sessions nearly flat (-0.9%) \u2014 non-branded organic content is pulling in more search clicks without a proportional session lift, which may indicate users landing and bouncing quickly or AI previews partially satisfying intent before the click. Worth watching next week. Pricing GSC clicks down -13% while sessions are flat (-0.5%) \u2014 same AI-displacement pattern noted last week, persisting.",
-    "**New competitor activity**\n- **Optimizely** continued its vertical use-case content cluster this week with 13 more posts (financial services, healthcare, retail, B2B SaaS) \u2014 same campaign flagged last week, now clearly an ongoing coordinated push, not a one-off. GrowthBook still has no equivalent vertical-specific content. The window to counter-program before Optimizely owns these SERPs is narrowing.\n- **LaunchDarkly** published changelog entries for native **Databricks** and **Redshift** experimentation integrations \u2014 also flagged last week, but now confirmed live in the changelog. This is GrowthBook's warehouse-native positioning under direct attack and the content is now indexed.\n- **Harness** published two additional experimentation-focused assets: a blog on A/B testing at scale for platform teams and \"Experimentation Your Secret Weapon\" \u2014 consistent with last week's signal that Harness is leaning harder into experimentation as a primary use case, not just feature flags.\n- **PostHog** published two more community Q&A pages around experiment exposure issues (\"0 exposures\" in running and completed experiments). These will rank for frustrated PostHog users at a high-intent switcher moment GrowthBook is not positioned to intercept.\n- **Amplitude Experiment** published Flutter and React Native SDK docs for Guides and Surveys \u2014 lower direct threat but signals mobile SDK investment that could affect GrowthBook's mobile experiment story.",
-    "**New GrowthBook content**\n- 10 pages noticed this week via sitemap (all detected 2026-05-16, real publish dates unknown):\n  - **/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning** \u2014 differentiated thought-leadership angle on experimentation quality vs. velocity\n  - **/blog/experimentation-program-mistakes-to-avoid** \u2014 high-intent topic, potential to rank against similar Harness/Optimizely content\n  - **/blog/how-fanatics-made-experimentation-a-strategic-growth-driver** \u2014 customer story format, good for bottom-funnel trust\n  - **/blog/12-common-feature-flag-mistakes-to-avoid** (also noticed last week \u2014 now confirmed in this run)\n  - **/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained** (also from last week)\n  - **/blog/new-feature-save-time-with-automatic-metric-generation** (also from last week)\n  - **/guides/7-steps-to-better-experiment-design** (also from last week)\n  - **/guides/the-a-b-testing-playbook-for-al-powered-apps** (also from last week)\n  - **/insights/best-ab-testing-tools-developers** \u2014 new this week, targets a high-value developer audience directly\n  - **/blog/growthbook-version-2-4** \u2014 changelog/release post, minimal SEO value but now indexed\n- None have GSC data yet.",
-    "**Organic movers worth watching**\n- **\"launchdarkly business model b2b\"** at position 10.03 with 1,981 impressions \u2014 impressions nearly doubled from last week's 851. This query is surging in search volume and GrowthBook is one spot off page 1. **/compare/growthbook-vs-launchdarkly** at position 8.3 is the natural landing page; still only 3 clicks this week.\n- **\"/products/experiments\"** dropped from 13 clicks to 0 this week (-13 clicks). A product page going dark on organic is worth a quick crawl/indexation check.\n- **\"/blog/growthbook-version-4-3\"** gained 14 clicks WoW (1 to 15) \u2014 release posts occasionally catch organic traction; no action needed but positive signal.\n- **All-other-pages GSC clicks** up +16.3% WoW to 214 \u2014 best non-branded organic week in this reporting window. The new content published over the past two weeks is likely beginning to index.\n- **\"/compare/growthbook-vs-statsig\"** down from 5 to 1 click this week. At position 7.1 with 3,864 impressions over 28 days, this page should be converting more clicks \u2014 title/meta may need a refresh.",
-    "**Recommended actions**\n- **Prioritize 2-3 vertical use-case pages now:** Optimizely's campaign is confirmed multi-week and growing. Financial services and healthcare are the highest-threat gaps. Each week without a counter page is a week Optimizely builds domain authority on these queries.\n- **Publish a Databricks/Redshift experimentation content asset this week:** LaunchDarkly's changelog entries are now indexed. A blog post or comparison page targeting \"warehouse-native experimentation\" or \"Databricks A/B testing\" captures searches before LaunchDarkly's pages age into authority.\n- **Investigate /products/experiments indexation:** Zero clicks this week from 13 last week at a product page level is unusual. Confirm the page is crawlable and not accidentally noindexed after any recent site changes.\n- **Refresh /compare/growthbook-vs-statsig title and meta:** Position 7.1 with strong 28-day impression volume (3,864) but only 1 click this week. A more click-worthy title targeting \"Statsig vs GrowthBook\" head-on could recover the lost clicks quickly."
+    "Note: site performance numbers are identical to last week's payload \u2014 this appears to be the same GSC/GA4 snapshot. Flagged below under Data quality.",
+    "**New competitor activity**\n- **Optimizely** continues its vertical use-case content cluster \u2014 13 more posts detected this week (financial services homepage/mobile/offer, healthcare homepage, retail category/checkout/homepage/product/search/subscription, B2B SaaS homepage/landing/login). This campaign is now confirmed across three consecutive monitoring runs. Optimizely is methodically building page-level specificity (e.g., \"checkout page,\" \"login page\") that will rank for long-tail queries GrowthBook cannot intercept without equivalent content. The window to counter-program is closing.\n- **LaunchDarkly** published changelog entries for Databricks and Redshift native experimentation integrations (also detected last week, now confirmed re-appearing in this run). Additionally, a React SDK 4.0.0 changelog and a multi-SDK update signal active platform investment. Warehouse-native experimentation is now an explicit LD messaging pillar.\n- **Harness** published four assets this week: A/B testing at scale for platform teams, \"Experimentation Your Secret Weapon,\" a feature flag + pipelines resource, and an AI code sprawl / feature flag policies piece. Harness is broadening from CI/CD positioning into direct experimentation and feature flag messaging \u2014 overlap with GrowthBook's core ICP is increasing.\n- **PostHog** published two community Q&A pages around experiment exposure bugs (\"0 exposures\" in running and completed experiments) \u2014 same switcher-capture opportunity flagged last two weeks, still not intercepted by GrowthBook content.",
+    "**New GrowthBook content**\n- All 10 pages below were noticed via sitemap diff (detected 2026-05-16, real publish dates unknown). None have GSC data yet \u2014 too early to measure traction.\n  - **/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning** \u2014 differentiated thought-leadership angle\n  - **/blog/experimentation-program-mistakes-to-avoid** \u2014 high-intent topic, competes directly with Harness/Optimizely content\n  - **/blog/how-fanatics-made-experimentation-a-strategic-growth-driver** \u2014 customer story, good for bottom-funnel trust\n  - **/insights/best-ab-testing-tools-developers** \u2014 targets high-value developer audience\n  - **/guides/7-steps-to-better-experiment-design**, **/guides/the-a-b-testing-playbook-for-al-powered-apps**, **/blog/12-common-feature-flag-mistakes-to-avoid**, **/blog/a-practitioners-guide-to-treatment-effects-...**, **/blog/new-feature-save-time-with-automatic-metric-generation**, **/blog/growthbook-version-2-4**",
+    "**Organic movers worth watching**\n- **\"launchdarkly business model b2b\"** holding at position 10.03 with 1,981 impressions \u2014 impressions nearly doubled from two weeks ago (851) and held last week. **/compare/growthbook-vs-launchdarkly** at position 8.3 got only 3 clicks this week. Still the highest-impression striking-distance query and still not converting.\n- **\"experimentation platform\"** slipped to position 15.11 (was 13.1 two weeks ago, 15.1 last week) \u2014 moving in the wrong direction. At 431 impressions it remains worth defending.\n- **\"ab testing platform\"** at position 13.24 with 357 impressions \u2014 stable but still off page 1.\n- **\"a/b testing software\"** at position 14.55 with 321 impressions \u2014 new to striking distance this week, not in prior summaries.\n- **/compare/growthbook-vs-posthog** dropped from 2 clicks to 0 this week and sits at position 4.8 with only 550 impressions over 28 days \u2014 the page ranks well but impression volume is low, suggesting thin content or narrow keyword targeting.\n- **/products/experiments** still at 0 clicks (was flagged last week as a potential indexation issue \u2014 no resolution noted yet).",
+    "**Recommended actions**\n- **Publish at least one vertical use-case page this week (fintech or healthcare):** Optimizely's campaign has now appeared in three consecutive monitoring runs with 13+ posts each time. Every week without a GrowthBook equivalent is a week Optimizely ages into authority on these queries.\n- **Create a \"warehouse-native experimentation\" blog or comparison page targeting Databricks/Redshift:** LaunchDarkly's changelog entries are indexed and aging. A post targeting \"Databricks A/B testing\" or \"Redshift experimentation\" captures searches before LD builds authority. This action was recommended two weeks ago and is still outstanding.\n- **Investigate /products/experiments indexation \u2014 second week at 0 clicks:** Was at 13 clicks two weeks ago. Confirm the page is crawlable and not accidentally noindexed.\n- **Refresh /compare/growthbook-vs-launchdarkly title/H1 for \"launchdarkly business model b2b\":** 1,981 impressions at position 10.03 for the third consecutive week with minimal click conversion. A title targeting that query head-on is a low-effort move with meaningful upside.",
+    "**Data quality flags**\n- GSC page-split dates show period 2026-05-04 to 2026-05-10, and GA4 week shows 2026-05-09 to 2026-05-15 \u2014 both appear to be the same snapshot as last week's summary. Site performance numbers are identical. Treat this week's site metrics as a repeat, not new data, until confirmed otherwise."
   ],
   "content_recommendations": [
-    "1. Write 2-3 vertical use-case pages targeting \"A/B testing for financial services,\" \"A/B testing for healthcare,\" and \"experimentation for B2B SaaS\" \u2014 Optimizely has now published 13+ posts in this cluster across two consecutive weeks and GrowthBook has zero equivalent content. These are quick-win opportunities (composite score 75) before Optimizely locks up the SERPs.",
-    "2. Write a blog post targeting \"warehouse-native experimentation with Databricks\" or \"Redshift A/B testing\" \u2014 LaunchDarkly just published native Databricks and Redshift experimentation integration changelog entries that are now indexed, directly competing with GrowthBook's warehouse-native positioning.",
-    "3. Optimize /compare/growthbook-vs-launchdarkly for \"launchdarkly business model b2b\" \u2014 this query surged to 1,981 impressions this week (up from 851 last week) at position 10.03. A title/H1 refresh targeting that query on the comparison page could push it to page 1.",
-    "4. Expand /insights/best-ab-testing-tools-developers with deep technical comparisons and SDK code samples \u2014 this page was just added to the sitemap this week and targets a high-value developer audience that is GrowthBook's core buyer; getting the on-page content right now sets up indexation correctly from day one.",
-    "5. Write a \"GrowthBook vs PostHog experiment setup\" troubleshooting page \u2014 PostHog has now published multiple community Q&A pages around \"0 exposures\" experiment bugs. Frustrated PostHog users searching for fixes are a high-intent switcher audience GrowthBook can intercept with a targeted migration or comparison guide."
+    "1. Write a GrowthBook vertical use-case page for fintech/financial services A/B testing this week. Optimizely has published at least 3 financial-services-specific experimentation posts across two monitoring cycles \u2014 these will rank for queries like \"A/B testing for fintech\" before GrowthBook has any content in that space. Prioritize homepage, mobile, and offer-page angles to mirror Optimizely's exact URL structure and intercept the same queries.",
+    "2. Write a blog post targeting \"Databricks A/B testing\" or \"warehouse-native experimentation with Redshift.\" LaunchDarkly published native Databricks and Redshift experimentation changelog entries two weeks ago \u2014 those pages are now indexed and aging into authority. GrowthBook's warehouse-native story has no visible content asset capturing these searches. Recommended two weeks ago, still outstanding.",
+    "3. Optimize /compare/growthbook-vs-launchdarkly title and H1 for the query \"launchdarkly business model b2b\" (position 10.03, 1,981 impressions, third consecutive week in striking distance). The page is one position off page 1 and generating significant impressions with very few clicks. A targeted title refresh is the fastest path to page-1 placement on the highest-impression striking-distance query in this dataset.",
+    "4. Expand /compare/growthbook-vs-posthog with content targeting \"PostHog experiment 0 exposures\" and related setup troubleshooting queries. PostHog published two community Q&A pages on this exact issue. The compare page ranks at position 4.8 but generates only 550 impressions over 28 days \u2014 broadening its keyword surface with troubleshooting content would pull in frustrated PostHog users at a high-intent switcher moment.",
+    "5. Refresh /compare/growthbook-vs-statsig title and meta. Position 7.1 with 3,864 impressions over 28 days but only 1 click this week (down from 5). The impression volume is there \u2014 a more direct title (\"Statsig vs GrowthBook: Side-by-Side Comparison\") could recover click-through quickly."
   ],
   "opportunities": [
     {
@@ -3110,14 +3111,6 @@
       "date": "2026-05-16"
     },
     {
-      "competitor": "Amplitude Exp",
-      "slug": "overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/overview",
-      "threat": 7,
-      "kd": 30.0,
-      "date": "2026-05-16"
-    },
-    {
       "competitor": "PostHog",
       "slug": "error-tracking",
       "url": "https://posthog.com/blog/error-tracking",
@@ -3139,6 +3132,14 @@
       "url": "https://posthog.com/questions/idea-1",
       "threat": 7,
       "kd": 1.0,
+      "date": "2026-05-16"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "overview",
+      "url": "https://amplitude.com/docs/guides-and-surveys/overview",
+      "threat": 6,
+      "kd": 30.0,
       "date": "2026-05-16"
     },
     {
@@ -3191,14 +3192,6 @@
     },
     {
       "competitor": "Amplitude Exp",
-      "slug": "survey-overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/survey-overview",
-      "threat": 6,
-      "kd": 55.0,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "Amplitude Exp",
       "slug": "guides-and-surveys-flutter-sdk",
       "url": "https://amplitude.com/docs/sdks/guides-and-surveys/guides-and-surveys-flutter-sdk",
       "threat": 6,
@@ -3235,6 +3228,14 @@
       "url": "https://posthog.com/questions/hello-to-everybody",
       "threat": 6,
       "kd": 8.0,
+      "date": "2026-05-16"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "survey-overview",
+      "url": "https://amplitude.com/docs/guides-and-surveys/survey-overview",
+      "threat": 5,
+      "kd": 55.0,
       "date": "2026-05-16"
     },
     {
