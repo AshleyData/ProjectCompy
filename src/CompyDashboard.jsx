@@ -1187,9 +1187,13 @@ export default function CompyDashboard() {
           };
 
           const fourWkData = {
-            sessions: { pending: true },
+            sessions: d.ga4?.main_site?.sessions_4w != null
+              ? { value: d.ga4.main_site.sessions_4w.toLocaleString(), pct: d.ga4.main_site.sessions_4w_pct ?? null }
+              : { pending: true },
             branded:  { value: branded4wCur.toLocaleString(), pct: branded4wPct },
-            top10:    { pending: true },
+            top10:    sem.top10_count != null
+              ? { value: sem.top10_count.toLocaleString(), pct: sem.top10_mom ?? null }
+              : { pending: true },
             signups:  { pending: true },
             sov:      { value: `${aeo.share_of_voice}%`, pct: aeo4wMom.sov,      sample: aeoIsSample },
             mention:  { value: `${aeo.mention_rate}%`,   pct: aeo4wMom.mention,  sample: aeoIsSample },

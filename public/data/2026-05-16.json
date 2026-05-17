@@ -4015,7 +4015,9 @@
           "sessions": 2
         }
       ],
-      "snapshot_date": "2026-05-16"
+      "snapshot_date": "2026-05-16",
+      "sessions_4w": 49174,
+      "sessions_4w_pct": null
     },
     "docs": {
       "sessions": 4478,
