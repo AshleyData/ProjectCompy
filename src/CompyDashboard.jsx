@@ -1088,7 +1088,7 @@ export default function CompyDashboard() {
             is_sample: true, history: [],
           };
           const aeoIsSample = !d.athenahq;
-          const sem = d.semrush || {};
+          const sem = d.keyword_rankings || {};
           const hw = d.homepage_weekly || [];
 
           // 4-week branded clicks from homepage_weekly (last 4 vs prior 4)
@@ -1312,7 +1312,7 @@ export default function CompyDashboard() {
               ) : (sem.top10_keywords || []).length > 0 ? (
                 <>
                   <p style={{ fontSize: 12, color: C.muted, marginBottom: 10 }}>
-                    Showing all {sem.top10_keywords.length} current top-10 keywords. Week-over-week "new" tracking starts after the second SEMrush snapshot.
+                    Showing all {sem.top10_keywords.length} current top-10 keywords. Week-over-week "new" tracking starts after the second snapshot.
                   </p>
                   <Table
                     headers={["Position", "Keyword", "Search Volume", "URL"]}
@@ -1330,14 +1330,14 @@ export default function CompyDashboard() {
                   />
                 </>
               ) : (
-                <p style={{ fontSize: 13, color: C.muted }}>No keyword data yet — SEMrush snapshot pending.</p>
+                <p style={{ fontSize: 13, color: C.muted }}>No keyword data available yet.</p>
               )}
             </Section>
 
             <p style={{ fontSize: 11, color: "#888", marginTop: 16, paddingTop: 8, borderTop: "1px solid #333", textAlign: "left" }}>
               📅 GA4: {d.ga4?.main_site?.week_start || "—"} – {d.ga4?.main_site?.week_end || "—"} ·
               GSC: {d.gsc?.week_start || "—"} – {d.gsc?.week_end || "—"} ·
-              SEMrush: {sem.snapshot_date || "—"} · AEO: {aeoIsSample ? "sample (Apr 2026)" : "live"}
+              Keywords: {sem.snapshot_date || "—"} · AEO: {aeoIsSample ? "sample (Apr 2026)" : "live"}
             </p>
           </>);
         })()}
