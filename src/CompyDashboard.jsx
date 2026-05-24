@@ -1163,7 +1163,7 @@ export default function CompyDashboard() {
 
           // ── 7 metric definitions (used across all sections) ────────
           const SEO_METRICS = [
-            { id:"sessions", label:"Organic Sessions",    color: C.accent },
+            { id:"sessions", label:"Organic + AI Sessions", color: C.accent },
             { id:"branded",  label:"Branded Clicks",      color: C.success },
             { id:"top10",    label:"Top 10 Keywords",     color: "#8B4513" },
             { id:"signups",  label:"Organic Sign-ups",    color: "#6A5ACD" },
@@ -1177,7 +1177,7 @@ export default function CompyDashboard() {
 
           // ── Per-metric data for each section ───────────────────────
           const wowData = {
-            sessions: { value: (d.ga4?.main_site?.sessions ?? 0).toLocaleString(), pct: d.ga4?.main_site?.wow_sessions_pct },
+            sessions: { value: (d.ga4?.main_site?.organic_sessions ?? d.ga4?.main_site?.sessions ?? 0).toLocaleString(), pct: d.ga4?.main_site?.organic_sessions_wow_pct ?? d.ga4?.main_site?.wow_sessions_pct },
             branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
             top10:    { value: sem.top10_count ?? "—", pct: sem.top10_mom ?? null },
             signups:  { pending: true },
@@ -1187,7 +1187,9 @@ export default function CompyDashboard() {
           };
 
           const fourWkData = {
-            sessions: d.ga4?.main_site?.sessions_4w != null
+            sessions: d.ga4?.main_site?.organic_sessions_4w != null
+              ? { value: d.ga4.main_site.organic_sessions_4w.toLocaleString(), pct: d.ga4.main_site.organic_sessions_4w_pct ?? null }
+              : d.ga4?.main_site?.sessions_4w != null
               ? { value: d.ga4.main_site.sessions_4w.toLocaleString(), pct: d.ga4.main_site.sessions_4w_pct ?? null }
               : { pending: true },
             branded:  { value: branded4wCur.toLocaleString(), pct: branded4wPct },
