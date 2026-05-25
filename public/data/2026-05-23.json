@@ -4250,6 +4250,10 @@
         }
       ],
       "snapshot_date": "2026-05-23",
+      "organic_sessions": 6958,
+      "organic_sessions_wow_pct": 53.8,
+      "organic_sessions_4w": 21689,
+      "organic_sessions_4w_pct": 18.7,
       "sessions_4w": 51782,
       "sessions_4w_pct": 16.5
     },
@@ -6128,7 +6132,7 @@
       }
     ]
   },
-  "semrush": {
+  "keyword_rankings": {
     "snapshot_date": "2026-05-23",
     "top3_count": 21,
     "top10_count": 94,

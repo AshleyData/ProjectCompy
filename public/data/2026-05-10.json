@@ -2183,7 +2183,7 @@
     },
     {
       "week": "2026-05-04",
-      "clicks": 1803
+      "clicks": 1995
     }
   ],
   "competitors": [
@@ -2313,6 +2313,14 @@
       {
         "date": "2026-05-10",
         "etv": 118893
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 117922
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 127998
       }
     ],
     "Eppo": [
@@ -2359,6 +2367,14 @@
       {
         "date": "2026-05-10",
         "etv": 9062
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 9035
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 8849
       }
     ],
     "Flagsmith": [
@@ -2405,6 +2421,14 @@
       {
         "date": "2026-05-10",
         "etv": 1129
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 1111
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 819
       }
     ],
     "GrowthBook": [
@@ -2451,6 +2475,14 @@
       {
         "date": "2026-05-10",
         "etv": 727
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 722
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 1755
       }
     ],
     "Harness": [
@@ -2497,6 +2529,14 @@
       {
         "date": "2026-05-10",
         "etv": 83620
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 82980
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 80755
       }
     ],
     "LaunchDarkly": [
@@ -2543,6 +2583,14 @@
       {
         "date": "2026-05-10",
         "etv": 14648
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 14640
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 14612
       }
     ],
     "Optimizely": [
@@ -2589,6 +2637,14 @@
       {
         "date": "2026-05-10",
         "etv": 266493
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 265887
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 261898
       }
     ],
     "PostHog": [
@@ -2635,6 +2691,14 @@
       {
         "date": "2026-05-10",
         "etv": 7802
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 7649
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 6908
       }
     ],
     "Statsig": [
@@ -2681,6 +2745,14 @@
       {
         "date": "2026-05-10",
         "etv": 132749
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 130484
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 157136
       }
     ],
     "Unleash": [
@@ -2727,6 +2799,14 @@
       {
         "date": "2026-05-10",
         "etv": 2496
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 2485
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 1668
       }
     ]
   },
@@ -3975,7 +4055,13 @@
           "sessions": 2
         }
       ],
-      "snapshot_date": "2026-05-10"
+      "snapshot_date": "2026-05-10",
+      "organic_sessions": 5092,
+      "organic_sessions_wow_pct": -0.5,
+      "organic_sessions_4w": 19892,
+      "organic_sessions_4w_pct": null,
+      "sessions_4w": 48170,
+      "sessions_4w_pct": null
     },
     "docs": {
       "sessions": 4862,
@@ -5868,480 +5954,559 @@
       }
     ]
   },
-  "semrush": {
-    "snapshot_date": "2026-05-14",
-    "top3_count": 18,
-    "top10_count": 73,
-    "top20_count": 254,
-    "total_tracked": 1203,
-    "top10_mom": null,
-    "prev_snapshot_date": null,
-    "new_top10": [],
-    "top10_keywords": [
+  "keyword_rankings": {
+    "snapshot_date": "2026-05-10",
+    "top3_count": 17,
+    "top10_count": 84,
+    "top20_count": 210,
+    "total_tracked": 687,
+    "top10_mom": -15.2,
+    "new_top10": [
       {
-        "keyword": "growthbook",
-        "position": 1,
-        "search_volume": 1600,
-        "url": ""
+        "keyword": "ab testing software",
+        "position": 8,
+        "prev_position": null,
+        "search_volume": 390
       },
+      {
+        "keyword": "toggle hat",
+        "position": 2,
+        "prev_position": null,
+        "search_volume": 30
+      },
+      {
+        "keyword": "hypothesis generation",
+        "position": 10,
+        "prev_position": null,
+        "search_volume": 170
+      },
+      {
+        "keyword": "cloudflare edge workers",
+        "position": 8,
+        "prev_position": null,
+        "search_volume": 40
+      },
+      {
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "prev_position": null,
+        "search_volume": 30
+      },
+      {
+        "keyword": "a decision based on the data from an experiment",
+        "position": 10,
+        "prev_position": null,
+        "search_volume": 40
+      }
+    ],
+    "top10_keywords": [
       {
         "keyword": "growth book",
         "position": 1,
-        "search_volume": 480,
-        "url": ""
+        "search_volume": 2400,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "grossbook",
+        "position": 1,
+        "search_volume": 140,
+        "url": "https://www.growthbook.io/"
       },
       {
         "keyword": "growthbook pricing",
         "position": 1,
-        "search_volume": 70,
-        "url": ""
+        "search_volume": 50,
+        "url": "https://www.growthbook.io/pricing"
       },
       {
-        "keyword": "growthbook pricing tiers",
+        "keyword": "keep calm and test on",
         "position": 1,
         "search_volume": 50,
-        "url": ""
+        "url": "https://shop.growthbook.io/products/keep-calm-and-test-on-t-shirt"
       },
       {
-        "keyword": "a/b testing tools with feature flags",
-        "position": 1,
-        "search_volume": 140,
-        "url": ""
-      },
-      {
-        "keyword": "a/b testing documentation",
+        "keyword": "growthbook api",
         "position": 1,
         "search_volume": 40,
-        "url": ""
+        "url": "https://docs.growthbook.io/api/"
       },
       {
-        "keyword": "growthbook logo",
+        "keyword": "growthbook docs",
         "position": 1,
         "search_volume": 40,
-        "url": ""
+        "url": "https://docs.growthbook.io/"
       },
       {
-        "keyword": "what are some alternatives to growthbook",
+        "keyword": "growthbook io",
+        "position": 1,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "open source a b testing",
+        "position": 1,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "open source ab testing",
+        "position": 1,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "table of metrics",
         "position": 2,
-        "search_volume": 140,
-        "url": ""
+        "search_volume": 2400,
+        "url": "https://docs.growthbook.io/app/metrics"
       },
       {
-        "keyword": "a/b testing open source",
-        "position": 2,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "growthbook alternatives for experimentation",
+        "keyword": "experiment templates",
         "position": 2,
         "search_volume": 70,
-        "url": ""
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
       },
       {
         "keyword": "growthbook github",
         "position": 2,
         "search_volume": 40,
-        "url": ""
+        "url": "https://www.growthbook.io/"
       },
       {
-        "keyword": "tools for a/b testing and feature flags",
+        "keyword": "toggle hat",
         "position": 2,
-        "search_volume": 40,
-        "url": ""
-      },
-      {
-        "keyword": "ai for a/b testing tutorial",
-        "position": 2,
-        "search_volume": 40,
-        "url": ""
+        "search_volume": 30,
+        "url": "https://shop.growthbook.io/products/toggle-dad-hat"
       },
       {
         "keyword": "clarity heatmaps",
-        "position": 2,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "a/b testing ai news",
-        "position": 2,
-        "search_volume": 40,
-        "url": ""
-      },
-      {
-        "keyword": "best open-source experimentation platforms",
         "position": 3,
-        "search_volume": 40,
-        "url": ""
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/integrations/clarity"
       },
       {
-        "keyword": "a/b test platform",
+        "keyword": "holdout test",
         "position": 3,
-        "search_volume": 30,
-        "url": ""
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/kb/experiments/holdouts"
+      },
+      {
+        "keyword": "holdout testing",
+        "position": 3,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/kb/experiments/holdouts"
       },
       {
         "keyword": "novelty effect ab testing",
         "position": 3,
-        "search_volume": 30,
-        "url": ""
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/using/fundamentals"
       },
       {
-        "keyword": "feature flagging news today",
+        "keyword": "metrics table",
         "position": 4,
-        "search_volume": 40,
-        "url": ""
+        "search_volume": 2400,
+        "url": "https://docs.growthbook.io/app/metrics"
       },
       {
-        "keyword": "a/b testing terminology",
+        "keyword": "a/b testing platforms",
         "position": 4,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "filter flags",
-        "position": 4,
-        "search_volume": 40,
-        "url": ""
-      },
-      {
-        "keyword": "fully managed alternatives to growthbook",
-        "position": 4,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "web ab testing tools",
-        "position": 4,
-        "search_volume": 30,
-        "url": ""
-      },
-      {
-        "keyword": "ab testing platform",
-        "position": 5,
         "search_volume": 210,
-        "url": ""
+        "url": "https://www.growthbook.io/"
       },
       {
-        "keyword": "split.io holdout group",
+        "keyword": "quantile test",
+        "position": 4,
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/statistics/quantile"
+      },
+      {
+        "keyword": "novelty effect a/b testing",
+        "position": 4,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/using/fundamentals"
+      },
+      {
+        "keyword": "a a testing",
         "position": 5,
-        "search_volume": 40,
-        "url": ""
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/kb/experiments/aa-tests"
+      },
+      {
+        "keyword": "what role do feedback loops play in agentic ai systems",
+        "position": 5,
+        "search_volume": 320,
+        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/"
+      },
+      {
+        "keyword": "experiment result",
+        "position": 5,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/app/experiment-results"
+      },
+      {
+        "keyword": "experiment template",
+        "position": 5,
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "flags filter",
+        "position": 5,
+        "search_volume": 70,
+        "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/"
       },
       {
         "keyword": "segment event tracker",
         "position": 5,
-        "search_volume": 30,
-        "url": ""
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/event-trackers/segment"
       },
       {
-        "keyword": "cuped",
-        "position": 6,
-        "search_volume": 1000,
-        "url": ""
+        "keyword": "open source a/b testing",
+        "position": 5,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
       },
       {
         "keyword": "a/b testing software",
         "position": 6,
-        "search_volume": 480,
-        "url": ""
-      },
-      {
-        "keyword": "experimentation platform",
-        "position": 6,
-        "search_volume": 110,
-        "url": ""
-      },
-      {
-        "keyword": "need something like growthbook but fully managed",
-        "position": 6,
-        "search_volume": 90,
-        "url": ""
-      },
-      {
-        "keyword": "clarity heatmap",
-        "position": 6,
-        "search_volume": 70,
-        "url": ""
-      },
-      {
-        "keyword": "what role do feedback loops play in agentic ai systems",
-        "position": 6,
-        "search_volume": 90,
-        "url": ""
-      },
-      {
-        "keyword": "sequential testing ab test",
-        "position": 6,
-        "search_volume": 30,
-        "url": ""
-      },
-      {
-        "keyword": "alternatives to growthbook for feature flagging and experimentation",
-        "position": 6,
-        "search_volume": 40,
-        "url": ""
-      },
-      {
-        "keyword": "how to use ai for ab test",
-        "position": 6,
-        "search_volume": 40,
-        "url": ""
-      },
-      {
-        "keyword": "experiment template",
-        "position": 7,
-        "search_volume": 90,
-        "url": ""
-      },
-      {
-        "keyword": "multiple testing correction",
-        "position": 7,
-        "search_volume": 90,
-        "url": ""
-      },
-      {
-        "keyword": "open source feature flagging platforms",
-        "position": 7,
-        "search_volume": 90,
-        "url": ""
-      },
-      {
-        "keyword": "feature flags vs separate tools for a/b testing",
-        "position": 7,
-        "search_volume": 70,
-        "url": ""
-      },
-      {
-        "keyword": "ai ab testing",
-        "position": 7,
-        "search_volume": 210,
-        "url": ""
-      },
-      {
-        "keyword": "aggregation statistics",
-        "position": 7,
-        "search_volume": 70,
-        "url": ""
+        "search_volume": 390,
+        "url": "https://www.growthbook.io/"
       },
       {
         "keyword": "a/a testing",
-        "position": 7,
-        "search_volume": 90,
-        "url": ""
+        "position": 6,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/kb/experiments/aa-tests"
       },
       {
-        "keyword": "segment event tracking",
-        "position": 7,
-        "search_volume": 40,
-        "url": ""
+        "keyword": "aa testing",
+        "position": 6,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/kb/experiments/aa-tests"
+      },
+      {
+        "keyword": "a/b testing platform",
+        "position": 6,
+        "search_volume": 210,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "experiment results",
+        "position": 6,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/app/experiment-results"
       },
       {
         "keyword": "experimentation template",
-        "position": 7,
+        "position": 6,
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "filter flag",
+        "position": 6,
+        "search_volume": 70,
+        "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/"
+      },
+      {
+        "keyword": "cuped meaning",
+        "position": 6,
         "search_volume": 50,
-        "url": ""
+        "url": "https://docs.growthbook.io/statistics/cuped"
       },
       {
-        "keyword": "what are bandits",
+        "keyword": "the growth book",
+        "position": 6,
+        "search_volume": 30,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "ferretdb",
+        "position": 7,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/self-host/ferretdb?ref=blog.growthbook.io"
+      },
+      {
+        "keyword": "code references",
+        "position": 7,
+        "search_volume": 260,
+        "url": "https://docs.growthbook.io/features/code-references"
+      },
+      {
+        "keyword": "experiments results",
+        "position": 7,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/app/experiment-results"
+      },
+      {
+        "keyword": "open source feature flags",
+        "position": 7,
+        "search_volume": 140,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "ab testing book",
+        "position": 7,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "experiment key",
+        "position": 7,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/app/experiment-configuration"
+      },
+      {
+        "keyword": "sequential test",
         "position": 8,
-        "search_volume": 90,
-        "url": ""
+        "search_volume": 880,
+        "url": "https://docs.growthbook.io/statistics/sequential"
       },
       {
-        "keyword": "experim",
+        "keyword": "metric example",
+        "position": 8,
+        "search_volume": 720,
+        "url": "https://docs.growthbook.io/app/metrics/examples"
+      },
+      {
+        "keyword": "ab testing software",
+        "position": 8,
+        "search_volume": 390,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "growth io",
         "position": 8,
         "search_volume": 320,
-        "url": ""
+        "url": "https://www.growthbook.io/"
       },
       {
-        "keyword": "experiment platform news",
+        "keyword": "redirect testing",
+        "position": 8,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/app/url-redirects"
+      },
+      {
+        "keyword": "design of experiments templates",
+        "position": 8,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "experimentation platform",
         "position": 8,
         "search_volume": 90,
-        "url": ""
-      },
-      {
-        "keyword": "teste a/b",
-        "position": 8,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "how to set up a/b test for prompt variations",
-        "position": 8,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "segment track",
-        "position": 8,
-        "search_volume": 70,
-        "url": ""
-      },
-      {
-        "keyword": "segment events",
-        "position": 8,
-        "search_volume": 70,
-        "url": ""
+        "url": "https://www.growthbook.io/"
       },
       {
         "keyword": "feature flag open source",
         "position": 8,
-        "search_volume": 170,
-        "url": ""
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
       },
       {
-        "keyword": "open source feature flagging",
+        "keyword": "feature flags open source",
+        "position": 8,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "hold out testing",
+        "position": 8,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/kb/experiments/holdouts"
+      },
+      {
+        "keyword": "what is multi-armed bandit",
+        "position": 8,
+        "search_volume": 50,
+        "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/"
+      },
+      {
+        "keyword": "a/b testing book",
+        "position": 8,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "ab test book",
+        "position": 8,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "cloudflare edge workers",
+        "position": 8,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/lib/edge/cloudflare"
+      },
+      {
+        "keyword": "golang gb",
         "position": 8,
         "search_volume": 30,
-        "url": ""
+        "url": "https://docs.growthbook.io/lib/go"
       },
       {
-        "keyword": "buying test data infrastructure",
+        "keyword": "multiple correction",
         "position": 8,
-        "search_volume": 40,
-        "url": ""
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
       },
       {
-        "keyword": "how to use ai for a/b testing statistics",
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/"
+      },
+      {
+        "keyword": "fdr vs fwer",
+        "position": 8,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "segment track event",
+        "position": 8,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/event-trackers/segment"
+      },
+      {
+        "keyword": "sequential testing",
         "position": 9,
-        "search_volume": 40,
-        "url": ""
+        "search_volume": 880,
+        "url": "https://docs.growthbook.io/statistics/sequential"
       },
       {
-        "keyword": "feature flag release",
+        "keyword": "multiple comparisons problem",
         "position": 9,
-        "search_volume": 70,
-        "url": ""
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
       },
       {
-        "keyword": "opstart case study",
+        "keyword": "multiple testing problem",
         "position": 9,
-        "search_volume": 50,
-        "url": ""
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
       },
       {
-        "keyword": "best generative ai optimization techniques 2025",
-        "position": 10,
-        "search_volume": 590,
-        "url": ""
-      },
-      {
-        "keyword": "a/b testing data science",
-        "position": 10,
+        "keyword": "ab testing platform",
+        "position": 9,
         "search_volume": 210,
-        "url": ""
+        "url": "https://www.growthbook.io/"
       },
       {
-        "keyword": "feature flag platform news today",
-        "position": 10,
+        "keyword": "multiple testing correction",
+        "position": 9,
         "search_volume": 140,
-        "url": ""
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
       },
       {
-        "keyword": "model a/b testing",
+        "keyword": "open source feature flag",
+        "position": 9,
+        "search_volume": 140,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "a/b testing books",
+        "position": 9,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "data hat",
+        "position": 9,
+        "search_volume": 40,
+        "url": "https://shop.growthbook.io/products/data-driven-dad-hat-baseball-cap"
+      },
+      {
+        "keyword": "manage webhooks discord",
+        "position": 9,
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/integrations/discord"
+      },
+      {
+        "keyword": "lambda edge environment variables",
+        "position": 9,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/lib/edge/lambda"
+      },
+      {
+        "keyword": "lambda-edge environment variables",
+        "position": 9,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/lib/edge/lambda"
+      },
+      {
+        "keyword": "code reference",
+        "position": 10,
+        "search_volume": 260,
+        "url": "https://docs.growthbook.io/features/code-references"
+      },
+      {
+        "keyword": "hypothesis generation",
+        "position": 10,
+        "search_volume": 170,
+        "url": "https://www.growthbook.io/blog/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator/"
+      },
+      {
+        "keyword": "ab testing guide",
+        "position": 10,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "feature flags open-source",
+        "position": 10,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "sql templates",
+        "position": 10,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/app/sql-templates"
+      },
+      {
+        "keyword": "multiple test correction",
         "position": 10,
         "search_volume": 50,
-        "url": ""
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
       },
       {
-        "keyword": "ai for ab testing",
+        "keyword": "a decision based on the data from an experiment",
         "position": 10,
         "search_volume": 40,
-        "url": ""
+        "url": "https://docs.growthbook.io/app/experiment-decisions"
       },
       {
-        "keyword": "segment event",
+        "keyword": "feature flag benefits",
         "position": 10,
         "search_volume": 30,
-        "url": ""
+        "url": "https://blog.growthbook.io/what-are-feature-flags/"
       },
       {
-        "keyword": "technical geo",
-        "position": 10,
-        "search_volume": 110,
-        "url": ""
-      },
-      {
-        "keyword": "how to integrate feature flags with a/b testing",
-        "position": 10,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "optimizely vs",
+        "keyword": "feature flags benefits",
         "position": 10,
         "search_volume": 30,
-        "url": ""
+        "url": "https://blog.growthbook.io/what-are-feature-flags/"
       },
       {
-        "keyword": "a/b testing tutorial",
+        "keyword": "how can an experiment be improved",
         "position": 10,
-        "search_volume": 70,
-        "url": ""
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/"
       },
       {
-        "keyword": "best feature flag management and experimentation tools 2025",
+        "keyword": "p-value a/b testing",
         "position": 10,
-        "search_volume": 40,
-        "url": ""
-      },
-      {
-        "keyword": "mab testing",
-        "position": 10,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "a/b testing means",
-        "position": 10,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "a a test",
-        "position": 10,
-        "search_volume": 50,
-        "url": ""
-      },
-      {
-        "keyword": "multiple comparison correction",
-        "position": 10,
-        "search_volume": 140,
-        "url": ""
-      },
-      {
-        "keyword": "best feature flags for typescript",
-        "position": 10,
-        "search_volume": 50,
-        "url": ""
-      }
-    ]
-  },
-  "athenahq": {
-    "share_of_voice": 10.6,
-    "share_of_voice_mom": 0.9,
-    "mention_rate": 25.8,
-    "mention_rate_mom": 3.2,
-    "citation_rate": 7.0,
-    "citation_rate_mom": 2.4,
-    "is_sample": false,
-    "history": [
-      {
-        "month": "2026-04-17",
-        "share_of_voice": 9.7,
-        "mention_rate": 22.6,
-        "citation_rate": 4.6
-      },
-      {
-        "month": "2026-05-01",
-        "share_of_voice": 10.6,
-        "mention_rate": 25.8,
-        "citation_rate": 7.0
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/using/fundamentals"
       }
     ],
-    "period_start": "2026-04-09",
-    "period_end": "2026-05-14",
-    "snapshot_date": "2026-05-14"
-  }
+    "prev_snapshot_date": "2026-04-18",
+    "source": "dataforseo"
+  },
+  "athenahq": null
 }

@@ -347,7 +347,7 @@
   ],
   "gb_pages": [
     {
-      "url": "https://www.growthbook.io/",
+      "url": "https://www.growthbook.io",
       "clicks": 9014,
       "impressions": 79869,
       "avg_position": 11.2,
@@ -368,28 +368,35 @@
       "ctr": 0.004457321149988857
     },
     {
-      "url": "https://blog.growthbook.io/what-is-a-b-testing/",
+      "url": "https://www.growthbook.io/blog/what-is-a-b-testing",
       "clicks": 32,
       "impressions": 55974,
       "avg_position": 8.6,
       "ctr": 0.0005716940007860793
     },
     {
-      "url": "https://blog.growthbook.io/what-are-feature-flags/",
+      "url": "https://www.growthbook.io/blog/what-are-feature-flags",
       "clicks": 31,
-      "impressions": 39398,
+      "impressions": 39456,
       "avg_position": 9.85,
-      "ctr": 0.000786841971673689
+      "ctr": 0.0007856853203568532,
+      "merged_from": [
+        "https://www.growthbook.io/blog/what-are-feature-flags",
+        "https://blog.growthbook.io/what-are-feature-flags",
+        "https://blog.growthbook.io/what-are-feature-flags/#3-flag-evaluation",
+        "https://blog.growthbook.io/what-are-feature-flags/#by-purpose",
+        "https://blog.growthbook.io/what-are-feature-flags/#by-time-span"
+      ]
     },
     {
-      "url": "https://blog.growthbook.io/a-b-testing-in-the-age-of-ai/",
+      "url": "https://www.growthbook.io/blog/a-b-testing-in-the-age-of-ai",
       "clicks": 26,
       "impressions": 12833,
       "avg_position": 7.75,
       "ctr": 0.0020260266500428583
     },
     {
-      "url": "https://blog.growthbook.io/how-a-team-of-4-used-a-b-testing-to-help-fyxer-grow-from-1m-to-35m-arr-in-1-year/",
+      "url": "https://www.growthbook.io/blog/how-a-team-of-4-used-a-b-testing-to-help-fyxer-grow-from-1m-to-35m-arr-in-1-year",
       "clicks": 19,
       "impressions": 656,
       "avg_position": 5.84,
@@ -410,7 +417,7 @@
       "ctr": 0.001715102429728442
     },
     {
-      "url": "https://blog.growthbook.io/",
+      "url": "https://www.growthbook.io/blog",
       "clicks": 17,
       "impressions": 2726,
       "avg_position": 3.32,
@@ -438,7 +445,7 @@
       "ctr": 0.012167300380228136
     },
     {
-      "url": "https://growthbook.io/",
+      "url": "https://growthbook.io",
       "clicks": 15,
       "impressions": 13223,
       "avg_position": 8.54,
@@ -452,7 +459,7 @@
       "ctr": 0.014272121788772598
     },
     {
-      "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/",
+      "url": "https://www.growthbook.io/blog/7-steps-to-better-experiment-design",
       "clicks": 13,
       "impressions": 4029,
       "avg_position": 8.1,
@@ -466,14 +473,14 @@
       "ctr": 0.0022052586938083123
     },
     {
-      "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/",
+      "url": "https://www.growthbook.io/blog/feedback-loops-are-the-next-breakthrough-in-agentic-coding",
       "clicks": 12,
       "impressions": 2925,
       "avg_position": 7.31,
       "ctr": 0.0041025641025641026
     },
     {
-      "url": "https://trust.growthbook.io/",
+      "url": "https://trust.growthbook.io",
       "clicks": 12,
       "impressions": 720,
       "avg_position": 4.74,
@@ -494,28 +501,28 @@
       "ctr": 0.01288056206088993
     },
     {
-      "url": "https://blog.growthbook.io/ai-evals-vs-a-b-testing-why-you-need-both-to-ship-genai/",
+      "url": "https://www.growthbook.io/blog/ai-evals-vs-a-b-testing-why-you-need-both-to-ship-genai",
       "clicks": 10,
       "impressions": 6396,
       "avg_position": 6.72,
       "ctr": 0.0015634771732332708
     },
     {
-      "url": "https://blog.growthbook.io/how-khan-academy-optimizes-ai-tutoring-with-experimentation/",
+      "url": "https://www.growthbook.io/blog/how-khan-academy-optimizes-ai-tutoring-with-experimentation",
       "clicks": 9,
       "impressions": 7370,
       "avg_position": 6.09,
       "ctr": 0.0012211668928086838
     },
     {
-      "url": "https://blog.growthbook.io/the-benchmarks-are-lying/",
+      "url": "https://www.growthbook.io/blog/the-benchmarks-are-lying",
       "clicks": 9,
       "impressions": 3445,
       "avg_position": 6.66,
       "ctr": 0.0026124818577648768
     },
     {
-      "url": "https://blog.growthbook.io/type-safe-feature-flags-in-react/",
+      "url": "https://www.growthbook.io/blog/type-safe-feature-flags-in-react",
       "clicks": 9,
       "impressions": 2039,
       "avg_position": 9.16,
@@ -529,32 +536,36 @@
       "ctr": 0.0020233812949640288
     },
     {
-      "url": "https://blog.growthbook.io/client-side-feature-flagging/",
+      "url": "https://www.growthbook.io/blog/client-side-feature-flagging",
       "clicks": 8,
       "impressions": 1425,
       "avg_position": 7.58,
       "ctr": 0.005614035087719298
     },
     {
-      "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/",
+      "url": "https://www.growthbook.io/blog/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it",
       "clicks": 8,
       "impressions": 3293,
       "avg_position": 9.22,
       "ctr": 0.0024293956878226543
     },
     {
-      "url": "https://blog.growthbook.io/holdouts-in-growthbook/",
+      "url": "https://www.growthbook.io/blog/holdouts-in-growthbook",
       "clicks": 8,
       "impressions": 2787,
       "avg_position": 7.0,
       "ctr": 0.0028704700394689632
     },
     {
-      "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide/",
+      "url": "https://www.growthbook.io/blog/how-to-a-b-test-ai-a-practical-guide",
       "clicks": 8,
-      "impressions": 8142,
+      "impressions": 8143,
       "avg_position": 6.28,
-      "ctr": 0.0009825595676737902
+      "ctr": 0.0009824389045806213,
+      "merged_from": [
+        "https://www.growthbook.io/blog/how-to-a-b-test-ai-a-practical-guide",
+        "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide"
+      ]
     },
     {
       "url": "https://www.growthbook.io/ab-testing-for-engineers",
@@ -578,28 +589,28 @@
       "ctr": 0.016771488469601678
     },
     {
-      "url": "https://blog.growthbook.io/5-ways-to-use-feature-flags-for-smarter-releases/",
+      "url": "https://www.growthbook.io/blog/5-ways-to-use-feature-flags-for-smarter-releases",
       "clicks": 7,
       "impressions": 3635,
       "avg_position": 8.32,
       "ctr": 0.0019257221458046766
     },
     {
-      "url": "https://blog.growthbook.io/better-visual-editor-experiments/",
+      "url": "https://www.growthbook.io/blog/better-visual-editor-experiments",
       "clicks": 7,
       "impressions": 450,
       "avg_position": 6.18,
       "ctr": 0.015555555555555555
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-4-0/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-4-0",
       "clicks": 7,
       "impressions": 1097,
       "avg_position": 6.56,
       "ctr": 0.006381039197812215
     },
     {
-      "url": "https://blog.growthbook.io/introducing-multi-armed-bandits-in-growthbook/",
+      "url": "https://www.growthbook.io/blog/introducing-multi-armed-bandits-in-growthbook",
       "clicks": 7,
       "impressions": 704,
       "avg_position": 6.55,
@@ -620,49 +631,49 @@
       "ctr": 0.0109717868338558
     },
     {
-      "url": "https://blog.growthbook.io/bayesian-model-updates-in-growthbook-3-0/",
+      "url": "https://www.growthbook.io/blog/bayesian-model-updates-in-growthbook-3-0",
       "clicks": 6,
       "impressions": 309,
       "avg_position": 6.93,
       "ctr": 0.019417475728155338
     },
     {
-      "url": "https://blog.growthbook.io/changing-running-experiments-safely-and-flexibly-in-growthbook/",
+      "url": "https://www.growthbook.io/blog/changing-running-experiments-safely-and-flexibly-in-growthbook",
       "clicks": 6,
       "impressions": 332,
       "avg_position": 6.28,
       "ctr": 0.018072289156626505
     },
     {
-      "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/",
+      "url": "https://www.growthbook.io/blog/find-flags-faster-with-search-filters",
       "clicks": 6,
       "impressions": 288,
       "avg_position": 8.62,
       "ctr": 0.020833333333333332
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-4-3/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-4-3",
       "clicks": 6,
       "impressions": 1865,
       "avg_position": 5.64,
       "ctr": 0.0032171581769436996
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging/",
+      "url": "https://www.growthbook.io/blog/growthbook-vs-launchdarkly-why-developers-choose-growthbook-for-feature-flagging",
       "clicks": 6,
       "impressions": 7321,
       "avg_position": 8.07,
       "ctr": 0.0008195601693757683
     },
     {
-      "url": "https://blog.growthbook.io/introducing-the-first-mcp-server-for-experimentation-and-feature-management/",
+      "url": "https://www.growthbook.io/blog/introducing-the-first-mcp-server-for-experimentation-and-feature-management",
       "clicks": 6,
       "impressions": 1838,
       "avg_position": 6.16,
       "ctr": 0.003264417845484222
     },
     {
-      "url": "https://shop.growthbook.io/",
+      "url": "https://shop.growthbook.io",
       "clicks": 6,
       "impressions": 563,
       "avg_position": 4.91,
@@ -690,21 +701,21 @@
       "ctr": 0.001032169275761225
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-4-1/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-4-1",
       "clicks": 5,
       "impressions": 1431,
       "avg_position": 7.26,
       "ctr": 0.0034940600978336828
     },
     {
-      "url": "https://blog.growthbook.io/the-best-a-b-testing-platforms-of-2025/",
+      "url": "https://www.growthbook.io/blog/the-best-a-b-testing-platforms-of-2025",
       "clicks": 5,
       "impressions": 17157,
       "avg_position": 7.94,
       "ctr": 0.0002914262400186513
     },
     {
-      "url": "https://status2.growthbook.io/",
+      "url": "https://status2.growthbook.io",
       "clicks": 5,
       "impressions": 108,
       "avg_position": 3.08,
@@ -718,56 +729,56 @@
       "ctr": 0.02066115702479339
     },
     {
-      "url": "https://blog.growthbook.io/7-000-github-stars-top-open-source-platform/",
+      "url": "https://www.growthbook.io/blog/7-000-github-stars-top-open-source-platform",
       "clicks": 4,
       "impressions": 2970,
       "avg_position": 7.16,
       "ctr": 0.0013468013468013469
     },
     {
-      "url": "https://blog.growthbook.io/creating-an-auth0-custom-login-ui-with-code/",
+      "url": "https://www.growthbook.io/blog/creating-an-auth0-custom-login-ui-with-code",
       "clicks": 4,
       "impressions": 135,
       "avg_position": 12.57,
       "ctr": 0.02962962962962963
     },
     {
-      "url": "https://blog.growthbook.io/cuped-for-faster-experimentation-in-growthbook/",
+      "url": "https://www.growthbook.io/blog/cuped-for-faster-experimentation-in-growthbook",
       "clicks": 4,
       "impressions": 2866,
       "avg_position": 7.92,
       "ctr": 0.0013956734124214933
     },
     {
-      "url": "https://blog.growthbook.io/customize-your-experimentation-workflow-with-custom-fields-and-shareable-experiments/",
+      "url": "https://www.growthbook.io/blog/customize-your-experimentation-workflow-with-custom-fields-and-shareable-experiments",
       "clicks": 4,
       "impressions": 179,
       "avg_position": 6.32,
       "ctr": 0.0223463687150838
     },
     {
-      "url": "https://blog.growthbook.io/experimentation-program-mistakes-to-avoid/",
+      "url": "https://www.growthbook.io/blog/experimentation-program-mistakes-to-avoid",
       "clicks": 4,
       "impressions": 2292,
       "avg_position": 7.04,
       "ctr": 0.0017452006980802793
     },
     {
-      "url": "https://blog.growthbook.io/fact-table-query-optimization/",
+      "url": "https://www.growthbook.io/blog/fact-table-query-optimization",
       "clicks": 4,
       "impressions": 316,
       "avg_position": 6.34,
       "ctr": 0.012658227848101266
     },
     {
-      "url": "https://blog.growthbook.io/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator/",
+      "url": "https://www.growthbook.io/blog/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator",
       "clicks": 4,
       "impressions": 1841,
       "avg_position": 7.91,
       "ctr": 0.0021727322107550242
     },
     {
-      "url": "https://blog.growthbook.io/stale-feature-flag-detection/",
+      "url": "https://www.growthbook.io/blog/stale-feature-flag-detection",
       "clicks": 4,
       "impressions": 880,
       "avg_position": 7.02,
@@ -809,35 +820,35 @@
       "ctr": 0.032
     },
     {
-      "url": "https://blog.growthbook.io/flavors-of-experimentation-in-growthbook/",
+      "url": "https://www.growthbook.io/blog/flavors-of-experimentation-in-growthbook",
       "clicks": 3,
       "impressions": 1160,
       "avg_position": 7.42,
       "ctr": 0.002586206896551724
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-8/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-8",
       "clicks": 3,
       "impressions": 208,
       "avg_position": 7.8,
       "ctr": 0.014423076923076924
     },
     {
-      "url": "https://blog.growthbook.io/release-4-2-product-analytics/",
+      "url": "https://www.growthbook.io/blog/release-4-2-product-analytics",
       "clicks": 3,
       "impressions": 3921,
       "avg_position": 6.64,
       "ctr": 0.0007651109410864575
     },
     {
-      "url": "https://blog.growthbook.io/the-hidden-complexities-of-building-your-own-a-b-testing-platform/",
+      "url": "https://www.growthbook.io/blog/the-hidden-complexities-of-building-your-own-a-b-testing-platform",
       "clicks": 3,
       "impressions": 4224,
       "avg_position": 6.76,
       "ctr": 0.0007102272727272727
     },
     {
-      "url": "https://blog.growthbook.io/your-experiment-lift-is-an-average-which-users-actually-benefited/",
+      "url": "https://www.growthbook.io/blog/your-experiment-lift-is-an-average-which-users-actually-benefited",
       "clicks": 3,
       "impressions": 173,
       "avg_position": 5.35,
@@ -872,70 +883,70 @@
       "ctr": 0.006578947368421052
     },
     {
-      "url": "https://blog.growthbook.io/author/jeremy/",
+      "url": "https://www.growthbook.io/blog/author/jeremy",
       "clicks": 2,
       "impressions": 185,
       "avg_position": 5.26,
       "ctr": 0.010810810810810811
     },
     {
-      "url": "https://blog.growthbook.io/auto-fact-tables-impact-analysis-performance-boosts/",
+      "url": "https://www.growthbook.io/blog/auto-fact-tables-impact-analysis-performance-boosts",
       "clicks": 2,
       "impressions": 218,
       "avg_position": 6.67,
       "ctr": 0.009174311926605505
     },
     {
-      "url": "https://blog.growthbook.io/building-in-the-ai-era-lessons-from-past-technological-revolutions/",
+      "url": "https://www.growthbook.io/blog/building-in-the-ai-era-lessons-from-past-technological-revolutions",
       "clicks": 2,
       "impressions": 945,
       "avg_position": 5.95,
       "ctr": 0.0021164021164021165
     },
     {
-      "url": "https://blog.growthbook.io/dark-patterns-a-b-testing/",
+      "url": "https://www.growthbook.io/blog/dark-patterns-a-b-testing",
       "clicks": 2,
       "impressions": 937,
       "avg_position": 5.29,
       "ctr": 0.0021344717182497333
     },
     {
-      "url": "https://blog.growthbook.io/experiment-decision-framework-for-automated-shipping-recommendations/",
+      "url": "https://www.growthbook.io/blog/experiment-decision-framework-for-automated-shipping-recommendations",
       "clicks": 2,
       "impressions": 276,
       "avg_position": 5.39,
       "ctr": 0.007246376811594203
     },
     {
-      "url": "https://blog.growthbook.io/experiment-metrics-simplified-retention-count-distinct-max/",
+      "url": "https://www.growthbook.io/blog/experiment-metrics-simplified-retention-count-distinct-max",
       "clicks": 2,
       "impressions": 724,
       "avg_position": 6.65,
       "ctr": 0.0027624309392265192
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-3-3/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-3-3",
       "clicks": 2,
       "impressions": 802,
       "avg_position": 8.07,
       "ctr": 0.0024937655860349127
     },
     {
-      "url": "https://blog.growthbook.io/measuring-a-b-test-impacts-on-website-latency-using-quantile-metrics-in-growthbook/",
+      "url": "https://www.growthbook.io/blog/measuring-a-b-test-impacts-on-website-latency-using-quantile-metrics-in-growthbook",
       "clicks": 2,
       "impressions": 586,
       "avg_position": 6.14,
       "ctr": 0.0034129692832764505
     },
     {
-      "url": "https://blog.growthbook.io/new-rest-apis/",
+      "url": "https://www.growthbook.io/blog/new-rest-apis",
       "clicks": 2,
       "impressions": 1027,
       "avg_position": 6.1,
       "ctr": 0.0019474196689386564
     },
     {
-      "url": "https://blog.growthbook.io/vibe-shipping/",
+      "url": "https://www.growthbook.io/blog/vibe-shipping",
       "clicks": 2,
       "impressions": 253,
       "avg_position": 8.2,
@@ -949,7 +960,7 @@
       "ctr": 0.01680672268907563
     },
     {
-      "url": "https://slack.growthbook.io/",
+      "url": "https://slack.growthbook.io",
       "clicks": 2,
       "impressions": 27,
       "avg_position": 8.22,
@@ -984,182 +995,182 @@
       "ctr": 0.02564102564102564
     },
     {
-      "url": "http://www.growthbook.io/",
+      "url": "http://www.growthbook.io",
       "clicks": 1,
       "impressions": 16,
       "avg_position": 1.06,
       "ctr": 0.0625
     },
     {
-      "url": "https://blog.growthbook.io/a-b-testing-platforms-build-vs-buy/",
+      "url": "https://www.growthbook.io/blog/a-b-testing-platforms-build-vs-buy",
       "clicks": 1,
       "impressions": 713,
       "avg_position": 7.76,
       "ctr": 0.001402524544179523
     },
     {
-      "url": "https://blog.growthbook.io/archive/",
+      "url": "https://www.growthbook.io/blog/archive",
       "clicks": 1,
       "impressions": 250,
       "avg_position": 8.53,
       "ctr": 0.004
     },
     {
-      "url": "https://blog.growthbook.io/author/allon/",
+      "url": "https://www.growthbook.io/blog/author/allon",
       "clicks": 1,
       "impressions": 20,
       "avg_position": 24.8,
       "ctr": 0.05
     },
     {
-      "url": "https://blog.growthbook.io/author/ashley/",
+      "url": "https://www.growthbook.io/blog/author/ashley",
       "clicks": 1,
       "impressions": 132,
       "avg_position": 5.55,
       "ctr": 0.007575757575757576
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/",
+      "url": "https://www.growthbook.io/blog/author/graham",
       "clicks": 1,
       "impressions": 139,
       "avg_position": 5.91,
       "ctr": 0.007194244604316547
     },
     {
-      "url": "https://blog.growthbook.io/author/lukesonnet/",
+      "url": "https://www.growthbook.io/blog/author/lukesonnet",
       "clicks": 1,
       "impressions": 102,
       "avg_position": 7.2,
       "ctr": 0.00980392156862745
     },
     {
-      "url": "https://blog.growthbook.io/automatically-track-click-events-from-webflow-in-google-analytics/",
+      "url": "https://www.growthbook.io/blog/automatically-track-click-events-from-webflow-in-google-analytics",
       "clicks": 1,
       "impressions": 248,
       "avg_position": 9.69,
       "ctr": 0.004032258064516129
     },
     {
-      "url": "https://blog.growthbook.io/cut-experimentation-costs-by-82-percent/",
+      "url": "https://www.growthbook.io/blog/cut-experimentation-costs-by-82-percent",
       "clicks": 1,
       "impressions": 654,
       "avg_position": 6.06,
       "ctr": 0.0015290519877675841
     },
     {
-      "url": "https://blog.growthbook.io/designing-ab-testing-experiments-for-long-term-growth/",
+      "url": "https://www.growthbook.io/blog/designing-ab-testing-experiments-for-long-term-growth",
       "clicks": 1,
       "impressions": 1712,
       "avg_position": 5.35,
       "ctr": 0.0005841121495327102
     },
     {
-      "url": "https://blog.growthbook.io/experiment-with-mcp/",
+      "url": "https://www.growthbook.io/blog/experiment-with-mcp",
       "clicks": 1,
       "impressions": 741,
       "avg_position": 6.96,
       "ctr": 0.001349527665317139
     },
     {
-      "url": "https://blog.growthbook.io/faster-feature-releases-on-growthbook-cloud/",
+      "url": "https://www.growthbook.io/blog/faster-feature-releases-on-growthbook-cloud",
       "clicks": 1,
       "impressions": 200,
       "avg_position": 6.34,
       "ctr": 0.005
     },
     {
-      "url": "https://blog.growthbook.io/feature-flagging-at-scale-5-power-tools-you-shouldnt-skip/",
+      "url": "https://www.growthbook.io/blog/feature-flagging-at-scale-5-power-tools-you-shouldnt-skip",
       "clicks": 1,
       "impressions": 312,
       "avg_position": 10.11,
       "ctr": 0.003205128205128205
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-hits-6-000-stars-on-github-whats-driving-our-growth/",
+      "url": "https://www.growthbook.io/blog/growthbook-hits-6-000-stars-on-github-whats-driving-our-growth",
       "clicks": 1,
       "impressions": 470,
       "avg_position": 6.84,
       "ctr": 0.002127659574468085
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-5/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-5",
       "clicks": 1,
       "impressions": 52,
       "avg_position": 9.15,
       "ctr": 0.019230769230769232
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-6/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-6",
       "clicks": 1,
       "impressions": 38,
       "avg_position": 8.0,
       "ctr": 0.02631578947368421
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-2/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-2",
       "clicks": 1,
       "impressions": 127,
       "avg_position": 6.02,
       "ctr": 0.007874015748031496
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-9/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-9",
       "clicks": 1,
       "impressions": 295,
       "avg_position": 6.83,
       "ctr": 0.003389830508474576
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-3-0/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-3-0",
       "clicks": 1,
       "impressions": 347,
       "avg_position": 7.09,
       "ctr": 0.002881844380403458
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-3-2/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-3-2",
       "clicks": 1,
       "impressions": 144,
       "avg_position": 6.69,
       "ctr": 0.006944444444444444
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-3-6/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-3-6",
       "clicks": 1,
       "impressions": 831,
       "avg_position": 7.1,
       "ctr": 0.0012033694344163659
     },
     {
-      "url": "https://blog.growthbook.io/guide-to-geo/",
+      "url": "https://www.growthbook.io/blog/guide-to-geo",
       "clicks": 1,
       "impressions": 4093,
       "avg_position": 13.95,
       "ctr": 0.0002443195699975568
     },
     {
-      "url": "https://blog.growthbook.io/holdouts-deep-dive/",
+      "url": "https://www.growthbook.io/blog/holdouts-deep-dive",
       "clicks": 1,
       "impressions": 415,
       "avg_position": 8.06,
       "ctr": 0.0024096385542168677
     },
     {
-      "url": "https://blog.growthbook.io/new-feature-save-time-with-automatic-metric-generation/",
+      "url": "https://www.growthbook.io/blog/new-feature-save-time-with-automatic-metric-generation",
       "clicks": 1,
       "impressions": 125,
       "avg_position": 7.25,
       "ctr": 0.008
     },
     {
-      "url": "https://blog.growthbook.io/sql-explorer-time-to-be-the-marco-polo-of-your-data/",
+      "url": "https://www.growthbook.io/blog/sql-explorer-time-to-be-the-marco-polo-of-your-data",
       "clicks": 1,
       "impressions": 187,
       "avg_position": 8.57,
       "ctr": 0.0053475935828877
     },
     {
-      "url": "https://blog.growthbook.io/visual-editor/",
+      "url": "https://www.growthbook.io/blog/visual-editor",
       "clicks": 1,
       "impressions": 99,
       "avg_position": 9.36,
@@ -1194,644 +1205,609 @@
       "ctr": 0.0018315018315018315
     },
     {
-      "url": "https://blog.growthbook.io/4000-stars/",
+      "url": "https://www.growthbook.io/blog/4000-stars",
       "clicks": 0,
       "impressions": 148,
       "avg_position": 9.48,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/a-tesla-ux-problem-mixing-states-and-actions/",
+      "url": "https://www.growthbook.io/blog/a-tesla-ux-problem-mixing-states-and-actions",
       "clicks": 0,
       "impressions": 25,
       "avg_position": 10.52,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/alternative-to-google-optimize-modernize-your-a-b-testing-with-growthbook/",
+      "url": "https://www.growthbook.io/blog/alternative-to-google-optimize-modernize-your-a-b-testing-with-growthbook",
       "clicks": 0,
       "impressions": 15,
       "avg_position": 2.87,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/announcing-growth-book-open-source-release/",
+      "url": "https://www.growthbook.io/blog/announcing-growth-book-open-source-release",
       "clicks": 0,
       "impressions": 258,
       "avg_position": 6.36,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/announcing-growthbook-2-5/",
+      "url": "https://www.growthbook.io/blog/announcing-growthbook-2-5",
       "clicks": 0,
       "impressions": 137,
       "avg_position": 7.34,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/announcing-growthbook-on-jsr/",
+      "url": "https://www.growthbook.io/blog/announcing-growthbook-on-jsr",
       "clicks": 0,
       "impressions": 152,
       "avg_position": 8.77,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/appetite-for-risk-a-b-testing-in-fast-paced-environments/",
+      "url": "https://www.growthbook.io/blog/appetite-for-risk-a-b-testing-in-fast-paced-environments",
       "clicks": 0,
       "impressions": 67,
       "avg_position": 8.16,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/10/",
+      "url": "https://www.growthbook.io/blog/archive/page/10",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 8.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/2/",
+      "url": "https://www.growthbook.io/blog/archive/page/2",
       "clicks": 0,
       "impressions": 11,
       "avg_position": 6.73,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/3/",
+      "url": "https://www.growthbook.io/blog/archive/page/3",
       "clicks": 0,
       "impressions": 3,
       "avg_position": 5.67,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/4/",
+      "url": "https://www.growthbook.io/blog/archive/page/4",
       "clicks": 0,
       "impressions": 13,
       "avg_position": 12.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/5/",
+      "url": "https://www.growthbook.io/blog/archive/page/5",
       "clicks": 0,
       "impressions": 5,
       "avg_position": 5.2,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/7/",
+      "url": "https://www.growthbook.io/blog/archive/page/7",
       "clicks": 0,
       "impressions": 3,
       "avg_position": 5.67,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/8/",
+      "url": "https://www.growthbook.io/blog/archive/page/8",
       "clicks": 0,
       "impressions": 15,
       "avg_position": 12.8,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/archive/page/9/",
+      "url": "https://www.growthbook.io/blog/archive/page/9",
       "clicks": 0,
       "impressions": 7,
       "avg_position": 3.86,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/page/2/",
+      "url": "https://www.growthbook.io/blog/author/graham/page/2",
       "clicks": 0,
       "impressions": 85,
       "avg_position": 7.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/page/3/",
+      "url": "https://www.growthbook.io/blog/author/graham/page/3",
       "clicks": 0,
       "impressions": 7,
       "avg_position": 7.43,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/page/4/",
+      "url": "https://www.growthbook.io/blog/author/graham/page/4",
       "clicks": 0,
       "impressions": 3,
       "avg_position": 8.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/page/5/",
+      "url": "https://www.growthbook.io/blog/author/graham/page/5",
       "clicks": 0,
       "impressions": 31,
       "avg_position": 8.77,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/page/6/",
+      "url": "https://www.growthbook.io/blog/author/graham/page/6",
       "clicks": 0,
       "impressions": 6,
       "avg_position": 6.5,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/graham/page/7/",
+      "url": "https://www.growthbook.io/blog/author/graham/page/7",
       "clicks": 0,
       "impressions": 2,
       "avg_position": 6.5,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/hampus/",
+      "url": "https://www.growthbook.io/blog/author/hampus",
       "clicks": 0,
       "impressions": 12,
       "avg_position": 8.08,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/luke/",
+      "url": "https://www.growthbook.io/blog/author/luke",
       "clicks": 0,
       "impressions": 8,
       "avg_position": 10.25,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/ryan/",
+      "url": "https://www.growthbook.io/blog/author/ryan",
       "clicks": 0,
       "impressions": 105,
       "avg_position": 6.89,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/author/ryan/page/2/",
+      "url": "https://www.growthbook.io/blog/author/ryan/page/2",
       "clicks": 0,
       "impressions": 18,
       "avg_position": 5.5,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/code-references/",
+      "url": "https://www.growthbook.io/blog/code-references",
       "clicks": 0,
       "impressions": 121,
       "avg_position": 6.74,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/content/images/2026/03/data-src-image-33a176fc-d924-4112-a87b-874a507591b2.png",
+      "url": "https://www.growthbook.io/blog/content/images/2026/03/data-src-image-33a176fc-d924-4112-a87b-874a507591b2.png",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 15.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/content/images/2026/03/data-src-image-34ee25a7-be16-4bfb-92d4-2ec0bb9a9726.png",
+      "url": "https://www.growthbook.io/blog/content/images/2026/03/data-src-image-34ee25a7-be16-4bfb-92d4-2ec0bb9a9726.png",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 9.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/convincing-leadership-to-adopt-a-b-testing/",
+      "url": "https://www.growthbook.io/blog/convincing-leadership-to-adopt-a-b-testing",
       "clicks": 0,
       "impressions": 405,
       "avg_position": 6.35,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/custom-prelaunch-checklists/",
+      "url": "https://www.growthbook.io/blog/custom-prelaunch-checklists",
       "clicks": 0,
       "impressions": 42,
       "avg_position": 8.02,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/fully-typesafe-sdk/",
+      "url": "https://www.growthbook.io/blog/fully-typesafe-sdk",
       "clicks": 0,
       "impressions": 168,
       "avg_position": 6.86,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/go-golang-sdk-for-feature-flagging-and-experimentation/",
+      "url": "https://www.growthbook.io/blog/go-golang-sdk-for-feature-flagging-and-experimentation",
       "clicks": 0,
       "impressions": 22,
       "avg_position": 6.55,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/goodharts-law-and-the-dangers-of-metric-selection-with-a-b-testing/",
+      "url": "https://www.growthbook.io/blog/goodharts-law-and-the-dangers-of-metric-selection-with-a-b-testing",
       "clicks": 0,
       "impressions": 633,
       "avg_position": 6.52,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growth-book-0-2-3-shipped/",
+      "url": "https://www.growthbook.io/blog/growth-book-0-2-3-shipped",
       "clicks": 0,
       "impressions": 10,
       "avg_position": 14.5,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growth-book-0-3-0-is-here/",
+      "url": "https://www.growthbook.io/blog/growth-book-0-3-0-is-here",
       "clicks": 0,
       "impressions": 21,
       "avg_position": 10.62,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growth-book-now-supports-clickhouse/",
+      "url": "https://www.growthbook.io/blog/growth-book-now-supports-clickhouse",
       "clicks": 0,
       "impressions": 49,
       "avg_position": 9.18,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growth-books-a-b-testing-library-for-python/",
+      "url": "https://www.growthbook.io/blog/growth-books-a-b-testing-library-for-python",
       "clicks": 0,
       "impressions": 1133,
       "avg_position": 6.27,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-0-4-0-august-update/",
+      "url": "https://www.growthbook.io/blog/growthbook-0-4-0-august-update",
       "clicks": 0,
       "impressions": 5,
       "avg_position": 6.6,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-0-5-0-released/",
+      "url": "https://www.growthbook.io/blog/growthbook-0-5-0-released",
       "clicks": 0,
       "impressions": 10,
       "avg_position": 7.7,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-0-6-0-released/",
+      "url": "https://www.growthbook.io/blog/growthbook-0-6-0-released",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 68.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-0-9-0-north-star-metrics-ad-hoc-reports-and-huge-performance-improvements-ef-b8-8f/",
+      "url": "https://www.growthbook.io/blog/growthbook-0-9-0-north-star-metrics-ad-hoc-reports-and-huge-performance-improvements-ef-b8-8f",
       "clicks": 0,
       "impressions": 4,
       "avg_position": 8.25,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-1-0-0-is-here-feature-flagging-chrome-devtools-extension-and-more/",
+      "url": "https://www.growthbook.io/blog/growthbook-1-0-0-is-here-feature-flagging-chrome-devtools-extension-and-more",
       "clicks": 0,
       "impressions": 4,
       "avg_position": 3.25,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-1-1-0-android-sdk-ui-improvements-and-more/",
+      "url": "https://www.growthbook.io/blog/growthbook-1-1-0-android-sdk-ui-improvements-and-more",
       "clicks": 0,
       "impressions": 87,
       "avg_position": 6.22,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-2-0-data-day/",
+      "url": "https://www.growthbook.io/blog/growthbook-2-0-data-day",
       "clicks": 0,
       "impressions": 12,
       "avg_position": 7.58,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-2-0-developer-day/",
+      "url": "https://www.growthbook.io/blog/growthbook-2-0-developer-day",
       "clicks": 0,
       "impressions": 34,
       "avg_position": 9.15,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-2-0-product-day/",
+      "url": "https://www.growthbook.io/blog/growthbook-2-0-product-day",
       "clicks": 0,
       "impressions": 21,
       "avg_position": 5.62,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-hits-3-000-stars-on-github/",
+      "url": "https://www.growthbook.io/blog/growthbook-hits-3-000-stars-on-github",
       "clicks": 0,
       "impressions": 186,
       "avg_position": 7.11,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-is-now-soc-2-compliant/",
+      "url": "https://www.growthbook.io/blog/growthbook-is-now-soc-2-compliant",
       "clicks": 0,
       "impressions": 513,
       "avg_position": 4.41,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-launch-month-week-1/",
+      "url": "https://www.growthbook.io/blog/growthbook-launch-month-week-1",
       "clicks": 0,
       "impressions": 247,
       "avg_position": 7.33,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-launch-month-week-2/",
+      "url": "https://www.growthbook.io/blog/growthbook-launch-month-week-2",
       "clicks": 0,
       "impressions": 85,
       "avg_position": 8.12,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-launch-month-week-3/",
+      "url": "https://www.growthbook.io/blog/growthbook-launch-month-week-3",
       "clicks": 0,
       "impressions": 32,
       "avg_position": 8.72,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-launch-month-week-4/",
+      "url": "https://www.growthbook.io/blog/growthbook-launch-month-week-4",
       "clicks": 0,
       "impressions": 67,
       "avg_position": 8.3,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-now-supports-databricks/",
+      "url": "https://www.growthbook.io/blog/growthbook-now-supports-databricks",
       "clicks": 0,
       "impressions": 42,
       "avg_position": 5.88,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-2-0/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-2-0",
       "clicks": 0,
       "impressions": 21,
       "avg_position": 7.05,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-3/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-3",
       "clicks": 0,
       "impressions": 35,
       "avg_position": 8.54,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-4/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-4",
       "clicks": 0,
       "impressions": 5,
       "avg_position": 12.6,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-7-0/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-7-0",
       "clicks": 0,
       "impressions": 20,
       "avg_position": 6.65,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-8/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-8",
       "clicks": 0,
       "impressions": 308,
       "avg_position": 7.54,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-1-9/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-1-9",
       "clicks": 0,
       "impressions": 44,
       "avg_position": 6.41,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-1/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-1",
       "clicks": 0,
       "impressions": 79,
       "avg_position": 7.37,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-3/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-3",
       "clicks": 0,
       "impressions": 63,
       "avg_position": 8.89,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-4/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-4",
       "clicks": 0,
       "impressions": 12,
       "avg_position": 6.33,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-2-6/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-2-6",
       "clicks": 0,
       "impressions": 72,
       "avg_position": 8.57,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-3-4/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-3-4",
       "clicks": 0,
       "impressions": 312,
       "avg_position": 7.7,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/growthbook-version-3-5/",
+      "url": "https://www.growthbook.io/blog/growthbook-version-3-5",
       "clicks": 0,
       "impressions": 638,
       "avg_position": 7.65,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/how-to-a-b-test-ai-a-practical-guide",
-      "clicks": 0,
-      "impressions": 1,
-      "avg_position": 1.0,
-      "ctr": 0.0
-    },
-    {
-      "url": "https://blog.growthbook.io/integration-growthbook-rollbar-error-monitoring/",
+      "url": "https://www.growthbook.io/blog/integration-growthbook-rollbar-error-monitoring",
       "clicks": 0,
       "impressions": 115,
       "avg_position": 18.46,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/introducing-the-growthbook-schema-browser/",
+      "url": "https://www.growthbook.io/blog/introducing-the-growthbook-schema-browser",
       "clicks": 0,
       "impressions": 72,
       "avg_position": 6.29,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/membership/",
+      "url": "https://www.growthbook.io/blog/membership",
       "clicks": 0,
       "impressions": 18,
       "avg_position": 8.56,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/new-growthbook-version-0-8-0/",
+      "url": "https://www.growthbook.io/blog/new-growthbook-version-0-8-0",
       "clicks": 0,
       "impressions": 54,
       "avg_position": 9.83,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/new-growthbook-version-2-7/",
+      "url": "https://www.growthbook.io/blog/new-growthbook-version-2-7",
       "clicks": 0,
       "impressions": 175,
       "avg_position": 6.89,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/objective-a-b-test-prioritization/",
+      "url": "https://www.growthbook.io/blog/objective-a-b-test-prioritization",
       "clicks": 0,
       "impressions": 517,
       "avg_position": 7.65,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/page/2/",
+      "url": "https://www.growthbook.io/blog/page/2",
       "clicks": 0,
       "impressions": 108,
       "avg_position": 6.38,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/page/3/",
+      "url": "https://www.growthbook.io/blog/page/3",
       "clicks": 0,
       "impressions": 84,
       "avg_position": 8.15,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/page/4/",
+      "url": "https://www.growthbook.io/blog/page/4",
       "clicks": 0,
       "impressions": 41,
       "avg_position": 5.88,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/page/5/",
+      "url": "https://www.growthbook.io/blog/page/5",
       "clicks": 0,
       "impressions": 9,
       "avg_position": 6.78,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/release-4-3-faster-experiments/",
+      "url": "https://www.growthbook.io/blog/release-4-3-faster-experiments",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 9.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/signin/",
+      "url": "https://www.growthbook.io/blog/signin",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 4.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/simpler-faster-sql-queries/",
+      "url": "https://www.growthbook.io/blog/simpler-faster-sql-queries",
       "clicks": 0,
       "impressions": 59,
       "avg_position": 7.64,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/tag/data-science/",
+      "url": "https://www.growthbook.io/blog/tag/data-science",
       "clicks": 0,
       "impressions": 13,
       "avg_position": 1.15,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/tag/feature-flags/",
+      "url": "https://www.growthbook.io/blog/tag/feature-flags",
       "clicks": 0,
       "impressions": 13,
       "avg_position": 1.15,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/tag/new-features/",
+      "url": "https://www.growthbook.io/blog/tag/new-features",
       "clicks": 0,
       "impressions": 13,
       "avg_position": 1.15,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/tag/release/",
+      "url": "https://www.growthbook.io/blog/tag/release",
       "clicks": 0,
       "impressions": 13,
       "avg_position": 1.15,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/tags/",
+      "url": "https://www.growthbook.io/blog/tags",
       "clicks": 0,
       "impressions": 41,
       "avg_position": 7.0,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/vercel/",
+      "url": "https://www.growthbook.io/blog/vercel",
       "clicks": 0,
       "impressions": 1546,
       "avg_position": 7.03,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/what-are-feature-flags",
-      "clicks": 0,
-      "impressions": 1,
-      "avg_position": 1.0,
-      "ctr": 0.0
-    },
-    {
-      "url": "https://blog.growthbook.io/what-are-feature-flags/#3-flag-evaluation",
-      "clicks": 0,
-      "impressions": 19,
-      "avg_position": 7.89,
-      "ctr": 0.0
-    },
-    {
-      "url": "https://blog.growthbook.io/what-are-feature-flags/#by-purpose",
-      "clicks": 0,
-      "impressions": 19,
-      "avg_position": 7.89,
-      "ctr": 0.0
-    },
-    {
-      "url": "https://blog.growthbook.io/what-are-feature-flags/#by-time-span",
-      "clicks": 0,
-      "impressions": 19,
-      "avg_position": 7.89,
-      "ctr": 0.0
-    },
-    {
-      "url": "https://blog.growthbook.io/when-companies-adopt-feature-flags/",
+      "url": "https://www.growthbook.io/blog/when-companies-adopt-feature-flags",
       "clicks": 0,
       "impressions": 179,
       "avg_position": 7.56,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/why-fintechs-should-shrink-their-attack-surface-not-just-get-certified/",
+      "url": "https://www.growthbook.io/blog/why-fintechs-should-shrink-their-attack-surface-not-just-get-certified",
       "clicks": 0,
       "impressions": 215,
       "avg_position": 5.72,
       "ctr": 0.0
     },
     {
-      "url": "https://blog.growthbook.io/why-the-impact-of-a-b-testing-can-seem-invisible/",
+      "url": "https://www.growthbook.io/blog/why-the-impact-of-a-b-testing-can-seem-invisible",
       "clicks": 0,
       "impressions": 1,
       "avg_position": 10.0,
@@ -2290,7 +2266,7 @@
     },
     {
       "week": "2026-04-20",
-      "clicks": 1187
+      "clicks": 1967
     }
   ],
   "competitors": [
@@ -2408,6 +2384,26 @@
       {
         "date": "2026-04-25",
         "etv": 122108
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 122108
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 118893
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 118893
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 117922
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 127998
       }
     ],
     "Eppo": [
@@ -2442,6 +2438,26 @@
       {
         "date": "2026-04-25",
         "etv": 7648
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 7648
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 9062
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 9062
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 9035
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 8849
       }
     ],
     "Flagsmith": [
@@ -2476,6 +2492,26 @@
       {
         "date": "2026-04-25",
         "etv": 954
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 954
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 1129
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 1129
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 1111
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 819
       }
     ],
     "GrowthBook": [
@@ -2510,6 +2546,26 @@
       {
         "date": "2026-04-25",
         "etv": 66
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 66
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 727
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 727
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 722
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 1755
       }
     ],
     "Harness": [
@@ -2544,6 +2600,26 @@
       {
         "date": "2026-04-25",
         "etv": 118709
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 118709
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 83620
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 83620
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 82980
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 80755
       }
     ],
     "LaunchDarkly": [
@@ -2578,6 +2654,26 @@
       {
         "date": "2026-04-25",
         "etv": 14643
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 14643
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 14648
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 14648
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 14640
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 14612
       }
     ],
     "Optimizely": [
@@ -2612,6 +2708,26 @@
       {
         "date": "2026-04-25",
         "etv": 280515
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 280515
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 266493
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 266493
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 265887
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 261898
       }
     ],
     "PostHog": [
@@ -2646,6 +2762,26 @@
       {
         "date": "2026-04-25",
         "etv": 7868
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 7868
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 7802
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 7802
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 7649
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 6908
       }
     ],
     "Statsig": [
@@ -2680,6 +2816,26 @@
       {
         "date": "2026-04-25",
         "etv": 134145
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 134145
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 132749
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 132749
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 130484
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 157136
       }
     ],
     "Unleash": [
@@ -2714,6 +2870,26 @@
       {
         "date": "2026-04-25",
         "etv": 2540
+      },
+      {
+        "date": "2026-05-02",
+        "etv": 2540
+      },
+      {
+        "date": "2026-05-09",
+        "etv": 2496
+      },
+      {
+        "date": "2026-05-10",
+        "etv": 2496
+      },
+      {
+        "date": "2026-05-16",
+        "etv": 2485
+      },
+      {
+        "date": "2026-05-23",
+        "etv": 1668
       }
     ]
   },
@@ -4088,7 +4264,9 @@
           "sessions": 4
         }
       ],
-      "snapshot_date": "2026-04-25"
+      "snapshot_date": "2026-04-25",
+      "organic_sessions": 4783,
+      "organic_sessions_wow_pct": 11.7
     },
     "docs": {
       "sessions": 4816,
@@ -5861,5 +6039,614 @@
         ]
       }
     ]
-  }
+  },
+  "keyword_rankings": {
+    "snapshot_date": "2026-04-25",
+    "top3_count": 18,
+    "top10_count": 92,
+    "top20_count": 252,
+    "total_tracked": 937,
+    "top10_mom": -17.1,
+    "new_top10": [
+      {
+        "keyword": "toggle hat",
+        "position": 2,
+        "prev_position": null,
+        "search_volume": 30
+      },
+      {
+        "keyword": "code reference",
+        "position": 10,
+        "prev_position": null,
+        "search_volume": 260
+      },
+      {
+        "keyword": "hold out testing",
+        "position": 8,
+        "prev_position": null,
+        "search_volume": 90
+      },
+      {
+        "keyword": "sql templates",
+        "position": 10,
+        "prev_position": null,
+        "search_volume": 90
+      },
+      {
+        "keyword": "experimental plan template",
+        "position": 9,
+        "prev_position": null,
+        "search_volume": 50
+      },
+      {
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "prev_position": null,
+        "search_volume": 30
+      },
+      {
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "prev_position": null,
+        "search_volume": 30
+      }
+    ],
+    "top10_keywords": [
+      {
+        "keyword": "growth book",
+        "position": 1,
+        "search_volume": 2400,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "grossbook",
+        "position": 1,
+        "search_volume": 140,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "growthbook pricing",
+        "position": 1,
+        "search_volume": 50,
+        "url": "https://www.growthbook.io/pricing"
+      },
+      {
+        "keyword": "growthbook api",
+        "position": 1,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/api/"
+      },
+      {
+        "keyword": "growthbook docs",
+        "position": 1,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/"
+      },
+      {
+        "keyword": "keep calm and test on",
+        "position": 1,
+        "search_volume": 40,
+        "url": "https://shop.growthbook.io/products/keep-calm-and-test-on-t-shirt"
+      },
+      {
+        "keyword": "growthbook io",
+        "position": 1,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "open source a b testing",
+        "position": 1,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "open source ab testing",
+        "position": 1,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "table of metrics",
+        "position": 2,
+        "search_volume": 2400,
+        "url": "https://docs.growthbook.io/app/metrics"
+      },
+      {
+        "keyword": "experiment templates",
+        "position": 2,
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "growthbook github",
+        "position": 2,
+        "search_volume": 40,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "toggle hat",
+        "position": 2,
+        "search_volume": 30,
+        "url": "https://shop.growthbook.io/products/toggle-dad-hat"
+      },
+      {
+        "keyword": "clarity heatmaps",
+        "position": 3,
+        "search_volume": 260,
+        "url": "https://docs.growthbook.io/integrations/clarity"
+      },
+      {
+        "keyword": "code references",
+        "position": 3,
+        "search_volume": 210,
+        "url": "https://docs.growthbook.io/features/code-references"
+      },
+      {
+        "keyword": "holdout test",
+        "position": 3,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/kb/experiments/holdouts"
+      },
+      {
+        "keyword": "holdout testing",
+        "position": 3,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/kb/experiments/holdouts"
+      },
+      {
+        "keyword": "novelty effect ab testing",
+        "position": 3,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/using/fundamentals"
+      },
+      {
+        "keyword": "metrics table",
+        "position": 4,
+        "search_volume": 2400,
+        "url": "https://docs.growthbook.io/app/metrics"
+      },
+      {
+        "keyword": "a/b testing platforms",
+        "position": 4,
+        "search_volume": 210,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "quantile test",
+        "position": 4,
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/statistics/quantile"
+      },
+      {
+        "keyword": "novelty effect a/b testing",
+        "position": 4,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/using/fundamentals"
+      },
+      {
+        "keyword": "a a testing",
+        "position": 5,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/kb/experiments/aa-tests"
+      },
+      {
+        "keyword": "what role do feedback loops play in agentic ai systems",
+        "position": 5,
+        "search_volume": 320,
+        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/"
+      },
+      {
+        "keyword": "experiment result",
+        "position": 5,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/app/experiment-results"
+      },
+      {
+        "keyword": "experiment template",
+        "position": 5,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "flags filter",
+        "position": 5,
+        "search_volume": 70,
+        "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/"
+      },
+      {
+        "keyword": "segment event tracker",
+        "position": 5,
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/event-trackers/segment"
+      },
+      {
+        "keyword": "open source a/b testing",
+        "position": 5,
+        "search_volume": 20,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "what role do feedback loops play in agentic ai systems",
+        "position": 5,
+        "search_volume": 320,
+        "url": "https://blog.growthbook.io/feedback-loops-are-the-next-breakthrough-in-agentic-coding/"
+      },
+      {
+        "keyword": "flags filter",
+        "position": 5,
+        "search_volume": 70,
+        "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/"
+      },
+      {
+        "keyword": "a/b testing software",
+        "position": 6,
+        "search_volume": 390,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "a/a testing",
+        "position": 6,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/kb/experiments/aa-tests"
+      },
+      {
+        "keyword": "aa testing",
+        "position": 6,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/kb/experiments/aa-tests"
+      },
+      {
+        "keyword": "a/b testing platform",
+        "position": 6,
+        "search_volume": 210,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "experiment results",
+        "position": 6,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/app/experiment-results"
+      },
+      {
+        "keyword": "experimentation template",
+        "position": 6,
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "filter flag",
+        "position": 6,
+        "search_volume": 70,
+        "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/"
+      },
+      {
+        "keyword": "cuped meaning",
+        "position": 6,
+        "search_volume": 50,
+        "url": "https://docs.growthbook.io/statistics/cuped"
+      },
+      {
+        "keyword": "the growth book",
+        "position": 6,
+        "search_volume": 30,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "filter flag",
+        "position": 6,
+        "search_volume": 70,
+        "url": "https://blog.growthbook.io/find-flags-faster-with-search-filters/"
+      },
+      {
+        "keyword": "ferretdb",
+        "position": 7,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/self-host/ferretdb?ref=blog.growthbook.io"
+      },
+      {
+        "keyword": "experiments results",
+        "position": 7,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/app/experiment-results"
+      },
+      {
+        "keyword": "open source feature flags",
+        "position": 7,
+        "search_volume": 170,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "ab testing book",
+        "position": 7,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "deno hono",
+        "position": 7,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/guide/deno-hono"
+      },
+      {
+        "keyword": "experiment key",
+        "position": 7,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/app/experiment-configuration"
+      },
+      {
+        "keyword": "multiple correction",
+        "position": 7,
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "statistics engine",
+        "position": 7,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/statistics/overview"
+      },
+      {
+        "keyword": "sequential test",
+        "position": 8,
+        "search_volume": 880,
+        "url": "https://docs.growthbook.io/statistics/sequential"
+      },
+      {
+        "keyword": "metric example",
+        "position": 8,
+        "search_volume": 720,
+        "url": "https://docs.growthbook.io/app/metrics/examples"
+      },
+      {
+        "keyword": "redirect testing",
+        "position": 8,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/app/url-redirects"
+      },
+      {
+        "keyword": "design of experiments templates",
+        "position": 8,
+        "search_volume": 170,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "experimentation platform",
+        "position": 8,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "feature flag open source",
+        "position": 8,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "feature flags open source",
+        "position": 8,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "hold out testing",
+        "position": 8,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/kb/experiments/holdouts"
+      },
+      {
+        "keyword": "a/b testing book",
+        "position": 8,
+        "search_volume": 50,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "what is multi-armed bandit",
+        "position": 8,
+        "search_volume": 50,
+        "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/"
+      },
+      {
+        "keyword": "ab test book",
+        "position": 8,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "golang gb",
+        "position": 8,
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/lib/go"
+      },
+      {
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/"
+      },
+      {
+        "keyword": "fdr vs fwer",
+        "position": 8,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "segment track event",
+        "position": 8,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/event-trackers/segment"
+      },
+      {
+        "keyword": "what is multi-armed bandit",
+        "position": 8,
+        "search_volume": 50,
+        "url": "https://blog.growthbook.io/guide-to-multi-arm-bandits-what-is-it-and-why-you-probably-shouldnt-use-it/"
+      },
+      {
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/"
+      },
+      {
+        "keyword": "sequential testing",
+        "position": 9,
+        "search_volume": 880,
+        "url": "https://docs.growthbook.io/statistics/sequential"
+      },
+      {
+        "keyword": "growth io",
+        "position": 9,
+        "search_volume": 320,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "multiple comparisons problem",
+        "position": 9,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "multiple testing problem",
+        "position": 9,
+        "search_volume": 320,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "ab testing platform",
+        "position": 9,
+        "search_volume": 210,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "multiple testing correction",
+        "position": 9,
+        "search_volume": 140,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "open source feature flag",
+        "position": 9,
+        "search_volume": 140,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "experimental plan template",
+        "position": 9,
+        "search_volume": 50,
+        "url": "https://docs.growthbook.io/running-experiments/experiment-templates"
+      },
+      {
+        "keyword": "a/b testing books",
+        "position": 9,
+        "search_volume": 40,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "data hat",
+        "position": 9,
+        "search_volume": 40,
+        "url": "https://shop.growthbook.io/products/data-driven-dad-hat-baseball-cap"
+      },
+      {
+        "keyword": "manage webhooks discord",
+        "position": 9,
+        "search_volume": 30,
+        "url": "https://docs.growthbook.io/integrations/discord"
+      },
+      {
+        "keyword": "lambda edge environment variables",
+        "position": 9,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/lib/edge/lambda"
+      },
+      {
+        "keyword": "lambda-edge environment variables",
+        "position": 9,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/lib/edge/lambda"
+      },
+      {
+        "keyword": "code reference",
+        "position": 10,
+        "search_volume": 260,
+        "url": "https://docs.growthbook.io/features/code-references"
+      },
+      {
+        "keyword": "multiple test",
+        "position": 10,
+        "search_volume": 210,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "feature flags open-source",
+        "position": 10,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/"
+      },
+      {
+        "keyword": "sql templates",
+        "position": 10,
+        "search_volume": 90,
+        "url": "https://docs.growthbook.io/app/sql-templates"
+      },
+      {
+        "keyword": "ab testing guide",
+        "position": 10,
+        "search_volume": 70,
+        "url": "https://docs.growthbook.io/open-guide-to-ab-testing.v1.0.pdf"
+      },
+      {
+        "keyword": "multiple test correction",
+        "position": 10,
+        "search_volume": 50,
+        "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "feature flag benefits",
+        "position": 10,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/what-are-feature-flags/"
+      },
+      {
+        "keyword": "feature flags benefits",
+        "position": 10,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/what-are-feature-flags/"
+      },
+      {
+        "keyword": "how can an experiment be improved",
+        "position": 10,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/"
+      },
+      {
+        "keyword": "p-value a/b testing",
+        "position": 10,
+        "search_volume": 20,
+        "url": "https://docs.growthbook.io/using/fundamentals"
+      },
+      {
+        "keyword": "feature flag benefits",
+        "position": 10,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/what-are-feature-flags/"
+      },
+      {
+        "keyword": "feature flags benefits",
+        "position": 10,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/what-are-feature-flags/"
+      },
+      {
+        "keyword": "how can an experiment be improved",
+        "position": 10,
+        "search_volume": 30,
+        "url": "https://blog.growthbook.io/7-steps-to-better-experiment-design/"
+      }
+    ],
+    "prev_snapshot_date": "2026-04-04",
+    "source": "dataforseo"
+  },
+  "athenahq": null
 }
