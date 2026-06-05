@@ -534,6 +534,33 @@ export default function CompyDashboard() {
 
         {/* ── GSC DETAIL ── */}
         {tab === "gsc" && (<>
+          {d.gsc?.page_split && Object.keys(d.gsc.page_split).some(k => ["homepage","pricing","docs","all_other_pages"].includes(k)) && (() => {
+            const ps = d.gsc.page_split;
+            const fmt = (v) => v != null ? `${v > 0 ? "+" : ""}${v}%` : "—";
+            const clr = (v) => v == null ? C.muted : v > 0 ? C.success : v < 0 ? C.danger : C.muted;
+            const rows = [
+              ["Homepage (/)", ps.homepage],
+              ["Pricing (/pricing)", ps.pricing],
+              ["Docs (docs.*)", ps.docs],
+              ["All other pages", ps.all_other_pages],
+            ].filter(([, s]) => s != null);
+            return (
+              <Section title="Clicks by Section">
+                <Table
+                  headers={["Section", "Clicks", "WoW", "Impressions", "Imp WoW"]}
+                  rows={rows.map(([label, s]) => [
+                    <span style={{ display: "block", textAlign: "left" }}>{label}</span>,
+                    (s.clicks || 0).toLocaleString(),
+                    <span style={{ color: clr(s.clicks_wow_pct), fontWeight: 700 }}>{fmt(s.clicks_wow_pct)}</span>,
+                    (s.impressions || 0).toLocaleString(),
+                    <span style={{ color: clr(s.impressions_wow_pct) }}>{fmt(s.impressions_wow_pct)}</span>,
+                  ])}
+                  compact
+                />
+              </Section>
+            );
+          })()}
+
           <Section title="Top Movers — Gains">
             <Table
               headers={["Page", "This Week", "Prior Week", "Change"]}

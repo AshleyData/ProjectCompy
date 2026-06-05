@@ -14,7 +14,41 @@
     "nonbranded": 244,
     "anonymized": 1244,
     "week_start": "2026-05-11",
-    "week_end": "2026-05-17"
+    "week_end": "2026-05-17",
+    "page_split": {
+      "current_week": {
+        "start": "2026-05-11",
+        "end": "2026-05-17"
+      },
+      "prior_week": {
+        "start": "2026-05-04",
+        "end": "2026-05-10"
+      },
+      "homepage": {
+        "clicks": 1889,
+        "clicks_wow_pct": -5.5,
+        "impressions": 22098,
+        "impressions_wow_pct": -18.9
+      },
+      "pricing": {
+        "clicks": 99,
+        "clicks_wow_pct": 23.8,
+        "impressions": 5900,
+        "impressions_wow_pct": -7.2
+      },
+      "docs": {
+        "clicks": 1123,
+        "clicks_wow_pct": -11.1,
+        "impressions": 113931,
+        "impressions_wow_pct": -9.9
+      },
+      "all_other_pages": {
+        "clicks": 203,
+        "clicks_wow_pct": -5.1,
+        "impressions": 106498,
+        "impressions_wow_pct": 7.4
+      }
+    }
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-05-16 to 2026-05-22): growthbook.io had 14,225 sessions and 9,788 users (+17.5% week over week).",
