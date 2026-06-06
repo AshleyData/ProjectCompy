@@ -53,19 +53,19 @@
   "exec_summary": [
     "Site traffic (GA4, 2026-05-30 to 2026-06-05): growthbook.io had 14,495 sessions and 10,418 users (+28.0% week over week).",
     "## Week of 2026-06-06",
-    "**Site performance**\n- **Overall (GA4, all traffic):** 14,495 sessions (+28.0% WoW) | 10,418 users\n- **Overall (GSC, organic search):** 3,171 clicks (-6.8% WoW) | 157,227 impressions (-32.8% WoW)\n- **Homepage (/):** 8,485 GA4 sessions (+8.4% WoW) all-traffic | 1,756 GSC clicks (-4.3% WoW) organic | 16,183 GSC impressions (-13.3% WoW)\n- **Pricing (/pricing):** 1,378 GA4 sessions (+15.1% WoW) all-traffic | 93 GSC clicks (-13.9% WoW) organic | 4,745 GSC impressions (-19.4% WoW)\n- **Docs (docs.growthbook.io):** 4,453 GA4 sessions (-16.0% WoW) all-traffic | 1,036 GSC clicks (-11.9% WoW) organic | 108,303 GSC impressions (-9.9% WoW)\n- **All other pages:** 7,756 GA4 sessions (+61.4% WoW) all-traffic | 269 GSC clicks (-13.2% WoW) organic | 109,468 GSC impressions (-37.1% WoW)\n- Pricing and all-other-pages GA4 all-traffic is up sharply while GSC organic clicks are down on both -- consistent with AI assistants sending traffic that GSC doesn't capture. Worth monitoring for another week before acting, but the pattern is repeating.\n- Docs GA4 sessions down -16.0% WoW after last week's +10.2% -- a reversal worth watching.",
-    "**New competitor activity**\n- **LaunchDarkly** published **\"AI Experimentation\"** (KD 52, Tier 1) and **\"Run Experiments\"** solution page -- two coordinated assets reinforcing their experiment-governance narrative. Combined with last week's runtime page surge, LD is building multi-channel authority across AI experimentation and runtime control simultaneously.\n- **LaunchDarkly** published **\"AI SDKs 1.0\"** changelog and **\"Feature Flags vs Feature Branching\"** blog -- AI SDK release signals product investment in developer tooling that directly overlaps GrowthBook's open-source ICP.\n- **LaunchDarkly** server-side SDKs docs page (**launchdarkly.com/docs/sdk/server-side**) hit 76 ETV with +177.3% WoW surge -- the largest ETV mover this week. Signals Google rapidly rewarding LD's SDK documentation depth.\n- **Harness** published **\"Feature Flag Tools Compared: 10 Best Platforms for Safer Releases\"** -- a direct comparison post that will rank on queries where GrowthBook's **/blog/best-open-source-feature-flagging-tools-compared** is competing for the same intent. Harness now has a comparison post; GrowthBook's equivalent has zero impressions yet.\n- **PostHog** published **\"LLM Prompt Experiments\"** and **\"Prompt Experiments\"** docs -- two new pages targeting AI/LLM experimentation workflows, an area GrowthBook has not yet addressed with dedicated content. PostHog is moving fast on AI-native experimentation.\n- **Optimizely** \"Powering AI With Feature Flags\" continues to appear (carried over from prior weeks) -- flagged again because GrowthBook's **/solutions/ai** page remains at 0 clicks and no counter-content has shipped.",
-    "**New GrowthBook content**\n- Ten pages detected via sitemap this week (real publish dates unknown). None have GSC impressions yet -- still indexing. Highest-potential:\n  - **/blog/best-open-source-feature-flagging-tools-compared** -- already earning 18 clicks/week (up from 9 last week), the fastest mover in the gains list. Compete directly with Harness's new comparison post.\n  - **/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained** -- high-authority stats content; relevant to the same audience PostHog is targeting with CUPED docs.\n  - **/blog/12-common-feature-flag-mistakes-to-avoid** -- broad developer audience, competes with Harness/Optimizely \"mistakes\" content.\n  - **/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning** and **/blog/experimentation-program-mistakes-to-avoid** -- thought leadership assets with no direct equivalent from competitors this week.",
-    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared** jumped from 9 to 18 clicks (+9) -- the top organic gainer this week excluding the homepage. A Harness comparison post now targets the same queries; promote this page before Harness's version ages in.\n- **/blog/a-b-testing-in-the-age-of-ai** up from 8 to 15 clicks (+7) -- AI-angle content is gaining traction organically. Reinforces the case for dedicated AI experimentation pages.\n- **/insights/status-code-what-means-how-fix** dropped from 20 to 0 clicks (-20) and **/insights/matched-pairs-design-explained** dropped from 10 to 1 click (-9) -- both were flagged as ETV surgers last week. Likely a correction after last week's baseline anomaly; monitor next week.\n- **\"launchdarkly business model b2b\"** still at position 10.25 with 1,681 impressions -- fifth consecutive week flagged, no title-tag action taken on **/compare/growthbook-vs-launchdarkly**. Clicks on that page are only 5 this week despite 4,086 impressions over 28 days.\n- **Comparison pages** back to 13 total 7-day views (within normal 12-20 range, recovering from two consecutive weeks below floor). **/compare/growthbook-vs-statsig** up to 3 clicks from 1 -- small positive move.\n- **\"experimentation platform\"** not in striking distance list this week -- likely drifted further from page 2 (was position 16.79 last week). Cannot confirm without direct check.",
-    "**Recommended actions**\n- **Refresh **/compare/growthbook-vs-launchdarkly** title and H1 for \"launchdarkly business model b2b\" this week.** Position 10.25, 1,681 impressions, 5 clicks -- five consecutive weeks flagged with no action. This is the single easiest lever available.\n- **Promote **/blog/best-open-source-feature-flagging-tools-compared** before Harness's equivalent ages in.** GrowthBook's page is already earning clicks (18 this week); Harness just published a direct competitor post. Internal links and social promotion now maximizes the head start.\n- **Publish a dedicated LLM/AI experimentation page or blog post.** PostHog shipped two prompt-experiment docs this week; LaunchDarkly published \"AI Experimentation\" (KD 52). GrowthBook's **/solutions/ai** is at 0 clicks. A targeted post on \"A/B testing LLM prompts\" or \"feature flags for AI models\" directly intercepts this fast-moving keyword cluster.\n- **Investigate Docs GA4 decline (-16.0% WoW).** Last week docs was the one bright spot (+10.2%). A -16% reversal in one week warrants a quick check -- confirm it is not a tagging issue or a broken link before treating as an engagement signal.",
-    "**Data quality flags**\n- GSC page-split window (2026-05-25 to 2026-05-31) is one week behind the GA4 window (2026-05-30 to 2026-06-05) -- slight date mismatch between sources, normal API lag.\n- ETV WoW percentages remain unreliable through 2026-05-24 per the pipeline note; the LD server-side SDK +177.3% surge should be treated as directional only."
+    "**Site performance**\n- **Overall (GA4, all traffic):** 14,495 sessions (+28.0% WoW) | 10,418 users\n- **Overall (GSC, organic search):** 3,171 clicks (-6.8% WoW) | 157,227 impressions (-32.8% WoW)\n- **Homepage (/):** 8,485 GA4 sessions (+8.4% WoW) all-traffic | 1,756 GSC clicks (-4.3% WoW) organic | 16,183 GSC impressions (-13.3% WoW)\n- **Pricing (/pricing):** 1,378 GA4 sessions (+15.1% WoW) all-traffic | 93 GSC clicks (-13.9% WoW) organic | 4,745 GSC impressions (-19.4% WoW)\n- **Docs (docs.growthbook.io):** 4,453 GA4 sessions (-16.0% WoW) all-traffic | 1,036 GSC clicks (-11.9% WoW) organic | 108,303 GSC impressions (-9.9% WoW)\n- **All other pages:** 7,756 GA4 sessions (+61.4% WoW) all-traffic | 269 GSC clicks (-13.2% WoW) organic | 109,468 GSC impressions (-37.1% WoW)\n- All-other-pages GA4 all-traffic up +61.4% while GSC organic clicks are down -13.2% -- the AI-search-displacement pattern is clearest here. Non-branded organic growth is likely being driven by AI assistants that GSC cannot capture. Docs GA4 sessions remain down -16.0% for a second consecutive week -- now worth investigating rather than monitoring.",
+    "**New competitor activity**\n- **LaunchDarkly** published **\"Run Experiments\"** solution page (Tier 1, KD 0) -- a direct product page targeting the exact bottom-funnel query GrowthBook should own. Low KD means GrowthBook could compete immediately with a comparable solutions page.\n- **LaunchDarkly** published **\"Introducing Experiment Approvals\"** -- a governance/workflow feature announcement that reinforces LD's enterprise experimentation narrative. If GrowthBook has equivalent functionality, a counter-post or docs page would directly intercept this query.\n- **PostHog** added **\"CUPED\"** docs and two prompt-experiment pages (**\"LLM Prompt Experiments\"**, **\"Prompt Experiments\"**) -- PostHog now has dedicated AI/LLM experimentation docs. GrowthBook's **/solutions/ai** is still at 0 clicks. PostHog is building the docs depth that earns developer trust in this space.\n- **Harness** published **\"Taming AI Code Sprawl With Harness Feature Flag Policies\"** -- a new AI-angle resource directly overlapping GrowthBook's open-source feature flag ICP. Harness is now running an AI + feature flags narrative in parallel with Optimizely and LaunchDarkly.\n- **Optimizely** \"Powering AI With Feature Flags\" and \"Top 10 Takeaways From The Experimentation Playbook\" continue to appear (carried from prior weeks) -- flagged again because GrowthBook has no published counter-content on either angle.\n- \u26a0\ufe0f No new pages detected from **Statsig**, **Unleash**, or **Flagsmith** this week -- likely a monitoring gap, not a content pause.",
+    "**New GrowthBook content**\n- Ten pages noticed this week via sitemap (real publish dates unknown). None have GSC impressions yet. Highest-potential:\n  - **/blog/best-open-source-feature-flagging-tools-compared** -- already earning 18 clicks/week in GSC top movers; Harness published a direct competitor post targeting the same queries. Promote now before Harness's version ages in.\n  - **/blog/12-common-feature-flag-mistakes-to-avoid** -- broad developer audience; competes with Harness and Optimizely \"mistakes\" content currently aging into authority.\n  - **/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained** -- high-authority stats content; same audience PostHog is targeting with its new CUPED docs.\n  - **/blog/how-fanatics-made-experimentation-a-strategic-growth-driver** and **/blog/doordash-runs-12-000-experiments-per-year-across-3-sided-marketplace** -- enterprise social proof assets useful for mid-funnel ICP.",
+    "**Organic movers worth watching**\n- **\"launchdarkly business model b2b\"** still at position 10.25 with 1,681 impressions -- sixth consecutive week flagged, no title-tag action taken on **/compare/growthbook-vs-launchdarkly**. That page earned only 5 clicks on 4,086 impressions over 28 days. This is the single easiest lever available.\n- **/compare/growthbook-vs-statsig** up to 3 clicks (7d) from 1 -- small positive move; 28d clicks dropped from 16 to 5, so the short-term uptick masks a longer structural decline worth watching.\n- **/compare/growthbook-vs-optimizely** up to 2 clicks (7d) from 0, but 28d clicks fell from 11 to 4 -- same pattern as Statsig. Comparison page 28d aggregate is down from 64 to 38 views (-40.6%).\n- **/blog/growthbook-4-4** jumped from 0 to 16 clicks -- changelog posts rarely sustain, but the spike confirms developer interest in release news. Worth adding internal links from this post to feature-flag and experimentation product pages.\n- **/insights/status-code-what-means-how-fix** and **/insights/http-error-explained-causes-how-fix** both crashed this week (20 to 0 and 17 to 1 respectively) -- confirming last week's prediction that the prior surge was a baseline artifact.",
+    "**Recommended actions**\n- **Refresh **/compare/growthbook-vs-launchdarkly** title and H1 for \"launchdarkly business model b2b\" this week.** Position 10.25, 1,681 impressions, 5 clicks over 7 days -- six consecutive weeks flagged with no action. One title-tag change is all this needs.\n- **Publish a dedicated \"A/B testing LLM prompts\" or \"feature flags for AI models\" page.** PostHog now has three AI/LLM experimentation docs pages; LaunchDarkly's \"AI Experimentation\" (KD 52) and Harness's AI code sprawl post are both aging. GrowthBook's **/solutions/ai** is still at 0 clicks.\n- **Promote **/blog/best-open-source-feature-flagging-tools-compared** via internal links and social this week.** It is already earning 18 clicks/week and Harness's direct competitor post is now indexed and aging toward authority.\n- **Investigate Docs GA4 decline (-16.0% WoW, second consecutive week).** Last data point was a reversal from +10.2%. Two weeks of decline warrants a quick check for broken links, tagging issues, or a specific page driving the drop.",
+    "**Data quality flags**\n- GSC page-split window (2026-05-25 to 2026-05-31) is one week behind the GA4 window (2026-05-30 to 2026-06-05) -- normal API lag, minor date mismatch between sources.\n- ETV WoW percentages remain unreliable through 2026-05-24 per the pipeline note; the LD server-side SDK +177.3% should be treated as directional only."
   ],
   "content_recommendations": [
-    "1. Optimize /compare/growthbook-vs-launchdarkly title and H1 to target \"launchdarkly business model b2b\" (position 10.25, 1,681 impressions this week, ~4,086 impressions over 28 days, only 5 clicks this week). Five weeks of flagging with no action -- a targeted title change takes under an hour and this is the highest-certainty click-volume gain available.",
-    "2. Write a dedicated blog post on A/B testing LLM prompts or feature flags for AI models. LaunchDarkly published \"AI Experimentation\" (KD 52) and PostHog published two prompt-experiment docs pages this week. GrowthBook's /solutions/ai has 0 clicks. Acting now captures the keyword cluster before both competitors age in.",
-    "3. Expand /blog/best-open-source-feature-flagging-tools-compared with a dedicated section positioning GrowthBook's open-source advantage. The page is already earning 18 clicks/week (fastest organic gainer this week) and Harness just published a competing comparison post -- strengthening this page now defends the ranking before Harness's version indexes.",
-    "4. Refresh /solutions/ai or publish a supporting blog post targeting \"powering AI with feature flags\" angle. Optimizely's page on this topic is now several weeks old and gaining authority. GrowthBook has no equivalent and the keyword space is low-competition (KD null for most related queries).",
-    "5. Write a short explainer on release management tools targeting the zero-KD gap LaunchDarkly just entered. Their new \"Release Management Tools\" blog (KD 0, composite score 75) gives GrowthBook a window to publish first on adjacent queries like \"feature flag release management\" before LD's page indexes."
+    "1. Optimize **/compare/growthbook-vs-launchdarkly** title tag and H1 to target \"launchdarkly business model b2b\" (position 10.25, 1,681 impressions, 5 clicks/7d). Six weeks of inaction on the single easiest CTR lever in the dataset.",
+    "2. Write a dedicated \"A/B testing LLM prompts with feature flags\" post targeting the AI experimentation cluster. PostHog now has three docs pages on this theme; LaunchDarkly published \"AI Experimentation\" (KD 52). GrowthBook's /solutions/ai is at 0 clicks with no counter-content live.",
+    "3. Expand **/blog/best-open-source-feature-flagging-tools-compared** with internal links from the new /blog/growthbook-4-4 post (16 clicks this week) and from the homepage. Harness's equivalent comparison post is now indexed -- GrowthBook's head start is narrowing.",
+    "4. Write a \"release management\" explainer post targeting the \"release management tools\" query (KD 0, flagged as a Quick Win). LaunchDarkly just published on this topic; low KD means GrowthBook can compete immediately with a focused 1,500-word post.",
+    "5. Refresh **/blog/a-b-testing-in-the-age-of-ai** (15 clicks, +7 WoW) with internal links to the new treatment-effects guide and the AI solutions page. The page is gaining organic traction and an internal linking pass costs minimal effort while reinforcing topical authority."
   ],
   "opportunities": [
     {
@@ -3420,14 +3420,6 @@
       "date": "2026-06-06"
     },
     {
-      "competitor": "Amplitude Exp",
-      "slug": "overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/overview",
-      "threat": 7,
-      "kd": 30.0,
-      "date": "2026-06-06"
-    },
-    {
       "competitor": "PostHog",
       "slug": "vision-2",
       "url": "https://posthog.com/docs/api/vision-2",
@@ -3449,6 +3441,14 @@
       "url": "https://posthog.com/questions/logging-in-django",
       "threat": 7,
       "kd": 3.0,
+      "date": "2026-06-06"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "overview",
+      "url": "https://amplitude.com/docs/guides-and-surveys/overview",
+      "threat": 6,
+      "kd": 30.0,
       "date": "2026-06-06"
     },
     {
@@ -3517,14 +3517,6 @@
     },
     {
       "competitor": "Amplitude Exp",
-      "slug": "survey-overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/survey-overview",
-      "threat": 6,
-      "kd": 55.0,
-      "date": "2026-06-06"
-    },
-    {
-      "competitor": "Amplitude Exp",
       "slug": "guides-and-surveys-flutter-sdk",
       "url": "https://amplitude.com/docs/sdks/guides-and-surveys/guides-and-surveys-flutter-sdk",
       "threat": 6,
@@ -3561,6 +3553,14 @@
       "url": "https://www.flagsmith.com/blog/release-testing",
       "threat": 6,
       "kd": 0.0,
+      "date": "2026-06-06"
+    },
+    {
+      "competitor": "Flagsmith",
+      "slug": "smoke-testing",
+      "url": "https://www.flagsmith.com/blog/smoke-testing",
+      "threat": 6,
+      "kd": 11.0,
       "date": "2026-06-06"
     },
     {
