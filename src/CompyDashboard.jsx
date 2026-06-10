@@ -22,6 +22,16 @@ function card(extra = {}) {
   return { background: C.white, borderRadius: 8, border: `1px solid ${C.border}`, ...extra };
 }
 
+// External-data URLs (competitor sitemaps, GSC pages, DataForSEO) may lack a
+// scheme or, in the hostile case, carry a javascript: scheme — only ever link
+// to http(s). Scheme-less values get https:// prepended.
+function safeHref(url) {
+  const u = (url || "").trim();
+  if (/^https?:\/\//i.test(u)) return u;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(u)) return "#"; // javascript:, data:, etc.
+  return u ? `https://${u}` : "#";
+}
+
 function MetricCard({ label, value, change, sub }) {
   const color = change > 0 ? C.success : change < 0 ? C.danger : C.muted;
   const arrow = change > 0 ? "↑" : change < 0 ? "↓" : "";
@@ -155,7 +165,7 @@ function BubbleChart({ competitors }) {
         ))}
       </div>
       <p style={{ fontSize:11, color:C.muted, textAlign:'left', marginTop:8 }}>
-        DA scores from Moz (fetched 2026-04-03). GrowthBook ETV undercounts branded traffic (~45% of clicks).
+        DA scores from Moz (fetched 2026-04-03). GrowthBook ETV undercounts branded traffic (~55% of clicks).
       </p>
     </Section>
   );
@@ -212,7 +222,7 @@ export default function CompyDashboard() {
           const r = await fetch(`/data/${date}.json`);
           if (!r.ok) continue;
           const data = await r.json();
-          const hasData = data && Array.isArray(data.gb_pages) && data.gb_pages.length > 0;
+          const hasData = !!(data && data.week);  // any coherent payload, not just ones with gb_pages
           if (hasData) {
             if (!loaded) {
               loaded = true;
@@ -246,6 +256,12 @@ export default function CompyDashboard() {
     );
   }
 
+  // The generator emits {data_missing: true, clicks: null, ...} (without ctr,
+  // clicks_last, branded, …) when GSC data was unavailable for the run. Every
+  // GSC render below must go through this guard or null-safe accessors —
+  // unguarded .toLocaleString()/.toFixed() white-screened the whole dashboard.
+  const gscMissing = !!d.gsc?.data_missing;
+
 
   return (
     <div style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", background: C.bg, minHeight: "100vh" }}>
@@ -274,8 +290,12 @@ export default function CompyDashboard() {
             </select>
           )}
           <div style={{ color: "#AED6F1", fontSize: 12, textAlign: "right" }}>
-            GSC: {(d.gsc.clicks||0).toLocaleString()} clicks · {d.gsc.wow_clicks > 0 ? "+" : ""}{d.gsc.wow_clicks}% WoW<br />
-            {Math.round((d.gsc.impressions||0)/1000)}K impressions · {d.gsc.wow_impressions > 0 ? "+" : ""}{d.gsc.wow_impressions}% WoW
+            {gscMissing
+              ? <>GSC data unavailable for this run</>
+              : <>
+                  GSC: {(d.gsc.clicks||0).toLocaleString()} clicks · {(d.gsc.wow_clicks ?? 0) > 0 ? "+" : ""}{d.gsc.wow_clicks ?? 0}% WoW<br />
+                  {Math.round((d.gsc.impressions||0)/1000)}K impressions · {(d.gsc.wow_impressions ?? 0) > 0 ? "+" : ""}{d.gsc.wow_impressions ?? 0}% WoW
+                </>}
           </div>
         </div>
       </div>
@@ -363,22 +383,29 @@ export default function CompyDashboard() {
 
           {/* GSC Scorecard row */}
           <Section title="Search Performance (GSC)">
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
-              <MetricCard label="Clicks" value={d.gsc.clicks.toLocaleString()} change={d.gsc.wow_clicks} sub={`${d.gsc.clicks_last.toLocaleString()} prior week`} />
-              <MetricCard label="Impressions" value={`${Math.round(d.gsc.impressions/1000)}K`} change={d.gsc.wow_impressions} sub="prior week" />
-              <MetricCard label="CTR" value={`${d.gsc.ctr.toFixed(2)}%`} sub="WoW" />
-              <MetricCard label="Avg Position" value={d.gsc.avg_position} sub="WoW" />
-              <MetricCard label="28-Day Clicks" value={d.gsc.trailing_28d_clicks.toLocaleString()} sub={`${d.gsc.mom_clicks > 0 ? "+" : ""}${d.gsc.mom_clicks}% MoM`} />
-            </div>
+            {gscMissing ? (
+              <div style={{ ...card({ padding: "16px 20px" }), color: C.danger, fontSize: 13 }}>
+                ⚠️ GSC data unavailable for this run{d.gsc.error ? ` — ${d.gsc.error}` : ""}.
+              </div>
+            ) : (
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+                <MetricCard label="Clicks" value={(d.gsc.clicks ?? 0).toLocaleString()} change={d.gsc.wow_clicks} sub={`${(d.gsc.clicks_last ?? 0).toLocaleString()} prior week`} />
+                <MetricCard label="Impressions" value={`${Math.round((d.gsc.impressions ?? 0)/1000)}K`} change={d.gsc.wow_impressions} sub="prior week" />
+                <MetricCard label="CTR" value={`${(d.gsc.ctr ?? 0).toFixed(2)}%`} sub="WoW" />
+                <MetricCard label="Avg Position" value={d.gsc.avg_position ?? "—"} sub="WoW" />
+                <MetricCard label="28-Day Clicks" value={(d.gsc.trailing_28d_clicks ?? 0).toLocaleString()} sub={`${(d.gsc.mom_clicks ?? 0) > 0 ? "+" : ""}${d.gsc.mom_clicks ?? 0}% MoM`} />
+              </div>
+            )}
           </Section>
 
           {/* Click breakdown */}
+          {!gscMissing && (
           <Section title="Click Breakdown (This Week)">
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               {[
-                { label: "Branded", value: d.gsc.branded.toLocaleString(), note: "queries containing 'growthbook'" },
-                { label: "Non-Branded", value: d.gsc.nonbranded.toLocaleString(), note: "organic discovery traffic" },
-                { label: "Anonymized", value: d.gsc.anonymized.toLocaleString(), note: "low-volume queries (GSC privacy)" },
+                { label: "Branded", value: (d.gsc.branded ?? 0).toLocaleString(), note: "queries containing 'growthbook'" },
+                { label: "Non-Branded", value: (d.gsc.nonbranded ?? 0).toLocaleString(), note: "organic discovery traffic" },
+                { label: "Anonymized", value: (d.gsc.anonymized ?? 0).toLocaleString(), note: "low-volume queries (GSC privacy)" },
               ].map((b, i) => (
                 <div key={i} style={{ ...card({ padding: "14px 18px", flex: 1, minWidth: 160 }) }}>
                   <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase" }}>{b.label}</div>
@@ -388,6 +415,7 @@ export default function CompyDashboard() {
               ))}
             </div>
           </Section>
+          )}
 
           {/* Content Recommendations — LLM-generated action items */}
           {(() => { const _recs = Array.isArray(d.content_recommendations) ? d.content_recommendations : (d.content_recommendations || "").split("\n").filter(l => /^\d+\./.test(l.trim())); return _recs.length > 0 && (
@@ -474,7 +502,7 @@ export default function CompyDashboard() {
                 ));
               })()}
               <p style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, marginBottom: 0, textAlign: "left" }}>
-                Note: GrowthBook ETV underreports actual organic traffic — branded search (~45% of clicks) is not counted by DataForSEO. See GSC tab for real click data.
+                Note: GrowthBook ETV underreports actual organic traffic — branded search (~55% of clicks) is not counted by DataForSEO. See GSC tab for real click data.
               </p>
             </div>
           </Section>
@@ -625,7 +653,6 @@ export default function CompyDashboard() {
         {tab === "youtube" && (() => {
           const channels = d.youtube.channels;
           const gbCh = channels.find(c => c.name === "GrowthBook") || { videos: [], avg_views: 0, video_count: 0 };
-          const runDate = new Date((d.week || "").toString() + "T00:00:00");
           // Show all videos from the payload sorted by date, most recent first (Python already applies 90-day window)
           const gbAllRecent = (gbCh.videos || [])
             .filter(v => v.date)
@@ -832,7 +859,7 @@ export default function CompyDashboard() {
                       const isSitemapOnly = n.source === "sitemap" && (n.clicks === 0 || n.clicks == null);
                       return [
                         <span style={{ color: COMP_COLORS[dispName] || C.primary, fontWeight: 600, display: "block", textAlign: "left" }}>{dispName}</span>,
-                        <a href={n.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
+                        <a href={safeHref(n.url)} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>,
                         n.date || "—",
                         n.threat != null ? <span style={{ fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning }}>{n.threat}/10</span> : <span style={{ color: C.muted }}>—</span>,
                         n.kd != null ? n.kd : "—",
@@ -935,7 +962,7 @@ export default function CompyDashboard() {
               rows={d.etv_kd.map(row => [
                 <span style={{ color: COMP_COLORS[row.competitor] || C.primary, fontWeight: 600 }}>{row.competitor}</span>,
                 <span style={{ display: "block", textAlign: "left" }}>{row.title}</span>,
-                <a href={`https://${row.url}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{row.url}</a>,
+                <a href={safeHref(row.url)} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{(row.url || "").replace(/^https?:\/\//, "")}</a>,
                 row.etv.toLocaleString(),
                 <span style={{ fontWeight: 700, color: row.kd >= 60 ? C.danger : row.kd >= 30 ? C.warning : C.success }}>{row.kd}</span>,
               ])}
@@ -993,7 +1020,7 @@ export default function CompyDashboard() {
                       />
                       <YAxis tick={{ fontSize: 10, fill: C.muted }} tickFormatter={v => v.toLocaleString()} width={55} />
                       <RTooltip
-                        contentStyle={{ background: C.card, border: `1px solid ${C.border}`, borderRadius: 6, fontSize: 12 }}
+                        contentStyle={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 6, fontSize: 12 }}
                         formatter={(v) => [v.toLocaleString(), "Clicks"]}
                         labelFormatter={(w) => `Week of ${w}`}
                       />
@@ -1028,7 +1055,7 @@ export default function CompyDashboard() {
                       <XAxis type="number" tick={{ fontSize: 11 }} />
                       <YAxis type="category" dataKey="label" tick={{ fontSize: 10 }} width={360} />
                       <RTooltip formatter={(v) => [Number(v || 0).toLocaleString(), "Clicks"]} />
-                      <RBar dataKey="clicks" radius={[0, 4, 4, 0]} fill={C.green || "#4CAF50"} />
+                      <RBar dataKey="clicks" radius={[0, 4, 4, 0]} fill="#4CAF50" />
                     </BarChart>
                   </ResponsiveContainer>
                 )}
@@ -1203,8 +1230,15 @@ export default function CompyDashboard() {
           const ALL_METRICS = [...SEO_METRICS, ...AEO_METRICS];
 
           // ── Per-metric data for each section ───────────────────────
+          // Value and WoW% must fall back TOGETHER: mixing the organic value
+          // with the all-traffic WoW%% (or vice versa) is apples-to-oranges.
+          const ga4m = d.ga4?.main_site || {};
+          const orgWow = ga4m.organic_sessions != null
+            ? { value: ga4m.organic_sessions.toLocaleString(), pct: ga4m.organic_sessions_wow_pct ?? null }
+            // label override: don't present all-traffic numbers under the organic label
+            : { value: (ga4m.sessions ?? 0).toLocaleString(), pct: ga4m.wow_sessions_pct ?? null, label: "Sessions (all traffic)" };
           const wowData = {
-            sessions: { value: (d.ga4?.main_site?.organic_sessions ?? d.ga4?.main_site?.sessions ?? 0).toLocaleString(), pct: d.ga4?.main_site?.organic_sessions_wow_pct ?? d.ga4?.main_site?.wow_sessions_pct },
+            sessions: orgWow,
             branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
             top10:    { value: sem.top10_count ?? "—", pct: sem.top10_mom ?? null },
             signups:  { pending: true },
@@ -1214,10 +1248,12 @@ export default function CompyDashboard() {
           };
 
           const fourWkData = {
-            sessions: d.ga4?.main_site?.organic_sessions_4w != null
-              ? { value: d.ga4.main_site.organic_sessions_4w.toLocaleString(), pct: d.ga4.main_site.organic_sessions_4w_pct ?? null }
-              : d.ga4?.main_site?.sessions_4w != null
-              ? { value: d.ga4.main_site.sessions_4w.toLocaleString(), pct: d.ga4.main_site.sessions_4w_pct ?? null }
+            // Same coupled-fallback rule as wowData; the all-traffic fallback
+            // pairs sessions_4w with sessions_4w_pct, never a mix.
+            sessions: ga4m.organic_sessions_4w != null
+              ? { value: ga4m.organic_sessions_4w.toLocaleString(), pct: ga4m.organic_sessions_4w_pct ?? null }
+              : ga4m.sessions_4w != null
+              ? { value: ga4m.sessions_4w.toLocaleString(), pct: ga4m.sessions_4w_pct ?? null, label: "Sessions (all traffic)" }
               : { pending: true },
             branded:  { value: branded4wCur.toLocaleString(), pct: branded4wPct },
             top10:    sem.top10_count != null
