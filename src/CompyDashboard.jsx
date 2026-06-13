@@ -381,6 +381,51 @@ export default function CompyDashboard() {
             </Section>
           )}
 
+          {/* Total sign-ups (from Hex: org founder dateCreated; all sources, not organic) */}
+          {d.signups && (
+            <Section title="Total Sign-ups (Product)">
+              {(() => {
+                // Drop overlap points (e.g. the 05-10 Sunday re-run) so the line and
+                // the WoW comparison use a clean, non-double-counted weekly series.
+                const trend = (d.signups.trend || []).filter(p => !p.overlap);
+                const idx = trend.findIndex(p => p.week === d.week);
+                const cur = d.signups.total ?? 0;
+                const prev = idx > 0 ? trend[idx - 1].total : null;
+                const change = prev ? Math.round(((cur - prev) / prev) * 1000) / 10 : undefined;
+                return (
+                  <>
+                    <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+                      <MetricCard
+                        label="Total Sign-ups"
+                        value={cur.toLocaleString()}
+                        change={change}
+                        sub={`${d.signups.window_start} – ${d.signups.window_end} · all sources (not organic)`}
+                      />
+                    </div>
+                    {trend.length > 1 && (
+                      <ResponsiveContainer width="100%" height={200}>
+                        <LineChart data={trend} margin={{ left: 10, right: 20, top: 8, bottom: 8 }}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#333" />
+                          <XAxis dataKey="week" tick={{ fontSize: 10, fill: C.muted }} tickFormatter={w => w ? w.slice(5) : w} interval="preserveStartEnd" />
+                          <YAxis tick={{ fontSize: 10, fill: C.muted }} tickFormatter={v => v.toLocaleString()} width={45} />
+                          <RTooltip
+                            contentStyle={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 6, fontSize: 12 }}
+                            formatter={(v) => [v.toLocaleString(), "Sign-ups"]}
+                            labelFormatter={(w) => `Week of ${w}`}
+                          />
+                          <Line type="monotone" dataKey="total" stroke={COMP_COLORS["GrowthBook"] || C.accent} strokeWidth={2} dot={false} activeDot={{ r: 4 }} />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    )}
+                    <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: 'left' }}>
+                      Total sign-ups = new organizations by founder join date, across ALL acquisition sources — not organic-only (UTM data unavailable). Weekly, aligned to the GA4 window. Source: Hex (mongo_views.organizations).
+                    </p>
+                  </>
+                );
+              })()}
+            </Section>
+          )}
+
           {/* GSC Scorecard row */}
           <Section title="Search Performance (GSC)">
             {gscMissing ? (

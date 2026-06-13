@@ -6469,5 +6469,70 @@
     "period_start": "2026-04-18",
     "period_end": "2026-05-23",
     "snapshot_date": "2026-05-23"
+  },
+  "signups": {
+    "total": 391,
+    "label": "Total sign-ups",
+    "note": "All sources (not organic-only)",
+    "window_start": "2026-05-16",
+    "window_end": "2026-05-22",
+    "source": "mongo_views.organizations members[1].dateCreated (org founder); all sources, not organic-only",
+    "trend": [
+      {
+        "week": "2026-04-11",
+        "total": 254,
+        "overlap": false
+      },
+      {
+        "week": "2026-04-18",
+        "total": 222,
+        "overlap": false
+      },
+      {
+        "week": "2026-04-25",
+        "total": 202,
+        "overlap": false
+      },
+      {
+        "week": "2026-05-02",
+        "total": 231,
+        "overlap": false
+      },
+      {
+        "week": "2026-05-09",
+        "total": 256,
+        "overlap": false
+      },
+      {
+        "week": "2026-05-10",
+        "total": 269,
+        "overlap": true
+      },
+      {
+        "week": "2026-05-16",
+        "total": 325,
+        "overlap": false
+      },
+      {
+        "week": "2026-05-23",
+        "total": 391,
+        "overlap": false
+      },
+      {
+        "week": "2026-05-30",
+        "total": 455,
+        "overlap": false
+      },
+      {
+        "week": "2026-06-06",
+        "total": 233,
+        "overlap": false
+      },
+      {
+        "week": "2026-06-13",
+        "total": 285,
+        "overlap": false
+      }
+    ]
   }
 }
