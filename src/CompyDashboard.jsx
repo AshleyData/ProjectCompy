@@ -785,14 +785,23 @@ export default function CompyDashboard() {
         {tab === "content" && (<>
           {(() => {
             const counts = {};
+            const gbUrls = new Set();
             (d.new_content || []).forEach(n => {
               // Normalise "GrowthBook Blog" / "GrowthBook Site" → "GrowthBook"
               const name = n.competitor.startsWith("GrowthBook") ? "GrowthBook" : n.competitor;
               counts[name] = (counts[name] || 0) + 1;
+              if (name === "GrowthBook" && n.url) gbUrls.add(n.url);
             });
-            // GrowthBook new pages: prefer sitemap count (same source as competitors), fall back to GSC-based list
-            const gbSitemapCount = d.gb_sitemap_new_count ?? (d.gb_new_content || []).length;
-            counts["GrowthBook"] = (counts["GrowthBook"] || 0) + gbSitemapCount;
+            // GrowthBook also has GSC-detected pages in gb_new_content. Count only the
+            // ones whose URL isn't already in new_content (which already carries the
+            // sitemap rows). Previously this blindly added gb_sitemap_new_count on top,
+            // so any page present in both sources was counted twice (28 + 28 = 56).
+            (d.gb_new_content || []).forEach(p => {
+              if (p.url && !gbUrls.has(p.url)) {
+                counts["GrowthBook"] = (counts["GrowthBook"] || 0) + 1;
+                gbUrls.add(p.url);
+              }
+            });
             // Recharts layout="vertical" renders first item at top — sort descending so largest is on top
             const chartData = Object.entries(counts)
               .sort((a, b) => b[1] - a[1])

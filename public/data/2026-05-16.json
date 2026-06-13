@@ -3314,22 +3314,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "12-common-feature-flag-mistakes-to-avoid",
-      "url": "https://www.growthbook.io/blog/12-common-feature-flag-mistakes-to-avoid",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained",
-      "url": "https://www.growthbook.io/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning",
       "url": "https://www.growthbook.io/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning",
       "threat": 4,
@@ -3362,30 +3346,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "new-feature-save-time-with-automatic-metric-generation",
-      "url": "https://www.growthbook.io/blog/new-feature-save-time-with-automatic-metric-generation",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "7-steps-to-better-experiment-design",
-      "url": "https://www.growthbook.io/guides/7-steps-to-better-experiment-design",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "the-a-b-testing-playbook-for-al-powered-apps",
-      "url": "https://www.growthbook.io/guides/the-a-b-testing-playbook-for-al-powered-apps",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "best-ab-testing-tools-developers",
       "url": "https://www.growthbook.io/insights/best-ab-testing-tools-developers",
       "threat": 4,
@@ -3394,24 +3354,8 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "best-ab-testing-tools-product-analytics",
-      "url": "https://www.growthbook.io/insights/best-ab-testing-tools-product-analytics",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "best-open-source-feature-flagging-tools",
       "url": "https://www.growthbook.io/insights/best-open-source-feature-flagging-tools",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-05-16"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "best-warehouse-native-ab-testing-tools",
-      "url": "https://www.growthbook.io/insights/best-warehouse-native-ab-testing-tools",
       "threat": 4,
       "kd": null,
       "date": "2026-05-16"
