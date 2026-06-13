@@ -53,18 +53,18 @@
   "exec_summary": [
     "Site traffic (GA4, 2026-06-06 to 2026-06-12): growthbook.io had 12,673 sessions and 8,135 users (-14.6% week over week).",
     "## Week of 2026-06-13",
-    "**Site performance**\n- **Overall (GA4, all traffic):** 12,673 sessions (-14.6% WoW) | 8,135 users\n- **Overall (GSC, organic search):** 3,392 clicks (+7.0% WoW) | 152,349 impressions (-3.1% WoW)\n- **Homepage (/):** 8,888 GA4 sessions (+3.7% WoW) all-traffic | 1,875 GSC clicks (+6.8% WoW) organic | 13,996 GSC impressions (-13.5% WoW)\n- **Pricing (/pricing):** 1,289 GA4 sessions (-6.4% WoW) all-traffic | 106 GSC clicks (+14.0% WoW) organic | 5,374 GSC impressions (+13.3% WoW)\n- **Docs (docs.growthbook.io):** 4,393 GA4 sessions (-2.4% WoW) all-traffic | 1,065 GSC clicks (+2.8% WoW) organic | 121,479 GSC impressions (+12.2% WoW)\n- **All other pages:** 4,977 GA4 sessions (-36.2% WoW) all-traffic | 320 GSC clicks (+19.0% WoW) organic | 100,688 GSC impressions (-8.0% WoW)\n- All-other-pages is the critical signal this week: GA4 all-traffic down -36.2% while GSC organic clicks are up +19.0% -- the inverse of last week's AI-displacement pattern. The GA4 drop is likely real (not a tagging artifact) given pricing and docs are also softer. Worth checking GA4 channel breakdown -- Direct and Organic Search are the two largest channels and any shift there explains the gap.\n- Docs stabilized (-2.4% WoW) after two consecutive weeks of steeper declines (-16.0% last week). Still worth monitoring but the freefall appears to have slowed.",
-    "**New competitor activity**\n- **Optimizely** published three AI experimentation assets this week: **\"AI Experimentation Takes With Elena Verna\"**, **\"Big Ideas In AI-Driven Experimentation\"**, and **\"Top 10 Takeaways From The Experimentation Playbook\"** -- all Tier 1, all clustered on the same theme. Optimizely is running a coordinated AI experimentation content campaign; GrowthBook has no equivalent thought-leadership cluster to intercept this.\n- **Optimizely** also carried forward **\"Powering AI With Feature Flags\"** (flagged last week, still new in the monitoring window) -- four AI-angle pages from one competitor in a single week is a deliberate campaign, not random publishing.\n- **LaunchDarkly** published **\"AI Experimentation\"** blog and **\"AI SDKs 1.0\"** changelog -- LD is now running a parallel AI narrative across blog and product changelog simultaneously. Combined with its YouTube videos (see below), LD is building multi-channel authority on AI + feature flags.\n- **Flagsmith** published **\"GitLab Feature Flags\"** (KD 5, Tier 1) -- a direct comparison/integration page targeting developers evaluating GitLab's native flags vs. a dedicated tool. GrowthBook has no equivalent GitLab integration page and this query is low-competition.\n- **Harness** published **\"Feature Flag Tools Compared: 10 Best Platforms For Safer Releases\"** -- a direct competitor to GrowthBook's **/blog/best-open-source-feature-flagging-tools-compared**, which published May 18 and is already earning 52 clicks/week. Harness's version will age into authority alongside GrowthBook's; promote GrowthBook's post aggressively now.\n- **PostHog** CUPED and LLM Prompt Experiments docs carried forward from last week -- still no GrowthBook counter-content published on either topic.\n- \u26a0\ufe0f No new pages detected from **Statsig** or **Unleash** this week -- likely a monitoring gap.",
-    "**New GrowthBook content**\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): now earning 52 clicks/week on 16,197 impressions at position 9.2 -- strongest performer in the new content batch. Harness just published a direct competitor post; internal links and social promotion needed now.\n- **/blog/how-to-implement-feature-flags-at-scale** (published 2026-05-26): 11 clicks, 8,276 impressions, position 7.2 -- solid early traction, already in striking distance territory.\n- **/blog/growthbook-4-4** (published 2026-05-27): 33 clicks, 2,529 impressions, position 5.9 -- performing well for a changelog post; add internal links to feature flag and experimentation product pages to convert developer interest.\n- Noticed this week via sitemap (publish dates unknown): **/blog/12-common-feature-flag-mistakes-to-avoid**, **/blog/best-a-b-testing-platforms**, **/blog/engineering-guide-feature-flag-technical-debt**, **/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning**, **/blog/doordash-runs-12-000-experiments-per-year-across-3-sided-marketplace**, **/blog/amazon-to-atlassian-a-framework-for-testing-assumptions**, **/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained** -- none have GSC impressions yet.",
-    "**Organic movers worth watching**\n- **\"a/b testing\"** at position 17.55 with 2,268 impressions -- highest-impression striking-distance query in the payload. A page refresh or internal link push to **/blog/what-is-a-b-testing** (up 10 clicks WoW this week) could accelerate movement into page 1.\n- **/blog/a-practitioners-guide-to-treatment-effects** jumped from 1 to 10 clicks WoW -- early signal of organic traction on a high-authority stats topic. PostHog's CUPED docs are targeting the same developer audience; build on this momentum.\n- **/compare/growthbook-vs-launchdarkly** holding at position 10.0 with 3,297 impressions over 28 days and only 17 clicks (28d) -- seventh consecutive week flagged. The \"launchdarkly business model b2b\" query is still sitting at position ~10. One title-tag refresh is the only action required.\n- **/compare/growthbook-vs-optimizely** dropped to 0 clicks this week (from 2 last week); 28d clicks fell from 10 to 3. Position 9.1 with 2,255 impressions -- a page at position 9 earning 3 clicks in 28 days is a title/meta description problem worth fixing.\n- **Statsig \"Mann-Whitney U\"** page decayed 92.4% in 4 weeks (160 ETV to 12) -- a high-relevance stats page losing ground fast. GrowthBook could target this query with existing statistical methodology content.",
-    "**Recommended actions**\n- **Refresh the title and H1 on **/compare/growthbook-vs-launchdarkly** for \"launchdarkly business model b2b\" this week.** Seven consecutive weeks flagged, position 10.0, 3,297 impressions, 17 clicks over 28 days. This is still the single easiest conversion lever available.\n- **Promote **/blog/best-open-source-feature-flagging-tools-compared** via social and internal links immediately.** 52 clicks/week at position 9.2 -- Harness just published a direct competitor post that will age alongside it. GrowthBook's head start is narrow.\n- **Publish a GrowthBook \"AI experimentation\" blog or landing page this week.** Optimizely published four AI experimentation pages in one week; LaunchDarkly published two. GrowthBook's **/solutions/ai** is still at 0 GSC clicks. The window to own this narrative before competitors' content matures is closing.\n- **Write a \"GitLab feature flags\" comparison or integration page.** Flagsmith just published one at KD 5. GrowthBook has no equivalent page targeting this query and the competition is minimal."
+    "**Site performance**\n- **Overall (GA4, all traffic):** 12,673 sessions (-14.6% WoW) | 8,135 users\n- **Overall (GSC, organic search):** 3,392 clicks (+7.0% WoW) | 152,349 impressions (-3.1% WoW)\n- **Homepage (/):** 8,888 GA4 sessions (+3.7% WoW) all-traffic | 1,875 GSC clicks (+6.8% WoW) organic | 13,996 GSC impressions (-13.5% WoW)\n- **Pricing (/pricing):** 1,289 GA4 sessions (-6.4% WoW) all-traffic | 106 GSC clicks (+14.0% WoW) organic | 5,374 GSC impressions (+13.3% WoW)\n- **Docs (docs.growthbook.io):** 4,393 GA4 sessions (-2.4% WoW) all-traffic | 1,065 GSC clicks (+2.8% WoW) organic | 121,479 GSC impressions (+12.2% WoW)\n- **All other pages:** 4,977 GA4 sessions (-36.2% WoW) all-traffic | 320 GSC clicks (+19.0% WoW) organic | 100,688 GSC impressions (-8.0% WoW)\n- Note: This week's GSC page-split data reflects the 2026-06-01 to 2026-06-07 window -- same as last week's payload. Numbers are unchanged from the previous summary. The all-other-pages divergence (GA4 down -36.2%, GSC organic up +19.0%) was flagged last week; no new movement to report.",
+    "**New competitor activity**\n- **LaunchDarkly** published **\"Feature Flags vs Feature Branching\"** -- a bottom-funnel developer comparison page directly targeting GrowthBook's open-source ICP. GrowthBook has trunk-based development content but no dedicated \"feature flags vs branching\" page to intercept this query.\n- **Harness** published **\"A/B Testing at Scale: Enable Safe Experimentation for Platform Teams\"** -- a Tier 1 blog directly competing with GrowthBook's platform-team positioning. Combined with Harness's existing \"Feature Flag Tools Compared\" post (flagged last week), Harness is now running a coordinated platform-team experimentation narrative.\n- **Harness** published **\"Evolving Feature Management Experimentation\"** and **\"Experimentation Your Secret Weapon\"** (resources) -- two more Tier 1 assets in the same week, bringing Harness's new Tier 1 count to four this week. This is a content campaign, not random publishing.\n- **PostHog** CUPED and LLM Prompt Experiments docs continue to appear -- third consecutive week flagged with no GrowthBook counter-content published.\n- **LaunchDarkly** YouTube is now building multi-channel authority on AI + feature flags: **\"The Future of Agent Configs\"** (225,846 views, 14.9x channel avg) and **\"Runtime control for the AI era\"** (208,250 views, 13.7x channel avg) are both significantly outperforming. LD is winning the AI narrative on video as well as text.\n- \u26a0\ufe0f No new pages detected from **Statsig** or **Unleash** this week -- likely a monitoring gap.",
+    "**New GrowthBook content**\n- Noticed this week via sitemap: **/blog/best-a-b-testing-platforms**, **/blog/engineering-guide-feature-flag-technical-debt**, **/blog/feature-flags-in-ci-cd**, **/blog/the-ford-2-percent-close-rate-increase**, **/insights/ab-test-ai-powered-search-recommendations**, **/insights/ab-testing-llms**, **/insights/canary-releases-ai-models-what-changes-vs-traditional-software** -- none have GSC impressions yet. The AI-angle insights pages (**ab-testing-llms**, **canary-releases-ai-models**) are well-timed given competitor AI content volume.\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): holding at 52 clicks/week, 16,197 impressions, position 9.2 -- still the strongest new-content performer. Harness's competing post is now indexed and aging.\n- **/blog/how-to-implement-feature-flags-at-scale** (published 2026-05-26): 11 clicks, 8,276 impressions, position 7.2 -- solidly in striking distance.",
+    "**Organic movers worth watching**\n- **/blog/a-practitioners-guide-to-treatment-effects** jumped from 1 to 10 clicks WoW -- second consecutive week of growth on a high-authority stats topic. PostHog's CUPED docs are targeting the same developer audience; build internal links to this page now while momentum is building.\n- **/blog/a-b-testing-in-the-age-of-ai** dropped from 15 to 4 clicks WoW -- the one AI-specific page GrowthBook has is losing ground in the same week competitors are publishing coordinated AI experimentation campaigns. Worth refreshing or expanding before the competitive gap widens further.\n- **\"a/b testing\"** still at position 17.55 with 2,268 impressions -- unchanged from last week, still the highest-impression striking-distance query. A push to page 1 would be the single largest organic traffic lever available.\n- **/compare/growthbook-vs-launchdarkly** flat at position 10.0, 3,297 impressions, 5 clicks this week -- eight consecutive weeks flagged with no title-tag action. This is the easiest unconverted impression pool in the account.\n- **/compare/growthbook-vs-optimizely** at 0 clicks this week, 28d clicks fell from 10 to 3, position 9.1 with 2,255 impressions -- a page at position 9 earning 3 clicks over 28 days needs a title/meta refresh.",
+    "**Recommended actions**\n- **Refresh the title and H1 on **/compare/growthbook-vs-launchdarkly** this week.** Eight consecutive weeks at position 10.0 with 3,297 impressions and only 5 clicks. One title-tag change targeting \"launchdarkly alternative open source\" or equivalent is the only action required.\n- **Refresh or expand **/blog/a-b-testing-in-the-age-of-ai** this week.** It dropped from 15 to 4 clicks as Optimizely published four AI experimentation assets and LaunchDarkly published two. GrowthBook's only AI experimentation blog is losing ground precisely when the topic is most competitive.\n- **Promote **/insights/ab-testing-llms** and **/insights/canary-releases-ai-models** via internal links and social immediately.** These new pages directly intercept the AI + experimentation queries competitors are flooding -- but they need internal link equity to index and rank.\n- **Write a \"feature flags vs feature branching\" page.** LaunchDarkly just published one at a low-KD query that GrowthBook's developer ICP searches. No GrowthBook equivalent exists."
   ],
   "content_recommendations": [
-    "1. Refresh /compare/growthbook-vs-launchdarkly title tag and H1 to target \"launchdarkly business model b2b\" -- position 10.0, 3,297 impressions over 28 days, 17 clicks. Seven weeks of flagging with no action; one edit could move this page onto page 1.",
-    "2. Write a dedicated \"AI experimentation\" blog post or solutions page this week. Optimizely published four AI experimentation assets in one week; LaunchDarkly published an \"AI Experimentation\" blog plus \"AI SDKs 1.0\" changelog. GrowthBook's /solutions/ai has 0 GSC clicks. First-mover window is closing.",
-    "3. Optimize /compare/growthbook-vs-optimizely title and meta description. Position 9.1 with 2,255 impressions but only 3 clicks over 28 days -- a CTR problem at a page that already ranks. A title refresh targeting a higher-intent query phrase could recover clicks without any ranking work.",
-    "4. Publish a \"GitLab feature flags\" comparison or integration page. Flagsmith just launched one at KD 5 with no established competitors in this space. GrowthBook has GitLab integration relevance but no page capturing this query.",
-    "5. Add internal links from /blog/growthbook-4-4 (33 clicks, position 5.9) to core feature flag and experimentation product pages. Changelog posts attract engaged developers; capture that intent before it exits."
+    "1. Refresh the title tag and meta description on /compare/growthbook-vs-launchdarkly targeting \"open-source LaunchDarkly alternative\" -- position 10.0 with 3,297 impressions and 5 clicks (28d: 17 clicks) means a title change alone could materially lift CTR this week.",
+    "2. Expand /blog/a-b-testing-in-the-age-of-ai with a section on LLM prompt experimentation and AI model testing -- it dropped from 15 to 4 clicks WoW while Optimizely published four AI experimentation pages and LaunchDarkly published two; refreshing now before competitor content matures is urgent.",
+    "3. Write a \"feature flags vs feature branching\" comparison page -- LaunchDarkly just published one (Tier 1, low KD), GrowthBook has no equivalent, and the developer audience is GrowthBook's core ICP.",
+    "4. Build internal links from /blog/growthbook-4-4 and /blog/how-to-implement-feature-flags-at-scale to the new /insights/ab-testing-llms and /insights/canary-releases-ai-models-what-changes-vs-traditional-software pages -- both new insight pages have zero impressions and need link equity to surface before competitor AI content dominates these queries.",
+    "5. Optimize /compare/growthbook-vs-optimizely title and meta -- position 9.1, 2,255 impressions, only 3 clicks over 28 days; Optimizely published four Tier 1 AI experimentation pages this week, making the comparison page more valuable to bottom-funnel prospects right now."
   ],
   "opportunities": [
     {
@@ -3728,56 +3728,8 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "12-common-feature-flag-mistakes-to-avoid",
-      "url": "https://www.growthbook.io/blog/12-common-feature-flag-mistakes-to-avoid",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained",
-      "url": "https://www.growthbook.io/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "amazon-to-atlassian-a-framework-for-testing-assumptions",
-      "url": "https://www.growthbook.io/blog/amazon-to-atlassian-a-framework-for-testing-assumptions",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "best-a-b-testing-platforms",
       "url": "https://www.growthbook.io/blog/best-a-b-testing-platforms",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "best-open-source-feature-flagging-tools-compared",
-      "url": "https://www.growthbook.io/blog/best-open-source-feature-flagging-tools-compared",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning",
-      "url": "https://www.growthbook.io/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "doordash-runs-12-000-experiments-per-year-across-3-sided-marketplace",
-      "url": "https://www.growthbook.io/blog/doordash-runs-12-000-experiments-per-year-across-3-sided-marketplace",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
@@ -3792,14 +3744,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "experimentation-program-mistakes-to-avoid",
-      "url": "https://www.growthbook.io/blog/experimentation-program-mistakes-to-avoid",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "feature-flags-in-ci-cd",
       "url": "https://www.growthbook.io/blog/feature-flags-in-ci-cd",
       "threat": 4,
@@ -3808,88 +3752,8 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "growthbook-4-4",
-      "url": "https://www.growthbook.io/blog/growthbook-4-4",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "growthbook-version-2-4",
-      "url": "https://www.growthbook.io/blog/growthbook-version-2-4",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "how-fanatics-made-experimentation-a-strategic-growth-driver",
-      "url": "https://www.growthbook.io/blog/how-fanatics-made-experimentation-a-strategic-growth-driver",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "how-to-implement-feature-flags-at-scale",
-      "url": "https://www.growthbook.io/blog/how-to-implement-feature-flags-at-scale",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "kpi-playbook-ab-testing-metrics",
-      "url": "https://www.growthbook.io/blog/kpi-playbook-ab-testing-metrics",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "new-feature-save-time-with-automatic-metric-generation",
-      "url": "https://www.growthbook.io/blog/new-feature-save-time-with-automatic-metric-generation",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "ship-fast-with-safety-net-feature-flag-management-agentic-era",
-      "url": "https://www.growthbook.io/blog/ship-fast-with-safety-net-feature-flag-management-agentic-era",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "the-ford-2-percent-close-rate-increase",
       "url": "https://www.growthbook.io/blog/the-ford-2-percent-close-rate-increase",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "ups-delivered-500m-in-revenue-testing-e-commerce-patterns-on-shipping-flow",
-      "url": "https://www.growthbook.io/blog/ups-delivered-500m-in-revenue-testing-e-commerce-patterns-on-shipping-flow",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "7-steps-to-better-experiment-design",
-      "url": "https://www.growthbook.io/guides/7-steps-to-better-experiment-design",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "the-a-b-testing-playbook-for-ai-powered-apps",
-      "url": "https://www.growthbook.io/guides/the-a-b-testing-playbook-for-ai-powered-apps",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
@@ -3912,72 +3776,8 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "automation-deployment-definition-advantages",
-      "url": "https://www.growthbook.io/insights/automation-deployment-definition-advantages",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "automation-orchestration-definitions-uses",
-      "url": "https://www.growthbook.io/insights/automation-orchestration-definitions-uses",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "best-ab-testing-tools-developers",
-      "url": "https://www.growthbook.io/insights/best-ab-testing-tools-developers",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "best-ab-testing-tools-product-analytics",
-      "url": "https://www.growthbook.io/insights/best-ab-testing-tools-product-analytics",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "best-warehouse-native-ab-testing-tools",
-      "url": "https://www.growthbook.io/insights/best-warehouse-native-ab-testing-tools",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "canary-releases-ai-models-what-changes-vs-traditional-software",
       "url": "https://www.growthbook.io/insights/canary-releases-ai-models-what-changes-vs-traditional-software",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "constants-experiment-what-they",
-      "url": "https://www.growthbook.io/insights/constants-experiment-what-they",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "experimental-probability-definition-how-calculate",
-      "url": "https://www.growthbook.io/insights/experimental-probability-definition-how-calculate",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "experimental-probability-examples-explained-simply",
-      "url": "https://www.growthbook.io/insights/experimental-probability-examples-explained-simply",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
@@ -3994,14 +3794,6 @@
       "competitor": "GrowthBook Site",
       "slug": "feature-flagging-ai-models-safely-roll-out-changes",
       "url": "https://www.growthbook.io/insights/feature-flagging-ai-models-safely-roll-out-changes",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "green-release-what-how-works",
-      "url": "https://www.growthbook.io/insights/green-release-what-how-works",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
@@ -4032,14 +3824,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "how-interpret-confidence-interval-step-by-step",
-      "url": "https://www.growthbook.io/insights/how-interpret-confidence-interval-step-by-step",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "how-measure-quality-ai-outputs-beyond-accuracy",
       "url": "https://www.growthbook.io/insights/how-measure-quality-ai-outputs-beyond-accuracy",
       "threat": 4,
@@ -4064,54 +3848,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "how-track-unique-visitors-website",
-      "url": "https://www.growthbook.io/insights/how-track-unique-visitors-website",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "http-error-explained-causes-how-fix",
-      "url": "https://www.growthbook.io/insights/http-error-explained-causes-how-fix",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "launchdarkly-feature-flagging-platform-explained",
-      "url": "https://www.growthbook.io/insights/launchdarkly-feature-flagging-platform-explained",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "matched-pairs-design-explained-definition-benefits",
-      "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "matched-pairs-design-statistics-explained",
-      "url": "https://www.growthbook.io/insights/matched-pairs-design-statistics-explained",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "matched-pairs-experiment-definition-examples",
-      "url": "https://www.growthbook.io/insights/matched-pairs-experiment-definition-examples",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "mcp-enables-experimentation-across-ai-tools",
       "url": "https://www.growthbook.io/insights/mcp-enables-experimentation-across-ai-tools",
       "threat": 4,
@@ -4122,14 +3858,6 @@
       "competitor": "GrowthBook Site",
       "slug": "offline-vs-online-evaluation-ai-models-what-actually-matters",
       "url": "https://www.growthbook.io/insights/offline-vs-online-evaluation-ai-models-what-actually-matters",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "release-management-best-practices-follow",
-      "url": "https://www.growthbook.io/insights/release-management-best-practices-follow",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
@@ -4160,22 +3888,6 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "statistical-validity-what-means-research",
-      "url": "https://www.growthbook.io/insights/statistical-validity-what-means-research",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "t-test-vs-chi-square-key-differences-explained",
-      "url": "https://www.growthbook.io/insights/t-test-vs-chi-square-key-differences-explained",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "testing-ai-features-across-different-user-segments",
       "url": "https://www.growthbook.io/insights/testing-ai-features-across-different-user-segments",
       "threat": 4,
@@ -4184,56 +3896,8 @@
     },
     {
       "competitor": "GrowthBook Site",
-      "slug": "tips-drawing-clear-research-hypothesis",
-      "url": "https://www.growthbook.io/insights/tips-drawing-clear-research-hypothesis",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "true-positive-definition-examples-testing",
-      "url": "https://www.growthbook.io/insights/true-positive-definition-examples-testing",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "understanding-false-causality-examples",
-      "url": "https://www.growthbook.io/insights/understanding-false-causality-examples",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "understanding-star-goals-effective-performance",
-      "url": "https://www.growthbook.io/insights/understanding-star-goals-effective-performance",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "what-constant-experiment-explained",
-      "url": "https://www.growthbook.io/insights/what-constant-experiment-explained",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
       "slug": "what-does-statistical-significance-mean-ai-experiments",
       "url": "https://www.growthbook.io/insights/what-does-statistical-significance-mean-ai-experiments",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "what-experimental-units-research",
-      "url": "https://www.growthbook.io/insights/what-experimental-units-research",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
@@ -4250,14 +3914,6 @@
       "competitor": "GrowthBook Site",
       "slug": "why-your-ai-model-performs-great-offline-but-fails-production",
       "url": "https://www.growthbook.io/insights/why-your-ai-model-performs-great-offline-but-fails-production",
-      "threat": 4,
-      "kd": null,
-      "date": "2026-06-13"
-    },
-    {
-      "competitor": "GrowthBook Site",
-      "slug": "ai-native-development",
-      "url": "https://www.growthbook.io/platform/ai-native-development",
       "threat": 4,
       "kd": null,
       "date": "2026-06-13"
