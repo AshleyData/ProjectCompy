@@ -381,51 +381,6 @@ export default function CompyDashboard() {
             </Section>
           )}
 
-          {/* Total sign-ups (from Hex: org founder dateCreated; all sources, not organic) */}
-          {d.signups && (
-            <Section title="Total Sign-ups (Product)">
-              {(() => {
-                // Drop overlap points (e.g. the 05-10 Sunday re-run) so the line and
-                // the WoW comparison use a clean, non-double-counted weekly series.
-                const trend = (d.signups.trend || []).filter(p => !p.overlap);
-                const idx = trend.findIndex(p => p.week === d.week);
-                const cur = d.signups.total ?? 0;
-                const prev = idx > 0 ? trend[idx - 1].total : null;
-                const change = prev ? Math.round(((cur - prev) / prev) * 1000) / 10 : undefined;
-                return (
-                  <>
-                    <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
-                      <MetricCard
-                        label="Total Sign-ups"
-                        value={cur.toLocaleString()}
-                        change={change}
-                        sub={`${d.signups.window_start} – ${d.signups.window_end} · all sources (not organic)`}
-                      />
-                    </div>
-                    {trend.length > 1 && (
-                      <ResponsiveContainer width="100%" height={200}>
-                        <LineChart data={trend} margin={{ left: 10, right: 20, top: 8, bottom: 8 }}>
-                          <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-                          <XAxis dataKey="week" tick={{ fontSize: 10, fill: C.muted }} tickFormatter={w => w ? w.slice(5) : w} interval="preserveStartEnd" />
-                          <YAxis tick={{ fontSize: 10, fill: C.muted }} tickFormatter={v => v.toLocaleString()} width={45} />
-                          <RTooltip
-                            contentStyle={{ background: C.white, border: `1px solid ${C.border}`, borderRadius: 6, fontSize: 12 }}
-                            formatter={(v) => [v.toLocaleString(), "Sign-ups"]}
-                            labelFormatter={(w) => `Week of ${w}`}
-                          />
-                          <Line type="monotone" dataKey="total" stroke={COMP_COLORS["GrowthBook"] || C.accent} strokeWidth={2} dot={false} activeDot={{ r: 4 }} />
-                        </LineChart>
-                      </ResponsiveContainer>
-                    )}
-                    <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: 'left' }}>
-                      Total sign-ups = new organizations by founder join date, across ALL acquisition sources — not organic-only (UTM data unavailable). Weekly, aligned to the GA4 window. Source: Hex (mongo_views.organizations).
-                    </p>
-                  </>
-                );
-              })()}
-            </Section>
-          )}
-
           {/* GSC Scorecard row */}
           <Section title="Search Performance (GSC)">
             {gscMissing ? (
@@ -1274,7 +1229,7 @@ export default function CompyDashboard() {
             { id:"sessions", label:"Organic + AI Sessions", color: C.accent },
             { id:"branded",  label:"Branded Clicks",      color: C.success },
             { id:"top10",    label:"Top 10 Keywords",     color: "#8B4513" },
-            { id:"signups",  label:"Organic Sign-ups",    color: "#6A5ACD" },
+            { id:"signups",  label:"Total Sign-ups",      color: "#6A5ACD" },
           ];
           const AEO_METRICS = [
             { id:"sov",      label:"AI Share of Voice",  color: "#E67E22", isPct: true },
@@ -1291,11 +1246,29 @@ export default function CompyDashboard() {
             ? { value: ga4m.organic_sessions.toLocaleString(), pct: ga4m.organic_sessions_wow_pct ?? null }
             // label override: don't present all-traffic numbers under the organic label
             : { value: (ga4m.sessions ?? 0).toLocaleString(), pct: ga4m.wow_sessions_pct ?? null, label: "Sessions (all traffic)" };
+
+          // Total sign-ups (Hex). Clean weekly series (drop duplicate-window
+          // re-runs), clipped to weeks up to the selected dashboard date.
+          const suAll = (d.signups?.trend || []).filter(p => !p.overlap);
+          const suUpto = suAll.filter(p => p.week <= d.week);
+          const suCur = d.signups?.total ?? (suUpto.length ? suUpto[suUpto.length - 1].total : null);
+          const suPrev = suUpto.length >= 2 ? suUpto[suUpto.length - 2].total : null;
+          const suWowPct = (suCur != null && suPrev) ? +(((suCur - suPrev) / suPrev) * 100).toFixed(1) : null;
+          const suSum = arr => arr.reduce((s, p) => s + (p.total || 0), 0);
+          const su4wCur = suSum(suUpto.slice(-4));
+          const su4wPrev = suSum(suUpto.slice(-8, -4));
+          const su4wPct = (suUpto.slice(-8, -4).length === 4 && su4wPrev > 0)
+            ? +(((su4wCur - su4wPrev) / su4wPrev) * 100).toFixed(1) : null;
+          const suWeekly = suUpto.map(p => ({ label: p.week.slice(5), v: p.total }));
+          const suMoMap = {};
+          suUpto.forEach(p => { const m = p.week.slice(0, 7); suMoMap[m] = (suMoMap[m] || 0) + (p.total || 0); });
+          const suMonthly = Object.entries(suMoMap).sort(([a], [b]) => a.localeCompare(b)).map(([mo, v]) => ({ label: mo.slice(5), v }));
+
           const wowData = {
             sessions: orgWow,
             branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
             top10:    { value: sem.top10_count ?? "—", pct: sem.top10_mom ?? null },
-            signups:  { pending: true },
+            signups:  suCur != null ? { value: suCur.toLocaleString(), pct: suWowPct } : { pending: true },
             sov:      { value: `${aeo.share_of_voice}%`, pct: aeo.share_of_voice_mom, sample: aeoIsSample },
             mention:  { value: `${aeo.mention_rate}%`,   pct: aeo.mention_rate_mom,   sample: aeoIsSample },
             citation: { value: `${aeo.citation_rate}%`,  pct: aeo.citation_rate_mom,  sample: aeoIsSample },
@@ -1313,7 +1286,7 @@ export default function CompyDashboard() {
             top10:    sem.top10_count != null
               ? { value: sem.top10_count.toLocaleString(), pct: sem.top10_mom ?? null }
               : { pending: true },
-            signups:  { pending: true },
+            signups:  su4wCur > 0 ? { value: su4wCur.toLocaleString(), pct: su4wPct } : { pending: true },
             sov:      { value: `${aeo.share_of_voice}%`, pct: aeo4wMom.sov,      sample: aeoIsSample },
             mention:  { value: `${aeo.mention_rate}%`,   pct: aeo4wMom.mention,  sample: aeoIsSample },
             citation: { value: `${aeo.citation_rate}%`,  pct: aeo4wMom.citation, sample: aeoIsSample },
@@ -1323,7 +1296,7 @@ export default function CompyDashboard() {
             sessions: null,
             branded:  hw.map(w => ({ label: w.week.slice(5), v: w.clicks })),
             top10:    null,
-            signups:  null,
+            signups:  suWeekly.length >= 2 ? suWeekly : null,
             sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
             mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
             citation: aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.citation_rate }))  : null,
@@ -1333,7 +1306,7 @@ export default function CompyDashboard() {
             sessions: null,
             branded:  monthlyBranded,
             top10:    null,
-            signups:  null,
+            signups:  suMonthly.length >= 2 ? suMonthly : null,
             sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
             mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
             citation: aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.citation_rate }))  : null,
@@ -1399,7 +1372,7 @@ export default function CompyDashboard() {
             <Section title="3 — Weekly Trends">
               <ChartGrid chartMap={weeklyCharts} />
               <p style={{ fontSize: 11, color: C.muted, marginTop: 10 }}>
-                Branded clicks: homepage GSC data (available now). Sessions, keywords, sign-ups, and AEO charts build as weekly pipeline runs accumulate.
+                Branded clicks (homepage GSC) and Total Sign-ups (Hex) available now. Sessions, keywords, and AEO charts build as weekly pipeline runs accumulate.
               </p>
             </Section>
 
