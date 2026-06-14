@@ -569,6 +569,47 @@ export default function CompyDashboard() {
               />
             </Section>
 
+            {/* Recently Shipped — New Content Value (AI vs Editorial) */}
+            {strat.recentlyShipped && (strat.recentlyShipped.items || []).length > 0 && (() => {
+              const rs = strat.recentlyShipped;
+              const VC = { "Winner": C.success, "Stranded": C.warning, "Surprise": C.accent, "Let it ride": C.muted };
+              return (
+                <Section title="🌱 Recently Shipped — Is It Working?">
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 10 }}>
+                    GrowthBook pages published in the last {rs.windowWeeks} weeks, scored on strategic value × realized GSC traction (age-adjusted). AI-generated <code>/insights/</code> is tracked separately from editorial. Winner = promote · Stranded = refresh · Surprise = harvest intent · Let it ride = deprioritize.
+                  </p>
+                  <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+                    {rs.cohorts.map(c => (
+                      <div key={c.track} style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }) }}>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{c.track}</div>
+                        <div style={{ fontSize: 24, fontWeight: 800, color: C.primary, margin: "2px 0" }}>{c.count} <span style={{ fontSize: 12, fontWeight: 400, color: C.muted }}>pages</span></div>
+                        <div style={{ fontSize: 12, color: C.muted }}>{c.impressions.toLocaleString()} impr · {c.clicks} clicks · avg pos {c.avgPosition ?? "—"}</div>
+                        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
+                          {Object.entries(c.verdicts).map(([v, n]) => (
+                            <span key={v} style={{ fontSize: 10, fontWeight: 600, color: VC[v], background: C.bg, padding: "1px 6px", borderRadius: 4 }}>{v} {n}</span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <Table
+                    compact
+                    headers={["Page", "Track", "NCV", "Strat", "Perf", "Impr", "Pos", "Verdict", "Action"]}
+                    rows={rs.items.slice(0, 25).map(it => [
+                      it.title,
+                      it.track,
+                      <strong style={{ color: C.primary }}>{it.ncvScore}</strong>,
+                      it.strategicValue, it.performance,
+                      it.impressions.toLocaleString(),
+                      it.position ?? "—",
+                      <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span>,
+                      <span style={{ fontSize: 11 }}>{it.action}</span>,
+                    ])}
+                  />
+                </Section>
+              );
+            })()}
+
             <p style={{ fontSize: 11, color: "#888", marginTop: 16, paddingTop: 8, borderTop: "1px solid #333", textAlign: "left" }}>
               🧭 ACP strategic scoring · {opps.length} opportunities · Run: {d.week || "—"}
             </p>
