@@ -539,7 +539,102 @@ export default function CompyDashboard() {
             { key: "Build the Moat", emoji: "🏰", desc: "Compounding assets", color: "#6A5ACD", ns: "Brand Search + Topical Authority" },
           ];
           const isActNow = o => (o.persistence || "").includes("gate");
+
+          // ── Competitor Heat inputs ──────────────────────────────────────────
+          // Demand signal only (never a trigger). Three quick reads kept from the
+          // old tactical tabs, per user request: (1) top competitor moves this week,
+          // (2) per-competitor ETV WoW arrows, (3) the loudest competitor YouTube
+          // outlier. GrowthBook is excluded from all three — this is competitor heat.
+          const heatMoves = (d.new_content || [])
+            .filter(n => n.competitor && !n.competitor.startsWith("GrowthBook"))
+            .sort((a, b) => (b.threat ?? 0) - (a.threat ?? 0))
+            .slice(0, 5);
+          // WoW from the two most-recent weekly ETV points (already ≥7 days apart).
+          const heatEtv = Object.entries(d.etv_trend || {})
+            .filter(([comp]) => comp !== "GrowthBook")
+            .map(([comp, pts]) => {
+              const clean = (pts || []).filter(p => p.etv != null);
+              const last = clean[clean.length - 1], prev = clean[clean.length - 2];
+              const wow = last && prev && prev.etv ? Math.round(((last.etv - prev.etv) / prev.etv) * 100) : null;
+              return { comp, etv: last?.etv ?? null, wow };
+            })
+            .filter(r => r.etv != null)
+            .sort((a, b) => (b.etv ?? 0) - (a.etv ?? 0));
+          const heatVideo = ((d.youtube?.channels) || [])
+            .filter(c => c.name !== "GrowthBook")
+            .flatMap(c => (c.videos || []).filter(v => v.is_outlier).map(v => ({ ...v, competitor: c.name })))
+            .sort((a, b) => (b.mult ?? 0) - (a.mult ?? 0))[0] || null;
+          const hasHeat = heatMoves.length || heatEtv.length || heatVideo;
+
           return (<>
+            {/* Competitor Heat — demand signal snapshot (competitor activity only) */}
+            {hasHeat && (
+              <Section title="🔥 Competitor Heat">
+                <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
+                  A demand signal, not a to-do list. Competitor activity informs the Demand and Strategic-Fit
+                  scores above — it never triggers an action on its own.
+                </p>
+                <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "flex-start" }}>
+                  {/* Top competitor moves */}
+                  <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 280 }}>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>Top moves this week</div>
+                    {heatMoves.length === 0
+                      ? <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>No high-threat competitor pages this week.</div>
+                      : heatMoves.map((n, i) => (
+                          <div key={i} style={{ display: "flex", gap: 8, alignItems: "baseline", marginBottom: 6 }}>
+                            {n.threat != null && (
+                              <span style={{ fontSize: 10, fontWeight: 700, color: n.threat >= 8 ? C.danger : C.warning, whiteSpace: "nowrap" }}>{n.threat}/10</span>
+                            )}
+                            <span style={{ fontSize: 12, lineHeight: 1.35, textAlign: "left" }}>
+                              <span style={{ fontWeight: 600, color: COMP_COLORS[n.competitor] || C.primary }}>{n.competitor}</span>
+                              {" — "}
+                              {n.url
+                                ? <a href={safeHref(n.url)} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{n.slug}</a>
+                                : <span style={{ color: "#2C3E50" }}>{n.slug}</span>}
+                            </span>
+                          </div>
+                        ))}
+                  </div>
+                  {/* Per-competitor ETV WoW */}
+                  <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 240 }}>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>Organic ETV · WoW</div>
+                    {heatEtv.length === 0
+                      ? <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>No ETV trend yet.</div>
+                      : heatEtv.map((r, i) => {
+                          const up = r.wow != null && r.wow > 0, flat = r.wow == null || r.wow === 0;
+                          return (
+                            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 5, fontSize: 12 }}>
+                              <span style={{ fontWeight: 600, color: COMP_COLORS[r.comp] || C.primary }}>{r.comp}</span>
+                              <span style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
+                                <span style={{ color: "#2C3E50" }}>{r.etv.toLocaleString()}</span>
+                                <span style={{ fontWeight: 700, minWidth: 52, textAlign: "right", color: flat ? C.muted : (up ? C.success : C.danger) }}>
+                                  {flat ? "—" : `${up ? "▲" : "▼"} ${Math.abs(r.wow)}%`}
+                                </span>
+                              </span>
+                            </div>
+                          );
+                        })}
+                  </div>
+                  {/* Loudest competitor YouTube outlier */}
+                  <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 240 }}>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>Video outlier</div>
+                    {!heatVideo
+                      ? <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>No competitor video exceeded 2× channel average.</div>
+                      : <div style={{ fontSize: 12, lineHeight: 1.4, textAlign: "left" }}>
+                          <span style={{ fontWeight: 600, color: COMP_COLORS[heatVideo.competitor] || C.primary }}>{heatVideo.competitor}</span>
+                          {" — "}
+                          {heatVideo.url
+                            ? <a href={heatVideo.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{heatVideo.title}</a>
+                            : <span style={{ color: "#2C3E50" }}>{heatVideo.title}</span>}
+                          <div style={{ marginTop: 6, color: C.success, fontWeight: 700 }}>
+                            🔥 {heatVideo.mult != null ? heatVideo.mult.toFixed(1) : "?"}× channel avg · {(heatVideo.views || 0).toLocaleString()} views
+                          </div>
+                        </div>}
+                  </div>
+                </div>
+              </Section>
+            )}
+
             {/* North-star strip */}
             <Section title="🧭 North-Star Metrics">
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
