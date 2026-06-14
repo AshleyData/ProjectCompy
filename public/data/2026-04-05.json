@@ -2030,5 +2030,122 @@
     "organic_search": [],
     "ai_assistant": [],
     "top10": []
+  },
+  "strategy": {
+    "northStar": {
+      "aiShareOfVoice": {
+        "value": null,
+        "target": "15-25"
+      },
+      "aiCitationRate": {
+        "value": null
+      },
+      "aiMentionRate": {
+        "value": null
+      },
+      "aiSourcedPipeline": {
+        "value": null,
+        "note": "instrumentation pending (GA4 channel group + signup field)"
+      }
+    },
+    "weights": {
+      "pipeline": 0.3,
+      "aiCitation": 0.3,
+      "demand": 0.2,
+      "winnability": 0.1,
+      "strategicFit": 0.1
+    },
+    "effortDivisors": {
+      "XS": 1.0,
+      "S": 1.5,
+      "M": 2.5,
+      "L": 4.0
+    },
+    "persistenceGate": {
+      "minWeeks": 2,
+      "posDelta": 3,
+      "imprPct": 25.0
+    },
+    "opportunities": [
+      {
+        "title": "Own \u201cexperimentation messaging and roadmap\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 0,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 38.0,
+        "effortTier": "M",
+        "acpScore": 15.2,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cexperimentation messaging and roadmap\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cexperimentation messaging and roadmap\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cdefacto increased experimentation 4x\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 0,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 38.0,
+        "effortTier": "M",
+        "acpScore": 15.2,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cdefacto increased experimentation 4x\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cdefacto increased experimentation 4x\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cfeature flag testing\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 0,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 38.0,
+        "effortTier": "M",
+        "acpScore": 15.2,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cfeature flag testing\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cfeature flag testing\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      }
+    ],
+    "note": "MVP scoring over existing data. Dimensions marked 'estimated' (AI-Overview presence, true search volume, intent, backlinks) are refined once the DataForSEO pulls land."
   }
 }

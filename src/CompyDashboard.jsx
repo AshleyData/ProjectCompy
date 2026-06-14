@@ -185,6 +185,7 @@ const TABS = [
   { id: "summary", label: "📊 Summary" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
   { id: "opportunities", label: "🎯 Opportunities" },
+  { id: "strategy", label: "🧭 Strategy" },
   { id: "competitors", label: "🏁 Competitors" },
   { id: "gsc", label: "📈 GSC Detail" },
   { id: "youtube", label: "▶️ YouTube" },
@@ -490,6 +491,89 @@ export default function CompyDashboard() {
             📅 Opportunity data: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'} (GSC) · Run: {d.week || '—'}
           </p>
         </>)}
+
+        {/* ── STRATEGY (🧭 ACP decision layer) ── */}
+        {tab === "strategy" && (() => {
+          const strat = d.strategy;
+          if (!strat || !(strat.opportunities || []).length) {
+            return <Section title="🧭 Strategy"><div style={{ ...card({ padding: "16px 20px" }), color: C.muted, fontSize: 13 }}>Strategy scoring will appear after the next pipeline run.</div></Section>;
+          }
+          const ns = strat.northStar || {};
+          const opps = strat.opportunities || [];
+          const HZ = [
+            { key: "Harvest", emoji: "🌾", desc: "Fix & instrument what exists", color: C.success, ns: "AI Citation Rate" },
+            { key: "Own the Category", emoji: "🚩", desc: "Plant the flag", color: C.accent, ns: "AI Share of Voice" },
+            { key: "Build the Moat", emoji: "🏰", desc: "Compounding assets", color: "#6A5ACD", ns: "Brand Search + Topical Authority" },
+          ];
+          const isActNow = o => (o.persistence || "").includes("gate");
+          return (<>
+            {/* North-star strip */}
+            <Section title="🧭 North-Star Metrics">
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+                <MetricCard label="AI Share of Voice" value={ns.aiShareOfVoice?.value != null ? `${ns.aiShareOfVoice.value}%` : "—"} change={ns.aiShareOfVoice?.trend4wk} sub={`target ${ns.aiShareOfVoice?.target || "15-25"}%`} />
+                <MetricCard label="AI Citation Rate" value={ns.aiCitationRate?.value != null ? `${ns.aiCitationRate.value}%` : "—"} change={ns.aiCitationRate?.trend4wk} sub="vs 4-wk" />
+                <MetricCard label="AI Mention Rate" value={ns.aiMentionRate?.value != null ? `${ns.aiMentionRate.value}%` : "—"} change={ns.aiMentionRate?.trend4wk} sub="vs 4-wk" />
+                <MetricCard label="AI-Sourced Pipeline" value="—" sub="instrumentation pending" />
+              </div>
+            </Section>
+
+            {/* Portfolio board */}
+            <Section title="🎯 Opportunity Portfolio">
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "flex-start" }}>
+                {HZ.map(h => {
+                  const items = opps.filter(o => o.horizon === h.key).slice(0, 6);
+                  return (
+                    <div key={h.key} style={{ flex: 1, minWidth: 250 }}>
+                      <div style={{ fontSize: 13, fontWeight: 700, color: h.color }}>{h.emoji} {h.key}</div>
+                      <div style={{ fontSize: 11, color: C.muted, marginBottom: 8 }}>{h.desc} · → moves {h.ns}</div>
+                      {items.length === 0 && <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>None this week.</div>}
+                      {items.map((o, i) => (
+                        <div key={i} style={{ ...card({ padding: "10px 12px", marginBottom: 8 }) }}>
+                          <div style={{ fontSize: 12, fontWeight: 600, color: C.primary, lineHeight: 1.3 }}>{o.title}</div>
+                          <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 6 }}>
+                            <span style={{ fontSize: 22, fontWeight: 800, color: h.color }}>{o.acpScore}</span>
+                            <span style={{ fontSize: 10, fontWeight: 700, background: C.bg, color: C.primary, padding: "1px 6px", borderRadius: 4 }}>{o.effortTier}</span>
+                            {isActNow(o)
+                              ? <span style={{ fontSize: 10, color: C.success, fontWeight: 700 }}>● act-now</span>
+                              : <span style={{ fontSize: 10, color: C.muted }}>○ watch</span>}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })}
+              </div>
+            </Section>
+
+            {/* Scored opportunity table */}
+            <Section title="📋 Scored Opportunities (ACP)">
+              <details style={{ marginBottom: 10 }}>
+                <summary style={{ cursor: "pointer", fontSize: 12, color: C.accent }}>Methodology — how ACP is scored</summary>
+                <div style={{ fontSize: 12, color: C.muted, marginTop: 6, lineHeight: 1.5 }}>
+                  ACP = (0.30·Pipeline + 0.30·AI-Citation + 0.20·Demand + 0.10·Winnability + 0.10·Strategic Fit) × 20 ÷ effort divisor (XS 1.0, S 1.5, M 2.5, L 4.0). Objective: maximize AI-citation share + bottom-funnel pipeline per unit of effort. Competitor activity feeds Demand / Strategic Fit only — never the trigger. An item is "act-now" only after clearing a ≥{strat.persistenceGate?.minWeeks ?? 2}-week / magnitude persistence gate; otherwise "watch". {strat.note}
+                </div>
+              </details>
+              <Table
+                compact
+                headers={["Opportunity", "Type", "ACP", "Pipe", "AI-Cite", "Demand", "Win", "Fit", "Effort", "Horizon", "Status", "Action"]}
+                rows={opps.map(o => [
+                  o.title,
+                  o.type,
+                  <strong style={{ color: C.primary }}>{o.acpScore}</strong>,
+                  o.subScores.pipeline, o.subScores.aiCitation, o.subScores.demand, o.subScores.winnability, o.subScores.strategicFit,
+                  o.effortTier,
+                  o.horizon,
+                  isActNow(o) ? <span style={{ color: C.success, fontWeight: 600 }}>act-now</span> : <span style={{ color: C.muted }}>watch</span>,
+                  <span style={{ fontSize: 11 }}>{o.action}</span>,
+                ])}
+              />
+            </Section>
+
+            <p style={{ fontSize: 11, color: "#888", marginTop: 16, paddingTop: 8, borderTop: "1px solid #333", textAlign: "left" }}>
+              🧭 ACP strategic scoring · {opps.length} opportunities · Run: {d.week || "—"}
+            </p>
+          </>);
+        })()}
 
         {/* ── COMPETITORS ── */}
         {tab === "competitors" && (<>
