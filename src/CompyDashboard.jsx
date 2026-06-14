@@ -465,23 +465,8 @@ export default function CompyDashboard() {
             </Section>
           ); })()}
 
-          {/* Top 5 Content Opportunities — live data */}
-          <Section title="Top 5 Competitor Content Opportunities">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
-              Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance. ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
-            </p>
-            <Table
-              headers={["Rank", "Topic", "Competitor", "Score", "KD", "Bucket", "Why It Matters"]}
-              rows={d.opportunities.map(o => [
-                `#${o.rank}`,
-                <span style={{ display: "block", textAlign: "left" }}>{o.topic}</span>,
-                <span style={{ display: "block", textAlign: "left" }}>{o.competitor}</span>,
-                o.score, o.kd,
-                <BucketBadge bucket={o.bucket} />,
-                <span style={{ fontSize: 12, color: "#555" }}>{o.why}</span>
-              ])}
-            />
-          </Section>
+          {/* Competitor content opportunities moved to the Strategy tab (ACP +
+              Content Opportunities) to keep Summary a high-level recap. */}
 
           <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
             📅 GSC: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'} · GA4: {d.ga4?.main_site?.week_start || '—'} to {d.ga4?.main_site?.week_end || '—'} · Run: {d.week || '—'}
@@ -489,41 +474,8 @@ export default function CompyDashboard() {
 
         </>)}
 
-        {/* ── OPPORTUNITIES ── */}
-        {tab === "opportunities" && (<>
-          <Section title="Top 5 Content Opportunities">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
-              Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance.
-              ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
-            </p>
-            <Table
-              headers={["Rank", "Topic", "Competitor", "Score", "KD", "Bucket", "Why It Matters"]}
-              rows={d.opportunities.map(o => [
-                `#${o.rank}`, o.topic, o.competitor, o.score, o.kd,
-                <BucketBadge bucket={o.bucket} />, <span style={{ fontSize: 12, color: "#555" }}>{o.why}</span>
-              ])}
-            />
-          </Section>
-
-          <Section title="Striking Distance (Positions 8–20)">
-            <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
-              Pages ranking just outside the top 10 — incremental optimization could move these into click territory.
-            </p>
-            <Table
-              headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
-              rows={d.striking_distance.map(q => [
-                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
-                q.position, q.impressions.toLocaleString(), q.clicks,
-                <OpportunityBadge opp={q.opportunity} />
-              ])}
-              compact
-            />
-          </Section>
-
-          <p style={{ fontSize: 11, color: '#888', marginTop: 16, paddingTop: 8, borderTop: '1px solid #333', textAlign: 'left' }}>
-            📅 Opportunity data: {d.gsc?.week_start || '—'} to {d.gsc?.week_end || '—'} (GSC) · Run: {d.week || '—'}
-          </p>
-        </>)}
+        {/* Opportunities tab retired — its Content Opportunities + Striking
+            Distance sections now live inside the Strategy tab below. */}
 
         {/* ── STRATEGY (🧭 ACP decision layer) ── */}
         {tab === "strategy" && (() => {
@@ -697,6 +649,43 @@ export default function CompyDashboard() {
               />
             </Section>
 
+            {/* Tactical content gaps — retired here from the old Opportunities tab.
+                Composite competitor-gap score; complements the strategic ACP table. */}
+            {(d.opportunities || []).length > 0 && (
+              <Section title="🎯 Content Opportunities (competitor gaps)">
+                <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
+                  Composite score (0–100): weighted blend of competitor domain authority, keyword difficulty (lower KD = easier to rank), and topic relevance.
+                  ≥75 = Quick Win | 60–74 = Content Gap | &lt;60 = Competitor Capture. KD 'n/a' = page too new, treat as low competition.
+                </p>
+                <Table
+                  headers={["Rank", "Topic", "Competitor", "Score", "KD", "Bucket", "Why It Matters"]}
+                  rows={d.opportunities.map(o => [
+                    `#${o.rank}`, o.topic, o.competitor, o.score, o.kd,
+                    <BucketBadge bucket={o.bucket} />, <span style={{ fontSize: 12, color: "#555" }}>{o.why}</span>
+                  ])}
+                />
+              </Section>
+            )}
+
+            {/* Striking Distance — retired here from the old Opportunities tab
+                (this is now its single home; the GSC Detail copy was dropped). */}
+            {(d.striking_distance || []).length > 0 && (
+              <Section title="📈 Striking Distance (Positions 8–20)">
+                <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
+                  Pages ranking just outside the top 10 — incremental optimization could move these into click territory.
+                </p>
+                <Table
+                  headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
+                  rows={d.striking_distance.map(q => [
+                    <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
+                    q.position, q.impressions.toLocaleString(), q.clicks,
+                    <OpportunityBadge opp={q.opportunity} />
+                  ])}
+                  compact
+                />
+              </Section>
+            )}
+
             {/* Recently Shipped — New Content Value (AI vs Editorial) */}
             {strat.recentlyShipped && (strat.recentlyShipped.items || []).length > 0 && (() => {
               const rs = strat.recentlyShipped;
@@ -732,6 +721,44 @@ export default function CompyDashboard() {
                       it.position ?? "—",
                       <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span>,
                       <span style={{ fontSize: 11 }}>{it.action}</span>,
+                    ])}
+                  />
+                </Section>
+              );
+            })()}
+
+            {/* GrowthBook video performance — own-channel signal sits next to own
+                content (Recently Shipped) so "is what we ship working?" covers
+                video too. Full per-video detail still lives in the YouTube drawer. */}
+            {(() => {
+              const gbCh = ((d.youtube?.channels) || []).find(c => c.name === "GrowthBook");
+              if (!gbCh) return null;
+              const recent = (gbCh.videos || [])
+                .filter(v => v.date)
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                .slice(0, 6);
+              if (recent.length === 0) return null;
+              const outlierCount = (gbCh.videos || []).filter(v => v.is_outlier).length;
+              return (
+                <Section title="🎬 GrowthBook Video — Is It Working?">
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 10 }}>
+                    GrowthBook's recent videos vs channel average ({gbCh.avg_views?.toLocaleString() || "—"} views).
+                    {outlierCount > 0 ? ` ${outlierCount} running ≥2× average this week.` : " None ≥2× average this week."}
+                    {" "}Full per-video detail in the YouTube drawer.
+                  </p>
+                  <Table
+                    compact
+                    headers={["Published", "Title", "Views", "vs Avg", "Outlier?"]}
+                    rows={recent.map(v => [
+                      v.date,
+                      v.url
+                        ? <a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{v.title}</a>
+                        : v.title,
+                      (v.views || 0).toLocaleString(),
+                      <span style={{ color: v.mult != null && v.mult >= 2 ? C.success : "inherit", fontWeight: v.mult != null && v.mult >= 2 ? 700 : 400 }}>
+                        {v.mult != null ? v.mult.toFixed(1) + "×" : "—"}
+                      </span>,
+                      v.is_outlier ? <span style={{ color: C.success, fontWeight: 700 }}>🔥 Yes</span> : <span style={{ color: C.muted }}>No</span>,
                     ])}
                   />
                 </Section>
@@ -864,17 +891,8 @@ export default function CompyDashboard() {
             />
           </Section>
 
-          <Section title="Striking Distance (Positions 8–20)">
-            <Table
-              headers={["Query", "Position", "Impressions", "Clicks", "Opportunity"]}
-              rows={d.striking_distance.map(q => [
-                <a href={`https://www.google.com/search?q=${encodeURIComponent(q.query)}+site:growthbook.io`} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{q.query}</a>,
-                q.position, q.impressions.toLocaleString(), q.clicks,
-                <OpportunityBadge opp={q.opportunity} />
-              ])}
-              compact
-            />
-          </Section>
+          {/* Striking Distance moved to the Strategy tab (single home) to remove
+              the duplicate that previously appeared in both GSC Detail and Opportunities. */}
 
           {(d.compare_pages || []).length > 0 && (
             <Section title="Compare Pages (GSC)">
