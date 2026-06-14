@@ -7178,36 +7178,36 @@
   },
   "athenahq": null,
   "signups": {
-    "total": 256,
+    "total": 269,
     "label": "Total sign-ups",
     "note": "All sources (not organic-only)",
-    "window_start": "2026-05-02",
-    "window_end": "2026-05-08",
-    "source": "mongo_views.organizations members[1].dateCreated (org founder); all sources, not organic-only",
+    "window_start": "2026-05-03",
+    "window_end": "2026-05-09",
+    "source": "Hex / mongo_views.organizations members[1].dateCreated (org founder)",
     "trend": [
       {
         "week": "2026-04-11",
-        "total": 254,
+        "total": 244,
         "overlap": false
       },
       {
         "week": "2026-04-18",
-        "total": 222,
+        "total": 227,
         "overlap": false
       },
       {
         "week": "2026-04-25",
-        "total": 202,
+        "total": 206,
         "overlap": false
       },
       {
         "week": "2026-05-02",
-        "total": 231,
+        "total": 229,
         "overlap": false
       },
       {
         "week": "2026-05-09",
-        "total": 256,
+        "total": 269,
         "overlap": false
       },
       {
@@ -7217,27 +7217,27 @@
       },
       {
         "week": "2026-05-16",
-        "total": 325,
+        "total": 337,
         "overlap": false
       },
       {
         "week": "2026-05-23",
-        "total": 391,
+        "total": 375,
         "overlap": false
       },
       {
         "week": "2026-05-30",
-        "total": 455,
+        "total": 433,
         "overlap": false
       },
       {
         "week": "2026-06-06",
-        "total": 233,
+        "total": 239,
         "overlap": false
       },
       {
         "week": "2026-06-13",
-        "total": 285,
+        "total": 294,
         "overlap": false
       }
     ]
