@@ -1226,7 +1226,8 @@ export default function CompyDashboard() {
 
           // ── 7 metric definitions (used across all sections) ────────
           const SEO_METRICS = [
-            { id:"sessions", label:"Organic + AI Sessions", color: C.accent },
+            { id:"organic",  label:"Organic Search",     color: C.accent },
+            { id:"ai",       label:"AI Assistant",       color: "#9B59B6" },
             { id:"branded",  label:"Branded Clicks",      color: C.success },
             { id:"top10",    label:"Top 10 Keywords",     color: "#8B4513" },
             { id:"signups",  label:"Total Sign-ups",      color: "#6A5ACD" },
@@ -1239,13 +1240,6 @@ export default function CompyDashboard() {
           const ALL_METRICS = [...SEO_METRICS, ...AEO_METRICS];
 
           // ── Per-metric data for each section ───────────────────────
-          // Value and WoW% must fall back TOGETHER: mixing the organic value
-          // with the all-traffic WoW%% (or vice versa) is apples-to-oranges.
-          const ga4m = d.ga4?.main_site || {};
-          const orgWow = ga4m.organic_sessions != null
-            ? { value: ga4m.organic_sessions.toLocaleString(), pct: ga4m.organic_sessions_wow_pct ?? null }
-            // label override: don't present all-traffic numbers under the organic label
-            : { value: (ga4m.sessions ?? 0).toLocaleString(), pct: ga4m.wow_sessions_pct ?? null, label: "Sessions (all traffic)" };
 
           // Total sign-ups (Hex). Clean weekly series (drop duplicate-window
           // re-runs), clipped to weeks up to the selected dashboard date.
@@ -1264,26 +1258,32 @@ export default function CompyDashboard() {
           suUpto.forEach(p => { const m = p.week.slice(0, 7); suMoMap[m] = (suMoMap[m] || 0) + (p.total || 0); });
           const suMonthly = Object.entries(suMoMap).sort(([a], [b]) => a.localeCompare(b)).map(([mo, v]) => ({ label: mo.slice(5), v }));
 
-          // Organic+AI Sessions and Top-10 Keywords weekly series (from d.seo_trends).
-          // Monthly: sessions sum per month; top-10 keeps the latest in-month value
-          // (it's a point-in-time count, not summable).
+          // SEO Scorecard series from d.seo_trends, clipped to <= the selected week.
+          // Organic Search and AI Assistant are separate GA4 channels. Monthly:
+          // sessions summed per month; top-10 keeps the latest in-month value
+          // (point-in-time count, not summable).
           const seoT = d.seo_trends || {};
-          const orgSeries = (seoT.organic_sessions || []).map(p => ({ label: p.week.slice(5), v: p.v }));
-          const top10Series = (seoT.top10 || []).map(p => ({ label: p.week.slice(5), v: p.v }));
-          const _moAgg = (series, mode) => {
+          const _clip = a => (a || []).filter(p => p.week <= d.week);
+          const orgT = _clip(seoT.organic_search);
+          const aiT = _clip(seoT.ai_assistant);
+          const top10T = _clip(seoT.top10);
+          const _cur = a => (a.length ? a[a.length - 1].v : null);
+          const _wow = a => { const c = _cur(a), p = a.length >= 2 ? a[a.length - 2].v : null; return (c != null && p) ? +(((c - p) / p) * 100).toFixed(1) : null; };
+          const _sum = a => a.reduce((s, p) => s + (p.v || 0), 0);
+          const _4w = a => _sum(a.slice(-4));
+          const _4wp = a => { const c = _sum(a.slice(-4)), p = _sum(a.slice(-8, -4)); return (a.slice(-8, -4).length === 4 && p > 0) ? +(((c - p) / p) * 100).toFixed(1) : null; };
+          const _ser = a => a.map(p => ({ label: p.week.slice(5), v: p.v }));
+          const _kpi = a => (_cur(a) != null ? { value: _cur(a).toLocaleString(), pct: _wow(a) } : { pending: true });
+          const _kpi4 = a => (_4w(a) > 0 ? { value: _4w(a).toLocaleString(), pct: _4wp(a) } : { pending: true });
+          const _moAgg = (a, mode) => {
             const m = {}, order = [];
-            (series || []).forEach(p => {
-              const mo = p.week.slice(0, 7);
-              if (!(mo in m)) { m[mo] = (mode === "sum" ? 0 : null); order.push(mo); }
-              m[mo] = mode === "sum" ? m[mo] + (p.v || 0) : p.v;
-            });
+            (a || []).forEach(p => { const mo = p.week.slice(0, 7); if (!(mo in m)) { m[mo] = (mode === "sum" ? 0 : null); order.push(mo); } m[mo] = mode === "sum" ? m[mo] + (p.v || 0) : p.v; });
             return order.map(mo => ({ label: mo.slice(5), v: m[mo] }));
           };
-          const orgMonthly = _moAgg(seoT.organic_sessions, "sum");
-          const top10Monthly = _moAgg(seoT.top10, "last");
 
           const wowData = {
-            sessions: orgWow,
+            organic:  _kpi(orgT),
+            ai:       _kpi(aiT),
             branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
             top10:    { value: sem.top10_count ?? "—", pct: sem.top10_mom ?? null },
             signups:  suCur != null ? { value: suCur.toLocaleString(), pct: suWowPct } : { pending: true },
@@ -1293,13 +1293,8 @@ export default function CompyDashboard() {
           };
 
           const fourWkData = {
-            // Same coupled-fallback rule as wowData; the all-traffic fallback
-            // pairs sessions_4w with sessions_4w_pct, never a mix.
-            sessions: ga4m.organic_sessions_4w != null
-              ? { value: ga4m.organic_sessions_4w.toLocaleString(), pct: ga4m.organic_sessions_4w_pct ?? null }
-              : ga4m.sessions_4w != null
-              ? { value: ga4m.sessions_4w.toLocaleString(), pct: ga4m.sessions_4w_pct ?? null, label: "Sessions (all traffic)" }
-              : { pending: true },
+            organic:  _kpi4(orgT),
+            ai:       _kpi4(aiT),
             branded:  { value: branded4wCur.toLocaleString(), pct: branded4wPct },
             top10:    sem.top10_count != null
               ? { value: sem.top10_count.toLocaleString(), pct: sem.top10_mom ?? null }
@@ -1311,9 +1306,10 @@ export default function CompyDashboard() {
           };
 
           const weeklyCharts = {
-            sessions: orgSeries.length >= 2 ? orgSeries : null,
+            organic:  orgT.length >= 2 ? _ser(orgT) : null,
+            ai:       aiT.length >= 2 ? _ser(aiT) : null,
             branded:  hw.map(w => ({ label: w.week.slice(5), v: w.clicks })),
-            top10:    top10Series.length >= 2 ? top10Series : null,
+            top10:    top10T.length >= 2 ? _ser(top10T) : null,
             signups:  suWeekly.length >= 2 ? suWeekly : null,
             sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
             mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
@@ -1321,9 +1317,10 @@ export default function CompyDashboard() {
           };
 
           const monthlyCharts = {
-            sessions: orgMonthly.length >= 2 ? orgMonthly : null,
+            organic:  _moAgg(orgT, "sum").length >= 2 ? _moAgg(orgT, "sum") : null,
+            ai:       _moAgg(aiT, "sum").length >= 2 ? _moAgg(aiT, "sum") : null,
             branded:  monthlyBranded,
-            top10:    top10Monthly.length >= 2 ? top10Monthly : null,
+            top10:    _moAgg(top10T, "last").length >= 2 ? _moAgg(top10T, "last") : null,
             signups:  suMonthly.length >= 2 ? suMonthly : null,
             sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
             mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,

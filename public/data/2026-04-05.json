@@ -2027,7 +2027,8 @@
     ]
   },
   "seo_trends": {
-    "organic_sessions": [],
+    "organic_search": [],
+    "ai_assistant": [],
     "top10": []
   }
 }
