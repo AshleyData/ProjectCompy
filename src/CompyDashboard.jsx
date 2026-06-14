@@ -181,11 +181,15 @@ function OpportunityBadge({ opp }) {
   return <span style={{ background: bg, color: C.white, padding: "2px 6px", borderRadius: 8, fontSize: 11 }}>{opp}</span>;
 }
 
-const TABS = [
-  { id: "summary", label: "📊 Summary" },
-  { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
-  { id: "opportunities", label: "🎯 Opportunities" },
+// Primary tabs carry the decision-layer story (Strategy first). Everything else is
+// reference material reachable from the "More ▾" drawer. The Opportunities tab was
+// retired into Strategy, so it no longer appears here.
+const PRIMARY_TABS = [
   { id: "strategy", label: "🧭 Strategy" },
+  { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
+  { id: "summary", label: "📊 Summary" },
+];
+const MORE_TABS = [
   { id: "competitors", label: "🏁 Competitors" },
   { id: "gsc", label: "📈 GSC Detail" },
   { id: "youtube", label: "▶️ YouTube" },
@@ -193,9 +197,11 @@ const TABS = [
   { id: "etv_kd", label: "📉 ETV vs KD" },
   { id: "growthbook", label: "📗 GrowthBook" },
 ];
+const TABS = [...PRIMARY_TABS, ...MORE_TABS];
 
 export default function CompyDashboard() {
-  const [tab, setTab] = useState("summary");
+  const [tab, setTab] = useState("strategy");
+  const [moreOpen, setMoreOpen] = useState(false);
   const [d, setD] = useState(null);
   const [loadError, setLoadError] = useState(null);
   const [availableDates, setAvailableDates] = useState([]);
@@ -301,15 +307,42 @@ export default function CompyDashboard() {
         </div>
       </div>
 
-      {/* Tabs */}
-      <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, display: "flex", overflowX: "auto" }}>
-        {TABS.map(t => (
-          <button key={t.id} onClick={() => setTab(t.id)} style={{
+      {/* Tabs — three primary tabs always visible; the rest live behind "More ▾". */}
+      <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, display: "flex", overflowX: "auto", position: "relative" }}>
+        {PRIMARY_TABS.map(t => (
+          <button key={t.id} onClick={() => { setTab(t.id); setMoreOpen(false); }} style={{
             padding: "11px 18px", border: "none", background: "none", cursor: "pointer", fontSize: 13,
             fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? C.accent : C.muted, whiteSpace: "nowrap",
             borderBottom: tab === t.id ? `3px solid ${C.accent}` : "3px solid transparent",
           }}>{t.label}</button>
         ))}
+        {/* More drawer: holds reference tabs. Highlights when one of its tabs is active. */}
+        <div style={{ position: "relative", marginLeft: "auto" }}>
+          {(() => {
+            const activeInMore = MORE_TABS.find(t => t.id === tab);
+            return (
+              <button onClick={() => setMoreOpen(o => !o)} style={{
+                padding: "11px 18px", border: "none", background: "none", cursor: "pointer", fontSize: 13,
+                fontWeight: activeInMore ? 700 : 400, color: activeInMore || moreOpen ? C.accent : C.muted, whiteSpace: "nowrap",
+                borderBottom: activeInMore ? `3px solid ${C.accent}` : "3px solid transparent",
+              }}>{activeInMore ? activeInMore.label : "More"} ▾</button>
+            );
+          })()}
+          {moreOpen && (
+            <div style={{
+              position: "absolute", right: 0, top: "100%", background: C.white, border: `1px solid ${C.border}`,
+              borderRadius: 6, boxShadow: "0 4px 16px rgba(0,0,0,0.12)", zIndex: 20, minWidth: 180, padding: "4px 0",
+            }}>
+              {MORE_TABS.map(t => (
+                <button key={t.id} onClick={() => { setTab(t.id); setMoreOpen(false); }} style={{
+                  display: "block", width: "100%", textAlign: "left", padding: "9px 16px", border: "none",
+                  background: tab === t.id ? C.bg : "none", cursor: "pointer", fontSize: 13,
+                  fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? C.accent : C.muted, whiteSpace: "nowrap",
+                }}>{t.label}</button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Content */}
