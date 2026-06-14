@@ -4140,5 +4140,9 @@
         "overlap": false
       }
     ]
+  },
+  "seo_trends": {
+    "organic_sessions": [],
+    "top10": []
   }
 }

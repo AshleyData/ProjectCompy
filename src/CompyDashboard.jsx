@@ -1264,6 +1264,24 @@ export default function CompyDashboard() {
           suUpto.forEach(p => { const m = p.week.slice(0, 7); suMoMap[m] = (suMoMap[m] || 0) + (p.total || 0); });
           const suMonthly = Object.entries(suMoMap).sort(([a], [b]) => a.localeCompare(b)).map(([mo, v]) => ({ label: mo.slice(5), v }));
 
+          // Organic+AI Sessions and Top-10 Keywords weekly series (from d.seo_trends).
+          // Monthly: sessions sum per month; top-10 keeps the latest in-month value
+          // (it's a point-in-time count, not summable).
+          const seoT = d.seo_trends || {};
+          const orgSeries = (seoT.organic_sessions || []).map(p => ({ label: p.week.slice(5), v: p.v }));
+          const top10Series = (seoT.top10 || []).map(p => ({ label: p.week.slice(5), v: p.v }));
+          const _moAgg = (series, mode) => {
+            const m = {}, order = [];
+            (series || []).forEach(p => {
+              const mo = p.week.slice(0, 7);
+              if (!(mo in m)) { m[mo] = (mode === "sum" ? 0 : null); order.push(mo); }
+              m[mo] = mode === "sum" ? m[mo] + (p.v || 0) : p.v;
+            });
+            return order.map(mo => ({ label: mo.slice(5), v: m[mo] }));
+          };
+          const orgMonthly = _moAgg(seoT.organic_sessions, "sum");
+          const top10Monthly = _moAgg(seoT.top10, "last");
+
           const wowData = {
             sessions: orgWow,
             branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
@@ -1293,9 +1311,9 @@ export default function CompyDashboard() {
           };
 
           const weeklyCharts = {
-            sessions: null,
+            sessions: orgSeries.length >= 2 ? orgSeries : null,
             branded:  hw.map(w => ({ label: w.week.slice(5), v: w.clicks })),
-            top10:    null,
+            top10:    top10Series.length >= 2 ? top10Series : null,
             signups:  suWeekly.length >= 2 ? suWeekly : null,
             sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
             mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
@@ -1303,9 +1321,9 @@ export default function CompyDashboard() {
           };
 
           const monthlyCharts = {
-            sessions: null,
+            sessions: orgMonthly.length >= 2 ? orgMonthly : null,
             branded:  monthlyBranded,
-            top10:    null,
+            top10:    top10Monthly.length >= 2 ? top10Monthly : null,
             signups:  suMonthly.length >= 2 ? suMonthly : null,
             sov:      aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.share_of_voice })) : null,
             mention:  aeoHist ? aeoHist.map(h => ({ label: (h.month||"").slice(5), v: h.mention_rate }))   : null,
