@@ -307,17 +307,23 @@ export default function CompyDashboard() {
         </div>
       </div>
 
-      {/* Tabs — three primary tabs always visible; the rest live behind "More ▾". */}
-      <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, display: "flex", overflowX: "auto", position: "relative" }}>
-        {PRIMARY_TABS.map(t => (
-          <button key={t.id} onClick={() => { setTab(t.id); setMoreOpen(false); }} style={{
-            padding: "11px 18px", border: "none", background: "none", cursor: "pointer", fontSize: 13,
-            fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? C.accent : C.muted, whiteSpace: "nowrap",
-            borderBottom: tab === t.id ? `3px solid ${C.accent}` : "3px solid transparent",
-          }}>{t.label}</button>
-        ))}
+      {/* Tabs — three primary tabs always visible; the rest live behind "More ▾".
+          The outer bar must NOT set overflow (an overflow on either axis computes
+          the other axis to "auto" too, which clips the absolutely-positioned
+          dropdown). The primary tabs scroll inside their own inner container; the
+          More button + dropdown sit in the non-clipping outer bar. */}
+      <div style={{ background: C.white, borderBottom: `1px solid ${C.border}`, display: "flex", position: "relative" }}>
+        <div style={{ display: "flex", overflowX: "auto", flex: 1, minWidth: 0 }}>
+          {PRIMARY_TABS.map(t => (
+            <button key={t.id} onClick={() => { setTab(t.id); setMoreOpen(false); }} style={{
+              padding: "11px 18px", border: "none", background: "none", cursor: "pointer", fontSize: 13,
+              fontWeight: tab === t.id ? 700 : 400, color: tab === t.id ? C.accent : C.muted, whiteSpace: "nowrap",
+              borderBottom: tab === t.id ? `3px solid ${C.accent}` : "3px solid transparent",
+            }}>{t.label}</button>
+          ))}
+        </div>
         {/* More drawer: holds reference tabs. Highlights when one of its tabs is active. */}
-        <div style={{ position: "relative", marginLeft: "auto" }}>
+        <div style={{ position: "relative", flexShrink: 0 }}>
           {(() => {
             const activeInMore = MORE_TABS.find(t => t.id === tab);
             return (
@@ -331,7 +337,7 @@ export default function CompyDashboard() {
           {moreOpen && (
             <div style={{
               position: "absolute", right: 0, top: "100%", background: C.white, border: `1px solid ${C.border}`,
-              borderRadius: 6, boxShadow: "0 4px 16px rgba(0,0,0,0.12)", zIndex: 20, minWidth: 180, padding: "4px 0",
+              borderRadius: 6, boxShadow: "0 4px 16px rgba(0,0,0,0.12)", zIndex: 30, minWidth: 180, padding: "4px 0",
             }}>
               {MORE_TABS.map(t => (
                 <button key={t.id} onClick={() => { setTab(t.id); setMoreOpen(false); }} style={{
@@ -343,6 +349,13 @@ export default function CompyDashboard() {
             </div>
           )}
         </div>
+        {/* Click-outside overlay: closes the drawer when clicking anywhere else.
+            Sits below the dropdown (zIndex 30) but above page content. */}
+        {moreOpen && (
+          <div onClick={() => setMoreOpen(false)} style={{
+            position: "fixed", inset: 0, zIndex: 20, background: "transparent",
+          }} />
+        )}
       </div>
 
       {/* Content */}
