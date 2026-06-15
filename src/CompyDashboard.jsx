@@ -751,9 +751,27 @@ export default function CompyDashboard() {
               const VC = { "Winner": C.success, "Stranded": C.warning, "Surprise": C.accent, "Let it ride": C.muted };
               return (
                 <Section title="🌱 Recently Shipped — Is It Working?">
-                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 10 }}>
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 8 }}>
                     GrowthBook pages published in the last {rs.windowWeeks} weeks, scored on strategic value × realized GSC traction (age-adjusted). AI-generated <code>/insights/</code> is tracked separately from editorial. Winner = promote · Stranded = refresh · Surprise = harvest intent · Let it ride = deprioritize.
                   </p>
+                  <details style={{ marginBottom: 12 }}>
+                    <summary style={{ cursor: "pointer", fontSize: 12, color: C.accent }}>What do NCV, Strat, Perf, and the verdicts mean?</summary>
+                    <div style={{ fontSize: 12, color: "#2C3E50", marginTop: 8, lineHeight: 1.6, textAlign: "left" }}>
+                      <p style={{ margin: "0 0 8px" }}>Each page is scored on two independent 0–5 axes, then bucketed into a verdict. The question this answers: <em>of what we recently published, what's worth more investment vs. what to leave alone?</em></p>
+                      <ul style={{ margin: "0 0 8px 18px", padding: 0 }}>
+                        <li style={{ margin: "3px 0" }}><strong>Strat (Strategic Value, 0–5)</strong> — how valuable the topic is <em>regardless of traffic</em>: funnel proximity (bottom-funnel comparison/pricing pages score highest) × 0.4 + AI-citation potential (comparison and definitional formats get cited most) × 0.4 + strategic fit (categories GrowthBook should own — feature flags, experimentation, A/B testing) × 0.2.</li>
+                        <li style={{ margin: "3px 0" }}><strong>Perf (Performance, 0–5)</strong> — realized GSC traction, <em>age-adjusted</em>. Ranks each page's velocity (impressions ÷ weeks live) against the rest of the cohort, then +1 if it's already averaging a top-10 position. A 2-week-old page isn't penalized for not yet matching an 8-week-old one.</li>
+                        <li style={{ margin: "3px 0" }}><strong>NCV (New Content Value, 0–100)</strong> — the headline score: an equal 50/50 blend of Strat and Perf. High NCV = a strategically valuable page that's also earning traction.</li>
+                      </ul>
+                      <p style={{ margin: "0 0 4px" }}>The four <strong>verdicts</strong> come from crossing the two axes (high = ≥3):</p>
+                      <ul style={{ margin: "0 0 0 18px", padding: 0 }}>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.success }}>Winner</strong> — high Strat <em>and</em> high Perf. On-strategy and working. <em>Promote: add internal links + a signup CTA and amplify.</em></li>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.warning }}>Stranded</strong> — high Strat, low Perf. Right topic, weak traction. <em>Refresh: rewrite the title, add an answer capsule + internal links to unstick it.</em></li>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.accent }}>Surprise</strong> — low Strat, high Perf. Unexpected traction on a lower-priority topic. <em>Harvest the intent: add a bottom-funnel follow-up or CTA to convert it.</em></li>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.muted }}>Let it ride</strong> — low Strat <em>and</em> low Perf. <em>Don't reinvest — leave it.</em></li>
+                      </ul>
+                    </div>
+                  </details>
                   <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
                     {rs.cohorts.map(c => (
                       <div key={c.track} style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }) }}>
