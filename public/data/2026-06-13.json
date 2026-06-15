@@ -295,6 +295,51 @@
         "note": "instrumentation pending (GA4 channel group + signup field)"
       }
     },
+    "portfolio": {
+      "top10": 154,
+      "striking": 145,
+      "etv": 11604.2,
+      "top10Delta3mo": 56,
+      "direction": "growing",
+      "series": [
+        {
+          "period": "2026-01",
+          "top10": 80,
+          "striking": 141,
+          "etv": 9269.5
+        },
+        {
+          "period": "2026-02",
+          "top10": 83,
+          "striking": 142,
+          "etv": 8310.0
+        },
+        {
+          "period": "2026-03",
+          "top10": 98,
+          "striking": 129,
+          "etv": 6110.4
+        },
+        {
+          "period": "2026-04",
+          "top10": 84,
+          "striking": 126,
+          "etv": 3509.5
+        },
+        {
+          "period": "2026-05",
+          "top10": 151,
+          "striking": 157,
+          "etv": 11591.3
+        },
+        {
+          "period": "2026-06",
+          "top10": 154,
+          "striking": 145,
+          "etv": 11604.2
+        }
+      ]
+    },
     "weights": {
       "pipeline": 0.3,
       "aiCitation": 0.3,
@@ -321,17 +366,17 @@
         "subScores": {
           "pipeline": 5,
           "aiCitation": 5,
-          "demand": 3,
+          "demand": 1,
           "winnability": 5,
           "strategicFit": 4
         },
-        "weightedImpact": 90.0,
+        "weightedImpact": 82.0,
         "effortTier": "XS",
-        "acpScore": 90.0,
+        "acpScore": 82.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Launchdarkly; instrument the signup CTA. Goal: turn its 573 impressions (pos 10.9) into AI-cited, signup-driving traffic.",
-        "persistence": "established ranking asset (17 clicks/28d) \u2014 passes gate",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
@@ -347,17 +392,17 @@
         "subScores": {
           "pipeline": 5,
           "aiCitation": 5,
-          "demand": 3,
+          "demand": 1,
           "winnability": 5,
           "strategicFit": 4
         },
-        "weightedImpact": 90.0,
+        "weightedImpact": 82.0,
         "effortTier": "XS",
-        "acpScore": 90.0,
+        "acpScore": 82.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Statsig; instrument the signup CTA. Goal: turn its 437 impressions (pos 7.4) into AI-cited, signup-driving traffic.",
-        "persistence": "established ranking asset (8 clicks/28d) \u2014 passes gate",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
@@ -373,22 +418,22 @@
         "subScores": {
           "pipeline": 5,
           "aiCitation": 5,
-          "demand": 3,
-          "winnability": 5,
+          "demand": 1,
+          "winnability": 4,
           "strategicFit": 4
         },
-        "weightedImpact": 90.0,
+        "weightedImpact": 80.0,
         "effortTier": "XS",
-        "acpScore": 90.0,
+        "acpScore": 80.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Posthog; instrument the signup CTA. Goal: turn its 901 impressions (pos 6.5) into AI-cited, signup-driving traffic.",
-        "persistence": "established ranking asset (4 clicks/28d) \u2014 passes gate",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
           "demand": "10 monthly searches (DataForSEO)",
-          "winnability": "position 6.5",
+          "winnability": "position 6.5 \u00b7 backlink gap vs competitor",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -399,22 +444,22 @@
         "subScores": {
           "pipeline": 5,
           "aiCitation": 5,
-          "demand": 3,
-          "winnability": 5,
+          "demand": 1,
+          "winnability": 4,
           "strategicFit": 4
         },
-        "weightedImpact": 90.0,
+        "weightedImpact": 80.0,
         "effortTier": "XS",
-        "acpScore": 90.0,
+        "acpScore": 80.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Optimizely; instrument the signup CTA. Goal: turn its 424 impressions (pos 11.3) into AI-cited, signup-driving traffic.",
-        "persistence": "established ranking asset (3 clicks/28d) \u2014 passes gate",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
           "demand": "10 monthly searches (DataForSEO)",
-          "winnability": "position 11.3",
+          "winnability": "position 11.3 \u00b7 backlink gap vs competitor",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -435,7 +480,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Vwo; instrument the signup CTA. Goal: turn its 169 impressions (pos 7.8) into AI-cited, signup-driving traffic.",
-        "persistence": "established ranking asset (6 clicks/28d) \u2014 passes gate",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
@@ -461,7 +506,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Absmartly; instrument the signup CTA. Goal: turn its 64 impressions (pos 6.3) into AI-cited, signup-driving traffic.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 2 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
@@ -487,7 +532,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Eppo; instrument the signup CTA. Goal: turn its 117 impressions (pos 7.4) into AI-cited, signup-driving traffic.",
-        "persistence": "established ranking asset (2 clicks/28d) \u2014 passes gate",
+        "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
@@ -513,7 +558,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Ab Tasty; instrument the signup CTA. Goal: turn its 45 impressions (pos 7.2) into AI-cited, signup-driving traffic.",
-        "persistence": "watch",
+        "persistence": "watch \u2014 only 1 week of data",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
@@ -539,7 +584,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Split; instrument the signup CTA. Goal: turn its 83 impressions (pos 6.3) into AI-cited, signup-driving traffic.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
@@ -565,7 +610,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Add a 40-word answer capsule + comparison table + schema to vs Sitespect; instrument the signup CTA. Goal: turn its 33 impressions (pos 5.6) into AI-cited, signup-driving traffic.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
           "aiCitation": "asset-type lift + commercial intent; no AI Overview",
@@ -581,17 +626,17 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 5,
-          "demand": 4,
+          "demand": 2,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 78.0,
+        "weightedImpact": 70.0,
         "effortTier": "XS",
-        "acpScore": 78.0,
+        "acpScore": 70.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cwhat is a/b testing\u201d (pos 12.7, 817 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cwhat is a/b testing\u201d",
           "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
@@ -601,49 +646,23 @@
         }
       },
       {
-        "title": "Capture striking-distance query: \u201cexperimentation platform\u201d",
-        "type": "Striking distance",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 4,
-          "demand": 4,
-          "winnability": 3,
-          "strategicFit": 5
-        },
-        "weightedImpact": 68.0,
-        "effortTier": "XS",
-        "acpScore": 68.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201cexperimentation platform\u201d (pos 16.7, 516 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from query \u201cexperimentation platform\u201d",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "90 monthly searches (DataForSEO)",
-          "winnability": "position 16.7 (striking distance)",
-          "strategicFit": "topic relevance of \u201cexperimentation platform\u201d"
-        }
-      },
-      {
         "title": "Capture striking-distance query: \u201ca/b testing\u201d",
         "type": "Striking distance",
         "url": "",
         "subScores": {
           "pipeline": 2,
           "aiCitation": 3,
-          "demand": 5,
+          "demand": 4,
           "winnability": 3,
           "strategicFit": 5
         },
-        "weightedImpact": 66.0,
+        "weightedImpact": 62.0,
         "effortTier": "XS",
-        "acpScore": 66.0,
+        "acpScore": 62.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201ca/b testing\u201d (pos 17.6, 2,268 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "persistence": "+20 positions held over 5 weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201ca/b testing\u201d",
           "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
@@ -653,29 +672,29 @@
         }
       },
       {
-        "title": "Capture striking-distance query: \u201ctrue positive rate\u201d",
+        "title": "Capture striking-distance query: \u201cexperimentation platform\u201d",
         "type": "Striking distance",
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 4,
-          "winnability": 5,
-          "strategicFit": 1
+          "aiCitation": 4,
+          "demand": 2,
+          "winnability": 3,
+          "strategicFit": 5
         },
-        "weightedImpact": 58.0,
+        "weightedImpact": 60.0,
         "effortTier": "XS",
-        "acpScore": 58.0,
+        "acpScore": 60.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201ctrue positive rate\u201d (pos 8.7, 763 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "action": "Strengthen the page targeting \u201cexperimentation platform\u201d (pos 16.7, 516 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
-          "pipeline": "intent inferred from query \u201ctrue positive rate\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "1,000 monthly searches (DataForSEO)",
-          "winnability": "position 8.7 (striking distance)",
-          "strategicFit": "topic relevance of \u201ctrue positive rate\u201d"
+          "pipeline": "intent inferred from query \u201cexperimentation platform\u201d",
+          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
+          "demand": "90 monthly searches (DataForSEO)",
+          "winnability": "position 16.7 (striking distance)",
+          "strategicFit": "topic relevance of \u201cexperimentation platform\u201d"
         }
       },
       {
@@ -695,7 +714,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cbetterme engineering process feature flags experiments\u201d (pos 8.4, 752 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cbetterme engineering process feature flags experiments\u201d",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
@@ -705,39 +724,13 @@
         }
       },
       {
-        "title": "Capture striking-distance query: \u201c401 status code\u201d",
+        "title": "Capture striking-distance query: \u201ctrue positive rate\u201d",
         "type": "Striking distance",
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 4,
-          "winnability": 5,
-          "strategicFit": 1
-        },
-        "weightedImpact": 52.0,
-        "effortTier": "XS",
-        "acpScore": 52.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201c401 status code\u201d (pos 9.1, 1,487 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from query \u201c401 status code\u201d",
-          "aiCitation": "asset-type lift + informational intent; no AI Overview",
-          "demand": "4,400 monthly searches (DataForSEO)",
-          "winnability": "position 9.1 (striking distance)",
-          "strategicFit": "topic relevance of \u201c401 status code\u201d"
-        }
-      },
-      {
-        "title": "Capture striking-distance query: \u201chttp 401\u201d",
-        "type": "Striking distance",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 1,
-          "demand": 5,
+          "aiCitation": 3,
+          "demand": 2,
           "winnability": 5,
           "strategicFit": 1
         },
@@ -746,14 +739,14 @@
         "acpScore": 50.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201chttp 401\u201d (pos 11.8, 913 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "action": "Strengthen the page targeting \u201ctrue positive rate\u201d (pos 8.7, 763 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
-          "pipeline": "intent inferred from query \u201chttp 401\u201d",
-          "aiCitation": "asset-type lift + navigational intent; no AI Overview",
-          "demand": "8,100 monthly searches (DataForSEO)",
-          "winnability": "position 11.8 (striking distance)",
-          "strategicFit": "topic relevance of \u201chttp 401\u201d"
+          "pipeline": "intent inferred from query \u201ctrue positive rate\u201d",
+          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
+          "demand": "1,000 monthly searches (DataForSEO)",
+          "winnability": "position 8.7 (striking distance)",
+          "strategicFit": "topic relevance of \u201ctrue positive rate\u201d"
         }
       },
       {
@@ -773,13 +766,65 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201claunchdarkly business model b2b\u201d (pos 10.9, 551 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201claunchdarkly business model b2b\u201d",
           "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
           "demand": "0 monthly searches (DataForSEO)",
           "winnability": "position 10.9 (striking distance)",
           "strategicFit": "topic relevance of \u201claunchdarkly business model b2b\u201d"
+        }
+      },
+      {
+        "title": "Capture striking-distance query: \u201c401 status code\u201d",
+        "type": "Striking distance",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 5,
+          "strategicFit": 1
+        },
+        "weightedImpact": 44.0,
+        "effortTier": "XS",
+        "acpScore": 44.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Strengthen the page targeting \u201c401 status code\u201d (pos 9.1, 1,487 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "intent inferred from query \u201c401 status code\u201d",
+          "aiCitation": "asset-type lift + informational intent; no AI Overview",
+          "demand": "4,400 monthly searches (DataForSEO)",
+          "winnability": "position 9.1 (striking distance)",
+          "strategicFit": "topic relevance of \u201c401 status code\u201d"
+        }
+      },
+      {
+        "title": "Capture striking-distance query: \u201chttp 401\u201d",
+        "type": "Striking distance",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 1,
+          "demand": 3,
+          "winnability": 5,
+          "strategicFit": 1
+        },
+        "weightedImpact": 42.0,
+        "effortTier": "XS",
+        "acpScore": 42.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Strengthen the page targeting \u201chttp 401\u201d (pos 11.8, 913 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "intent inferred from query \u201chttp 401\u201d",
+          "aiCitation": "asset-type lift + navigational intent; no AI Overview",
+          "demand": "8,100 monthly searches (DataForSEO)",
+          "winnability": "position 11.8 (striking distance)",
+          "strategicFit": "topic relevance of \u201chttp 401\u201d"
         }
       },
       {
@@ -799,7 +844,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201c401 error\u201d (pos 9.9, 586 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201c401 error\u201d",
           "aiCitation": "asset-type lift + navigational intent; AI Overview present, GrowthBook cited",
@@ -825,7 +870,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201chttp error 401\u201d (pos 10.6, 526 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch",
+        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201chttp error 401\u201d",
           "aiCitation": "asset-type lift + navigational intent; AI Overview present, GrowthBook cited",
@@ -835,7 +880,85 @@
         }
       },
       {
-        "title": "Own \u201crun experiments\u201d with a GrowthBook page",
+        "title": "Own \u201cdefinition of experimentation\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 4,
+          "demand": 3,
+          "winnability": 3,
+          "strategicFit": 5
+        },
+        "weightedImpact": 64.0,
+        "effortTier": "M",
+        "acpScore": 25.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cdefinition of experimentation\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cdefinition of experimentation\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "12,100 monthly searches (DataForSEO)",
+          "winnability": "KD 8",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cexperimentation definition\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 4,
+          "demand": 3,
+          "winnability": 3,
+          "strategicFit": 5
+        },
+        "weightedImpact": 64.0,
+        "effortTier": "M",
+        "acpScore": 25.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cexperimentation definition\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cexperimentation definition\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "12,100 monthly searches (DataForSEO)",
+          "winnability": "KD 1",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cmetrics definition\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 4,
+          "demand": 3,
+          "winnability": 3,
+          "strategicFit": 3
+        },
+        "weightedImpact": 60.0,
+        "effortTier": "M",
+        "acpScore": 24.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cmetrics definition\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cmetrics definition\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "9,900 monthly searches (DataForSEO)",
+          "winnability": "KD 18",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201csplit test a/b\u201d with a GrowthBook page",
         "type": "Category play (new page)",
         "url": "",
         "subScores": {
@@ -850,122 +973,304 @@
         "acpScore": 21.6,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201crun experiments\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "action": "Publish a GrowthBook asset for \u201csplit test a/b\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
-          "pipeline": "intent inferred from \u201crun experiments\u201d",
+          "pipeline": "intent inferred from \u201csplit test a/b\u201d",
           "aiCitation": "asset-type lift + informational intent",
-          "demand": "50 monthly searches (DataForSEO)",
-          "winnability": "KD pending",
+          "demand": "301,000 monthly searches (DataForSEO)",
+          "winnability": "KD 45",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
       {
-        "title": "Own \u201cpowering ai with feature flags\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 0,
-          "winnability": 2,
-          "strategicFit": 5
-        },
-        "weightedImpact": 44.0,
-        "effortTier": "M",
-        "acpScore": 17.6,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cpowering ai with feature flags\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cpowering ai with feature flags\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "KD 43.0",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cbig ideas in ai driven experimentation\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 0,
-          "winnability": 2,
-          "strategicFit": 5
-        },
-        "weightedImpact": 44.0,
-        "effortTier": "M",
-        "acpScore": 17.6,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cbig ideas in ai driven experimentation\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cbig ideas in ai driven experimentation\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "KD pending",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201ctop 10 takeaways from the experimentation playbook\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 0,
-          "winnability": 2,
-          "strategicFit": 5
-        },
-        "weightedImpact": 44.0,
-        "effortTier": "M",
-        "acpScore": 17.6,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201ctop 10 takeaways from the experimentation playbook\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201ctop 10 takeaways from the experimentation playbook\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "KD pending",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cai experimentation takes with elena verna\u201d with a GrowthBook page",
+        "title": "Own \u201cab split test\u201d with a GrowthBook page",
         "type": "Category play (new page)",
         "url": "",
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 0,
+          "demand": 4,
           "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 38.0,
+        "weightedImpact": 54.0,
         "effortTier": "M",
-        "acpScore": 15.2,
+        "acpScore": 21.6,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cai experimentation takes with elena verna\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "action": "Publish a GrowthBook asset for \u201cab split test\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
-          "pipeline": "intent inferred from \u201cai experimentation takes with elena verna\u201d",
+          "pipeline": "intent inferred from \u201cab split test\u201d",
           "aiCitation": "asset-type lift + informational intent",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "KD 43.0",
+          "demand": "301,000 monthly searches (DataForSEO)",
+          "winnability": "KD 39",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cab test\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 4,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 54.0,
+        "effortTier": "M",
+        "acpScore": 21.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cab test\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cab test\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "301,000 monthly searches (DataForSEO)",
+          "winnability": "KD 54",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ca/b test\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 4,
+          "winnability": 1,
+          "strategicFit": 5
+        },
+        "weightedImpact": 52.0,
+        "effortTier": "M",
+        "acpScore": 20.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ca/b test\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ca/b test\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "301,000 monthly searches (DataForSEO)",
+          "winnability": "KD 60",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cdefine experimentation\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 3,
+          "winnability": 3,
+          "strategicFit": 5
+        },
+        "weightedImpact": 52.0,
+        "effortTier": "M",
+        "acpScore": 20.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cdefine experimentation\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cdefine experimentation\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "12,100 monthly searches (DataForSEO)",
+          "winnability": "KD 1",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ccompanies analytics\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 3,
+          "demand": 3,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 52.0,
+        "effortTier": "M",
+        "acpScore": 20.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ccompanies analytics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ccompanies analytics\u201d",
+          "aiCitation": "asset-type lift + commercial intent",
+          "demand": "12,100 monthly searches (DataForSEO)",
+          "winnability": "KD 50",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ctrunk-based development\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 4,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ctrunk-based development\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ctrunk-based development\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "40,500 monthly searches (DataForSEO)",
+          "winnability": "KD 22",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cmetrics\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 4,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cmetrics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cmetrics\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "60,500 monthly searches (DataForSEO)",
+          "winnability": "KD 39",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201csdk\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 3,
+          "aiCitation": 1,
+          "demand": 4,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201csdk\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201csdk\u201d",
+          "aiCitation": "asset-type lift + navigational intent",
+          "demand": "18,100 monthly searches (DataForSEO)",
+          "winnability": "KD 38",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201csdk s\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 3,
+          "aiCitation": 1,
+          "demand": 4,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201csdk s\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201csdk s\u201d",
+          "aiCitation": "asset-type lift + navigational intent",
+          "demand": "18,100 monthly searches (DataForSEO)",
+          "winnability": "KD 23",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cstatistical significance\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 3,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cstatistical significance\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cstatistical significance\u201d",
+          "aiCitation": "asset-type lift + informational intent",
+          "demand": "9,900 monthly searches (DataForSEO)",
+          "winnability": "KD 36",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ccompany analytics\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 3,
+          "demand": 3,
+          "winnability": 1,
+          "strategicFit": 3
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ccompany analytics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ccompany analytics\u201d",
+          "aiCitation": "asset-type lift + commercial intent",
+          "demand": "12,100 monthly searches (DataForSEO)",
+          "winnability": "KD 83",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       }
     ],
-    "note": "Demand uses real monthly search volume and aiCitation is refined by real search intent + AI-Overview presence (DataForSEO). Backlink-based winnability remains estimated.",
+    "note": "Demand uses real monthly search volume; aiCitation is refined by real search intent + AI-Overview presence; winnability blends position, KD, and backlink domain strength (DataForSEO).",
     "metricsSource": "dataforseo",
     "recentlyShipped": {
       "windowWeeks": 8,
