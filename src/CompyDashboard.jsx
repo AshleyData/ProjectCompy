@@ -610,6 +610,52 @@ export default function CompyDashboard() {
               </div>
             </Section>
 
+            {/* Footprint trajectory — GrowthBook's organic ranking footprint over
+                time (DataForSEO historical_rank_overview). A portfolio-level
+                "are we persistently growing?" signal, distinct from the per-keyword
+                gate. Only renders when the payload carries strategy.portfolio. */}
+            {strat.portfolio && (strat.portfolio.series || []).length > 0 && (() => {
+              const pf = strat.portfolio;
+              const dirColor = pf.direction === "growing" ? C.success
+                : pf.direction === "declining" ? C.danger : C.muted;
+              const dirArrow = pf.direction === "growing" ? "▲"
+                : pf.direction === "declining" ? "▼" : "▬";
+              return (
+                <Section title="📈 Search Footprint Trajectory">
+                  <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "stretch" }}>
+                    <div style={{ ...card({ padding: "14px 18px", minWidth: 220 }), display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                      <div style={{ fontSize: 12, color: C.muted }}>Keywords in Top 10</div>
+                      <div style={{ fontSize: 34, fontWeight: 800, color: C.primary, lineHeight: 1.1 }}>
+                        {(pf.top10 ?? 0).toLocaleString()}
+                      </div>
+                      <div style={{ fontSize: 13, fontWeight: 700, color: dirColor, marginTop: 2 }}>
+                        {dirArrow} {pf.top10Delta3mo > 0 ? "+" : ""}{pf.top10Delta3mo} vs 3 mo ago · {pf.direction}
+                      </div>
+                      <div style={{ fontSize: 11, color: C.muted, marginTop: 6 }}>
+                        {(pf.striking ?? 0).toLocaleString()} in striking distance (11–20) · ETV {(pf.etv ?? 0).toLocaleString()}
+                      </div>
+                    </div>
+                    <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 320 }}>
+                      <ResponsiveContainer width="100%" height={180}>
+                        <LineChart data={pf.series} margin={{ left: 0, right: 12, top: 8, bottom: 4 }}>
+                          <CartesianGrid strokeDasharray="3 3" />
+                          <XAxis dataKey="period" tick={{ fontSize: 11 }} />
+                          <YAxis tick={{ fontSize: 11 }} width={36} />
+                          <RTooltip />
+                          <Legend />
+                          <Line type="monotone" dataKey="top10" name="Top 10" stroke={C.success} strokeWidth={2.5} dot={{ r: 2 }} />
+                          <Line type="monotone" dataKey="striking" name="Striking (11–20)" stroke={C.accent} strokeWidth={2} strokeDasharray="5 3" dot={false} />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: "left" }}>
+                    GrowthBook's monthly organic keyword footprint (DataForSEO). Top-10 growth = a persistently expanding presence, not single-week noise.
+                  </p>
+                </Section>
+              );
+            })()}
+
             {/* Portfolio board */}
             <Section title="🎯 Opportunity Portfolio">
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "flex-start" }}>
