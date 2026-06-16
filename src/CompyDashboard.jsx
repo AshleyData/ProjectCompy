@@ -572,13 +572,16 @@ export default function CompyDashboard() {
             .sort((a, b) => (b.threat ?? 0) - (a.threat ?? 0))
             .slice(0, 5);
           // WoW from the two most-recent weekly ETV points (already ≥7 days apart).
+          // Include GrowthBook so the reader can see where it stands vs competitors.
+          // Its row is highlighted as "us" and carries a caveat: GB's ETV
+          // UNDERREPORTS because DataForSEO doesn't count branded search (~55% of
+          // GB clicks) — so its true footprint is higher than the number shown.
           const heatEtv = Object.entries(d.etv_trend || {})
-            .filter(([comp]) => comp !== "GrowthBook")
             .map(([comp, pts]) => {
               const clean = (pts || []).filter(p => p.etv != null);
               const last = clean[clean.length - 1], prev = clean[clean.length - 2];
               const wow = last && prev && prev.etv ? Math.round(((last.etv - prev.etv) / prev.etv) * 100) : null;
-              return { comp, etv: last?.etv ?? null, wow };
+              return { comp, etv: last?.etv ?? null, wow, isGB: comp === "GrowthBook" };
             })
             .filter(r => r.etv != null)
             .sort((a, b) => (b.etv ?? 0) - (a.etv ?? 0));
@@ -625,10 +628,15 @@ export default function CompyDashboard() {
                       : heatEtv.map((r, i) => {
                           const up = r.wow != null && r.wow > 0, flat = r.wow == null || r.wow === 0;
                           return (
-                            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 5, fontSize: 12 }}>
-                              <span style={{ fontWeight: 600, color: COMP_COLORS[r.comp] || C.primary }}>{r.comp}</span>
+                            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
+                              marginBottom: 5, fontSize: 12,
+                              // Highlight GrowthBook ("us") so it stands out against the competition.
+                              ...(r.isGB ? { background: "#EAF7EF", borderLeft: `3px solid ${C.success}`, padding: "3px 6px", margin: "2px -6px 5px", borderRadius: 4 } : {}) }}>
+                              <span style={{ fontWeight: r.isGB ? 800 : 600, color: r.isGB ? C.success : (COMP_COLORS[r.comp] || C.primary) }}>
+                                {r.comp}{r.isGB ? " ★" : ""}
+                              </span>
                               <span style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
-                                <span style={{ color: "#2C3E50" }}>{r.etv.toLocaleString()}</span>
+                                <span style={{ color: "#2C3E50", fontWeight: r.isGB ? 700 : 400 }}>{r.etv.toLocaleString()}{r.isGB ? "*" : ""}</span>
                                 <span style={{ fontWeight: 700, minWidth: 52, textAlign: "right", color: flat ? C.muted : (up ? C.success : C.danger) }}>
                                   {flat ? "—" : `${up ? "▲" : "▼"} ${Math.abs(r.wow)}%`}
                                 </span>
@@ -636,6 +644,11 @@ export default function CompyDashboard() {
                             </div>
                           );
                         })}
+                    {heatEtv.some(r => r.isGB) && (
+                      <div style={{ fontSize: 10, color: C.muted, marginTop: 6, lineHeight: 1.4 }}>
+                        ★ GrowthBook. *Its ETV underreports — DataForSEO excludes branded search (~55% of GrowthBook clicks), so its true organic footprint is higher than shown.
+                      </div>
+                    )}
                   </div>
                   {/* Loudest competitor YouTube outlier */}
                   <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 240 }}>
