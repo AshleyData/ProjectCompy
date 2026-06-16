@@ -202,6 +202,8 @@ const TABS = [...PRIMARY_TABS, ...MORE_TABS];
 export default function CompyDashboard() {
   const [tab, setTab] = useState("strategy");
   const [moreOpen, setMoreOpen] = useState(false);
+  // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
+  const [ncvTrack, setNcvTrack] = useState(null);
   const [d, setD] = useState(null);
   const [loadError, setLoadError] = useState(null);
   const [availableDates, setAvailableDates] = useState([]);
@@ -772,10 +774,23 @@ export default function CompyDashboard() {
                       </ul>
                     </div>
                   </details>
+                  <div style={{ fontSize: 11, color: C.muted, marginBottom: 6, textAlign: "left" }}>
+                    Click a cohort to filter the list below by track{ncvTrack ? <> · <button onClick={() => setNcvTrack(null)} style={{ border: "none", background: "none", color: C.accent, cursor: "pointer", fontSize: 11, padding: 0, textDecoration: "underline" }}>show all</button></> : null}
+                  </div>
                   <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
-                    {rs.cohorts.map(c => (
-                      <div key={c.track} style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }) }}>
-                        <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{c.track}</div>
+                    {rs.cohorts.map(c => {
+                      const active = ncvTrack === c.track;
+                      return (
+                      <div key={c.track}
+                        onClick={() => setNcvTrack(active ? null : c.track)}
+                        role="button"
+                        aria-pressed={active}
+                        title={active ? "Click to show all tracks" : `Show only ${c.track} pages`}
+                        style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }), cursor: "pointer",
+                          border: active ? `2px solid ${C.accent}` : `2px solid transparent`,
+                          background: active ? "#EAF2FB" : undefined,
+                          opacity: ncvTrack && !active ? 0.55 : 1, transition: "opacity .12s, border-color .12s" }}>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{c.track} {active ? "▾" : ""}</div>
                         <div style={{ fontSize: 24, fontWeight: 800, color: C.primary, margin: "2px 0" }}>{c.count} <span style={{ fontSize: 12, fontWeight: 400, color: C.muted }}>pages</span></div>
                         <div style={{ fontSize: 12, color: C.muted }}>{c.impressions.toLocaleString()} impr · {c.clicks} clicks · avg pos {c.avgPosition ?? "—"}</div>
                         <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
@@ -784,12 +799,13 @@ export default function CompyDashboard() {
                           ))}
                         </div>
                       </div>
-                    ))}
+                      );
+                    })}
                   </div>
                   <Table
                     compact
                     headers={["Page", "Track", "NCV", "Strat", "Perf", "Impr", "Pos", "Verdict", "Action"]}
-                    rows={rs.items.slice(0, 25).map(it => [
+                    rows={rs.items.filter(it => !ncvTrack || it.track === ncvTrack).slice(0, 25).map(it => [
                       it.title,
                       it.track,
                       <strong style={{ color: C.primary }}>{it.ncvScore}</strong>,
