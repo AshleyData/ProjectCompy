@@ -19,6 +19,8 @@ Rules:
 - 2-4 bullets, each a specific change tied to what IS or ISN'T already on the page (e.g. "You have a comparison table but no FAQPage schema — add it", "The intro is 3 paragraphs; lead instead with a 40-word answer capsule for the query X").
 - Prioritize AI-Overview citation (answer capsules, schema, definitional clarity) and moving the page into the top 5 / converting to signups.
 - If the page already does something well, say so briefly and build on it.
+- If NO existing page content is provided (a new-page opportunity, or a striking-distance query without a specific URL), instead recommend what to create: the page type, the answer-capsule wording, the key sections/H2s, and the schema to include.
+- Use the supplied ACP sub-scores to focus the advice (e.g. low winnability → emphasize differentiation; high AI-citation potential → emphasize answer formatting).
 - Plain text bullets starting with "- ". No preamble, no markdown headers. Keep under 120 words.`;
 
 function stripHtml(html) {
@@ -102,21 +104,14 @@ export default async function handler(req, res) {
     const context = body.context || {};
     const pageText = item.url ? await fetchPageText(item.url) : "";
 
+    // Pass the row through wholesale so this works for both Recently-Shipped
+    // items (NCV/verdict/track…) and Scored-Opportunity items (ACP/subScores/
+    // horizon…) without per-caller field mapping.
     const userText = JSON.stringify({
-      page: {
-        title: item.title,
-        url: item.url,
-        track: item.track,
-        ncvScore: item.ncvScore,
-        strategicValue: item.strategicValue,
-        performance: item.performance,
-        verdict: item.verdict,
-        position: item.position,
-        impressions: item.impressions,
-        weeksOld: item.weeksOld,
-      },
+      item,
       strategicContext: context,
-      currentPageContent: pageText || "(page content could not be fetched — advise from the data and URL/topic)",
+      currentPageContent: pageText
+        || "(no page content fetched — if this is a new-page opportunity, advise what to create; otherwise advise from the data, topic, and URL)",
     });
 
     const advice = await callClaude(SYSTEM, userText);

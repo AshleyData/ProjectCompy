@@ -760,7 +760,29 @@ export default function CompyDashboard() {
                   o.effortTier,
                   o.horizon,
                   isActNow(o) ? <span style={{ color: C.success, fontWeight: 600 }}>act-now</span> : <span style={{ color: C.muted }}>watch</span>,
-                  <span style={{ fontSize: 11 }}>{o.action}</span>,
+                  <AdviceCell
+                    item={{
+                      title: o.title,
+                      url: o.url,
+                      type: o.type,
+                      acpScore: o.acpScore,
+                      subScores: o.subScores,
+                      effortTier: o.effortTier,
+                      horizon: o.horizon,
+                      persistence: o.persistence,
+                      dataPoints: o.dataPoints,
+                      playbook: o.action,
+                    }}
+                    fallback={o.action}
+                    context={{
+                      brand: "GrowthBook",
+                      objective: "Maximize AI-citation share + bottom-funnel signups per unit of effort.",
+                      methodology: strat.note,
+                      northStar: strat.northStar,
+                      portfolio: strat.portfolio,
+                      note: "ACP-scored opportunity. If no existing GrowthBook page URL is given (e.g. a new-page category play or a striking-distance query), advise what to create or which page to strengthen.",
+                    }}
+                  />,
                 ])}
               />
             </Section>
