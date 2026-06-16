@@ -817,7 +817,7 @@ export default function CompyDashboard() {
                       <p style={{ margin: "0 0 8px" }}>Each page is scored on two independent 0–5 axes, then bucketed into a verdict. The question this answers: <em>of what we recently published, what's worth more investment vs. what to leave alone?</em></p>
                       <ul style={{ margin: "0 0 8px 18px", padding: 0 }}>
                         <li style={{ margin: "3px 0" }}><strong>Strat (Strategic Value, 0–5)</strong> — how valuable the topic is <em>regardless of traffic</em>: funnel proximity (bottom-funnel comparison/pricing pages score highest) × 0.4 + AI-citation potential (comparison and definitional formats get cited most) × 0.4 + strategic fit (categories GrowthBook should own — feature flags, experimentation, A/B testing) × 0.2.</li>
-                        <li style={{ margin: "3px 0" }}><strong>Perf (Performance, 0–5)</strong> — realized GSC traction, <em>age-adjusted</em>. Ranks each page's velocity (impressions ÷ weeks live) against the rest of the cohort, then +1 if it's already averaging a top-10 position. A 2-week-old page isn't penalized for not yet matching an 8-week-old one.</li>
+                        <li style={{ margin: "3px 0" }}><strong>Performance (0–5)</strong> — realized GSC traction, <em>age-adjusted</em>. Ranks each page's velocity (impressions ÷ weeks live) against the rest of the cohort, then +1 if it's already averaging a top-10 position. A 2-week-old page isn't penalized for not yet matching an 8-week-old one. <em>(Shown in the table as the concrete Impr / Clicks / Pos columns rather than a raw score.)</em></li>
                         <li style={{ margin: "3px 0" }}><strong>NCV (New Content Value, 0–100)</strong> — the headline score: an equal 50/50 blend of Strat and Perf. High NCV = a strategically valuable page that's also earning traction.</li>
                       </ul>
                       <p style={{ margin: "0 0 4px" }}>The four <strong>verdicts</strong> come from crossing the two axes (high = ≥3):</p>
@@ -842,9 +842,10 @@ export default function CompyDashboard() {
                         aria-pressed={active}
                         title={active ? "Click to show all tracks" : `Show only ${c.track} pages`}
                         style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }), cursor: "pointer",
-                          border: active ? `2px solid ${C.accent}` : `2px solid transparent`,
+                          // Light outline by default; darker + bolder when selected.
+                          border: active ? `3px solid ${C.primary}` : `2px solid ${C.border}`,
                           background: active ? "#EAF2FB" : undefined,
-                          opacity: ncvTrack && !active ? 0.55 : 1, transition: "opacity .12s, border-color .12s" }}>
+                          opacity: ncvTrack && !active ? 0.55 : 1, transition: "opacity .12s, border-color .12s, border-width .12s" }}>
                         <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{c.track} {active ? "▾" : ""}</div>
                         <div style={{ fontSize: 24, fontWeight: 800, color: C.primary, margin: "2px 0" }}>{c.count} <span style={{ fontSize: 12, fontWeight: 400, color: C.muted }}>pages</span></div>
                         <div style={{ fontSize: 12, color: C.muted }}>{c.impressions.toLocaleString()} impr · {c.clicks} clicks · avg pos {c.avgPosition ?? "—"}</div>
@@ -859,13 +860,14 @@ export default function CompyDashboard() {
                   </div>
                   <Table
                     compact
-                    headers={["Page", "Track", "NCV", "Strat", "Perf", "Impr", "Pos", "Verdict", "Action"]}
+                    headers={["Page", "Track", "NCV", "Strat", "Impr", "Clicks", "Pos", "Verdict", "Action"]}
                     rows={rs.items.filter(it => !ncvTrack || it.track === ncvTrack).slice(0, 25).map(it => [
                       it.title,
                       it.track,
                       <strong style={{ color: C.primary }}>{it.ncvScore}</strong>,
-                      it.strategicValue, it.performance,
+                      it.strategicValue,
                       it.impressions.toLocaleString(),
+                      (it.clicks ?? 0).toLocaleString(),
                       it.position ?? "—",
                       <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span>,
                       <AdviceCell
