@@ -259,6 +259,12 @@ export default function CompyDashboard() {
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
+  // Recently-Shipped column sort: {col, dir}. Clicking a header cycles desc → asc → none.
+  const [shipSort, setShipSort] = useState({ col: null, dir: null });
+  const cycleShipSort = (key) => setShipSort(s =>
+    s.col !== key ? { col: key, dir: "desc" }
+      : s.dir === "desc" ? { col: key, dir: "asc" }
+      : { col: null, dir: null });
   const [d, setD] = useState(null);
   const [loadError, setLoadError] = useState(null);
   const [availableDates, setAvailableDates] = useState([]);
@@ -903,32 +909,70 @@ export default function CompyDashboard() {
                       );
                     })}
                   </div>
-                  <Table
-                    compact
-                    headers={["Page", "Track", "NCV", "Strat", "Impr", "Clicks", "Pos", "Verdict", "Action"]}
-                    rows={rs.items.filter(it => !ncvTrack || it.track === ncvTrack).slice(0, 25).map(it => [
-                      it.title,
-                      it.track,
-                      <strong style={{ color: C.primary }}>{it.ncvScore}</strong>,
-                      it.strategicValue,
-                      it.impressions.toLocaleString(),
-                      (it.clicks ?? 0).toLocaleString(),
-                      it.position ?? "—",
-                      <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span>,
-                      <AdviceCell
-                        item={it}
-                        fallback={it.action}
-                        context={{
-                          brand: "GrowthBook",
-                          objective: "Maximize AI-citation share + bottom-funnel signups per unit of effort.",
-                          methodology: strat.note,
-                          northStar: strat.northStar,
-                          portfolio: strat.portfolio,
-                          verdictMeaning: { Winner: "promote", Stranded: "refresh", Surprise: "harvest intent", "Let it ride": "deprioritize" },
-                        }}
-                      />,
-                    ])}
-                  />
+                  {(() => {
+                    const adviceCtx = {
+                      brand: "GrowthBook",
+                      objective: "Maximize AI-citation share + bottom-funnel signups per unit of effort.",
+                      methodology: strat.note,
+                      northStar: strat.northStar,
+                      portfolio: strat.portfolio,
+                      verdictMeaning: { Winner: "promote", Stranded: "refresh", Surprise: "harvest intent", "Let it ride": "deprioritize" },
+                    };
+                    // Column spec: `sort` returns the value to sort by (null = not sortable).
+                    const COLS = [
+                      { key: "title", label: "Page", align: "left", sort: it => (it.title || "").toLowerCase(), render: it => it.title },
+                      { key: "track", label: "Track", align: "left", sort: it => it.track || "", render: it => it.track },
+                      { key: "ncvScore", label: "NCV", align: "right", sort: it => it.ncvScore ?? -1, render: it => <strong style={{ color: C.primary }}>{it.ncvScore}</strong> },
+                      { key: "strategicValue", label: "Strat", align: "right", sort: it => it.strategicValue ?? -1, render: it => it.strategicValue },
+                      { key: "impressions", label: "Impr", align: "right", sort: it => it.impressions ?? -1, render: it => it.impressions.toLocaleString() },
+                      { key: "clicks", label: "Clicks", align: "right", sort: it => it.clicks ?? -1, render: it => (it.clicks ?? 0).toLocaleString() },
+                      { key: "position", label: "Pos", align: "right", sort: it => it.position ?? 9999, render: it => it.position ?? "—" },
+                      { key: "shippedDate", label: "Shipped", align: "left", sort: it => it.shippedDate || "",
+                        render: it => <span title={it.dateSource === "published" ? "verified publish date" : "first detected — publish date unverified"}
+                          style={{ color: it.dateSource === "published" ? "#2C3E50" : C.muted }}>{it.shippedDate || "—"}{it.dateSource !== "published" && it.shippedDate ? " ~" : ""}</span> },
+                      { key: "verdict", label: "Verdict", align: "left", sort: it => it.verdict || "", render: it => <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span> },
+                      { key: null, label: "Action", align: "left", sort: null, render: it => <AdviceCell item={it} fallback={it.action} context={adviceCtx} /> },
+                    ];
+                    let rows = rs.items.filter(it => !ncvTrack || it.track === ncvTrack);
+                    if (shipSort.col) {
+                      const col = COLS.find(c => c.key === shipSort.col);
+                      rows = [...rows].sort((a, b) => {
+                        const av = col.sort(a), bv = col.sort(b);
+                        const cmp = (typeof av === "number" && typeof bv === "number") ? av - bv : String(av).localeCompare(String(bv));
+                        return shipSort.dir === "asc" ? cmp : -cmp;
+                      });
+                    }
+                    rows = rows.slice(0, 25);
+                    return (
+                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                        <thead>
+                          <tr style={{ background: C.primary }}>
+                            {COLS.map(c => {
+                              const active = shipSort.col === c.key;
+                              return (
+                                <th key={c.label}
+                                  onClick={c.sort ? () => cycleShipSort(c.key) : undefined}
+                                  title={c.sort ? "Click to sort (desc → asc → none)" : undefined}
+                                  style={{ padding: "6px 8px", color: "#fff", textAlign: c.align, fontWeight: 700, whiteSpace: "nowrap",
+                                    cursor: c.sort ? "pointer" : "default", userSelect: "none" }}>
+                                  {c.label}{active ? (shipSort.dir === "desc" ? " ▼" : " ▲") : (c.sort ? <span style={{ opacity: 0.4 }}> ⇅</span> : "")}
+                                </th>
+                              );
+                            })}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {rows.map((it, ri) => (
+                            <tr key={it.url || ri} style={{ background: ri % 2 === 0 ? "#fff" : "#F8F9FA" }}>
+                              {COLS.map(c => (
+                                <td key={c.label} style={{ padding: "6px 8px", textAlign: c.align, verticalAlign: "top" }}>{c.render(it)}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    );
+                  })()}
                 </Section>
               );
             })()}
