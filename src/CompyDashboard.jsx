@@ -576,12 +576,21 @@ export default function CompyDashboard() {
           // Its row is highlighted as "us" and carries a caveat: GB's ETV
           // UNDERREPORTS because DataForSEO doesn't count branded search (~55% of
           // GB clicks) — so its true footprint is higher than the number shown.
+          // 4-week (~monthly) ETV delta, not WoW: DataForSEO's ETV index refreshes
+          // ~monthly, so 7-day deltas are near-zero noise. Baseline = the earlier
+          // point closest to 28 days before the latest; null if no usable baseline.
           const heatEtv = Object.entries(d.etv_trend || {})
             .map(([comp, pts]) => {
               const clean = (pts || []).filter(p => p.etv != null);
-              const last = clean[clean.length - 1], prev = clean[clean.length - 2];
-              const wow = last && prev && prev.etv ? Math.round(((last.etv - prev.etv) / prev.etv) * 100) : null;
-              return { comp, etv: last?.etv ?? null, wow, isGB: comp === "GrowthBook" };
+              const last = clean[clean.length - 1];
+              const target = last ? new Date(last.date).getTime() - 28 * 864e5 : 0;
+              let base = null;
+              for (const p of clean) {
+                if (p === last) continue;
+                if (!base || Math.abs(new Date(p.date).getTime() - target) < Math.abs(new Date(base.date).getTime() - target)) base = p;
+              }
+              const delta = last && base && base.etv ? Math.round(((last.etv - base.etv) / base.etv) * 100) : null;
+              return { comp, etv: last?.etv ?? null, delta, isGB: comp === "GrowthBook" };
             })
             .filter(r => r.etv != null)
             .sort((a, b) => (b.etv ?? 0) - (a.etv ?? 0));
@@ -622,11 +631,12 @@ export default function CompyDashboard() {
                   </div>
                   {/* Per-competitor ETV WoW */}
                   <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 240 }}>
-                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>Organic ETV · WoW</div>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>Organic ETV · 4-wk Δ</div>
                     {heatEtv.length === 0
                       ? <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>No ETV trend yet.</div>
                       : heatEtv.map((r, i) => {
-                          const up = r.wow != null && r.wow > 0, flat = r.wow == null || r.wow === 0;
+                          // null = no 4-week baseline ("—"); 0 = genuinely flat ("≈0%").
+                          const noBase = r.delta == null, zero = r.delta === 0, up = r.delta > 0;
                           return (
                             <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
                               marginBottom: 5, fontSize: 12,
@@ -637,8 +647,8 @@ export default function CompyDashboard() {
                               </span>
                               <span style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
                                 <span style={{ color: "#2C3E50", fontWeight: r.isGB ? 700 : 400 }}>{r.etv.toLocaleString()}{r.isGB ? "*" : ""}</span>
-                                <span style={{ fontWeight: 700, minWidth: 52, textAlign: "right", color: flat ? C.muted : (up ? C.success : C.danger) }}>
-                                  {flat ? "—" : `${up ? "▲" : "▼"} ${Math.abs(r.wow)}%`}
+                                <span style={{ fontWeight: 700, minWidth: 56, textAlign: "right", color: (noBase || zero) ? C.muted : (up ? C.success : C.danger) }}>
+                                  {noBase ? "—" : zero ? "≈0%" : `${up ? "▲" : "▼"} ${Math.abs(r.delta)}%`}
                                 </span>
                               </span>
                             </div>
