@@ -1142,6 +1142,318 @@
     ],
     "note": "Demand uses real monthly search volume; aiCitation is refined by real search intent + AI-Overview presence; winnability blends position, KD, and backlink domain strength (DataForSEO).",
     "metricsSource": "dataforseo",
+    "backlinks": [
+      {
+        "name": "Optimizely",
+        "domain": "optimizely.com",
+        "rank": 486,
+        "backlinks": 467623,
+        "referringDomains": 35466,
+        "isGB": false
+      },
+      {
+        "name": "PostHog",
+        "domain": "posthog.com",
+        "rank": 483,
+        "backlinks": 145603,
+        "referringDomains": 9330,
+        "isGB": false
+      },
+      {
+        "name": "Amplitude Exp",
+        "domain": "amplitude.com",
+        "rank": 466,
+        "backlinks": 140577,
+        "referringDomains": 14782,
+        "isGB": false
+      },
+      {
+        "name": "Statsig",
+        "domain": "statsig.com",
+        "rank": 415,
+        "backlinks": 23668,
+        "referringDomains": 3006,
+        "isGB": false
+      },
+      {
+        "name": "Harness",
+        "domain": "harness.io",
+        "rank": 399,
+        "backlinks": 68582,
+        "referringDomains": 6172,
+        "isGB": false
+      },
+      {
+        "name": "LaunchDarkly",
+        "domain": "launchdarkly.com",
+        "rank": 397,
+        "backlinks": 107083,
+        "referringDomains": 4997,
+        "isGB": false
+      },
+      {
+        "name": "Flagsmith",
+        "domain": "flagsmith.com",
+        "rank": 362,
+        "backlinks": 46400,
+        "referringDomains": 1151,
+        "isGB": false
+      },
+      {
+        "name": "Unleash",
+        "domain": "getunleash.io",
+        "rank": 301,
+        "backlinks": 14655,
+        "referringDomains": 1700,
+        "isGB": false
+      },
+      {
+        "name": "Eppo",
+        "domain": "geteppo.com",
+        "rank": 297,
+        "backlinks": 4158,
+        "referringDomains": 1124,
+        "isGB": false
+      },
+      {
+        "name": "GrowthBook",
+        "domain": "growthbook.io",
+        "rank": 295,
+        "backlinks": 26311,
+        "referringDomains": 938,
+        "isGB": true
+      }
+    ],
+    "aiVisibility": [
+      {
+        "keyword": "a/b testing",
+        "volume": 301000,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "en.wikipedia.org",
+          "www.salesforce.com",
+          "www.optimizely.com",
+          "business.adobe.com",
+          "www.kameleoon.com"
+        ]
+      },
+      {
+        "keyword": "what is a/b testing",
+        "volume": 1900,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "www.salesforce.com",
+          "en.wikipedia.org",
+          "www.optimizely.com",
+          "business.adobe.com",
+          "www.kameleoon.com"
+        ]
+      },
+      {
+        "keyword": "true positive rate",
+        "volume": 1000,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "en.wikipedia.org",
+          "www.iguazio.com",
+          "www.statsig.com",
+          "www.statsig.com",
+          "www.ncbi.nlm.nih.gov"
+        ]
+      },
+      {
+        "keyword": "experimentation platform",
+        "volume": 90,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs optimizely",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs eppo",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs vwo",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "betterme engineering process feature flags experiments",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs split",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs absmartly",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "launchdarkly business model b2b",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs ab tasty",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs posthog",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "posthog.com",
+          "www.growthbook.io",
+          "www.growthbook.io",
+          "posthog.com",
+          "posthog.com"
+        ]
+      },
+      {
+        "keyword": "growthbook vs launchdarkly",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "www.growthbook.io",
+          "www.reddit.com",
+          "www.growthbook.io",
+          "docs.growthbook.io",
+          "www.statsig.com"
+        ]
+      },
+      {
+        "keyword": "growthbook vs statsig",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "www.growthbook.io",
+          "www.statsig.com",
+          "www.growthbook.io",
+          "www.g2.com",
+          "www.statsig.com"
+        ]
+      },
+      {
+        "keyword": "http error 401",
+        "volume": 0,
+        "intent": "navigational",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "developer.mozilla.org",
+          "www.statsig.com",
+          "help.sap.com",
+          "www.siteground.com",
+          "www.growthbook.io"
+        ]
+      },
+      {
+        "keyword": "401 error",
+        "volume": 0,
+        "intent": "navigational",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "www.reddit.com",
+          "developer.mozilla.org",
+          "www.reddit.com",
+          "www.statsig.com",
+          "www.growthbook.io"
+        ]
+      },
+      {
+        "keyword": "http 401",
+        "volume": 8100,
+        "intent": "navigational",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      },
+      {
+        "keyword": "401 status code",
+        "volume": 4400,
+        "intent": "informational",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs sitespect",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      }
+    ],
     "recentlyShipped": {
       "windowWeeks": 8,
       "cohorts": [

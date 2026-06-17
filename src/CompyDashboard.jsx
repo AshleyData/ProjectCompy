@@ -190,6 +190,8 @@ const PRIMARY_TABS = [
   { id: "summary", label: "📊 Summary" },
 ];
 const MORE_TABS = [
+  { id: "ai_visibility", label: "🔎 AI Visibility" },
+  { id: "backlinks", label: "🔗 Backlinks" },
   { id: "competitors", label: "🏁 Competitors" },
   { id: "gsc", label: "📈 GSC Detail" },
   { id: "youtube", label: "▶️ YouTube" },
@@ -1018,6 +1020,84 @@ export default function CompyDashboard() {
             <p style={{ fontSize: 11, color: "#888", marginTop: 16, paddingTop: 8, borderTop: "1px solid #333", textAlign: "left" }}>
               🧭 ACP strategic scoring · {opps.length} opportunities · Run: {d.week || "—"}
             </p>
+          </>);
+        })()}
+
+        {/* ── AI VISIBILITY ── */}
+        {tab === "ai_visibility" && (() => {
+          const ns = d.strategy?.northStar || {};
+          const av = d.strategy?.aiVisibility || [];
+          const aioCount = av.filter(r => r.hasAio).length;
+          const citedCount = av.filter(r => r.hasAio && r.brandCited).length;
+          const targets = av.filter(r => r.captureTarget).length;
+          return (<>
+            <Section title="🔎 AI Visibility — Brand Metrics (AthenaHQ)">
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+                <MetricCard label="AI Share of Voice" value={ns.aiShareOfVoice?.value != null ? `${ns.aiShareOfVoice.value}%` : "—"} change={ns.aiShareOfVoice?.trend4wk} sub={`target ${ns.aiShareOfVoice?.target || "15-25"}%`} />
+                <MetricCard label="AI Citation Rate" value={ns.aiCitationRate?.value != null ? `${ns.aiCitationRate.value}%` : "—"} change={ns.aiCitationRate?.trend4wk} sub="vs 4-wk" />
+                <MetricCard label="AI Mention Rate" value={ns.aiMentionRate?.value != null ? `${ns.aiMentionRate.value}%` : "—"} change={ns.aiMentionRate?.trend4wk} sub="vs 4-wk" />
+              </div>
+              <p style={{ fontSize: 12, color: C.muted, marginTop: 12, textAlign: "left" }}>
+                Brand-level AI visibility from AthenaHQ. Share of Voice = GrowthBook's presence vs competitors in AI assistant answers; Citation Rate = how often GrowthBook is cited as a source; Mention Rate = how often it's named.
+              </p>
+            </Section>
+            <Section title="🎯 AI Overview Capture Targets (per query, DataForSEO)">
+              <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
+                {av.length} tracked queries · {aioCount} show an AI Overview · GrowthBook cited in {citedCount} · <strong style={{ color: C.danger }}>{targets} capture targets</strong> (AI Overview shows but GrowthBook is NOT cited — the clearest AI-citation opportunities).
+              </p>
+              {av.length === 0
+                ? <div style={{ ...card({ padding: "16px 20px" }), color: C.muted, fontSize: 13 }}>No AI-Overview data this run.</div>
+                : <Table
+                    compact
+                    headers={["Query", "Volume", "Intent", "AI Overview", "GB Cited", "Status"]}
+                    rows={av.map(r => [
+                      <span style={{ display: "block", textAlign: "left" }}>{r.keyword}</span>,
+                      (r.volume || 0).toLocaleString(),
+                      r.intent || "—",
+                      r.hasAio ? "Yes" : "No",
+                      r.hasAio ? (r.brandCited ? "✅" : "❌") : "—",
+                      r.captureTarget
+                        ? <span style={{ color: C.danger, fontWeight: 700 }}>Capture</span>
+                        : (r.hasAio && r.brandCited ? <span style={{ color: C.success }}>Holding</span> : <span style={{ color: C.muted }}>—</span>),
+                    ])}
+                  />}
+            </Section>
+          </>);
+        })()}
+
+        {/* ── BACKLINKS ── */}
+        {tab === "backlinks" && (() => {
+          const bl = d.strategy?.backlinks || [];
+          const maxRank = Math.max(1, ...bl.map(r => r.rank || 0));
+          const gb = bl.find(r => r.isGB);
+          const rank = gb ? bl.filter(r => r.rank > gb.rank).length + 1 : null;
+          return (<>
+            <Section title="🔗 Backlink Domain Strength (DataForSEO)">
+              <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
+                DataForSEO domain rank (0–1000; higher = stronger backlink profile).
+                {gb && rank ? <> GrowthBook ranks <strong style={{ color: C.primary }}>{gb.rank}</strong> — {rank} of {bl.length} in this set{rank === bl.length ? " (weakest backlink profile; link-building is a clear lever)" : ""}.</> : null}
+              </p>
+              <div style={{ ...card({ padding: "18px 20px" }) }}>
+                {bl.map(r => (
+                  <Bar key={r.domain} label={`${r.name}${r.isGB ? " ★" : ""}`} value={r.rank} max={maxRank}
+                       color={r.isGB ? C.success : (COMP_COLORS[r.name] || C.accent)} />
+                ))}
+              </div>
+            </Section>
+            <Section title="Backlink Detail">
+              <Table
+                headers={["Domain", "Domain Rank", "Backlinks", "Referring Domains"]}
+                rows={bl.map(r => [
+                  <span style={{ fontWeight: r.isGB ? 800 : 600, color: r.isGB ? C.success : (COMP_COLORS[r.name] || C.primary) }}>{r.name}{r.isGB ? " ★" : ""}</span>,
+                  r.rank,
+                  (r.backlinks || 0).toLocaleString(),
+                  (r.referringDomains || 0).toLocaleString(),
+                ])}
+              />
+              <p style={{ fontSize: 11, color: "#888", marginTop: 12, textAlign: "left" }}>
+                Referring domains (unique linking sites) matters more than raw backlink count for authority. ★ = GrowthBook.
+              </p>
+            </Section>
           </>);
         })()}
 
