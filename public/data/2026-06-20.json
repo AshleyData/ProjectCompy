@@ -1564,15 +1564,15 @@
         },
         {
           "track": "Editorial",
-          "count": 32,
-          "impressions": 70035,
-          "clicks": 305,
-          "avgPosition": 9.2,
-          "avgStrategicValue": 2.2,
+          "count": 30,
+          "impressions": 65805,
+          "clicks": 296,
+          "avgPosition": 8.8,
+          "avgStrategicValue": 2.3,
           "verdicts": {
             "Winner": 2,
             "Stranded": 1,
-            "Surprise": 23,
+            "Surprise": 21,
             "Let it ride": 6
           }
         }
@@ -2027,6 +2027,22 @@
           "dateSource": "published"
         },
         {
+          "title": "Amazon To Atlassian A Framework For Testing Assumptions",
+          "url": "https://www.growthbook.io/blog/amazon-to-atlassian-a-framework-for-testing-assumptions",
+          "track": "Editorial",
+          "strategicValue": 1.8,
+          "performance": 5,
+          "ncvScore": 68.0,
+          "verdict": "Surprise",
+          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
+          "clicks": 2,
+          "impressions": 860,
+          "position": 6.6,
+          "weeksOld": 4,
+          "shippedDate": "2026-05-25",
+          "dateSource": "published"
+        },
+        {
           "title": "Growthbook 4 4",
           "url": "https://www.growthbook.io/blog/growthbook-4-4",
           "track": "Editorial",
@@ -2299,22 +2315,6 @@
           "dateSource": "published"
         },
         {
-          "title": "Amazon To Atlassian A Framework For Testing Assumptions",
-          "url": "https://www.growthbook.io/blog/amazon-to-atlassian-a-framework-for-testing-assumptions",
-          "track": "Editorial",
-          "strategicValue": 1.8,
-          "performance": 4,
-          "ncvScore": 58.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 2,
-          "impressions": 860,
-          "position": 6.6,
-          "weeksOld": 4,
-          "shippedDate": "2026-05-25",
-          "dateSource": "published"
-        },
-        {
           "title": "Ups Delivered 500M In Revenue Testing E Commerce Patterns On Shipping Flow",
           "url": "https://www.growthbook.io/blog/ups-delivered-500m-in-revenue-testing-e-commerce-patterns-on-shipping-flow",
           "track": "Editorial",
@@ -2329,22 +2329,6 @@
           "weeksOld": 4,
           "shippedDate": "2026-05-22",
           "dateSource": "published"
-        },
-        {
-          "title": "Insights",
-          "url": "https://www.growthbook.io/insights",
-          "track": "Editorial",
-          "strategicValue": 1.8,
-          "performance": 4,
-          "ncvScore": 58.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 9,
-          "impressions": 3804,
-          "position": 16.4,
-          "weeksOld": 8,
-          "shippedDate": "2026-04-25",
-          "dateSource": "detected"
         },
         {
           "title": "How Much Traffic Do You Need Test Ai Features Reliably",
@@ -2633,22 +2617,6 @@
           "weeksOld": 3,
           "shippedDate": "2026-05-30",
           "dateSource": "published"
-        },
-        {
-          "title": "Data Science",
-          "url": "https://www.growthbook.io/roles/data-science",
-          "track": "Editorial",
-          "strategicValue": 1.8,
-          "performance": 3,
-          "ncvScore": 48.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 0,
-          "impressions": 426,
-          "position": 12.7,
-          "weeksOld": 8,
-          "shippedDate": "2026-04-25",
-          "dateSource": "detected"
         },
         {
           "title": "Engineering",
@@ -3760,19 +3728,20 @@
   "exec_summary": [
     "Site traffic (GA4, 2026-06-13 to 2026-06-19): growthbook.io had 16,308 sessions and 11,435 users (+29.2% week over week).",
     "## Week of 2026-06-20",
-    "**Site performance**\n- **Overall (GA4, all traffic):** 16,308 sessions (+29.2% WoW) | 11,435 users\n- **Overall (GSC, organic search):** 3,464 clicks (+2.1% WoW) | 195,166 impressions (+28.1% WoW)\n- **Homepage (/):** 8,669 GA4 sessions (-2.5% WoW) all-traffic | 1,935 GSC clicks (+3.2% WoW) organic | 14,410 GSC impressions (+3.0% WoW)\n- **Pricing (/pricing):** 1,142 GA4 sessions (-11.7% WoW) all-traffic | 97 GSC clicks (-8.5% WoW) organic | 6,074 GSC impressions (+13.0% WoW)\n- **Docs (docs.growthbook.io):** 4,403 GA4 sessions (-0.8% WoW) all-traffic | 1,100 GSC clicks (+3.3% WoW) organic | 129,699 GSC impressions (+6.8% WoW)\n- **All other pages:** 9,918 GA4 sessions (+97.0% WoW) all-traffic | 332 GSC clicks (+3.8% WoW) organic | 132,998 GSC impressions (+32.1% WoW)\n- All-other-pages GA4 sessions nearly doubled (+97%) while GSC organic clicks rose only +3.8% \u2014 the strongest AI-search-displacement signal in the account this week. Pricing all-traffic down -11.7% while impressions are up +13.0% \u2014 worth watching next week.",
-    "**New competitor activity**\n- **Optimizely** continues its coordinated AI experimentation campaign (\"Powering AI With Feature Flags,\" \"AI Experimentation Takes With Elena Verna,\" \"Big Ideas In AI Driven Experimentation\" \u2014 all Tier 1, third consecutive week flagged). Also refreshed or republished its **Experimentation** and **Feature Management** product pages. GrowthBook's **/blog/a-b-testing-in-the-age-of-ai** is still declining; no counter-content published.\n- **Harness** published four Tier 1 posts this week: **\"Feature Flag Driven Development\"** (KD 7), **\"Node.js Feature Flags\"** (KD 0), **\"AI-Powered Feature Management with Harness MCP Server and Claude Code\"**, and **\"Make Data-Driven Decisions with Warehouse-Native Experimentation\"** \u2014 the last two directly overlap GrowthBook's AI + warehouse-native experimentation positioning. Harness is building content depth in both spaces simultaneously.\n- **LaunchDarkly** published **\"Feature Flags AWS DevOps Agent\"** (Tier 1) \u2014 targets the developer/DevOps ICP at the intersection of cloud infrastructure and feature flags. LD's \"Git Branching Strategies vs. Trunk-Based Development\" also surged +589% ETV this week (absolute ETV 1,600), reclaiming a keyword cluster GrowthBook could contest.\n- **PostHog** CUPED and LLM Prompt Experiments docs continue to appear \u2014 fifth consecutive week, still no GrowthBook counter-content published.\n- \u26a0\ufe0f No new pages detected from **Statsig** or **Unleash** this week \u2014 likely a monitoring gap, not a content pause.",
-    "**New GrowthBook content**\n- **/insights/statsig-alternatives** and **/insights/free-ab-testing-tools** \u2014 noticed this week via sitemap (real publish dates unknown). Both are zero-impression so far. \"Statsig alternatives\" is well-timed: **/blog/how-to-migrate-from-statsig-to-growthbook** (published 2026-04-02) is already at position 7.2 with 11 clicks/week; internal links between these two pages now will accelerate indexing.\n- **/insights/95-confidence-interval** (KD 24) and **/insights/free-product-analytics-tools** (KD 35) \u2014 also noticed this week, zero impressions. Both are higher-KD plays; promote via internal links now to build equity early.\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): jumped to 94 clicks this week (up from 52 last week, +81%) and 23,129 impressions at position 8.6 \u2014 the strongest-performing new page in the account. This surge is real signal; the page is breaking out.",
-    "**Strategic priorities (ACP)**\n- **Top-10 footprint is now 167 keywords (+69 over 3 months)** \u2014 trajectory is accelerating (was +56 three months ago at 154).\n- **Comparison page BOFU fix remains the single highest-ROI task in the account.** Seven act-now pages have cleared the persistence gate. Priority order this week:\n  - **/compare/growthbook-vs-launchdarkly** (ACP 82, pos 10.3, AI Overview present, GrowthBook cited) \u2014 structural upgrade converts existing AI authority into signups.\n  - **/compare/growthbook-vs-statsig** (ACP 82, pos 7.6, AI Overview present, GrowthBook cited) \u2014 same.\n  - **/compare/growthbook-vs-posthog** (ACP 80, pos 6.5, 4,103 impressions/28d, AI Overview present, GrowthBook cited) \u2014 highest impression volume of the three; new this week to the top tier.\n  - **/compare/growthbook-vs-optimizely** (ACP 80, pos 9.5, AI Overview present, GrowthBook NOT cited) \u2014 still 0 clicks this week despite 2,115 impressions/28d.\n- **\"what is a/b testing\"** (ACP 70, pos 11.83, 901 impressions, AI Overview present, GrowthBook NOT cited, 1,900 monthly searches) \u2014 add an answer capsule H2 to the targeting page this week.",
-    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared**: 94 clicks (+81% WoW), 23,129 impressions, position 8.6 \u2014 material acceleration from last week's 52 clicks. Internal links and social push warranted now.\n- **/insights/matched-pairs-design-explained**: 15 clicks (up from 3) \u2014 new mover, high-authority stats content, same audience as PostHog's CUPED docs. Add internal links.\n- **/blog/a-practitioners-guide-to-treatment-effects**: 3 clicks (down from 10) \u2014 reversed direction after two weeks of growth. Still worth an internal link push given PostHog's CUPED competition.\n- **/insights/best-ab-testing-tools-product-analytics**: 2 clicks (down from 14) \u2014 sharp single-week reversal; monitor next week before acting.\n- **/compare/growthbook-vs-posthog**: 3 clicks this week (up from 1), 4,103 impressions/28d at position 6.5 \u2014 best-positioned comparison page by rank; structural upgrade is the lever.",
-    "**Recommended actions**\n- **Apply the answer-capsule + comparison table + schema fix to **/compare/growthbook-vs-launchdarkly**, **/compare/growthbook-vs-statsig**, and **/compare/growthbook-vs-posthog** this week** (ACP 82, 82, 80). All three have AI Overviews where GrowthBook IS cited \u2014 the structural upgrade is the conversion layer. **/compare/growthbook-vs-posthog** is new to this priority tier and has the highest impression volume (4,103/28d).\n- **Apply the same fix to **/compare/growthbook-vs-optimizely** this week** (ACP 80, pos 9.5, 2,115 impressions/28d, AI Overview present, GrowthBook NOT cited). Still 0 clicks; one afternoon of work.\n- **Add internal links from **/blog/how-to-migrate-from-statsig-to-growthbook** to the newly detected **/insights/statsig-alternatives** immediately** \u2014 the migration post is already at position 7.2 and can pass link equity to the alternatives page before it indexes.\n- **Promote **/blog/best-open-source-feature-flagging-tools-compared** via social this week** \u2014 94 clicks at position 8.6 is breaking out; a social push can accelerate backlink acquisition and push it into the top 5."
+    "**Site performance**\n- **Overall (GA4, all traffic):** 16,308 sessions (+29.2% WoW) | 11,435 users\n- **Overall (GSC, organic search):** 3,464 clicks (+2.1% WoW) | 195,166 impressions (+28.1% WoW)\n- **Homepage (/):** 8,669 GA4 sessions (-2.5% WoW) all-traffic | 1,935 GSC clicks (+3.2% WoW) organic | 14,410 GSC impressions (+3.0% WoW)\n- **Pricing (/pricing):** 1,142 GA4 sessions (-11.7% WoW) all-traffic | 97 GSC clicks (-8.5% WoW) organic | 6,074 GSC impressions (+13.0% WoW)\n- **Docs (docs.growthbook.io):** 4,403 GA4 sessions (-0.8% WoW) all-traffic | 1,100 GSC clicks (+3.3% WoW) organic | 129,699 GSC impressions (+6.8% WoW)\n- **All other pages:** 9,918 GA4 sessions (+97.0% WoW) all-traffic | 332 GSC clicks (+3.8% WoW) organic | 132,998 GSC impressions (+32.1% WoW)\n- Note: The GSC page-split window (2026-06-08 to 2026-06-14) is one week behind the GA4 data \u2014 the all-other-pages AI-search-displacement signal flagged last week (GA4 nearly doubled while GSC organic barely moved) is holding. Pricing GA4 all-traffic down -11.7% with impressions up +13.0% continues to warrant watching.",
+    "**New competitor activity**\n- **Optimizely** is in its fourth consecutive week of coordinated AI experimentation content (\"Powering AI With Feature Flags,\" \"AI Experimentation Takes With Elena Verna,\" \"Big Ideas In AI Driven Experimentation\" \u2014 all Tier 1, all carried from last week). Also refreshed its **Experimentation** and **Feature Management** product pages. GrowthBook's **/blog/a-b-testing-in-the-age-of-ai** is still declining and no counter-content has shipped. The window to own this topic is narrowing.\n- **Harness** continues publishing heavily: **\"Feature Flag Driven Development\"** (KD 7), **\"Node.js Feature Flags\"** (KD 0), **\"AI-Powered Feature Management with Harness MCP Server and Claude Code,\"** **\"Make Data-Driven Decisions with Warehouse-Native Experimentation,\"** and three additional posts this week. The warehouse-native experimentation post directly overlaps GrowthBook's core positioning.\n- **LaunchDarkly** published **\"Feature Flags AWS DevOps Agent\"** (Tier 1, developer/DevOps ICP). LD's \"Feature Flags 101\" surged to ETV 2,081 (+52.7%) this week \u2014 the highest-ETV competitor page in the dataset and directly competitive with GrowthBook's feature flagging content.\n- **Flagsmith** published **\"Trunk-Based Development\"** (KD 21), **\"Build vs Buy Feature Flags \u2014 Experience as a CTO,\"** **\"How Banks Use Feature Flags,\"** and **\"TypeScript Feature Flags Next.js Example\"** \u2014 four posts targeting developer and enterprise ICPs GrowthBook shares.\n- \u26a0\ufe0f No new pages detected from **Statsig** or **Unleash** this week \u2014 likely a monitoring gap, not a content pause.",
+    "**New GrowthBook content**\n- No new pages detected via sitemap this week beyond those already flagged in prior summaries. Previously detected pages (**/insights/statsig-alternatives**, **/insights/free-ab-testing-tools**, **/insights/95-confidence-interval**, **/insights/hypothesis-testing**) remain at zero impressions \u2014 internal link promotion is the immediate lever.\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): down to 42 clicks this week from 94 last week \u2014 a sharp single-week reversal after the breakout. Monitor closely; if it holds below 50 next week, a title or internal-link intervention is warranted.",
+    "**Strategic priorities (ACP)**\n- **Top-10 footprint is 167 keywords (+69 over 3 months)** \u2014 trajectory accelerating.\n- **Comparison page BOFU fix remains the highest-ROI work in the account.** Seven pages have cleared the persistence gate. Priority order unchanged:\n  - **/compare/growthbook-vs-launchdarkly** (ACP 82, pos 10.3, 3,065 impressions/28d, AI Overview present, GrowthBook cited) \u2014 structural upgrade converts existing AI authority into signups.\n  - **/compare/growthbook-vs-statsig** (ACP 82, pos 7.6, 2,258 impressions/28d, AI Overview present, GrowthBook cited) \u2014 same.\n  - **/compare/growthbook-vs-posthog** (ACP 80, pos 6.5, 4,103 impressions/28d, AI Overview present, GrowthBook cited) \u2014 highest impression volume; best-positioned by rank.\n  - **/compare/growthbook-vs-optimizely** (ACP 80, pos 9.5, 2,115 impressions/28d, AI Overview present, GrowthBook NOT cited) \u2014 4 clicks/28d despite strong impressions; one afternoon of structural work.\n- **\"what is a/b testing\"** (ACP 70, pos 11.83, 901 impressions, AI Overview present, GrowthBook NOT cited, 1,900 monthly searches) \u2014 add an answer-capsule H2 to the targeting page. Unchanged from last week; still unactioned.",
+    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared**: 42 clicks this week (down from 94 last week, -55%) \u2014 reversal after last week's breakout. Too early to panic but warrants a check on ranking position drift.\n- **/insights/http-error-explained-causes-how-fix**: 22 clicks (up from 6) \u2014 new mover. Not core to GrowthBook's ICP but signals the insights content cluster is indexing.\n- **/insights/matched-pairs-design-explained**: 15 clicks (up from 3, second consecutive week of growth) \u2014 same stats audience as PostHog's CUPED docs. Add internal links now.\n- **/blog/a-practitioners-guide-to-treatment-effects**: 3 clicks (down from 10) \u2014 reversed again after two weeks of growth. Internal link push is the low-effort play while PostHog competes in this space.\n- **/insights/best-ab-testing-tools-product-analytics**: 2 clicks (down from 14 last week) \u2014 second consecutive week flagged; sharp decline continues. Monitor one more week before acting.",
+    "**Recommended actions**\n- **Ship the answer-capsule + comparison table + schema fix to **/compare/growthbook-vs-launchdarkly**, **/compare/growthbook-vs-statsig**, and **/compare/growthbook-vs-posthog** this week** (ACP 82, 82, 80). All three have AI Overviews where GrowthBook IS cited \u2014 the structural upgrade is the conversion layer. This recommendation has appeared three weeks in a row without shipping.\n- **Apply the same fix to **/compare/growthbook-vs-optimizely** this week** (ACP 80, 2,115 impressions/28d, 0-4 clicks/28d, AI Overview present, GrowthBook NOT cited). Structural fix also targets AI citation capture.\n- **Add an answer-capsule H2 to the \"what is a/b testing\" page this week** (pos 11.83, 901 impressions, 1,900 monthly searches, AI Overview present, GrowthBook NOT cited). Unactioned for three weeks.\n- **Add internal links from established posts to **/insights/matched-pairs-design-explained**, **/insights/statsig-alternatives**, and **/insights/hypothesis-testing**** \u2014 these are in the stats and alternatives clusters that directly counter PostHog and Statsig content.",
+    "**Data quality flags**\n- **/blog/best-open-source-feature-flagging-tools-compared** click drop from 94 to 42 in one week is large enough to check for a ranking shift in DataForSEO before assuming it is normal variance."
   ],
   "content_recommendations": [
-    "1. Optimize /compare/growthbook-vs-launchdarkly and /compare/growthbook-vs-statsig (ACP 82 each): add a 40-word answer capsule, comparison table, schema markup, and signup CTA. Both pages have AI Overviews where GrowthBook is already cited \u2014 the structural fix converts existing AI authority into signups. Do this before any new content this week.",
-    "2. Optimize /compare/growthbook-vs-posthog (ACP 80, position 6.5, 4,103 impressions/28d): same structural fix as above. This page is the best-ranked comparison page in the account and newly entered the top-priority tier \u2014 highest impression volume of any comparison page.",
-    "3. Optimize /compare/growthbook-vs-optimizely (ACP 80, position 9.5, 2,115 impressions/28d): same fix, but here GrowthBook is NOT cited in the AI Overview. Fixing the structure is the prerequisite for AI citation capture. Still 0 clicks this week.",
-    "4. Strengthen /blog/what-is-a-b-testing for \"what is a/b testing\" (ACP 70, position 11.83, 901 impressions, 1,900 monthly searches, AI Overview present, GrowthBook NOT cited): add an answer-format H2 as the first section. This is the clearest single-page AI-citation capture target outside the comparison page cluster.",
-    "5. Expand /insights/statsig-alternatives (newly detected, 0 impressions): add internal links from /blog/how-to-migrate-from-statsig-to-growthbook (position 7.2, 11 clicks/week) and /blog/best-open-source-feature-flagging-tools-compared (94 clicks/week, breaking out). Both are high-authority pages that can accelerate indexing on a zero-KD query."
+    "1. Optimize /compare/growthbook-vs-launchdarkly and /compare/growthbook-vs-statsig (ACP 82 each): add the 40-word answer capsule + comparison table + schema markup + signup CTA this week. Both pages have AI Overviews where GrowthBook is already cited \u2014 this is a conversion layer fix, not a ranking play. Three weeks unactioned.",
+    "2. Optimize /compare/growthbook-vs-posthog (ACP 80, pos 6.5, 4,103 impressions/28d) and /compare/growthbook-vs-optimizely (ACP 80, pos 9.5, 2,115 impressions/28d) with the same structural fix. The PostHog page is the best-ranked comparison page in the account; Optimizely is an AI-citation capture target (GrowthBook not currently cited).",
+    "3. Expand /blog/what-is-a-b-testing with an answer-capsule H2 targeting 'what is a/b testing' (pos 11.83, 901 impressions, 1,900 monthly searches, AI Overview present, GrowthBook NOT cited). This is the clearest top-of-funnel AI citation gap in the account and has been flagged for three weeks without action.",
+    "4. Refresh /blog/a-b-testing-in-the-age-of-ai immediately. Optimizely is now in its fourth consecutive week of coordinated AI experimentation content; GrowthBook's counter-asset is declining. Add an answer-format H2 targeting 'AI experimentation' and update with current examples to compete for the AI Overview.",
+    "5. Write a short internal-linking sprint: connect /blog/how-to-migrate-from-statsig-to-growthbook (pos 7.2, 11 clicks/week) to /insights/statsig-alternatives, and link from existing stats content to /insights/matched-pairs-design-explained (15 clicks, growing) and /insights/hypothesis-testing (KD 22, zero impressions). All three need link equity to index and rank before competitors move in."
   ],
   "opportunities": [
     {
@@ -7438,22 +7407,6 @@
       "date": "2026-06-20"
     },
     {
-      "competitor": "PostHog",
-      "slug": "mcp-analytics",
-      "url": "https://posthog.com/docs/api/mcp-analytics",
-      "threat": 7,
-      "kd": 0.0,
-      "date": "2026-06-20"
-    },
-    {
-      "competitor": "PostHog",
-      "slug": "mcp-analytics",
-      "url": "https://posthog.com/docs/mcp-analytics",
-      "threat": 7,
-      "kd": 0.0,
-      "date": "2026-06-20"
-    },
-    {
       "competitor": "Harness",
       "slug": "azure-deployment",
       "url": "https://www.harness.io/blog/azure-deployment",
@@ -7547,6 +7500,22 @@
       "url": "https://amplitude.com/docs/sdks/guides-and-surveys/guides-and-surveys-rn-sdk",
       "threat": 6,
       "kd": null,
+      "date": "2026-06-20"
+    },
+    {
+      "competitor": "Flagsmith",
+      "slug": "product-lifecycle-management",
+      "url": "https://www.flagsmith.com/blog/product-lifecycle-management",
+      "threat": 6,
+      "kd": 16.0,
+      "date": "2026-06-20"
+    },
+    {
+      "competitor": "PostHog",
+      "slug": "use-cases",
+      "url": "https://posthog.com/docs/model-context-protocol/use-cases",
+      "threat": 6,
+      "kd": 13.0,
       "date": "2026-06-20"
     },
     {
