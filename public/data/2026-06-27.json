@@ -3280,7 +3280,87 @@
           "dateSource": "detected"
         }
       ]
-    }
+    },
+    "newSections": [
+      {
+        "competitor": "Optimizely",
+        "section": "/field-notes",
+        "count": 137,
+        "subsections": [
+          {
+            "path": "/field-notes/articles",
+            "count": 77
+          },
+          {
+            "path": "/field-notes/guides",
+            "count": 55
+          },
+          {
+            "path": "/field-notes/collections",
+            "count": 4
+          },
+          {
+            "path": "/field-notes/events",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "How To Scale Content Creation",
+          "Marketing Process",
+          "Articles",
+          "11 Abm Pages Is The Easy Part",
+          "5 Myths Killing Your Ab Testing And Experimentation Program",
+          "5 Ways Ai Helps You Get Market Research Right",
+          "Ai Experimentation",
+          "Ai For Content Consistency"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 137 pieces of editorial content\u2014primarily articles and guides\u2014covering topics like A/B testing, AI-assisted marketing, ABM, and content operations. It targets marketing practitioners and digital experience professionals seeking tactical advice and best practices."
+      },
+      {
+        "competitor": "PostHog",
+        "section": "/blog",
+        "count": 58,
+        "subsections": [
+          {
+            "path": "/blog/tags",
+            "count": 11
+          },
+          {
+            "path": "/blog/categories",
+            "count": 3
+          },
+          {
+            "path": "/blog/all",
+            "count": 2
+          },
+          {
+            "path": "/blog/best-ai-observability-tools",
+            "count": 1
+          },
+          {
+            "path": "/blog/duckdb-vs-clickhouse",
+            "count": 1
+          },
+          {
+            "path": "/blog/duckdb-vs-postgres",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "Best Ai Observability Tools",
+          "Duckdb Vs Clickhouse",
+          "Duckdb Vs Postgres",
+          "Error Tracking",
+          "Error Tracking",
+          "Ai Observability",
+          "Ai Observability",
+          "Aeo Advice"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "PostHog's /blog section is a technical content hub publishing comparison articles, product explainers, and engineering-focused guides covering topics like database technologies, AI observability, and error tracking. It primarily targets developers and engineering teams evaluating tools in the product analytics, observability, and data infrastructure space."
+      }
+    ]
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-06-20 to 2026-06-26): growthbook.io had 13,518 sessions and 9,028 users (-17.3% week over week).",

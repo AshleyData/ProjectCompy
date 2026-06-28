@@ -1384,6 +1384,38 @@ export default function CompyDashboard() {
 
         {/* ── NEW CONTENT ── */}
         {tab === "content" && (<>
+          {/* Newly-detected content-section blocks — a competitor hub/section that
+              appeared in the sitemap as a large block this week. Documented (with a
+              summary) so it isn't misread as a one-week publishing blitz. */}
+          {(d.strategy?.newSections || []).length > 0 && (
+            <Section title="🧱 New Content Blocks Detected">
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
+                A large block of pages under one section surfaced in a competitor's sitemap this week. These are counted in the totals below, but a block this size is usually a section newly exposed (hub launch / migration / sitemap change), not all published this week.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                {(d.strategy.newSections).map((s, i) => (
+                  <div key={i} style={{ ...card({ padding: "14px 16px", borderLeft: `4px solid ${COMP_COLORS[s.competitor] || C.accent}` }) }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: 8 }}>
+                      <span style={{ fontSize: 14, fontWeight: 700, color: COMP_COLORS[s.competitor] || C.primary }}>
+                        {s.competitor} <code style={{ background: "#F4F6F7", padding: "1px 5px", borderRadius: 3, fontSize: 12 }}>{s.section}</code>
+                      </span>
+                      <span style={{ fontSize: 13, fontWeight: 800, color: C.primary }}>{s.count} pages</span>
+                    </div>
+                    {s.summary && <p style={{ fontSize: 13, color: "#2C3E50", lineHeight: 1.55, margin: "8px 0", textAlign: "left" }}>{s.summary}</p>}
+                    <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 6 }}>
+                      {(s.subsections || []).map((sub, j) => (
+                        <span key={j} style={{ fontSize: 11, color: C.muted, background: C.bg, padding: "2px 7px", borderRadius: 4 }}>{sub.path} · {sub.count}</span>
+                      ))}
+                    </div>
+                    {(s.sampleTitles || []).length > 0 && (
+                      <div style={{ fontSize: 11, color: C.muted, textAlign: "left" }}>e.g. {s.sampleTitles.slice(0, 5).join(" · ")}</div>
+                    )}
+                    <div style={{ fontSize: 10, color: "#999", marginTop: 8, fontStyle: "italic", textAlign: "left" }}>{s.note}</div>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
           {(() => {
             const counts = {};
             const gbUrls = new Set();
