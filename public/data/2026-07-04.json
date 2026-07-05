@@ -134,6 +134,16 @@
         "overlap": false
       },
       {
+        "week": "2026-06-20",
+        "total": 235,
+        "overlap": false
+      },
+      {
+        "week": "2026-06-27",
+        "total": 230,
+        "overlap": false
+      },
+      {
         "week": "2026-07-04",
         "total": 244,
         "overlap": false
@@ -187,6 +197,14 @@
         "v": 4685
       },
       {
+        "week": "2026-06-20",
+        "v": 4599
+      },
+      {
+        "week": "2026-06-27",
+        "v": 4715
+      },
+      {
         "week": "2026-07-04",
         "v": 4483
       }
@@ -237,6 +255,14 @@
         "v": 82
       },
       {
+        "week": "2026-06-20",
+        "v": 141
+      },
+      {
+        "week": "2026-06-27",
+        "v": 117
+      },
+      {
         "week": "2026-07-04",
         "v": 92
       }
@@ -285,6 +311,14 @@
       {
         "week": "2026-06-13",
         "v": 157
+      },
+      {
+        "week": "2026-06-20",
+        "v": 167
+      },
+      {
+        "week": "2026-06-27",
+        "v": 165
       },
       {
         "week": "2026-07-04",
@@ -679,7 +713,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201ca/b testing\u201d (pos 12.6, 2,782 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "ranked \u226420 for 2 consecutive weeks \u2014 passes gate",
+        "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201ca/b testing\u201d",
           "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
@@ -705,7 +739,7 @@
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cmodel a/b testing\u201d (pos 12.1, 816 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch \u2014 only 1 week of data",
+        "persistence": "ranked \u226420 for 2 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cmodel a/b testing\u201d",
           "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
@@ -715,55 +749,55 @@
         }
       },
       {
-        "title": "Capture striking-distance query: \u201cnemuru.com product features analytics\u201d",
-        "type": "Striking distance",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 4,
-          "demand": 0,
-          "winnability": 5,
-          "strategicFit": 3
-        },
-        "weightedImpact": 52.0,
-        "effortTier": "XS",
-        "acpScore": 52.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201cnemuru.com product features analytics\u201d (pos 9.6, 870 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "watch \u2014 only 1 week of data",
-        "dataPoints": {
-          "pipeline": "intent inferred from query \u201cnemuru.com product features analytics\u201d",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "position 9.6 (striking distance)",
-          "strategicFit": "topic relevance of \u201cnemuru.com product features analytics\u201d"
-        }
-      },
-      {
         "title": "Capture striking-distance query: \u201cfeature flag\u201d",
         "type": "Striking distance",
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 2,
+          "aiCitation": 3,
           "demand": 2,
           "winnability": 3,
           "strategicFit": 5
         },
-        "weightedImpact": 48.0,
+        "weightedImpact": 54.0,
         "effortTier": "XS",
-        "acpScore": 48.0,
+        "acpScore": 54.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cfeature flag\u201d (pos 19.9, 543 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "watch \u2014 only 1 week of data",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cfeature flag\u201d",
-          "aiCitation": "asset-type lift + informational intent; no AI Overview",
+          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
           "demand": "2,400 monthly searches (DataForSEO)",
           "winnability": "position 19.9 (striking distance)",
           "strategicFit": "topic relevance of \u201cfeature flag\u201d"
+        }
+      },
+      {
+        "title": "Capture striking-distance query: \u201cnemuru.com product features analytics\u201d",
+        "type": "Striking distance",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 3,
+          "demand": 0,
+          "winnability": 5,
+          "strategicFit": 3
+        },
+        "weightedImpact": 46.0,
+        "effortTier": "XS",
+        "acpScore": 46.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Strengthen the page targeting \u201cnemuru.com product features analytics\u201d (pos 9.6, 870 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 2 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "intent inferred from query \u201cnemuru.com product features analytics\u201d",
+          "aiCitation": "asset-type lift + commercial intent; no AI Overview",
+          "demand": "0 monthly searches (DataForSEO)",
+          "winnability": "position 9.6 (striking distance)",
+          "strategicFit": "topic relevance of \u201cnemuru.com product features analytics\u201d"
         }
       },
       {
@@ -1159,35 +1193,479 @@
     ],
     "note": "Demand uses real monthly search volume; aiCitation is refined by real search intent + AI-Overview presence; winnability blends position, KD, and backlink domain strength (DataForSEO).",
     "metricsSource": "dataforseo",
+    "backlinks": [
+      {
+        "name": "Optimizely",
+        "domain": "optimizely.com",
+        "rank": 490,
+        "backlinks": 472582,
+        "referringDomains": 34215,
+        "isGB": false
+      },
+      {
+        "name": "PostHog",
+        "domain": "posthog.com",
+        "rank": 484,
+        "backlinks": 139079,
+        "referringDomains": 9598,
+        "isGB": false
+      },
+      {
+        "name": "Amplitude Exp",
+        "domain": "amplitude.com",
+        "rank": 468,
+        "backlinks": 139716,
+        "referringDomains": 14452,
+        "isGB": false
+      },
+      {
+        "name": "Statsig",
+        "domain": "statsig.com",
+        "rank": 414,
+        "backlinks": 23477,
+        "referringDomains": 2970,
+        "isGB": false
+      },
+      {
+        "name": "Harness",
+        "domain": "harness.io",
+        "rank": 401,
+        "backlinks": 67919,
+        "referringDomains": 6047,
+        "isGB": false
+      },
+      {
+        "name": "LaunchDarkly",
+        "domain": "launchdarkly.com",
+        "rank": 396,
+        "backlinks": 99144,
+        "referringDomains": 4939,
+        "isGB": false
+      },
+      {
+        "name": "Flagsmith",
+        "domain": "flagsmith.com",
+        "rank": 353,
+        "backlinks": 34201,
+        "referringDomains": 1092,
+        "isGB": false
+      },
+      {
+        "name": "Unleash",
+        "domain": "getunleash.io",
+        "rank": 304,
+        "backlinks": 14105,
+        "referringDomains": 1664,
+        "isGB": false
+      },
+      {
+        "name": "Eppo",
+        "domain": "geteppo.com",
+        "rank": 297,
+        "backlinks": 3977,
+        "referringDomains": 1099,
+        "isGB": false
+      },
+      {
+        "name": "GrowthBook",
+        "domain": "growthbook.io",
+        "rank": 295,
+        "backlinks": 25483,
+        "referringDomains": 926,
+        "isGB": true
+      }
+    ],
+    "aiVisibility": [
+      {
+        "keyword": "a/b testing",
+        "volume": 301000,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "en.wikipedia.org",
+          "www.salesforce.com",
+          "www.optimizely.com",
+          "business.adobe.com",
+          "www.kameleoon.com"
+        ]
+      },
+      {
+        "keyword": "feature flag",
+        "volume": 2400,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "launchdarkly.com",
+          "en.wikipedia.org",
+          "martinfowler.com",
+          "featureflags.io",
+          "www.optimizely.com"
+        ]
+      },
+      {
+        "keyword": "what is a/b testing",
+        "volume": 1900,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "www.salesforce.com",
+          "en.wikipedia.org",
+          "www.optimizely.com",
+          "business.adobe.com",
+          "www.kameleoon.com"
+        ]
+      },
+      {
+        "keyword": "true positive rate",
+        "volume": 1000,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "en.wikipedia.org",
+          "www.iguazio.com",
+          "www.statsig.com",
+          "www.statsig.com",
+          "www.ncbi.nlm.nih.gov"
+        ]
+      },
+      {
+        "keyword": "a/b testing meaning",
+        "volume": 720,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "en.wikipedia.org",
+          "www.salesforce.com",
+          "www.optimizely.com",
+          "business.adobe.com",
+          "www.oracle.com"
+        ]
+      },
+      {
+        "keyword": "experimentation platform",
+        "volume": 90,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "model a/b testing",
+        "volume": 30,
+        "intent": "informational",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": [
+          "mlops.community",
+          "en.wikipedia.org",
+          "www.kameleoon.com",
+          "www.youtube.com",
+          "www.salesforce.com"
+        ]
+      },
+      {
+        "keyword": "growthbook vs optimizely",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs eppo",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs vwo",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "betterme engineering process feature flags experiments",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs split",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs absmartly",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "launchdarkly business model b2b",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs ab tasty",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs salesforce mc personalization",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs kameleoon",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "upstart automation impact",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs adobe target",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "checkk.io founded",
+        "volume": 0,
+        "intent": "transactional",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "does growthifyhub.com have a blog",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": false,
+        "captureTarget": true,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs posthog",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "posthog.com",
+          "www.growthbook.io",
+          "www.growthbook.io",
+          "posthog.com",
+          "posthog.com"
+        ]
+      },
+      {
+        "keyword": "growthbook vs launchdarkly",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "www.growthbook.io",
+          "www.reddit.com",
+          "www.growthbook.io",
+          "docs.growthbook.io",
+          "www.statsig.com"
+        ]
+      },
+      {
+        "keyword": "growthbook vs statsig",
+        "volume": 10,
+        "intent": "commercial",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "www.growthbook.io",
+          "www.statsig.com",
+          "www.growthbook.io",
+          "www.g2.com",
+          "www.statsig.com"
+        ]
+      },
+      {
+        "keyword": "http error 401",
+        "volume": 0,
+        "intent": "navigational",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "developer.mozilla.org",
+          "www.statsig.com",
+          "help.sap.com",
+          "www.siteground.com",
+          "www.growthbook.io"
+        ]
+      },
+      {
+        "keyword": "401 error",
+        "volume": 0,
+        "intent": "navigational",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "www.reddit.com",
+          "developer.mozilla.org",
+          "www.reddit.com",
+          "www.statsig.com",
+          "www.growthbook.io"
+        ]
+      },
+      {
+        "keyword": "401 error code",
+        "volume": 0,
+        "intent": "navigational",
+        "hasAio": true,
+        "brandCited": true,
+        "captureTarget": false,
+        "sources": [
+          "supertokens.com",
+          "developer.mozilla.org",
+          "www.reddit.com",
+          "support.workiva.com",
+          "learn.microsoft.com"
+        ]
+      },
+      {
+        "keyword": "http 401",
+        "volume": 8100,
+        "intent": "navigational",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      },
+      {
+        "keyword": "401 status code",
+        "volume": 4400,
+        "intent": "informational",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      },
+      {
+        "keyword": "ai ab testing",
+        "volume": 70,
+        "intent": "informational",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      },
+      {
+        "keyword": "growthbook vs sitespect",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      },
+      {
+        "keyword": "nemuru.com product features analytics",
+        "volume": 0,
+        "intent": "commercial",
+        "hasAio": false,
+        "brandCited": false,
+        "captureTarget": false,
+        "sources": []
+      }
+    ],
     "recentlyShipped": {
       "windowWeeks": 8,
       "cohorts": [
         {
           "track": "AI (Insights)",
-          "count": 88,
-          "impressions": 273903,
-          "clicks": 479,
-          "avgPosition": 8.4,
-          "avgStrategicValue": 2.7,
+          "count": 54,
+          "impressions": 114782,
+          "clicks": 201,
+          "avgPosition": 8.7,
+          "avgStrategicValue": 2.8,
           "verdicts": {
-            "Winner": 10,
-            "Stranded": 11,
-            "Surprise": 36,
-            "Let it ride": 31
+            "Winner": 5,
+            "Stranded": 9,
+            "Surprise": 24,
+            "Let it ride": 16
           }
         },
         {
           "track": "Editorial",
-          "count": 31,
-          "impressions": 109138,
-          "clicks": 397,
-          "avgPosition": 7.8,
-          "avgStrategicValue": 2.4,
+          "count": 24,
+          "impressions": 97630,
+          "clicks": 355,
+          "avgPosition": 8.0,
+          "avgStrategicValue": 2.5,
           "verdicts": {
-            "Winner": 5,
+            "Winner": 3,
             "Stranded": 0,
-            "Surprise": 22,
-            "Let it ride": 4
+            "Surprise": 16,
+            "Let it ride": 5
           }
         }
       ],
@@ -1204,7 +1682,9 @@
           "clicks": 1,
           "impressions": 5069,
           "position": 7.3,
-          "weeksOld": 1
+          "weeksOld": 2,
+          "shippedDate": "2026-06-18",
+          "dateSource": "published"
         },
         {
           "title": "Canary Releases Ai Models What Changes Vs Traditional Software",
@@ -1218,7 +1698,9 @@
           "clicks": 5,
           "impressions": 18176,
           "position": 6.3,
-          "weeksOld": 3
+          "weeksOld": 5,
+          "shippedDate": "2026-05-29",
+          "dateSource": "published"
         },
         {
           "title": "Unleash Alternatives",
@@ -1232,7 +1714,9 @@
           "clicks": 19,
           "impressions": 6674,
           "position": 7.6,
-          "weeksOld": 1
+          "weeksOld": 2,
+          "shippedDate": "2026-06-19",
+          "dateSource": "published"
         },
         {
           "title": "T Test Vs Chi Square Key Differences Explained",
@@ -1246,21 +1730,9 @@
           "clicks": 19,
           "impressions": 6779,
           "position": 9.2,
-          "weeksOld": 5
-        },
-        {
-          "title": "A Practitioners Guide To Treatment Effects In Experimentation Ate Cate Itt Late Att Explained",
-          "url": "https://www.growthbook.io/blog/a-practitioners-guide-to-treatment-effects-in-experimentation-ate-cate-itt-late-att-explained",
-          "track": "Editorial",
-          "strategicValue": 3.4,
-          "performance": 5,
-          "ncvScore": 84.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 34,
-          "impressions": 7783,
-          "position": 7.2,
-          "weeksOld": 8
+          "weeksOld": 6,
+          "shippedDate": "2026-05-20",
+          "dateSource": "published"
         },
         {
           "title": "How To Implement Feature Flags At Scale",
@@ -1274,7 +1746,9 @@
           "clicks": 26,
           "impressions": 24300,
           "position": 8.2,
-          "weeksOld": 5
+          "weeksOld": 6,
+          "shippedDate": "2026-05-26",
+          "dateSource": "published"
         },
         {
           "title": "Experimental Probability Examples Explained Simply",
@@ -1288,21 +1762,9 @@
           "clicks": 26,
           "impressions": 12098,
           "position": 6.5,
-          "weeksOld": 5
-        },
-        {
-          "title": "Launchdarkly Feature Flagging Platform Explained",
-          "url": "https://www.growthbook.io/insights/launchdarkly-feature-flagging-platform-explained",
-          "track": "AI (Insights)",
-          "strategicValue": 3.4,
-          "performance": 5,
-          "ncvScore": 84.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 23,
-          "impressions": 19860,
-          "position": 7.7,
-          "weeksOld": 7
+          "weeksOld": 8,
+          "shippedDate": "2026-05-12",
+          "dateSource": "published"
         },
         {
           "title": "Matched Pairs Experiment Definition Examples",
@@ -1316,21 +1778,9 @@
           "clicks": 12,
           "impressions": 3611,
           "position": 8.0,
-          "weeksOld": 5
-        },
-        {
-          "title": "Experimenting Different Llm Providers Openai Vs Anthropic Vs Oss",
-          "url": "https://www.growthbook.io/insights/experimenting-different-llm-providers-openai-vs-anthropic-vs-oss",
-          "track": "AI (Insights)",
-          "strategicValue": 5.0,
-          "performance": 3,
-          "ncvScore": 80.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 4,
-          "impressions": 535,
-          "position": 11.2,
-          "weeksOld": 3
+          "weeksOld": 7,
+          "shippedDate": "2026-05-18",
+          "dateSource": "published"
         },
         {
           "title": "Matched Pairs Design Statistics Explained",
@@ -1344,21 +1794,9 @@
           "clicks": 8,
           "impressions": 3954,
           "position": 7.6,
-          "weeksOld": 5
-        },
-        {
-          "title": "True Positive Definition Examples Testing",
-          "url": "https://www.growthbook.io/insights/true-positive-definition-examples-testing",
-          "track": "AI (Insights)",
-          "strategicValue": 3.0,
-          "performance": 5,
-          "ncvScore": 80.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 17,
-          "impressions": 6517,
-          "position": 6.2,
-          "weeksOld": 7
+          "weeksOld": 7,
+          "shippedDate": "2026-05-13",
+          "dateSource": "published"
         },
         {
           "title": "Best Open Source Feature Flagging Tools Compared",
@@ -1372,7 +1810,9 @@
           "clicks": 187,
           "impressions": 36626,
           "position": 8.4,
-          "weeksOld": 6
+          "weeksOld": 7,
+          "shippedDate": "2026-05-18",
+          "dateSource": "published"
         },
         {
           "title": "Engineering Guide Feature Flag Technical Debt",
@@ -1386,7 +1826,9 @@
           "clicks": 4,
           "impressions": 2733,
           "position": 6.1,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-09",
+          "dateSource": "published"
         },
         {
           "title": "Feature Flags Ai Development",
@@ -1400,7 +1842,9 @@
           "clicks": 5,
           "impressions": 2287,
           "position": 7.3,
-          "weeksOld": 1
+          "weeksOld": 2,
+          "shippedDate": "2026-06-17",
+          "dateSource": "published"
         },
         {
           "title": "Feature Flags In Ci Cd",
@@ -1414,7 +1858,9 @@
           "clicks": 3,
           "impressions": 2950,
           "position": 8.3,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-08",
+          "dateSource": "published"
         },
         {
           "title": "Kpi Playbook Ab Testing Metrics",
@@ -1428,63 +1874,9 @@
           "clicks": 25,
           "impressions": 4138,
           "position": 7.2,
-          "weeksOld": 4
-        },
-        {
-          "title": "Ab Test Ai Powered Search Recommendations",
-          "url": "https://www.growthbook.io/insights/ab-test-ai-powered-search-recommendations",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 4,
-          "impressions": 2048,
-          "position": 7.0,
-          "weeksOld": 3
-        },
-        {
-          "title": "Ab Testing Llms",
-          "url": "https://www.growthbook.io/insights/ab-testing-llms",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 2,
-          "impressions": 1674,
-          "position": 6.9,
-          "weeksOld": 3
-        },
-        {
-          "title": "Best Ab Testing Tools Developers",
-          "url": "https://www.growthbook.io/insights/best-ab-testing-tools-developers",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 20,
-          "impressions": 7221,
-          "position": 8.6,
-          "weeksOld": 7
-        },
-        {
-          "title": "Best Ab Testing Tools Product Analytics",
-          "url": "https://www.growthbook.io/insights/best-ab-testing-tools-product-analytics",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 24,
-          "impressions": 23668,
-          "position": 12.2,
-          "weeksOld": 8
+          "weeksOld": 4,
+          "shippedDate": "2026-06-03",
+          "dateSource": "published"
         },
         {
           "title": "Feature Flagging Ai Models Safely Roll Out Changes",
@@ -1498,63 +1890,9 @@
           "clicks": 6,
           "impressions": 5430,
           "position": 7.0,
-          "weeksOld": 3
-        },
-        {
-          "title": "How Experiment Personalization Ai Systems",
-          "url": "https://www.growthbook.io/insights/how-experiment-personalization-ai-systems",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 5,
-          "impressions": 2075,
-          "position": 6.8,
-          "weeksOld": 3
-        },
-        {
-          "title": "Http Error Explained Causes How Fix",
-          "url": "https://www.growthbook.io/insights/http-error-explained-causes-how-fix",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 103,
-          "impressions": 68176,
-          "position": 6.6,
-          "weeksOld": 7
-        },
-        {
-          "title": "Matched Pairs Design Explained Definition Benefits",
-          "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 40,
-          "impressions": 8573,
-          "position": 5.7,
-          "weeksOld": 7
-        },
-        {
-          "title": "Run Experiments Ai Agents Workflows",
-          "url": "https://www.growthbook.io/insights/run-experiments-ai-agents-workflows",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 5,
-          "ncvScore": 76.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 4,
-          "impressions": 2047,
-          "position": 8.8,
-          "weeksOld": 3
+          "weeksOld": 5,
+          "shippedDate": "2026-06-01",
+          "dateSource": "published"
         },
         {
           "title": "What Experimental Units Research",
@@ -1568,7 +1906,9 @@
           "clicks": 5,
           "impressions": 3878,
           "position": 6.3,
-          "weeksOld": 5
+          "weeksOld": 7,
+          "shippedDate": "2026-05-19",
+          "dateSource": "published"
         },
         {
           "title": "Why Traditional Ab Testing Breaks Down Ai Products",
@@ -1582,35 +1922,9 @@
           "clicks": 7,
           "impressions": 1959,
           "position": 6.7,
-          "weeksOld": 3
-        },
-        {
-          "title": "Experimental Probability Definition How Calculate",
-          "url": "https://www.growthbook.io/insights/experimental-probability-definition-how-calculate",
-          "track": "AI (Insights)",
-          "strategicValue": 3.4,
-          "performance": 4,
-          "ncvScore": 74.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 4,
-          "impressions": 3034,
-          "position": 7.9,
-          "weeksOld": 7
-        },
-        {
-          "title": "What Constant Experiment Explained",
-          "url": "https://www.growthbook.io/insights/what-constant-experiment-explained",
-          "track": "AI (Insights)",
-          "strategicValue": 3.4,
-          "performance": 4,
-          "ncvScore": 74.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 5,
-          "impressions": 2987,
-          "position": 6.1,
-          "weeksOld": 7
+          "weeksOld": 4,
+          "shippedDate": "2026-06-08",
+          "dateSource": "published"
         },
         {
           "title": "How Define Success Metrics Generative Ai Features",
@@ -1624,7 +1938,9 @@
           "clicks": 11,
           "impressions": 2281,
           "position": 8.3,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-04",
+          "dateSource": "published"
         },
         {
           "title": "How Interpret Confidence Interval Step By Step",
@@ -1638,7 +1954,25 @@
           "clicks": 18,
           "impressions": 15261,
           "position": 8.2,
-          "weeksOld": 5
+          "weeksOld": 7,
+          "shippedDate": "2026-05-16",
+          "dateSource": "published"
+        },
+        {
+          "title": "Experimenting Different Llm Providers Openai Vs Anthropic Vs Oss",
+          "url": "https://www.growthbook.io/insights/experimenting-different-llm-providers-openai-vs-anthropic-vs-oss",
+          "track": "AI (Insights)",
+          "strategicValue": 5.0,
+          "performance": 2,
+          "ncvScore": 70.0,
+          "verdict": "Stranded",
+          "action": "Refresh: strong topic, weak traction \u2014 rewrite the title + add an answer capsule and internal links to unstick it.",
+          "clicks": 4,
+          "impressions": 535,
+          "position": 11.2,
+          "weeksOld": 4,
+          "shippedDate": "2026-06-05",
+          "dateSource": "published"
         },
         {
           "title": "Growthbook 4 4",
@@ -1652,7 +1986,9 @@
           "clicks": 44,
           "impressions": 4360,
           "position": 6.5,
-          "weeksOld": 5
+          "weeksOld": 5,
+          "shippedDate": "2026-05-27",
+          "dateSource": "published"
         },
         {
           "title": "How Measure Quality Ai Outputs Beyond Accuracy",
@@ -1666,21 +2002,9 @@
           "clicks": 14,
           "impressions": 4749,
           "position": 7.4,
-          "weeksOld": 3
-        },
-        {
-          "title": "How Test Multiple Prompts Production Without Chaos",
-          "url": "https://www.growthbook.io/insights/how-test-multiple-prompts-production-without-chaos",
-          "track": "AI (Insights)",
-          "strategicValue": 1.8,
-          "performance": 5,
-          "ncvScore": 68.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 3,
-          "impressions": 2207,
-          "position": 7.3,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-07",
+          "dateSource": "published"
         },
         {
           "title": "Release Management Best Practices Follow",
@@ -1694,21 +2018,25 @@
           "clicks": 4,
           "impressions": 4673,
           "position": 7.3,
-          "weeksOld": 5
+          "weeksOld": 7,
+          "shippedDate": "2026-05-15",
+          "dateSource": "published"
         },
         {
-          "title": "12 Common Feature Flag Mistakes To Avoid",
-          "url": "https://www.growthbook.io/blog/12-common-feature-flag-mistakes-to-avoid",
+          "title": "Ai Native Development",
+          "url": "https://www.growthbook.io/platform/ai-native-development",
           "track": "Editorial",
-          "strategicValue": 2.6,
-          "performance": 4,
-          "ncvScore": 66.0,
+          "strategicValue": 1.8,
+          "performance": 5,
+          "ncvScore": 68.0,
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 5,
-          "impressions": 2146,
-          "position": 8.9,
-          "weeksOld": 8
+          "clicks": 9,
+          "impressions": 2641,
+          "position": 7.2,
+          "weeksOld": 5,
+          "shippedDate": "2026-05-30",
+          "dateSource": "detected"
         },
         {
           "title": "Doordash Runs 12 000 Experiments Per Year Across 3 Sided Marketplace",
@@ -1722,21 +2050,9 @@
           "clicks": 11,
           "impressions": 1568,
           "position": 5.6,
-          "weeksOld": 5
-        },
-        {
-          "title": "Experimentation Program Mistakes To Avoid",
-          "url": "https://www.growthbook.io/blog/experimentation-program-mistakes-to-avoid",
-          "track": "Editorial",
-          "strategicValue": 2.6,
-          "performance": 4,
-          "ncvScore": 66.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 1,
-          "impressions": 1035,
-          "position": 7.4,
-          "weeksOld": 7
+          "weeksOld": 5,
+          "shippedDate": "2026-05-27",
+          "dateSource": "published"
         },
         {
           "title": "Ship Fast With Safety Net Feature Flag Management Agentic Era",
@@ -1750,39 +2066,61 @@
           "clicks": 2,
           "impressions": 1576,
           "position": 5.3,
-          "weeksOld": 5
+          "weeksOld": 5,
+          "shippedDate": "2026-05-27",
+          "dateSource": "published"
         },
         {
-          "title": "Automation Deployment Definition Advantages",
-          "url": "https://www.growthbook.io/insights/automation-deployment-definition-advantages",
+          "title": "Ab Test Ai Powered Search Recommendations",
+          "url": "https://www.growthbook.io/insights/ab-test-ai-powered-search-recommendations",
           "track": "AI (Insights)",
           "strategicValue": 2.6,
           "performance": 4,
           "ncvScore": 66.0,
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 3,
-          "impressions": 3125,
-          "position": 31.1,
-          "weeksOld": 5
+          "clicks": 4,
+          "impressions": 2048,
+          "position": 7.0,
+          "weeksOld": 5,
+          "shippedDate": "2026-05-27",
+          "dateSource": "published"
         },
         {
-          "title": "Best Warehouse Native Ab Testing Tools",
-          "url": "https://www.growthbook.io/insights/best-warehouse-native-ab-testing-tools",
+          "title": "Ab Testing Llms",
+          "url": "https://www.growthbook.io/insights/ab-testing-llms",
           "track": "AI (Insights)",
           "strategicValue": 2.6,
           "performance": 4,
           "ncvScore": 66.0,
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 10,
-          "impressions": 4210,
-          "position": 6.1,
-          "weeksOld": 8
+          "clicks": 2,
+          "impressions": 1674,
+          "position": 6.9,
+          "weeksOld": 4,
+          "shippedDate": "2026-06-05",
+          "dateSource": "published"
         },
         {
-          "title": "Constants Experiment What They",
-          "url": "https://www.growthbook.io/insights/constants-experiment-what-they",
+          "title": "Best Open Source Feature Flagging Tools",
+          "url": "https://www.growthbook.io/insights/best-open-source-feature-flagging-tools",
+          "track": "AI (Insights)",
+          "strategicValue": 2.6,
+          "performance": 4,
+          "ncvScore": 66.0,
+          "verdict": "Surprise",
+          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
+          "clicks": 11,
+          "impressions": 3518,
+          "position": 10.3,
+          "weeksOld": 7,
+          "shippedDate": "2026-05-18",
+          "dateSource": "published"
+        },
+        {
+          "title": "How Experiment Personalization Ai Systems",
+          "url": "https://www.growthbook.io/insights/how-experiment-personalization-ai-systems",
           "track": "AI (Insights)",
           "strategicValue": 2.6,
           "performance": 4,
@@ -1790,9 +2128,27 @@
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
           "clicks": 5,
-          "impressions": 2118,
-          "position": 7.0,
-          "weeksOld": 7
+          "impressions": 2075,
+          "position": 6.8,
+          "weeksOld": 5,
+          "shippedDate": "2026-06-01",
+          "dateSource": "published"
+        },
+        {
+          "title": "Run Experiments Ai Agents Workflows",
+          "url": "https://www.growthbook.io/insights/run-experiments-ai-agents-workflows",
+          "track": "AI (Insights)",
+          "strategicValue": 2.6,
+          "performance": 4,
+          "ncvScore": 66.0,
+          "verdict": "Surprise",
+          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
+          "clicks": 4,
+          "impressions": 2047,
+          "position": 8.8,
+          "weeksOld": 5,
+          "shippedDate": "2026-05-27",
+          "dateSource": "published"
         },
         {
           "title": "Run Experiments Ai Features Without Breaking Ux",
@@ -1806,35 +2162,9 @@
           "clicks": 0,
           "impressions": 1199,
           "position": 6.8,
-          "weeksOld": 3
-        },
-        {
-          "title": "What Does Statistical Significance Mean Ai Experiments",
-          "url": "https://www.growthbook.io/insights/what-does-statistical-significance-mean-ai-experiments",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 4,
-          "ncvScore": 66.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 1,
-          "impressions": 537,
-          "position": 7.2,
-          "weeksOld": 3
-        },
-        {
-          "title": "7 Steps To Better Experiment Design",
-          "url": "https://www.growthbook.io/guides/7-steps-to-better-experiment-design",
-          "track": "Editorial",
-          "strategicValue": 3.0,
-          "performance": 3,
-          "ncvScore": 60.0,
-          "verdict": "Winner",
-          "action": "Promote: add internal links + a signup CTA and amplify \u2014 it's earning traction on an on-strategy topic.",
-          "clicks": 0,
-          "impressions": 4,
-          "position": 5.5,
-          "weeksOld": 8
+          "weeksOld": 4,
+          "shippedDate": "2026-06-03",
+          "dateSource": "published"
         },
         {
           "title": "Agent Skills",
@@ -1848,7 +2178,9 @@
           "clicks": 2,
           "impressions": 375,
           "position": 5.9,
-          "weeksOld": 1
+          "weeksOld": 1,
+          "shippedDate": "2026-06-29",
+          "dateSource": "published"
         },
         {
           "title": "How Build Reliable Evaluation Pipelines Ai Systems",
@@ -1862,7 +2194,9 @@
           "clicks": 0,
           "impressions": 1098,
           "position": 8.8,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-04",
+          "dateSource": "published"
         },
         {
           "title": "How Much Traffic Do You Need Test Ai Features Reliably",
@@ -1876,11 +2210,13 @@
           "clicks": 2,
           "impressions": 1161,
           "position": 7.0,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-08",
+          "dateSource": "published"
         },
         {
-          "title": "Statistical Validity What Means Research",
-          "url": "https://www.growthbook.io/insights/statistical-validity-what-means-research",
+          "title": "How Test Multiple Prompts Production Without Chaos",
+          "url": "https://www.growthbook.io/insights/how-test-multiple-prompts-production-without-chaos",
           "track": "AI (Insights)",
           "strategicValue": 1.8,
           "performance": 4,
@@ -1888,9 +2224,11 @@
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
           "clicks": 3,
-          "impressions": 2771,
-          "position": 8.0,
-          "weeksOld": 7
+          "impressions": 2207,
+          "position": 7.3,
+          "weeksOld": 5,
+          "shippedDate": "2026-05-31",
+          "dateSource": "published"
         },
         {
           "title": "Testing Ai Features Across Different User Segments",
@@ -1904,7 +2242,9 @@
           "clicks": 2,
           "impressions": 1492,
           "position": 6.5,
-          "weeksOld": 3
+          "weeksOld": 5,
+          "shippedDate": "2026-05-28",
+          "dateSource": "published"
         },
         {
           "title": "Understanding False Causality Examples",
@@ -1918,49 +2258,9 @@
           "clicks": 10,
           "impressions": 2360,
           "position": 8.0,
-          "weeksOld": 5
-        },
-        {
-          "title": "Understanding Star Goals Effective Performance",
-          "url": "https://www.growthbook.io/insights/understanding-star-goals-effective-performance",
-          "track": "AI (Insights)",
-          "strategicValue": 1.8,
-          "performance": 4,
-          "ncvScore": 58.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 10,
-          "impressions": 1532,
-          "position": 7.2,
-          "weeksOld": 5
-        },
-        {
-          "title": "Why Your Ai Model Performs Great Offline But Fails Production",
-          "url": "https://www.growthbook.io/insights/why-your-ai-model-performs-great-offline-but-fails-production",
-          "track": "AI (Insights)",
-          "strategicValue": 1.8,
-          "performance": 4,
-          "ncvScore": 58.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 0,
-          "impressions": 432,
-          "position": 6.6,
-          "weeksOld": 3
-        },
-        {
-          "title": "Ai Native Development",
-          "url": "https://www.growthbook.io/platform/ai-native-development",
-          "track": "Editorial",
-          "strategicValue": 1.8,
-          "performance": 4,
-          "ncvScore": 58.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 9,
-          "impressions": 2641,
-          "position": 7.2,
-          "weeksOld": 5
+          "weeksOld": 6,
+          "shippedDate": "2026-05-21",
+          "dateSource": "published"
         },
         {
           "title": "How Fanatics Made Experimentation A Strategic Growth Driver",
@@ -1974,7 +2274,9 @@
           "clicks": 9,
           "impressions": 474,
           "position": 7.0,
-          "weeksOld": 7
+          "weeksOld": 8,
+          "shippedDate": "2026-05-12",
+          "dateSource": "published"
         },
         {
           "title": "Squarespace Blank Template Experimentation",
@@ -1988,39 +2290,13 @@
           "clicks": 0,
           "impressions": 93,
           "position": 6.3,
-          "weeksOld": 1
+          "weeksOld": 1,
+          "shippedDate": "2026-06-30",
+          "dateSource": "published"
         },
         {
-          "title": "Automation Orchestration Definitions Uses",
-          "url": "https://www.growthbook.io/insights/automation-orchestration-definitions-uses",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 3,
-          "ncvScore": 56.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 1,
-          "impressions": 1858,
-          "position": 15.1,
-          "weeksOld": 5
-        },
-        {
-          "title": "Best Open Source Feature Flagging Tools",
-          "url": "https://www.growthbook.io/insights/best-open-source-feature-flagging-tools",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 3,
-          "ncvScore": 56.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 11,
-          "impressions": 3518,
-          "position": 10.3,
-          "weeksOld": 7
-        },
-        {
-          "title": "Mcp Enables Experimentation Across Ai Tools",
-          "url": "https://www.growthbook.io/insights/mcp-enables-experimentation-across-ai-tools",
+          "title": "Automation Deployment Definition Advantages",
+          "url": "https://www.growthbook.io/insights/automation-deployment-definition-advantages",
           "track": "AI (Insights)",
           "strategicValue": 2.6,
           "performance": 3,
@@ -2028,37 +2304,27 @@
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
           "clicks": 3,
-          "impressions": 1208,
-          "position": 10.9,
-          "weeksOld": 3
+          "impressions": 3125,
+          "position": 31.1,
+          "weeksOld": 8,
+          "shippedDate": "2026-05-12",
+          "dateSource": "published"
         },
         {
-          "title": "How Track Unique Visitors Website",
-          "url": "https://www.growthbook.io/insights/how-track-unique-visitors-website",
+          "title": "What Does Statistical Significance Mean Ai Experiments",
+          "url": "https://www.growthbook.io/insights/what-does-statistical-significance-mean-ai-experiments",
           "track": "AI (Insights)",
-          "strategicValue": 1.4,
-          "performance": 4,
-          "ncvScore": 54.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 23,
-          "impressions": 9159,
-          "position": 15.5,
-          "weeksOld": 7
-        },
-        {
-          "title": "Chasing Velocity In A B Testing Why More Experiments Can Mean Less Learning",
-          "url": "https://www.growthbook.io/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning",
-          "track": "Editorial",
-          "strategicValue": 2.2,
+          "strategicValue": 2.6,
           "performance": 3,
-          "ncvScore": 52.0,
+          "ncvScore": 56.0,
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 2,
-          "impressions": 468,
-          "position": 6.7,
-          "weeksOld": 7
+          "clicks": 1,
+          "impressions": 537,
+          "position": 7.2,
+          "weeksOld": 4,
+          "shippedDate": "2026-06-06",
+          "dateSource": "published"
         },
         {
           "title": "The A B Testing Playbook For Al Powered Apps",
@@ -2072,21 +2338,9 @@
           "clicks": 0,
           "impressions": 192,
           "position": 7.5,
-          "weeksOld": 8
-        },
-        {
-          "title": "Tips Drawing Clear Research Hypothesis",
-          "url": "https://www.growthbook.io/insights/tips-drawing-clear-research-hypothesis",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 3,
-          "ncvScore": 52.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 1,
-          "impressions": 718,
-          "position": 8.6,
-          "weeksOld": 7
+          "weeksOld": 5,
+          "shippedDate": "2026-06-02",
+          "dateSource": "published"
         },
         {
           "title": "Launchdarkly Alternatives Experimentation",
@@ -2100,7 +2354,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-11",
+          "dateSource": "published"
         },
         {
           "title": "Launchdarkly Alternatives Feature Flagging",
@@ -2114,7 +2370,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-12",
+          "dateSource": "published"
         },
         {
           "title": "Multivariate Testing Vs Ab Testing",
@@ -2128,7 +2386,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-16",
+          "dateSource": "published"
         },
         {
           "title": "Amazon To Atlassian A Framework For Testing Assumptions",
@@ -2142,21 +2402,9 @@
           "clicks": 2,
           "impressions": 504,
           "position": 7.3,
-          "weeksOld": 5
-        },
-        {
-          "title": "Best A B Testing Platforms",
-          "url": "https://www.growthbook.io/blog/best-a-b-testing-platforms",
-          "track": "Editorial",
-          "strategicValue": 1.8,
-          "performance": 3,
-          "ncvScore": 48.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 0,
-          "impressions": 63,
-          "position": 6.5,
-          "weeksOld": 3
+          "weeksOld": 6,
+          "shippedDate": "2026-05-25",
+          "dateSource": "published"
         },
         {
           "title": "Ups Delivered 500M In Revenue Testing E Commerce Patterns On Shipping Flow",
@@ -2170,7 +2418,9 @@
           "clicks": 3,
           "impressions": 145,
           "position": 5.9,
-          "weeksOld": 5
+          "weeksOld": 6,
+          "shippedDate": "2026-05-22",
+          "dateSource": "published"
         },
         {
           "title": "Safely Ship Ai Features Can Hallucinate",
@@ -2184,11 +2434,29 @@
           "clicks": 1,
           "impressions": 1488,
           "position": 10.4,
-          "weeksOld": 3
+          "weeksOld": 5,
+          "shippedDate": "2026-05-30",
+          "dateSource": "published"
         },
         {
-          "title": "Status Code What Means How Fix",
-          "url": "https://www.growthbook.io/insights/status-code-what-means-how-fix",
+          "title": "Understanding Star Goals Effective Performance",
+          "url": "https://www.growthbook.io/insights/understanding-star-goals-effective-performance",
+          "track": "AI (Insights)",
+          "strategicValue": 1.8,
+          "performance": 3,
+          "ncvScore": 48.0,
+          "verdict": "Surprise",
+          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
+          "clicks": 10,
+          "impressions": 1532,
+          "position": 7.2,
+          "weeksOld": 6,
+          "shippedDate": "2026-05-22",
+          "dateSource": "published"
+        },
+        {
+          "title": "Why Your Ai Model Performs Great Offline But Fails Production",
+          "url": "https://www.growthbook.io/insights/why-your-ai-model-performs-great-offline-but-fails-production",
           "track": "AI (Insights)",
           "strategicValue": 1.8,
           "performance": 3,
@@ -2196,9 +2464,11 @@
           "verdict": "Surprise",
           "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
           "clicks": 0,
-          "impressions": 109,
-          "position": 1.2,
-          "weeksOld": 7
+          "impressions": 432,
+          "position": 6.6,
+          "weeksOld": 4,
+          "shippedDate": "2026-06-03",
+          "dateSource": "published"
         },
         {
           "title": "Visual Editor",
@@ -2212,35 +2482,41 @@
           "clicks": 1,
           "impressions": 286,
           "position": 6.9,
-          "weeksOld": 3
+          "weeksOld": 3,
+          "shippedDate": "2026-06-13",
+          "dateSource": "detected"
         },
         {
-          "title": "Product Updates",
-          "url": "https://www.growthbook.io/tags/product-updates",
-          "track": "Editorial",
-          "strategicValue": 1.8,
-          "performance": 3,
-          "ncvScore": 48.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 0,
-          "impressions": 11,
-          "position": 7.1,
-          "weeksOld": 3
+          "title": "Automation Orchestration Definitions Uses",
+          "url": "https://www.growthbook.io/insights/automation-orchestration-definitions-uses",
+          "track": "AI (Insights)",
+          "strategicValue": 2.6,
+          "performance": 2,
+          "ncvScore": 46.0,
+          "verdict": "Let it ride",
+          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
+          "clicks": 1,
+          "impressions": 1858,
+          "position": 15.1,
+          "weeksOld": 7,
+          "shippedDate": "2026-05-16",
+          "dateSource": "published"
         },
         {
-          "title": "Growthbook Version 2 4",
-          "url": "https://www.growthbook.io/blog/growthbook-version-2-4",
-          "track": "Editorial",
-          "strategicValue": 1.4,
-          "performance": 3,
-          "ncvScore": 44.0,
-          "verdict": "Surprise",
-          "action": "Harvest the intent: unexpected traction \u2014 add a BOFU follow-up or CTA to convert it.",
-          "clicks": 0,
-          "impressions": 9,
-          "position": 7.1,
-          "weeksOld": 7
+          "title": "Mcp Enables Experimentation Across Ai Tools",
+          "url": "https://www.growthbook.io/insights/mcp-enables-experimentation-across-ai-tools",
+          "track": "AI (Insights)",
+          "strategicValue": 2.6,
+          "performance": 2,
+          "ncvScore": 46.0,
+          "verdict": "Let it ride",
+          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
+          "clicks": 3,
+          "impressions": 1208,
+          "position": 10.9,
+          "weeksOld": 5,
+          "shippedDate": "2026-06-02",
+          "dateSource": "published"
         },
         {
           "title": "Green Release What How Works",
@@ -2254,21 +2530,9 @@
           "clicks": 0,
           "impressions": 339,
           "position": 6.5,
-          "weeksOld": 5
-        },
-        {
-          "title": "Alternatives Posthog Developers",
-          "url": "https://www.growthbook.io/insights/alternatives-posthog-developers",
-          "track": "AI (Insights)",
-          "strategicValue": 4.2,
-          "performance": 0,
-          "ncvScore": 42.0,
-          "verdict": "Stranded",
-          "action": "Refresh: strong topic, weak traction \u2014 rewrite the title + add an answer capsule and internal links to unstick it.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
+          "weeksOld": 6,
+          "shippedDate": "2026-05-21",
+          "dateSource": "published"
         },
         {
           "title": "Cheaper Alternatives To Launchdarkly",
@@ -2282,7 +2546,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 4,
+          "shippedDate": "2026-06-08",
+          "dateSource": "published"
         },
         {
           "title": "Offline Vs Online Evaluation Ai Models What Actually Matters",
@@ -2296,7 +2562,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-05",
+          "dateSource": "published"
         },
         {
           "title": "Statsig Alternatives",
@@ -2310,35 +2578,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
-        },
-        {
-          "title": "Top Alternatives Split Devops Teams",
-          "url": "https://www.growthbook.io/insights/top-alternatives-split-devops-teams",
-          "track": "AI (Insights)",
-          "strategicValue": 4.2,
-          "performance": 0,
-          "ncvScore": 42.0,
-          "verdict": "Stranded",
-          "action": "Refresh: strong topic, weak traction \u2014 rewrite the title + add an answer capsule and internal links to unstick it.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Top Alternatives Statsig Data Science Teams",
-          "url": "https://www.growthbook.io/insights/top-alternatives-statsig-data-science-teams",
-          "track": "AI (Insights)",
-          "strategicValue": 4.2,
-          "performance": 0,
-          "ncvScore": 42.0,
-          "verdict": "Stranded",
-          "action": "Refresh: strong topic, weak traction \u2014 rewrite the title + add an answer capsule and internal links to unstick it.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
+          "weeksOld": 4,
+          "shippedDate": "2026-06-09",
+          "dateSource": "published"
         },
         {
           "title": "Type I Vs Type Ii Error",
@@ -2352,7 +2594,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 2,
+          "shippedDate": "2026-06-17",
+          "dateSource": "published"
         },
         {
           "title": "Guides",
@@ -2366,7 +2610,9 @@
           "clicks": 1,
           "impressions": 220,
           "position": 14.6,
-          "weeksOld": 3
+          "weeksOld": 3,
+          "shippedDate": "2026-06-13",
+          "dateSource": "detected"
         },
         {
           "title": "The Ford 2 Percent Close Rate Increase",
@@ -2380,7 +2626,9 @@
           "clicks": 0,
           "impressions": 46,
           "position": 14.0,
-          "weeksOld": 3
+          "weeksOld": 4,
+          "shippedDate": "2026-06-05",
+          "dateSource": "published"
         },
         {
           "title": "Platform",
@@ -2394,7 +2642,25 @@
           "clicks": 1,
           "impressions": 362,
           "position": 16.3,
-          "weeksOld": 3
+          "weeksOld": 3,
+          "shippedDate": "2026-06-13",
+          "dateSource": "detected"
+        },
+        {
+          "title": "Product Updates",
+          "url": "https://www.growthbook.io/tags/product-updates",
+          "track": "Editorial",
+          "strategicValue": 1.8,
+          "performance": 2,
+          "ncvScore": 38.0,
+          "verdict": "Let it ride",
+          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
+          "clicks": 0,
+          "impressions": 11,
+          "position": 7.1,
+          "weeksOld": 3,
+          "shippedDate": "2026-06-13",
+          "dateSource": "detected"
         },
         {
           "title": "Launchdarkly Pricing",
@@ -2408,7 +2674,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-14",
+          "dateSource": "published"
         },
         {
           "title": "Ab Testing And Feature Flags",
@@ -2422,7 +2690,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-15",
+          "dateSource": "published"
         },
         {
           "title": "Ab Testing Methodology",
@@ -2436,21 +2706,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
-        },
-        {
-          "title": "Best Ab Testing Tools Product Managers",
-          "url": "https://www.growthbook.io/insights/best-ab-testing-tools-product-managers",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 0,
-          "ncvScore": 26.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
+          "weeksOld": 3,
+          "shippedDate": "2026-06-16",
+          "dateSource": "published"
         },
         {
           "title": "Best Ab Testing Tools With Feature Flags",
@@ -2464,7 +2722,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 5,
+          "shippedDate": "2026-06-02",
+          "dateSource": "published"
         },
         {
           "title": "Best Feature Flag Tools For Developers",
@@ -2478,7 +2738,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 4,
+          "shippedDate": "2026-06-03",
+          "dateSource": "published"
         },
         {
           "title": "Best Open Source Ab Testing Tools",
@@ -2492,21 +2754,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
-        },
-        {
-          "title": "Best Open Source Product Analytics Tools",
-          "url": "https://www.growthbook.io/insights/best-open-source-product-analytics-tools",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 0,
-          "ncvScore": 26.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
+          "weeksOld": 4,
+          "shippedDate": "2026-06-04",
+          "dateSource": "published"
         },
         {
           "title": "Best Warehouse Native Feature Flag Tools",
@@ -2520,7 +2770,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 4,
+          "shippedDate": "2026-06-05",
+          "dateSource": "published"
         },
         {
           "title": "Free Ab Testing Tools",
@@ -2534,7 +2786,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 4,
+          "shippedDate": "2026-06-08",
+          "dateSource": "published"
         },
         {
           "title": "Free Feature Flagging Tools",
@@ -2548,35 +2802,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
-        },
-        {
-          "title": "Javascript Experiments",
-          "url": "https://www.growthbook.io/insights/javascript-experiments",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 0,
-          "ncvScore": 26.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Python Experiments",
-          "url": "https://www.growthbook.io/insights/python-experiments",
-          "track": "AI (Insights)",
-          "strategicValue": 2.6,
-          "performance": 0,
-          "ncvScore": 26.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
+          "weeksOld": 4,
+          "shippedDate": "2026-06-09",
+          "dateSource": "published"
         },
         {
           "title": "React Feature Flags Growthbook",
@@ -2590,7 +2818,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 1,
+          "shippedDate": "2026-06-24",
+          "dateSource": "published"
         },
         {
           "title": "The A B Testing Playbook For Ai Powered Apps",
@@ -2604,7 +2834,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 4
+          "weeksOld": 5,
+          "shippedDate": "2026-06-02",
+          "dateSource": "published"
         },
         {
           "title": "95 Confidence Interval",
@@ -2618,189 +2850,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
-        },
-        {
-          "title": "Best Mobile App Analytics Tools",
-          "url": "https://www.growthbook.io/insights/best-mobile-app-analytics-tools",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Data Science Teams",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-data-science-teams",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Developers",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-developers",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Edtech",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-edtech",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Enterprises",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-enterprises",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Fintech",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-fintech",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Healthcare",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-healthcare",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Mobile Apps",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-mobile-apps",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Product Managers",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-product-managers",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Product Analytics Tools Saas Companies",
-          "url": "https://www.growthbook.io/insights/best-product-analytics-tools-saas-companies",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Software Analytics Tools",
-          "url": "https://www.growthbook.io/insights/best-software-analytics-tools",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Warehouse Native Product Analytics Tools",
-          "url": "https://www.growthbook.io/insights/best-warehouse-native-product-analytics-tools",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
-        },
-        {
-          "title": "Best Web Analytics Tools",
-          "url": "https://www.growthbook.io/insights/best-web-analytics-tools",
-          "track": "AI (Insights)",
-          "strategicValue": 2.2,
-          "performance": 0,
-          "ncvScore": 22.0,
-          "verdict": "Let it ride",
-          "action": "Low value + low traction \u2014 leave it; don't reinvest.",
-          "clicks": 0,
-          "impressions": 0,
-          "position": null,
-          "weeksOld": 8
+          "weeksOld": 3,
+          "shippedDate": "2026-06-12",
+          "dateSource": "published"
         },
         {
           "title": "Free Product Analytics Tools",
@@ -2814,7 +2866,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-10",
+          "dateSource": "published"
         },
         {
           "title": "Hypothesis Testing",
@@ -2828,7 +2882,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-11",
+          "dateSource": "published"
         },
         {
           "title": "Launchdarkly Review",
@@ -2842,7 +2898,9 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 4,
+          "shippedDate": "2026-06-09",
+          "dateSource": "published"
         },
         {
           "title": "Type I Error",
@@ -2856,27 +2914,192 @@
           "clicks": 0,
           "impressions": 0,
           "position": null,
-          "weeksOld": 1
+          "weeksOld": 3,
+          "shippedDate": "2026-06-16",
+          "dateSource": "published"
         }
       ]
-    }
+    },
+    "newSections": [
+      {
+        "competitor": "Optimizely",
+        "section": "/field-notes",
+        "count": 137,
+        "subsections": [
+          {
+            "path": "/field-notes/articles",
+            "count": 76
+          },
+          {
+            "path": "/field-notes/guides",
+            "count": 56
+          },
+          {
+            "path": "/field-notes/collections",
+            "count": 4
+          },
+          {
+            "path": "/field-notes/events",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "How To Scale Content Creation",
+          "Optimizely Stats Engine",
+          "Digital Minimalism",
+          "Articles",
+          "5 Myths Killing Your Ab Testing And Experimentation Program",
+          "5 Ways Ai Helps You Get Market Research Right",
+          "Ai Experimentation",
+          "Ai For Content Consistency"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "Optimizely's /field-notes section is a content hub of 137 articles, guides, and collections covering experimentation, A/B testing, AI-driven marketing, and content strategy. It targets digital marketers, product managers, and experimentation practitioners seeking practical advice and thought leadership on optimization and content operations."
+      },
+      {
+        "competitor": "PostHog",
+        "section": "/blog",
+        "count": 61,
+        "subsections": [
+          {
+            "path": "/blog/tags",
+            "count": 12
+          },
+          {
+            "path": "/blog/categories",
+            "count": 3
+          },
+          {
+            "path": "/blog/all",
+            "count": 2
+          },
+          {
+            "path": "/blog/customer-analytics",
+            "count": 1
+          },
+          {
+            "path": "/blog/aeo-advice",
+            "count": 1
+          },
+          {
+            "path": "/blog/agents-closed-4063-errors",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "Customer Analytics",
+          "Customer Analytics",
+          "Aeo Advice",
+          "Agents Closed 4063 Errors",
+          "Ai",
+          "Ai Native Hiring",
+          "Ai Observability",
+          "Ai Observability For Mvps"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "PostHog's /blog section is a technical and product-focused content hub with 61 posts covering topics such as AI observability, customer analytics, and engineering practices, organized by tags and categories. It targets developers, startup founders, and product engineers seeking practical guidance on building and instrumenting software products."
+      },
+      {
+        "competitor": "Harness",
+        "section": "/blog",
+        "count": 46,
+        "subsections": [
+          {
+            "path": "/blog/feature-flag-driven-development",
+            "count": 1
+          },
+          {
+            "path": "/blog/azure-deployment",
+            "count": 1
+          },
+          {
+            "path": "/blog/7-ways-feature-flags-improve-software-development",
+            "count": 1
+          },
+          {
+            "path": "/blog/ai-coding-security-risks-demand-dependency-firewalls",
+            "count": 1
+          },
+          {
+            "path": "/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code",
+            "count": 1
+          },
+          {
+            "path": "/blog/announcing-opa-policy-evaluation-on-your-own-infrastructure",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "Feature Flag Driven Development",
+          "Azure Deployment",
+          "7 Ways Feature Flags Improve Software Development",
+          "Ai Coding Security Risks Demand Dependency Firewalls",
+          "Ai Powered Feature Management With Harness Mcp Server And Claude Code",
+          "Announcing Opa Policy Evaluation On Your Own Infrastructure",
+          "Ansible Vs Terraform Explained Key Differences For Modern Infrastructure Automation",
+          "Api Security Testing Just Got Easier Smarter"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "Harness's /blog section contains 46 educational and product-focused articles covering DevOps topics such as feature flags, CI/CD, infrastructure automation, and AI-assisted development workflows. It targets software engineers, DevOps practitioners, and platform engineering teams evaluating or using Harness's toolchain."
+      },
+      {
+        "competitor": "Amplitude Exp",
+        "section": "/docs",
+        "count": 20,
+        "subsections": [
+          {
+            "path": "/docs/guides-and-surveys",
+            "count": 14
+          },
+          {
+            "path": "/docs/sdks",
+            "count": 3
+          },
+          {
+            "path": "/docs/wave",
+            "count": 1
+          },
+          {
+            "path": "/docs/heatmaps",
+            "count": 1
+          },
+          {
+            "path": "/docs/amplitude-ai",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "Conditional Logic",
+          "Form Factors",
+          "Product Areas",
+          "Analyze A Survey",
+          "Use Cases",
+          "Guides Surveys Mcp",
+          "Build A Survey",
+          "Content Editor"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides for building and analyzing in-product surveys, SDKs, heatmaps, and AI features. It targets developers and product managers who need implementation and usage references for Amplitude's experimentation and feedback tools."
+      }
+    ]
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-06-27 to 2026-07-03): growthbook.io had 14,240 sessions and 10,197 users (+4.5% week over week).",
     "## Week of 2026-07-04",
-    "**Site performance**\n- **Overall (GA4, all traffic):** 14,240 sessions (+4.5% WoW) | 10,197 users\n- **Overall (GSC, organic search):** 3,534 clicks (+4.2% WoW) | 336,839 impressions (+17.8% WoW)\n- **Homepage (/):** 8,414 GA4 sessions (-0.2% WoW) all-traffic | 1,924 GSC clicks (+2.0% WoW) organic | 15,616 GSC impressions (+8.3% WoW)\n- **Pricing (/pricing):** 1,060 GA4 sessions (-11.3% WoW) all-traffic | 122 GSC clicks (+38.6% WoW) organic | 6,798 GSC impressions (-7.7% WoW)\n- **Docs (docs.growthbook.io):** 4,295 GA4 sessions (-2.5% WoW) all-traffic | 1,067 GSC clicks (+2.1% WoW) organic | 166,579 GSC impressions (-35.1% WoW)\n- **All other pages:** 7,071 GA4 sessions (+11.7% WoW) all-traffic | 375 GSC clicks (+1.6% WoW) organic | 272,773 GSC impressions (+42.7% WoW)\n- Pricing: GSC clicks +38.6% while GA4 sessions -11.3% \u2014 AI assistants are likely sending pricing-intent traffic that GSC doesn't capture. Worth monitoring next week.\n- Docs GSC impressions dropped -35.1% WoW despite stable clicks \u2014 could be a slot-change in AI Overviews pushing GrowthBook docs out of preview surfaces. Keep an eye on it.",
-    "**New competitor activity**\n- **Optimizely** launched a new content hub called \"Field Notes\" with 30+ pages detected this week \u2014 articles, guides, and a product-updates section. Highest-threat new entries: **\"AI Experimentation\"** (KD 52, Tier 1), **\"5 Myths Killing Your A/B Testing Program\"**, **\"Power Analysis in Fixed-Horizon Frequentist A/B Tests\"**, **\"Warehouse-Native Analytics\"**, **\"Agentic AI Experimentation Benchmark\"**, and an **\"Experimentation Buyer's Guide\"** + **RFP Template**. This is a coordinated content platform launch, not routine publishing. The buyer's guide and RFP template are direct BOFU intercepts \u2014 they appear in evaluation-stage searches where GrowthBook has no equivalent assets.\n- **LaunchDarkly** ETV surge on **\"Git Branching Strategies vs. Trunk-Based Development\"** (+589.5% WoW, ETV 1,601) \u2014 LD is capturing developer-ICP trunk-based-development traffic GrowthBook doesn't contest. Not an immediate gap to fill, but signals LD is building developer-workflow authority.\n- \u26a0\ufe0f No new pages detected from **Statsig**, **Unleash**, **Flagsmith**, **PostHog**, **Harness**, or **Eppo** this week \u2014 likely a monitoring gap, not a content pause.",
-    "**New GrowthBook content**\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): 151 clicks, 28,198 impressions, position 8.5 \u2014 up from 49 clicks last week. Strongest performer in the account right now.\n- **/blog/a-practitioners-guide-to-treatment-effects** (published 2026-05-01): 29 clicks, 6,846 impressions, position 7.3 \u2014 steady growth.\n- **/blog/kpi-playbook-ab-testing-metrics** (published 2026-06-03): 20 clicks, 3,531 impressions, position 7.3 \u2014 new entrant with solid early traction.\n- Noticed this week (publish dates unknown): **/insights/statsig-alternatives** (KD 0), **/insights/launchdarkly-pricing** (KD 13), **/insights/multivariate-testing-vs-ab-testing** (KD 13), **/insights/hypothesis-testing** (KD 22), **/insights/95-confidence-interval** (KD 24), **/insights/free-product-analytics-tools** (KD 35), **/blog/feature-flags-ai-development** \u2014 none have GSC impressions yet. The **LaunchDarkly-pricing** and **statsig-alternatives** pages are directly competitive; add internal links now to accelerate indexing.",
-    "**Strategic priorities (ACP)**\n- **Top-10 footprint is now 165 keywords (+67 over 3 months)** \u2014 momentum is real and accelerating.\n- **Comparison page 28d views up +87% (38 to 71)** \u2014 the comparison layer is recovering, but clicks-per-impression are still low. The structural fix (answer capsule + table + schema) is the conversion lever.\n- **8 comparison pages pass the ACP persistence gate** (ACP 78-82, Harvest horizon). Priority order by impression volume: **/compare/growthbook-vs-statsig** (6,622 impressions, pos 7.1, GrowthBook IS cited in AI Overview), **/compare/growthbook-vs-posthog** (5,498 impressions, pos 6.4, cited), **/compare/growthbook-vs-launchdarkly** (3,375 impressions, pos 9.2, cited), **/compare/growthbook-vs-optimizely** (2,838 impressions, pos 8.5, NOT cited), **/compare/growthbook-vs-eppo** (1,133 impressions, pos 5.9, NOT cited).\n- **AI Overview capture gap:** GrowthBook is NOT cited on vs-Optimizely, vs-VWO, vs-Split, vs-Kameleoon, vs-ABsmartly, vs-Eppo, and \"what is a/b testing\" (1,225 impressions, pos 10.92). These are the highest-ROI citation targets.\n- **\"feature flag\"** (2,400 monthly searches, pos 19.9, 543 impressions) is in the watch list \u2014 one week of data, but the volume justifies attention if it holds.",
-    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared**: 151 clicks this week (up from 49) \u2014 threefold jump, now the top organic performer outside the homepage.\n- **/pricing**: GSC clicks +38.6% WoW (88 to 122) \u2014 largest single-page organic gain this week; GA4 sessions are down -11.3%, reinforcing the AI-traffic-displacement pattern on pricing intent.\n- **/blog/unleash-alternatives**: 8 clicks (up from 0) \u2014 new mover; the newly published **/insights/statsig-alternatives** should follow the same trajectory if promoted.\n- **/insights/launchdarkly-feature-flagging-platform-explained**: dropped from 8 to 1 click \u2014 worth checking whether this page was changed or deprioritized.\n- **/platform/mcp-server**: dropped from 9 to 2 clicks \u2014 second notable decline on this page; may need a refresh or internal link check.",
-    "**Recommended actions**\n- **Apply the answer-capsule + comparison table + schema fix to **/compare/growthbook-vs-statsig** and **/compare/growthbook-vs-posthog** this week** (ACP 82 and 80). These two have the highest impression volumes (6,622 and 5,498) and GrowthBook IS already cited in AI Overviews \u2014 the structural upgrade converts existing authority into signups.\n- **Apply the same fix to **/compare/growthbook-vs-optimizely** this week** (ACP 80, 2,838 impressions, AI Overview present but GrowthBook NOT cited). Optimizely just launched a 30-page content hub; this comparison page is the clearest counter-move available today.\n- **Publish a GrowthBook \"Experimentation Buyer's Guide\" or RFP checklist asset.** Optimizely just launched both. These are evaluation-stage assets that appear when buyers are comparing vendors \u2014 GrowthBook has nothing equivalent and no current page ranking for those queries.\n- **Add internal links to **/insights/launchdarkly-pricing** and **/insights/statsig-alternatives** immediately.** Both are freshly indexed with low KD and high commercial intent. Internal link equity is the fastest lever to get them ranking before competitors notice the gap."
+    "**Site performance**\n- **Overall (GA4, all traffic):** 14,240 sessions (+4.5% WoW) | 10,197 users\n- **Overall (GSC, organic search):** 3,534 clicks (+4.2% WoW) | 336,839 impressions (+17.8% WoW)\n- **Homepage (/):** 8,414 GA4 sessions (-0.2% WoW) all-traffic | 1,924 GSC clicks (+2.0% WoW) organic | 15,616 GSC impressions (+8.3% WoW)\n- **Pricing (/pricing):** 1,060 GA4 sessions (-11.3% WoW) all-traffic | 122 GSC clicks (+38.6% WoW) organic | 6,798 GSC impressions (-7.7% WoW)\n- **Docs (docs.growthbook.io):** 4,295 GA4 sessions (-2.5% WoW) all-traffic | 1,067 GSC clicks (+2.1% WoW) organic | 166,579 GSC impressions (-35.1% WoW)\n- **All other pages:** 7,071 GA4 sessions (+11.7% WoW) all-traffic | 375 GSC clicks (+1.6% WoW) organic | 272,773 GSC impressions (+42.7% WoW)\n- Pricing is the anomaly this week: GSC clicks up +38.6% while GA4 all-traffic is down -11.3% \u2014 consistent with AI-search-displacement (organic recovering while direct/other channels soften). All-other-pages GA4 up +11.7% with GSC organic roughly flat continues the same pattern.",
+    "**New competitor activity**\n- **Optimizely**'s /field-notes hub again surfaced pages in tracking (30 articles and guides this week, part of the 137-page hub flagged last week). This is continued sitemap exposure of pre-existing content, not all net-new. The standout new-to-tracking pieces: **\"The Great Debate: Should You Build Or Buy Your Experimentation Platform\"** and **\"Experimentation Buyers Guide\"** \u2014 both directly target GrowthBook's build-vs-buy ICP moment and could intercept evaluation-stage buyers before they reach GrowthBook's comparison pages.\n- **Optimizely** also surfaced a refreshed **Experimentation** product update page \u2014 signals active repositioning around AI-assisted experimentation.\n- \u26a0\ufe0f No new pages detected from **Statsig**, **LaunchDarkly**, **Harness**, **Flagsmith**, or **Unleash** this week \u2014 given their heavy prior output, this is almost certainly a monitoring gap.\n- **PostHog**'s /blog section surfaced 61 pages (sitemap addition, not all net-new). The concentration in tags/categories suggests structural additions, not a content blitz.\n- **Amplitude Experiment**'s /docs section surfaced 20 pages covering surveys, heatmaps, SDKs, and AI capabilities \u2014 targets the same developer and PM audience as GrowthBook's docs.",
+    "**New GrowthBook content**\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): 49 clicks this week, up from 35 last week \u2014 recovering after the -71% drop two weeks ago. Position 8.5. Watch one more week to confirm trend reversal.\n- **/blog/a-practitioners-guide-to-treatment-effects** (published 2026-05-01): 29 clicks, up from 23 last week \u2014 strongest sustained mover in the new content set. Internal links still the immediate lever.\n- **/blog/kpi-playbook-ab-testing-metrics** (published 2026-06-03): 20 clicks, 3,531 impressions, position 7.3 \u2014 steady build.\n- **/insights/statsig-alternatives**, **/insights/95-confidence-interval**, **/insights/free-product-analytics-tools**, **/insights/hypothesis-testing**, **/insights/launchdarkly-pricing**, **/insights/multivariate-testing-vs-ab-testing**, **/blog/feature-flags-ai-development** \u2014 all noticed this week via sitemap, all at zero impressions. Internal links needed immediately on all seven.",
+    "**Strategic priorities (ACP)**\n- **Top-10 footprint: 165 keywords (+67 over 3 months)** \u2014 trajectory holding.\n- **BOFU comparison page fix remains the highest-ROI unshipped work.** Eight pages have cleared the persistence gate \u2014 this recommendation is now seven consecutive weeks old. Priority order:\n  - **/compare/growthbook-vs-launchdarkly** (ACP 82, pos 9.2, 3,375 impressions/28d, AI Overview present, GrowthBook cited)\n  - **/compare/growthbook-vs-statsig** (ACP 82, pos 7.1, 6,622 impressions/28d, AI Overview present, GrowthBook cited) \u2014 highest impression volume in the set\n  - **/compare/growthbook-vs-posthog** (ACP 80, pos 6.4, 5,498 impressions/28d, AI Overview present, GrowthBook cited)\n  - **/compare/growthbook-vs-optimizely** (ACP 80, pos 8.5, 2,838 impressions/28d, AI Overview present, GrowthBook NOT cited) \u2014 Optimizely's build-vs-buy content surfacing makes this more urgent\n- **\"what is a/b testing\"** (pos 10.92, 1,225 impressions, AI Overview present, GrowthBook NOT cited) \u2014 still in striking distance, still unactioned. Check GA4 all-traffic on **/blog/what-is-a-b-testing** before actioning; if GA4 is also down, add the answer-capsule H2 immediately.",
+    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared**: 49 clicks (up from 35 last week) \u2014 tentative recovery. Confirm with position check in DataForSEO.\n- **/blog/unleash-alternatives**: 8 clicks (up from 0 last week) \u2014 first organic traction; watch one more week.\n- **/insights/http-error-explained-causes-how-fix**: 34 clicks (up from 26) \u2014 third consecutive week of growth.\n- **/pricing**: 122 GSC clicks (+38.6% WoW) \u2014 largest organic mover this week. Worth checking if a ranking shift or new keyword is driving this.\n- **/platform/mcp-server**: 2 clicks (down from 9 last week) \u2014 sharp single-week drop; check for a position shift.",
+    "**Recommended actions**\n- **Ship the answer-capsule + comparison table + schema fix to /compare/growthbook-vs-launchdarkly, /compare/growthbook-vs-statsig, and /compare/growthbook-vs-posthog this week** (ACP 82, 82, 80). All three have AI Overviews where GrowthBook is cited. Seven consecutive weeks without shipping.\n- **Apply the same fix to /compare/growthbook-vs-optimizely this week** (ACP 80, 2,838 impressions/28d, AI Overview present, GrowthBook NOT cited). Optimizely's build-vs-buy content now competing for the same evaluation-stage buyer makes this urgent.\n- **Add internal links from established posts to all seven new zero-impression insights pages** (/insights/statsig-alternatives, /insights/launchdarkly-pricing, /insights/multivariate-testing-vs-ab-testing, /insights/95-confidence-interval, /insights/free-product-analytics-tools, /insights/hypothesis-testing, /blog/feature-flags-ai-development) \u2014 none can rank without link equity.\n- **Check GA4 all-traffic on /blog/what-is-a-b-testing** (pos 10.92, 1,225 impressions, AI Overview present, GrowthBook NOT cited); if GA4 is also soft, add the answer-capsule H2 this week.",
+    "**Data quality flags**\n- \u26a0\ufe0f Zero new pages detected from **Statsig**, **LaunchDarkly**, **Harness**, **Flagsmith**, and **Unleash** simultaneously \u2014 consistent with a monitoring gap, not organic silence.\n- **/compare/growthbook-vs-statsig** impressions jumped from 2,207 to 6,622 impressions/28d \u2014 verify this is a real position gain and not a GSC data artifact before citing in external reports."
   ],
   "content_recommendations": [
-    "1. Optimize /compare/growthbook-vs-statsig (pos 7.1, 6,622 impressions, ACP 82): add a 40-word answer capsule, comparison table, schema markup, and signup CTA this week. GrowthBook is already cited in the AI Overview here \u2014 this is a conversion fix, not a ranking play.",
-    "2. Optimize /compare/growthbook-vs-optimizely (pos 8.5, 2,838 impressions, ACP 80): same structural fix, but also critical because GrowthBook is NOT cited in the AI Overview and Optimizely just launched a 30-page Field Notes hub that will compete for the same evaluation-stage queries.",
-    "3. Write a \"GrowthBook Experimentation Buyer's Guide\" page (or RFP checklist). Optimizely just published both formats as part of its Field Notes launch. Buyers searching \"experimentation buyer's guide\" or \"experimentation RFP template\" will find Optimizely \u2014 GrowthBook has no equivalent asset and no ranking for these BOFU queries.",
-    "4. Expand /blog/what-is-a-b-testing to capture the \"what is a/b testing\" AI Overview (pos 10.92, 1,225 impressions, GrowthBook NOT cited). Add a concise answer-format H2 at the top. The page gained +10 clicks two weeks ago \u2014 momentum exists to build on.",
-    "5. Refresh /blog/feature-flags-ai-development (newly published, 0 impressions) with an answer capsule targeting \"feature flags for AI development\" and add internal links from /blog/best-open-source-feature-flagging-tools-compared (now 151 clicks/week) and the AI-angle insights pages. Optimizely's \"Powering AI With Feature Flags\" and \"AI Experimentation\" are both live and aging into authority."
+    "1. Optimize /compare/growthbook-vs-statsig (ACP 82, pos 7.1, 6,622 impressions/28d, AI Overview present, GrowthBook cited): add a 40-word answer capsule, comparison table, and FAQ schema this week. This is the highest-impression comparison page in the set and the structural upgrade is the only thing standing between current impressions and signups.",
+    "2. Optimize /compare/growthbook-vs-optimizely (ACP 80, pos 8.5, 2,838 impressions/28d, AI Overview present, GrowthBook NOT cited): same capsule + table + schema treatment, but the AI citation capture is the primary prize here \u2014 Optimizely is actively publishing build-vs-buy content targeting the same evaluation moment.",
+    "3. Write a dedicated page targeting \"a/b split testing\" (301,000 monthly searches, KD 58) \u2014 GrowthBook has no ranking asset for this query. Lead with the open-source + warehouse-native angle and an answer-format H2. This is the largest unaddressed category gap in the dataset.",
+    "4. Refresh /blog/what-is-a-b-testing to add an answer-capsule H2 targeting \"what is a/b testing\" (pos 10.92, 1,225 impressions this week, AI Overview present, GrowthBook NOT cited, 1,900 monthly searches). Verify GA4 all-traffic first \u2014 if both signals are soft, the answer-capsule fix is the immediate lever for AI citation capture.",
+    "5. Expand /insights/launchdarkly-pricing (newly detected, zero impressions, KD 13) with a structured pricing comparison and answer-format H2 \u2014 low KD, high commercial intent, and directly supports the /compare/growthbook-vs-launchdarkly BOFU funnel."
   ],
   "opportunities": [
     {
@@ -5745,6 +5968,14 @@
         "etv": 98927
       },
       {
+        "date": "2026-06-20",
+        "etv": 102695
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 92091
+      },
+      {
         "date": "2026-07-04",
         "etv": 92588
       }
@@ -5813,6 +6044,14 @@
       {
         "date": "2026-06-13",
         "etv": 8764
+      },
+      {
+        "date": "2026-06-20",
+        "etv": 8896
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 8608
       },
       {
         "date": "2026-07-04",
@@ -5885,6 +6124,14 @@
         "etv": 1003
       },
       {
+        "date": "2026-06-20",
+        "etv": 1178
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 1102
+      },
+      {
         "date": "2026-07-04",
         "etv": 1115
       }
@@ -5953,6 +6200,14 @@
       {
         "date": "2026-06-13",
         "etv": 3568
+      },
+      {
+        "date": "2026-06-20",
+        "etv": 3630
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 4549
       },
       {
         "date": "2026-07-04",
@@ -6025,6 +6280,14 @@
         "etv": 84079
       },
       {
+        "date": "2026-06-20",
+        "etv": 85267
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 36471
+      },
+      {
         "date": "2026-07-04",
         "etv": 36998
       }
@@ -6093,6 +6356,14 @@
       {
         "date": "2026-06-13",
         "etv": 16159
+      },
+      {
+        "date": "2026-06-20",
+        "etv": 18433
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 15906
       },
       {
         "date": "2026-07-04",
@@ -6165,6 +6436,14 @@
         "etv": 245022
       },
       {
+        "date": "2026-06-20",
+        "etv": 246192
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 227510
+      },
+      {
         "date": "2026-07-04",
         "etv": 228449
       }
@@ -6233,6 +6512,14 @@
       {
         "date": "2026-06-13",
         "etv": 7757
+      },
+      {
+        "date": "2026-06-20",
+        "etv": 7772
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 7691
       },
       {
         "date": "2026-07-04",
@@ -6305,6 +6592,14 @@
         "etv": 157596
       },
       {
+        "date": "2026-06-20",
+        "etv": 161738
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 164629
+      },
+      {
         "date": "2026-07-04",
         "etv": 165080
       }
@@ -6373,6 +6668,14 @@
       {
         "date": "2026-06-13",
         "etv": 444
+      },
+      {
+        "date": "2026-06-20",
+        "etv": 389
+      },
+      {
+        "date": "2026-06-27",
+        "etv": 384
       },
       {
         "date": "2026-07-04",
@@ -7610,11 +7913,11 @@
       ],
       "snapshot_date": "2026-07-04",
       "organic_sessions": 4575,
-      "organic_sessions_wow_pct": -4.0,
-      "organic_sessions_4w": 18286,
-      "organic_sessions_4w_pct": -15.7,
-      "sessions_4w": 52679,
-      "sessions_4w_pct": 1.7
+      "organic_sessions_wow_pct": -5.3,
+      "organic_sessions_4w": 18914,
+      "organic_sessions_4w_pct": -7.4,
+      "sessions_4w": 56739,
+      "sessions_4w_pct": 9.1
     },
     "docs": {
       "sessions": 4295,
