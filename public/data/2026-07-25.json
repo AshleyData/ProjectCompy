@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 articles covering product analytics, AI observability, database comparisons, and engineering topics, primarily targeting software engineers and developers building or evaluating data infrastructure and analytics tooling. It is organized by tags and categories, indicating a structured effort to capture search traffic across developer-focused technical queries."
+        "summary": "PostHog's blog is a technical content hub of 75 posts covering developer-focused topics such as database comparisons, AI observability, and tracing, organized by tags and categories. It primarily targets software engineers and product/data teams evaluating infrastructure and analytics tooling."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and experimentation practitioners looking for tactical, use-case-specific guidance."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing topics. It targets digital marketers, content operations teams, and e-commerce practitioners looking for tactical advice on running experiments and managing content platforms."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Harness's /blog section contains 33 technical and product-focused articles covering DevOps practices, CI/CD pipeline guidance, feature flag implementation, and product announcements. It targets DevOps engineers, platform engineers, and developer tooling decision-makers, with content that also serves a competitive positioning purpose against tools like Argo CD."
+        "summary": "Harness's /blog section contains 33 posts mixing product announcements, technical how-to guides, and competitive comparisons focused on CI/CD, feature flags, AI-assisted development, and DevOps tooling. It targets DevOps engineers, platform engineers, and technical decision-makers evaluating or already using Harness's software delivery platform."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Amplitude Experiment's technical documentation hub, covering product guides, surveys, SDKs, heatmaps, and AI features across 21 pages. It targets product managers, developers, and UX researchers who need implementation and usage references for Amplitude's experimentation and feedback tools."
+        "summary": "This is a technical documentation section targeting product managers and developers who use Amplitude's experimentation and engagement tools, covering how to build and analyze surveys, configure conditional logic, use the content editor, and integrate SDKs and heatmaps. The content is primarily instructional reference material for practitioners implementing Amplitude's guides, surveys, and AI features within their products."
       }
     ]
   },
@@ -11930,7 +11930,8 @@
         "videos": 19,
         "engaged_views": 1161,
         "watch_hours": 64.5,
-        "median_watch_min": 174.0,
+        "median_total_watch_min": 174.0,
+        "median_avg_duration_s": 194,
         "median_pct": 11.5,
         "subs": 22,
         "subs_per_1k": 18.9,
@@ -11941,7 +11942,8 @@
         "videos": 10,
         "engaged_views": 2144,
         "watch_hours": 11.0,
-        "median_watch_min": 9.0,
+        "median_total_watch_min": 9.0,
+        "median_avg_duration_s": 16,
         "median_pct": 61.3,
         "subs": 1,
         "subs_per_1k": 0.5,
@@ -11952,7 +11954,8 @@
         "videos": 58,
         "engaged_views": 7350,
         "watch_hours": 387.2,
-        "median_watch_min": 256.5,
+        "median_total_watch_min": 256.5,
+        "median_avg_duration_s": 128,
         "median_pct": 23.0,
         "subs": 76,
         "subs_per_1k": 10.3,
@@ -11963,7 +11966,8 @@
         "videos": 8,
         "engaged_views": 766,
         "watch_hours": 5.8,
-        "median_watch_min": 24.0,
+        "median_total_watch_min": 24.0,
+        "median_avg_duration_s": 15,
         "median_pct": 45.0,
         "subs": 1,
         "subs_per_1k": 1.3,
@@ -44835,7 +44839,8 @@
         "median_pct": 61.3,
         "p75_pct": 76.5,
         "p90_pct": 87.1,
-        "median_watch_min": 12.0
+        "median_total_watch_min": 12.0,
+        "median_avg_duration_s": 16
       },
       {
         "band": "30\u201360s",
@@ -44843,7 +44848,8 @@
         "median_pct": 45.0,
         "p75_pct": 52.6,
         "p90_pct": 69.5,
-        "median_watch_min": 19.0
+        "median_total_watch_min": 19.0,
+        "median_avg_duration_s": 19
       },
       {
         "band": "1\u20133 min",
@@ -44851,7 +44857,8 @@
         "median_pct": 33.5,
         "p75_pct": 50.0,
         "p90_pct": 74.8,
-        "median_watch_min": 21.0
+        "median_total_watch_min": 21.0,
+        "median_avg_duration_s": 42
       },
       {
         "band": "3\u201310 min",
@@ -44859,7 +44866,8 @@
         "median_pct": 28.2,
         "p75_pct": 33.8,
         "p90_pct": 39.3,
-        "median_watch_min": 153.0
+        "median_total_watch_min": 153.0,
+        "median_avg_duration_s": 101
       },
       {
         "band": "10\u201330 min",
@@ -44867,7 +44875,8 @@
         "median_pct": 16.7,
         "p75_pct": 21.8,
         "p90_pct": 29.5,
-        "median_watch_min": 296.0
+        "median_total_watch_min": 296.0,
+        "median_avg_duration_s": 175
       },
       {
         "band": "30\u201360 min",
@@ -44875,7 +44884,8 @@
         "median_pct": 11.2,
         "p75_pct": 11.8,
         "p90_pct": 15.5,
-        "median_watch_min": 370.5
+        "median_total_watch_min": 370.5,
+        "median_avg_duration_s": 251
       }
     ],
     "trend": [
@@ -44884,364 +44894,416 @@
         "week_end": "2025-07-30",
         "engaged_views": 363,
         "raw_views": 367,
-        "watch_minutes": 867
+        "watch_minutes": 867,
+        "subs_gained": 3
       },
       {
         "week_start": "2025-07-31",
         "week_end": "2025-08-06",
         "engaged_views": 338,
         "raw_views": 340,
-        "watch_minutes": 968
+        "watch_minutes": 968,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-08-07",
         "week_end": "2025-08-13",
         "engaged_views": 406,
         "raw_views": 412,
-        "watch_minutes": 1368
+        "watch_minutes": 1368,
+        "subs_gained": 0
       },
       {
         "week_start": "2025-08-14",
         "week_end": "2025-08-20",
         "engaged_views": 402,
         "raw_views": 406,
-        "watch_minutes": 1060
+        "watch_minutes": 1060,
+        "subs_gained": 3
       },
       {
         "week_start": "2025-08-21",
         "week_end": "2025-08-27",
         "engaged_views": 401,
         "raw_views": 411,
-        "watch_minutes": 1263
+        "watch_minutes": 1263,
+        "subs_gained": 2
       },
       {
         "week_start": "2025-08-28",
         "week_end": "2025-09-03",
         "engaged_views": 364,
         "raw_views": 370,
-        "watch_minutes": 1142
+        "watch_minutes": 1142,
+        "subs_gained": 2
       },
       {
         "week_start": "2025-09-04",
         "week_end": "2025-09-10",
         "engaged_views": 435,
         "raw_views": 446,
-        "watch_minutes": 1370
+        "watch_minutes": 1370,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-09-11",
         "week_end": "2025-09-17",
         "engaged_views": 333,
         "raw_views": 344,
-        "watch_minutes": 1101
+        "watch_minutes": 1101,
+        "subs_gained": 4
       },
       {
         "week_start": "2025-09-18",
         "week_end": "2025-09-24",
         "engaged_views": 295,
         "raw_views": 298,
-        "watch_minutes": 819
+        "watch_minutes": 819,
+        "subs_gained": 0
       },
       {
         "week_start": "2025-09-25",
         "week_end": "2025-10-01",
         "engaged_views": 381,
         "raw_views": 384,
-        "watch_minutes": 1428
+        "watch_minutes": 1428,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-10-02",
         "week_end": "2025-10-08",
         "engaged_views": 491,
         "raw_views": 498,
-        "watch_minutes": 1277
+        "watch_minutes": 1277,
+        "subs_gained": 5
       },
       {
         "week_start": "2025-10-09",
         "week_end": "2025-10-15",
         "engaged_views": 450,
         "raw_views": 457,
-        "watch_minutes": 1392
+        "watch_minutes": 1392,
+        "subs_gained": 4
       },
       {
         "week_start": "2025-10-16",
         "week_end": "2025-10-22",
         "engaged_views": 405,
         "raw_views": 413,
-        "watch_minutes": 1107
+        "watch_minutes": 1107,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-10-23",
         "week_end": "2025-10-29",
         "engaged_views": 425,
         "raw_views": 433,
-        "watch_minutes": 1220
+        "watch_minutes": 1220,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-10-30",
         "week_end": "2025-11-05",
         "engaged_views": 349,
         "raw_views": 351,
-        "watch_minutes": 1140
+        "watch_minutes": 1140,
+        "subs_gained": 4
       },
       {
         "week_start": "2025-11-06",
         "week_end": "2025-11-12",
         "engaged_views": 332,
         "raw_views": 336,
-        "watch_minutes": 1025
+        "watch_minutes": 1025,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-11-13",
         "week_end": "2025-11-19",
         "engaged_views": 299,
         "raw_views": 307,
-        "watch_minutes": 784
+        "watch_minutes": 784,
+        "subs_gained": 3
       },
       {
         "week_start": "2025-11-20",
         "week_end": "2025-11-26",
         "engaged_views": 298,
         "raw_views": 308,
-        "watch_minutes": 883
+        "watch_minutes": 883,
+        "subs_gained": 1
       },
       {
         "week_start": "2025-11-27",
         "week_end": "2025-12-03",
         "engaged_views": 280,
         "raw_views": 291,
-        "watch_minutes": 739
+        "watch_minutes": 739,
+        "subs_gained": 0
       },
       {
         "week_start": "2025-12-04",
         "week_end": "2025-12-10",
         "engaged_views": 337,
         "raw_views": 343,
-        "watch_minutes": 1055
+        "watch_minutes": 1055,
+        "subs_gained": 4
       },
       {
         "week_start": "2025-12-11",
         "week_end": "2025-12-17",
         "engaged_views": 356,
         "raw_views": 360,
-        "watch_minutes": 940
+        "watch_minutes": 940,
+        "subs_gained": 3
       },
       {
         "week_start": "2025-12-18",
         "week_end": "2025-12-24",
         "engaged_views": 204,
         "raw_views": 208,
-        "watch_minutes": 774
+        "watch_minutes": 774,
+        "subs_gained": 3
       },
       {
         "week_start": "2025-12-25",
         "week_end": "2025-12-31",
         "engaged_views": 177,
         "raw_views": 182,
-        "watch_minutes": 589
+        "watch_minutes": 589,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-01-01",
         "week_end": "2026-01-07",
         "engaged_views": 294,
         "raw_views": 302,
-        "watch_minutes": 763
+        "watch_minutes": 763,
+        "subs_gained": 0
       },
       {
         "week_start": "2026-01-08",
         "week_end": "2026-01-14",
         "engaged_views": 386,
         "raw_views": 396,
-        "watch_minutes": 1166
+        "watch_minutes": 1166,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-01-15",
         "week_end": "2026-01-21",
         "engaged_views": 397,
         "raw_views": 400,
-        "watch_minutes": 1147
+        "watch_minutes": 1147,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-01-22",
         "week_end": "2026-01-28",
         "engaged_views": 466,
         "raw_views": 470,
-        "watch_minutes": 1378
+        "watch_minutes": 1378,
+        "subs_gained": 1
       },
       {
         "week_start": "2026-01-29",
         "week_end": "2026-02-04",
         "engaged_views": 425,
         "raw_views": 443,
-        "watch_minutes": 1654
+        "watch_minutes": 1654,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-02-05",
         "week_end": "2026-02-11",
         "engaged_views": 415,
         "raw_views": 422,
-        "watch_minutes": 1561
+        "watch_minutes": 1561,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-02-12",
         "week_end": "2026-02-18",
         "engaged_views": 310,
         "raw_views": 318,
-        "watch_minutes": 1108
+        "watch_minutes": 1108,
+        "subs_gained": 1
       },
       {
         "week_start": "2026-02-19",
         "week_end": "2026-02-25",
         "engaged_views": 445,
         "raw_views": 455,
-        "watch_minutes": 1816
+        "watch_minutes": 1816,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-02-26",
         "week_end": "2026-03-04",
         "engaged_views": 494,
         "raw_views": 498,
-        "watch_minutes": 2096
+        "watch_minutes": 2096,
+        "subs_gained": 9
       },
       {
         "week_start": "2026-03-05",
         "week_end": "2026-03-11",
         "engaged_views": 903,
         "raw_views": 1565,
-        "watch_minutes": 3356
+        "watch_minutes": 3356,
+        "subs_gained": 3
       },
       {
         "week_start": "2026-03-12",
         "week_end": "2026-03-18",
         "engaged_views": 859,
         "raw_views": 1230,
-        "watch_minutes": 2927
+        "watch_minutes": 2927,
+        "subs_gained": 9
       },
       {
         "week_start": "2026-03-19",
         "week_end": "2026-03-25",
         "engaged_views": 1159,
         "raw_views": 1982,
-        "watch_minutes": 2553
+        "watch_minutes": 2553,
+        "subs_gained": 5
       },
       {
         "week_start": "2026-03-26",
         "week_end": "2026-04-01",
         "engaged_views": 591,
         "raw_views": 1558,
-        "watch_minutes": 1714
+        "watch_minutes": 1714,
+        "subs_gained": 4
       },
       {
         "week_start": "2026-04-02",
         "week_end": "2026-04-08",
         "engaged_views": 2034,
         "raw_views": 3576,
-        "watch_minutes": 2248
+        "watch_minutes": 2248,
+        "subs_gained": 6
       },
       {
         "week_start": "2026-04-09",
         "week_end": "2026-04-15",
         "engaged_views": 486,
         "raw_views": 506,
-        "watch_minutes": 1725
+        "watch_minutes": 1725,
+        "subs_gained": 3
       },
       {
         "week_start": "2026-04-16",
         "week_end": "2026-04-22",
         "engaged_views": 985,
         "raw_views": 1733,
-        "watch_minutes": 2073
+        "watch_minutes": 2073,
+        "subs_gained": 5
       },
       {
         "week_start": "2026-04-23",
         "week_end": "2026-04-29",
         "engaged_views": 570,
         "raw_views": 731,
-        "watch_minutes": 2119
+        "watch_minutes": 2119,
+        "subs_gained": 1
       },
       {
         "week_start": "2026-04-30",
         "week_end": "2026-05-06",
         "engaged_views": 387,
         "raw_views": 395,
-        "watch_minutes": 1799
+        "watch_minutes": 1799,
+        "subs_gained": 1
       },
       {
         "week_start": "2026-05-07",
         "week_end": "2026-05-13",
         "engaged_views": 514,
         "raw_views": 735,
-        "watch_minutes": 1563
+        "watch_minutes": 1563,
+        "subs_gained": 4
       },
       {
         "week_start": "2026-05-14",
         "week_end": "2026-05-20",
         "engaged_views": 460,
         "raw_views": 485,
-        "watch_minutes": 1483
+        "watch_minutes": 1483,
+        "subs_gained": 4
       },
       {
         "week_start": "2026-05-21",
         "week_end": "2026-05-27",
         "engaged_views": 488,
         "raw_views": 520,
-        "watch_minutes": 1785
+        "watch_minutes": 1785,
+        "subs_gained": 3
       },
       {
         "week_start": "2026-05-28",
         "week_end": "2026-06-03",
         "engaged_views": 439,
         "raw_views": 443,
-        "watch_minutes": 1443
+        "watch_minutes": 1443,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-06-04",
         "week_end": "2026-06-10",
         "engaged_views": 525,
         "raw_views": 633,
-        "watch_minutes": 1576
+        "watch_minutes": 1576,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-06-11",
         "week_end": "2026-06-17",
         "engaged_views": 388,
         "raw_views": 393,
-        "watch_minutes": 1676
+        "watch_minutes": 1676,
+        "subs_gained": 3
       },
       {
         "week_start": "2026-06-18",
         "week_end": "2026-06-24",
         "engaged_views": 570,
         "raw_views": 610,
-        "watch_minutes": 1891
+        "watch_minutes": 1891,
+        "subs_gained": 3
       },
       {
         "week_start": "2026-06-25",
         "week_end": "2026-07-01",
         "engaged_views": 641,
         "raw_views": 720,
-        "watch_minutes": 2030
+        "watch_minutes": 2030,
+        "subs_gained": 4
       },
       {
         "week_start": "2026-07-02",
         "week_end": "2026-07-08",
         "engaged_views": 3373,
         "raw_views": 8848,
-        "watch_minutes": 2505
+        "watch_minutes": 2505,
+        "subs_gained": 5
       },
       {
         "week_start": "2026-07-09",
         "week_end": "2026-07-15",
         "engaged_views": 831,
         "raw_views": 1742,
-        "watch_minutes": 2151
+        "watch_minutes": 2151,
+        "subs_gained": 2
       },
       {
         "week_start": "2026-07-16",
         "week_end": "2026-07-22",
         "engaged_views": 1119,
         "raw_views": 1588,
-        "watch_minutes": 3180
+        "watch_minutes": 3180,
+        "subs_gained": 13
       }
     ],
     "trend_monthly": [

@@ -304,7 +304,7 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
   const span = grain === "week" ? `${weekly.length} weeks` : `${monthly.length} complete months`;
 
   return (
-    <div style={{ ...card({ padding: 14 }), flex: "1 1 380px", minWidth: 320 }}>
+    <div style={{ ...card({ padding: 14 }), flex: "1 1 300px", minWidth: 290 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
                     gap: 10, marginBottom: 8, flexWrap: "wrap" }}>
         <div>
@@ -402,6 +402,9 @@ function VideoTab({ video }) {
         <TrendChart title="Minutes watched" weekly={trend} monthly={trend_monthly}
                     dataKey="watch_minutes" color={C.accent}
                     format={(v) => `${v.toLocaleString()} min`} />
+        <TrendChart title="New subscribers" weekly={trend} monthly={trend_monthly}
+                    dataKey="subs_gained" color={C.primary}
+                    format={(v) => `+${v.toLocaleString()}`} />
       </div>
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
@@ -433,9 +436,15 @@ function VideoTab({ video }) {
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
           Every video measured at the same age, so a new upload and an old one are comparable.
           Subs per 1k engaged views is the clearest signal of business value.
+          <br />
+          <strong>Total watch / video</strong> is the median video's watch time summed across
+          all its viewers — a 28-minute episode can total hours. <strong>Watched per viewer</strong>
+          is how long one person actually stayed, which is what "% of video watched" is derived from.
         </div>
         <Table
-          headers={["Category", "Videos", "Engaged views", "Watch time", "Median watch", "Median % watched", "Subs", "Subs / 1k", "Saves"]}
+          headers={["Category", "Videos", "Engaged views", "Total watch time",
+                    "Total watch / video", "Watched per viewer", "% of video watched",
+                    "Subs", "Subs / 1k", "Saves"]}
           rows={formats.map((f) => [
             <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
               <span style={{ width: 9, height: 9, borderRadius: 2, background: VIDEO_CAT_COLORS[f.category] || C.muted }} />
@@ -444,7 +453,8 @@ function VideoTab({ video }) {
             f.videos,
             (f.engaged_views || 0).toLocaleString(),
             `${f.watch_hours}h`,
-            fmtMinutes(f.median_watch_min),
+            fmtMinutes(f.median_total_watch_min),
+            fmtClock(f.median_avg_duration_s),
             `${f.median_pct}%`,
             f.subs,
             <strong style={{ color: f.subs_per_1k >= 8 ? C.success : f.subs_per_1k < 2 ? C.danger : C.primary }}>
@@ -555,9 +565,11 @@ function VideoTab({ video }) {
         </button>
         {showBench && (
           <Table
-            headers={["Length band", "Videos", "Median % watched", "Top quartile", "Top 10%", "Median watch"]}
+            headers={["Length band", "Videos", "Median % watched", "Top quartile", "Top 10%",
+                      "Watched per viewer", "Total watch / video"]}
             rows={benchmarks.map((b) => [
-              b.band, b.videos, `${b.median_pct}%`, `${b.p75_pct}%`, `${b.p90_pct}%`, fmtMinutes(b.median_watch_min),
+              b.band, b.videos, `${b.median_pct}%`, `${b.p75_pct}%`, `${b.p90_pct}%`,
+              fmtClock(b.median_avg_duration_s), fmtMinutes(b.median_total_watch_min),
             ])}
           />
         )}
