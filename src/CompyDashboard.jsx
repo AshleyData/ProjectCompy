@@ -362,6 +362,7 @@ function VideoTab({ video }) {
   const [selected, setSelected] = useState(null);
   const [showBench, setShowBench] = useState(true);
   const [outlierMetric, setOutlierMetric] = useState("All");
+  const [scatterWindow, setScatterWindow] = useState("cohort");
 
   if (!video || !video.kpi) {
     return (
@@ -377,6 +378,9 @@ function VideoTab({ video }) {
 
   const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
           trend = [], trend_monthly = [], outliers = [], meta = {} } = video;
+  const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
+  const rw = meta.recent_window;
+  const recentWindow = rw ? `${rw.start} to ${rw.end}` : "the last 30 days";
   const shownOutliers = outlierMetric === "All"
     ? outliers
     : outliers.filter((o) => o.metric === outlierMetric);
@@ -533,10 +537,32 @@ function VideoTab({ video }) {
         />
       </Section>
 
-      <Section title="Where the attention goes — day-28 watch time by length">
-        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          Each dot is one video at 28 days old. Rising left-to-right means longer content holds more
-          total attention; a flattening curve would mean the extra runtime is wasted.
+      <Section title={scatterWindow === "cohort"
+        ? "Where the attention goes — first 28 days"
+        : "Where the attention goes — last 30 days"}>
+        <div style={{ display: "flex", gap: 10, alignItems: "baseline", flexWrap: "wrap",
+                      marginBottom: 10 }}>
+          <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6,
+                        overflow: "hidden" }}>
+            {[["cohort", "First 28 days"], ["recent", "Last 30 days"]].map(([k, label]) => (
+              <button
+                key={k}
+                onClick={() => setScatterWindow(k)}
+                aria-pressed={scatterWindow === k}
+                style={{ border: 0, cursor: "pointer", fontSize: 11.5, padding: "5px 11px",
+                         background: scatterWindow === k ? C.accent : C.white,
+                         color: scatterWindow === k ? C.white : C.muted,
+                         fontWeight: scatterWindow === k ? 700 : 400 }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <div style={{ fontSize: 12.5, color: C.muted, flex: "1 1 300px" }}>
+            {scatterWindow === "cohort"
+              ? "Each dot is one video measured at 28 days old — fair for comparing launches regardless of publish date."
+              : `Each dot is one video's activity in ${recentWindow}, whatever its age — what is drawing attention right now.`}
+          </div>
         </div>
         <ResponsiveContainer width="100%" height={320}>
           <ScatterChart margin={{ top: 4, right: 20, bottom: 30, left: 4 }}>
@@ -547,8 +573,9 @@ function VideoTab({ video }) {
                             offset: -18, fontSize: 11, fill: C.muted }} />
             <YAxis type="number" dataKey="watch" name="Watch min" tick={{ fontSize: 11 }} stroke={C.muted}
                    width={78}
-                   label={{ value: "total watch minutes (day 28)", angle: -90,
-                            position: "insideLeft", offset: 4,
+                   label={{ value: scatterWindow === "cohort"
+                              ? "watch minutes (first 28 days)" : "watch minutes (last 30 days)",
+                            angle: -90, position: "insideLeft", offset: 4,
                             style: { fontSize: 11, fill: C.muted, textAnchor: "middle" } }} />
             <ZAxis range={[45, 45]} />
             <RTooltip
@@ -568,10 +595,10 @@ function VideoTab({ video }) {
                     wrapperStyle={{ fontSize: 12, paddingBottom: 8 }} />
             {Object.keys(VIDEO_CAT_COLORS).map((cat) => {
               const pts = cohort
-                .filter((v) => v.category === cat && v.day28)
+                .filter((v) => v.category === cat && v[scatterKey] && v.length_s)
                 .map((v) => ({
-                  mins: +(v.length_s / 60).toFixed(1), watch: v.day28.watch_min,
-                  engaged: v.day28.engaged_views, pct: v.day28.avg_pct,
+                  mins: +(v.length_s / 60).toFixed(1), watch: v[scatterKey].watch_min,
+                  engaged: v[scatterKey].engaged_views, pct: v[scatterKey].avg_pct,
                   title: v.title, category: v.category, length_s: v.length_s,
                 }));
               if (!pts.length) return null;

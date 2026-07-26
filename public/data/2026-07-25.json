@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 posts covering product analytics, AI observability, database comparisons, and engineering topics, organized by tags and categories. It primarily targets software engineers, product managers, and data practitioners evaluating or using PostHog's platform."
+        "summary": "PostHog's blog is a technical content hub of 75 posts covering database comparisons, AI observability, and developer tooling topics, organized by tags and categories. It targets software engineers and product developers seeking practical guidance on data infrastructure, tracing, and AI agent monitoring."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and experimentation practitioners looking for tactical, use-case-specific guidance."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 49 pieces of editorial content\u2014guides, articles, and curated collections\u2014covering experimentation strategy, AI adoption, and CMS selection and migration. It targets digital marketers, content operations teams, and ecommerce professionals looking for tactical advice on running experiments and managing web content platforms."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Harness's blog section containing 33 posts that mix product announcements, technical how-to guides, and competitive comparison pieces focused on CI/CD, feature flags, AI-assisted development, and deployment automation. It targets DevOps engineers, platform engineers, and engineering leaders evaluating or already using Harness's software delivery platform."
+        "summary": "This is Harness's technical blog targeting DevOps engineers, platform engineers, and software delivery teams, covering product announcements, CI/CD best practices, AI-driven release automation, and competitive comparisons. Content ranges from how-to implementation guides to thought leadership on modern software delivery challenges."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is a technical documentation section covering Amplitude Experiment's in-product guides, surveys, and related features, targeting product managers and developers who need implementation and usage guidance for tools like surveys, heatmaps, and SDKs."
+        "summary": "This is a technical documentation section for Amplitude Experiment's user engagement and research tools, covering survey creation, conditional logic, heatmaps, and AI features, along with SDK integration references. It targets product managers, developers, and UX researchers who build and analyze in-product guides and surveys using the platform."
       }
     ]
   },
@@ -12025,6 +12025,13 @@
           "avg_pct": 10.3,
           "subs": 20,
           "saves": 35
+        },
+        "recent": {
+          "engaged_views": 51,
+          "watch_min": 448.0,
+          "avg_pct": 15.0,
+          "avg_duration_s": 527,
+          "subs": 0
         }
       },
       {
@@ -12053,6 +12060,13 @@
           "avg_pct": 24.0,
           "subs": 10,
           "saves": 13
+        },
+        "recent": {
+          "engaged_views": 21,
+          "watch_min": 77.0,
+          "avg_pct": 20.9,
+          "avg_duration_s": 221,
+          "subs": 1
         }
       },
       {
@@ -12067,6 +12081,13 @@
           "avg_pct": 8.9,
           "subs": 8,
           "saves": 30
+        },
+        "recent": {
+          "engaged_views": 243,
+          "watch_min": 1294.0,
+          "avg_pct": 8.9,
+          "avg_duration_s": 319,
+          "subs": 9
         }
       },
       {
@@ -12095,6 +12116,13 @@
           "avg_pct": 32.2,
           "subs": 4,
           "saves": 13
+        },
+        "recent": {
+          "engaged_views": 209,
+          "watch_min": 828.0,
+          "avg_pct": 25.1,
+          "avg_duration_s": 237,
+          "subs": 2
         }
       },
       {
@@ -12123,6 +12151,13 @@
           "avg_pct": 19.4,
           "subs": 1,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 53,
+          "watch_min": 952.0,
+          "avg_pct": 31.4,
+          "avg_duration_s": 1077,
+          "subs": 0
         }
       },
       {
@@ -12151,6 +12186,13 @@
           "avg_pct": 12.0,
           "subs": 2,
           "saves": 13
+        },
+        "recent": {
+          "engaged_views": 19,
+          "watch_min": 109.0,
+          "avg_pct": 10.8,
+          "avg_duration_s": 344,
+          "subs": 0
         }
       },
       {
@@ -12172,6 +12214,13 @@
           "avg_pct": 25.9,
           "subs": 2,
           "saves": 9
+        },
+        "recent": {
+          "engaged_views": 75,
+          "watch_min": 270.0,
+          "avg_pct": 27.7,
+          "avg_duration_s": 216,
+          "subs": 0
         }
       },
       {
@@ -12200,6 +12249,13 @@
           "avg_pct": 30.1,
           "subs": 7,
           "saves": 10
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 0.8,
+          "avg_duration_s": 4,
+          "subs": 0
         }
       },
       {
@@ -12228,6 +12284,13 @@
           "avg_pct": 11.6,
           "subs": 1,
           "saves": 11
+        },
+        "recent": {
+          "engaged_views": 16,
+          "watch_min": 54.0,
+          "avg_pct": 6.9,
+          "avg_duration_s": 204,
+          "subs": 0
         }
       },
       {
@@ -12256,6 +12319,13 @@
           "avg_pct": 11.2,
           "subs": 1,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 25,
+          "watch_min": 53.0,
+          "avg_pct": 3.8,
+          "avg_duration_s": 127,
+          "subs": 1
         }
       },
       {
@@ -12277,6 +12347,13 @@
           "avg_pct": 14.0,
           "subs": 1,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 63,
+          "watch_min": 413.0,
+          "avg_pct": 12.8,
+          "avg_duration_s": 394,
+          "subs": 1
         }
       },
       {
@@ -12305,6 +12382,13 @@
           "avg_pct": 40.8,
           "subs": 3,
           "saves": 7
+        },
+        "recent": {
+          "engaged_views": 65,
+          "watch_min": 237.0,
+          "avg_pct": 28.7,
+          "avg_duration_s": 218,
+          "subs": 0
         }
       },
       {
@@ -12333,6 +12417,13 @@
           "avg_pct": 36.3,
           "subs": 7,
           "saves": 10
+        },
+        "recent": {
+          "engaged_views": 31,
+          "watch_min": 135.0,
+          "avg_pct": 29.7,
+          "avg_duration_s": 261,
+          "subs": 0
         }
       },
       {
@@ -12361,6 +12452,13 @@
           "avg_pct": 41.8,
           "subs": 5,
           "saves": 17
+        },
+        "recent": {
+          "engaged_views": 303,
+          "watch_min": 723.0,
+          "avg_pct": 46.5,
+          "avg_duration_s": 143,
+          "subs": 0
         }
       },
       {
@@ -12389,6 +12487,13 @@
           "avg_pct": 13.7,
           "subs": 2,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 22,
+          "watch_min": 25.0,
+          "avg_pct": 3.4,
+          "avg_duration_s": 70,
+          "subs": 0
         }
       },
       {
@@ -12417,6 +12522,13 @@
           "avg_pct": 24.8,
           "subs": 5,
           "saves": 6
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 28.0,
+          "avg_pct": 27.8,
+          "avg_duration_s": 189,
+          "subs": 0
         }
       },
       {
@@ -12445,6 +12557,13 @@
           "avg_pct": 15.4,
           "subs": 2,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 7,
+          "watch_min": 70.0,
+          "avg_pct": 25.7,
+          "avg_duration_s": 602,
+          "subs": 1
         }
       },
       {
@@ -12473,6 +12592,13 @@
           "avg_pct": 16.1,
           "subs": 2,
           "saves": 5
+        },
+        "recent": {
+          "engaged_views": 30,
+          "watch_min": 112.0,
+          "avg_pct": 21.6,
+          "avg_duration_s": 225,
+          "subs": 0
         }
       },
       {
@@ -12494,6 +12620,13 @@
           "avg_pct": 11.9,
           "subs": 3,
           "saves": 6
+        },
+        "recent": {
+          "engaged_views": 22,
+          "watch_min": 79.0,
+          "avg_pct": 11.5,
+          "avg_duration_s": 215,
+          "subs": 0
         }
       },
       {
@@ -12522,6 +12655,13 @@
           "avg_pct": 18.5,
           "subs": 2,
           "saves": 12
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 38.0,
+          "avg_pct": 25.2,
+          "avg_duration_s": 255,
+          "subs": 0
         }
       },
       {
@@ -12543,6 +12683,13 @@
           "avg_pct": 17.4,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 102,
+          "watch_min": 387.0,
+          "avg_pct": 16.8,
+          "avg_duration_s": 227,
+          "subs": 0
         }
       },
       {
@@ -12571,6 +12718,13 @@
           "avg_pct": 10.0,
           "subs": 9,
           "saves": 18
+        },
+        "recent": {
+          "engaged_views": 102,
+          "watch_min": 200.0,
+          "avg_pct": 6.4,
+          "avg_duration_s": 117,
+          "subs": 3
         }
       },
       {
@@ -12599,6 +12753,13 @@
           "avg_pct": 68.2,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 6,
+          "watch_min": 1.0,
+          "avg_pct": 69.1,
+          "avg_duration_s": 16,
+          "subs": 0
         }
       },
       {
@@ -12627,6 +12788,13 @@
           "avg_pct": 24.8,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 12,
+          "watch_min": 19.0,
+          "avg_pct": 12.6,
+          "avg_duration_s": 98,
+          "subs": 0
         }
       },
       {
@@ -12655,6 +12823,13 @@
           "avg_pct": 18.8,
           "subs": 5,
           "saves": 15
+        },
+        "recent": {
+          "engaged_views": 11,
+          "watch_min": 12.0,
+          "avg_pct": 6.3,
+          "avg_duration_s": 69,
+          "subs": 0
         }
       },
       {
@@ -12683,6 +12858,13 @@
           "avg_pct": 20.0,
           "subs": 4,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 3.0,
+          "avg_pct": 29.7,
+          "avg_duration_s": 193,
+          "subs": 0
         }
       },
       {
@@ -12711,6 +12893,13 @@
           "avg_pct": 26.5,
           "subs": 3,
           "saves": 6
+        },
+        "recent": {
+          "engaged_views": 30,
+          "watch_min": 60.0,
+          "avg_pct": 23.2,
+          "avg_duration_s": 120,
+          "subs": 0
         }
       },
       {
@@ -12739,6 +12928,13 @@
           "avg_pct": 16.2,
           "subs": 4,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 1.0,
+          "avg_pct": 2.3,
+          "avg_duration_s": 30,
+          "subs": 0
         }
       },
       {
@@ -12767,6 +12963,13 @@
           "avg_pct": 27.8,
           "subs": 4,
           "saves": 17
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 10.0,
+          "avg_pct": 14.8,
+          "avg_duration_s": 67,
+          "subs": 0
         }
       },
       {
@@ -12795,6 +12998,13 @@
           "avg_pct": 10.5,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 72,
+          "watch_min": 213.0,
+          "avg_pct": 10.7,
+          "avg_duration_s": 177,
+          "subs": 0
         }
       },
       {
@@ -12823,6 +13033,13 @@
           "avg_pct": 13.2,
           "subs": 1,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 2.0,
+          "avg_pct": 6.5,
+          "avg_duration_s": 123,
+          "subs": 0
         }
       },
       {
@@ -12851,6 +13068,13 @@
           "avg_pct": 24.8,
           "subs": 2,
           "saves": 5
+        },
+        "recent": {
+          "engaged_views": 27,
+          "watch_min": 105.0,
+          "avg_pct": 27.9,
+          "avg_duration_s": 234,
+          "subs": 0
         }
       },
       {
@@ -12907,6 +13131,13 @@
           "avg_pct": 24.9,
           "subs": 6,
           "saves": 6
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 1.0,
+          "avg_pct": 4.4,
+          "avg_duration_s": 18,
+          "subs": 0
         }
       },
       {
@@ -12928,6 +13159,13 @@
           "avg_pct": 24.4,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 24,
+          "watch_min": 106.0,
+          "avg_pct": 16.4,
+          "avg_duration_s": 265,
+          "subs": 0
         }
       },
       {
@@ -12956,6 +13194,13 @@
           "avg_pct": 21.6,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 15,
+          "watch_min": 48.0,
+          "avg_pct": 26.5,
+          "avg_duration_s": 195,
+          "subs": 0
         }
       },
       {
@@ -12984,6 +13229,13 @@
           "avg_pct": 47.5,
           "subs": 2,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 98,
+          "watch_min": 119.0,
+          "avg_pct": 28.1,
+          "avg_duration_s": 73,
+          "subs": 0
         }
       },
       {
@@ -13012,6 +13264,13 @@
           "avg_pct": 11.6,
           "subs": 2,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 5.0,
+          "avg_pct": 5.3,
+          "avg_duration_s": 101,
+          "subs": 0
         }
       },
       {
@@ -13040,6 +13299,13 @@
           "avg_pct": 30.7,
           "subs": 2,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 14,
+          "watch_min": 10.0,
+          "avg_pct": 29.0,
+          "avg_duration_s": 44,
+          "subs": 0
         }
       },
       {
@@ -13068,6 +13334,13 @@
           "avg_pct": 10.3,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 3.0,
+          "avg_pct": 2.3,
+          "avg_duration_s": 51,
+          "subs": 0
         }
       },
       {
@@ -13096,6 +13369,13 @@
           "avg_pct": 61.1,
           "subs": 6,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 16,
+          "watch_min": 11.0,
+          "avg_pct": 23.1,
+          "avg_duration_s": 44,
+          "subs": 0
         }
       },
       {
@@ -13124,6 +13404,13 @@
           "avg_pct": 16.3,
           "subs": 0,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 32,
+          "watch_min": 93.0,
+          "avg_pct": 17.1,
+          "avg_duration_s": 175,
+          "subs": 0
         }
       },
       {
@@ -13152,6 +13439,13 @@
           "avg_pct": 24.6,
           "subs": 5,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 16.0,
+          "avg_pct": 27.9,
+          "avg_duration_s": 112,
+          "subs": 0
         }
       },
       {
@@ -13180,6 +13474,13 @@
           "avg_pct": 8.3,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 0.6,
+          "avg_duration_s": 10,
+          "subs": 0
         }
       },
       {
@@ -13208,6 +13509,13 @@
           "avg_pct": 12.0,
           "subs": 0,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 0,
+          "avg_pct": 0.1,
+          "avg_duration_s": 2,
+          "subs": 0
         }
       },
       {
@@ -13236,6 +13544,13 @@
           "avg_pct": 36.3,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 10.0,
+          "avg_pct": 35.5,
+          "avg_duration_s": 72,
+          "subs": 0
         }
       },
       {
@@ -13264,6 +13579,13 @@
           "avg_pct": 45.9,
           "subs": 5,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 5.0,
+          "avg_pct": 46.3,
+          "avg_duration_s": 66,
+          "subs": 0
         }
       },
       {
@@ -13292,6 +13614,13 @@
           "avg_pct": 69.8,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 2.0,
+          "avg_pct": 318.7,
+          "avg_duration_s": 149,
+          "subs": 0
         }
       },
       {
@@ -13320,6 +13649,13 @@
           "avg_pct": 15.5,
           "subs": 1,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 2.0,
+          "avg_pct": 2.8,
+          "avg_duration_s": 28,
+          "subs": 0
         }
       },
       {
@@ -13334,6 +13670,13 @@
           "avg_pct": 15.7,
           "subs": 0,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 61,
+          "watch_min": 198.0,
+          "avg_pct": 14.8,
+          "avg_duration_s": 195,
+          "subs": 0
         }
       },
       {
@@ -13355,6 +13698,13 @@
           "avg_pct": 10.8,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 64,
+          "watch_min": 179.0,
+          "avg_pct": 10.7,
+          "avg_duration_s": 168,
+          "subs": 0
         }
       },
       {
@@ -13383,6 +13733,13 @@
           "avg_pct": 8.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 7,
+          "watch_min": 41.0,
+          "avg_pct": 21.3,
+          "avg_duration_s": 357,
+          "subs": 0
         }
       },
       {
@@ -13411,6 +13768,13 @@
           "avg_pct": 57.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "avg_duration_s": 0,
+          "subs": 0
         }
       },
       {
@@ -13425,6 +13789,13 @@
           "avg_pct": 16.8,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 63,
+          "watch_min": 236.0,
+          "avg_pct": 18.1,
+          "avg_duration_s": 224,
+          "subs": 0
         }
       },
       {
@@ -13446,6 +13817,13 @@
           "avg_pct": 13.5,
           "subs": 1,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 35.0,
+          "avg_pct": 24.8,
+          "avg_duration_s": 430,
+          "subs": 0
         }
       },
       {
@@ -13467,6 +13845,13 @@
           "avg_pct": 10.2,
           "subs": 1,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 0,
+          "avg_pct": 0.2,
+          "avg_duration_s": 5,
+          "subs": 0
         }
       },
       {
@@ -13495,6 +13880,13 @@
           "avg_pct": 19.0,
           "subs": 2,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 0,
+          "avg_pct": 4.2,
+          "avg_duration_s": 7,
+          "subs": 0
         }
       },
       {
@@ -13509,6 +13901,13 @@
           "avg_pct": 45.5,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 531,
+          "watch_min": 143.0,
+          "avg_pct": 45.5,
+          "avg_duration_s": 14,
+          "subs": 0
         }
       },
       {
@@ -13523,6 +13922,13 @@
           "avg_pct": 55.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 517,
+          "watch_min": 140.0,
+          "avg_pct": 55.9,
+          "avg_duration_s": 13,
+          "subs": 0
         }
       },
       {
@@ -13537,6 +13943,13 @@
           "avg_pct": 11.5,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 53,
+          "watch_min": 248.0,
+          "avg_pct": 15.0,
+          "avg_duration_s": 281,
+          "subs": 0
         }
       },
       {
@@ -13565,6 +13978,13 @@
           "avg_pct": 8.3,
           "subs": 1,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 1.0,
+          "avg_pct": 0.7,
+          "avg_duration_s": 12,
+          "subs": 0
         }
       },
       {
@@ -13579,6 +13999,13 @@
           "avg_pct": 43.3,
           "subs": 1,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 491,
+          "watch_min": 123.0,
+          "avg_pct": 43.8,
+          "avg_duration_s": 11,
+          "subs": 1
         }
       },
       {
@@ -13607,6 +14034,13 @@
           "avg_pct": 32.3,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 12,
+          "watch_min": 34.0,
+          "avg_pct": 45.9,
+          "avg_duration_s": 172,
+          "subs": 0
         }
       },
       {
@@ -13621,6 +14055,13 @@
           "avg_pct": 59.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 297,
+          "watch_min": 117.0,
+          "avg_pct": 59.1,
+          "avg_duration_s": 20,
+          "subs": 0
         }
       },
       {
@@ -13649,6 +14090,13 @@
           "avg_pct": 23.3,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 10.0,
+          "avg_pct": 17.0,
+          "avg_duration_s": 73,
+          "subs": 0
         }
       },
       {
@@ -13705,6 +14153,13 @@
           "avg_pct": 8.3,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 20.0,
+          "avg_pct": 26.2,
+          "avg_duration_s": 612,
+          "subs": 0
         }
       },
       {
@@ -13719,6 +14174,13 @@
           "avg_pct": 49.5,
           "subs": 1,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 348,
+          "watch_min": 105.0,
+          "avg_pct": 49.5,
+          "avg_duration_s": 13,
+          "subs": 1
         }
       },
       {
@@ -13747,6 +14209,13 @@
           "avg_pct": 40.9,
           "subs": 2,
           "saves": 9
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 1.7,
+          "avg_duration_s": 3,
+          "subs": 0
         }
       },
       {
@@ -13775,6 +14244,13 @@
           "avg_pct": 28.5,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 9.0,
+          "avg_pct": 14.8,
+          "avg_duration_s": 73,
+          "subs": 0
         }
       },
       {
@@ -13803,6 +14279,13 @@
           "avg_pct": 13.9,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 16.0,
+          "avg_pct": 13.7,
+          "avg_duration_s": 332,
+          "subs": 0
         }
       },
       {
@@ -13824,6 +14307,13 @@
           "avg_pct": 15.7,
           "subs": 1,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 13.0,
+          "avg_pct": 11.8,
+          "avg_duration_s": 163,
+          "subs": 0
         }
       },
       {
@@ -13845,6 +14335,13 @@
           "avg_pct": 9.8,
           "subs": 1,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 3.0,
+          "avg_pct": 4.1,
+          "avg_duration_s": 55,
+          "subs": 0
         }
       },
       {
@@ -13873,6 +14370,13 @@
           "avg_pct": 27.7,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 17.0,
+          "avg_pct": 33.2,
+          "avg_duration_s": 127,
+          "subs": 0
         }
       },
       {
@@ -13894,6 +14398,13 @@
           "avg_pct": 47.0,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 11,
+          "watch_min": 10.0,
+          "avg_pct": 36.4,
+          "avg_duration_s": 57,
+          "subs": 0
         }
       },
       {
@@ -13922,6 +14433,13 @@
           "avg_pct": 18.9,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 7.0,
+          "avg_pct": 28.6,
+          "avg_duration_s": 154,
+          "subs": 0
         }
       },
       {
@@ -13936,6 +14454,13 @@
           "avg_pct": 17.9,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 29,
+          "watch_min": 144.0,
+          "avg_pct": 21.6,
+          "avg_duration_s": 299,
+          "subs": 1
         }
       },
       {
@@ -13957,6 +14482,13 @@
           "avg_pct": 10.2,
           "subs": 0,
           "saves": 4
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 1.0,
+          "avg_pct": 0.6,
+          "avg_duration_s": 9,
+          "subs": 0
         }
       },
       {
@@ -13985,6 +14517,13 @@
           "avg_pct": 17.7,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 3.0,
+          "avg_pct": 4.6,
+          "avg_duration_s": 44,
+          "subs": 0
         }
       },
       {
@@ -13999,6 +14538,13 @@
           "avg_pct": 50.3,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 283,
+          "watch_min": 67.0,
+          "avg_pct": 50.9,
+          "avg_duration_s": 9,
+          "subs": 0
         }
       },
       {
@@ -14020,6 +14566,13 @@
           "avg_pct": 11.5,
           "subs": 2,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 21,
+          "watch_min": 64.0,
+          "avg_pct": 10.9,
+          "avg_duration_s": 183,
+          "subs": 2
         }
       },
       {
@@ -14034,6 +14587,13 @@
           "avg_pct": 14.2,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 24,
+          "watch_min": 62.0,
+          "avg_pct": 11.9,
+          "avg_duration_s": 155,
+          "subs": 0
         }
       },
       {
@@ -14048,6 +14608,13 @@
           "avg_pct": 9.5,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 27,
+          "watch_min": 109.0,
+          "avg_pct": 12.5,
+          "avg_duration_s": 243,
+          "subs": 1
         }
       },
       {
@@ -14090,6 +14657,13 @@
           "avg_pct": 8.7,
           "subs": 0,
           "saves": 3
+        },
+        "recent": {
+          "engaged_views": 39,
+          "watch_min": 137.0,
+          "avg_pct": 12.2,
+          "avg_duration_s": 212,
+          "subs": 0
         }
       },
       {
@@ -14111,6 +14685,13 @@
           "avg_pct": 4.5,
           "subs": 2,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 14,
+          "watch_min": 3.0,
+          "avg_pct": 0.8,
+          "avg_duration_s": 16,
+          "subs": 0
         }
       },
       {
@@ -14125,6 +14706,13 @@
           "avg_pct": 20.6,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 46,
+          "watch_min": 150.0,
+          "avg_pct": 27.9,
+          "avg_duration_s": 196,
+          "subs": 0
         }
       },
       {
@@ -14181,6 +14769,13 @@
           "avg_pct": 18.2,
           "subs": 2,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 5.5,
+          "avg_duration_s": 35,
+          "subs": 0
         }
       },
       {
@@ -14209,6 +14804,13 @@
           "avg_pct": 54.4,
           "subs": 1,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 99.6,
+          "avg_duration_s": 52,
+          "subs": 0
         }
       },
       {
@@ -14237,6 +14839,13 @@
           "avg_pct": 59.1,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 1.0,
+          "avg_pct": 69.7,
+          "avg_duration_s": 35,
+          "subs": 0
         }
       },
       {
@@ -14265,6 +14874,13 @@
           "avg_pct": 59.1,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 7,
+          "watch_min": 3.0,
+          "avg_pct": 89.3,
+          "avg_duration_s": 25,
+          "subs": 0
         }
       },
       {
@@ -14279,6 +14895,13 @@
           "avg_pct": 35.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 81,
+          "watch_min": 32.0,
+          "avg_pct": 35.9,
+          "avg_duration_s": 21,
+          "subs": 0
         }
       },
       {
@@ -14293,6 +14916,13 @@
           "avg_pct": 26.7,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 128,
+          "watch_min": 31.0,
+          "avg_pct": 26.7,
+          "avg_duration_s": 11,
+          "subs": 0
         }
       },
       {
@@ -14321,6 +14951,13 @@
           "avg_pct": 74.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 1.0,
+          "avg_pct": 51.5,
+          "avg_duration_s": 44,
+          "subs": 0
         }
       },
       {
@@ -14349,6 +14986,13 @@
           "avg_pct": 47.8,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 2.0,
+          "avg_pct": 82.0,
+          "avg_duration_s": 131,
+          "subs": 0
         }
       },
       {
@@ -14363,6 +15007,13 @@
           "avg_pct": 34.2,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 123,
+          "watch_min": 29.0,
+          "avg_pct": 34.2,
+          "avg_duration_s": 10,
+          "subs": 0
         }
       },
       {
@@ -14391,6 +15042,13 @@
           "avg_pct": 20.5,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 0,
+          "avg_pct": 8.7,
+          "avg_duration_s": 14,
+          "subs": 0
         }
       },
       {
@@ -14419,6 +15077,13 @@
           "avg_pct": 46.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "avg_duration_s": 0,
+          "subs": 0
         }
       },
       {
@@ -14433,6 +15098,13 @@
           "avg_pct": 53.2,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 43,
+          "watch_min": 53.0,
+          "avg_pct": 34.7,
+          "avg_duration_s": 74,
+          "subs": 0
         }
       },
       {
@@ -14461,6 +15133,13 @@
           "avg_pct": 29.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 2.0,
+          "avg_pct": 13.8,
+          "avg_duration_s": 58,
+          "subs": 0
         }
       },
       {
@@ -14475,6 +15154,13 @@
           "avg_pct": 42.8,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 24,
+          "watch_min": 24.0,
+          "avg_pct": 44.1,
+          "avg_duration_s": 60,
+          "subs": 0
         }
       },
       {
@@ -14503,6 +15189,13 @@
           "avg_pct": 16.6,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 7.0,
+          "avg_pct": 16.2,
+          "avg_duration_s": 51,
+          "subs": 0
         }
       },
       {
@@ -14517,6 +15210,13 @@
           "avg_pct": 38.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 61,
+          "watch_min": 21.0,
+          "avg_pct": 38.9,
+          "avg_duration_s": 17,
+          "subs": 0
         }
       },
       {
@@ -14545,6 +15245,13 @@
           "avg_pct": 75.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 23.0,
+          "avg_duration_s": 17,
+          "subs": 0
         }
       },
       {
@@ -14573,6 +15280,13 @@
           "avg_pct": 59.2,
           "subs": 0,
           "saves": 2
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 2.0,
+          "avg_pct": 25.6,
+          "avg_duration_s": 29,
+          "subs": 0
         }
       },
       {
@@ -14601,6 +15315,13 @@
           "avg_pct": 107.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 82.6,
+          "avg_duration_s": 28,
+          "subs": 0
         }
       },
       {
@@ -14615,6 +15336,13 @@
           "avg_pct": 1.0,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 39,
+          "watch_min": 20.0,
+          "avg_pct": 0.9,
+          "avg_duration_s": 31,
+          "subs": 0
         }
       },
       {
@@ -14636,6 +15364,13 @@
           "avg_pct": 37.7,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 1.0,
+          "avg_pct": 159.1,
+          "avg_duration_s": 105,
+          "subs": 0
         }
       },
       {
@@ -14664,6 +15399,13 @@
           "avg_pct": 32.0,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 1.0,
+          "avg_pct": 31.5,
+          "avg_duration_s": 15,
+          "subs": 0
         }
       },
       {
@@ -14720,6 +15462,13 @@
           "avg_pct": 24.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 1.0,
+          "avg_pct": 7.9,
+          "avg_duration_s": 20,
+          "subs": 0
         }
       },
       {
@@ -14748,6 +15497,13 @@
           "avg_pct": 71.7,
           "subs": 1,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 7,
+          "watch_min": 1.0,
+          "avg_pct": 47.8,
+          "avg_duration_s": 10,
+          "subs": 0
         }
       },
       {
@@ -14762,6 +15518,13 @@
           "avg_pct": 48.0,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 38,
+          "watch_min": 15.0,
+          "avg_pct": 47.2,
+          "avg_duration_s": 18,
+          "subs": 0
         }
       },
       {
@@ -14783,6 +15546,13 @@
           "avg_pct": 22.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 2.0,
+          "avg_pct": 68.1,
+          "avg_duration_s": 75,
+          "subs": 0
         }
       },
       {
@@ -14839,6 +15609,13 @@
           "avg_pct": 32.7,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 9,
+          "watch_min": 6.0,
+          "avg_pct": 45.6,
+          "avg_duration_s": 40,
+          "subs": 0
         }
       },
       {
@@ -14853,6 +15630,13 @@
           "avg_pct": 86.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 44,
+          "watch_min": 11.0,
+          "avg_pct": 86.9,
+          "avg_duration_s": 12,
+          "subs": 0
         }
       },
       {
@@ -14867,6 +15651,13 @@
           "avg_pct": 50.3,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 70,
+          "watch_min": 46.0,
+          "avg_pct": 57.7,
+          "avg_duration_s": 39,
+          "subs": 0
         }
       },
       {
@@ -14881,6 +15672,13 @@
           "avg_pct": 30.3,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 55,
+          "watch_min": 11.0,
+          "avg_pct": 30.3,
+          "avg_duration_s": 7,
+          "subs": 0
         }
       },
       {
@@ -14909,6 +15707,13 @@
           "avg_pct": 20.2,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 4.0,
+          "avg_pct": 70.3,
+          "avg_duration_s": 125,
+          "subs": 0
         }
       },
       {
@@ -14923,6 +15728,13 @@
           "avg_pct": 88.0,
           "subs": 1,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 21,
+          "watch_min": 9.0,
+          "avg_pct": 88.0,
+          "avg_duration_s": 20,
+          "subs": 1
         }
       },
       {
@@ -14944,6 +15756,13 @@
           "avg_pct": 67.3,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 2.0,
+          "avg_pct": 70.7,
+          "avg_duration_s": 36,
+          "subs": 0
         }
       },
       {
@@ -14972,6 +15791,13 @@
           "avg_pct": 35.1,
           "subs": 0,
           "saves": 1
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 41.2,
+          "avg_duration_s": 22,
+          "subs": 0
         }
       },
       {
@@ -15000,6 +15826,13 @@
           "avg_pct": 59.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "avg_duration_s": 0,
+          "subs": 0
         }
       },
       {
@@ -15028,6 +15861,13 @@
           "avg_pct": 55.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "avg_duration_s": 0,
+          "subs": 0
         }
       },
       {
@@ -15042,6 +15882,13 @@
           "avg_pct": 61.6,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 12,
+          "watch_min": 7.0,
+          "avg_pct": 61.6,
+          "avg_duration_s": 37,
+          "subs": 0
         }
       },
       {
@@ -15056,6 +15903,13 @@
           "avg_pct": 39.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 36,
+          "watch_min": 15.0,
+          "avg_pct": 41.8,
+          "avg_duration_s": 25,
+          "subs": 1
         }
       },
       {
@@ -15070,6 +15924,13 @@
           "avg_pct": 25.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 23,
+          "watch_min": 7.0,
+          "avg_pct": 25.1,
+          "avg_duration_s": 16,
+          "subs": 0
         }
       },
       {
@@ -15098,6 +15959,13 @@
           "avg_pct": 94.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 2.0,
+          "avg_pct": 137.6,
+          "avg_duration_s": 33,
+          "subs": 0
         }
       },
       {
@@ -15126,6 +15994,13 @@
           "avg_pct": 70.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 2.0,
+          "avg_pct": 183.0,
+          "avg_duration_s": 40,
+          "subs": 0
         }
       },
       {
@@ -15168,6 +16043,13 @@
           "avg_pct": 5.0,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 10,
+          "watch_min": 11.0,
+          "avg_pct": 4.5,
+          "avg_duration_s": 68,
+          "subs": 0
         }
       },
       {
@@ -15182,6 +16064,13 @@
           "avg_pct": 44.5,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 19,
+          "watch_min": 5.0,
+          "avg_pct": 44.5,
+          "avg_duration_s": 15,
+          "subs": 0
         }
       },
       {
@@ -15196,6 +16085,13 @@
           "avg_pct": 17.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 28,
+          "watch_min": 5.0,
+          "avg_pct": 17.1,
+          "avg_duration_s": 6,
+          "subs": 0
         }
       },
       {
@@ -15210,6 +16106,13 @@
           "avg_pct": 19.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 20,
+          "watch_min": 4.0,
+          "avg_pct": 19.4,
+          "avg_duration_s": 10,
+          "subs": 0
         }
       },
       {
@@ -15224,6 +16127,13 @@
           "avg_pct": 33.6,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 10,
+          "watch_min": 4.0,
+          "avg_pct": 33.6,
+          "avg_duration_s": 20,
+          "subs": 0
         }
       },
       {
@@ -15238,6 +16148,13 @@
           "avg_pct": 36.4,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 16,
+          "watch_min": 4.0,
+          "avg_pct": 34.3,
+          "avg_duration_s": 13,
+          "subs": 0
         }
       },
       {
@@ -15252,6 +16169,13 @@
           "avg_pct": 108.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 3.0,
+          "avg_pct": 108.1,
+          "avg_duration_s": 56,
+          "subs": 0
         }
       },
       {
@@ -15266,6 +16190,13 @@
           "avg_pct": 31.6,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 10,
+          "watch_min": 3.0,
+          "avg_pct": 31.6,
+          "avg_duration_s": 15,
+          "subs": 0
         }
       },
       {
@@ -15336,6 +16267,13 @@
           "avg_pct": 39.8,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 2.0,
+          "avg_pct": 39.8,
+          "avg_duration_s": 16,
+          "subs": 0
         }
       },
       {
@@ -15350,6 +16288,13 @@
           "avg_pct": 52.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 13,
+          "watch_min": 2.0,
+          "avg_pct": 52.9,
+          "avg_duration_s": 7,
+          "subs": 0
         }
       },
       {
@@ -15364,6 +16309,13 @@
           "avg_pct": 47.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 2.0,
+          "avg_pct": 53.6,
+          "avg_duration_s": 18,
+          "subs": 0
         }
       },
       {
@@ -15378,6 +16330,13 @@
           "avg_pct": 40.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 8,
+          "watch_min": 3.0,
+          "avg_pct": 60.0,
+          "avg_duration_s": 19,
+          "subs": 0
         }
       },
       {
@@ -15392,6 +16351,13 @@
           "avg_pct": 14.6,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 10,
+          "watch_min": 1.0,
+          "avg_pct": 14.6,
+          "avg_duration_s": 8,
+          "subs": 0
         }
       },
       {
@@ -15406,6 +16372,13 @@
           "avg_pct": 20.9,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 7,
+          "watch_min": 1.0,
+          "avg_pct": 20.9,
+          "avg_duration_s": 8,
+          "subs": 0
         }
       },
       {
@@ -15420,6 +16393,13 @@
           "avg_pct": 26.3,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 1.0,
+          "avg_pct": 26.3,
+          "avg_duration_s": 16,
+          "subs": 0
         }
       },
       {
@@ -15434,6 +16414,13 @@
           "avg_pct": 44.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 3,
+          "watch_min": 1.0,
+          "avg_pct": 44.1,
+          "avg_duration_s": 23,
+          "subs": 0
         }
       },
       {
@@ -15448,6 +16435,13 @@
           "avg_pct": 37.7,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 6,
+          "watch_min": 1.0,
+          "avg_pct": 37.7,
+          "avg_duration_s": 7,
+          "subs": 0
         }
       },
       {
@@ -15462,6 +16456,13 @@
           "avg_pct": 12.8,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 12.8,
+          "avg_duration_s": 9,
+          "subs": 0
         }
       },
       {
@@ -15539,6 +16540,13 @@
           "avg_pct": 53.5,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 53.5,
+          "avg_duration_s": 27,
+          "subs": 0
         }
       },
       {
@@ -15581,6 +16589,13 @@
           "avg_pct": 11.1,
           "subs": 0,
           "saves": 0
+        },
+        "recent": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 11.1,
+          "avg_duration_s": 6,
+          "subs": 0
         }
       },
       {
@@ -15609,6 +16624,118 @@
           "avg_pct": 94.2,
           "subs": 0,
           "saves": 0
+        }
+      },
+      {
+        "video_id": "c7_SmvRDjI8",
+        "title": "How Fin does 1,000,000 A/B Tests in 24 Hours",
+        "published": null,
+        "length_s": 2734,
+        "category": "Podcast episode",
+        "recent": {
+          "engaged_views": 92,
+          "watch_min": 498.0,
+          "avg_pct": 11.8,
+          "avg_duration_s": 323,
+          "subs": 0
+        }
+      },
+      {
+        "video_id": "elJvwWCJ9hk",
+        "title": "Meet the GrowthBook In-App AI Assistant",
+        "published": null,
+        "length_s": 82,
+        "category": "Product long-form",
+        "recent": {
+          "engaged_views": 55,
+          "watch_min": 33.0,
+          "avg_pct": 44.0,
+          "avg_duration_s": 36,
+          "subs": 0
+        }
+      },
+      {
+        "video_id": "A6wLZy0iaow",
+        "title": "Goodhart's Law: The Trap Hiding in Your Best Metric",
+        "published": null,
+        "length_s": 28,
+        "category": "Other short",
+        "recent": {
+          "engaged_views": 68,
+          "watch_min": 22.0,
+          "avg_pct": 57.5,
+          "avg_duration_s": 16,
+          "subs": 0
+        }
+      },
+      {
+        "video_id": "nT_YuogEp8c",
+        "title": "How Cogniteer Built an Experimentation Engine From Scratch",
+        "published": null,
+        "length_s": 2000,
+        "category": "Podcast episode",
+        "recent": {
+          "engaged_views": 16,
+          "watch_min": 16.0,
+          "avg_pct": 3.0,
+          "avg_duration_s": 60,
+          "subs": 1
+        }
+      },
+      {
+        "video_id": "AjU0Exa4KbM",
+        "title": "The One Skill AI Can't Take From Experimentation Teams",
+        "published": null,
+        "length_s": 23,
+        "category": "Other short",
+        "recent": {
+          "engaged_views": 19,
+          "watch_min": 5.0,
+          "avg_pct": 45.0,
+          "avg_duration_s": 10,
+          "subs": 0
+        }
+      },
+      {
+        "video_id": "yZ5DYmbDWE4",
+        "title": "Every shop loses people in the same two places.",
+        "published": null,
+        "length_s": 14,
+        "category": "Other short",
+        "recent": {
+          "engaged_views": 5,
+          "watch_min": 2.0,
+          "avg_pct": 132.7,
+          "avg_duration_s": 18,
+          "subs": 0
+        }
+      },
+      {
+        "video_id": "m-bb0T-7Sl8",
+        "title": "Why B2B and B2C Buyers Need Completely Different Tests",
+        "published": null,
+        "length_s": 25,
+        "category": "Other short",
+        "recent": {
+          "engaged_views": 7,
+          "watch_min": 1.0,
+          "avg_pct": 24.1,
+          "avg_duration_s": 6,
+          "subs": 0
+        }
+      },
+      {
+        "video_id": "hKWvNE3NXas",
+        "title": "The Alignment Problem Behind Every Stalled Testing Program",
+        "published": null,
+        "length_s": 32,
+        "category": "Other short",
+        "recent": {
+          "engaged_views": 4,
+          "watch_min": 0,
+          "avg_pct": 28.4,
+          "avg_duration_s": 9,
+          "subs": 0
         }
       }
     ],
@@ -49106,6 +50233,11 @@
         28,
         90
       ],
+      "recent_window": {
+        "start": "2026-06-25",
+        "end": "2026-07-24",
+        "days": 30
+      },
       "categories_inferred": true
     }
   },
