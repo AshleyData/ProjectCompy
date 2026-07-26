@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 articles covering data engineering, AI observability, and developer tooling topics such as database comparisons and distributed tracing. It targets software engineers, data engineers, and technical practitioners evaluating infrastructure and analytics tools."
+        "summary": "PostHog's blog is a technical content hub of 75 posts covering product analytics, AI observability, database comparisons, and engineering topics, organized by tags and categories. It primarily targets software engineers, product managers, and data practitioners evaluating or using PostHog's platform."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 49 pieces of editorial content\u2014guides, articles, and curated collections\u2014covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and e-commerce practitioners seeking tactical guidance on web experimentation and content management."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and experimentation practitioners looking for tactical, use-case-specific guidance."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Harness's /blog section contains 33 technical blog posts mixing product announcements, how-to guides, and competitive comparisons focused on CI/CD, feature flags, AI-assisted development, and DevOps tooling. It targets DevOps engineers, platform engineers, and engineering leaders evaluating or already using Harness's delivery and deployment platform."
+        "summary": "This is Harness's blog section containing 33 posts that mix product announcements, technical how-to guides, and competitive comparison pieces focused on CI/CD, feature flags, AI-assisted development, and deployment automation. It targets DevOps engineers, platform engineers, and engineering leaders evaluating or already using Harness's software delivery platform."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides, survey-building tools, SDK integration references, heatmaps, and AI features, with the majority of content focused on creating and analyzing in-product guides and surveys. It targets product managers and developers who need implementation and usage instructions for Amplitude's experimentation and user engagement tooling."
+        "summary": "This is a technical documentation section covering Amplitude Experiment's in-product guides, surveys, and related features, targeting product managers and developers who need implementation and usage guidance for tools like surveys, heatmaps, and SDKs."
       }
     ]
   },
@@ -11963,27 +11963,27 @@
       },
       {
         "category": "Other webinar",
-        "videos": 6,
-        "engaged_views": 478,
-        "watch_hours": 42.5,
-        "median_total_watch_min": 382.5,
-        "median_avg_duration_s": 282,
-        "median_pct": 10.5,
-        "subs": 3,
-        "subs_per_1k": 6.3,
-        "saves": 16
+        "videos": 2,
+        "engaged_views": 255,
+        "watch_hours": 26.3,
+        "median_total_watch_min": 790.0,
+        "median_avg_duration_s": 380,
+        "median_pct": 12.5,
+        "subs": 2,
+        "subs_per_1k": 7.8,
+        "saves": 10
       },
       {
         "category": "Product long-form",
-        "videos": 61,
-        "engaged_views": 6659,
-        "watch_hours": 302.4,
+        "videos": 65,
+        "engaged_views": 6882,
+        "watch_hours": 318.6,
         "median_total_watch_min": 201.0,
-        "median_avg_duration_s": 116,
-        "median_pct": 25.2,
-        "subs": 57,
-        "subs_per_1k": 8.6,
-        "saves": 161
+        "median_avg_duration_s": 121,
+        "median_pct": 24.4,
+        "subs": 58,
+        "subs_per_1k": 8.4,
+        "saves": 167
       },
       {
         "category": "Other short",
@@ -12424,7 +12424,7 @@
         "title": "Faster Decisions with Multi-Armed Bandit Experiments",
         "published": "2024-12-13",
         "length_s": 2350,
-        "category": "Other webinar",
+        "category": "Product long-form",
         "day7": {
           "engaged_views": 45,
           "watch_min": 263.0,
@@ -12858,7 +12858,7 @@
         "title": "Feature Bloat Uncovered: How A/B Testing Can Eliminate Wasted Dev Time",
         "published": "2024-11-27",
         "length_s": 2377,
-        "category": "Other webinar",
+        "category": "Product long-form",
         "day7": {
           "engaged_views": 60,
           "watch_min": 204.0,
@@ -13684,7 +13684,7 @@
         "title": "GrowthBook Office Hours Jan 7th 2025",
         "published": "2025-01-09",
         "length_s": 2339,
-        "category": "Other webinar",
+        "category": "Product long-form",
         "day7": {
           "engaged_views": 27,
           "watch_min": 67.0,
@@ -13782,7 +13782,7 @@
         "title": "Building Technical Foundations for Scalable Experimentation",
         "published": "2025-03-31",
         "length_s": 2422,
-        "category": "Other webinar",
+        "category": "Product long-form",
         "day7": {
           "engaged_views": 20,
           "watch_min": 84.0,
