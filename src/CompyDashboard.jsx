@@ -538,8 +538,8 @@ function VideoTab({ video }) {
           Each dot is one video at 28 days old. Rising left-to-right means longer content holds more
           total attention; a flattening curve would mean the extra runtime is wasted.
         </div>
-        <ResponsiveContainer width="100%" height={280}>
-          <ScatterChart margin={{ top: 8, right: 20, bottom: 34, left: 4 }}>
+        <ResponsiveContainer width="100%" height={320}>
+          <ScatterChart margin={{ top: 4, right: 20, bottom: 30, left: 4 }}>
             <CartesianGrid stroke={C.border} />
             <XAxis type="number" dataKey="mins" name="Length" tick={{ fontSize: 11 }} stroke={C.muted}
                    height={44}
@@ -564,7 +564,8 @@ function VideoTab({ video }) {
                 );
               }}
             />
-            <Legend wrapperStyle={{ fontSize: 12 }} />
+            <Legend verticalAlign="top" align="left" height={30}
+                    wrapperStyle={{ fontSize: 12, paddingBottom: 8 }} />
             {Object.keys(VIDEO_CAT_COLORS).map((cat) => {
               const pts = cohort
                 .filter((v) => v.category === cat && v.day28)
