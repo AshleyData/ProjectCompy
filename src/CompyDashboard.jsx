@@ -257,6 +257,43 @@ function VideoRetentionCurve({ video, peerMedian }) {
 // One trend chart with its own Week/Month toggle. The two charts toggle
 // independently on purpose: comparing weekly watch time against monthly views is
 // a legitimate thing to want, and forcing a shared control would prevent it.
+import { Component } from "react";
+
+// A thrown error anywhere in the tree unmounts the WHOLE dashboard and leaves a
+// blank page — which is exactly what one bad reference in the video tab did.
+// Wrapping a tab keeps the failure local: the rest of the dashboard stays usable
+// and the error is visible instead of silent.
+class TabErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+  componentDidCatch(error, info) {
+    console.error(`[${this.props.name || "tab"}] render failed`, error, info);
+  }
+  render() {
+    if (this.state.error) {
+      return (
+        <div style={{ ...card({ padding: 20 }), borderLeft: `4px solid ${C.danger}` }}>
+          <div style={{ fontSize: 14, fontWeight: 700, color: C.danger, marginBottom: 6 }}>
+            This tab failed to render
+          </div>
+          <div style={{ fontSize: 13, color: C.muted, marginBottom: 8 }}>
+            The rest of the dashboard is unaffected. Details are in the browser console.
+          </div>
+          <code style={{ fontSize: 12, color: C.primary, wordBreak: "break-word" }}>
+            {String(this.state.error && this.state.error.message)}
+          </code>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
   const [grain, setGrain] = useState("week");
   const rows = grain === "week"
@@ -1732,7 +1769,11 @@ export default function CompyDashboard() {
         })()}
 
         {/* ── NEW CONTENT ── */}
-        {tab === "gb_youtube" && <VideoTab video={data.video} />}
+        {tab === "gb_youtube" && (
+          <TabErrorBoundary name="GrowthBook YouTube">
+            <VideoTab video={d?.video} />
+          </TabErrorBoundary>
+        )}
 
         {tab === "content" && (<>
           {/* Newly-detected content-section blocks — a competitor hub/section that
