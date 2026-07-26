@@ -253,6 +253,68 @@ function VideoRetentionCurve({ video, peerMedian }) {
   );
 }
 
+
+// One trend chart with its own Week/Month toggle. The two charts toggle
+// independently on purpose: comparing weekly watch time against monthly views is
+// a legitimate thing to want, and forcing a shared control would prevent it.
+function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
+  const [grain, setGrain] = useState("week");
+  const rows = grain === "week"
+    ? weekly.map((t) => ({ label: (t.week_end || "").slice(5), value: t[dataKey] || 0,
+                           full: `week ending ${t.week_end}` }))
+    : monthly.map((m) => ({ label: m.month || "", value: m[dataKey] || 0,
+                            full: m.month }));
+  const span = grain === "week" ? `${weekly.length} weeks` : `${monthly.length} complete months`;
+
+  return (
+    <div style={{ ...card({ padding: 14 }), flex: "1 1 380px", minWidth: 320 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
+                    gap: 10, marginBottom: 8, flexWrap: "wrap" }}>
+        <div>
+          <div style={{ fontSize: 13.5, fontWeight: 700, color: C.primary }}>{title}</div>
+          <div style={{ fontSize: 11, color: C.muted }}>last {span}</div>
+        </div>
+        <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6, overflow: "hidden" }}>
+          {["week", "month"].map((g) => (
+            <button
+              key={g}
+              onClick={() => setGrain(g)}
+              aria-pressed={grain === g}
+              style={{ border: 0, cursor: "pointer", fontSize: 11.5, padding: "5px 11px",
+                       background: grain === g ? C.accent : C.white,
+                       color: grain === g ? C.white : C.muted,
+                       fontWeight: grain === g ? 700 : 400 }}
+            >
+              {g === "week" ? "Weekly" : "Monthly"}
+            </button>
+          ))}
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height={210}>
+        <LineChart data={rows} margin={{ top: 6, right: 14, bottom: 0, left: 0 }}>
+          <CartesianGrid stroke={C.border} vertical={false} />
+          <XAxis dataKey="label" tick={{ fontSize: 10 }} stroke={C.muted}
+                 interval={grain === "week" ? "preserveStartEnd" : 0}
+                 angle={grain === "month" ? -35 : 0}
+                 textAnchor={grain === "month" ? "end" : "middle"}
+                 height={grain === "month" ? 46 : 24} />
+          <YAxis tick={{ fontSize: 10 }} stroke={C.muted}
+                 tickFormatter={(v) => v >= 1000 ? `${Math.round(v / 1000)}k` : v} />
+          <RTooltip
+            formatter={(v) => [format ? format(v) : v.toLocaleString(), title]}
+            labelFormatter={(l) => {
+              const row = rows.find((r) => r.label === l);
+              return row ? row.full : l;
+            }}
+          />
+          <Line type="monotone" dataKey="value" stroke={color} strokeWidth={2}
+                dot={grain === "month" ? { r: 3 } : false} />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
 function VideoTab({ video }) {
   const [selected, setSelected] = useState(null);
   const [showBench, setShowBench] = useState(false);
@@ -269,7 +331,8 @@ function VideoTab({ video }) {
     );
   }
 
-  const { kpi, formats = [], cohort = [], retention = [], benchmarks = [], trend = [], meta = {} } = video;
+  const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
+          trend = [], trend_monthly = [], meta = {} } = video;
 
   // Category median curve, resampled onto the same normalized grid, so a single
   // video can be read against its peers rather than in isolation.
@@ -296,6 +359,14 @@ function VideoTab({ video }) {
 
   return (
     <>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
+        <TrendChart title="Engaged views" weekly={trend} monthly={trend_monthly}
+                    dataKey="engaged_views" color={C.success} />
+        <TrendChart title="Minutes watched" weekly={trend} monthly={trend_monthly}
+                    dataKey="watch_minutes" color={C.accent}
+                    format={(v) => `${v.toLocaleString()} min`} />
+      </div>
+
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
         <MetricCard label="Watch time" value={`${kpi.watch_hours}h`} change={kpi.watch_hours_wow ?? undefined}
                     sub={kpi.week_start ? `week ending ${kpi.week_end}` : undefined} />
@@ -432,37 +503,6 @@ function VideoTab({ video }) {
         </div>
       </Section>
 
-      <Section title="Trend — weekly watch time and engaged views">
-        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          Two charts rather than one with two axes: the scales are unrelated, and overlaying them
-          would imply a correlation that is not in the data.
-        </div>
-        <div style={{ ...card({ padding: 12, marginBottom: 12 }) }}>
-          <div style={{ fontSize: 12, fontWeight: 600, color: C.primary, marginBottom: 4 }}>Watch hours per week</div>
-          <ResponsiveContainer width="100%" height={170}>
-            <LineChart data={trendData} margin={{ top: 6, right: 16, bottom: 0, left: 0 }}>
-              <CartesianGrid stroke={C.border} vertical={false} />
-              <XAxis dataKey="week" tick={{ fontSize: 10 }} stroke={C.muted} interval="preserveStartEnd" />
-              <YAxis tick={{ fontSize: 10 }} stroke={C.muted} />
-              <RTooltip formatter={(v) => [`${v}h`, "Watch time"]} />
-              <Line type="monotone" dataKey="hours" stroke={C.accent} strokeWidth={2} dot={false} />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-        <div style={{ ...card({ padding: 12 }) }}>
-          <div style={{ fontSize: 12, fontWeight: 600, color: C.primary, marginBottom: 4 }}>Engaged views per week</div>
-          <ResponsiveContainer width="100%" height={170}>
-            <LineChart data={trendData} margin={{ top: 6, right: 16, bottom: 0, left: 0 }}>
-              <CartesianGrid stroke={C.border} vertical={false} />
-              <XAxis dataKey="week" tick={{ fontSize: 10 }} stroke={C.muted} interval="preserveStartEnd" />
-              <YAxis tick={{ fontSize: 10 }} stroke={C.muted} />
-              <RTooltip formatter={(v) => [v.toLocaleString(), "Engaged views"]} />
-              <Line type="monotone" dataKey="engaged" stroke={C.success} strokeWidth={2} dot={false} />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-      </Section>
-
       <Section title="Reference — what good looks like at each length">
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
           Our own day-28 medians. Judge a video against its band, never against a flat number:
@@ -496,6 +536,7 @@ const PRIMARY_TABS = [
   { id: "strategy", label: "🧭 Strategy" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
   { id: "summary", label: "📊 Summary" },
+  { id: "gb_youtube", label: "🎬 GrowthBook YouTube" },
 ];
 const MORE_TABS = [
   { id: "ai_visibility", label: "🔎 AI Visibility" },
@@ -503,7 +544,6 @@ const MORE_TABS = [
   { id: "competitors", label: "🏁 Competitors" },
   { id: "gsc", label: "📈 GSC Detail" },
   { id: "youtube", label: "▶️ YouTube" },
-  { id: "our_videos", label: "🎬 Our Videos" },
   { id: "content", label: "🆕 New Content" },
   { id: "etv_kd", label: "📉 ETV vs KD" },
   { id: "growthbook", label: "📗 GrowthBook" },
@@ -1692,7 +1732,7 @@ export default function CompyDashboard() {
         })()}
 
         {/* ── NEW CONTENT ── */}
-        {tab === "our_videos" && <VideoTab video={data.video} />}
+        {tab === "gb_youtube" && <VideoTab video={data.video} />}
 
         {tab === "content" && (<>
           {/* Newly-detected content-section blocks — a competitor hub/section that

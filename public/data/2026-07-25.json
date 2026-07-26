@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 posts covering engineering topics such as database comparisons, AI observability, and tracing, organized by tags and categories. It targets software engineers, developers, and technical decision-makers evaluating data infrastructure and product analytics tooling."
+        "summary": "PostHog's blog is a technical content hub of 75 articles covering product analytics, AI observability, database comparisons, and engineering topics, primarily targeting software engineers and developers building or evaluating data infrastructure and analytics tooling. It is organized by tags and categories, indicating a structured effort to capture search traffic across developer-focused technical queries."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 49 pieces of editorial content\u2014guides, articles, and curated collections\u2014covering experimentation strategies, CMS selection and migration, and AI-driven marketing topics. It targets digital marketers, content managers, and growth teams looking for tactical advice on web optimization and content operations."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and experimentation practitioners looking for tactical, use-case-specific guidance."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Harness's editorial blog targeting DevOps engineers, platform engineers, and developer productivity leaders with a mix of technical how-to guides, product announcements, and competitive positioning content. It covers topics such as CI/CD pipelines, feature flags, AI-assisted development workflows, and policy/compliance tooling."
+        "summary": "Harness's /blog section contains 33 technical and product-focused articles covering DevOps practices, CI/CD pipeline guidance, feature flag implementation, and product announcements. It targets DevOps engineers, platform engineers, and developer tooling decision-makers, with content that also serves a competitive positioning purpose against tools like Argo CD."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Amplitude Experiment's technical documentation section covering product guides, surveys, SDK integration references, heatmaps, and AI features, targeting developers and product managers who need implementation instructions and feature walkthroughs. The content is heavily weighted toward in-product guides and survey-building workflows, suggesting these are core or newer capabilities requiring structured onboarding support."
+        "summary": "This is Amplitude Experiment's technical documentation hub, covering product guides, surveys, SDKs, heatmaps, and AI features across 21 pages. It targets product managers, developers, and UX researchers who need implementation and usage references for Amplitude's experimentation and feedback tools."
       }
     ]
   },
@@ -45242,6 +45242,92 @@
         "engaged_views": 1119,
         "raw_views": 1588,
         "watch_minutes": 3180
+      }
+    ],
+    "trend_monthly": [
+      {
+        "month": "2025-07",
+        "engaged_views": 2130,
+        "raw_views": 2868,
+        "watch_minutes": 5088,
+        "subs_gained": 22
+      },
+      {
+        "month": "2025-08",
+        "engaged_views": 1811,
+        "raw_views": 1836,
+        "watch_minutes": 5873,
+        "subs_gained": 15
+      },
+      {
+        "month": "2025-09",
+        "engaged_views": 1702,
+        "raw_views": 1732,
+        "watch_minutes": 5745,
+        "subs_gained": 21
+      },
+      {
+        "month": "2025-10",
+        "engaged_views": 1950,
+        "raw_views": 1981,
+        "watch_minutes": 5686,
+        "subs_gained": 17
+      },
+      {
+        "month": "2025-11",
+        "engaged_views": 1299,
+        "raw_views": 1330,
+        "watch_minutes": 3860,
+        "subs_gained": 13
+      },
+      {
+        "month": "2025-12",
+        "engaged_views": 1229,
+        "raw_views": 1252,
+        "watch_minutes": 3844,
+        "subs_gained": 19
+      },
+      {
+        "month": "2026-01",
+        "engaged_views": 1712,
+        "raw_views": 1749,
+        "watch_minutes": 5107,
+        "subs_gained": 12
+      },
+      {
+        "month": "2026-02",
+        "engaged_views": 1581,
+        "raw_views": 1614,
+        "watch_minutes": 6291,
+        "subs_gained": 18
+      },
+      {
+        "month": "2026-03",
+        "engaged_views": 3753,
+        "raw_views": 6520,
+        "watch_minutes": 11880,
+        "subs_gained": 34
+      },
+      {
+        "month": "2026-04",
+        "engaged_views": 4330,
+        "raw_views": 6866,
+        "watch_minutes": 9180,
+        "subs_gained": 30
+      },
+      {
+        "month": "2026-05",
+        "engaged_views": 1951,
+        "raw_views": 2239,
+        "watch_minutes": 6786,
+        "subs_gained": 23
+      },
+      {
+        "month": "2026-06",
+        "engaged_views": 2292,
+        "raw_views": 2515,
+        "watch_minutes": 7949,
+        "subs_gained": 28
       }
     ],
     "meta": {
