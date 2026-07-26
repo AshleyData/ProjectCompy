@@ -191,6 +191,8 @@ function OpportunityBadge({ opp }) {
 const VIDEO_CAT_COLORS = {
   "Podcast episode": C.primary,
   "Podcast clip": C.warning,
+  "Kohavi webinar": "#6C3483",
+  "Other webinar": "#16A085",
   "Product long-form": C.success,
   "Other short": C.muted,
 };

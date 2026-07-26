@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub containing 75 posts covering engineering and product analytics topics such as database comparisons, AI observability, and tracing, organized across 15 tags and 3 categories. It targets software engineers, data engineers, and technical product managers evaluating tools or seeking implementation guidance."
+        "summary": "PostHog's blog is a technical content hub of 75 articles covering data engineering, AI observability, and developer tooling topics such as database comparisons and distributed tracing. It targets software engineers, data engineers, and technical practitioners evaluating infrastructure and analytics tools."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 49 pieces of editorial content\u2014guides, articles, and curated collections\u2014covering topics like CMS selection and migration, AI-driven experimentation, and ABM strategy. It targets digital marketers, content operations teams, and experimentation practitioners looking for actionable, use-case-specific guidance."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 49 pieces of editorial content\u2014guides, articles, and curated collections\u2014covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and e-commerce practitioners seeking tactical guidance on web experimentation and content management."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Harness's engineering and product blog targeting DevOps engineers, platform engineers, and CI/CD practitioners with a mix of technical how-to guides, product announcements, and competitive comparison content. It focuses on topics like feature flags, AI-driven release automation, policy enforcement, and deployment pipelines, positioning Harness capabilities against alternatives such as Argo CD."
+        "summary": "Harness's /blog section contains 33 technical blog posts mixing product announcements, how-to guides, and competitive comparisons focused on CI/CD, feature flags, AI-assisted development, and DevOps tooling. It targets DevOps engineers, platform engineers, and engineering leaders evaluating or already using Harness's delivery and deployment platform."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides, in-app surveys, SDKs, heatmaps, and AI features, with 15 of 21 pages focused on guides and surveys. It targets product managers and developers who need implementation instructions and feature references for Amplitude's experimentation and user feedback tools."
+        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides, survey-building tools, SDK integration references, heatmaps, and AI features, with the majority of content focused on creating and analyzing in-product guides and surveys. It targets product managers and developers who need implementation and usage instructions for Amplitude's experimentation and user engagement tooling."
       }
     ]
   },
@@ -11950,27 +11950,51 @@
         "saves": 0
       },
       {
+        "category": "Kohavi webinar",
+        "videos": 1,
+        "engaged_views": 576,
+        "watch_hours": 63.9,
+        "median_total_watch_min": 3833.0,
+        "median_avg_duration_s": 399,
+        "median_pct": 11.3,
+        "subs": 17,
+        "subs_per_1k": 29.5,
+        "saves": 26
+      },
+      {
+        "category": "Other webinar",
+        "videos": 6,
+        "engaged_views": 478,
+        "watch_hours": 42.5,
+        "median_total_watch_min": 382.5,
+        "median_avg_duration_s": 282,
+        "median_pct": 10.5,
+        "subs": 3,
+        "subs_per_1k": 6.3,
+        "saves": 16
+      },
+      {
         "category": "Product long-form",
-        "videos": 58,
-        "engaged_views": 7350,
-        "watch_hours": 387.2,
-        "median_total_watch_min": 256.5,
-        "median_avg_duration_s": 128,
-        "median_pct": 23.0,
-        "subs": 76,
-        "subs_per_1k": 10.3,
-        "saves": 201
+        "videos": 61,
+        "engaged_views": 6659,
+        "watch_hours": 302.4,
+        "median_total_watch_min": 201.0,
+        "median_avg_duration_s": 116,
+        "median_pct": 25.2,
+        "subs": 57,
+        "subs_per_1k": 8.6,
+        "saves": 161
       },
       {
         "category": "Other short",
-        "videos": 8,
-        "engaged_views": 766,
-        "watch_hours": 5.8,
-        "median_total_watch_min": 24.0,
+        "videos": 12,
+        "engaged_views": 940,
+        "watch_hours": 6.9,
+        "median_total_watch_min": 19.0,
         "median_avg_duration_s": 15,
-        "median_pct": 45.0,
-        "subs": 1,
-        "subs_per_1k": 1.3,
+        "median_pct": 41.0,
+        "subs": 2,
+        "subs_per_1k": 2.1,
         "saves": 1
       }
     ],
@@ -11980,7 +12004,7 @@
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
         "published": "2026-03-03",
         "length_s": 3525,
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "day7": {
           "engaged_views": 245,
           "watch_min": 1965.0,
@@ -12036,7 +12060,7 @@
         "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
         "published": "2026-07-16",
         "length_s": 3570,
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "day7": {
           "engaged_views": 223,
           "watch_min": 1179.0,
@@ -12183,7 +12207,7 @@
         "title": "How Khan Academy Became a Leader in A/B Testing AI for Better Education",
         "published": "2026-04-17",
         "length_s": 2971,
-        "category": "Product long-form",
+        "category": "Other webinar",
         "day7": {
           "engaged_views": 89,
           "watch_min": 531.0,
@@ -12232,6 +12256,27 @@
           "avg_pct": 11.2,
           "subs": 1,
           "saves": 2
+        }
+      },
+      {
+        "video_id": "Ji_Bz3iNO_Y",
+        "title": "How an AI start-up experiments at scale using GrowthBook",
+        "published": "2026-06-18",
+        "length_s": 3091,
+        "category": "Other webinar",
+        "day7": {
+          "engaged_views": 53,
+          "watch_min": 361.0,
+          "avg_pct": 13.2,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 106,
+          "watch_min": 762.0,
+          "avg_pct": 14.0,
+          "subs": 1,
+          "saves": 0
         }
       },
       {
@@ -12379,7 +12424,7 @@
         "title": "Faster Decisions with Multi-Armed Bandit Experiments",
         "published": "2024-12-13",
         "length_s": 2350,
-        "category": "Product long-form",
+        "category": "Other webinar",
         "day7": {
           "engaged_views": 45,
           "watch_min": 263.0,
@@ -12813,7 +12858,7 @@
         "title": "Feature Bloat Uncovered: How A/B Testing Can Eliminate Wasted Dev Time",
         "published": "2024-11-27",
         "length_s": 2377,
-        "category": "Product long-form",
+        "category": "Other webinar",
         "day7": {
           "engaged_views": 60,
           "watch_min": 204.0,
@@ -12862,6 +12907,27 @@
           "avg_pct": 24.9,
           "subs": 6,
           "saves": 6
+        }
+      },
+      {
+        "video_id": "Ijo7W0L-oLo",
+        "title": "Introducing GrowthBook's NEW AI-based Visual Editor",
+        "published": "2026-06-22",
+        "length_s": 1618,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 30,
+          "watch_min": 203.0,
+          "avg_pct": 25.1,
+          "subs": 0,
+          "saves": 1
+        },
+        "day28": {
+          "engaged_views": 41,
+          "watch_min": 269.0,
+          "avg_pct": 24.4,
+          "subs": 0,
+          "saves": 1
         }
       },
       {
@@ -13586,11 +13652,39 @@
         }
       },
       {
+        "video_id": "3cMq9EsdGro",
+        "title": "Introducing WebLens - AI powered A/B testing ideas for your website",
+        "published": "2024-08-08",
+        "length_s": 98,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 100,
+          "watch_min": 111.0,
+          "avg_pct": 68.1,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 107,
+          "watch_min": 112.0,
+          "avg_pct": 64.4,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 109,
+          "watch_min": 114.0,
+          "avg_pct": 64.2,
+          "subs": 1,
+          "saves": 0
+        }
+      },
+      {
         "video_id": "eeYwwlEdJWs",
         "title": "GrowthBook Office Hours Jan 7th 2025",
         "published": "2025-01-09",
         "length_s": 2339,
-        "category": "Product long-form",
+        "category": "Other webinar",
         "day7": {
           "engaged_views": 27,
           "watch_min": 67.0,
@@ -13688,7 +13782,7 @@
         "title": "Building Technical Foundations for Scalable Experimentation",
         "published": "2025-03-31",
         "length_s": 2422,
-        "category": "Product long-form",
+        "category": "Other webinar",
         "day7": {
           "engaged_views": 20,
           "watch_min": 84.0,
@@ -13779,6 +13873,27 @@
           "avg_pct": 27.7,
           "subs": 0,
           "saves": 1
+        }
+      },
+      {
+        "video_id": "zPppjh_tLwk",
+        "title": "Demo of GrowthBook's New Visual Editor.",
+        "published": "2026-06-07",
+        "length_s": 159,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 38,
+          "watch_min": 47.0,
+          "avg_pct": 47.5,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 61,
+          "watch_min": 75.0,
+          "avg_pct": 47.0,
+          "subs": 0,
+          "saves": 0
         }
       },
       {
@@ -13936,6 +14051,34 @@
         }
       },
       {
+        "video_id": "FRH8V0thvZk",
+        "title": "A/B Testing Has Been a Game Changer for Gen AI at Khan Academy",
+        "published": "2026-04-17",
+        "length_s": 53,
+        "category": "Other short",
+        "day7": {
+          "engaged_views": 154,
+          "watch_min": 60.0,
+          "avg_pct": 40.2,
+          "subs": 1,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 154,
+          "watch_min": 60.0,
+          "avg_pct": 40.2,
+          "subs": 1,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 154,
+          "watch_min": 60.0,
+          "avg_pct": 40.2,
+          "subs": 1,
+          "saves": 0
+        }
+      },
+      {
         "video_id": "S1XTumUEl0U",
         "title": "What the Expedia Group cannot measure, it cannot ship",
         "published": "2026-07-01",
@@ -13982,6 +14125,34 @@
           "avg_pct": 20.6,
           "subs": 0,
           "saves": 1
+        }
+      },
+      {
+        "video_id": "xfh8a7WW0OQ",
+        "title": "Automattic Longer Demo",
+        "published": "2025-10-06",
+        "length_s": 1342,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 0.9,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 4,
+          "watch_min": 46.0,
+          "avg_pct": 52.5,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 5,
+          "watch_min": 47.0,
+          "avg_pct": 42.7,
+          "subs": 0,
+          "saves": 0
         }
       },
       {
@@ -14251,6 +14422,20 @@
         }
       },
       {
+        "video_id": "0BVj4auhC-g",
+        "title": "GrowthBook Client Side Visual Editor Demo",
+        "published": "2026-06-27",
+        "length_s": 214,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 15,
+          "watch_min": 28.0,
+          "avg_pct": 53.2,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
         "video_id": "PuVljNcC8Es",
         "title": "Feature Evaluation Diagnostics: Debug Feature Flag Targeting w/ Real Production Data | GrowthBook",
         "published": "2026-03-30",
@@ -14482,6 +14667,34 @@
         }
       },
       {
+        "video_id": "68fnbg-yfKc",
+        "title": "Quick Demo for Automattic",
+        "published": "2025-10-06",
+        "length_s": 435,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 6,
+          "watch_min": 18.0,
+          "avg_pct": 41.7,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 6,
+          "watch_min": 18.0,
+          "avg_pct": 41.7,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 6,
+          "watch_min": 18.0,
+          "avg_pct": 41.7,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
         "video_id": "2y1LDl9KTLQ",
         "title": "Advanced Feature Flag Targeting with Nested Saved Groups | GrowthBook",
         "published": "2026-03-30",
@@ -14570,6 +14783,34 @@
           "avg_pct": 22.1,
           "subs": 0,
           "saves": 0
+        }
+      },
+      {
+        "video_id": "xX-msKAzpDU",
+        "title": "Why Khan Academy Chose GrowthBook",
+        "published": "2026-04-17",
+        "length_s": 75,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 31,
+          "watch_min": 14.0,
+          "avg_pct": 35.9,
+          "subs": 0,
+          "saves": 1
+        },
+        "day28": {
+          "engaged_views": 31,
+          "watch_min": 14.0,
+          "avg_pct": 35.9,
+          "subs": 0,
+          "saves": 1
+        },
+        "day90": {
+          "engaged_views": 32,
+          "watch_min": 14.0,
+          "avg_pct": 35.0,
+          "subs": 0,
+          "saves": 1
         }
       },
       {
@@ -14888,6 +15129,48 @@
         }
       },
       {
+        "video_id": "O93e1d9WO9A",
+        "title": "Ho do you measure if an AI tutor is actually teaching?",
+        "published": "2026-04-17",
+        "length_s": 52,
+        "category": "Other short",
+        "day7": {
+          "engaged_views": 19,
+          "watch_min": 7.0,
+          "avg_pct": 44.0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 20,
+          "watch_min": 7.0,
+          "avg_pct": 41.8,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 20,
+          "watch_min": 7.0,
+          "avg_pct": 41.8,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "2L82F8JuMvo",
+        "title": "GrowthBook On-Demand Demo | Complete Platform Walkthrough",
+        "published": "2026-07-13",
+        "length_s": 1516,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 5,
+          "watch_min": 6.0,
+          "avg_pct": 5.0,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
         "video_id": "dEZcIt8dcaE",
         "title": "The Golden Rule, According to Home Depot, for Measuring Real Impact",
         "published": "2026-07-15",
@@ -15009,6 +15292,34 @@
           "engaged_views": 9,
           "watch_min": 3.0,
           "avg_pct": 35.2,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "97iyjHtUrHE",
+        "title": "GrowthBook intro & demo & FAQ 2025",
+        "published": "2026-03-12",
+        "length_s": 973,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 6,
+          "watch_min": 3.0,
+          "avg_pct": 4.1,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 9,
+          "watch_min": 20.0,
+          "avg_pct": 14.3,
           "subs": 0,
           "saves": 0
         }
@@ -15177,6 +15488,125 @@
           "engaged_views": 1,
           "watch_min": 0,
           "avg_pct": 11.6,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "09pFmKMJ15w",
+        "title": "Visual Editor Demo for Figma",
+        "published": "2026-06-22",
+        "length_s": 216,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 11.1,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 11.1,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "joKcqb6fSqI",
+        "title": "search filters 1",
+        "published": "2026-04-08",
+        "length_s": 51,
+        "category": "Other short",
+        "day7": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 53.5,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "QzQkeKVa8is",
+        "title": "MCP create experiment simple demo",
+        "published": "2025-07-15",
+        "length_s": 217,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 4,
+          "watch_min": 6.0,
+          "avg_pct": 47.4,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "dH3ErWKc9fE",
+        "title": "A preview of Trustworthy A/B Testing",
+        "published": "2026-07-14",
+        "length_s": 61,
+        "category": "Product long-form",
+        "day7": {
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 11.1,
+          "subs": 0,
+          "saves": 0
+        }
+      },
+      {
+        "video_id": "V7MbnbLcVvQ",
+        "title": "visual editor video",
+        "published": "2026-04-08",
+        "length_s": 10,
+        "category": "Other short",
+        "day7": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day28": {
+          "engaged_views": 0,
+          "watch_min": 0,
+          "avg_pct": 0,
+          "subs": 0,
+          "saves": 0
+        },
+        "day90": {
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 94.2,
           "subs": 0,
           "saves": 0
         }
@@ -18132,6 +18562,418 @@
         ]
       },
       {
+        "video_id": "FRH8V0thvZk",
+        "title": "A/B Testing Has Been a Game Changer for Gen AI at Khan Academy",
+        "category": "Other short",
+        "length_s": 53,
+        "hook_30s": 0.279,
+        "ret_25": 0.5065,
+        "ret_50": 0.3117,
+        "ret_75": 0.2143,
+        "curve": [
+          [
+            0.01,
+            1.1558
+          ],
+          [
+            0.02,
+            1.1429
+          ],
+          [
+            0.03,
+            1.1299
+          ],
+          [
+            0.04,
+            1.1234
+          ],
+          [
+            0.05,
+            1.1234
+          ],
+          [
+            0.06,
+            1.1104
+          ],
+          [
+            0.07,
+            1.1039
+          ],
+          [
+            0.08,
+            1.0974
+          ],
+          [
+            0.09,
+            1.0455
+          ],
+          [
+            0.1,
+            0.9675
+          ],
+          [
+            0.11,
+            0.8896
+          ],
+          [
+            0.12,
+            0.8117
+          ],
+          [
+            0.13,
+            0.7597
+          ],
+          [
+            0.14,
+            0.7208
+          ],
+          [
+            0.15,
+            0.6818
+          ],
+          [
+            0.16,
+            0.6753
+          ],
+          [
+            0.17,
+            0.6558
+          ],
+          [
+            0.18,
+            0.6364
+          ],
+          [
+            0.19,
+            0.6104
+          ],
+          [
+            0.2,
+            0.5909
+          ],
+          [
+            0.21,
+            0.5779
+          ],
+          [
+            0.22,
+            0.5519
+          ],
+          [
+            0.23,
+            0.5325
+          ],
+          [
+            0.24,
+            0.5325
+          ],
+          [
+            0.25,
+            0.5065
+          ],
+          [
+            0.26,
+            0.487
+          ],
+          [
+            0.27,
+            0.4805
+          ],
+          [
+            0.28,
+            0.4805
+          ],
+          [
+            0.29,
+            0.4481
+          ],
+          [
+            0.3,
+            0.4416
+          ],
+          [
+            0.31,
+            0.4221
+          ],
+          [
+            0.32,
+            0.4156
+          ],
+          [
+            0.33,
+            0.3896
+          ],
+          [
+            0.34,
+            0.3766
+          ],
+          [
+            0.35,
+            0.3571
+          ],
+          [
+            0.36,
+            0.3571
+          ],
+          [
+            0.37,
+            0.3571
+          ],
+          [
+            0.38,
+            0.3571
+          ],
+          [
+            0.39,
+            0.3571
+          ],
+          [
+            0.4,
+            0.3506
+          ],
+          [
+            0.41,
+            0.3506
+          ],
+          [
+            0.42,
+            0.3506
+          ],
+          [
+            0.43,
+            0.3506
+          ],
+          [
+            0.44,
+            0.3506
+          ],
+          [
+            0.45,
+            0.3312
+          ],
+          [
+            0.46,
+            0.3312
+          ],
+          [
+            0.47,
+            0.3312
+          ],
+          [
+            0.48,
+            0.3247
+          ],
+          [
+            0.49,
+            0.3117
+          ],
+          [
+            0.5,
+            0.3117
+          ],
+          [
+            0.51,
+            0.3117
+          ],
+          [
+            0.52,
+            0.3117
+          ],
+          [
+            0.53,
+            0.3117
+          ],
+          [
+            0.54,
+            0.3117
+          ],
+          [
+            0.55,
+            0.2922
+          ],
+          [
+            0.56,
+            0.2857
+          ],
+          [
+            0.57,
+            0.2792
+          ],
+          [
+            0.58,
+            0.2662
+          ],
+          [
+            0.59,
+            0.2662
+          ],
+          [
+            0.6,
+            0.2532
+          ],
+          [
+            0.61,
+            0.2403
+          ],
+          [
+            0.62,
+            0.2403
+          ],
+          [
+            0.63,
+            0.2403
+          ],
+          [
+            0.64,
+            0.2403
+          ],
+          [
+            0.65,
+            0.2338
+          ],
+          [
+            0.66,
+            0.2338
+          ],
+          [
+            0.67,
+            0.2273
+          ],
+          [
+            0.68,
+            0.2273
+          ],
+          [
+            0.69,
+            0.2208
+          ],
+          [
+            0.7,
+            0.2143
+          ],
+          [
+            0.71,
+            0.2143
+          ],
+          [
+            0.72,
+            0.2143
+          ],
+          [
+            0.73,
+            0.2143
+          ],
+          [
+            0.74,
+            0.2143
+          ],
+          [
+            0.75,
+            0.2143
+          ],
+          [
+            0.76,
+            0.2078
+          ],
+          [
+            0.77,
+            0.2078
+          ],
+          [
+            0.78,
+            0.2078
+          ],
+          [
+            0.79,
+            0.2078
+          ],
+          [
+            0.8,
+            0.2013
+          ],
+          [
+            0.81,
+            0.1948
+          ],
+          [
+            0.82,
+            0.1818
+          ],
+          [
+            0.83,
+            0.1818
+          ],
+          [
+            0.84,
+            0.1753
+          ],
+          [
+            0.85,
+            0.1753
+          ],
+          [
+            0.86,
+            0.1753
+          ],
+          [
+            0.87,
+            0.1688
+          ],
+          [
+            0.88,
+            0.1688
+          ],
+          [
+            0.89,
+            0.1688
+          ],
+          [
+            0.9,
+            0.1688
+          ],
+          [
+            0.91,
+            0.1688
+          ],
+          [
+            0.92,
+            0.1688
+          ],
+          [
+            0.93,
+            0.1688
+          ],
+          [
+            0.94,
+            0.1688
+          ],
+          [
+            0.95,
+            0.1623
+          ],
+          [
+            0.96,
+            0.1623
+          ],
+          [
+            0.97,
+            0.1623
+          ],
+          [
+            0.98,
+            0.1623
+          ],
+          [
+            0.99,
+            0.1623
+          ],
+          [
+            1.0,
+            0.1558
+          ]
+        ]
+      },
+      {
         "video_id": "t0XOfWDdOkY",
         "title": "DoorDash Saved Thousands of Subscribers With 1 Experiment",
         "category": "Product long-form",
@@ -18544,6 +19386,418 @@
         ]
       },
       {
+        "video_id": "xX-msKAzpDU",
+        "title": "Why Khan Academy Chose GrowthBook",
+        "category": "Product long-form",
+        "length_s": 75,
+        "hook_30s": 0.281,
+        "ret_25": 0.2813,
+        "ret_50": 0.2813,
+        "ret_75": 0.2188,
+        "curve": [
+          [
+            0.01,
+            1.1875
+          ],
+          [
+            0.02,
+            1.1875
+          ],
+          [
+            0.03,
+            1.1875
+          ],
+          [
+            0.04,
+            1.1875
+          ],
+          [
+            0.05,
+            1.1875
+          ],
+          [
+            0.06,
+            1.1875
+          ],
+          [
+            0.07,
+            1.125
+          ],
+          [
+            0.08,
+            0.9375
+          ],
+          [
+            0.09,
+            0.8438
+          ],
+          [
+            0.1,
+            0.8125
+          ],
+          [
+            0.11,
+            0.6563
+          ],
+          [
+            0.12,
+            0.5938
+          ],
+          [
+            0.13,
+            0.5313
+          ],
+          [
+            0.14,
+            0.5313
+          ],
+          [
+            0.15,
+            0.5313
+          ],
+          [
+            0.16,
+            0.5
+          ],
+          [
+            0.17,
+            0.5
+          ],
+          [
+            0.18,
+            0.4375
+          ],
+          [
+            0.19,
+            0.4063
+          ],
+          [
+            0.2,
+            0.4063
+          ],
+          [
+            0.21,
+            0.4063
+          ],
+          [
+            0.22,
+            0.3438
+          ],
+          [
+            0.23,
+            0.2813
+          ],
+          [
+            0.24,
+            0.2813
+          ],
+          [
+            0.25,
+            0.2813
+          ],
+          [
+            0.26,
+            0.2813
+          ],
+          [
+            0.27,
+            0.2813
+          ],
+          [
+            0.28,
+            0.2813
+          ],
+          [
+            0.29,
+            0.2813
+          ],
+          [
+            0.3,
+            0.2813
+          ],
+          [
+            0.31,
+            0.2813
+          ],
+          [
+            0.32,
+            0.3125
+          ],
+          [
+            0.33,
+            0.2813
+          ],
+          [
+            0.34,
+            0.2813
+          ],
+          [
+            0.35,
+            0.2813
+          ],
+          [
+            0.36,
+            0.2813
+          ],
+          [
+            0.37,
+            0.2813
+          ],
+          [
+            0.38,
+            0.2813
+          ],
+          [
+            0.39,
+            0.2813
+          ],
+          [
+            0.4,
+            0.2813
+          ],
+          [
+            0.41,
+            0.2813
+          ],
+          [
+            0.42,
+            0.2813
+          ],
+          [
+            0.43,
+            0.2813
+          ],
+          [
+            0.44,
+            0.2813
+          ],
+          [
+            0.45,
+            0.2813
+          ],
+          [
+            0.46,
+            0.2813
+          ],
+          [
+            0.47,
+            0.2813
+          ],
+          [
+            0.48,
+            0.2813
+          ],
+          [
+            0.49,
+            0.2813
+          ],
+          [
+            0.5,
+            0.2813
+          ],
+          [
+            0.51,
+            0.2813
+          ],
+          [
+            0.52,
+            0.2813
+          ],
+          [
+            0.53,
+            0.25
+          ],
+          [
+            0.54,
+            0.25
+          ],
+          [
+            0.55,
+            0.25
+          ],
+          [
+            0.56,
+            0.25
+          ],
+          [
+            0.57,
+            0.25
+          ],
+          [
+            0.58,
+            0.25
+          ],
+          [
+            0.59,
+            0.25
+          ],
+          [
+            0.6,
+            0.25
+          ],
+          [
+            0.61,
+            0.25
+          ],
+          [
+            0.62,
+            0.2813
+          ],
+          [
+            0.63,
+            0.25
+          ],
+          [
+            0.64,
+            0.25
+          ],
+          [
+            0.65,
+            0.25
+          ],
+          [
+            0.66,
+            0.25
+          ],
+          [
+            0.67,
+            0.25
+          ],
+          [
+            0.68,
+            0.2188
+          ],
+          [
+            0.69,
+            0.2188
+          ],
+          [
+            0.7,
+            0.2188
+          ],
+          [
+            0.71,
+            0.2188
+          ],
+          [
+            0.72,
+            0.2188
+          ],
+          [
+            0.73,
+            0.2188
+          ],
+          [
+            0.74,
+            0.2188
+          ],
+          [
+            0.75,
+            0.2188
+          ],
+          [
+            0.76,
+            0.2188
+          ],
+          [
+            0.77,
+            0.2188
+          ],
+          [
+            0.78,
+            0.2188
+          ],
+          [
+            0.79,
+            0.2188
+          ],
+          [
+            0.8,
+            0.2188
+          ],
+          [
+            0.81,
+            0.2188
+          ],
+          [
+            0.82,
+            0.25
+          ],
+          [
+            0.83,
+            0.2188
+          ],
+          [
+            0.84,
+            0.1875
+          ],
+          [
+            0.85,
+            0.1875
+          ],
+          [
+            0.86,
+            0.1875
+          ],
+          [
+            0.87,
+            0.1875
+          ],
+          [
+            0.88,
+            0.1875
+          ],
+          [
+            0.89,
+            0.1875
+          ],
+          [
+            0.9,
+            0.1875
+          ],
+          [
+            0.91,
+            0.1875
+          ],
+          [
+            0.92,
+            0.1875
+          ],
+          [
+            0.93,
+            0.1875
+          ],
+          [
+            0.94,
+            0.1875
+          ],
+          [
+            0.95,
+            0.2188
+          ],
+          [
+            0.96,
+            0.1875
+          ],
+          [
+            0.97,
+            0.1875
+          ],
+          [
+            0.98,
+            0.1875
+          ],
+          [
+            0.99,
+            0.2188
+          ],
+          [
+            1.0,
+            0.2188
+          ]
+        ]
+      },
+      {
         "video_id": "b5AQkEVJfpI",
         "title": "Twitch on why false negatives kill product ideas",
         "category": "Podcast episode",
@@ -18952,6 +20206,418 @@
           [
             1.0,
             0.0435
+          ]
+        ]
+      },
+      {
+        "video_id": "O93e1d9WO9A",
+        "title": "Ho do you measure if an AI tutor is actually teaching?",
+        "category": "Other short",
+        "length_s": 52,
+        "hook_30s": 0.316,
+        "ret_25": 0.6316,
+        "ret_50": 0.3158,
+        "ret_75": 0.1579,
+        "curve": [
+          [
+            0.01,
+            1.1579
+          ],
+          [
+            0.02,
+            1.1579
+          ],
+          [
+            0.03,
+            1.0526
+          ],
+          [
+            0.04,
+            1.0526
+          ],
+          [
+            0.05,
+            1.0526
+          ],
+          [
+            0.06,
+            1.0526
+          ],
+          [
+            0.07,
+            1.0526
+          ],
+          [
+            0.08,
+            1.0526
+          ],
+          [
+            0.09,
+            1.0526
+          ],
+          [
+            0.1,
+            0.9474
+          ],
+          [
+            0.11,
+            0.9474
+          ],
+          [
+            0.12,
+            0.9474
+          ],
+          [
+            0.13,
+            0.8421
+          ],
+          [
+            0.14,
+            0.8421
+          ],
+          [
+            0.15,
+            0.7368
+          ],
+          [
+            0.16,
+            0.7368
+          ],
+          [
+            0.17,
+            0.7368
+          ],
+          [
+            0.18,
+            0.7368
+          ],
+          [
+            0.19,
+            0.7368
+          ],
+          [
+            0.2,
+            0.7368
+          ],
+          [
+            0.21,
+            0.6842
+          ],
+          [
+            0.22,
+            0.6842
+          ],
+          [
+            0.23,
+            0.6842
+          ],
+          [
+            0.24,
+            0.6842
+          ],
+          [
+            0.25,
+            0.6316
+          ],
+          [
+            0.26,
+            0.6316
+          ],
+          [
+            0.27,
+            0.6316
+          ],
+          [
+            0.28,
+            0.6316
+          ],
+          [
+            0.29,
+            0.6316
+          ],
+          [
+            0.3,
+            0.5789
+          ],
+          [
+            0.31,
+            0.5789
+          ],
+          [
+            0.32,
+            0.5789
+          ],
+          [
+            0.33,
+            0.5263
+          ],
+          [
+            0.34,
+            0.5263
+          ],
+          [
+            0.35,
+            0.4737
+          ],
+          [
+            0.36,
+            0.4737
+          ],
+          [
+            0.37,
+            0.4737
+          ],
+          [
+            0.38,
+            0.4737
+          ],
+          [
+            0.39,
+            0.4737
+          ],
+          [
+            0.4,
+            0.4737
+          ],
+          [
+            0.41,
+            0.4737
+          ],
+          [
+            0.42,
+            0.4211
+          ],
+          [
+            0.43,
+            0.4211
+          ],
+          [
+            0.44,
+            0.4211
+          ],
+          [
+            0.45,
+            0.3684
+          ],
+          [
+            0.46,
+            0.3158
+          ],
+          [
+            0.47,
+            0.3158
+          ],
+          [
+            0.48,
+            0.3158
+          ],
+          [
+            0.49,
+            0.3158
+          ],
+          [
+            0.5,
+            0.3158
+          ],
+          [
+            0.51,
+            0.3158
+          ],
+          [
+            0.52,
+            0.3158
+          ],
+          [
+            0.53,
+            0.3158
+          ],
+          [
+            0.54,
+            0.3158
+          ],
+          [
+            0.55,
+            0.3158
+          ],
+          [
+            0.56,
+            0.3158
+          ],
+          [
+            0.57,
+            0.3158
+          ],
+          [
+            0.58,
+            0.3158
+          ],
+          [
+            0.59,
+            0.3158
+          ],
+          [
+            0.6,
+            0.3158
+          ],
+          [
+            0.61,
+            0.3158
+          ],
+          [
+            0.62,
+            0.3158
+          ],
+          [
+            0.63,
+            0.3158
+          ],
+          [
+            0.64,
+            0.3158
+          ],
+          [
+            0.65,
+            0.3158
+          ],
+          [
+            0.66,
+            0.3158
+          ],
+          [
+            0.67,
+            0.2632
+          ],
+          [
+            0.68,
+            0.2632
+          ],
+          [
+            0.69,
+            0.2632
+          ],
+          [
+            0.7,
+            0.2632
+          ],
+          [
+            0.71,
+            0.2105
+          ],
+          [
+            0.72,
+            0.2105
+          ],
+          [
+            0.73,
+            0.2105
+          ],
+          [
+            0.74,
+            0.1579
+          ],
+          [
+            0.75,
+            0.1579
+          ],
+          [
+            0.76,
+            0.1579
+          ],
+          [
+            0.77,
+            0.1579
+          ],
+          [
+            0.78,
+            0.1579
+          ],
+          [
+            0.79,
+            0.1579
+          ],
+          [
+            0.8,
+            0.1579
+          ],
+          [
+            0.81,
+            0.1579
+          ],
+          [
+            0.82,
+            0.1579
+          ],
+          [
+            0.83,
+            0.1579
+          ],
+          [
+            0.84,
+            0.1579
+          ],
+          [
+            0.85,
+            0.1579
+          ],
+          [
+            0.86,
+            0.1579
+          ],
+          [
+            0.87,
+            0.1579
+          ],
+          [
+            0.88,
+            0.1579
+          ],
+          [
+            0.89,
+            0.1579
+          ],
+          [
+            0.9,
+            0.1579
+          ],
+          [
+            0.91,
+            0.1579
+          ],
+          [
+            0.92,
+            0.1579
+          ],
+          [
+            0.93,
+            0.1579
+          ],
+          [
+            0.94,
+            0.1579
+          ],
+          [
+            0.95,
+            0.1579
+          ],
+          [
+            0.96,
+            0.1579
+          ],
+          [
+            0.97,
+            0.1579
+          ],
+          [
+            0.98,
+            0.1579
+          ],
+          [
+            0.99,
+            0.1579
+          ],
+          [
+            1.0,
+            0.1579
           ]
         ]
       },
@@ -20188,6 +21854,418 @@
           [
             1.0,
             0.15
+          ]
+        ]
+      },
+      {
+        "video_id": "Ijo7W0L-oLo",
+        "title": "Introducing GrowthBook's NEW AI-based Visual Editor",
+        "category": "Product long-form",
+        "length_s": 1618,
+        "hook_30s": 0.375,
+        "ret_25": 0.4375,
+        "ret_50": 0.375,
+        "ret_75": 0.2708,
+        "curve": [
+          [
+            0.01,
+            0.9792
+          ],
+          [
+            0.02,
+            0.375
+          ],
+          [
+            0.03,
+            0.3542
+          ],
+          [
+            0.04,
+            0.3958
+          ],
+          [
+            0.05,
+            0.375
+          ],
+          [
+            0.06,
+            0.4583
+          ],
+          [
+            0.07,
+            0.4583
+          ],
+          [
+            0.08,
+            0.4583
+          ],
+          [
+            0.09,
+            0.4167
+          ],
+          [
+            0.1,
+            0.4583
+          ],
+          [
+            0.11,
+            0.3542
+          ],
+          [
+            0.12,
+            0.375
+          ],
+          [
+            0.13,
+            0.4583
+          ],
+          [
+            0.14,
+            0.5417
+          ],
+          [
+            0.15,
+            0.625
+          ],
+          [
+            0.16,
+            0.5417
+          ],
+          [
+            0.17,
+            0.5625
+          ],
+          [
+            0.18,
+            0.5833
+          ],
+          [
+            0.19,
+            0.5833
+          ],
+          [
+            0.2,
+            0.625
+          ],
+          [
+            0.21,
+            0.5208
+          ],
+          [
+            0.22,
+            0.5625
+          ],
+          [
+            0.23,
+            0.4792
+          ],
+          [
+            0.24,
+            0.4375
+          ],
+          [
+            0.25,
+            0.4375
+          ],
+          [
+            0.26,
+            0.4792
+          ],
+          [
+            0.27,
+            0.4792
+          ],
+          [
+            0.28,
+            0.4375
+          ],
+          [
+            0.29,
+            0.4375
+          ],
+          [
+            0.3,
+            0.375
+          ],
+          [
+            0.31,
+            0.3542
+          ],
+          [
+            0.32,
+            0.4167
+          ],
+          [
+            0.33,
+            0.4167
+          ],
+          [
+            0.34,
+            0.5
+          ],
+          [
+            0.35,
+            0.3958
+          ],
+          [
+            0.36,
+            0.4167
+          ],
+          [
+            0.37,
+            0.2708
+          ],
+          [
+            0.38,
+            0.3125
+          ],
+          [
+            0.39,
+            0.2917
+          ],
+          [
+            0.4,
+            0.2917
+          ],
+          [
+            0.41,
+            0.3125
+          ],
+          [
+            0.42,
+            0.3125
+          ],
+          [
+            0.43,
+            0.375
+          ],
+          [
+            0.44,
+            0.3542
+          ],
+          [
+            0.45,
+            0.375
+          ],
+          [
+            0.46,
+            0.375
+          ],
+          [
+            0.47,
+            0.3333
+          ],
+          [
+            0.48,
+            0.4167
+          ],
+          [
+            0.49,
+            0.3125
+          ],
+          [
+            0.5,
+            0.375
+          ],
+          [
+            0.51,
+            0.2917
+          ],
+          [
+            0.52,
+            0.2708
+          ],
+          [
+            0.53,
+            0.3125
+          ],
+          [
+            0.54,
+            0.3333
+          ],
+          [
+            0.55,
+            0.375
+          ],
+          [
+            0.56,
+            0.3542
+          ],
+          [
+            0.57,
+            0.25
+          ],
+          [
+            0.58,
+            0.2917
+          ],
+          [
+            0.59,
+            0.3333
+          ],
+          [
+            0.6,
+            0.3333
+          ],
+          [
+            0.61,
+            0.375
+          ],
+          [
+            0.62,
+            0.3958
+          ],
+          [
+            0.63,
+            0.3333
+          ],
+          [
+            0.64,
+            0.2917
+          ],
+          [
+            0.65,
+            0.2917
+          ],
+          [
+            0.66,
+            0.2708
+          ],
+          [
+            0.67,
+            0.2708
+          ],
+          [
+            0.68,
+            0.2917
+          ],
+          [
+            0.69,
+            0.3125
+          ],
+          [
+            0.7,
+            0.25
+          ],
+          [
+            0.71,
+            0.2917
+          ],
+          [
+            0.72,
+            0.2292
+          ],
+          [
+            0.73,
+            0.2292
+          ],
+          [
+            0.74,
+            0.2292
+          ],
+          [
+            0.75,
+            0.2708
+          ],
+          [
+            0.76,
+            0.3125
+          ],
+          [
+            0.77,
+            0.25
+          ],
+          [
+            0.78,
+            0.2708
+          ],
+          [
+            0.79,
+            0.2708
+          ],
+          [
+            0.8,
+            0.2292
+          ],
+          [
+            0.81,
+            0.25
+          ],
+          [
+            0.82,
+            0.25
+          ],
+          [
+            0.83,
+            0.2083
+          ],
+          [
+            0.84,
+            0.2292
+          ],
+          [
+            0.85,
+            0.2083
+          ],
+          [
+            0.86,
+            0.25
+          ],
+          [
+            0.87,
+            0.25
+          ],
+          [
+            0.88,
+            0.2083
+          ],
+          [
+            0.89,
+            0.2083
+          ],
+          [
+            0.9,
+            0.1875
+          ],
+          [
+            0.91,
+            0.1875
+          ],
+          [
+            0.92,
+            0.1667
+          ],
+          [
+            0.93,
+            0.2083
+          ],
+          [
+            0.94,
+            0.1667
+          ],
+          [
+            0.95,
+            0.1875
+          ],
+          [
+            0.96,
+            0.1875
+          ],
+          [
+            0.97,
+            0.1667
+          ],
+          [
+            0.98,
+            0.1667
+          ],
+          [
+            0.99,
+            0.1458
+          ],
+          [
+            1.0,
+            0.1667
           ]
         ]
       },
@@ -29816,6 +31894,418 @@
         ]
       },
       {
+        "video_id": "0BVj4auhC-g",
+        "title": "GrowthBook Client Side Visual Editor Demo",
+        "category": "Product long-form",
+        "length_s": 214,
+        "hook_30s": 0.571,
+        "ret_25": 0.5,
+        "ret_50": 0.3571,
+        "ret_75": 0.2857,
+        "curve": [
+          [
+            0.01,
+            1.119
+          ],
+          [
+            0.02,
+            0.881
+          ],
+          [
+            0.03,
+            0.7143
+          ],
+          [
+            0.04,
+            0.6667
+          ],
+          [
+            0.05,
+            0.5714
+          ],
+          [
+            0.06,
+            0.619
+          ],
+          [
+            0.07,
+            0.5952
+          ],
+          [
+            0.08,
+            0.5476
+          ],
+          [
+            0.09,
+            0.5476
+          ],
+          [
+            0.1,
+            0.5714
+          ],
+          [
+            0.11,
+            0.5952
+          ],
+          [
+            0.12,
+            0.5714
+          ],
+          [
+            0.13,
+            0.5714
+          ],
+          [
+            0.14,
+            0.5714
+          ],
+          [
+            0.15,
+            0.5238
+          ],
+          [
+            0.16,
+            0.5714
+          ],
+          [
+            0.17,
+            0.5
+          ],
+          [
+            0.18,
+            0.5238
+          ],
+          [
+            0.19,
+            0.5476
+          ],
+          [
+            0.2,
+            0.5238
+          ],
+          [
+            0.21,
+            0.5476
+          ],
+          [
+            0.22,
+            0.4762
+          ],
+          [
+            0.23,
+            0.4524
+          ],
+          [
+            0.24,
+            0.4524
+          ],
+          [
+            0.25,
+            0.5
+          ],
+          [
+            0.26,
+            0.5238
+          ],
+          [
+            0.27,
+            0.5
+          ],
+          [
+            0.28,
+            0.4762
+          ],
+          [
+            0.29,
+            0.5
+          ],
+          [
+            0.3,
+            0.5
+          ],
+          [
+            0.31,
+            0.4524
+          ],
+          [
+            0.32,
+            0.381
+          ],
+          [
+            0.33,
+            0.4286
+          ],
+          [
+            0.34,
+            0.4048
+          ],
+          [
+            0.35,
+            0.4286
+          ],
+          [
+            0.36,
+            0.4286
+          ],
+          [
+            0.37,
+            0.4286
+          ],
+          [
+            0.38,
+            0.381
+          ],
+          [
+            0.39,
+            0.3571
+          ],
+          [
+            0.4,
+            0.381
+          ],
+          [
+            0.41,
+            0.3571
+          ],
+          [
+            0.42,
+            0.2857
+          ],
+          [
+            0.43,
+            0.3333
+          ],
+          [
+            0.44,
+            0.3333
+          ],
+          [
+            0.45,
+            0.3333
+          ],
+          [
+            0.46,
+            0.3333
+          ],
+          [
+            0.47,
+            0.3095
+          ],
+          [
+            0.48,
+            0.3571
+          ],
+          [
+            0.49,
+            0.3571
+          ],
+          [
+            0.5,
+            0.3571
+          ],
+          [
+            0.51,
+            0.4048
+          ],
+          [
+            0.52,
+            0.3571
+          ],
+          [
+            0.53,
+            0.2857
+          ],
+          [
+            0.54,
+            0.3333
+          ],
+          [
+            0.55,
+            0.3095
+          ],
+          [
+            0.56,
+            0.2857
+          ],
+          [
+            0.57,
+            0.3095
+          ],
+          [
+            0.58,
+            0.3095
+          ],
+          [
+            0.59,
+            0.3095
+          ],
+          [
+            0.6,
+            0.3095
+          ],
+          [
+            0.61,
+            0.2619
+          ],
+          [
+            0.62,
+            0.2619
+          ],
+          [
+            0.63,
+            0.3333
+          ],
+          [
+            0.64,
+            0.3095
+          ],
+          [
+            0.65,
+            0.2857
+          ],
+          [
+            0.66,
+            0.2857
+          ],
+          [
+            0.67,
+            0.2857
+          ],
+          [
+            0.68,
+            0.2381
+          ],
+          [
+            0.69,
+            0.2619
+          ],
+          [
+            0.7,
+            0.3095
+          ],
+          [
+            0.71,
+            0.2857
+          ],
+          [
+            0.72,
+            0.2619
+          ],
+          [
+            0.73,
+            0.2857
+          ],
+          [
+            0.74,
+            0.2857
+          ],
+          [
+            0.75,
+            0.2857
+          ],
+          [
+            0.76,
+            0.2857
+          ],
+          [
+            0.77,
+            0.2381
+          ],
+          [
+            0.78,
+            0.1905
+          ],
+          [
+            0.79,
+            0.2381
+          ],
+          [
+            0.8,
+            0.2619
+          ],
+          [
+            0.81,
+            0.2619
+          ],
+          [
+            0.82,
+            0.2619
+          ],
+          [
+            0.83,
+            0.2619
+          ],
+          [
+            0.84,
+            0.2143
+          ],
+          [
+            0.85,
+            0.2143
+          ],
+          [
+            0.86,
+            0.2619
+          ],
+          [
+            0.87,
+            0.3095
+          ],
+          [
+            0.88,
+            0.2857
+          ],
+          [
+            0.89,
+            0.2619
+          ],
+          [
+            0.9,
+            0.2381
+          ],
+          [
+            0.91,
+            0.2619
+          ],
+          [
+            0.92,
+            0.2619
+          ],
+          [
+            0.93,
+            0.2857
+          ],
+          [
+            0.94,
+            0.2857
+          ],
+          [
+            0.95,
+            0.3095
+          ],
+          [
+            0.96,
+            0.2857
+          ],
+          [
+            0.97,
+            0.2619
+          ],
+          [
+            0.98,
+            0.2857
+          ],
+          [
+            0.99,
+            0.2619
+          ],
+          [
+            1.0,
+            0.2143
+          ]
+        ]
+      },
+      {
         "video_id": "FE9Ow8n_XhY",
         "title": "How Experimentation Led to Annual Growth at Fanatics",
         "category": "Podcast episode",
@@ -32700,6 +35190,418 @@
         ]
       },
       {
+        "video_id": "zPppjh_tLwk",
+        "title": "Demo of GrowthBook's New Visual Editor.",
+        "category": "Product long-form",
+        "length_s": 159,
+        "hook_30s": 0.646,
+        "ret_25": 0.6,
+        "ret_50": 0.4462,
+        "ret_75": 0.3538,
+        "curve": [
+          [
+            0.01,
+            1.1538
+          ],
+          [
+            0.02,
+            1.0615
+          ],
+          [
+            0.03,
+            0.9077
+          ],
+          [
+            0.04,
+            0.8615
+          ],
+          [
+            0.05,
+            0.8462
+          ],
+          [
+            0.06,
+            0.8462
+          ],
+          [
+            0.07,
+            0.8154
+          ],
+          [
+            0.08,
+            0.7846
+          ],
+          [
+            0.09,
+            0.7692
+          ],
+          [
+            0.1,
+            0.7538
+          ],
+          [
+            0.11,
+            0.7385
+          ],
+          [
+            0.12,
+            0.7385
+          ],
+          [
+            0.13,
+            0.7231
+          ],
+          [
+            0.14,
+            0.7385
+          ],
+          [
+            0.15,
+            0.6923
+          ],
+          [
+            0.16,
+            0.6769
+          ],
+          [
+            0.17,
+            0.6769
+          ],
+          [
+            0.18,
+            0.6462
+          ],
+          [
+            0.19,
+            0.6462
+          ],
+          [
+            0.2,
+            0.6308
+          ],
+          [
+            0.21,
+            0.6
+          ],
+          [
+            0.22,
+            0.6
+          ],
+          [
+            0.23,
+            0.6
+          ],
+          [
+            0.24,
+            0.6
+          ],
+          [
+            0.25,
+            0.6
+          ],
+          [
+            0.26,
+            0.6
+          ],
+          [
+            0.27,
+            0.6154
+          ],
+          [
+            0.28,
+            0.5846
+          ],
+          [
+            0.29,
+            0.5692
+          ],
+          [
+            0.3,
+            0.5692
+          ],
+          [
+            0.31,
+            0.5231
+          ],
+          [
+            0.32,
+            0.5385
+          ],
+          [
+            0.33,
+            0.5385
+          ],
+          [
+            0.34,
+            0.5077
+          ],
+          [
+            0.35,
+            0.5077
+          ],
+          [
+            0.36,
+            0.5077
+          ],
+          [
+            0.37,
+            0.4769
+          ],
+          [
+            0.38,
+            0.4769
+          ],
+          [
+            0.39,
+            0.4769
+          ],
+          [
+            0.4,
+            0.4769
+          ],
+          [
+            0.41,
+            0.4615
+          ],
+          [
+            0.42,
+            0.4769
+          ],
+          [
+            0.43,
+            0.4615
+          ],
+          [
+            0.44,
+            0.4769
+          ],
+          [
+            0.45,
+            0.4615
+          ],
+          [
+            0.46,
+            0.4769
+          ],
+          [
+            0.47,
+            0.4769
+          ],
+          [
+            0.48,
+            0.4462
+          ],
+          [
+            0.49,
+            0.4308
+          ],
+          [
+            0.5,
+            0.4462
+          ],
+          [
+            0.51,
+            0.4462
+          ],
+          [
+            0.52,
+            0.4308
+          ],
+          [
+            0.53,
+            0.4462
+          ],
+          [
+            0.54,
+            0.4462
+          ],
+          [
+            0.55,
+            0.4462
+          ],
+          [
+            0.56,
+            0.4615
+          ],
+          [
+            0.57,
+            0.4615
+          ],
+          [
+            0.58,
+            0.4462
+          ],
+          [
+            0.59,
+            0.4308
+          ],
+          [
+            0.6,
+            0.4
+          ],
+          [
+            0.61,
+            0.3846
+          ],
+          [
+            0.62,
+            0.4
+          ],
+          [
+            0.63,
+            0.4154
+          ],
+          [
+            0.64,
+            0.3692
+          ],
+          [
+            0.65,
+            0.3538
+          ],
+          [
+            0.66,
+            0.3385
+          ],
+          [
+            0.67,
+            0.3231
+          ],
+          [
+            0.68,
+            0.3385
+          ],
+          [
+            0.69,
+            0.3538
+          ],
+          [
+            0.7,
+            0.3385
+          ],
+          [
+            0.71,
+            0.3538
+          ],
+          [
+            0.72,
+            0.3538
+          ],
+          [
+            0.73,
+            0.3538
+          ],
+          [
+            0.74,
+            0.3692
+          ],
+          [
+            0.75,
+            0.3538
+          ],
+          [
+            0.76,
+            0.3231
+          ],
+          [
+            0.77,
+            0.3385
+          ],
+          [
+            0.78,
+            0.3538
+          ],
+          [
+            0.79,
+            0.3846
+          ],
+          [
+            0.8,
+            0.3538
+          ],
+          [
+            0.81,
+            0.3692
+          ],
+          [
+            0.82,
+            0.3538
+          ],
+          [
+            0.83,
+            0.3385
+          ],
+          [
+            0.84,
+            0.3385
+          ],
+          [
+            0.85,
+            0.3077
+          ],
+          [
+            0.86,
+            0.2769
+          ],
+          [
+            0.87,
+            0.2769
+          ],
+          [
+            0.88,
+            0.2769
+          ],
+          [
+            0.89,
+            0.2923
+          ],
+          [
+            0.9,
+            0.2769
+          ],
+          [
+            0.91,
+            0.2769
+          ],
+          [
+            0.92,
+            0.2615
+          ],
+          [
+            0.93,
+            0.2769
+          ],
+          [
+            0.94,
+            0.2615
+          ],
+          [
+            0.95,
+            0.2615
+          ],
+          [
+            0.96,
+            0.2615
+          ],
+          [
+            0.97,
+            0.2462
+          ],
+          [
+            0.98,
+            0.2462
+          ],
+          [
+            0.99,
+            0.2308
+          ],
+          [
+            1.0,
+            0.2308
+          ]
+        ]
+      },
+      {
         "video_id": "ZXh3XgXF3O8",
         "title": "Why Khan Academy Chose GrowthBook",
         "category": "Product long-form",
@@ -33524,6 +36426,418 @@
         ]
       },
       {
+        "video_id": "Ji_Bz3iNO_Y",
+        "title": "How an AI start-up experiments at scale using GrowthBook",
+        "category": "Other webinar",
+        "length_s": 3091,
+        "hook_30s": 0.699,
+        "ret_25": 0.2389,
+        "ret_50": 0.1327,
+        "ret_75": 0.0973,
+        "curve": [
+          [
+            0.01,
+            0.6991
+          ],
+          [
+            0.02,
+            0.3363
+          ],
+          [
+            0.03,
+            0.3186
+          ],
+          [
+            0.04,
+            0.3363
+          ],
+          [
+            0.05,
+            0.3451
+          ],
+          [
+            0.06,
+            0.3451
+          ],
+          [
+            0.07,
+            0.3009
+          ],
+          [
+            0.08,
+            0.3097
+          ],
+          [
+            0.09,
+            0.3186
+          ],
+          [
+            0.1,
+            0.3363
+          ],
+          [
+            0.11,
+            0.3186
+          ],
+          [
+            0.12,
+            0.292
+          ],
+          [
+            0.13,
+            0.292
+          ],
+          [
+            0.14,
+            0.3274
+          ],
+          [
+            0.15,
+            0.2655
+          ],
+          [
+            0.16,
+            0.2655
+          ],
+          [
+            0.17,
+            0.2301
+          ],
+          [
+            0.18,
+            0.2478
+          ],
+          [
+            0.19,
+            0.2389
+          ],
+          [
+            0.2,
+            0.2212
+          ],
+          [
+            0.21,
+            0.2035
+          ],
+          [
+            0.22,
+            0.2124
+          ],
+          [
+            0.23,
+            0.2124
+          ],
+          [
+            0.24,
+            0.2035
+          ],
+          [
+            0.25,
+            0.2389
+          ],
+          [
+            0.26,
+            0.2478
+          ],
+          [
+            0.27,
+            0.2478
+          ],
+          [
+            0.28,
+            0.2478
+          ],
+          [
+            0.29,
+            0.2566
+          ],
+          [
+            0.3,
+            0.2478
+          ],
+          [
+            0.31,
+            0.2389
+          ],
+          [
+            0.32,
+            0.2566
+          ],
+          [
+            0.33,
+            0.2301
+          ],
+          [
+            0.34,
+            0.2124
+          ],
+          [
+            0.35,
+            0.1858
+          ],
+          [
+            0.36,
+            0.2035
+          ],
+          [
+            0.37,
+            0.2035
+          ],
+          [
+            0.38,
+            0.1681
+          ],
+          [
+            0.39,
+            0.1947
+          ],
+          [
+            0.4,
+            0.1858
+          ],
+          [
+            0.41,
+            0.1504
+          ],
+          [
+            0.42,
+            0.1416
+          ],
+          [
+            0.43,
+            0.1593
+          ],
+          [
+            0.44,
+            0.177
+          ],
+          [
+            0.45,
+            0.1504
+          ],
+          [
+            0.46,
+            0.1416
+          ],
+          [
+            0.47,
+            0.1504
+          ],
+          [
+            0.48,
+            0.1504
+          ],
+          [
+            0.49,
+            0.1416
+          ],
+          [
+            0.5,
+            0.1327
+          ],
+          [
+            0.51,
+            0.1327
+          ],
+          [
+            0.52,
+            0.1504
+          ],
+          [
+            0.53,
+            0.1416
+          ],
+          [
+            0.54,
+            0.1327
+          ],
+          [
+            0.55,
+            0.1239
+          ],
+          [
+            0.56,
+            0.1416
+          ],
+          [
+            0.57,
+            0.1416
+          ],
+          [
+            0.58,
+            0.1504
+          ],
+          [
+            0.59,
+            0.115
+          ],
+          [
+            0.6,
+            0.1062
+          ],
+          [
+            0.61,
+            0.1062
+          ],
+          [
+            0.62,
+            0.1062
+          ],
+          [
+            0.63,
+            0.1062
+          ],
+          [
+            0.64,
+            0.0973
+          ],
+          [
+            0.65,
+            0.0973
+          ],
+          [
+            0.66,
+            0.1239
+          ],
+          [
+            0.67,
+            0.0973
+          ],
+          [
+            0.68,
+            0.0973
+          ],
+          [
+            0.69,
+            0.0973
+          ],
+          [
+            0.7,
+            0.1062
+          ],
+          [
+            0.71,
+            0.0973
+          ],
+          [
+            0.72,
+            0.0973
+          ],
+          [
+            0.73,
+            0.1062
+          ],
+          [
+            0.74,
+            0.0885
+          ],
+          [
+            0.75,
+            0.0973
+          ],
+          [
+            0.76,
+            0.0973
+          ],
+          [
+            0.77,
+            0.0973
+          ],
+          [
+            0.78,
+            0.115
+          ],
+          [
+            0.79,
+            0.0885
+          ],
+          [
+            0.8,
+            0.115
+          ],
+          [
+            0.81,
+            0.0885
+          ],
+          [
+            0.82,
+            0.0973
+          ],
+          [
+            0.83,
+            0.0973
+          ],
+          [
+            0.84,
+            0.0973
+          ],
+          [
+            0.85,
+            0.0885
+          ],
+          [
+            0.86,
+            0.0885
+          ],
+          [
+            0.87,
+            0.0885
+          ],
+          [
+            0.88,
+            0.0885
+          ],
+          [
+            0.89,
+            0.0973
+          ],
+          [
+            0.9,
+            0.0796
+          ],
+          [
+            0.91,
+            0.0796
+          ],
+          [
+            0.92,
+            0.0885
+          ],
+          [
+            0.93,
+            0.0796
+          ],
+          [
+            0.94,
+            0.0708
+          ],
+          [
+            0.95,
+            0.0796
+          ],
+          [
+            0.96,
+            0.0708
+          ],
+          [
+            0.97,
+            0.0619
+          ],
+          [
+            0.98,
+            0.0619
+          ],
+          [
+            0.99,
+            0.0619
+          ],
+          [
+            1.0,
+            0.0531
+          ]
+        ]
+      },
+      {
         "video_id": "bl3bUF8b8b0",
         "title": "We Ran a Simple Experiment on Chess.com...The Results Shocked Us",
         "category": "Product long-form",
@@ -33938,7 +37252,7 @@
       {
         "video_id": "AzAeirxwPJk",
         "title": "How Khan Academy Became a Leader in A/B Testing AI for Better Education",
-        "category": "Product long-form",
+        "category": "Other webinar",
         "length_s": 2971,
         "hook_30s": 0.896,
         "ret_25": 0.1931,
@@ -34350,7 +37664,7 @@
       {
         "video_id": "Zywxt3nt0JA",
         "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3570,
         "hook_30s": 0.912,
         "ret_25": 0.1765,
@@ -44835,57 +48149,57 @@
     "benchmarks": [
       {
         "band": "0\u201330s",
-        "videos": 8,
-        "median_pct": 61.3,
-        "p75_pct": 76.5,
+        "videos": 9,
+        "median_pct": 57.7,
+        "p75_pct": 71.3,
         "p90_pct": 87.1,
-        "median_total_watch_min": 12.0,
-        "median_avg_duration_s": 16
+        "median_total_watch_min": 9.0,
+        "median_avg_duration_s": 15
       },
       {
         "band": "30\u201360s",
-        "videos": 10,
-        "median_pct": 45.0,
-        "p75_pct": 52.6,
-        "p90_pct": 69.5,
-        "median_total_watch_min": 19.0,
-        "median_avg_duration_s": 19
+        "videos": 13,
+        "median_pct": 41.8,
+        "p75_pct": 50.0,
+        "p90_pct": 67.3,
+        "median_total_watch_min": 18.0,
+        "median_avg_duration_s": 21
       },
       {
         "band": "1\u20133 min",
-        "videos": 11,
-        "median_pct": 33.5,
+        "videos": 14,
+        "median_pct": 36.7,
         "p75_pct": 50.0,
         "p90_pct": 74.8,
-        "median_total_watch_min": 21.0,
-        "median_avg_duration_s": 42
+        "median_total_watch_min": 25.0,
+        "median_avg_duration_s": 45
       },
       {
         "band": "3\u201310 min",
-        "videos": 19,
-        "median_pct": 28.2,
+        "videos": 22,
+        "median_pct": 27.9,
         "p75_pct": 33.8,
         "p90_pct": 39.3,
-        "median_total_watch_min": 153.0,
-        "median_avg_duration_s": 101
+        "median_total_watch_min": 117.0,
+        "median_avg_duration_s": 97
       },
       {
         "band": "10\u201330 min",
-        "videos": 29,
-        "median_pct": 16.7,
-        "p75_pct": 21.8,
+        "videos": 32,
+        "median_pct": 17.0,
+        "p75_pct": 24.4,
         "p90_pct": 29.5,
-        "median_total_watch_min": 296.0,
-        "median_avg_duration_s": 175
+        "median_total_watch_min": 268.5,
+        "median_avg_duration_s": 176
       },
       {
         "band": "30\u201360 min",
-        "videos": 18,
+        "videos": 19,
         "median_pct": 11.2,
-        "p75_pct": 11.8,
+        "p75_pct": 11.9,
         "p90_pct": 15.5,
-        "median_total_watch_min": 370.5,
-        "median_avg_duration_s": 251
+        "median_total_watch_min": 428.0,
+        "median_avg_duration_s": 268
       }
     ],
     "outliers": [
@@ -44957,7 +48271,7 @@
       {
         "video_id": "Zywxt3nt0JA",
         "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3570,
         "metric": "Engaged views",
         "metric_key": "engaged_views",
@@ -44983,7 +48297,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "Engaged views",
         "metric_key": "engaged_views",
@@ -44996,7 +48310,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "Engaged views",
         "metric_key": "engaged_views",
@@ -45022,8 +48336,8 @@
       {
         "video_id": "FRH8V0thvZk",
         "title": "A/B Testing Has Been a Game Changer for Gen AI at Khan Academy",
-        "category": "\u2014",
-        "length_s": 0,
+        "category": "Other short",
+        "length_s": 53,
         "metric": "Engaged views",
         "metric_key": "engaged_views",
         "value": 153,
@@ -45048,7 +48362,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "Minutes watched",
         "metric_key": "watch_minutes",
@@ -45061,7 +48375,7 @@
       {
         "video_id": "Zywxt3nt0JA",
         "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3570,
         "metric": "Minutes watched",
         "metric_key": "watch_minutes",
@@ -45074,7 +48388,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "Minutes watched",
         "metric_key": "watch_minutes",
@@ -45087,7 +48401,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "Minutes watched",
         "metric_key": "watch_minutes",
@@ -45100,7 +48414,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "Minutes watched",
         "metric_key": "watch_minutes",
@@ -45139,7 +48453,7 @@
       {
         "video_id": "AzAeirxwPJk",
         "title": "How Khan Academy Became a Leader in A/B Testing AI for Better Education",
-        "category": "Product long-form",
+        "category": "Other webinar",
         "length_s": 2971,
         "metric": "Minutes watched",
         "metric_key": "watch_minutes",
@@ -45204,7 +48518,7 @@
       {
         "video_id": "Zywxt3nt0JA",
         "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3570,
         "metric": "New subscribers",
         "metric_key": "subs_gained",
@@ -45217,7 +48531,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "New subscribers",
         "metric_key": "subs_gained",
@@ -45230,7 +48544,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "New subscribers",
         "metric_key": "subs_gained",
@@ -45269,7 +48583,7 @@
       {
         "video_id": "WyANaD5pZdw",
         "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
-        "category": "Product long-form",
+        "category": "Kohavi webinar",
         "length_s": 3525,
         "metric": "New subscribers",
         "metric_key": "subs_gained",
