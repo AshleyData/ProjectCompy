@@ -181,6 +181,314 @@ function OpportunityBadge({ opp }) {
   return <span style={{ background: bg, color: C.white, padding: "2px 6px", borderRadius: 8, fontSize: 11 }}>{opp}</span>;
 }
 
+// ── Our Videos tab ──────────────────────────────────────────────────────────
+// Own-channel performance from the YouTube Analytics API. Separate from the
+// "YouTube" tab, which is competitor data from the public Data API: that one is
+// raw cumulative views across 10 channels, this one is engaged views and watch
+// time for GrowthBook only. Mixing them would invite comparing our watch time
+// against competitors' view counts.
+
+const VIDEO_CAT_COLORS = {
+  "Podcast episode": C.primary,
+  "Podcast clip": C.warning,
+  "Product long-form": C.success,
+  "Other short": C.muted,
+};
+
+function fmtMinutes(m) {
+  if (m == null) return "—";
+  const t = Math.round(m);
+  return t >= 60 ? `${(t / 60).toFixed(1)}h` : `${t}m`;
+}
+
+function fmtClock(seconds) {
+  if (!seconds) return "—";
+  const m = Math.floor(seconds / 60);
+  const s = Math.round(seconds % 60);
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+// Hook rate is the retention at 30 seconds. YouTube demotes videos with a weak
+// opening, so this is graded, not just displayed. Thresholds come from this
+// channel's own spread, not published creator benchmarks — those sit far above
+// anything B2B technical content reaches and would mark everything red.
+function hookColor(v) {
+  if (v == null) return C.muted;
+  if (v >= 0.55) return C.success;
+  if (v >= 0.35) return C.warning;
+  return C.danger;
+}
+
+function VideoRetentionCurve({ video, peerMedian }) {
+  if (!video || !video.curve || !video.curve.length) {
+    return <div style={{ fontSize: 13, color: C.muted, padding: 20 }}>No retention curve captured for this video.</div>;
+  }
+  const data = video.curve.map(([ratio, watch], i) => ({
+    pct: Math.round(ratio * 100),
+    watch,
+    elapsed: video.length_s ? ratio * video.length_s : null,
+    peer: peerMedian && peerMedian[i] != null ? peerMedian[i] : null,
+  }));
+  return (
+    <ResponsiveContainer width="100%" height={220}>
+      <LineChart data={data} margin={{ top: 8, right: 16, bottom: 4, left: 0 }}>
+        <CartesianGrid stroke={C.border} vertical={false} />
+        <XAxis dataKey="pct" tick={{ fontSize: 11 }} stroke={C.muted}
+               tickFormatter={(p) => `${p}%`} />
+        <YAxis tick={{ fontSize: 11 }} stroke={C.muted} domain={[0, "auto"]} />
+        <RTooltip
+          formatter={(val, name) => [typeof val === "number" ? val.toFixed(2) : val,
+                                     name === "watch" ? "This video" : "Category median"]}
+          labelFormatter={(p) => {
+            const row = data.find((d) => d.pct === p);
+            return row && row.elapsed ? `${p}% elapsed · ${fmtClock(row.elapsed)}` : `${p}% elapsed`;
+          }}
+        />
+        {peerMedian && <Line type="monotone" dataKey="peer" stroke={C.muted} strokeWidth={1.5}
+                             strokeDasharray="4 3" dot={false} name="Category median" />}
+        <Line type="monotone" dataKey="watch" stroke={C.accent} strokeWidth={2} dot={false}
+              name="This video" />
+      </LineChart>
+    </ResponsiveContainer>
+  );
+}
+
+function VideoTab({ video }) {
+  const [selected, setSelected] = useState(null);
+  const [showBench, setShowBench] = useState(false);
+
+  if (!video || !video.kpi) {
+    return (
+      <div style={{ ...card({ padding: 20 }) }}>
+        <div style={{ fontSize: 14, color: C.muted }}>
+          No own-channel video data in this payload. It appears once
+          <code style={{ margin: "0 4px" }}>video_performance.py</code>
+          has captured its first age checkpoints.
+        </div>
+      </div>
+    );
+  }
+
+  const { kpi, formats = [], cohort = [], retention = [], benchmarks = [], trend = [], meta = {} } = video;
+
+  // Category median curve, resampled onto the same normalized grid, so a single
+  // video can be read against its peers rather than in isolation.
+  const peerMedianFor = (cat) => {
+    const peers = retention.filter((r) => r.category === cat && r.curve && r.curve.length);
+    if (peers.length < 3) return null;
+    const len = Math.min(...peers.map((p) => p.curve.length));
+    const out = [];
+    for (let i = 0; i < len; i++) {
+      const vals = peers.map((p) => p.curve[i][1]).sort((a, b) => a - b);
+      out.push(vals[Math.floor(vals.length / 2)]);
+    }
+    return out;
+  };
+
+  const sel = selected || retention[0] || null;
+  const trendData = trend.map((t) => ({
+    week: (t.week_end || "").slice(5),
+    hours: Math.round((t.watch_minutes || 0) / 60),
+    engaged: t.engaged_views || 0,
+  }));
+
+  const worstHooks = retention.filter((r) => r.hook_30s != null).slice(0, 12);
+
+  return (
+    <>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
+        <MetricCard label="Watch time" value={`${kpi.watch_hours}h`} change={kpi.watch_hours_wow ?? undefined}
+                    sub={kpi.week_start ? `week ending ${kpi.week_end}` : undefined} />
+        <MetricCard label="Engaged views" value={(kpi.engaged_views || 0).toLocaleString()}
+                    change={kpi.engaged_views_wow ?? undefined}
+                    sub={`${(kpi.raw_views || 0).toLocaleString()} raw incl. Shorts swipes`} />
+        <MetricCard label="Subscribers" value={`+${kpi.subs_gained || 0}`} sub="gained this week" />
+        <MetricCard label="Median hook rate"
+                    value={kpi.median_hook_30s != null ? kpi.median_hook_30s.toFixed(2) : "—"}
+                    sub="retention at 0:30" />
+        <MetricCard label="Videos active" value={kpi.videos_active || 0} sub="earned a view this week" />
+      </div>
+
+      <div style={{ ...card({ padding: "10px 14px", marginBottom: 22, background: "#FFF9E6" }),
+                    fontSize: 12, color: C.muted, lineHeight: 1.5 }}>
+        All figures use <strong>engaged views</strong>, not raw views — YouTube counts a Shorts-feed
+        swipe-past as a view but measures watch percentage only over engaged playbacks, so raw views
+        overstate attention on Shorts roughly threefold.
+        {meta.ctr_available === false && <> <strong>CTR is not shown</strong>: the Analytics API has no
+        impressions metric, so click-through rate exists only in YouTube Studio.</>}
+        {meta.categories_inferred && <> Podcast clips are <strong>inferred</strong> from episode titles
+        because the Shorts playlist is incompletely maintained — keeping that playlist current would
+        make this exact.</>}
+      </div>
+
+      <Section title="What to produce — format scorecard (day 28)">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Every video measured at the same age, so a new upload and an old one are comparable.
+          Subs per 1k engaged views is the clearest signal of business value.
+        </div>
+        <Table
+          headers={["Category", "Videos", "Engaged views", "Watch time", "Median watch", "Median % watched", "Subs", "Subs / 1k", "Saves"]}
+          rows={formats.map((f) => [
+            <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ width: 9, height: 9, borderRadius: 2, background: VIDEO_CAT_COLORS[f.category] || C.muted }} />
+              {f.category}
+            </span>,
+            f.videos,
+            (f.engaged_views || 0).toLocaleString(),
+            `${f.watch_hours}h`,
+            fmtMinutes(f.median_watch_min),
+            `${f.median_pct}%`,
+            f.subs,
+            <strong style={{ color: f.subs_per_1k >= 8 ? C.success : f.subs_per_1k < 2 ? C.danger : C.primary }}>
+              {f.subs_per_1k}
+            </strong>,
+            f.saves,
+          ])}
+        />
+      </Section>
+
+      <Section title="Where the attention goes — day-28 watch time by length">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Each dot is one video at 28 days old. Rising left-to-right means longer content holds more
+          total attention; a flattening curve would mean the extra runtime is wasted.
+        </div>
+        <ResponsiveContainer width="100%" height={280}>
+          <ScatterChart margin={{ top: 8, right: 20, bottom: 20, left: 0 }}>
+            <CartesianGrid stroke={C.border} />
+            <XAxis type="number" dataKey="mins" name="Length" tick={{ fontSize: 11 }} stroke={C.muted}
+                   label={{ value: "video length (minutes)", position: "insideBottom", offset: -12, fontSize: 11, fill: C.muted }} />
+            <YAxis type="number" dataKey="watch" name="Watch min" tick={{ fontSize: 11 }} stroke={C.muted} />
+            <ZAxis range={[45, 45]} />
+            <RTooltip
+              content={({ active, payload }) => {
+                if (!active || !payload || !payload.length) return null;
+                const d = payload[0].payload;
+                return (
+                  <div style={{ ...card({ padding: 8 }), fontSize: 12, maxWidth: 260 }}>
+                    <div style={{ fontWeight: 600, marginBottom: 3 }}>{d.title}</div>
+                    <div style={{ color: C.muted }}>{d.category} · {fmtClock(d.length_s)} long</div>
+                    <div>{Math.round(d.watch)} watch-min · {d.engaged.toLocaleString()} engaged · {d.pct}% watched</div>
+                  </div>
+                );
+              }}
+            />
+            <Legend wrapperStyle={{ fontSize: 12 }} />
+            {Object.keys(VIDEO_CAT_COLORS).map((cat) => {
+              const pts = cohort
+                .filter((v) => v.category === cat && v.day28)
+                .map((v) => ({
+                  mins: +(v.length_s / 60).toFixed(1), watch: v.day28.watch_min,
+                  engaged: v.day28.engaged_views, pct: v.day28.avg_pct,
+                  title: v.title, category: v.category, length_s: v.length_s,
+                }));
+              if (!pts.length) return null;
+              return <Scatter key={cat} name={cat} data={pts} fill={VIDEO_CAT_COLORS[cat]} />;
+            })}
+          </ScatterChart>
+        </ResponsiveContainer>
+      </Section>
+
+      <Section title="Retention — fix the opening, not the length">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Sorted by hook rate, weakest first. A low hook with a flat curve afterwards means the
+          opening is losing people who would otherwise have stayed — shortening the video would not
+          help.
+        </div>
+        <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start" }}>
+          <div style={{ flex: "1 1 420px", minWidth: 320 }}>
+            <Table
+              compact
+              headers={["Video", "Length", "Hook 0:30", "@25%", "@50%", "@75%"]}
+              rows={worstHooks.map((r) => [
+                <button
+                  onClick={() => setSelected(r)}
+                  style={{ background: "none", border: 0, padding: 0, textAlign: "left", cursor: "pointer",
+                           color: sel && sel.video_id === r.video_id ? C.accent : C.primary,
+                           fontWeight: sel && sel.video_id === r.video_id ? 700 : 400, fontSize: 12 }}
+                >
+                  {(r.title || r.video_id).slice(0, 46)}
+                </button>,
+                fmtClock(r.length_s),
+                <strong style={{ color: hookColor(r.hook_30s) }}>
+                  {r.hook_30s != null ? r.hook_30s.toFixed(2) : "—"}
+                </strong>,
+                r.ret_25 != null ? r.ret_25.toFixed(2) : "—",
+                r.ret_50 != null ? r.ret_50.toFixed(2) : "—",
+                r.ret_75 != null ? r.ret_75.toFixed(2) : "—",
+              ])}
+            />
+          </div>
+          <div style={{ flex: "1 1 380px", minWidth: 320, ...card({ padding: 12 }) }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: C.primary, marginBottom: 2 }}>
+              {sel ? (sel.title || sel.video_id).slice(0, 52) : "Select a video"}
+            </div>
+            {sel && (
+              <div style={{ fontSize: 11.5, color: C.muted, marginBottom: 6 }}>
+                {sel.category} · {fmtClock(sel.length_s)} · dashed line is the category median
+              </div>
+            )}
+            <VideoRetentionCurve video={sel} peerMedian={sel ? peerMedianFor(sel.category) : null} />
+          </div>
+        </div>
+      </Section>
+
+      <Section title="Trend — weekly watch time and engaged views">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Two charts rather than one with two axes: the scales are unrelated, and overlaying them
+          would imply a correlation that is not in the data.
+        </div>
+        <div style={{ ...card({ padding: 12, marginBottom: 12 }) }}>
+          <div style={{ fontSize: 12, fontWeight: 600, color: C.primary, marginBottom: 4 }}>Watch hours per week</div>
+          <ResponsiveContainer width="100%" height={170}>
+            <LineChart data={trendData} margin={{ top: 6, right: 16, bottom: 0, left: 0 }}>
+              <CartesianGrid stroke={C.border} vertical={false} />
+              <XAxis dataKey="week" tick={{ fontSize: 10 }} stroke={C.muted} interval="preserveStartEnd" />
+              <YAxis tick={{ fontSize: 10 }} stroke={C.muted} />
+              <RTooltip formatter={(v) => [`${v}h`, "Watch time"]} />
+              <Line type="monotone" dataKey="hours" stroke={C.accent} strokeWidth={2} dot={false} />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+        <div style={{ ...card({ padding: 12 }) }}>
+          <div style={{ fontSize: 12, fontWeight: 600, color: C.primary, marginBottom: 4 }}>Engaged views per week</div>
+          <ResponsiveContainer width="100%" height={170}>
+            <LineChart data={trendData} margin={{ top: 6, right: 16, bottom: 0, left: 0 }}>
+              <CartesianGrid stroke={C.border} vertical={false} />
+              <XAxis dataKey="week" tick={{ fontSize: 10 }} stroke={C.muted} interval="preserveStartEnd" />
+              <YAxis tick={{ fontSize: 10 }} stroke={C.muted} />
+              <RTooltip formatter={(v) => [v.toLocaleString(), "Engaged views"]} />
+              <Line type="monotone" dataKey="engaged" stroke={C.success} strokeWidth={2} dot={false} />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      </Section>
+
+      <Section title="Reference — what good looks like at each length">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Our own day-28 medians. Judge a video against its band, never against a flat number:
+          % watched falls mechanically as length rises, so 50% is unremarkable for a Short and
+          exceptional for anything over three minutes.
+        </div>
+        <button
+          onClick={() => setShowBench((s) => !s)}
+          style={{ background: "none", border: `1px solid ${C.border}`, borderRadius: 6,
+                   padding: "6px 10px", cursor: "pointer", fontSize: 12, color: C.primary, marginBottom: 10 }}
+        >
+          {showBench ? "Hide" : "Show"} benchmark table
+        </button>
+        {showBench && (
+          <Table
+            headers={["Length band", "Videos", "Median % watched", "Top quartile", "Top 10%", "Median watch"]}
+            rows={benchmarks.map((b) => [
+              b.band, b.videos, `${b.median_pct}%`, `${b.p75_pct}%`, `${b.p90_pct}%`, fmtMinutes(b.median_watch_min),
+            ])}
+          />
+        )}
+      </Section>
+    </>
+  );
+}
+
 // Primary tabs carry the decision-layer story (Strategy first). Everything else is
 // reference material reachable from the "More ▾" drawer. The Opportunities tab was
 // retired into Strategy, so it no longer appears here.
@@ -195,6 +503,7 @@ const MORE_TABS = [
   { id: "competitors", label: "🏁 Competitors" },
   { id: "gsc", label: "📈 GSC Detail" },
   { id: "youtube", label: "▶️ YouTube" },
+  { id: "our_videos", label: "🎬 Our Videos" },
   { id: "content", label: "🆕 New Content" },
   { id: "etv_kd", label: "📉 ETV vs KD" },
   { id: "growthbook", label: "📗 GrowthBook" },
@@ -1383,6 +1692,8 @@ export default function CompyDashboard() {
         })()}
 
         {/* ── NEW CONTENT ── */}
+        {tab === "our_videos" && <VideoTab video={data.video} />}
+
         {tab === "content" && (<>
           {/* Newly-detected content-section blocks — a competitor hub/section that
               appeared in the sitemap as a large block this week. Documented (with a
