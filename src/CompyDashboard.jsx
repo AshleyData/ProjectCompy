@@ -354,7 +354,8 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
 
 function VideoTab({ video }) {
   const [selected, setSelected] = useState(null);
-  const [showBench, setShowBench] = useState(false);
+  const [showBench, setShowBench] = useState(true);
+  const [outlierMetric, setOutlierMetric] = useState("All");
 
   if (!video || !video.kpi) {
     return (
@@ -369,7 +370,10 @@ function VideoTab({ video }) {
   }
 
   const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
-          trend = [], trend_monthly = [], meta = {} } = video;
+          trend = [], trend_monthly = [], outliers = [], meta = {} } = video;
+  const shownOutliers = outlierMetric === "All"
+    ? outliers
+    : outliers.filter((o) => o.metric === outlierMetric);
 
   // Category median curve, resampled onto the same normalized grid, so a single
   // video can be read against its peers rather than in isolation.
@@ -432,6 +436,64 @@ function VideoTab({ video }) {
         make this exact.</>}
       </div>
 
+      <Section title="Outliers — what produced the spikes">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Video-weeks that stand out on any of the three metrics above. <strong>% of week</strong> is
+          this video's share of the channel total for that week, which is what actually explains a
+          spike in the charts. <strong>vs its own typical week</strong> separates a real spike from a
+          large evergreen video that is always big.
+        </div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
+          {["All", "Engaged views", "Minutes watched", "New subscribers"].map((m) => (
+            <button
+              key={m}
+              onClick={() => setOutlierMetric(m)}
+              aria-pressed={outlierMetric === m}
+              style={{ border: `1px solid ${outlierMetric === m ? C.accent : C.border}`,
+                       borderRadius: 6, padding: "5px 11px", cursor: "pointer", fontSize: 11.5,
+                       background: outlierMetric === m ? C.accent : C.white,
+                       color: outlierMetric === m ? C.white : C.muted,
+                       fontWeight: outlierMetric === m ? 700 : 400 }}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+        {shownOutliers.length === 0 ? (
+          <div style={{ fontSize: 13, color: C.muted, padding: 12 }}>
+            No outliers on this metric — no single video dominated a week.
+          </div>
+        ) : (
+          <Table
+            compact
+            headers={["Metric", "Video", "Category", "Length", "Week ending", "Value",
+                      "% of week", "vs its own typical week"]}
+            rows={shownOutliers.map((o) => [
+              <span style={{ fontSize: 11.5, color: C.muted }}>{o.metric}</span>,
+              <a href={safeHref(`https://www.youtube.com/watch?v=${o.video_id}`)}
+                 target="_blank" rel="noopener noreferrer"
+                 style={{ color: C.primary, textDecoration: "none" }}>
+                {(o.title || o.video_id).slice(0, 42)}
+              </a>,
+              <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 11.5 }}>
+                <span style={{ width: 8, height: 8, borderRadius: 2,
+                               background: VIDEO_CAT_COLORS[o.category] || C.muted }} />
+                {o.category}
+              </span>,
+              fmtClock(o.length_s),
+              o.week_end,
+              <strong>{o.value.toLocaleString()}</strong>,
+              <span style={{ color: o.share_of_week >= 30 ? C.danger : C.primary, fontWeight: 600 }}>
+                {o.share_of_week}%
+              </span>,
+              o.weeks_live <= 1
+                ? <span style={{ color: C.muted }}>debut week</span>
+                : (o.vs_own_typical ? `${o.vs_own_typical}x` : "—"),
+            ])}
+          />
+        )}
+      </Section>
+
       <Section title="What to produce — format scorecard (day 28)">
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
           Every video measured at the same age, so a new upload and an old one are comparable.
@@ -471,11 +533,17 @@ function VideoTab({ video }) {
           total attention; a flattening curve would mean the extra runtime is wasted.
         </div>
         <ResponsiveContainer width="100%" height={280}>
-          <ScatterChart margin={{ top: 8, right: 20, bottom: 20, left: 0 }}>
+          <ScatterChart margin={{ top: 8, right: 20, bottom: 34, left: 4 }}>
             <CartesianGrid stroke={C.border} />
             <XAxis type="number" dataKey="mins" name="Length" tick={{ fontSize: 11 }} stroke={C.muted}
-                   label={{ value: "video length (minutes)", position: "insideBottom", offset: -12, fontSize: 11, fill: C.muted }} />
-            <YAxis type="number" dataKey="watch" name="Watch min" tick={{ fontSize: 11 }} stroke={C.muted} />
+                   height={44}
+                   label={{ value: "video length (minutes)", position: "insideBottom",
+                            offset: -18, fontSize: 11, fill: C.muted }} />
+            <YAxis type="number" dataKey="watch" name="Watch min" tick={{ fontSize: 11 }} stroke={C.muted}
+                   width={78}
+                   label={{ value: "total watch minutes (day 28)", angle: -90,
+                            position: "insideLeft", offset: 4,
+                            style: { fontSize: 11, fill: C.muted, textAnchor: "middle" } }} />
             <ZAxis range={[45, 45]} />
             <RTooltip
               content={({ active, payload }) => {

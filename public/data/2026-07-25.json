@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 posts covering developer-focused topics such as database comparisons, AI observability, and tracing, organized by tags and categories. It primarily targets software engineers and product/data teams evaluating infrastructure and analytics tooling."
+        "summary": "PostHog's blog is a technical content hub containing 75 posts covering engineering and product analytics topics such as database comparisons, AI observability, and tracing, organized across 15 tags and 3 categories. It targets software engineers, data engineers, and technical product managers evaluating tools or seeking implementation guidance."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing topics. It targets digital marketers, content operations teams, and e-commerce practitioners looking for tactical advice on running experiments and managing content platforms."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 49 pieces of editorial content\u2014guides, articles, and curated collections\u2014covering topics like CMS selection and migration, AI-driven experimentation, and ABM strategy. It targets digital marketers, content operations teams, and experimentation practitioners looking for actionable, use-case-specific guidance."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Harness's /blog section contains 33 posts mixing product announcements, technical how-to guides, and competitive comparisons focused on CI/CD, feature flags, AI-assisted development, and DevOps tooling. It targets DevOps engineers, platform engineers, and technical decision-makers evaluating or already using Harness's software delivery platform."
+        "summary": "This is Harness's engineering and product blog targeting DevOps engineers, platform engineers, and CI/CD practitioners with a mix of technical how-to guides, product announcements, and competitive comparison content. It focuses on topics like feature flags, AI-driven release automation, policy enforcement, and deployment pipelines, positioning Harness capabilities against alternatives such as Argo CD."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is a technical documentation section targeting product managers and developers who use Amplitude's experimentation and engagement tools, covering how to build and analyze surveys, configure conditional logic, use the content editor, and integrate SDKs and heatmaps. The content is primarily instructional reference material for practitioners implementing Amplitude's guides, surveys, and AI features within their products."
+        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides, in-app surveys, SDKs, heatmaps, and AI features, with 15 of 21 pages focused on guides and surveys. It targets product managers and developers who need implementation instructions and feature references for Amplitude's experimentation and user feedback tools."
       }
     ]
   },
@@ -44886,6 +44886,398 @@
         "p90_pct": 15.5,
         "median_total_watch_min": 370.5,
         "median_avg_duration_s": 251
+      }
+    ],
+    "outliers": [
+      {
+        "video_id": "xG9_CI42BwI",
+        "title": "How an AI start-up ran 514 A/B tests in 1 year",
+        "category": "Podcast clip",
+        "length_s": 24,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 1357,
+        "week_end": "2026-04-08",
+        "share_of_week": 66.7,
+        "vs_own_typical": 387.7,
+        "weeks_live": 10
+      },
+      {
+        "video_id": "HZtLjOoJC_c",
+        "title": "Why false negatives quietly kill your best product ideas...",
+        "category": "Podcast clip",
+        "length_s": 31,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 530,
+        "week_end": "2026-07-08",
+        "share_of_week": 15.7,
+        "vs_own_typical": 2.0,
+        "weeks_live": 2
+      },
+      {
+        "video_id": "uKeE193-ZR0",
+        "title": "Faster Shipping Means You Need Testing More",
+        "category": "Podcast clip",
+        "length_s": 29,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 523,
+        "week_end": "2026-03-25",
+        "share_of_week": 45.1,
+        "vs_own_typical": 523.0,
+        "weeks_live": 5
+      },
+      {
+        "video_id": "d3aDXR2aNZA",
+        "title": "The biggest wins are in the messaging, not the product. Here's why...",
+        "category": "Other short",
+        "length_s": 24,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 517,
+        "week_end": "2026-07-08",
+        "share_of_week": 15.3,
+        "vs_own_typical": 1.0,
+        "weeks_live": 1
+      },
+      {
+        "video_id": "JEfsOE9LlJk",
+        "title": "How to tell what  experiments are worth running",
+        "category": "Podcast clip",
+        "length_s": 26,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 487,
+        "week_end": "2026-07-08",
+        "share_of_week": 14.4,
+        "vs_own_typical": 243.5,
+        "weeks_live": 3
+      },
+      {
+        "video_id": "Zywxt3nt0JA",
+        "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
+        "category": "Product long-form",
+        "length_s": 3570,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 223,
+        "week_end": "2026-07-22",
+        "share_of_week": 19.9,
+        "vs_own_typical": 1.0,
+        "weeks_live": 1
+      },
+      {
+        "video_id": "hCdsYUmkWcg",
+        "title": "Why Experimentation Matters from Ronny Kohavi",
+        "category": "Other short",
+        "length_s": 47,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 176,
+        "week_end": "2026-03-11",
+        "share_of_week": 19.5,
+        "vs_own_typical": 58.7,
+        "weeks_live": 8
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 170,
+        "week_end": "2026-03-18",
+        "share_of_week": 19.8,
+        "vs_own_typical": 10.6,
+        "weeks_live": 21
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 165,
+        "week_end": "2026-03-11",
+        "share_of_week": 18.3,
+        "vs_own_typical": 10.3,
+        "weeks_live": 21
+      },
+      {
+        "video_id": "hCdsYUmkWcg",
+        "title": "Why Experimentation Matters from Ronny Kohavi",
+        "category": "Other short",
+        "length_s": 47,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 158,
+        "week_end": "2026-03-18",
+        "share_of_week": 18.4,
+        "vs_own_typical": 52.7,
+        "weeks_live": 8
+      },
+      {
+        "video_id": "FRH8V0thvZk",
+        "title": "A/B Testing Has Been a Game Changer for Gen AI at Khan Academy",
+        "category": "\u2014",
+        "length_s": 0,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 153,
+        "week_end": "2026-04-22",
+        "share_of_week": 15.5,
+        "vs_own_typical": 2.0,
+        "weeks_live": 2
+      },
+      {
+        "video_id": "YDmERx9BVdA",
+        "title": "The Billion-Dollar Number JPMorganChase Is Proud Of",
+        "category": "Other short",
+        "length_s": 19,
+        "metric": "Engaged views",
+        "metric_key": "engaged_views",
+        "value": 131,
+        "week_end": "2026-07-15",
+        "share_of_week": 15.8,
+        "vs_own_typical": 1.0,
+        "weeks_live": 3
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 1428.0,
+        "week_end": "2026-03-11",
+        "share_of_week": 42.6,
+        "vs_own_typical": 15.0,
+        "weeks_live": 21
+      },
+      {
+        "video_id": "Zywxt3nt0JA",
+        "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
+        "category": "Product long-form",
+        "length_s": 3570,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 1179.0,
+        "week_end": "2026-07-22",
+        "share_of_week": 37.1,
+        "vs_own_typical": 1.0,
+        "weeks_live": 1
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 742.0,
+        "week_end": "2026-03-18",
+        "share_of_week": 25.4,
+        "vs_own_typical": 7.8,
+        "weeks_live": 21
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 705.0,
+        "week_end": "2026-03-04",
+        "share_of_week": 33.6,
+        "vs_own_typical": 7.4,
+        "weeks_live": 21
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 699.0,
+        "week_end": "2026-03-25",
+        "share_of_week": 27.4,
+        "vs_own_typical": 7.4,
+        "weeks_live": 21
+      },
+      {
+        "video_id": "fUp6VC1k6kA",
+        "title": "Building with MCP: How to Connect GrowthBook to Cursor & Claude",
+        "category": "Product long-form",
+        "length_s": 3432,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 496.0,
+        "week_end": "2026-05-06",
+        "share_of_week": 27.6,
+        "vs_own_typical": 1.9,
+        "weeks_live": 27
+      },
+      {
+        "video_id": "fUp6VC1k6kA",
+        "title": "Building with MCP: How to Connect GrowthBook to Cursor & Claude",
+        "category": "Product long-form",
+        "length_s": 3432,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 426.0,
+        "week_end": "2026-06-17",
+        "share_of_week": 25.4,
+        "vs_own_typical": 1.6,
+        "weeks_live": 27
+      },
+      {
+        "video_id": "AzAeirxwPJk",
+        "title": "How Khan Academy Became a Leader in A/B Testing AI for Better Education",
+        "category": "Product long-form",
+        "length_s": 2971,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 420.0,
+        "week_end": "2026-04-22",
+        "share_of_week": 20.3,
+        "vs_own_typical": 5.0,
+        "weeks_live": 10
+      },
+      {
+        "video_id": "cDJBlQrRtB8",
+        "title": "How to use GrowthBook for A/B testing",
+        "category": "Product long-form",
+        "length_s": 948,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 412.0,
+        "week_end": "2025-10-08",
+        "share_of_week": 32.3,
+        "vs_own_typical": 2.0,
+        "weeks_live": 52
+      },
+      {
+        "video_id": "cDJBlQrRtB8",
+        "title": "How to use GrowthBook for A/B testing",
+        "category": "Product long-form",
+        "length_s": 948,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 411.0,
+        "week_end": "2025-10-01",
+        "share_of_week": 28.8,
+        "vs_own_typical": 2.0,
+        "weeks_live": 52
+      },
+      {
+        "video_id": "fUp6VC1k6kA",
+        "title": "Building with MCP: How to Connect GrowthBook to Cursor & Claude",
+        "category": "Product long-form",
+        "length_s": 3432,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 403.0,
+        "week_end": "2026-02-04",
+        "share_of_week": 24.4,
+        "vs_own_typical": 1.5,
+        "weeks_live": 27
+      },
+      {
+        "video_id": "cDJBlQrRtB8",
+        "title": "How to use GrowthBook for A/B testing",
+        "category": "Product long-form",
+        "length_s": 948,
+        "metric": "Minutes watched",
+        "metric_key": "watch_minutes",
+        "value": 401.0,
+        "week_end": "2025-08-27",
+        "share_of_week": 31.7,
+        "vs_own_typical": 2.0,
+        "weeks_live": 52
+      },
+      {
+        "video_id": "Zywxt3nt0JA",
+        "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
+        "category": "Product long-form",
+        "length_s": 3570,
+        "metric": "New subscribers",
+        "metric_key": "subs_gained",
+        "value": 8,
+        "week_end": "2026-07-22",
+        "share_of_week": 61.5,
+        "vs_own_typical": 1.0,
+        "weeks_live": 1
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "New subscribers",
+        "metric_key": "subs_gained",
+        "value": 7,
+        "week_end": "2026-03-18",
+        "share_of_week": 77.8,
+        "vs_own_typical": 3.5,
+        "weeks_live": 7
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "New subscribers",
+        "metric_key": "subs_gained",
+        "value": 5,
+        "week_end": "2026-03-04",
+        "share_of_week": 55.6,
+        "vs_own_typical": 2.5,
+        "weeks_live": 7
+      },
+      {
+        "video_id": "3hMlSKAdaTM",
+        "title": "Fyxer's engineering playbook to go from $1M to $35M ARR",
+        "category": "Podcast episode",
+        "length_s": 1847,
+        "metric": "New subscribers",
+        "metric_key": "subs_gained",
+        "value": 4,
+        "week_end": "2026-04-08",
+        "share_of_week": 66.7,
+        "vs_own_typical": 4.0,
+        "weeks_live": 7
+      },
+      {
+        "video_id": "cDJBlQrRtB8",
+        "title": "How to use GrowthBook for A/B testing",
+        "category": "Product long-form",
+        "length_s": 948,
+        "metric": "New subscribers",
+        "metric_key": "subs_gained",
+        "value": 3,
+        "week_end": "2025-10-08",
+        "share_of_week": 60.0,
+        "vs_own_typical": 3.0,
+        "weeks_live": 10
+      },
+      {
+        "video_id": "WyANaD5pZdw",
+        "title": "Designing Experiments for Long-Term Growth | Ronny Kohavi & Luke Sonnet",
+        "category": "Product long-form",
+        "length_s": 3525,
+        "metric": "New subscribers",
+        "metric_key": "subs_gained",
+        "value": 3,
+        "week_end": "2026-03-25",
+        "share_of_week": 60.0,
+        "vs_own_typical": 1.5,
+        "weeks_live": 7
       }
     ],
     "trend": [
