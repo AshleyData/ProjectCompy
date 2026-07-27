@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import {
   BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
-  ScatterChart, Scatter, ZAxis, LineChart, Line, PieChart, Pie,
+  ScatterChart, Scatter, ZAxis, LineChart, Line, PieChart, Pie, AreaChart, Area,
   CartesianGrid, ResponsiveContainer, Cell,
 } from "recharts";
 
@@ -188,6 +188,11 @@ function OpportunityBadge({ opp }) {
 // time for GrowthBook only. Mixing them would invite comparing our watch time
 // against competitors' view counts.
 
+const VIDEO_STACK_ORDER = [
+  "Product long-form", "Podcast episode", "Podcast clip",
+  "Kohavi webinar", "Other webinar", "Other short",
+];
+
 const VIDEO_CAT_COLORS = {
   "Podcast episode": C.primary,
   "Podcast clip": C.warning,
@@ -300,22 +305,55 @@ class TabErrorBoundary extends Component {
   }
 }
 
-function TrendChart({ title, weekly, monthly, dataKey, color, format, yMaxWeek, yMaxMonth }) {
+// Stacked area by category. Stacking is why this can carry six colours where the
+// pies cannot: a stack is read on ADJACENT bands, and this order validates at
+// CVD ΔE 12.8 / normal-vision 19.7 on its worst neighbouring pair, where the
+// all-pairs view a pie demands tops out around 13.8.
+//
+// With a category filter active the chart shows that band alone rather than a
+// stack of one — the Y scale stays pinned to the channel maximum, so a small
+// category still reads as small.
+function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
+                     yMaxWeek, yMaxMonth, format }) {
   const [grain, setGrain] = useState("week");
-  const rows = grain === "week"
-    ? weekly.map((t) => ({ label: (t.week_end || "").slice(5), value: t[dataKey] || 0,
-                           full: `week ending ${t.week_end}` }))
-    : monthly.map((m) => ({ label: m.month || "", value: m[dataKey] || 0,
-                            full: m.month }));
-  const span = grain === "week" ? `${weekly.length} weeks` : `${monthly.length} complete months`;
-  // The Y scale is pinned to the channel-wide maximum so filtering by category
-  // does not silently rescale the axis — a category holding 2% of the total should
-  // look like 2%, not fill the chart. Math.max guards the one case where a
-  // category could exceed it: per-category months are bucketed from weeks while
-  // the channel series comes from the API's month dimension.
-  const fixedMax = grain === "week" ? yMaxWeek : yMaxMonth;
-  const dataMax = rows.reduce((m, r) => Math.max(m, r.value || 0), 0);
+  const isAll = cat === "All";
+  const isWeek = grain === "week";
+
+  const spine = isWeek ? allWeekly : allMonthly;
+  const keyOf = (r) => (isWeek ? r.week_end : r.month);
+  const labelOf = (r) => (isWeek ? (r.week_end || "").slice(5) : r.month || "");
+  const fullOf = (r) => (isWeek ? `week ending ${r.week_end}` : r.month);
+
+  // Index each category by period so the stack assembles against the channel
+  // spine: a category with no activity in a period contributes 0 rather than
+  // breaking the band.
+  const idx = {};
+  Object.entries(byCategory).forEach(([name, series]) => {
+    idx[name] = {};
+    (isWeek ? series.weekly : series.monthly).forEach((r) => {
+      idx[name][keyOf(r)] = r[metricKey] || 0;
+    });
+  });
+
+  const bands = isAll ? VIDEO_STACK_ORDER.filter((n) => byCategory[n]) : [cat];
+  const rows = spine.map((r) => {
+    const k = keyOf(r);
+    const row = { label: labelOf(r), full: fullOf(r) };
+    let total = 0;
+    bands.forEach((name) => {
+      const v = (idx[name] && idx[name][k]) || 0;
+      row[name] = v;
+      total += v;
+    });
+    row.__total = total;
+    return row;
+  });
+
+  const fixedMax = isWeek ? yMaxWeek : yMaxMonth;
+  const dataMax = rows.reduce((m, r) => Math.max(m, r.__total || 0), 0);
   const yMax = fixedMax ? Math.max(fixedMax, dataMax) : undefined;
+  const span = isWeek ? `${allWeekly.length} weeks` : `${allMonthly.length} complete months`;
+  const fmt = (v) => (format ? format(v) : Number(v).toLocaleString());
 
   return (
     <div style={{ ...card({ padding: 14 }), flex: "1 1 300px", minWidth: 290 }}>
@@ -323,9 +361,12 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format, yMaxWeek, 
                     gap: 10, marginBottom: 8, flexWrap: "wrap" }}>
         <div>
           <div style={{ fontSize: 13.5, fontWeight: 700, color: C.primary }}>{title}</div>
-          <div style={{ fontSize: 11, color: C.muted }}>last {span}</div>
+          <div style={{ fontSize: 11, color: C.muted }}>
+            last {span}{isAll ? " · stacked by category" : ` · ${cat} only`}
+          </div>
         </div>
-        <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6, overflow: "hidden" }}>
+        <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6,
+                      overflow: "hidden" }}>
           {["week", "month"].map((g) => (
             <button
               key={g}
@@ -342,31 +383,77 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format, yMaxWeek, 
         </div>
       </div>
       <ResponsiveContainer width="100%" height={210}>
-        <LineChart data={rows} margin={{ top: 6, right: 14, bottom: 0, left: 0 }}>
+        <AreaChart data={rows} margin={{ top: 6, right: 14, bottom: 0, left: 0 }}>
           <CartesianGrid stroke={C.border} vertical={false} />
           <XAxis dataKey="label" tick={{ fontSize: 10 }} stroke={C.muted}
-                 interval={grain === "week" ? "preserveStartEnd" : 0}
-                 angle={grain === "month" ? -35 : 0}
-                 textAnchor={grain === "month" ? "end" : "middle"}
-                 height={grain === "month" ? 46 : 24} />
+                 interval={isWeek ? "preserveStartEnd" : 0}
+                 angle={isWeek ? 0 : -35}
+                 textAnchor={isWeek ? "middle" : "end"}
+                 height={isWeek ? 24 : 46} />
           <YAxis tick={{ fontSize: 10 }} stroke={C.muted}
                  domain={yMax ? [0, yMax] : [0, "auto"]} allowDecimals={false}
-                 tickFormatter={(v) => v >= 1000 ? `${Math.round(v / 1000)}k` : v} />
+                 tickFormatter={(v) => (v >= 1000 ? `${Math.round(v / 1000)}k` : v)} />
           <RTooltip
-            formatter={(v) => [format ? format(v) : v.toLocaleString(), title]}
-            labelFormatter={(l) => {
-              const row = rows.find((r) => r.label === l);
-              return row ? row.full : l;
+            content={({ active, payload, label }) => {
+              if (!active || !payload || !payload.length) return null;
+              const row = rows.find((r) => r.label === label) || {};
+              // Reversed so the tooltip order matches the visual stack, top band first.
+              const parts = [...payload].reverse().filter((pt) => (pt.value || 0) > 0);
+              return (
+                <div style={{ ...card({ padding: 8 }), fontSize: 12, minWidth: 180 }}>
+                  <div style={{ fontWeight: 600, marginBottom: 3 }}>{row.full || label}</div>
+                  {parts.map((pt) => (
+                    <div key={pt.name} style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                      <span style={{ width: 8, height: 8, borderRadius: 2, background: pt.color,
+                                     flex: "none" }} />
+                      <span style={{ flex: 1, color: C.muted }}>{pt.name}</span>
+                      <span style={{ fontVariantNumeric: "tabular-nums" }}>{fmt(pt.value)}</span>
+                    </div>
+                  ))}
+                  {isAll && (
+                    <div style={{ borderTop: `1px solid ${C.border}`, marginTop: 4, paddingTop: 3,
+                                  display: "flex", gap: 6, fontWeight: 700 }}>
+                      <span style={{ flex: 1 }}>Total</span>
+                      <span style={{ fontVariantNumeric: "tabular-nums" }}>{fmt(row.__total || 0)}</span>
+                    </div>
+                  )}
+                </div>
+              );
             }}
           />
-          <Line type="monotone" dataKey="value" stroke={color} strokeWidth={2}
-                dot={grain === "month" ? { r: 3 } : false} />
-        </LineChart>
+          {bands.map((name) => (
+            <Area
+              key={name}
+              type="monotone"
+              dataKey={name}
+              stackId="1"
+              /* A surface-coloured edge gives the 2px gap between adjacent bands
+                 without drawing a border around each mark. Dropped when a single
+                 category is shown, since there is nothing to separate. */
+              stroke={C.white}
+              strokeWidth={isAll ? 1.5 : 0}
+              fill={VIDEO_CAT_COLORS[name] || C.muted}
+              fillOpacity={0.9}
+              isAnimationActive={false}
+            />
+          ))}
+        </AreaChart>
       </ResponsiveContainer>
+      {isAll && (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "3px 10px", marginTop: 6 }}>
+          {[...bands].reverse().map((name) => (
+            <span key={name} style={{ display: "flex", alignItems: "center", gap: 4,
+                                      fontSize: 10.5, color: C.muted }}>
+              <span style={{ width: 8, height: 8, borderRadius: 2,
+                             background: VIDEO_CAT_COLORS[name] }} />
+              {name}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
-
 
 // Part-to-whole by category. A pie earns its place here only because the split is
 // the question and the shares are far apart; for anything closer a bar would read
@@ -605,13 +692,19 @@ function VideoTab({ video }) {
       </div>
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
-        <TrendChart title="Engaged views" weekly={weeklySeries} monthly={monthlySeries}
-                    dataKey="engaged_views" yMaxWeek={yMax.engaged_views[0]} yMaxMonth={yMax.engaged_views[1]} color={C.success} />
-        <TrendChart title="Minutes watched" weekly={weeklySeries} monthly={monthlySeries}
-                    dataKey="watch_minutes" yMaxWeek={yMax.watch_minutes[0]} yMaxMonth={yMax.watch_minutes[1]} color={C.accent}
-                    format={(v) => `${v.toLocaleString()} min`} />
-        <TrendChart title="New subscribers" weekly={weeklySeries} monthly={monthlySeries}
-                    dataKey="subs_gained" yMaxWeek={yMax.subs_gained[0]} yMaxMonth={yMax.subs_gained[1]} color={C.primary}
+        <TrendChart title="Engaged views" metricKey="engaged_views"
+                    allWeekly={trend} allMonthly={trend_monthly}
+                    byCategory={trend_by_category} cat={cat}
+                    yMaxWeek={yMax.engaged_views[0]} yMaxMonth={yMax.engaged_views[1]} />
+        <TrendChart title="Minutes watched" metricKey="watch_minutes"
+                    allWeekly={trend} allMonthly={trend_monthly}
+                    byCategory={trend_by_category} cat={cat}
+                    yMaxWeek={yMax.watch_minutes[0]} yMaxMonth={yMax.watch_minutes[1]}
+                    format={(v) => `${Math.round(v).toLocaleString()} min`} />
+        <TrendChart title="New subscribers" metricKey="subs_gained"
+                    allWeekly={trend} allMonthly={trend_monthly}
+                    byCategory={trend_by_category} cat={cat}
+                    yMaxWeek={yMax.subs_gained[0]} yMaxMonth={yMax.subs_gained[1]}
                     format={(v) => `+${v.toLocaleString()}`} />
       </div>
 
