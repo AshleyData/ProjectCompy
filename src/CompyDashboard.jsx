@@ -194,7 +194,10 @@ const VIDEO_STACK_ORDER = [
 ];
 
 const VIDEO_CAT_COLORS = {
-  "Podcast episode": C.primary,
+  // Pink, not the brand navy: navy sat outside the lightness band and read
+  // as low-chroma. #E87BA4 holds the stack's adjacent separation (CVD dE 12.8 /
+  // normal 19.7) and lifts the pies' all-pairs CVD floor from 3.0 to 6.1.
+  "Podcast episode": "#E87BA4",
   "Podcast clip": C.warning,
   "Kohavi webinar": "#6C3483",
   "Other webinar": "#D35400",
