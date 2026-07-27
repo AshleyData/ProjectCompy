@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 posts covering engineering and data topics such as database comparisons, AI observability, and tracing, organized across 15 tags and 3 categories. It targets software engineers, data engineers, and technical decision-makers evaluating tools in the developer infrastructure and analytics space."
+        "summary": "PostHog's blog is a technical content hub of 75 articles covering topics such as database comparisons, AI observability, and engineering practices, organized across 15 tags and 3 categories. It primarily targets software engineers, data engineers, and technical product teams evaluating tools or seeking implementation guidance."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and e-commerce practitioners looking for tactical, use-case-specific advice."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and e-commerce practitioners looking for tactical advice on web optimization and content management."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Harness's engineering and product blog targeting DevOps engineers, platform engineers, and technical decision-makers with a mix of how-to guides, product announcements, and competitive comparisons. Content focuses on CI/CD, feature flags, AI-assisted deployment, and policy/compliance topics closely aligned with Harness's core product capabilities."
+        "summary": "Harness's /blog section contains 33 technical articles mixing product announcements, how-to guides, and competitive comparisons focused on CI/CD, feature flags, AI-assisted delivery, and DevOps tooling. It targets DevOps engineers, platform engineers, and engineering leaders evaluating or already using Harness for software delivery."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is a technical documentation section for Amplitude's experimentation and user research tools, covering surveys, guides, heatmaps, and SDKs. It targets product managers, developers, and UX researchers who need implementation and usage references for in-app feedback and experimentation features."
+        "summary": "This is Amplitude Experiment's technical documentation section, covering in-product guides, surveys, heatmaps, and AI features, primarily targeting product managers and developers who need implementation and usage instructions for Amplitude's user engagement and feedback tools."
       }
     ]
   },
@@ -11998,6 +11998,80 @@
         "saves": 1
       }
     ],
+    "formats_recent": [
+      {
+        "category": "Product long-form",
+        "videos": 69,
+        "engaged_views": 1630,
+        "watch_hours": 76.4,
+        "median_total_watch_min": 11.0,
+        "median_avg_duration_s": 72,
+        "median_pct": 25.1,
+        "subs": 6,
+        "subs_per_1k": 3.7,
+        "saves": null
+      },
+      {
+        "category": "Podcast episode",
+        "videos": 29,
+        "engaged_views": 813,
+        "watch_hours": 46.3,
+        "median_total_watch_min": 41.0,
+        "median_avg_duration_s": 157,
+        "median_pct": 10.9,
+        "subs": 8,
+        "subs_per_1k": 9.8,
+        "saves": null
+      },
+      {
+        "category": "Kohavi webinar",
+        "videos": 2,
+        "engaged_views": 291,
+        "watch_hours": 28.9,
+        "median_total_watch_min": 866.5,
+        "median_avg_duration_s": 434,
+        "median_pct": 12.3,
+        "subs": 9,
+        "subs_per_1k": 30.9,
+        "saves": null
+      },
+      {
+        "category": "Podcast clip",
+        "videos": 23,
+        "engaged_views": 2143,
+        "watch_hours": 10.3,
+        "median_total_watch_min": 3.0,
+        "median_avg_duration_s": 16,
+        "median_pct": 44.5,
+        "subs": 2,
+        "subs_per_1k": 0.9,
+        "saves": null
+      },
+      {
+        "category": "Other webinar",
+        "videos": 2,
+        "engaged_views": 76,
+        "watch_hours": 7.7,
+        "median_total_watch_min": 231.5,
+        "median_avg_duration_s": 306,
+        "median_pct": 10.1,
+        "subs": 1,
+        "subs_per_1k": 13.2,
+        "saves": null
+      },
+      {
+        "category": "Other short",
+        "videos": 25,
+        "engaged_views": 1184,
+        "watch_hours": 5.2,
+        "median_total_watch_min": 2.0,
+        "median_avg_duration_s": 13,
+        "median_pct": 45.0,
+        "subs": 1,
+        "subs_per_1k": 0.8,
+        "saves": null
+      }
+    ],
     "recent_totals": {
       "all": {
         "current": {
@@ -12016,38 +12090,6 @@
         }
       },
       "by_category": {
-        "Podcast episode": {
-          "current": {
-            "engaged_views": 813,
-            "raw_views": 832,
-            "watch_minutes": 2778,
-            "subs_gained": 8,
-            "videos": 29
-          },
-          "prior": {
-            "engaged_views": 288,
-            "raw_views": 288,
-            "watch_minutes": 951,
-            "subs_gained": 5,
-            "videos": 19
-          }
-        },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 291,
-            "raw_views": 291,
-            "watch_minutes": 1733,
-            "subs_gained": 9,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 51,
-            "raw_views": 51,
-            "watch_minutes": 114,
-            "subs_gained": 0,
-            "videos": 1
-          }
-        },
         "Other webinar": {
           "current": {
             "engaged_views": 76,
@@ -12080,6 +12122,38 @@
             "videos": 10
           }
         },
+        "Other short": {
+          "current": {
+            "engaged_views": 1184,
+            "raw_views": 3966,
+            "watch_minutes": 315,
+            "subs_gained": 1,
+            "videos": 25
+          },
+          "prior": {
+            "engaged_views": 27,
+            "raw_views": 67,
+            "watch_minutes": 25,
+            "subs_gained": 0,
+            "videos": 9
+          }
+        },
+        "Podcast episode": {
+          "current": {
+            "engaged_views": 813,
+            "raw_views": 832,
+            "watch_minutes": 2778,
+            "subs_gained": 8,
+            "videos": 29
+          },
+          "prior": {
+            "engaged_views": 288,
+            "raw_views": 288,
+            "watch_minutes": 951,
+            "subs_gained": 5,
+            "videos": 19
+          }
+        },
         "Product long-form": {
           "current": {
             "engaged_views": 1630,
@@ -12096,20 +12170,20 @@
             "videos": 57
           }
         },
-        "Other short": {
+        "Kohavi webinar": {
           "current": {
-            "engaged_views": 1184,
-            "raw_views": 3966,
-            "watch_minutes": 315,
-            "subs_gained": 1,
-            "videos": 25
+            "engaged_views": 291,
+            "raw_views": 291,
+            "watch_minutes": 1733,
+            "subs_gained": 9,
+            "videos": 2
           },
           "prior": {
-            "engaged_views": 27,
-            "raw_views": 67,
-            "watch_minutes": 25,
+            "engaged_views": 51,
+            "raw_views": 51,
+            "watch_minutes": 114,
             "subs_gained": 0,
-            "videos": 9
+            "videos": 1
           }
         }
       },

@@ -570,6 +570,8 @@ function VideoTab({ video }) {
   // people arrive with; the age cohort is the follow-up.
   const [scatterWindow, setScatterWindow] = useState("recent");
   const [cat, setCat] = useState("All");
+  // Defaults to the 30-day view so it agrees with the KPI cards above it.
+  const [formatWindow, setFormatWindow] = useState("recent");
 
   if (!video || !video.kpi) {
     return (
@@ -585,7 +587,7 @@ function VideoTab({ video }) {
 
   const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
           trend = [], trend_monthly = [], outliers = [], trend_by_category = {},
-          recent_totals = {}, meta = {} } = video;
+          recent_totals = {}, formats_recent = [], meta = {} } = video;
   // One filter, applied to everything below it. The format scorecard is the
   // exception: it exists to compare categories, so filtering it to a single row
   // would destroy its purpose — the selected row is highlighted instead.
@@ -630,6 +632,7 @@ function VideoTab({ video }) {
     subs_gained: [seriesMax(trend, "subs_gained"), seriesMax(trend_monthly, "subs_gained")],
   };
 
+  const shownFormats = formatWindow === "recent" ? formats_recent : formats;
   const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
 
   // Pies always use the FULL category set, never the filtered slice: a
@@ -762,14 +765,42 @@ function VideoTab({ video }) {
         make this exact.</>}
       </div>
 
-      <Section title="What to produce — format scorecard (day 28)">
+      <Section title={formatWindow === "recent"
+        ? "What to produce — last 30 days"
+        : "What to produce — each video's first 28 days"}>
+        <div style={{ display: "flex", gap: 10, alignItems: "baseline", flexWrap: "wrap",
+                      marginBottom: 10 }}>
+          <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6,
+                        overflow: "hidden" }}>
+            {[["recent", "Last 30 days"], ["cohort", "First 28 days"]].map(([k, label]) => (
+              <button
+                key={k}
+                onClick={() => setFormatWindow(k)}
+                aria-pressed={formatWindow === k}
+                style={{ border: 0, cursor: "pointer", fontSize: 11.5, padding: "5px 11px",
+                         background: formatWindow === k ? C.accent : C.white,
+                         color: formatWindow === k ? C.white : C.muted,
+                         fontWeight: formatWindow === k ? 700 : 400 }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <div style={{ fontSize: 12.5, color: C.muted, flex: "1 1 320px" }}>
+            {formatWindow === "recent"
+              ? <>One 30-day window ({catKpi.window_label}), so these hours add up to the
+                  Watch time card above.</>
+              : <>Each video measured over its <strong>first 28 days after publish</strong>,
+                  summed across every video ever published. That is a launch-quality view, not
+                  a time window — the hours total far more than any 30-day figure because they
+                  accumulate years of output.</>}
+          </div>
+        </div>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          Every video measured at the same age, so a new upload and an old one are comparable.
           Subs per 1k engaged views is the clearest signal of business value.
-          <br />
-          <strong>Total watch / video</strong> is the median video's watch time summed across
-          all its viewers — a 28-minute episode can total hours. <strong>Watched per viewer</strong>
-          is how long one person actually stayed, which is what "% of video watched" is derived from.
+          <strong> Total watch / video</strong> is the median video's watch time summed across
+          all its viewers; <strong>Watched per viewer</strong> is how long one person stayed,
+          which is what "% of video watched" derives from.
           This table always shows every category — comparing them is its whole purpose — so the
           category filter highlights a row here rather than hiding the others.
         </div>
@@ -777,7 +808,7 @@ function VideoTab({ video }) {
           headers={["Category", "Videos", "Engaged views", "Total watch time",
                     "Total watch / video", "Watched per viewer", "% of video watched",
                     "Subs", "Subs / 1k", "Saves"]}
-          rows={formats.map((f) => [
+          rows={shownFormats.map((f) => [
             <span style={{ display: "flex", alignItems: "center", gap: 6,
                            fontWeight: f.category === cat ? 700 : 400,
                            color: f.category === cat ? C.accent : "inherit" }}>
@@ -795,7 +826,7 @@ function VideoTab({ video }) {
             <strong style={{ color: f.subs_per_1k >= 8 ? C.success : f.subs_per_1k < 2 ? C.danger : C.primary }}>
               {f.subs_per_1k}
             </strong>,
-            f.saves,
+            f.saves == null ? <span style={{ color: C.muted }}>—</span> : f.saves,
           ])}
         />
       </Section>
