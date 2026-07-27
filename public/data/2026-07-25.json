@@ -3392,7 +3392,7 @@
           "Agents Closed 4063 Errors"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub of 75 articles covering database comparisons, AI observability, tracing, and engineering topics, primarily targeting software engineers, data engineers, and technical decision-makers evaluating developer tools. The content is organized by tags and categories, suggesting a structured approach to reaching developers at various stages of the tool-selection process."
+        "summary": "PostHog's blog is a technical content hub of 75 posts covering engineering and data topics such as database comparisons, AI observability, and tracing, organized across 15 tags and 3 categories. It targets software engineers, data engineers, and technical decision-makers evaluating tools in the developer infrastructure and analytics space."
       },
       {
         "competitor": "Optimizely",
@@ -3423,7 +3423,7 @@
           "How To Choose A Cms"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing tactics. It targets digital marketers, content operations teams, and e-commerce professionals looking for actionable advice on testing and content management decisions."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing guides, articles, and curated collections covering experimentation strategy, CMS selection and migration, and AI-driven marketing. It targets digital marketers, content operations teams, and e-commerce practitioners looking for tactical, use-case-specific advice."
       },
       {
         "competitor": "Harness",
@@ -3466,7 +3466,7 @@
           "Compliance Without Complexity Introducing Harness Rego Policy Packs"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Harness's /blog section is a technical blog containing 33 posts covering DevOps tooling, CI/CD practices, AI-driven release automation, and product announcements targeting software engineers, DevOps practitioners, and platform engineering teams. Content mixes educational how-to guides with competitive positioning pieces and feature launch announcements centered on Harness's own CI/CD and deployment platform."
+        "summary": "This is Harness's engineering and product blog targeting DevOps engineers, platform engineers, and technical decision-makers with a mix of how-to guides, product announcements, and competitive comparisons. Content focuses on CI/CD, feature flags, AI-assisted deployment, and policy/compliance topics closely aligned with Harness's core product capabilities."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3505,7 +3505,7 @@
           "Guide Overview"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is a technical documentation section covering Amplitude Experiment's in-product guides, surveys, and related features, targeting product managers and developers who need implementation and usage instructions. It includes SDK references, AI feature docs, heatmaps, and a content editor, indicating it serves both technical integrators and non-technical practitioners building user feedback and onboarding experiences."
+        "summary": "This is a technical documentation section for Amplitude's experimentation and user research tools, covering surveys, guides, heatmaps, and SDKs. It targets product managers, developers, and UX researchers who need implementation and usage references for in-app feedback and experimentation features."
       }
     ]
   },
@@ -11926,6 +11926,18 @@
     },
     "formats": [
       {
+        "category": "Product long-form",
+        "videos": 65,
+        "engaged_views": 6882,
+        "watch_hours": 318.6,
+        "median_total_watch_min": 201.0,
+        "median_avg_duration_s": 121,
+        "median_pct": 24.4,
+        "subs": 58,
+        "subs_per_1k": 8.4,
+        "saves": 167
+      },
+      {
         "category": "Podcast episode",
         "videos": 19,
         "engaged_views": 1161,
@@ -11936,18 +11948,6 @@
         "subs": 22,
         "subs_per_1k": 18.9,
         "saves": 49
-      },
-      {
-        "category": "Podcast clip",
-        "videos": 10,
-        "engaged_views": 2144,
-        "watch_hours": 11.0,
-        "median_total_watch_min": 9.0,
-        "median_avg_duration_s": 16,
-        "median_pct": 61.3,
-        "subs": 1,
-        "subs_per_1k": 0.5,
-        "saves": 0
       },
       {
         "category": "Kohavi webinar",
@@ -11974,16 +11974,16 @@
         "saves": 10
       },
       {
-        "category": "Product long-form",
-        "videos": 65,
-        "engaged_views": 6882,
-        "watch_hours": 318.6,
-        "median_total_watch_min": 201.0,
-        "median_avg_duration_s": 121,
-        "median_pct": 24.4,
-        "subs": 58,
-        "subs_per_1k": 8.4,
-        "saves": 167
+        "category": "Podcast clip",
+        "videos": 10,
+        "engaged_views": 2144,
+        "watch_hours": 11.0,
+        "median_total_watch_min": 9.0,
+        "median_avg_duration_s": 16,
+        "median_pct": 61.3,
+        "subs": 1,
+        "subs_per_1k": 0.5,
+        "saves": 0
       },
       {
         "category": "Other short",
@@ -11998,6 +11998,127 @@
         "saves": 1
       }
     ],
+    "recent_totals": {
+      "all": {
+        "current": {
+          "engaged_views": 6137,
+          "raw_views": 13197,
+          "watch_minutes": 10493,
+          "subs_gained": 27,
+          "videos": 150
+        },
+        "prior": {
+          "engaged_views": 2150,
+          "raw_views": 2343,
+          "watch_minutes": 7379,
+          "subs_gained": 10,
+          "videos": 99
+        }
+      },
+      "by_category": {
+        "Podcast episode": {
+          "current": {
+            "engaged_views": 813,
+            "raw_views": 832,
+            "watch_minutes": 2778,
+            "subs_gained": 8,
+            "videos": 29
+          },
+          "prior": {
+            "engaged_views": 288,
+            "raw_views": 288,
+            "watch_minutes": 951,
+            "subs_gained": 5,
+            "videos": 19
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 291,
+            "raw_views": 291,
+            "watch_minutes": 1733,
+            "subs_gained": 9,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 51,
+            "raw_views": 51,
+            "watch_minutes": 114,
+            "subs_gained": 0,
+            "videos": 1
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 76,
+            "raw_views": 76,
+            "watch_minutes": 463,
+            "subs_gained": 1,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 87,
+            "raw_views": 87,
+            "watch_minutes": 545,
+            "subs_gained": 0,
+            "videos": 2
+          }
+        },
+        "Podcast clip": {
+          "current": {
+            "engaged_views": 2143,
+            "raw_views": 6288,
+            "watch_minutes": 619,
+            "subs_gained": 2,
+            "videos": 23
+          },
+          "prior": {
+            "engaged_views": 49,
+            "raw_views": 126,
+            "watch_minutes": 44,
+            "subs_gained": 0,
+            "videos": 10
+          }
+        },
+        "Product long-form": {
+          "current": {
+            "engaged_views": 1630,
+            "raw_views": 1744,
+            "watch_minutes": 4585,
+            "subs_gained": 6,
+            "videos": 69
+          },
+          "prior": {
+            "engaged_views": 1642,
+            "raw_views": 1694,
+            "watch_minutes": 5699,
+            "subs_gained": 5,
+            "videos": 57
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 1184,
+            "raw_views": 3966,
+            "watch_minutes": 315,
+            "subs_gained": 1,
+            "videos": 25
+          },
+          "prior": {
+            "engaged_views": 27,
+            "raw_views": 67,
+            "watch_minutes": 25,
+            "subs_gained": 0,
+            "videos": 9
+          }
+        }
+      },
+      "window": {
+        "start": "2026-06-26",
+        "end": "2026-07-25",
+        "days": 30
+      }
+    },
     "cohort": [
       {
         "video_id": "WyANaD5pZdw",
@@ -12027,10 +12148,10 @@
           "saves": 35
         },
         "recent": {
-          "engaged_views": 51,
-          "watch_min": 448.0,
-          "avg_pct": 15.0,
-          "avg_duration_s": 527,
+          "engaged_views": 48,
+          "watch_min": 439.0,
+          "avg_pct": 15.6,
+          "avg_duration_s": 549,
           "subs": 0
         }
       },
@@ -12085,7 +12206,7 @@
         "recent": {
           "engaged_views": 243,
           "watch_min": 1294.0,
-          "avg_pct": 8.9,
+          "avg_pct": 9.0,
           "avg_duration_s": 319,
           "subs": 9
         }
@@ -12118,10 +12239,10 @@
           "saves": 13
         },
         "recent": {
-          "engaged_views": 209,
-          "watch_min": 828.0,
-          "avg_pct": 25.1,
-          "avg_duration_s": 237,
+          "engaged_views": 194,
+          "watch_min": 766.0,
+          "avg_pct": 25.0,
+          "avg_duration_s": 236,
           "subs": 2
         }
       },
@@ -12153,10 +12274,10 @@
           "saves": 1
         },
         "recent": {
-          "engaged_views": 53,
-          "watch_min": 952.0,
-          "avg_pct": 31.4,
-          "avg_duration_s": 1077,
+          "engaged_views": 49,
+          "watch_min": 848.0,
+          "avg_pct": 30.3,
+          "avg_duration_s": 1039,
           "subs": 0
         }
       },
@@ -12216,10 +12337,10 @@
           "saves": 9
         },
         "recent": {
-          "engaged_views": 75,
-          "watch_min": 270.0,
-          "avg_pct": 27.7,
-          "avg_duration_s": 216,
+          "engaged_views": 71,
+          "watch_min": 259.0,
+          "avg_pct": 28.1,
+          "avg_duration_s": 218,
           "subs": 0
         }
       },
@@ -12321,10 +12442,10 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 25,
-          "watch_min": 53.0,
-          "avg_pct": 3.8,
-          "avg_duration_s": 127,
+          "engaged_views": 23,
+          "watch_min": 46.0,
+          "avg_pct": 3.7,
+          "avg_duration_s": 122,
           "subs": 1
         }
       },
@@ -12349,10 +12470,10 @@
           "saves": 0
         },
         "recent": {
-          "engaged_views": 63,
-          "watch_min": 413.0,
-          "avg_pct": 12.8,
-          "avg_duration_s": 394,
+          "engaged_views": 60,
+          "watch_min": 409.0,
+          "avg_pct": 13.3,
+          "avg_duration_s": 409,
           "subs": 1
         }
       },
@@ -12384,10 +12505,10 @@
           "saves": 7
         },
         "recent": {
-          "engaged_views": 65,
+          "engaged_views": 63,
           "watch_min": 237.0,
-          "avg_pct": 28.7,
-          "avg_duration_s": 218,
+          "avg_pct": 29.6,
+          "avg_duration_s": 225,
           "subs": 0
         }
       },
@@ -12419,10 +12540,10 @@
           "saves": 10
         },
         "recent": {
-          "engaged_views": 31,
-          "watch_min": 135.0,
-          "avg_pct": 29.7,
-          "avg_duration_s": 261,
+          "engaged_views": 28,
+          "watch_min": 125.0,
+          "avg_pct": 30.6,
+          "avg_duration_s": 269,
           "subs": 0
         }
       },
@@ -12454,10 +12575,10 @@
           "saves": 17
         },
         "recent": {
-          "engaged_views": 303,
-          "watch_min": 723.0,
-          "avg_pct": 46.5,
-          "avg_duration_s": 143,
+          "engaged_views": 286,
+          "watch_min": 669.0,
+          "avg_pct": 45.6,
+          "avg_duration_s": 140,
           "subs": 0
         }
       },
@@ -12489,10 +12610,10 @@
           "saves": 3
         },
         "recent": {
-          "engaged_views": 22,
-          "watch_min": 25.0,
-          "avg_pct": 3.4,
-          "avg_duration_s": 70,
+          "engaged_views": 20,
+          "watch_min": 20.0,
+          "avg_pct": 3.0,
+          "avg_duration_s": 62,
           "subs": 0
         }
       },
@@ -12685,9 +12806,9 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 102,
-          "watch_min": 387.0,
-          "avg_pct": 16.8,
+          "engaged_views": 94,
+          "watch_min": 356.0,
+          "avg_pct": 16.7,
           "avg_duration_s": 227,
           "subs": 0
         }
@@ -12720,10 +12841,10 @@
           "saves": 18
         },
         "recent": {
-          "engaged_views": 102,
-          "watch_min": 200.0,
-          "avg_pct": 6.4,
-          "avg_duration_s": 117,
+          "engaged_views": 100,
+          "watch_min": 199.0,
+          "avg_pct": 6.5,
+          "avg_duration_s": 119,
           "subs": 3
         }
       },
@@ -13000,10 +13121,10 @@
           "saves": 3
         },
         "recent": {
-          "engaged_views": 72,
-          "watch_min": 213.0,
-          "avg_pct": 10.7,
-          "avg_duration_s": 177,
+          "engaged_views": 67,
+          "watch_min": 201.0,
+          "avg_pct": 10.8,
+          "avg_duration_s": 180,
           "subs": 0
         }
       },
@@ -13070,10 +13191,10 @@
           "saves": 5
         },
         "recent": {
-          "engaged_views": 27,
+          "engaged_views": 26,
           "watch_min": 105.0,
-          "avg_pct": 27.9,
-          "avg_duration_s": 234,
+          "avg_pct": 28.9,
+          "avg_duration_s": 242,
           "subs": 0
         }
       },
@@ -13161,10 +13282,10 @@
           "saves": 1
         },
         "recent": {
-          "engaged_views": 24,
-          "watch_min": 106.0,
-          "avg_pct": 16.4,
-          "avg_duration_s": 265,
+          "engaged_views": 22,
+          "watch_min": 105.0,
+          "avg_pct": 17.8,
+          "avg_duration_s": 287,
           "subs": 0
         }
       },
@@ -13196,10 +13317,10 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 15,
-          "watch_min": 48.0,
-          "avg_pct": 26.5,
-          "avg_duration_s": 195,
+          "engaged_views": 14,
+          "watch_min": 36.0,
+          "avg_pct": 20.9,
+          "avg_duration_s": 154,
           "subs": 0
         }
       },
@@ -13231,10 +13352,10 @@
           "saves": 4
         },
         "recent": {
-          "engaged_views": 98,
-          "watch_min": 119.0,
-          "avg_pct": 28.1,
-          "avg_duration_s": 73,
+          "engaged_views": 96,
+          "watch_min": 115.0,
+          "avg_pct": 27.6,
+          "avg_duration_s": 71,
           "subs": 0
         }
       },
@@ -13301,10 +13422,10 @@
           "saves": 1
         },
         "recent": {
-          "engaged_views": 14,
-          "watch_min": 10.0,
-          "avg_pct": 29.0,
-          "avg_duration_s": 44,
+          "engaged_views": 12,
+          "watch_min": 9.0,
+          "avg_pct": 30.5,
+          "avg_duration_s": 46,
           "subs": 0
         }
       },
@@ -13336,10 +13457,10 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 4,
-          "watch_min": 3.0,
-          "avg_pct": 2.3,
-          "avg_duration_s": 51,
+          "engaged_views": 3,
+          "watch_min": 2.0,
+          "avg_pct": 2.1,
+          "avg_duration_s": 47,
           "subs": 0
         }
       },
@@ -13371,9 +13492,9 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 16,
-          "watch_min": 11.0,
-          "avg_pct": 23.1,
+          "engaged_views": 14,
+          "watch_min": 10.0,
+          "avg_pct": 23.6,
           "avg_duration_s": 44,
           "subs": 0
         }
@@ -13700,10 +13821,10 @@
           "saves": 3
         },
         "recent": {
-          "engaged_views": 64,
-          "watch_min": 179.0,
-          "avg_pct": 10.7,
-          "avg_duration_s": 168,
+          "engaged_views": 59,
+          "watch_min": 155.0,
+          "avg_pct": 10.1,
+          "avg_duration_s": 157,
           "subs": 0
         }
       },
@@ -13768,13 +13889,6 @@
           "avg_pct": 57.9,
           "subs": 0,
           "saves": 0
-        },
-        "recent": {
-          "engaged_views": 0,
-          "watch_min": 0,
-          "avg_pct": 0,
-          "avg_duration_s": 0,
-          "subs": 0
         }
       },
       {
@@ -13847,10 +13961,10 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 4,
+          "engaged_views": 3,
           "watch_min": 0,
           "avg_pct": 0.2,
-          "avg_duration_s": 5,
+          "avg_duration_s": 3,
           "subs": 0
         }
       },
@@ -13980,10 +14094,10 @@
           "saves": 1
         },
         "recent": {
-          "engaged_views": 8,
+          "engaged_views": 6,
           "watch_min": 1.0,
           "avg_pct": 0.7,
-          "avg_duration_s": 12,
+          "avg_duration_s": 11,
           "subs": 0
         }
       },
@@ -14092,10 +14206,10 @@
           "saves": 1
         },
         "recent": {
-          "engaged_views": 9,
-          "watch_min": 10.0,
-          "avg_pct": 17.0,
-          "avg_duration_s": 73,
+          "engaged_views": 7,
+          "watch_min": 9.0,
+          "avg_pct": 18.1,
+          "avg_duration_s": 77,
           "subs": 0
         }
       },
@@ -14435,10 +14549,10 @@
           "saves": 2
         },
         "recent": {
-          "engaged_views": 3,
+          "engaged_views": 2,
           "watch_min": 7.0,
-          "avg_pct": 28.6,
-          "avg_duration_s": 154,
+          "avg_pct": 41.1,
+          "avg_duration_s": 221,
           "subs": 0
         }
       },
@@ -14687,10 +14801,10 @@
           "saves": 1
         },
         "recent": {
-          "engaged_views": 14,
+          "engaged_views": 12,
           "watch_min": 3.0,
-          "avg_pct": 0.8,
-          "avg_duration_s": 16,
+          "avg_pct": 1.0,
+          "avg_duration_s": 19,
           "subs": 0
         }
       },
@@ -15044,10 +15158,10 @@
           "saves": 0
         },
         "recent": {
-          "engaged_views": 3,
+          "engaged_views": 2,
           "watch_min": 0,
-          "avg_pct": 8.7,
-          "avg_duration_s": 14,
+          "avg_pct": 4.7,
+          "avg_duration_s": 7,
           "subs": 0
         }
       },
@@ -15499,10 +15613,10 @@
           "saves": 0
         },
         "recent": {
-          "engaged_views": 7,
-          "watch_min": 1.0,
-          "avg_pct": 47.8,
-          "avg_duration_s": 10,
+          "engaged_views": 5,
+          "watch_min": 0,
+          "avg_pct": 34.5,
+          "avg_duration_s": 7,
           "subs": 0
         }
       },
@@ -15758,10 +15872,10 @@
           "saves": 0
         },
         "recent": {
-          "engaged_views": 4,
-          "watch_min": 2.0,
-          "avg_pct": 70.7,
-          "avg_duration_s": 36,
+          "engaged_views": 2,
+          "watch_min": 1.0,
+          "avg_pct": 86.4,
+          "avg_duration_s": 44,
           "subs": 0
         }
       },
@@ -15826,13 +15940,6 @@
           "avg_pct": 59.4,
           "subs": 0,
           "saves": 0
-        },
-        "recent": {
-          "engaged_views": 0,
-          "watch_min": 0,
-          "avg_pct": 0,
-          "avg_duration_s": 0,
-          "subs": 0
         }
       },
       {
@@ -15861,13 +15968,6 @@
           "avg_pct": 55.4,
           "subs": 0,
           "saves": 0
-        },
-        "recent": {
-          "engaged_views": 0,
-          "watch_min": 0,
-          "avg_pct": 0,
-          "avg_duration_s": 0,
-          "subs": 0
         }
       },
       {
@@ -15961,10 +16061,10 @@
           "saves": 0
         },
         "recent": {
-          "engaged_views": 5,
-          "watch_min": 2.0,
-          "avg_pct": 137.6,
-          "avg_duration_s": 33,
+          "engaged_views": 2,
+          "watch_min": 0,
+          "avg_pct": 117.8,
+          "avg_duration_s": 28,
           "subs": 0
         }
       },
@@ -15996,10 +16096,10 @@
           "saves": 0
         },
         "recent": {
-          "engaged_views": 3,
-          "watch_min": 2.0,
-          "avg_pct": 183.0,
-          "avg_duration_s": 40,
+          "engaged_views": 1,
+          "watch_min": 0,
+          "avg_pct": 18.8,
+          "avg_duration_s": 4,
           "subs": 0
         }
       },
@@ -16634,9 +16734,9 @@
         "category": "Podcast episode",
         "recent": {
           "engaged_views": 92,
-          "watch_min": 498.0,
-          "avg_pct": 11.8,
-          "avg_duration_s": 323,
+          "watch_min": 517.0,
+          "avg_pct": 12.3,
+          "avg_duration_s": 335,
           "subs": 0
         }
       },
@@ -16675,10 +16775,10 @@
         "length_s": 2000,
         "category": "Podcast episode",
         "recent": {
-          "engaged_views": 16,
+          "engaged_views": 15,
           "watch_min": 16.0,
-          "avg_pct": 3.0,
-          "avg_duration_s": 60,
+          "avg_pct": 3.2,
+          "avg_duration_s": 64,
           "subs": 1
         }
       },
@@ -56181,8 +56281,8 @@
         90
       ],
       "recent_window": {
-        "start": "2026-06-25",
-        "end": "2026-07-24",
+        "start": "2026-06-26",
+        "end": "2026-07-25",
         "days": 30
       },
       "categories_inferred": true,

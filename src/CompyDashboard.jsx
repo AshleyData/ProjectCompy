@@ -32,14 +32,14 @@ function safeHref(url) {
   return u ? `https://${u}` : "#";
 }
 
-function MetricCard({ label, value, change, sub }) {
+function MetricCard({ label, value, change, sub, periodLabel }) {
   const color = change > 0 ? C.success : change < 0 ? C.danger : C.muted;
   const arrow = change > 0 ? "↑" : change < 0 ? "↓" : "";
   return (
     <div style={{ ...card({ padding: "16px 20px", flex: 1, minWidth: 150 }) }}>
       <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
       <div style={{ fontSize: 26, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{value}</div>
-      {change !== undefined && <div style={{ fontSize: 13, color }}>{arrow} {Math.abs(change)}% WoW</div>}
+      {change !== undefined && <div style={{ fontSize: 13, color }}>{arrow} {Math.abs(change)}% {periodLabel || "WoW"}</div>}
       {sub && <div style={{ fontSize: 12, color: C.muted, marginTop: 2 }}>{sub}</div>}
     </div>
   );
@@ -585,7 +585,7 @@ function VideoTab({ video }) {
 
   const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
           trend = [], trend_monthly = [], outliers = [], trend_by_category = {},
-          meta = {} } = video;
+          recent_totals = {}, meta = {} } = video;
   // One filter, applied to everything below it. The format scorecard is the
   // exception: it exists to compare categories, so filtering it to a single row
   // would destroy its purpose — the selected row is highlighted instead.
@@ -598,22 +598,27 @@ function VideoTab({ video }) {
   const retentionRows = isAll ? retention : retention.filter((r) => r.category === cat);
   const catOutliers = isAll ? outliers : outliers.filter((o) => o.category === cat);
 
-  // When filtered, the KPI row is recomputed from that category's own weekly
-  // series rather than showing channel totals beside category charts.
+  // The KPI cards report the trailing 30 DAYS, compared against the previous 30 —
+  // like for like. They used to show a single week beside 12-month charts, which
+  // made the whole header read on a different timescale from everything under it.
   const pctDelta = (a, b) => (b ? Math.round(((a - b) / b) * 1000) / 10 : null);
-  const lastW = weeklySeries[weeklySeries.length - 1] || {};
-  const prevW = weeklySeries[weeklySeries.length - 2] || {};
+  const rtAll = recent_totals.all || {};
+  const rtCat = (recent_totals.by_category || {})[cat] || {};
+  const cur30 = (isAll ? rtAll.current : rtCat.current) || {};
+  const prior30 = (isAll ? rtAll.prior : rtCat.prior) || {};
+  const rWin = recent_totals.window;
   const hookVals = retentionRows.map((r) => r.hook_30s).filter((v) => v != null).sort((a, b) => a - b);
-  const catKpi = isAll ? kpi : {
-    week_start: lastW.week_end, week_end: lastW.week_end,
-    watch_hours: Math.round(((lastW.watch_minutes || 0) / 60) * 10) / 10,
-    watch_hours_wow: pctDelta(lastW.watch_minutes || 0, prevW.watch_minutes || 0),
-    engaged_views: lastW.engaged_views || 0,
-    engaged_views_wow: pctDelta(lastW.engaged_views || 0, prevW.engaged_views || 0),
-    raw_views: null,
-    subs_gained: lastW.subs_gained || 0,
+  const catKpi = {
+    window_label: rWin ? `${rWin.start} to ${rWin.end}` : "last 30 days",
+    watch_hours: Math.round(((cur30.watch_minutes || 0) / 60) * 10) / 10,
+    watch_hours_wow: pctDelta(cur30.watch_minutes || 0, prior30.watch_minutes || 0),
+    engaged_views: cur30.engaged_views || 0,
+    engaged_views_wow: pctDelta(cur30.engaged_views || 0, prior30.engaged_views || 0),
+    raw_views: isAll ? cur30.raw_views : null,
+    subs_gained: cur30.subs_gained || 0,
+    subs_wow: pctDelta(cur30.subs_gained || 0, prior30.subs_gained || 0),
     median_hook_30s: hookVals.length ? hookVals[Math.floor(hookVals.length / 2)] : null,
-    videos_active: cohortRows.length,
+    videos_active: cur30.videos || 0,
   };
 
   // Computed from the unfiltered series, so every category is drawn on the same
@@ -730,16 +735,19 @@ function VideoTab({ video }) {
       </div>
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
-        <MetricCard label="Watch time" value={`${catKpi.watch_hours}h`} change={catKpi.watch_hours_wow ?? undefined}
-                    sub={catKpi.week_end ? `week ending ${catKpi.week_end}` : undefined} />
-        <MetricCard label="Engaged views" value={(catKpi.engaged_views || 0).toLocaleString()}
+        <MetricCard periodLabel="vs prior 30d" label="Watch time · 30 days" value={`${catKpi.watch_hours}h`}
+                    change={catKpi.watch_hours_wow ?? undefined}
+                    sub={catKpi.window_label} />
+        <MetricCard periodLabel="vs prior 30d" label="Engaged views · 30 days" value={(catKpi.engaged_views || 0).toLocaleString()}
                     change={catKpi.engaged_views_wow ?? undefined}
                     sub={catKpi.raw_views != null ? `${catKpi.raw_views.toLocaleString()} raw incl. Shorts swipes` : "video-attributed"} />
-        <MetricCard label="Subscribers" value={`+${catKpi.subs_gained || 0}`} sub="gained this week" />
+        <MetricCard periodLabel="vs prior 30d" label="Subscribers · 30 days" value={`+${catKpi.subs_gained || 0}`}
+                    change={catKpi.subs_wow ?? undefined} sub="vs prior 30 days" />
         <MetricCard label="Median hook rate"
                     value={catKpi.median_hook_30s != null ? catKpi.median_hook_30s.toFixed(2) : "—"}
                     sub="retention at 0:30" />
-        <MetricCard label="Videos active" value={catKpi.videos_active || 0} sub={isAll ? "earned a view this week" : "in this category"} />
+        <MetricCard label="Videos active · 30 days" value={catKpi.videos_active || 0}
+                    sub={isAll ? "earned a view in the window" : "in this category"} />
       </div>
 
       <div style={{ ...card({ padding: "10px 14px", marginBottom: 22, background: "#FFF9E6" }),
