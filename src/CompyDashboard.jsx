@@ -300,7 +300,7 @@ class TabErrorBoundary extends Component {
   }
 }
 
-function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
+function TrendChart({ title, weekly, monthly, dataKey, color, format, yMaxWeek, yMaxMonth }) {
   const [grain, setGrain] = useState("week");
   const rows = grain === "week"
     ? weekly.map((t) => ({ label: (t.week_end || "").slice(5), value: t[dataKey] || 0,
@@ -308,6 +308,14 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
     : monthly.map((m) => ({ label: m.month || "", value: m[dataKey] || 0,
                             full: m.month }));
   const span = grain === "week" ? `${weekly.length} weeks` : `${monthly.length} complete months`;
+  // The Y scale is pinned to the channel-wide maximum so filtering by category
+  // does not silently rescale the axis — a category holding 2% of the total should
+  // look like 2%, not fill the chart. Math.max guards the one case where a
+  // category could exceed it: per-category months are bucketed from weeks while
+  // the channel series comes from the API's month dimension.
+  const fixedMax = grain === "week" ? yMaxWeek : yMaxMonth;
+  const dataMax = rows.reduce((m, r) => Math.max(m, r.value || 0), 0);
+  const yMax = fixedMax ? Math.max(fixedMax, dataMax) : undefined;
 
   return (
     <div style={{ ...card({ padding: 14 }), flex: "1 1 300px", minWidth: 290 }}>
@@ -342,6 +350,7 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
                  textAnchor={grain === "month" ? "end" : "middle"}
                  height={grain === "month" ? 46 : 24} />
           <YAxis tick={{ fontSize: 10 }} stroke={C.muted}
+                 domain={yMax ? [0, yMax] : [0, "auto"]} allowDecimals={false}
                  tickFormatter={(v) => v >= 1000 ? `${Math.round(v / 1000)}k` : v} />
           <RTooltip
             formatter={(v) => [format ? format(v) : v.toLocaleString(), title]}
@@ -449,7 +458,9 @@ function VideoTab({ video }) {
   const [selected, setSelected] = useState(null);
   const [showBench, setShowBench] = useState(true);
   const [outlierMetric, setOutlierMetric] = useState("All");
-  const [scatterWindow, setScatterWindow] = useState("cohort");
+  // Defaults to the rolling window: "what is working now" is the question
+  // people arrive with; the age cohort is the follow-up.
+  const [scatterWindow, setScatterWindow] = useState("recent");
   const [cat, setCat] = useState("All");
 
   if (!video || !video.kpi) {
@@ -495,6 +506,15 @@ function VideoTab({ video }) {
     subs_gained: lastW.subs_gained || 0,
     median_hook_30s: hookVals.length ? hookVals[Math.floor(hookVals.length / 2)] : null,
     videos_active: cohortRows.length,
+  };
+
+  // Computed from the unfiltered series, so every category is drawn on the same
+  // axis as "All".
+  const seriesMax = (rows, key) => rows.reduce((m, r) => Math.max(m, r[key] || 0), 0);
+  const yMax = {
+    engaged_views: [seriesMax(trend, "engaged_views"), seriesMax(trend_monthly, "engaged_views")],
+    watch_minutes: [seriesMax(trend, "watch_minutes"), seriesMax(trend_monthly, "watch_minutes")],
+    subs_gained: [seriesMax(trend, "subs_gained"), seriesMax(trend_monthly, "subs_gained")],
   };
 
   const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
@@ -544,7 +564,15 @@ function VideoTab({ video }) {
     engaged: t.engaged_views || 0,
   }));
 
-  const worstHooks = retentionRows.filter((r) => r.hook_30s != null).slice(0, 12);
+  // Ordered by watch minutes in the last 30 days, descending — the videos
+  // actually carrying the channel right now, rather than the worst hooks on
+  // anything ever captured.
+  const recentMin = {};
+  cohort.forEach((v) => { if (v.recent) recentMin[v.video_id] = v.recent.watch_min || 0; });
+  const worstHooks = [...retentionRows]
+    .sort((a, b) => (recentMin[b.video_id] || 0) - (recentMin[a.video_id] || 0))
+    .slice(0, 12)
+    .map((r) => ({ ...r, recent_watch_min: recentMin[r.video_id] || 0 }));
 
   return (
     <>
@@ -578,12 +606,12 @@ function VideoTab({ video }) {
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
         <TrendChart title="Engaged views" weekly={weeklySeries} monthly={monthlySeries}
-                    dataKey="engaged_views" color={C.success} />
+                    dataKey="engaged_views" yMaxWeek={yMax.engaged_views[0]} yMaxMonth={yMax.engaged_views[1]} color={C.success} />
         <TrendChart title="Minutes watched" weekly={weeklySeries} monthly={monthlySeries}
-                    dataKey="watch_minutes" color={C.accent}
+                    dataKey="watch_minutes" yMaxWeek={yMax.watch_minutes[0]} yMaxMonth={yMax.watch_minutes[1]} color={C.accent}
                     format={(v) => `${v.toLocaleString()} min`} />
         <TrendChart title="New subscribers" weekly={weeklySeries} monthly={monthlySeries}
-                    dataKey="subs_gained" color={C.primary}
+                    dataKey="subs_gained" yMaxWeek={yMax.subs_gained[0]} yMaxMonth={yMax.subs_gained[1]} color={C.primary}
                     format={(v) => `+${v.toLocaleString()}`} />
       </div>
 
@@ -611,64 +639,6 @@ function VideoTab({ video }) {
         because the Shorts playlist is incompletely maintained — keeping that playlist current would
         make this exact.</>}
       </div>
-
-      <Section title="Outliers — what produced the spikes">
-        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          Video-weeks that stand out on any of the three metrics above. <strong>% of week</strong> is
-          this video's share of the channel total for that week, which is what actually explains a
-          spike in the charts. <strong>vs its own typical week</strong> separates a real spike from a
-          large evergreen video that is always big.
-        </div>
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
-          {["All", "Engaged views", "Minutes watched", "New subscribers"].map((m) => (
-            <button
-              key={m}
-              onClick={() => setOutlierMetric(m)}
-              aria-pressed={outlierMetric === m}
-              style={{ border: `1px solid ${outlierMetric === m ? C.accent : C.border}`,
-                       borderRadius: 6, padding: "5px 11px", cursor: "pointer", fontSize: 11.5,
-                       background: outlierMetric === m ? C.accent : C.white,
-                       color: outlierMetric === m ? C.white : C.muted,
-                       fontWeight: outlierMetric === m ? 700 : 400 }}
-            >
-              {m}
-            </button>
-          ))}
-        </div>
-        {shownOutliers.length === 0 ? (
-          <div style={{ fontSize: 13, color: C.muted, padding: 12 }}>
-            No outliers on this metric — no single video dominated a week.
-          </div>
-        ) : (
-          <Table
-            compact
-            headers={["Metric", "Video", "Category", "Length", "Week ending", "Value",
-                      "% of week", "vs its own typical week"]}
-            rows={shownOutliers.map((o) => [
-              <span style={{ fontSize: 11.5, color: C.muted }}>{o.metric}</span>,
-              <a href={safeHref(`https://www.youtube.com/watch?v=${o.video_id}`)}
-                 target="_blank" rel="noopener noreferrer"
-                 style={{ color: C.primary, textDecoration: "none" }}>
-                {(o.title || o.video_id).slice(0, 42)}
-              </a>,
-              <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 11.5 }}>
-                <span style={{ width: 8, height: 8, borderRadius: 2,
-                               background: VIDEO_CAT_COLORS[o.category] || C.muted }} />
-                {o.category}
-              </span>,
-              fmtClock(o.length_s),
-              o.week_end,
-              <strong>{o.value.toLocaleString()}</strong>,
-              <span style={{ color: o.share_of_week >= 30 ? C.danger : C.primary, fontWeight: 600 }}>
-                {o.share_of_week}%
-              </span>,
-              o.weeks_live <= 1
-                ? <span style={{ color: C.muted }}>debut week</span>
-                : (o.vs_own_typical ? `${o.vs_own_typical}x` : "—"),
-            ])}
-          />
-        )}
-      </Section>
 
       <Section title="What to produce — format scorecard (day 28)">
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
@@ -796,15 +766,15 @@ function VideoTab({ video }) {
 
       <Section title="Retention — fix the opening, not the length">
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          Sorted by hook rate, weakest first. A low hook with a flat curve afterwards means the
-          opening is losing people who would otherwise have stayed — shortening the video would not
-          help.
+          The twelve videos with the most watch time in the last 30 days, most-watched first.
+          A low hook with a flat curve afterwards means the opening is losing people who would
+          otherwise have stayed — shortening the video would not help.
         </div>
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 420px", minWidth: 320 }}>
             <Table
               compact
-              headers={["Video", "Length", "Hook 0:30", "@25%", "@50%", "@75%"]}
+              headers={["Video", "Watch min (30d)", "Length", "Hook 0:30", "@25%", "@50%", "@75%"]}
               rows={worstHooks.map((r) => [
                 <button
                   onClick={() => setSelected(r)}
@@ -814,6 +784,9 @@ function VideoTab({ video }) {
                 >
                   {(r.title || r.video_id).slice(0, 46)}
                 </button>,
+                <span style={{ fontVariantNumeric: "tabular-nums", fontWeight: 600 }}>
+                  {Math.round(r.recent_watch_min).toLocaleString()}
+                </span>,
                 fmtClock(r.length_s),
                 <strong style={{ color: hookColor(r.hook_30s) }}>
                   {r.hook_30s != null ? r.hook_30s.toFixed(2) : "—"}
@@ -836,6 +809,64 @@ function VideoTab({ video }) {
             <VideoRetentionCurve video={sel} peerMedian={sel ? peerMedianFor(sel.category) : null} />
           </div>
         </div>
+      </Section>
+
+      <Section title="Outliers — what produced the spikes">
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+          Video-weeks that stand out on any of the three metrics above. <strong>% of week</strong> is
+          this video's share of the channel total for that week, which is what actually explains a
+          spike in the charts. <strong>vs its own typical week</strong> separates a real spike from a
+          large evergreen video that is always big.
+        </div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
+          {["All", "Engaged views", "Minutes watched", "New subscribers"].map((m) => (
+            <button
+              key={m}
+              onClick={() => setOutlierMetric(m)}
+              aria-pressed={outlierMetric === m}
+              style={{ border: `1px solid ${outlierMetric === m ? C.accent : C.border}`,
+                       borderRadius: 6, padding: "5px 11px", cursor: "pointer", fontSize: 11.5,
+                       background: outlierMetric === m ? C.accent : C.white,
+                       color: outlierMetric === m ? C.white : C.muted,
+                       fontWeight: outlierMetric === m ? 700 : 400 }}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+        {shownOutliers.length === 0 ? (
+          <div style={{ fontSize: 13, color: C.muted, padding: 12 }}>
+            No outliers on this metric — no single video dominated a week.
+          </div>
+        ) : (
+          <Table
+            compact
+            headers={["Metric", "Video", "Category", "Length", "Week ending", "Value",
+                      "% of week", "vs its own typical week"]}
+            rows={shownOutliers.map((o) => [
+              <span style={{ fontSize: 11.5, color: C.muted }}>{o.metric}</span>,
+              <a href={safeHref(`https://www.youtube.com/watch?v=${o.video_id}`)}
+                 target="_blank" rel="noopener noreferrer"
+                 style={{ color: C.primary, textDecoration: "none" }}>
+                {(o.title || o.video_id).slice(0, 42)}
+              </a>,
+              <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 11.5 }}>
+                <span style={{ width: 8, height: 8, borderRadius: 2,
+                               background: VIDEO_CAT_COLORS[o.category] || C.muted }} />
+                {o.category}
+              </span>,
+              fmtClock(o.length_s),
+              o.week_end,
+              <strong>{o.value.toLocaleString()}</strong>,
+              <span style={{ color: o.share_of_week >= 30 ? C.danger : C.primary, fontWeight: 600 }}>
+                {o.share_of_week}%
+              </span>,
+              o.weeks_live <= 1
+                ? <span style={{ color: C.muted }}>debut week</span>
+                : (o.vs_own_typical ? `${o.vs_own_typical}x` : "—"),
+            ])}
+          />
+        )}
       </Section>
 
       <Section title="Reference — what good looks like at each length">
