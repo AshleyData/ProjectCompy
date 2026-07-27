@@ -363,6 +363,7 @@ function VideoTab({ video }) {
   const [showBench, setShowBench] = useState(true);
   const [outlierMetric, setOutlierMetric] = useState("All");
   const [scatterWindow, setScatterWindow] = useState("cohort");
+  const [cat, setCat] = useState("All");
 
   if (!video || !video.kpi) {
     return (
@@ -377,13 +378,44 @@ function VideoTab({ video }) {
   }
 
   const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
-          trend = [], trend_monthly = [], outliers = [], meta = {} } = video;
+          trend = [], trend_monthly = [], outliers = [], trend_by_category = {},
+          meta = {} } = video;
+  // One filter, applied to everything below it. The format scorecard is the
+  // exception: it exists to compare categories, so filtering it to a single row
+  // would destroy its purpose — the selected row is highlighted instead.
+  const catList = ["All", ...Object.keys(trend_by_category)];
+  const isAll = cat === "All";
+  const catSeries = trend_by_category[cat] || { weekly: [], monthly: [] };
+  const weeklySeries = isAll ? trend : catSeries.weekly;
+  const monthlySeries = isAll ? trend_monthly : catSeries.monthly;
+  const cohortRows = isAll ? cohort : cohort.filter((v) => v.category === cat);
+  const retentionRows = isAll ? retention : retention.filter((r) => r.category === cat);
+  const catOutliers = isAll ? outliers : outliers.filter((o) => o.category === cat);
+
+  // When filtered, the KPI row is recomputed from that category's own weekly
+  // series rather than showing channel totals beside category charts.
+  const pctDelta = (a, b) => (b ? Math.round(((a - b) / b) * 1000) / 10 : null);
+  const lastW = weeklySeries[weeklySeries.length - 1] || {};
+  const prevW = weeklySeries[weeklySeries.length - 2] || {};
+  const hookVals = retentionRows.map((r) => r.hook_30s).filter((v) => v != null).sort((a, b) => a - b);
+  const catKpi = isAll ? kpi : {
+    week_start: lastW.week_end, week_end: lastW.week_end,
+    watch_hours: Math.round(((lastW.watch_minutes || 0) / 60) * 10) / 10,
+    watch_hours_wow: pctDelta(lastW.watch_minutes || 0, prevW.watch_minutes || 0),
+    engaged_views: lastW.engaged_views || 0,
+    engaged_views_wow: pctDelta(lastW.engaged_views || 0, prevW.engaged_views || 0),
+    raw_views: null,
+    subs_gained: lastW.subs_gained || 0,
+    median_hook_30s: hookVals.length ? hookVals[Math.floor(hookVals.length / 2)] : null,
+    videos_active: cohortRows.length,
+  };
+
   const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
   const rw = meta.recent_window;
   const recentWindow = rw ? `${rw.start} to ${rw.end}` : "the last 30 days";
   const shownOutliers = outlierMetric === "All"
-    ? outliers
-    : outliers.filter((o) => o.metric === outlierMetric);
+    ? catOutliers
+    : catOutliers.filter((o) => o.metric === outlierMetric);
 
   // Category median curve, resampled onto the same normalized grid, so a single
   // video can be read against its peers rather than in isolation.
@@ -399,39 +431,71 @@ function VideoTab({ video }) {
     return out;
   };
 
-  const sel = selected || retention[0] || null;
+  // A video selected before the filter changed may no longer be in scope; fall
+  // back to the first in the filtered list rather than rendering a curve for a
+  // video the rest of the page is hiding.
+  const selInScope = selected && retentionRows.some((r) => r.video_id === selected.video_id);
+  const sel = (selInScope ? selected : retentionRows[0]) || null;
   const trendData = trend.map((t) => ({
     week: (t.week_end || "").slice(5),
     hours: Math.round((t.watch_minutes || 0) / 60),
     engaged: t.engaged_views || 0,
   }));
 
-  const worstHooks = retention.filter((r) => r.hook_30s != null).slice(0, 12);
+  const worstHooks = retentionRows.filter((r) => r.hook_30s != null).slice(0, 12);
 
   return (
     <>
+      <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap",
+                    marginBottom: 14 }}>
+        <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: 0.5, color: C.muted,
+                       textTransform: "uppercase" }}>Category</span>
+        {catList.map((c) => (
+          <button
+            key={c}
+            onClick={() => setCat(c)}
+            aria-pressed={cat === c}
+            style={{ border: `1px solid ${cat === c ? C.accent : C.border}`, borderRadius: 6,
+                     padding: "5px 11px", cursor: "pointer", fontSize: 11.5,
+                     background: cat === c ? C.accent : C.white,
+                     color: cat === c ? C.white : C.muted,
+                     fontWeight: cat === c ? 700 : 400,
+                     display: "flex", alignItems: "center", gap: 6 }}
+          >
+            {c !== "All" && <span style={{ width: 8, height: 8, borderRadius: 2,
+                                           background: VIDEO_CAT_COLORS[c] || C.muted }} />}
+            {c}
+          </button>
+        ))}
+        {!isAll && (
+          <span style={{ fontSize: 11.5, color: C.muted }}>
+            everything below is scoped to {cat}
+          </span>
+        )}
+      </div>
+
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
-        <TrendChart title="Engaged views" weekly={trend} monthly={trend_monthly}
+        <TrendChart title="Engaged views" weekly={weeklySeries} monthly={monthlySeries}
                     dataKey="engaged_views" color={C.success} />
-        <TrendChart title="Minutes watched" weekly={trend} monthly={trend_monthly}
+        <TrendChart title="Minutes watched" weekly={weeklySeries} monthly={monthlySeries}
                     dataKey="watch_minutes" color={C.accent}
                     format={(v) => `${v.toLocaleString()} min`} />
-        <TrendChart title="New subscribers" weekly={trend} monthly={trend_monthly}
+        <TrendChart title="New subscribers" weekly={weeklySeries} monthly={monthlySeries}
                     dataKey="subs_gained" color={C.primary}
                     format={(v) => `+${v.toLocaleString()}`} />
       </div>
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 18 }}>
-        <MetricCard label="Watch time" value={`${kpi.watch_hours}h`} change={kpi.watch_hours_wow ?? undefined}
-                    sub={kpi.week_start ? `week ending ${kpi.week_end}` : undefined} />
-        <MetricCard label="Engaged views" value={(kpi.engaged_views || 0).toLocaleString()}
-                    change={kpi.engaged_views_wow ?? undefined}
-                    sub={`${(kpi.raw_views || 0).toLocaleString()} raw incl. Shorts swipes`} />
-        <MetricCard label="Subscribers" value={`+${kpi.subs_gained || 0}`} sub="gained this week" />
+        <MetricCard label="Watch time" value={`${catKpi.watch_hours}h`} change={catKpi.watch_hours_wow ?? undefined}
+                    sub={catKpi.week_end ? `week ending ${catKpi.week_end}` : undefined} />
+        <MetricCard label="Engaged views" value={(catKpi.engaged_views || 0).toLocaleString()}
+                    change={catKpi.engaged_views_wow ?? undefined}
+                    sub={catKpi.raw_views != null ? `${catKpi.raw_views.toLocaleString()} raw incl. Shorts swipes` : "video-attributed"} />
+        <MetricCard label="Subscribers" value={`+${catKpi.subs_gained || 0}`} sub="gained this week" />
         <MetricCard label="Median hook rate"
-                    value={kpi.median_hook_30s != null ? kpi.median_hook_30s.toFixed(2) : "—"}
+                    value={catKpi.median_hook_30s != null ? catKpi.median_hook_30s.toFixed(2) : "—"}
                     sub="retention at 0:30" />
-        <MetricCard label="Videos active" value={kpi.videos_active || 0} sub="earned a view this week" />
+        <MetricCard label="Videos active" value={catKpi.videos_active || 0} sub={isAll ? "earned a view this week" : "in this category"} />
       </div>
 
       <div style={{ ...card({ padding: "10px 14px", marginBottom: 22, background: "#FFF9E6" }),
@@ -512,15 +576,20 @@ function VideoTab({ video }) {
           <strong>Total watch / video</strong> is the median video's watch time summed across
           all its viewers — a 28-minute episode can total hours. <strong>Watched per viewer</strong>
           is how long one person actually stayed, which is what "% of video watched" is derived from.
+          This table always shows every category — comparing them is its whole purpose — so the
+          category filter highlights a row here rather than hiding the others.
         </div>
         <Table
           headers={["Category", "Videos", "Engaged views", "Total watch time",
                     "Total watch / video", "Watched per viewer", "% of video watched",
                     "Subs", "Subs / 1k", "Saves"]}
           rows={formats.map((f) => [
-            <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <span style={{ display: "flex", alignItems: "center", gap: 6,
+                           fontWeight: f.category === cat ? 700 : 400,
+                           color: f.category === cat ? C.accent : "inherit" }}>
               <span style={{ width: 9, height: 9, borderRadius: 2, background: VIDEO_CAT_COLORS[f.category] || C.muted }} />
               {f.category}
+              {f.category === cat && <span style={{ fontSize: 10, color: C.muted }}>(filtered)</span>}
             </span>,
             f.videos,
             (f.engaged_views || 0).toLocaleString(),
@@ -593,16 +662,16 @@ function VideoTab({ video }) {
             />
             <Legend verticalAlign="top" align="left" height={30}
                     wrapperStyle={{ fontSize: 12, paddingBottom: 8 }} />
-            {Object.keys(VIDEO_CAT_COLORS).map((cat) => {
-              const pts = cohort
-                .filter((v) => v.category === cat && v[scatterKey] && v.length_s)
+            {Object.keys(VIDEO_CAT_COLORS).map((cat2) => {
+              const pts = cohortRows
+                .filter((v) => v.category === cat2 && v[scatterKey] && v.length_s)
                 .map((v) => ({
                   mins: +(v.length_s / 60).toFixed(1), watch: v[scatterKey].watch_min,
                   engaged: v[scatterKey].engaged_views, pct: v[scatterKey].avg_pct,
                   title: v.title, category: v.category, length_s: v.length_s,
                 }));
               if (!pts.length) return null;
-              return <Scatter key={cat} name={cat} data={pts} fill={VIDEO_CAT_COLORS[cat]} />;
+              return <Scatter key={cat2} name={cat2} data={pts} fill={VIDEO_CAT_COLORS[cat2]} />;
             })}
           </ScatterChart>
         </ResponsiveContainer>
