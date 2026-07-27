@@ -651,9 +651,16 @@ function VideoTab({ video }) {
   const sumOf = (rows) => rows.reduce((t, r) => t + r.value, 0);
   const rw = meta.recent_window;
   const recentWindow = rw ? `${rw.start} to ${rw.end}` : "the last 30 days";
-  const shownOutliers = outlierMetric === "All"
+  // Ordered by week, newest first, so spikes landing in the same month sit
+  // together — the payload ranks by value, which scattered a single busy week
+  // across the table. Value still breaks ties within a week.
+  const shownOutliers = (outlierMetric === "All"
     ? catOutliers
-    : catOutliers.filter((o) => o.metric === outlierMetric);
+    : catOutliers.filter((o) => o.metric === outlierMetric))
+    .slice()
+    .sort((a, b) => (a.week_end === b.week_end
+      ? (b.share_of_week || 0) - (a.share_of_week || 0)
+      : (a.week_end < b.week_end ? 1 : -1)));
 
   // Category median curve, resampled onto the same normalized grid, so a single
   // video can be read against its peers rather than in isolation.
@@ -966,7 +973,9 @@ function VideoTab({ video }) {
 
       <Section title="Outliers — what produced the spikes">
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          Video-weeks that stand out on any of the three metrics above. <strong>% of week</strong> is
+          Video-weeks that stand out on any of the three metrics above, newest week first so
+          spikes in the same month group together — the first week of each month is bolded.
+          <strong> % of week</strong> is
           this video's share of the channel total for that week, which is what actually explains a
           spike in the charts. <strong>vs its own typical week</strong> separates a real spike from a
           large evergreen video that is always big.
@@ -996,7 +1005,7 @@ function VideoTab({ video }) {
             compact
             headers={["Metric", "Video", "Category", "Length", "Week ending", "Value",
                       "% of week", "vs its own typical week"]}
-            rows={shownOutliers.map((o) => [
+            rows={shownOutliers.map((o, i) => [
               <span style={{ fontSize: 11.5, color: C.muted }}>{o.metric}</span>,
               <a href={safeHref(`https://www.youtube.com/watch?v=${o.video_id}`)}
                  target="_blank" rel="noopener noreferrer"
@@ -1009,7 +1018,17 @@ function VideoTab({ video }) {
                 {o.category}
               </span>,
               fmtClock(o.length_s),
-              o.week_end,
+              (() => {
+                const prev = shownOutliers[i - 1];
+                const newMonth = !prev || prev.week_end.slice(0, 7) !== o.week_end.slice(0, 7);
+                return (
+                  <span style={{ fontVariantNumeric: "tabular-nums",
+                                 fontWeight: newMonth ? 700 : 400,
+                                 color: newMonth ? C.primary : C.muted }}>
+                    {o.week_end}
+                  </span>
+                );
+              })(),
               <strong>{o.value.toLocaleString()}</strong>,
               <span style={{ color: o.share_of_week >= 30 ? C.danger : C.primary, fontWeight: 600 }}>
                 {o.share_of_week}%
