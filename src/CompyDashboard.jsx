@@ -318,14 +318,21 @@ class TabErrorBoundary extends Component {
 // category still reads as small.
 function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
                      yMaxWeek, yMaxMonth, format }) {
-  const [grain, setGrain] = useState("week");
+  // Monthly by default: twelve months of trend reads more clearly than 52 weeks,
+  // and the weekly view is a drill-down.
+  const [grain, setGrain] = useState("month");
   const isAll = cat === "All";
   const isWeek = grain === "week";
 
   const spine = isWeek ? allWeekly : allMonthly;
   const keyOf = (r) => (isWeek ? r.week_end : r.month);
-  const labelOf = (r) => (isWeek ? (r.week_end || "").slice(5) : r.month || "");
-  const fullOf = (r) => (isWeek ? `week ending ${r.week_end}` : r.month);
+  // The final month is still filling. It is included because "how are we doing
+  // this month" is a real question, but it must never read as a collapse — hence
+  // the asterisk on the axis, the note under the chart, and the tooltip caveat.
+  const labelOf = (r) => (isWeek ? (r.week_end || "").slice(5) : (r.month || "") + (r.partial ? "*" : ""));
+  const fullOf = (r) => (isWeek
+    ? `week ending ${r.week_end}`
+    : r.partial ? `${r.month} — in progress, ${r.days_covered} day(s)` : r.month);
 
   // Index each category by period so the stack assembles against the channel
   // spine: a category with no activity in a period contributes 0 rather than
@@ -341,7 +348,7 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
   const bands = isAll ? VIDEO_STACK_ORDER.filter((n) => byCategory[n]) : [cat];
   const rows = spine.map((r) => {
     const k = keyOf(r);
-    const row = { label: labelOf(r), full: fullOf(r) };
+    const row = { label: labelOf(r), full: fullOf(r), __partial: !!r.partial };
     let total = 0;
     bands.forEach((name) => {
       const v = (idx[name] && idx[name][k]) || 0;
@@ -355,7 +362,9 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
   const fixedMax = isWeek ? yMaxWeek : yMaxMonth;
   const dataMax = rows.reduce((m, r) => Math.max(m, r.__total || 0), 0);
   const yMax = fixedMax ? Math.max(fixedMax, dataMax) : undefined;
-  const span = isWeek ? `${allWeekly.length} weeks` : `${allMonthly.length} complete months`;
+  const partialMonth = !isWeek && allMonthly.length ? allMonthly[allMonthly.length - 1] : null;
+  const hasPartial = !!(partialMonth && partialMonth.partial);
+  const span = isWeek ? `${allWeekly.length} weeks` : `${allMonthly.length} months`;
   const fmt = (v) => (format ? format(v) : Number(v).toLocaleString());
 
   return (
@@ -442,6 +451,15 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
           ))}
         </AreaChart>
       </ResponsiveContainer>
+      {hasPartial && (
+        <div style={{ fontSize: 10.5, color: C.muted, marginTop: 4 }}>
+          * {partialMonth.month} is still in progress — {partialMonth.days_covered} of{" "}
+          {new Date(
+            Number(partialMonth.month.slice(0, 4)),
+            Number(partialMonth.month.slice(5, 7)), 0
+          ).getDate()} days
+        </div>
+      )}
       {isAll && (
         <div style={{ display: "flex", flexWrap: "wrap", gap: "3px 10px", marginTop: 6 }}>
           {[...bands].reverse().map((name) => (
