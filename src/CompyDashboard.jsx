@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import {
   BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
-  ScatterChart, Scatter, ZAxis, LineChart, Line,
+  ScatterChart, Scatter, ZAxis, LineChart, Line, PieChart, Pie,
   CartesianGrid, ResponsiveContainer, Cell,
 } from "recharts";
 
@@ -192,7 +192,7 @@ const VIDEO_CAT_COLORS = {
   "Podcast episode": C.primary,
   "Podcast clip": C.warning,
   "Kohavi webinar": "#6C3483",
-  "Other webinar": "#16A085",
+  "Other webinar": "#D35400",
   "Product long-form": C.success,
   "Other short": C.muted,
 };
@@ -358,6 +358,93 @@ function TrendChart({ title, weekly, monthly, dataKey, color, format }) {
   );
 }
 
+
+// Part-to-whole by category. A pie earns its place here only because the split is
+// the question and the shares are far apart; for anything closer a bar would read
+// better. Six categories is the practical ceiling, so slices below 8% rely on the
+// legend and tooltip rather than a label that would collide with its neighbour.
+// The exact numbers live in the format scorecard, which is this chart's table twin.
+function CategoryPie({ title, rows, total, format, highlight }) {
+  const shown = rows.filter((r) => r.value > 0);
+  if (!shown.length) {
+    return (
+      <div style={{ ...card({ padding: 14 }), flex: "1 1 260px", minWidth: 240 }}>
+        <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{title}</div>
+        <div style={{ fontSize: 12.5, color: C.muted, padding: "24px 0" }}>No data in this window.</div>
+      </div>
+    );
+  }
+  return (
+    <div style={{ ...card({ padding: 14 }), flex: "1 1 260px", minWidth: 240 }}>
+      <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{title}</div>
+      <div style={{ fontSize: 11, color: C.muted, marginBottom: 2 }}>
+        {format ? format(total) : total.toLocaleString()} total
+      </div>
+      <ResponsiveContainer width="100%" height={196}>
+        <PieChart margin={{ top: 4, right: 4, bottom: 4, left: 4 }}>
+          <Pie
+            data={shown}
+            dataKey="value"
+            nameKey="name"
+            innerRadius={38}
+            outerRadius={70}
+            paddingAngle={2}
+            stroke={C.white}
+            strokeWidth={2}
+            isAnimationActive={false}
+            label={({ percent, x, y, textAnchor }) =>
+              percent >= 0.08
+                ? <text x={x} y={y} textAnchor={textAnchor} dominantBaseline="central"
+                        fontSize={11} fill={C.muted}>{Math.round(percent * 100)}%</text>
+                : null}
+            labelLine={false}
+          >
+            {shown.map((r) => (
+              <Cell key={r.name} fill={r.color}
+                    opacity={!highlight || highlight === "All" || highlight === r.name ? 1 : 0.28} />
+            ))}
+          </Pie>
+          <RTooltip
+            content={({ active, payload }) => {
+              if (!active || !payload || !payload.length) return null;
+              const d = payload[0].payload;
+              const pct = total ? ((d.value / total) * 100).toFixed(1) : "0";
+              return (
+                <div style={{ ...card({ padding: 8 }), fontSize: 12 }}>
+                  <div style={{ fontWeight: 600 }}>{d.name}</div>
+                  <div>{format ? format(d.value) : d.value.toLocaleString()} · {pct}% of total</div>
+                </div>
+              );
+            }}
+          />
+        </PieChart>
+      </ResponsiveContainer>
+      {/* Six hues cannot be told apart reliably at once — validated worst pair sits
+          below the readable floor no matter which colours are chosen. So identity
+          is carried by this ranked list (position + text), and colour is only a
+          convenience for matching slices back to it. */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 3, marginTop: 4 }}>
+        {[...shown].sort((a, b) => b.value - a.value).map((r) => (
+          <div key={r.name}
+               style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11.5,
+                        opacity: !highlight || highlight === "All" || highlight === r.name ? 1 : 0.45 }}>
+            <span style={{ width: 8, height: 8, borderRadius: 2, background: r.color, flex: "none" }} />
+            <span style={{ flex: 1, color: C.muted, overflow: "hidden",
+                           textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.name}</span>
+            <span style={{ fontVariantNumeric: "tabular-nums", color: C.primary, fontWeight: 600 }}>
+              {total ? Math.round((r.value / total) * 100) : 0}%
+            </span>
+            <span style={{ fontVariantNumeric: "tabular-nums", color: C.muted, minWidth: 62,
+                           textAlign: "right" }}>
+              {format ? format(r.value) : r.value.toLocaleString()}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function VideoTab({ video }) {
   const [selected, setSelected] = useState(null);
   const [showBench, setShowBench] = useState(true);
@@ -411,6 +498,21 @@ function VideoTab({ video }) {
   };
 
   const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
+
+  // Pies always use the FULL category set, never the filtered slice: a
+  // part-to-whole chart of one part is meaningless. The active filter dims the
+  // other slices instead, so the selected category stays findable in context.
+  const pieRows = (metricKey) => Object.keys(VIDEO_CAT_COLORS).map((name) => ({
+    name,
+    color: VIDEO_CAT_COLORS[name],
+    value: cohort
+      .filter((v) => v.category === name && v[scatterKey])
+      .reduce((t, v) => t + (v[scatterKey][metricKey] || 0), 0),
+  }));
+  const pieEngaged = pieRows("engaged_views");
+  const pieWatch = pieRows("watch_min");
+  const pieSubs = pieRows("subs");
+  const sumOf = (rows) => rows.reduce((t, r) => t + r.value, 0);
   const rw = meta.recent_window;
   const recentWindow = rw ? `${rw.start} to ${rw.end}` : "the last 30 days";
   const shownOutliers = outlierMetric === "All"
@@ -675,6 +777,21 @@ function VideoTab({ video }) {
             })}
           </ScatterChart>
         </ResponsiveContainer>
+
+        <div style={{ fontSize: 12.5, color: C.muted, margin: "18px 0 8px" }}>
+          The same window split by category. Note how differently the three metrics
+          distribute — the format that wins reach is not the one that wins attention.
+          Each slice is listed with its share and value beneath the chart, because six
+          colours cannot be told apart reliably at a glance.
+        </div>
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <CategoryPie title="Engaged views" rows={pieEngaged} total={sumOf(pieEngaged)}
+                       highlight={cat} />
+          <CategoryPie title="Minutes watched" rows={pieWatch} total={sumOf(pieWatch)}
+                       highlight={cat} format={(v) => `${Math.round(v).toLocaleString()} min`} />
+          <CategoryPie title="New subscribers" rows={pieSubs} total={sumOf(pieSubs)}
+                       highlight={cat} format={(v) => `+${v.toLocaleString()}`} />
+        </div>
       </Section>
 
       <Section title="Retention — fix the opening, not the length">
