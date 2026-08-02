@@ -33,11 +33,11 @@ function safeHref(url) {
   return u ? `https://${u}` : "#";
 }
 
-function MetricCard({ label, value, change, sub, periodLabel }) {
+function MetricCard({ label, value, change, sub, periodLabel, hint }) {
   const color = change > 0 ? C.success : change < 0 ? C.danger : C.muted;
   const arrow = change > 0 ? "↑" : change < 0 ? "↓" : "";
   return (
-    <div style={{ ...card({ padding: "16px 20px", flex: 1, minWidth: 150 }) }}>
+    <div style={{ ...card({ padding: "16px 20px", flex: 1, minWidth: 150 }) }} title={hint || undefined}>
       <div style={{ fontSize: 11, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
       <div style={{ fontSize: 26, fontWeight: 700, color: C.primary, margin: "4px 0 2px" }}>{value}</div>
       {change !== undefined && <div style={{ fontSize: 13, color }}>{arrow} {Math.abs(change)}% {periodLabel || "WoW"}</div>}
@@ -656,10 +656,16 @@ function VideoTab({ video }) {
   // like for like. They used to show a single week beside 12-month charts, which
   // made the whole header read on a different timescale from everything under it.
   const pctDelta = (a, b) => (b ? Math.round(((a - b) / b) * 1000) / 10 : null);
+  // Unfiltered reads the CHANNEL totals; a category filter necessarily falls back
+  // to video-attributed sums, since YouTube cannot assign a channel-level
+  // subscriber to a category. Views differ by <1% between the two, subscribers by
+  // ~38x — so the card says which basis it is on rather than leaving it implied.
+  const rtChan = recent_totals.channel || {};
   const rtAll = recent_totals.all || {};
   const rtCat = (recent_totals.by_category || {})[cat] || {};
-  const cur30 = (isAll ? rtAll.current : rtCat.current) || {};
-  const prior30 = (isAll ? rtAll.prior : rtCat.prior) || {};
+  const cur30 = (isAll ? (rtChan.current || rtAll.current) : rtCat.current) || {};
+  const prior30 = (isAll ? (rtChan.prior || rtAll.prior) : rtCat.prior) || {};
+  const subsAreAttributed = !isAll;
   const rWin = recent_totals.window;
   const hookVals = retentionRows.map((r) => r.hook_30s).filter((v) => v != null).sort((a, b) => a - b);
   const catKpi = {
@@ -672,7 +678,7 @@ function VideoTab({ video }) {
     subs_gained: cur30.subs_gained || 0,
     subs_wow: pctDelta(cur30.subs_gained || 0, prior30.subs_gained || 0),
     median_hook_30s: hookVals.length ? hookVals[Math.floor(hookVals.length / 2)] : null,
-    videos_active: cur30.videos || 0,
+    videos_active: (isAll ? rtAll.current : rtCat.current)?.videos || 0,
   };
 
   // Computed from the unfiltered series, so every category is drawn on the same
@@ -818,7 +824,12 @@ function VideoTab({ video }) {
         <MetricCard periodLabel="vs prior 30d" label="Engaged views · 30 days" value={(catKpi.engaged_views || 0).toLocaleString()}
                     change={catKpi.engaged_views_wow ?? undefined}
                     sub={paidSub} />
-        <MetricCard periodLabel="vs prior 30d" label="Subscribers · 30 days" value={`+${catKpi.subs_gained || 0}`}
+        <MetricCard periodLabel="vs prior 30d"
+                    label={`Subscribers · 30 days${subsAreAttributed ? " (attributed)" : ""}`}
+                    hint={subsAreAttributed
+                      ? "Only subscribers YouTube ties to a video in this category. The channel gained more than the categories add up to."
+                      : "Channel total, including subscribers not tied to any video."}
+                    value={`+${(catKpi.subs_gained || 0).toLocaleString()}`}
                     change={catKpi.subs_wow ?? undefined} sub="vs prior 30 days" />
         <MetricCard label="Median hook rate"
                     value={catKpi.median_hook_30s != null ? catKpi.median_hook_30s.toFixed(2) : "—"}
