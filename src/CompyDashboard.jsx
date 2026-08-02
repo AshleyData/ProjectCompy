@@ -148,14 +148,29 @@ function BubbleChart({ competitors }) {
             const bx = Math.min(cx+14, W-185), by = Math.max(Math.min(cy-15, H-80), mt);
             return (
               <g>
-                <rect x={bx} y={by} width={172} height={70} rx={6} fill="white" stroke="#DEE2E6" strokeWidth={1} />
+                <rect x={bx} y={by} width={172} height={86} rx={6} fill="white" stroke="#DEE2E6" strokeWidth={1} />
                 <text x={bx+10} y={by+19} fontSize={12} fontWeight={700} fill={COMP_COLORS[c.name]||C.primary}>{c.name}</text>
                 <text x={bx+10} y={by+36} fontSize={11} fill="#333">{"DA: "}{c.da||0}{"   Pages: "}{c.pages}</text>
                 <text x={bx+10} y={by+53} fontSize={11} fill="#333">{"ETV: "}{c.etv.toLocaleString()}</text>
+                {/* DA is a monthly reading, so name the month it came from —
+                    otherwise an older dashboard silently looks current. */}
+                <text x={bx+10} y={by+69} fontSize={10} fill="#6C757D">
+                  {c.da_as_of ? `DA as of ${c.da_as_of.slice(0, 7)}` : "DA: no monthly reading yet"}
+                </text>
               </g>
             );
           })()}
         </svg>
+        {(() => {
+          const stamps = [...new Set(competitors.map(c => c.da_as_of).filter(Boolean))].sort();
+          if (!stamps.length) return null;
+          const label = stamps.length === 1
+            ? stamps[0].slice(0, 7)
+            : `${stamps[0].slice(0, 7)}–${stamps[stamps.length - 1].slice(0, 7)}`;
+          return <div data-testid="da-asof-caption" style={{ fontSize: 11, color: C.muted, marginTop: 4 }}>
+            Domain Authority as of {label} · refreshed monthly
+          </div>;
+        })()}
       </div>
       <div style={{ display:'flex', flexWrap:'wrap', gap:'6px 14px', marginTop:10, justifyContent:'center' }}>
         {competitors.map(c => (
