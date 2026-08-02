@@ -1203,6 +1203,7 @@ export default function CompyDashboard() {
   const [ncvTrack, setNcvTrack] = useState(null);
   // Recently-Shipped column sort: {col, dir}. Clicking a header cycles desc → asc → none.
   const [shipSort, setShipSort] = useState({ col: null, dir: null });
+  const [etvScale, setEtvScale] = useState("log");
   const cycleShipSort = (key) => setShipSort(s =>
     s.col !== key ? { col: key, dir: "desc" }
       : s.dir === "desc" ? { col: key, dir: "asc" }
@@ -2080,9 +2081,16 @@ export default function CompyDashboard() {
           {/* Bubble Chart — Content Volume vs DA vs ETV (pure SVG) */}
           <BubbleChart competitors={d.competitors} />
 
-          {/* Chart 5 — ETV trend over time, GrowthBook on secondary Y-axis */}
+          {/* Chart 5 — ETV trend over time. One shared Y axis; see below. */}
           {d.etv_trend && Object.keys(d.etv_trend).length > 0 && (() => {
-            const allDates = [...new Set(Object.values(d.etv_trend).flatMap(pts => pts.map(p => p.date)))].sort();
+            // Series before this date are DAILY points (03-27, 03-28, 03-29),
+            // not weekly. Mixing cadences in a chart titled "Weekly Trend" made
+            // the left edge look like a burst of activity that never happened.
+            // Filtered here rather than in the payload because etv_trend also
+            // feeds Competitor Heat and the audit's ETV-swing check.
+            const ETV_TREND_START = "2026-03-30";
+            const allDates = [...new Set(Object.values(d.etv_trend).flatMap(pts => pts.map(p => p.date)))]
+              .filter(dt => dt >= ETV_TREND_START).sort();
             const lineData = allDates.map(date => {
               const row = { date: date.slice(5).replace("-", "/") }; // "03/27"
               Object.entries(d.etv_trend).forEach(([comp, pts]) => {
@@ -2094,21 +2102,56 @@ export default function CompyDashboard() {
             const mainComps = Object.keys(d.etv_trend).filter(c => c !== "GrowthBook");
             return (
               <Section title="Competitor Total ETV — Weekly Trend">
-                <p style={{ fontSize: 12, color: C.muted, marginBottom: 12, textAlign: "left" }}>
-                  GrowthBook (right axis, green) plotted separately due to scale difference — DataForSEO undercounts branded traffic.
-                </p>
+                <div style={{ display: "flex", gap: 10, alignItems: "baseline", flexWrap: "wrap",
+                              marginBottom: 10 }}>
+                  <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6,
+                                overflow: "hidden" }}>
+                    {[["log", "Log scale"], ["linear", "Linear"]].map(([k, label]) => (
+                      <button
+                        key={k}
+                        onClick={() => setEtvScale(k)}
+                        aria-pressed={etvScale === k}
+                        style={{ border: 0, cursor: "pointer", fontSize: 11.5, padding: "5px 11px",
+                                 background: etvScale === k ? C.accent : C.white,
+                                 color: etvScale === k ? C.white : C.muted,
+                                 fontWeight: etvScale === k ? 700 : 400 }}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                  <p style={{ fontSize: 12, color: C.muted, margin: 0, flex: "1 1 340px", textAlign: "left" }}>
+                    {etvScale === "log"
+                      ? <>One shared axis, log scale — the range runs 352 to 280K, so a linear
+                          axis flattens everyone below Harness into the baseline. Equal vertical
+                          distance means equal <em>ratio</em>, not equal ETV.</>
+                      : <>One shared axis, linear. True to absolute size, but GrowthBook peaks at
+                          about 2% of the axis height, so it and the four smaller competitors sit
+                          on the baseline.</>}
+                    {" "}DataForSEO undercounts GrowthBook's branded traffic, so its line
+                    understates real organic performance — see the GSC tab.
+                  </p>
+                </div>
                 <ResponsiveContainer width="100%" height={340}>
                   <LineChart data={lineData} margin={{ left: 10, right: 60, top: 10, bottom: 10 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="date" tick={{ fontSize: 11 }} />
-                    <YAxis yAxisId="left" tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} tick={{ fontSize: 11 }} />
-                    <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11, fill: C.success }} tickFormatter={v => v} domain={["auto", "auto"]} />
+                    {/* ONE axis. GrowthBook used to sit on a second right-hand scale,
+                        which invents a correlation: two unrelated scales aligned by
+                        accident. It was never warranted either — GrowthBook is 5,382,
+                        mid-pack, while Flagsmith (1,107) and Unleash (352) were already
+                        on this axis. */}
+                    <YAxis yAxisId="left" tick={{ fontSize: 11 }}
+                           scale={etvScale === "log" ? "log" : "linear"}
+                           domain={etvScale === "log" ? [10, "auto"] : [0, "auto"]}
+                           allowDataOverflow={false}
+                           tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} />
                     <RTooltip formatter={(v, name) => [v != null ? v.toLocaleString() : "—", name]} />
                     <Legend />
                     {mainComps.map(comp => (
                       <Line key={comp} yAxisId="left" type="monotone" dataKey={comp} stroke={COMP_COLORS[comp] || C.accent} strokeWidth={2} dot={false} connectNulls />
                     ))}
-                    <Line yAxisId="right" type="monotone" dataKey="GrowthBook" stroke={C.success} strokeWidth={2.5} strokeDasharray="5 3" dot={{ r: 3 }} connectNulls />
+                    <Line yAxisId="left" type="monotone" dataKey="GrowthBook" stroke={C.success} strokeWidth={2.5} strokeDasharray="5 3" dot={{ r: 3 }} connectNulls />
                   </LineChart>
                 </ResponsiveContainer>
               </Section>
