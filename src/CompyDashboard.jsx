@@ -365,20 +365,32 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
     });
   });
 
-  const bands = isAll ? VIDEO_STACK_ORDER.filter((n) => byCategory[n]) : [cat];
+  // Categories are summed from PER-VIDEO rows; the spine is the CHANNEL total.
+  // For views and watch time those nearly agree, but subscribers are mostly not
+  // attributable to a video: July gained 2,619 subscribers channel-wide while
+  // only ~56 traced to specific videos. Stacking only the attributable part
+  // against an axis scaled to the channel total drew a 2% sliver that read as an
+  // empty chart. The remainder is shown as its own band instead of vanishing.
+  const UNATTRIBUTED = "Unattributed";
+  const catBands = isAll ? VIDEO_STACK_ORDER.filter((n) => byCategory[n]) : [cat];
   const rows = spine.map((r) => {
     const k = keyOf(r);
     const row = { label: labelOf(r), full: fullOf(r), __partial: !!r.partial,
                   __paidPct: r.paid_pct || 0, __paidMaterial: !!r.paid_material };
     let total = 0;
-    bands.forEach((name) => {
+    catBands.forEach((name) => {
       const v = (idx[name] && idx[name][k]) || 0;
       row[name] = v;
       total += v;
     });
-    row.__total = total;
+    const channelTotal = r[metricKey] || 0;
+    row[UNATTRIBUTED] = isAll ? Math.max(0, channelTotal - total) : 0;
+    row.__attributed = total;
+    row.__total = isAll ? Math.max(channelTotal, total) : total;
     return row;
   });
+  const hasUnattributed = isAll && rows.some((r) => r[UNATTRIBUTED] > 0);
+  const bands = hasUnattributed ? [...catBands, UNATTRIBUTED] : catBands;
 
   const fixedMax = isWeek ? yMaxWeek : yMaxMonth;
   const dataMax = rows.reduce((m, r) => Math.max(m, r.__total || 0), 0);
@@ -470,13 +482,20 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
                  category is shown, since there is nothing to separate. */
               stroke={C.white}
               strokeWidth={isAll ? 1.5 : 0}
-              fill={VIDEO_CAT_COLORS[name] || C.muted}
-              fillOpacity={0.9}
+              fill={name === UNATTRIBUTED ? "#BFC5CB" : (VIDEO_CAT_COLORS[name] || C.muted)}
+              fillOpacity={name === UNATTRIBUTED ? 0.55 : 0.9}
               isAnimationActive={false}
             />
           ))}
         </AreaChart>
       </ResponsiveContainer>
+      {hasUnattributed && (
+        <div style={{ fontSize: 10.5, color: C.muted, marginTop: 4 }}>
+          "Unattributed" is the channel total minus what YouTube ties to a specific
+          video — largest for subscribers, which often come from the channel page or
+          search rather than a video.
+        </div>
+      )}
       {rows.some((r) => r.__paidMaterial) && (
         <div style={{ fontSize: 10.5, color: C.danger, marginTop: 4 }}>
           † paid-ad traffic supplied a material share of{" "}
@@ -499,7 +518,7 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
             <span key={name} style={{ display: "flex", alignItems: "center", gap: 4,
                                       fontSize: 10.5, color: C.muted }}>
               <span style={{ width: 8, height: 8, borderRadius: 2,
-                             background: VIDEO_CAT_COLORS[name] }} />
+                             background: name === UNATTRIBUTED ? "#BFC5CB" : VIDEO_CAT_COLORS[name] }} />
               {name}
             </span>
           ))}
