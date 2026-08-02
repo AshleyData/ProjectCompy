@@ -329,7 +329,11 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
   // The final month is still filling. It is included because "how are we doing
   // this month" is a real question, but it must never read as a collapse — hence
   // the asterisk on the axis, the note under the chart, and the tooltip caveat.
-  const labelOf = (r) => (isWeek ? (r.week_end || "").slice(5) : (r.month || "") + (r.partial ? "*" : ""));
+  // A dagger marks a period where paid promotion supplied a material share of
+  // the views. The numbers are real but bought, and an ad campaign read as
+  // organic growth is the single most misleading thing this chart could do.
+  const labelOf = (r) => (isWeek ? (r.week_end || "").slice(5) : (r.month || "") + (r.partial ? "*" : ""))
+    + (r.paid_material ? "†" : "");
   const fullOf = (r) => (isWeek
     ? `week ending ${r.week_end}`
     : r.partial ? `${r.month} — in progress, ${r.days_covered} day(s)` : r.month);
@@ -348,7 +352,8 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
   const bands = isAll ? VIDEO_STACK_ORDER.filter((n) => byCategory[n]) : [cat];
   const rows = spine.map((r) => {
     const k = keyOf(r);
-    const row = { label: labelOf(r), full: fullOf(r), __partial: !!r.partial };
+    const row = { label: labelOf(r), full: fullOf(r), __partial: !!r.partial,
+                  __paidPct: r.paid_pct || 0, __paidMaterial: !!r.paid_material };
     let total = 0;
     bands.forEach((name) => {
       const v = (idx[name] && idx[name][k]) || 0;
@@ -429,6 +434,11 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
                       <span style={{ fontVariantNumeric: "tabular-nums" }}>{fmt(row.__total || 0)}</span>
                     </div>
                   )}
+                  {row.__paidMaterial && (
+                    <div style={{ marginTop: 4, color: C.danger, fontWeight: 600 }}>
+                      † {row.__paidPct}% of views in this period were paid ads
+                    </div>
+                  )}
                 </div>
               );
             }}
@@ -451,6 +461,13 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
           ))}
         </AreaChart>
       </ResponsiveContainer>
+      {rows.some((r) => r.__paidMaterial) && (
+        <div style={{ fontSize: 10.5, color: C.danger, marginTop: 4 }}>
+          † paid-ad traffic supplied a material share of{" "}
+          {rows.filter((r) => r.__paidMaterial).map((r) => `${r.label.replace("†", "")} (${r.__paidPct}%)`).join(", ")}
+          {" "}— bought reach, not organic performance
+        </div>
+      )}
       {hasPartial && (
         <div style={{ fontSize: 10.5, color: C.muted, marginTop: 4 }}>
           * {partialMonth.month} is still in progress — {partialMonth.days_covered} of{" "}
@@ -587,7 +604,7 @@ function VideoTab({ video }) {
 
   const { kpi, formats = [], cohort = [], retention = [], benchmarks = [],
           trend = [], trend_monthly = [], outliers = [], trend_by_category = {},
-          recent_totals = {}, formats_recent = [], meta = {} } = video;
+          recent_totals = {}, formats_recent = [], paid_totals = {}, meta = {} } = video;
   // One filter, applied to everything below it. The format scorecard is the
   // exception: it exists to compare categories, so filtering it to a single row
   // would destroy its purpose — the selected row is highlighted instead.
@@ -633,6 +650,16 @@ function VideoTab({ video }) {
   };
 
   const shownFormats = formatWindow === "recent" ? formats_recent : formats;
+  // Paid share of the KPI window. Per-video paid attribution is not available
+  // from the API, so this is channel-wide and shown as context on the total.
+  const paid30 = (paid_totals.recent_30d || {}).engaged_views || 0;
+  const paidPct30 = catKpi.engaged_views ? Math.round((paid30 / catKpi.engaged_views) * 100) : 0;
+  const paidSub = (isAll && paidPct30 >= 5)
+    ? `${paidPct30}% of these were paid ads`
+    : (catKpi.raw_views != null
+        ? `${catKpi.raw_views.toLocaleString()} raw incl. Shorts swipes`
+        : "video-attributed");
+
   const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
 
   // Pies always use the FULL category set, never the filtered slice: a
@@ -654,6 +681,11 @@ function VideoTab({ video }) {
   // Ordered by week, newest first, so spikes landing in the same month sit
   // together — the payload ranks by value, which scattered a single busy week
   // across the table. Value still breaks ties within a week.
+  // Weeks where paid promotion dominated, so an outlier row can say whether the
+  // spike was bought.
+  const paidWeeks = {};
+  trend.forEach((w) => { if (w.paid_material) paidWeeks[w.week_end] = w.paid_pct; });
+
   const shownOutliers = (outlierMetric === "All"
     ? catOutliers
     : catOutliers.filter((o) => o.metric === outlierMetric))
@@ -750,7 +782,7 @@ function VideoTab({ video }) {
                     sub={catKpi.window_label} />
         <MetricCard periodLabel="vs prior 30d" label="Engaged views · 30 days" value={(catKpi.engaged_views || 0).toLocaleString()}
                     change={catKpi.engaged_views_wow ?? undefined}
-                    sub={catKpi.raw_views != null ? `${catKpi.raw_views.toLocaleString()} raw incl. Shorts swipes` : "video-attributed"} />
+                    sub={paidSub} />
         <MetricCard periodLabel="vs prior 30d" label="Subscribers · 30 days" value={`+${catKpi.subs_gained || 0}`}
                     change={catKpi.subs_wow ?? undefined} sub="vs prior 30 days" />
         <MetricCard label="Median hook rate"
@@ -1004,7 +1036,7 @@ function VideoTab({ video }) {
           <Table
             compact
             headers={["Metric", "Video", "Category", "Length", "Week ending", "Value",
-                      "% of week", "vs its own typical week"]}
+                      "% of week", "vs its own typical week", "Traffic"]}
             rows={shownOutliers.map((o, i) => [
               <span style={{ fontSize: 11.5, color: C.muted }}>{o.metric}</span>,
               <a href={safeHref(`https://www.youtube.com/watch?v=${o.video_id}`)}
@@ -1036,6 +1068,9 @@ function VideoTab({ video }) {
               o.weeks_live <= 1
                 ? <span style={{ color: C.muted }}>debut week</span>
                 : (o.vs_own_typical ? `${o.vs_own_typical}x` : "—"),
+              paidWeeks[o.week_end]
+                ? <span style={{ color: C.danger, fontWeight: 600 }}>{paidWeeks[o.week_end]}% paid</span>
+                : <span style={{ color: C.muted }}>organic</span>,
             ])}
           />
         )}

@@ -479,6 +479,58 @@
     },
     "opportunities": [
       {
+        "title": "Convert /compare/growthbook-vs-statsig into an AI-cited BOFU page",
+        "type": "BOFU comparison",
+        "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
+        "subScores": {
+          "pipeline": 5,
+          "aiCitation": 5,
+          "demand": 5,
+          "winnability": 5,
+          "strategicFit": 4
+        },
+        "weightedImpact": 98.0,
+        "effortTier": "XS",
+        "acpScore": 98.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Add a 40-word answer capsule + comparison table + schema to vs Statsig; instrument the signup CTA. Goal: turn its 1,962 impressions (pos 6.6) into AI-cited, signup-driving traffic.",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "URL is /compare BOFU",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "1,962 GSC impressions",
+          "winnability": "position 6.6",
+          "strategicFit": "comparison vs a feature-flagging competitor"
+        }
+      },
+      {
+        "title": "Convert /compare/growthbook-vs-posthog into an AI-cited BOFU page",
+        "type": "BOFU comparison",
+        "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
+        "subScores": {
+          "pipeline": 5,
+          "aiCitation": 5,
+          "demand": 3,
+          "winnability": 4,
+          "strategicFit": 4
+        },
+        "weightedImpact": 88.0,
+        "effortTier": "XS",
+        "acpScore": 88.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Add a 40-word answer capsule + comparison table + schema to vs Posthog; instrument the signup CTA. Goal: turn its 922 impressions (pos 7.1) into AI-cited, signup-driving traffic.",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "URL is /compare BOFU",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "922 GSC impressions",
+          "winnability": "position 7.1 \u00b7 backlink gap vs competitor",
+          "strategicFit": "comparison vs a feature-flagging competitor"
+        }
+      },
+      {
         "title": "Convert /compare/growthbook-vs-launchdarkly into an AI-cited BOFU page",
         "type": "BOFU comparison",
         "url": "https://www.growthbook.io/compare/growthbook-vs-launchdarkly",
@@ -498,35 +550,9 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "685 GSC impressions",
           "winnability": "position 9.2",
-          "strategicFit": "comparison vs a feature-flagging competitor"
-        }
-      },
-      {
-        "title": "Convert /compare/growthbook-vs-statsig into an AI-cited BOFU page",
-        "type": "BOFU comparison",
-        "url": "https://www.growthbook.io/compare/growthbook-vs-statsig",
-        "subScores": {
-          "pipeline": 5,
-          "aiCitation": 5,
-          "demand": 1,
-          "winnability": 5,
-          "strategicFit": 4
-        },
-        "weightedImpact": 82.0,
-        "effortTier": "XS",
-        "acpScore": 82.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Add a 40-word answer capsule + comparison table + schema to vs Statsig; instrument the signup CTA. Goal: turn its 1,962 impressions (pos 6.6) into AI-cited, signup-driving traffic.",
-        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "10 monthly searches (DataForSEO)",
-          "winnability": "position 6.6",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -550,35 +576,35 @@
         "persistence": "watch \u2014 only 1 week of data",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "169 GSC impressions",
           "winnability": "position 6.1",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
       {
-        "title": "Convert /compare/growthbook-vs-posthog into an AI-cited BOFU page",
+        "title": "Convert /compare/growthbook-vs-vwo into an AI-cited BOFU page",
         "type": "BOFU comparison",
-        "url": "https://www.growthbook.io/compare/growthbook-vs-posthog",
+        "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
         "subScores": {
           "pipeline": 5,
           "aiCitation": 5,
           "demand": 1,
-          "winnability": 4,
+          "winnability": 5,
           "strategicFit": 4
         },
-        "weightedImpact": 80.0,
+        "weightedImpact": 82.0,
         "effortTier": "XS",
-        "acpScore": 80.0,
+        "acpScore": 82.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
-        "action": "Add a 40-word answer capsule + comparison table + schema to vs Posthog; instrument the signup CTA. Goal: turn its 922 impressions (pos 7.1) into AI-cited, signup-driving traffic.",
+        "action": "Add a 40-word answer capsule + comparison table + schema to vs Vwo; instrument the signup CTA. Goal: turn its 199 impressions (pos 10.9) into AI-cited, signup-driving traffic.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "10 monthly searches (DataForSEO)",
-          "winnability": "position 7.1 \u00b7 backlink gap vs competitor",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "199 GSC impressions",
+          "winnability": "position 10.9",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -602,35 +628,9 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "244 GSC impressions",
           "winnability": "position 9.4 \u00b7 backlink gap vs competitor",
-          "strategicFit": "comparison vs a feature-flagging competitor"
-        }
-      },
-      {
-        "title": "Convert /compare/growthbook-vs-vwo into an AI-cited BOFU page",
-        "type": "BOFU comparison",
-        "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
-        "subScores": {
-          "pipeline": 5,
-          "aiCitation": 5,
-          "demand": 0,
-          "winnability": 5,
-          "strategicFit": 4
-        },
-        "weightedImpact": 78.0,
-        "effortTier": "XS",
-        "acpScore": 78.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Add a 40-word answer capsule + comparison table + schema to vs Vwo; instrument the signup CTA. Goal: turn its 199 impressions (pos 10.9) into AI-cited, signup-driving traffic.",
-        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "position 10.9",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -654,8 +654,8 @@
         "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "33 GSC impressions",
           "winnability": "position 6.3",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -680,8 +680,8 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "66 GSC impressions",
           "winnability": "position 8.0",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -706,8 +706,8 @@
         "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "48 GSC impressions",
           "winnability": "position 6.0",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -732,8 +732,8 @@
         "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "163 GSC impressions",
           "winnability": "position 6.4",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -744,50 +744,24 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 5,
-          "demand": 2,
+          "aiCitation": 4,
+          "demand": 5,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 70.0,
+        "weightedImpact": 76.0,
         "effortTier": "XS",
-        "acpScore": 70.0,
+        "acpScore": 76.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cwhat is a/b testing\u201d (pos 9.2, 2,606 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cwhat is a/b testing\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "1,900 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "2,606 GSC impressions",
           "winnability": "position 9.2 (striking distance)",
           "strategicFit": "topic relevance of \u201cwhat is a/b testing\u201d"
-        }
-      },
-      {
-        "title": "Capture striking-distance query: \u201cwhat is ab testing\u201d",
-        "type": "Striking distance",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 5,
-          "demand": 2,
-          "winnability": 5,
-          "strategicFit": 5
-        },
-        "weightedImpact": 70.0,
-        "effortTier": "XS",
-        "acpScore": 70.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201cwhat is ab testing\u201d (pos 9.5, 814 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "intent inferred from query \u201cwhat is ab testing\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "1,900 monthly searches (DataForSEO)",
-          "winnability": "position 9.5 (striking distance)",
-          "strategicFit": "topic relevance of \u201cwhat is ab testing\u201d"
         }
       },
       {
@@ -796,76 +770,50 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 4,
+          "aiCitation": 2,
+          "demand": 5,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 66.0,
+        "weightedImpact": 64.0,
         "effortTier": "XS",
-        "acpScore": 66.0,
+        "acpScore": 64.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201ca/b testing\u201d (pos 10.8, 5,274 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201ca/b testing\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "301,000 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "5,274 GSC impressions",
           "winnability": "position 10.8 (striking distance)",
           "strategicFit": "topic relevance of \u201ca/b testing\u201d"
         }
       },
       {
-        "title": "Capture striking-distance query: \u201ca/b testing meaning\u201d",
+        "title": "Capture striking-distance query: \u201cwhat is ab testing\u201d",
         "type": "Striking distance",
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
+          "aiCitation": 4,
+          "demand": 1,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 58.0,
+        "weightedImpact": 60.0,
         "effortTier": "XS",
-        "acpScore": 58.0,
+        "acpScore": 60.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201ca/b testing meaning\u201d (pos 9.5, 859 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "action": "Strengthen the page targeting \u201cwhat is ab testing\u201d (pos 9.5, 814 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
-          "pipeline": "intent inferred from query \u201ca/b testing meaning\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "720 monthly searches (DataForSEO)",
+          "pipeline": "intent inferred from query \u201cwhat is ab testing\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "814 GSC impressions",
           "winnability": "position 9.5 (striking distance)",
-          "strategicFit": "topic relevance of \u201ca/b testing meaning\u201d"
-        }
-      },
-      {
-        "title": "Capture striking-distance query: \u201cfeature flag\u201d",
-        "type": "Striking distance",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
-          "winnability": 5,
-          "strategicFit": 5
-        },
-        "weightedImpact": 58.0,
-        "effortTier": "XS",
-        "acpScore": 58.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201cfeature flag\u201d (pos 13.0, 812 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "intent inferred from query \u201cfeature flag\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "2,400 monthly searches (DataForSEO)",
-          "winnability": "position 13.0 (striking distance)",
-          "strategicFit": "topic relevance of \u201cfeature flag\u201d"
+          "strategicFit": "topic relevance of \u201cwhat is ab testing\u201d"
         }
       },
       {
@@ -874,22 +822,22 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
+          "aiCitation": 2,
+          "demand": 4,
           "winnability": 5,
           "strategicFit": 3
         },
-        "weightedImpact": 54.0,
+        "weightedImpact": 56.0,
         "effortTier": "XS",
-        "acpScore": 54.0,
+        "acpScore": 56.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201ctrue positive rate\u201d (pos 8.4, 1,553 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201ctrue positive rate\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "1,000 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "1,553 GSC impressions",
           "winnability": "position 8.4 (striking distance)",
           "strategicFit": "topic relevance of \u201ctrue positive rate\u201d"
         }
@@ -900,50 +848,76 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
+          "aiCitation": 2,
+          "demand": 3,
           "winnability": 3,
           "strategicFit": 5
         },
-        "weightedImpact": 54.0,
+        "weightedImpact": 52.0,
         "effortTier": "XS",
-        "acpScore": 54.0,
+        "acpScore": 52.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cfeature flags\u201d (pos 15.9, 1,210 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cfeature flags\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "2,400 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "1,210 GSC impressions",
           "winnability": "position 15.9 (striking distance)",
           "strategicFit": "topic relevance of \u201cfeature flags\u201d"
         }
       },
       {
-        "title": "Own \u201ca/b split testing\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
+        "title": "Capture striking-distance query: \u201ca/b testing meaning\u201d",
+        "type": "Striking distance",
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 4,
-          "winnability": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 60.0,
-        "effortTier": "M",
-        "acpScore": 24.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201ca/b split testing\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
+        "weightedImpact": 52.0,
+        "effortTier": "XS",
+        "acpScore": 52.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Strengthen the page targeting \u201ca/b testing meaning\u201d (pos 9.5, 859 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
-          "pipeline": "intent inferred from \u201ca/b split testing\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 58",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
+          "pipeline": "intent inferred from query \u201ca/b testing meaning\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "859 GSC impressions",
+          "winnability": "position 9.5 (striking distance)",
+          "strategicFit": "topic relevance of \u201ca/b testing meaning\u201d"
+        }
+      },
+      {
+        "title": "Capture striking-distance query: \u201cfeature flag\u201d",
+        "type": "Striking distance",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 1,
+          "winnability": 5,
+          "strategicFit": 5
+        },
+        "weightedImpact": 48.0,
+        "effortTier": "XS",
+        "acpScore": 48.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Strengthen the page targeting \u201cfeature flag\u201d (pos 13.0, 812 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "intent inferred from query \u201cfeature flag\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "812 GSC impressions",
+          "winnability": "position 13.0 (striking distance)",
+          "strategicFit": "topic relevance of \u201cfeature flag\u201d"
         }
       },
       {
@@ -953,22 +927,22 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 4,
-          "demand": 3,
-          "winnability": 3,
+          "demand": 2,
+          "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 60.0,
+        "weightedImpact": 54.0,
         "effortTier": "M",
-        "acpScore": 24.0,
+        "acpScore": 21.6,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cwhat is a null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cwhat is a null hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 9",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -979,22 +953,22 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 4,
-          "demand": 3,
-          "winnability": 3,
+          "demand": 2,
+          "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 60.0,
+        "weightedImpact": 54.0,
         "effortTier": "M",
-        "acpScore": 24.0,
+        "acpScore": 21.6,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cwhat is null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cwhat is null hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 8",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1005,22 +979,48 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 4,
-          "demand": 3,
-          "winnability": 3,
+          "demand": 2,
+          "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 60.0,
+        "weightedImpact": 54.0,
         "effortTier": "M",
-        "acpScore": 24.0,
+        "acpScore": 21.6,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cwhat is the null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cwhat is the null hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 18",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ca/b split testing\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 3,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 50.0,
+        "effortTier": "M",
+        "acpScore": 20.0,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ca/b split testing\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ca/b split testing\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1031,22 +1031,22 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 4,
+          "demand": 3,
           "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 54.0,
+        "weightedImpact": 50.0,
         "effortTier": "M",
-        "acpScore": 21.6,
+        "acpScore": 20.0,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cab split test\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cab split test\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 22",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1057,22 +1057,22 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 4,
+          "demand": 3,
           "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 54.0,
+        "weightedImpact": 50.0,
         "effortTier": "M",
-        "acpScore": 21.6,
+        "acpScore": 20.0,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cab test\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cab test\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 54",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1083,48 +1083,22 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 4,
+          "demand": 3,
           "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 54.0,
+        "weightedImpact": 50.0,
         "effortTier": "M",
-        "acpScore": 21.6,
+        "acpScore": 20.0,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201ca/b test\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201ca/b test\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 54",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cmetrics\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 4,
-          "winnability": 3,
-          "strategicFit": 3
-        },
-        "weightedImpact": 52.0,
-        "effortTier": "M",
-        "acpScore": 20.8,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cmetrics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cmetrics\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "60,500 monthly searches (DataForSEO)",
-          "winnability": "KD 15",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1136,151 +1110,21 @@
           "pipeline": 2,
           "aiCitation": 2,
           "demand": 3,
-          "winnability": 3,
+          "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 52.0,
+        "weightedImpact": 50.0,
         "effortTier": "M",
-        "acpScore": 20.8,
+        "acpScore": 20.0,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cdefine experimentation\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cdefine experimentation\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "12,100 monthly searches (DataForSEO)",
-          "winnability": "KD 15",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201ctrunk-based development\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 4,
-          "winnability": 2,
-          "strategicFit": 3
-        },
-        "weightedImpact": 50.0,
-        "effortTier": "M",
-        "acpScore": 20.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201ctrunk-based development\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201ctrunk-based development\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "40,500 monthly searches (DataForSEO)",
-          "winnability": "KD 26",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cp values\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 4,
-          "winnability": 2,
-          "strategicFit": 3
-        },
-        "weightedImpact": 50.0,
-        "effortTier": "M",
-        "acpScore": 20.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cp values\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cp values\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "33,100 monthly searches (DataForSEO)",
-          "winnability": "KD 26",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cnull hypothesis\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 4,
-          "winnability": 2,
-          "strategicFit": 3
-        },
-        "weightedImpact": 50.0,
-        "effortTier": "M",
-        "acpScore": 20.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cnull hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cnull hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "33,100 monthly searches (DataForSEO)",
-          "winnability": "KD 28",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cconversion rate optimization tool\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 3,
-          "winnability": 3,
-          "strategicFit": 3
-        },
-        "weightedImpact": 48.0,
-        "effortTier": "M",
-        "acpScore": 19.2,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cconversion rate optimization tool\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cconversion rate optimization tool\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "18,100 monthly searches (DataForSEO)",
-          "winnability": "KD 2",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201csdk\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 3,
-          "aiCitation": 1,
-          "demand": 3,
-          "winnability": 2,
-          "strategicFit": 3
-        },
-        "weightedImpact": 46.0,
-        "effortTier": "M",
-        "acpScore": 18.4,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201csdk\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201csdk\u201d",
-          "aiCitation": "asset-type lift + navigational intent",
-          "demand": "18,100 monthly searches (DataForSEO)",
-          "winnability": "KD 39",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1291,28 +1135,184 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 2,
+          "demand": 3,
           "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 46.0,
+        "weightedImpact": 50.0,
         "effortTier": "M",
-        "acpScore": 18.4,
+        "acpScore": 20.0,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cstatistical significance\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cstatistical significance\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "9,900 monthly searches (DataForSEO)",
-          "winnability": "KD 36",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201csdk\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 3,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 48.0,
+        "effortTier": "M",
+        "acpScore": 19.2,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201csdk\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201csdk\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ctrunk-based development\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 42.0,
+        "effortTier": "M",
+        "acpScore": 16.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ctrunk-based development\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ctrunk-based development\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cmetrics\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 42.0,
+        "effortTier": "M",
+        "acpScore": 16.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cmetrics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cmetrics\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cp values\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 42.0,
+        "effortTier": "M",
+        "acpScore": 16.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cp values\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cp values\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cnull hypothesis\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 42.0,
+        "effortTier": "M",
+        "acpScore": 16.8,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cnull hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cnull hypothesis\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cconversion rate optimization tool\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 1,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 36.0,
+        "effortTier": "M",
+        "acpScore": 14.4,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cconversion rate optimization tool\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cconversion rate optimization tool\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       }
     ],
-    "note": "Demand uses real monthly search volume; aiCitation is refined by real search intent + AI-Overview presence; winnability blends position, KD, and backlink domain strength (DataForSEO).",
-    "metricsSource": "dataforseo",
+    "note": "MVP scoring over existing data. Dimensions marked 'estimated' (AI-Overview presence, true search volume, intent, backlinks) are refined once the DataForSEO pulls land.",
+    "metricsSource": "estimated",
     "backlinks": [
       {
         "name": "Optimizely",
@@ -1395,461 +1395,7 @@
         "isGB": true
       }
     ],
-    "aiVisibility": [
-      {
-        "keyword": "a/b testing",
-        "volume": 301000,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.salesforce.com",
-          "www.optimizely.com",
-          "business.adobe.com",
-          "www.kameleoon.com"
-        ]
-      },
-      {
-        "keyword": "what is a t test",
-        "volume": 4400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "www.jmp.com",
-          "www.youtube.com",
-          "www.investopedia.com",
-          "www.graphpad.com",
-          "numiqo.com"
-        ]
-      },
-      {
-        "keyword": "feature flag",
-        "volume": 2400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "launchdarkly.com",
-          "en.wikipedia.org",
-          "martinfowler.com",
-          "featureflags.io",
-          "www.optimizely.com"
-        ]
-      },
-      {
-        "keyword": "feature flags",
-        "volume": 2400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "learn.microsoft.com",
-          "featureflags.io",
-          "docs.getunleash.io",
-          "www.harness.io",
-          "www.datadoghq.com"
-        ]
-      },
-      {
-        "keyword": "what is a/b testing",
-        "volume": 1900,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "www.salesforce.com",
-          "en.wikipedia.org",
-          "www.optimizely.com",
-          "business.adobe.com",
-          "www.kameleoon.com"
-        ]
-      },
-      {
-        "keyword": "what is ab testing",
-        "volume": 1900,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.salesforce.com",
-          "www.reddit.com",
-          "www.optimizely.com",
-          "www.kameleoon.com"
-        ]
-      },
-      {
-        "keyword": "true positive rate",
-        "volume": 1000,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.iguazio.com",
-          "www.statsig.com",
-          "www.statsig.com",
-          "www.ncbi.nlm.nih.gov"
-        ]
-      },
-      {
-        "keyword": "a/b testing meaning",
-        "volume": 720,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.salesforce.com",
-          "www.optimizely.com",
-          "business.adobe.com",
-          "www.oracle.com"
-        ]
-      },
-      {
-        "keyword": "experimentation platform",
-        "volume": 90,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "model a/b testing",
-        "volume": 30,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "mlops.community",
-          "en.wikipedia.org",
-          "www.kameleoon.com",
-          "www.youtube.com",
-          "www.salesforce.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs optimizely",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs unleash",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs eppo",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs vwo",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "betterme engineering process feature flags experiments",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs split",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs absmartly",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "launchdarkly business model b2b",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs ab tasty",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs salesforce mc personalization",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs kameleoon",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "upstart automation impact",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs adobe target",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "checkk.io founded",
-        "volume": 0,
-        "intent": "transactional",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "does growthifyhub.com have a blog",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "experimental probability",
-        "volume": 5400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.youtube.com",
-          "www.khanacademy.org",
-          "www.youtube.com",
-          "www.youtube.com",
-          "www.splashlearn.com"
-        ]
-      },
-      {
-        "keyword": "launchdarkly alternatives",
-        "volume": 110,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.reddit.com",
-          "www.g2.com",
-          "configcat.com",
-          "www.growthbook.io",
-          "sumble.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs posthog",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "posthog.com",
-          "www.growthbook.io",
-          "www.growthbook.io",
-          "posthog.com",
-          "posthog.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs launchdarkly",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.growthbook.io",
-          "www.reddit.com",
-          "www.growthbook.io",
-          "docs.growthbook.io",
-          "www.statsig.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs statsig",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.growthbook.io",
-          "www.statsig.com",
-          "www.growthbook.io",
-          "www.g2.com",
-          "www.statsig.com"
-        ]
-      },
-      {
-        "keyword": "http error 401",
-        "volume": 0,
-        "intent": "navigational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "developer.mozilla.org",
-          "www.statsig.com",
-          "help.sap.com",
-          "www.siteground.com",
-          "www.growthbook.io"
-        ]
-      },
-      {
-        "keyword": "401 error",
-        "volume": 0,
-        "intent": "navigational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.reddit.com",
-          "developer.mozilla.org",
-          "www.reddit.com",
-          "www.statsig.com",
-          "www.growthbook.io"
-        ]
-      },
-      {
-        "keyword": "401 error code",
-        "volume": 0,
-        "intent": "navigational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "supertokens.com",
-          "developer.mozilla.org",
-          "www.reddit.com",
-          "support.workiva.com",
-          "learn.microsoft.com"
-        ]
-      },
-      {
-        "keyword": "http 401",
-        "volume": 8100,
-        "intent": "navigational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "401 status code",
-        "volume": 4400,
-        "intent": "informational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "ai ab testing",
-        "volume": 70,
-        "intent": "informational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs sitespect",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "nemuru.com product features analytics",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs conductrics",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      }
-    ],
+    "aiVisibility": [],
     "recentlyShipped": {
       "windowWeeks": 8,
       "cohorts": [
@@ -3943,7 +3489,7 @@
           "What Is Ai Observability"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub with 79 posts covering product analytics, data infrastructure comparisons (e.g., DuckDB vs. ClickHouse), and AI observability topics. It targets software engineers, data engineers, and technical product teams evaluating or using PostHog's platform."
+        "summary": "PostHog's blog is a technical content hub with 79 posts covering product analytics, infrastructure comparisons, and AI/observability topics, organized across 16 tags and 3 categories. It primarily targets software engineers, data engineers, and technical product teams evaluating or using PostHog and related tools."
       },
       {
         "competitor": "Optimizely",
@@ -3974,7 +3520,7 @@
           "Experimentation Use Cases Media Checkout"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 57 pieces of editorial content \u2014 articles, guides, and curated collections \u2014 covering experimentation strategy, AI integration, and CMS migration for marketing and digital experience teams. It targets B2B practitioners in industries like financial services and media who are evaluating or actively using experimentation and content management platforms."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 57 pieces of editorial content\u2014articles, guides, and curated collections\u2014covering experimentation strategy, AI, CMS migration, and industry-specific use cases. It targets digital marketers, experimentation practitioners, and product teams across verticals such as financial services and media."
       },
       {
         "competitor": "Amplitude Exp",
@@ -4013,7 +3559,7 @@
           "Use Cases"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Amplitude Experiment's technical documentation hub, covering in-product guides, surveys, heatmaps, SDKs, and AI features for developers and product teams building and deploying user experience tools. It targets technical practitioners and product managers who need implementation references and configuration guidance for Amplitude's experimentation and engagement products."
+        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides, surveys, SDKs, heatmaps, and AI features for developers and product teams building and analyzing in-app user experiences. It targets technical practitioners and product managers who need implementation references and usage instructions for Amplitude's experimentation and engagement tooling."
       },
       {
         "competitor": "PostHog",
@@ -4056,7 +3602,7 @@
           "Insightly"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /docs section is a technical documentation hub covering product analytics, APIs, customer data pipelines, data warehousing, and AI observability tools. It targets software engineers and product teams who need implementation guidance, integration references, and tutorials for PostHog's suite of developer-focused analytics products."
+        "summary": "PostHog's /docs section is a technical documentation hub covering product analytics, APIs, data pipelines (CDP), data warehouse integrations, and AI observability, with tutorials and changelogs aimed at software engineers and product teams building or maintaining data-driven applications."
       }
     ]
   },
@@ -13117,22 +12663,6 @@
         }
       },
       "by_category": {
-        "Other webinar": {
-          "current": {
-            "engaged_views": 78,
-            "raw_views": 79,
-            "watch_minutes": 523,
-            "subs_gained": 2,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 111,
-            "raw_views": 111,
-            "watch_minutes": 634,
-            "subs_gained": 0,
-            "videos": 2
-          }
-        },
         "Kohavi webinar": {
           "current": {
             "engaged_views": 338,
@@ -13149,20 +12679,20 @@
             "videos": 1
           }
         },
-        "Podcast episode": {
+        "Other short": {
           "current": {
-            "engaged_views": 7556,
-            "raw_views": 8733,
-            "watch_minutes": 7948,
-            "subs_gained": 34,
-            "videos": 29
+            "engaged_views": 1202,
+            "raw_views": 4029,
+            "watch_minutes": 322,
+            "subs_gained": 1,
+            "videos": 25
           },
           "prior": {
-            "engaged_views": 433,
-            "raw_views": 433,
-            "watch_minutes": 1397,
-            "subs_gained": 7,
-            "videos": 22
+            "engaged_views": 27,
+            "raw_views": 65,
+            "watch_minutes": 24,
+            "subs_gained": 0,
+            "videos": 10
           }
         },
         "Product long-form": {
@@ -13197,20 +12727,36 @@
             "videos": 11
           }
         },
-        "Other short": {
+        "Podcast episode": {
           "current": {
-            "engaged_views": 1202,
-            "raw_views": 4029,
-            "watch_minutes": 322,
-            "subs_gained": 1,
-            "videos": 25
+            "engaged_views": 7556,
+            "raw_views": 8733,
+            "watch_minutes": 7948,
+            "subs_gained": 34,
+            "videos": 29
           },
           "prior": {
-            "engaged_views": 27,
-            "raw_views": 65,
-            "watch_minutes": 24,
+            "engaged_views": 433,
+            "raw_views": 433,
+            "watch_minutes": 1397,
+            "subs_gained": 7,
+            "videos": 22
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 78,
+            "raw_views": 79,
+            "watch_minutes": 523,
+            "subs_gained": 2,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 111,
+            "raw_views": 111,
+            "watch_minutes": 634,
             "subs_gained": 0,
-            "videos": 10
+            "videos": 2
           }
         }
       },
@@ -57594,6 +57140,15 @@
         ]
       }
     },
+    "paid_totals": {
+      "days_with_spend": 50,
+      "engaged_views": 9160,
+      "watch_minutes": 7028,
+      "recent_30d": {
+        "engaged_views": 9107,
+        "watch_minutes": 6935
+      }
+    },
     "trend": [
       {
         "week_start": "2025-07-31",
@@ -57601,7 +57156,11 @@
         "engaged_views": 338,
         "raw_views": 340,
         "watch_minutes": 968,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-08-07",
@@ -57609,7 +57168,11 @@
         "engaged_views": 406,
         "raw_views": 412,
         "watch_minutes": 1368,
-        "subs_gained": 0
+        "subs_gained": 0,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-08-14",
@@ -57617,7 +57180,11 @@
         "engaged_views": 402,
         "raw_views": 406,
         "watch_minutes": 1060,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-08-21",
@@ -57625,7 +57192,11 @@
         "engaged_views": 401,
         "raw_views": 411,
         "watch_minutes": 1263,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-08-28",
@@ -57633,7 +57204,11 @@
         "engaged_views": 364,
         "raw_views": 370,
         "watch_minutes": 1142,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-09-04",
@@ -57641,7 +57216,11 @@
         "engaged_views": 435,
         "raw_views": 446,
         "watch_minutes": 1370,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-09-11",
@@ -57649,7 +57228,11 @@
         "engaged_views": 333,
         "raw_views": 344,
         "watch_minutes": 1101,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-09-18",
@@ -57657,7 +57240,11 @@
         "engaged_views": 295,
         "raw_views": 298,
         "watch_minutes": 819,
-        "subs_gained": 0
+        "subs_gained": 0,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-09-25",
@@ -57665,7 +57252,11 @@
         "engaged_views": 381,
         "raw_views": 384,
         "watch_minutes": 1428,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-10-02",
@@ -57673,7 +57264,11 @@
         "engaged_views": 491,
         "raw_views": 498,
         "watch_minutes": 1277,
-        "subs_gained": 5
+        "subs_gained": 5,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-10-09",
@@ -57681,7 +57276,11 @@
         "engaged_views": 450,
         "raw_views": 457,
         "watch_minutes": 1392,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-10-16",
@@ -57689,7 +57288,11 @@
         "engaged_views": 405,
         "raw_views": 413,
         "watch_minutes": 1107,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-10-23",
@@ -57697,7 +57300,11 @@
         "engaged_views": 425,
         "raw_views": 433,
         "watch_minutes": 1220,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-10-30",
@@ -57705,7 +57312,11 @@
         "engaged_views": 349,
         "raw_views": 351,
         "watch_minutes": 1140,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-11-06",
@@ -57713,7 +57324,11 @@
         "engaged_views": 332,
         "raw_views": 336,
         "watch_minutes": 1025,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-11-13",
@@ -57721,7 +57336,11 @@
         "engaged_views": 299,
         "raw_views": 307,
         "watch_minutes": 784,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-11-20",
@@ -57729,7 +57348,11 @@
         "engaged_views": 298,
         "raw_views": 308,
         "watch_minutes": 883,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-11-27",
@@ -57737,7 +57360,11 @@
         "engaged_views": 280,
         "raw_views": 291,
         "watch_minutes": 739,
-        "subs_gained": 0
+        "subs_gained": 0,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-12-04",
@@ -57745,7 +57372,11 @@
         "engaged_views": 337,
         "raw_views": 343,
         "watch_minutes": 1055,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-12-11",
@@ -57753,7 +57384,11 @@
         "engaged_views": 356,
         "raw_views": 360,
         "watch_minutes": 940,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-12-18",
@@ -57761,7 +57396,11 @@
         "engaged_views": 204,
         "raw_views": 208,
         "watch_minutes": 774,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2025-12-25",
@@ -57769,7 +57408,11 @@
         "engaged_views": 177,
         "raw_views": 182,
         "watch_minutes": 589,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-01-01",
@@ -57777,7 +57420,11 @@
         "engaged_views": 294,
         "raw_views": 302,
         "watch_minutes": 763,
-        "subs_gained": 0
+        "subs_gained": 0,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-01-08",
@@ -57785,7 +57432,11 @@
         "engaged_views": 386,
         "raw_views": 396,
         "watch_minutes": 1166,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-01-15",
@@ -57793,7 +57444,11 @@
         "engaged_views": 397,
         "raw_views": 400,
         "watch_minutes": 1147,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-01-22",
@@ -57801,7 +57456,11 @@
         "engaged_views": 466,
         "raw_views": 470,
         "watch_minutes": 1378,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-01-29",
@@ -57809,7 +57468,11 @@
         "engaged_views": 425,
         "raw_views": 443,
         "watch_minutes": 1654,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-02-05",
@@ -57817,7 +57480,11 @@
         "engaged_views": 415,
         "raw_views": 422,
         "watch_minutes": 1561,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-02-12",
@@ -57825,7 +57492,11 @@
         "engaged_views": 310,
         "raw_views": 318,
         "watch_minutes": 1108,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-02-19",
@@ -57833,7 +57504,11 @@
         "engaged_views": 445,
         "raw_views": 455,
         "watch_minutes": 1816,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-02-26",
@@ -57841,7 +57516,11 @@
         "engaged_views": 494,
         "raw_views": 498,
         "watch_minutes": 2096,
-        "subs_gained": 9
+        "subs_gained": 9,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-03-05",
@@ -57849,7 +57528,11 @@
         "engaged_views": 903,
         "raw_views": 1565,
         "watch_minutes": 3356,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-03-12",
@@ -57857,7 +57540,11 @@
         "engaged_views": 859,
         "raw_views": 1230,
         "watch_minutes": 2927,
-        "subs_gained": 9
+        "subs_gained": 9,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-03-19",
@@ -57865,7 +57552,11 @@
         "engaged_views": 1159,
         "raw_views": 1982,
         "watch_minutes": 2553,
-        "subs_gained": 5
+        "subs_gained": 5,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-03-26",
@@ -57873,7 +57564,11 @@
         "engaged_views": 591,
         "raw_views": 1558,
         "watch_minutes": 1714,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-04-02",
@@ -57881,7 +57576,11 @@
         "engaged_views": 2034,
         "raw_views": 3576,
         "watch_minutes": 2248,
-        "subs_gained": 6
+        "subs_gained": 6,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-04-09",
@@ -57889,7 +57588,11 @@
         "engaged_views": 486,
         "raw_views": 506,
         "watch_minutes": 1725,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-04-16",
@@ -57897,7 +57600,11 @@
         "engaged_views": 985,
         "raw_views": 1733,
         "watch_minutes": 2073,
-        "subs_gained": 5
+        "subs_gained": 5,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-04-23",
@@ -57905,7 +57612,11 @@
         "engaged_views": 570,
         "raw_views": 731,
         "watch_minutes": 2119,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-04-30",
@@ -57913,7 +57624,11 @@
         "engaged_views": 387,
         "raw_views": 395,
         "watch_minutes": 1799,
-        "subs_gained": 1
+        "subs_gained": 1,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-05-07",
@@ -57921,7 +57636,11 @@
         "engaged_views": 514,
         "raw_views": 735,
         "watch_minutes": 1563,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-05-14",
@@ -57929,7 +57648,11 @@
         "engaged_views": 460,
         "raw_views": 485,
         "watch_minutes": 1483,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-05-21",
@@ -57937,7 +57660,11 @@
         "engaged_views": 488,
         "raw_views": 520,
         "watch_minutes": 1785,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 2,
+        "paid_minutes": 2,
+        "paid_pct": 0.4,
+        "paid_material": false
       },
       {
         "week_start": "2026-05-28",
@@ -57945,7 +57672,11 @@
         "engaged_views": 439,
         "raw_views": 443,
         "watch_minutes": 1443,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "week_start": "2026-06-04",
@@ -57953,7 +57684,11 @@
         "engaged_views": 525,
         "raw_views": 633,
         "watch_minutes": 1576,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 3,
+        "paid_minutes": 7,
+        "paid_pct": 0.6,
+        "paid_material": false
       },
       {
         "week_start": "2026-06-11",
@@ -57961,7 +57696,11 @@
         "engaged_views": 388,
         "raw_views": 393,
         "watch_minutes": 1676,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 18,
+        "paid_minutes": 4,
+        "paid_pct": 4.6,
+        "paid_material": false
       },
       {
         "week_start": "2026-06-18",
@@ -57969,7 +57708,11 @@
         "engaged_views": 570,
         "raw_views": 610,
         "watch_minutes": 1891,
-        "subs_gained": 3
+        "subs_gained": 3,
+        "paid_engaged": 21,
+        "paid_minutes": 65,
+        "paid_pct": 3.7,
+        "paid_material": false
       },
       {
         "week_start": "2026-06-25",
@@ -57977,7 +57720,11 @@
         "engaged_views": 641,
         "raw_views": 720,
         "watch_minutes": 2030,
-        "subs_gained": 4
+        "subs_gained": 4,
+        "paid_engaged": 15,
+        "paid_minutes": 16,
+        "paid_pct": 2.3,
+        "paid_material": false
       },
       {
         "week_start": "2026-07-02",
@@ -57985,7 +57732,11 @@
         "engaged_views": 3373,
         "raw_views": 8848,
         "watch_minutes": 2505,
-        "subs_gained": 5
+        "subs_gained": 5,
+        "paid_engaged": 16,
+        "paid_minutes": 26,
+        "paid_pct": 0.5,
+        "paid_material": false
       },
       {
         "week_start": "2026-07-09",
@@ -57993,7 +57744,11 @@
         "engaged_views": 831,
         "raw_views": 1742,
         "watch_minutes": 2151,
-        "subs_gained": 2
+        "subs_gained": 2,
+        "paid_engaged": 12,
+        "paid_minutes": 7,
+        "paid_pct": 1.4,
+        "paid_material": false
       },
       {
         "week_start": "2026-07-16",
@@ -58001,7 +57756,11 @@
         "engaged_views": 1119,
         "raw_views": 1588,
         "watch_minutes": 3180,
-        "subs_gained": 13
+        "subs_gained": 13,
+        "paid_engaged": 8,
+        "paid_minutes": 12,
+        "paid_pct": 0.7,
+        "paid_material": false
       },
       {
         "week_start": "2026-07-23",
@@ -58009,7 +57768,11 @@
         "engaged_views": 7604,
         "raw_views": 9016,
         "watch_minutes": 8070,
-        "subs_gained": 32
+        "subs_gained": 32,
+        "paid_engaged": 6684,
+        "paid_minutes": 5451,
+        "paid_pct": 87.9,
+        "paid_material": true
       }
     ],
     "trend_monthly": [
@@ -58020,7 +57783,11 @@
         "watch_minutes": 5088,
         "subs_gained": 22,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2025-08",
@@ -58029,7 +57796,11 @@
         "watch_minutes": 5873,
         "subs_gained": 15,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2025-09",
@@ -58038,7 +57809,11 @@
         "watch_minutes": 5745,
         "subs_gained": 21,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2025-10",
@@ -58047,7 +57822,11 @@
         "watch_minutes": 5686,
         "subs_gained": 17,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2025-11",
@@ -58056,7 +57835,11 @@
         "watch_minutes": 3860,
         "subs_gained": 13,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2025-12",
@@ -58065,7 +57848,11 @@
         "watch_minutes": 3844,
         "subs_gained": 19,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2026-01",
@@ -58074,7 +57861,11 @@
         "watch_minutes": 5107,
         "subs_gained": 12,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2026-02",
@@ -58083,7 +57874,11 @@
         "watch_minutes": 6291,
         "subs_gained": 18,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2026-03",
@@ -58092,7 +57887,11 @@
         "watch_minutes": 11880,
         "subs_gained": 34,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2026-04",
@@ -58101,7 +57900,11 @@
         "watch_minutes": 9180,
         "subs_gained": 30,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 0,
+        "paid_minutes": 0,
+        "paid_pct": 0.0,
+        "paid_material": false
       },
       {
         "month": "2026-05",
@@ -58110,7 +57913,11 @@
         "watch_minutes": 6786,
         "subs_gained": 23,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 2,
+        "paid_minutes": 2,
+        "paid_pct": 0.1,
+        "paid_material": false
       },
       {
         "month": "2026-06",
@@ -58119,7 +57926,11 @@
         "watch_minutes": 7949,
         "subs_gained": 28,
         "partial": false,
-        "days_covered": null
+        "days_covered": null,
+        "paid_engaged": 51,
+        "paid_minutes": 91,
+        "paid_pct": 2.2,
+        "paid_material": false
       },
       {
         "month": "2026-07",
@@ -58128,7 +57939,11 @@
         "watch_minutes": 16383,
         "subs_gained": 2005,
         "partial": true,
-        "days_covered": 30
+        "days_covered": 30,
+        "paid_engaged": 9107,
+        "paid_minutes": 6935,
+        "paid_pct": 69.9,
+        "paid_material": true
       }
     ],
     "meta": {
