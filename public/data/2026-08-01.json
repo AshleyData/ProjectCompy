@@ -3489,7 +3489,7 @@
           "What Is Ai Observability"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a technical content hub with 79 posts covering product analytics, infrastructure comparisons, and AI/observability topics, organized across 16 tags and 3 categories. It primarily targets software engineers, data engineers, and technical product teams evaluating or using PostHog and related tools."
+        "summary": "PostHog's blog is a technical content hub with 79 posts covering product analytics, data infrastructure comparisons, and AI/observability topics, organized by tags and categories. It targets software engineers, data engineers, and technical product teams evaluating or using PostHog's platform."
       },
       {
         "competitor": "Optimizely",
@@ -3520,7 +3520,7 @@
           "Experimentation Use Cases Media Checkout"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 57 pieces of editorial content\u2014articles, guides, and curated collections\u2014covering experimentation strategy, AI, CMS migration, and industry-specific use cases. It targets digital marketers, experimentation practitioners, and product teams across verticals such as financial services and media."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 57 pieces of editorial content\u2014articles, guides, and curated collections\u2014covering experimentation strategy, AI integration, CMS migration, and industry-specific use cases. It targets digital marketers, product managers, and growth teams, particularly in financial services and media, looking for applied guidance on running optimization and personalization programs."
       },
       {
         "competitor": "Amplitude Exp",
@@ -3559,7 +3559,7 @@
           "Use Cases"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is Amplitude Experiment's technical documentation section, covering product guides, surveys, SDKs, heatmaps, and AI features for developers and product teams building and analyzing in-app user experiences. It targets technical practitioners and product managers who need implementation references and usage instructions for Amplitude's experimentation and engagement tooling."
+        "summary": "This is Amplitude Experiment's technical documentation section, covering in-product guides, surveys, SDKs, heatmaps, and AI features for developers and product teams implementing the platform. It targets technical users and product managers who need reference material on building and configuring user flows, conditional logic, templates, and integrations."
       },
       {
         "competitor": "PostHog",
@@ -3602,7 +3602,7 @@
           "Insightly"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /docs section is a technical documentation hub covering product analytics, APIs, data pipelines (CDP), data warehouse integrations, and AI observability, with tutorials and changelogs aimed at software engineers and product teams building or maintaining data-driven applications."
+        "summary": "PostHog's /docs section is a technical documentation hub covering product analytics, APIs, data pipelines (CDP), data warehouse integrations, and AI observability features. It targets software engineers and product teams who need implementation guidance, tutorials, and reference material for PostHog's platform."
       }
     ]
   },
@@ -11915,6 +11915,13 @@
         "videos": []
       },
       {
+        "name": "Kameleoon",
+        "avg_views": 0,
+        "video_count": 0,
+        "no_recent": true,
+        "videos": []
+      },
+      {
         "name": "GrowthBook",
         "avg_views": 386,
         "video_count": 70,
@@ -12663,68 +12670,20 @@
         }
       },
       "by_category": {
-        "Kohavi webinar": {
+        "Other webinar": {
           "current": {
-            "engaged_views": 338,
-            "raw_views": 338,
-            "watch_minutes": 1994,
-            "subs_gained": 9,
+            "engaged_views": 78,
+            "raw_views": 79,
+            "watch_minutes": 523,
+            "subs_gained": 2,
             "videos": 2
           },
           "prior": {
-            "engaged_views": 50,
-            "raw_views": 50,
-            "watch_minutes": 153,
+            "engaged_views": 111,
+            "raw_views": 111,
+            "watch_minutes": 634,
             "subs_gained": 0,
-            "videos": 1
-          }
-        },
-        "Other short": {
-          "current": {
-            "engaged_views": 1202,
-            "raw_views": 4029,
-            "watch_minutes": 322,
-            "subs_gained": 1,
-            "videos": 25
-          },
-          "prior": {
-            "engaged_views": 27,
-            "raw_views": 65,
-            "watch_minutes": 24,
-            "subs_gained": 0,
-            "videos": 10
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1674,
-            "raw_views": 1798,
-            "watch_minutes": 4848,
-            "subs_gained": 6,
-            "videos": 69
-          },
-          "prior": {
-            "engaged_views": 1614,
-            "raw_views": 1664,
-            "watch_minutes": 5651,
-            "subs_gained": 4,
-            "videos": 59
-          }
-        },
-        "Podcast clip": {
-          "current": {
-            "engaged_views": 2156,
-            "raw_views": 6304,
-            "watch_minutes": 628,
-            "subs_gained": 2,
-            "videos": 24
-          },
-          "prior": {
-            "engaged_views": 49,
-            "raw_views": 160,
-            "watch_minutes": 41,
-            "subs_gained": 0,
-            "videos": 11
+            "videos": 2
           }
         },
         "Podcast episode": {
@@ -12743,20 +12702,68 @@
             "videos": 22
           }
         },
-        "Other webinar": {
+        "Kohavi webinar": {
           "current": {
-            "engaged_views": 78,
-            "raw_views": 79,
-            "watch_minutes": 523,
-            "subs_gained": 2,
+            "engaged_views": 338,
+            "raw_views": 338,
+            "watch_minutes": 1994,
+            "subs_gained": 9,
             "videos": 2
           },
           "prior": {
-            "engaged_views": 111,
-            "raw_views": 111,
-            "watch_minutes": 634,
+            "engaged_views": 50,
+            "raw_views": 50,
+            "watch_minutes": 153,
             "subs_gained": 0,
-            "videos": 2
+            "videos": 1
+          }
+        },
+        "Podcast clip": {
+          "current": {
+            "engaged_views": 2156,
+            "raw_views": 6304,
+            "watch_minutes": 628,
+            "subs_gained": 2,
+            "videos": 24
+          },
+          "prior": {
+            "engaged_views": 49,
+            "raw_views": 160,
+            "watch_minutes": 41,
+            "subs_gained": 0,
+            "videos": 11
+          }
+        },
+        "Product long-form": {
+          "current": {
+            "engaged_views": 1674,
+            "raw_views": 1798,
+            "watch_minutes": 4848,
+            "subs_gained": 6,
+            "videos": 69
+          },
+          "prior": {
+            "engaged_views": 1614,
+            "raw_views": 1664,
+            "watch_minutes": 5651,
+            "subs_gained": 4,
+            "videos": 59
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 1202,
+            "raw_views": 4029,
+            "watch_minutes": 322,
+            "subs_gained": 1,
+            "videos": 25
+          },
+          "prior": {
+            "engaged_views": 27,
+            "raw_views": 65,
+            "watch_minutes": 24,
+            "subs_gained": 0,
+            "videos": 10
           }
         }
       },

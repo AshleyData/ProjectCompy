@@ -16,6 +16,7 @@ const COMP_COLORS = {
   Optimizely: "#6C3483", "Amplitude Exp": "#2874A6", Statsig: "#1ABC9C",
   Harness: "#D35400", LaunchDarkly: "#2C3E50", Eppo: "#E74C3C",
   PostHog: "#F39C12", Unleash: "#16A085", Flagsmith: "#8E44AD", GrowthBook: "#1E8449",
+  Kameleoon: "#C0392B",
 };
 
 function card(extra = {}) {
