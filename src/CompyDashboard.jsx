@@ -1905,38 +1905,58 @@ export default function CompyDashboard() {
 
             {/* GrowthBook video performance — own-channel signal sits next to own
                 content (Recently Shipped) so "is what we ship working?" covers
-                video too. Full per-video detail still lives in the YouTube drawer. */}
-            {(() => {
-              const gbCh = ((d.youtube?.channels) || []).find(c => c.name === "GrowthBook");
-              if (!gbCh) return null;
-              const recent = (gbCh.videos || [])
-                .filter(v => v.date)
-                .sort((a, b) => new Date(b.date) - new Date(a.date))
-                .slice(0, 6);
-              if (recent.length === 0) return null;
-              const outlierCount = (gbCh.videos || []).filter(v => v.is_outlier).length;
+                video too. Gated on d.video, NOT on the old d.youtube snapshot:
+                that snapshot is competitor Data API data, and keying this panel to
+                it meant the new own-channel summary would vanish whenever the old
+                source was missing. */}
+            {(d?.video?.recent_totals) && (() => {
               return (
                 <Section title="🎬 GrowthBook Video — Is It Working?">
-                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 10 }}>
-                    GrowthBook's recent videos vs channel average ({gbCh.avg_views?.toLocaleString() || "—"} views).
-                    {outlierCount > 0 ? ` ${outlierCount} running ≥2× average this week.` : " None ≥2× average this week."}
-                    {" "}Full per-video detail in the YouTube drawer.
-                  </p>
-                  <Table
-                    compact
-                    headers={["Published", "Title", "Views", "vs Avg", "Outlier?"]}
-                    rows={recent.map(v => [
-                      v.date,
-                      v.url
-                        ? <a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{v.title}</a>
-                        : v.title,
-                      (v.views || 0).toLocaleString(),
-                      <span style={{ color: v.mult != null && v.mult >= 2 ? C.success : "inherit", fontWeight: v.mult != null && v.mult >= 2 ? 700 : 400 }}>
-                        {v.mult != null ? v.mult.toFixed(1) + "×" : "—"}
-                      </span>,
-                      v.is_outlier ? <span style={{ color: C.success, fontWeight: 700 }}>🔥 Yes</span> : <span style={{ color: C.muted }}>No</span>,
-                    ])}
-                  />
+                  {(() => {
+                    // Reads the SAME source as the GrowthBook YouTube tab. This
+                    // panel used to run on youtube_latest.json — raw cumulative
+                    // Data API views against a 90-day channel average — which
+                    // contradicted the tab: it ranked by view count, the metric we
+                    // established is a distribution artifact on this channel.
+                    const v = d?.video || {};
+                    const cur = (v.recent_totals || {}).all?.current;
+                    if (!cur) {
+                      return <p style={{ fontSize: 12, color: C.muted }}>
+                        Own-channel video data not in this payload.
+                      </p>;
+                    }
+                    const paid = (v.paid_totals || {}).recent_30d?.engaged_views || 0;
+                    const paidPct = cur.engaged_views ? Math.round(paid / cur.engaged_views * 100) : 0;
+                    const top = (v.cohort || [])
+                      .filter(x => x.recent)
+                      .sort((a, b) => b.recent.watch_min - a.recent.watch_min)
+                      .slice(0, 5);
+                    return (
+                      <>
+                        <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 10 }}>
+                          Last 30 days: <strong>{Math.round(cur.watch_minutes / 60).toLocaleString()}h watched</strong>
+                          {" "}from {cur.engaged_views.toLocaleString()} engaged views across {cur.videos} videos.
+                          {paidPct >= 5 && <span style={{ color: C.danger }}>
+                            {" "}{paidPct}% of those views were paid ads.
+                          </span>}
+                          {" "}Ranked by watch time, not views — full detail in the GrowthBook YouTube tab.
+                        </p>
+                        <Table
+                          compact
+                          headers={["Title", "Category", "Watch min", "Engaged views", "% watched"]}
+                          rows={top.map(x => [
+                            x.video_id
+                              ? <a href={safeHref(`https://www.youtube.com/watch?v=${x.video_id}`)} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }}>{x.title}</a>
+                              : x.title,
+                            <span style={{ fontSize: 11, color: C.muted }}>{x.category}</span>,
+                            Math.round(x.recent.watch_min).toLocaleString(),
+                            (x.recent.engaged_views || 0).toLocaleString(),
+                            `${x.recent.avg_pct}%`,
+                          ])}
+                        />
+                      </>
+                    );
+                  })()}
                 </Section>
               );
             })()}
