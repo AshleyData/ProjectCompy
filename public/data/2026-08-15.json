@@ -536,8 +536,8 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "466 GSC impressions",
           "winnability": "position 10.6",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -562,16 +562,16 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "270 GSC impressions",
           "winnability": "position 9.8",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
       {
-        "title": "Convert /compare/growthbook-vs-unleash into an AI-cited BOFU page",
+        "title": "Convert /compare/growthbook-vs-eppo into an AI-cited BOFU page",
         "type": "BOFU comparison",
-        "url": "https://www.growthbook.io/compare/growthbook-vs-unleash",
+        "url": "https://www.growthbook.io/compare/growthbook-vs-eppo",
         "subScores": {
           "pipeline": 5,
           "aiCitation": 5,
@@ -584,13 +584,13 @@
         "acpScore": 82.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
-        "action": "Add a 40-word answer capsule + comparison table + schema to vs Unleash; instrument the signup CTA. Goal: turn its 90 impressions (pos 6.1) into AI-cited, signup-driving traffic.",
+        "action": "Add a 40-word answer capsule + comparison table + schema to vs Eppo; instrument the signup CTA. Goal: turn its 182 impressions (pos 6.5) into AI-cited, signup-driving traffic.",
         "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "10 monthly searches (DataForSEO)",
-          "winnability": "position 6.1",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "182 GSC impressions",
+          "winnability": "position 6.5 \u00b7 backlink edge vs competitor",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -614,9 +614,61 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "552 GSC impressions",
           "winnability": "position 6.7 \u00b7 backlink gap vs competitor",
+          "strategicFit": "comparison vs a feature-flagging competitor"
+        }
+      },
+      {
+        "title": "Convert /compare/growthbook-vs-unleash into an AI-cited BOFU page",
+        "type": "BOFU comparison",
+        "url": "https://www.growthbook.io/compare/growthbook-vs-unleash",
+        "subScores": {
+          "pipeline": 5,
+          "aiCitation": 5,
+          "demand": 0,
+          "winnability": 5,
+          "strategicFit": 4
+        },
+        "weightedImpact": 78.0,
+        "effortTier": "XS",
+        "acpScore": 78.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Add a 40-word answer capsule + comparison table + schema to vs Unleash; instrument the signup CTA. Goal: turn its 90 impressions (pos 6.1) into AI-cited, signup-driving traffic.",
+        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "URL is /compare BOFU",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "90 GSC impressions",
+          "winnability": "position 6.1",
+          "strategicFit": "comparison vs a feature-flagging competitor"
+        }
+      },
+      {
+        "title": "Convert /compare/growthbook-vs-vwo into an AI-cited BOFU page",
+        "type": "BOFU comparison",
+        "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
+        "subScores": {
+          "pipeline": 5,
+          "aiCitation": 5,
+          "demand": 1,
+          "winnability": 3,
+          "strategicFit": 4
+        },
+        "weightedImpact": 78.0,
+        "effortTier": "XS",
+        "acpScore": 78.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Add a 40-word answer capsule + comparison table + schema to vs Vwo; instrument the signup CTA. Goal: turn its 96 impressions (pos 17.1) into AI-cited, signup-driving traffic.",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "URL is /compare BOFU",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "96 GSC impressions",
+          "winnability": "position 17.1",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -640,35 +692,9 @@
         "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "36 GSC impressions",
           "winnability": "position 8.7",
-          "strategicFit": "comparison vs a feature-flagging competitor"
-        }
-      },
-      {
-        "title": "Convert /compare/growthbook-vs-eppo into an AI-cited BOFU page",
-        "type": "BOFU comparison",
-        "url": "https://www.growthbook.io/compare/growthbook-vs-eppo",
-        "subScores": {
-          "pipeline": 5,
-          "aiCitation": 5,
-          "demand": 0,
-          "winnability": 5,
-          "strategicFit": 4
-        },
-        "weightedImpact": 78.0,
-        "effortTier": "XS",
-        "acpScore": 78.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Add a 40-word answer capsule + comparison table + schema to vs Eppo; instrument the signup CTA. Goal: turn its 182 impressions (pos 6.5) into AI-cited, signup-driving traffic.",
-        "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "position 6.5 \u00b7 backlink edge vs competitor",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -692,8 +718,8 @@
         "persistence": "ranked \u226420 for 4 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "24 GSC impressions",
           "winnability": "position 14.4",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -718,8 +744,8 @@
         "persistence": "watch \u2014 only 1 week of data",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "20 GSC impressions",
           "winnability": "position 13.1",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
@@ -744,35 +770,9 @@
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "10 monthly searches (DataForSEO)",
+          "aiCitation": "comparison asset-type citation lift (estimated; AI-Overview presence pending)",
+          "demand": "226 GSC impressions",
           "winnability": "position 16.2 \u00b7 backlink gap vs competitor",
-          "strategicFit": "comparison vs a feature-flagging competitor"
-        }
-      },
-      {
-        "title": "Convert /compare/growthbook-vs-vwo into an AI-cited BOFU page",
-        "type": "BOFU comparison",
-        "url": "https://www.growthbook.io/compare/growthbook-vs-vwo",
-        "subScores": {
-          "pipeline": 5,
-          "aiCitation": 5,
-          "demand": 0,
-          "winnability": 3,
-          "strategicFit": 4
-        },
-        "weightedImpact": 74.0,
-        "effortTier": "XS",
-        "acpScore": 74.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Add a 40-word answer capsule + comparison table + schema to vs Vwo; instrument the signup CTA. Goal: turn its 96 impressions (pos 17.1) into AI-cited, signup-driving traffic.",
-        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "URL is /compare BOFU",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "0 monthly searches (DataForSEO)",
-          "winnability": "position 17.1",
           "strategicFit": "comparison vs a feature-flagging competitor"
         }
       },
@@ -782,22 +782,22 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 5,
-          "demand": 2,
+          "aiCitation": 4,
+          "demand": 5,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 70.0,
+        "weightedImpact": 76.0,
         "effortTier": "XS",
-        "acpScore": 70.0,
+        "acpScore": 76.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cwhat is a/b testing\u201d (pos 9.6, 2,848 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cwhat is a/b testing\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "1,900 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "2,848 GSC impressions",
           "winnability": "position 9.6 (striking distance)",
           "strategicFit": "topic relevance of \u201cwhat is a/b testing\u201d"
         }
@@ -808,22 +808,22 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 4,
+          "aiCitation": 2,
+          "demand": 5,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 66.0,
+        "weightedImpact": 64.0,
         "effortTier": "XS",
-        "acpScore": 66.0,
+        "acpScore": 64.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201ca/b testing\u201d (pos 10.7, 5,380 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201ca/b testing\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "301,000 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "5,380 GSC impressions",
           "winnability": "position 10.7 (striking distance)",
           "strategicFit": "topic relevance of \u201ca/b testing\u201d"
         }
@@ -834,50 +834,24 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
+          "aiCitation": 2,
+          "demand": 4,
           "winnability": 5,
           "strategicFit": 5
         },
-        "weightedImpact": 58.0,
+        "weightedImpact": 60.0,
         "effortTier": "XS",
-        "acpScore": 58.0,
+        "acpScore": 60.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cmodel a/b testing\u201d (pos 9.8, 1,408 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cmodel a/b testing\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "30 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "1,408 GSC impressions",
           "winnability": "position 9.8 (striking distance)",
           "strategicFit": "topic relevance of \u201cmodel a/b testing\u201d"
-        }
-      },
-      {
-        "title": "Capture striking-distance query: \u201ca/b testing meaning\u201d",
-        "type": "Striking distance",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
-          "winnability": 5,
-          "strategicFit": 5
-        },
-        "weightedImpact": 58.0,
-        "effortTier": "XS",
-        "acpScore": 58.0,
-        "horizon": "Harvest",
-        "northStarMetric": "AI Citation Rate",
-        "action": "Strengthen the page targeting \u201ca/b testing meaning\u201d (pos 10.0, 814 impr): add an answer capsule + on-page depth to move into the top 5.",
-        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
-        "dataPoints": {
-          "pipeline": "intent inferred from query \u201ca/b testing meaning\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "720 monthly searches (DataForSEO)",
-          "winnability": "position 10.0 (striking distance)",
-          "strategicFit": "topic relevance of \u201ca/b testing meaning\u201d"
         }
       },
       {
@@ -886,24 +860,50 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 2,
+          "aiCitation": 2,
+          "demand": 4,
           "winnability": 3,
           "strategicFit": 5
         },
-        "weightedImpact": 54.0,
+        "weightedImpact": 56.0,
         "effortTier": "XS",
-        "acpScore": 54.0,
+        "acpScore": 56.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201cfeature flags\u201d (pos 17.6, 952 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201cfeature flags\u201d",
-          "aiCitation": "asset-type lift + informational intent; AI Overview present, GrowthBook NOT cited",
-          "demand": "2,400 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "952 GSC impressions",
           "winnability": "position 17.6 (striking distance)",
           "strategicFit": "topic relevance of \u201cfeature flags\u201d"
+        }
+      },
+      {
+        "title": "Capture striking-distance query: \u201ca/b testing meaning\u201d",
+        "type": "Striking distance",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 5,
+          "strategicFit": 5
+        },
+        "weightedImpact": 52.0,
+        "effortTier": "XS",
+        "acpScore": 52.0,
+        "horizon": "Harvest",
+        "northStarMetric": "AI Citation Rate",
+        "action": "Strengthen the page targeting \u201ca/b testing meaning\u201d (pos 10.0, 814 impr): add an answer capsule + on-page depth to move into the top 5.",
+        "persistence": "ranked \u226420 for 5 consecutive weeks \u2014 passes gate",
+        "dataPoints": {
+          "pipeline": "intent inferred from query \u201ca/b testing meaning\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "814 GSC impressions",
+          "winnability": "position 10.0 (striking distance)",
+          "strategicFit": "topic relevance of \u201ca/b testing meaning\u201d"
         }
       },
       {
@@ -912,50 +912,24 @@
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 2,
+          "aiCitation": 1,
+          "demand": 3,
           "winnability": 5,
           "strategicFit": 3
         },
-        "weightedImpact": 48.0,
+        "weightedImpact": 46.0,
         "effortTier": "XS",
-        "acpScore": 48.0,
+        "acpScore": 46.0,
         "horizon": "Harvest",
         "northStarMetric": "AI Citation Rate",
         "action": "Strengthen the page targeting \u201crelease management best practices\u201d (pos 8.1, 946 impr): add an answer capsule + on-page depth to move into the top 5.",
         "persistence": "ranked \u226420 for 3 consecutive weeks \u2014 passes gate",
         "dataPoints": {
           "pipeline": "intent inferred from query \u201crelease management best practices\u201d",
-          "aiCitation": "asset-type lift + commercial intent; AI Overview present, GrowthBook cited",
-          "demand": "50 monthly searches (DataForSEO)",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "946 GSC impressions",
           "winnability": "position 8.1 (striking distance)",
           "strategicFit": "topic relevance of \u201crelease management best practices\u201d"
-        }
-      },
-      {
-        "title": "Own \u201ca/b split testing\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 3,
-          "demand": 4,
-          "winnability": 2,
-          "strategicFit": 5
-        },
-        "weightedImpact": 60.0,
-        "effortTier": "M",
-        "acpScore": 24.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201ca/b split testing\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201ca/b split testing\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 58",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
       {
@@ -965,126 +939,22 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 4,
-          "demand": 2,
-          "winnability": 3,
+          "demand": 4,
+          "winnability": 2,
           "strategicFit": 5
         },
-        "weightedImpact": 60.0,
+        "weightedImpact": 66.0,
         "effortTier": "M",
-        "acpScore": 24.0,
+        "acpScore": 26.4,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cdefinition experimentation\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cdefinition experimentation\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "12,100 monthly searches (DataForSEO)",
-          "winnability": "KD 10",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cwhat is a null hypothesis\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 4,
-          "demand": 3,
-          "winnability": 3,
-          "strategicFit": 3
-        },
-        "weightedImpact": 60.0,
-        "effortTier": "M",
-        "acpScore": 24.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cwhat is a null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cwhat is a null hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 9",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cwhat is null hypothesis\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 4,
-          "demand": 3,
-          "winnability": 3,
-          "strategicFit": 3
-        },
-        "weightedImpact": 60.0,
-        "effortTier": "M",
-        "acpScore": 24.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cwhat is null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cwhat is null hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 8",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cwhat is the null hypothesis\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 4,
-          "demand": 3,
-          "winnability": 3,
-          "strategicFit": 3
-        },
-        "weightedImpact": 60.0,
-        "effortTier": "M",
-        "acpScore": 24.0,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cwhat is the null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cwhat is the null hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 18",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cp statistics\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 4,
-          "demand": 3,
-          "winnability": 2,
-          "strategicFit": 3
-        },
-        "weightedImpact": 58.0,
-        "effortTier": "M",
-        "acpScore": 23.2,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cp statistics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cp statistics\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "33,100 monthly searches (DataForSEO)",
-          "winnability": "KD 24",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1108,9 +978,35 @@
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cab split test\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 22",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201ca/b split testing\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 4,
+          "winnability": 2,
+          "strategicFit": 5
+        },
+        "weightedImpact": 54.0,
+        "effortTier": "M",
+        "acpScore": 21.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201ca/b split testing\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201ca/b split testing\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1134,9 +1030,9 @@
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cab test\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 48",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1160,35 +1056,139 @@
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201ca/b test\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "301,000 monthly searches (DataForSEO)",
-          "winnability": "KD 54",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
       {
-        "title": "Own \u201cmetrics\u201d with a GrowthBook page",
+        "title": "Own \u201cp statistics\u201d with a GrowthBook page",
         "type": "Category play (new page)",
         "url": "",
         "subScores": {
           "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 4,
-          "winnability": 3,
+          "aiCitation": 4,
+          "demand": 2,
+          "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 52.0,
+        "weightedImpact": 54.0,
         "effortTier": "M",
-        "acpScore": 20.8,
+        "acpScore": 21.6,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cmetrics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "action": "Publish a GrowthBook asset for \u201cp statistics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
-          "pipeline": "intent inferred from \u201cmetrics\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "60,500 monthly searches (DataForSEO)",
-          "winnability": "KD 15",
+          "pipeline": "intent inferred from \u201cp statistics\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cwhat is a null hypothesis\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 4,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 54.0,
+        "effortTier": "M",
+        "acpScore": 21.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cwhat is a null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cwhat is a null hypothesis\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cwhat is null hypothesis\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 4,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 54.0,
+        "effortTier": "M",
+        "acpScore": 21.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cwhat is null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cwhat is null hypothesis\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cwhat is the null hypothesis\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 4,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 54.0,
+        "effortTier": "M",
+        "acpScore": 21.6,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cwhat is the null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cwhat is the null hypothesis\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201csdk\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 3,
+          "aiCitation": 2,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 48.0,
+        "effortTier": "M",
+        "acpScore": 19.2,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201csdk\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201csdk\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1199,74 +1199,48 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 4,
+          "demand": 2,
           "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 50.0,
+        "weightedImpact": 42.0,
         "effortTier": "M",
-        "acpScore": 20.0,
+        "acpScore": 16.8,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201ctrunk-based development\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201ctrunk-based development\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "40,500 monthly searches (DataForSEO)",
-          "winnability": "KD 26",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
       {
-        "title": "Own \u201cnull hypothesis\u201d with a GrowthBook page",
+        "title": "Own \u201cmetrics\u201d with a GrowthBook page",
         "type": "Category play (new page)",
         "url": "",
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 3,
-          "winnability": 3,
+          "demand": 2,
+          "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 48.0,
+        "weightedImpact": 42.0,
         "effortTier": "M",
-        "acpScore": 19.2,
+        "acpScore": 16.8,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cnull hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "action": "Publish a GrowthBook asset for \u201cmetrics\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
-          "pipeline": "intent inferred from \u201cnull hypothesis\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "33,100 monthly searches (DataForSEO)",
-          "winnability": "KD 18",
-          "strategicFit": "advances an on-strategy category GrowthBook should own"
-        }
-      },
-      {
-        "title": "Own \u201cconversion rate optimization tool\u201d with a GrowthBook page",
-        "type": "Category play (new page)",
-        "url": "",
-        "subScores": {
-          "pipeline": 2,
-          "aiCitation": 2,
-          "demand": 3,
-          "winnability": 3,
-          "strategicFit": 3
-        },
-        "weightedImpact": 48.0,
-        "effortTier": "M",
-        "acpScore": 19.2,
-        "horizon": "Own the Category",
-        "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201cconversion rate optimization tool\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
-        "persistence": "watch",
-        "dataPoints": {
-          "pipeline": "intent inferred from \u201cconversion rate optimization tool\u201d",
-          "aiCitation": "asset-type lift + commercial intent",
-          "demand": "18,100 monthly searches (DataForSEO)",
-          "winnability": "KD 2",
+          "pipeline": "intent inferred from \u201cmetrics\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -1277,54 +1251,80 @@
         "subScores": {
           "pipeline": 2,
           "aiCitation": 2,
-          "demand": 3,
+          "demand": 2,
           "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 46.0,
+        "weightedImpact": 42.0,
         "effortTier": "M",
-        "acpScore": 18.4,
+        "acpScore": 16.8,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cp values\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
           "pipeline": "intent inferred from \u201cp values\u201d",
-          "aiCitation": "asset-type lift + informational intent",
-          "demand": "33,100 monthly searches (DataForSEO)",
-          "winnability": "KD 26",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
       {
-        "title": "Own \u201csdk\u201d with a GrowthBook page",
+        "title": "Own \u201cnull hypothesis\u201d with a GrowthBook page",
         "type": "Category play (new page)",
         "url": "",
         "subScores": {
-          "pipeline": 3,
-          "aiCitation": 1,
-          "demand": 3,
+          "pipeline": 2,
+          "aiCitation": 2,
+          "demand": 2,
           "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 46.0,
+        "weightedImpact": 42.0,
         "effortTier": "M",
-        "acpScore": 18.4,
+        "acpScore": 16.8,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
-        "action": "Publish a GrowthBook asset for \u201csdk\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "action": "Publish a GrowthBook asset for \u201cnull hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
         "persistence": "watch",
         "dataPoints": {
-          "pipeline": "intent inferred from \u201csdk\u201d",
-          "aiCitation": "asset-type lift + navigational intent",
-          "demand": "18,100 monthly searches (DataForSEO)",
-          "winnability": "KD 39",
+          "pipeline": "intent inferred from \u201cnull hypothesis\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
+          "strategicFit": "advances an on-strategy category GrowthBook should own"
+        }
+      },
+      {
+        "title": "Own \u201cconversion rate optimization tool\u201d with a GrowthBook page",
+        "type": "Category play (new page)",
+        "url": "",
+        "subScores": {
+          "pipeline": 2,
+          "aiCitation": 1,
+          "demand": 2,
+          "winnability": 2,
+          "strategicFit": 3
+        },
+        "weightedImpact": 36.0,
+        "effortTier": "M",
+        "acpScore": 14.4,
+        "horizon": "Own the Category",
+        "northStarMetric": "AI Share of Voice",
+        "action": "Publish a GrowthBook asset for \u201cconversion rate optimization tool\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
+        "persistence": "watch",
+        "dataPoints": {
+          "pipeline": "intent inferred from \u201cconversion rate optimization tool\u201d",
+          "aiCitation": "asset-type lift (estimated)",
+          "demand": "competitor-gap demand signal (true search volume pending)",
+          "winnability": "KD pending",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       }
     ],
-    "note": "Demand uses real monthly search volume; aiCitation is refined by real search intent + AI-Overview presence; winnability blends position, KD, and backlink domain strength (DataForSEO).",
-    "metricsSource": "dataforseo",
+    "note": "MVP scoring over existing data. Dimensions marked 'estimated' (AI-Overview presence, true search volume, intent, backlinks) are refined once the DataForSEO pulls land.",
+    "metricsSource": "estimated",
     "backlinks": [
       {
         "name": "Optimizely",
@@ -1415,485 +1415,7 @@
         "isGB": false
       }
     ],
-    "aiVisibility": [
-      {
-        "keyword": "a/b testing",
-        "volume": 301000,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.salesforce.com",
-          "www.optimizely.com",
-          "business.adobe.com",
-          "www.kameleoon.com"
-        ]
-      },
-      {
-        "keyword": "what is a t test",
-        "volume": 4400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "www.jmp.com",
-          "www.youtube.com",
-          "www.investopedia.com",
-          "www.graphpad.com",
-          "numiqo.com"
-        ]
-      },
-      {
-        "keyword": "feature flag",
-        "volume": 2400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "launchdarkly.com",
-          "en.wikipedia.org",
-          "martinfowler.com",
-          "featureflags.io",
-          "www.optimizely.com"
-        ]
-      },
-      {
-        "keyword": "feature flags",
-        "volume": 2400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "learn.microsoft.com",
-          "featureflags.io",
-          "docs.getunleash.io",
-          "www.harness.io",
-          "www.datadoghq.com"
-        ]
-      },
-      {
-        "keyword": "what is a/b testing",
-        "volume": 1900,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "www.salesforce.com",
-          "en.wikipedia.org",
-          "www.optimizely.com",
-          "business.adobe.com",
-          "www.kameleoon.com"
-        ]
-      },
-      {
-        "keyword": "what is ab testing",
-        "volume": 1900,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.salesforce.com",
-          "www.reddit.com",
-          "www.optimizely.com",
-          "www.kameleoon.com"
-        ]
-      },
-      {
-        "keyword": "true positive rate",
-        "volume": 1000,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.iguazio.com",
-          "www.statsig.com",
-          "www.statsig.com",
-          "www.ncbi.nlm.nih.gov"
-        ]
-      },
-      {
-        "keyword": "a/b testing meaning",
-        "volume": 720,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "en.wikipedia.org",
-          "www.salesforce.com",
-          "www.optimizely.com",
-          "business.adobe.com",
-          "www.oracle.com"
-        ]
-      },
-      {
-        "keyword": "experimentation platform",
-        "volume": 90,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "model a/b testing",
-        "volume": 30,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": [
-          "mlops.community",
-          "en.wikipedia.org",
-          "www.kameleoon.com",
-          "www.youtube.com",
-          "www.salesforce.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs optimizely",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs unleash",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs eppo",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs vwo",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "betterme engineering process feature flags experiments",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs split",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs absmartly",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "launchdarkly business model b2b",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs ab tasty",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs salesforce mc personalization",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs kameleoon",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "upstart automation impact",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs adobe target",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "checkk.io founded",
-        "volume": 0,
-        "intent": "transactional",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "does growthifyhub.com have a blog",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": false,
-        "captureTarget": true,
-        "sources": []
-      },
-      {
-        "keyword": "experimental probability",
-        "volume": 5400,
-        "intent": "informational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.youtube.com",
-          "www.khanacademy.org",
-          "www.youtube.com",
-          "www.youtube.com",
-          "www.splashlearn.com"
-        ]
-      },
-      {
-        "keyword": "launchdarkly alternatives",
-        "volume": 110,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.reddit.com",
-          "www.g2.com",
-          "configcat.com",
-          "www.growthbook.io",
-          "sumble.com"
-        ]
-      },
-      {
-        "keyword": "release management best practices",
-        "volume": 50,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.planview.com",
-          "community.atlassian.com",
-          "launchdarkly.com",
-          "www.pagerduty.com",
-          "www.growthbook.io"
-        ]
-      },
-      {
-        "keyword": "growthbook vs posthog",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "posthog.com",
-          "www.growthbook.io",
-          "www.growthbook.io",
-          "posthog.com",
-          "posthog.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs launchdarkly",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.growthbook.io",
-          "www.reddit.com",
-          "www.growthbook.io",
-          "docs.growthbook.io",
-          "www.statsig.com"
-        ]
-      },
-      {
-        "keyword": "growthbook vs statsig",
-        "volume": 10,
-        "intent": "commercial",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.growthbook.io",
-          "www.statsig.com",
-          "www.growthbook.io",
-          "www.g2.com",
-          "www.statsig.com"
-        ]
-      },
-      {
-        "keyword": "http error 401",
-        "volume": 0,
-        "intent": "navigational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "developer.mozilla.org",
-          "www.statsig.com",
-          "help.sap.com",
-          "www.siteground.com",
-          "www.growthbook.io"
-        ]
-      },
-      {
-        "keyword": "401 error",
-        "volume": 0,
-        "intent": "navigational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "www.reddit.com",
-          "developer.mozilla.org",
-          "www.reddit.com",
-          "www.statsig.com",
-          "www.growthbook.io"
-        ]
-      },
-      {
-        "keyword": "401 error code",
-        "volume": 0,
-        "intent": "navigational",
-        "hasAio": true,
-        "brandCited": true,
-        "captureTarget": false,
-        "sources": [
-          "supertokens.com",
-          "developer.mozilla.org",
-          "www.reddit.com",
-          "support.workiva.com",
-          "learn.microsoft.com"
-        ]
-      },
-      {
-        "keyword": "launchdarkly",
-        "volume": 14800,
-        "intent": "navigational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "http 401",
-        "volume": 8100,
-        "intent": "navigational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "401 status code",
-        "volume": 4400,
-        "intent": "informational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "ai ab testing",
-        "volume": 70,
-        "intent": "informational",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs sitespect",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "nemuru.com product features analytics",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      },
-      {
-        "keyword": "growthbook vs conductrics",
-        "volume": 0,
-        "intent": "commercial",
-        "hasAio": false,
-        "brandCited": false,
-        "captureTarget": false,
-        "sources": []
-      }
-    ],
+    "aiVisibility": [],
     "recentlyShipped": {
       "windowWeeks": 8,
       "cohorts": [
@@ -3643,96 +3165,14 @@
     },
     "newSections": [
       {
-        "competitor": "PostHog",
-        "section": "/blog",
-        "count": 89,
-        "subsections": [
-          {
-            "path": "/blog/tags",
-            "count": 18
-          },
-          {
-            "path": "/blog/all",
-            "count": 3
-          },
-          {
-            "path": "/blog/categories",
-            "count": 3
-          },
-          {
-            "path": "/blog/duckdb-vs-postgres",
-            "count": 1
-          },
-          {
-            "path": "/blog/10k-prs-a-month",
-            "count": 1
-          },
-          {
-            "path": "/blog/aeo-advice",
-            "count": 1
-          }
-        ],
-        "sampleTitles": [
-          "Duckdb Vs Postgres",
-          "10K Prs A Month",
-          "Aeo Advice",
-          "Agents Closed 4063 Errors",
-          "Agents Killing Ui",
-          "Ai",
-          "Ai Native Hiring",
-          "Ai Observability"
-        ],
-        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's blog is a 89-post technical and product-focused content hub covering database comparisons, AI/LLM observability, engineering practices, and developer tooling, organized by tags and categories. It targets software engineers, technical founders, and product teams building data-intensive or AI-native applications."
-      },
-      {
-        "competitor": "PostHog",
-        "section": "/questions",
-        "count": 37,
-        "subsections": [
-          {
-            "path": "/questions/how-to-access-session-id-in-flutter-sdk",
-            "count": 1
-          },
-          {
-            "path": "/questions/how-to-add-a-new-person-profile",
-            "count": 1
-          },
-          {
-            "path": "/questions/how-to-authorize",
-            "count": 1
-          },
-          {
-            "path": "/questions/how-to-breakdown-based-on-whether-a-variable-is-set-or-not",
-            "count": 1
-          },
-          {
-            "path": "/questions/how-to-breakdown-based-on-whether-a-variable-is-set-or-not-1",
-            "count": 1
-          },
-          {
-            "path": "/questions/how-to-buy-a-license-key",
-            "count": 1
-          }
-        ],
-        "sampleTitles": [
-          "How To Access Session Id In Flutter Sdk",
-          "How To Add A New Person Profile",
-          "How To Authorize",
-          "How To Breakdown Based On Whether A Variable Is Set Or Not",
-          "How To Breakdown Based On Whether A Variable Is Set Or Not 1",
-          "How To Buy A License Key",
-          "How To Create Query To Check If User Uses Product At Least 4 Times In A Month",
-          "How To Delete Survey Data"
-        ],
-        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This section is a community Q&A forum containing 37 how-to questions submitted by users about PostHog's product analytics platform, covering topics like SDK integration, data querying, and feature configuration. It targets developers and product teams seeking practical guidance on using PostHog's tools."
-      },
-      {
         "competitor": "Amplitude Exp",
         "section": "/compare",
-        "count": 26,
+        "count": 30,
         "subsections": [
+          {
+            "path": "/compare/adobe",
+            "count": 1
+          },
           {
             "path": "/compare/best-analytics-tools-for-ai-coding",
             "count": 1
@@ -3752,24 +3192,63 @@
           {
             "path": "/compare/best-ecommerce-analytics-tools",
             "count": 1
-          },
-          {
-            "path": "/compare/best-mcp-servers-for-product-analytics",
-            "count": 1
           }
         ],
         "sampleTitles": [
+          "Adobe",
           "Best Analytics Tools For Ai Coding",
           "Best Analytics Tools Nextjs",
           "Best Analytics Tools React Apps",
           "Best Cohort Analysis Tools",
           "Best Ecommerce Analytics Tools",
-          "Best Mcp Servers For Product Analytics",
-          "Best Mobile App Analytics Tools",
-          "Best Nps Software"
+          "Best Google Analytics Alternatives",
+          "Best Mcp Servers For Product Analytics"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This section contains \"best of\" comparison and roundup pages targeting developers and product teams evaluating analytics tools for specific use cases, such as AI coding, React/Next.js apps, ecommerce, and mobile. It serves as SEO-driven competitive content aimed at capturing high-intent buyers searching for product analytics solutions across various technical and business contexts."
+        "summary": "This section contains comparison and \"best of\" pages targeting developers and product teams who are evaluating analytics tools, positioning Amplitude against competitors like Adobe and Google Analytics while also capturing search traffic from technical audiences using specific stacks such as Next.js and React. It serves both direct competitor takedown pages and broader category roundups to intercept buyers at the consideration stage."
+      },
+      {
+        "competitor": "Amplitude Exp",
+        "section": "/blog",
+        "count": 25,
+        "subsections": [
+          {
+            "path": "/blog/tag",
+            "count": 3
+          },
+          {
+            "path": "/blog/agent-analytics",
+            "count": 1
+          },
+          {
+            "path": "/blog/ai-experimentation",
+            "count": 1
+          },
+          {
+            "path": "/blog/ai-visibility-launch",
+            "count": 1
+          },
+          {
+            "path": "/blog/amplitude-adobe-tags-extension-update",
+            "count": 1
+          },
+          {
+            "path": "/blog/amplitude-pathfinder-austin-costello",
+            "count": 1
+          }
+        ],
+        "sampleTitles": [
+          "Agent Analytics",
+          "Ai Experimentation",
+          "Ai Visibility Launch",
+          "Amplitude Adobe Tags Extension Update",
+          "Amplitude Pathfinder Austin Costello",
+          "Attribution Model Frameworks",
+          "Beyond The Rate Retail Banking Competitive Front",
+          "Churn Rate Cohort Analysis"
+        ],
+        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
+        "summary": "Amplitude's /blog section is a product and analytics thought leadership blog containing articles on experimentation, AI features, attribution modeling, cohort analysis, and product updates targeting digital product managers, data analysts, and growth teams. Content mixes practical methodology guides with company feature announcements and industry-specific use cases such as retail banking."
       },
       {
         "competitor": "Harness",
@@ -3812,109 +3291,27 @@
           "Chaos Hub In Docs Prompt Library For Mcp Whats New In Resilience Testing"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Harness's blog is a technical content hub covering DevOps automation, AI-assisted security (SAST), feature flagging, incident response, and resilience testing. It targets software engineers, DevOps/DevSecOps practitioners, and platform engineering teams evaluating or using Harness's software delivery platform."
-      },
-      {
-        "competitor": "Amplitude Exp",
-        "section": "/docs",
-        "count": 21,
-        "subsections": [
-          {
-            "path": "/docs/guides-and-surveys",
-            "count": 15
-          },
-          {
-            "path": "/docs/sdks",
-            "count": 3
-          },
-          {
-            "path": "/docs/wave",
-            "count": 1
-          },
-          {
-            "path": "/docs/amplitude-ai",
-            "count": 1
-          },
-          {
-            "path": "/docs/heatmaps",
-            "count": 1
-          }
-        ],
-        "sampleTitles": [
-          "Content Editor",
-          "Product Areas",
-          "Guides Surveys Mcp",
-          "Analyze A Survey",
-          "Build A Survey",
-          "Conditional Logic",
-          "Form Factors",
-          "Guide Overview"
-        ],
-        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This is a technical documentation section covering Amplitude Experiment's in-product guides, surveys, SDKs, heatmaps, and AI features, targeting product managers and developers who need implementation and usage instructions for the platform's user engagement and research tools."
-      },
-      {
-        "competitor": "PostHog",
-        "section": "/docs",
-        "count": 21,
-        "subsections": [
-          {
-            "path": "/docs/product-analytics",
-            "count": 6
-          },
-          {
-            "path": "/docs/api",
-            "count": 4
-          },
-          {
-            "path": "/docs/cdp",
-            "count": 4
-          },
-          {
-            "path": "/docs/data-warehouse",
-            "count": 4
-          },
-          {
-            "path": "/docs/ai-observability",
-            "count": 2
-          },
-          {
-            "path": "/docs/model-context-protocol",
-            "count": 1
-          }
-        ],
-        "sampleTitles": [
-          "Changelog",
-          "Tutorials",
-          "Engineering Analytics",
-          "Engineering Analytics 2",
-          "Engineering Analytics 3",
-          "Product Enablement",
-          "Blogger",
-          "Insightly"
-        ],
-        "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /docs section is a technical documentation hub covering product analytics, APIs, customer data pipelines, data warehousing, and AI observability features. It targets software engineers and product teams who need implementation guidance and integration references for PostHog's platform."
+        "summary": "Harness's blog is a technical content hub covering DevOps automation, AI-assisted security (SAST), feature flagging, incident response, and resilience testing. It targets software engineers, DevSecOps practitioners, and platform engineering teams evaluating or using Harness's CI/CD and delivery platform."
       }
     ]
   },
   "exec_summary": [
     "Site traffic (GA4, 2026-08-08 to 2026-08-14): growthbook.io had 14,428 sessions and 10,537 users (-18.4% week over week).",
     "## Week of 2026-08-15",
-    "**Site performance**\n- **Overall (GA4, all traffic):** 14,428 sessions (-18.4% WoW) | 10,537 users\n- **Overall (GSC, organic search):** 3,433 clicks (-0.1% WoW) | 218,554 impressions (+3.0% WoW)\n- **Homepage (/):** 7,365 GA4 sessions (-15.8% WoW) all-traffic | 1,774 GSC clicks (-1.1% WoW) organic | 9,820 GSC impressions (-10.4% WoW)\n- **Pricing (/pricing):** 1,089 GA4 sessions (-6.7% WoW) all-traffic | 95 GSC clicks (-14.4% WoW) organic | 4,815 GSC impressions (-7.9% WoW)\n- **Docs (docs.growthbook.io):** 4,599 GA4 sessions (-2.8% WoW) all-traffic | 1,012 GSC clicks (-1.0% WoW) organic | 83,612 GSC impressions (-9.5% WoW)\n- **All other pages:** 8,476 GA4 sessions (-20.2% WoW) all-traffic | 542 GSC clicks (+8.6% WoW) organic | 193,786 GSC impressions (+4.4% WoW)\n- GA4 all-traffic is down sharply (-18.4% overall) while GSC organic clicks are essentially flat (-0.1%) and all-other-pages GSC clicks are actually up +8.6%. The GA4 drop is concentrated in direct and non-organic channels \u2014 the YouTube channel had a -72.5% engaged-views week (dominated by one viral video falling back to baseline), which likely pulled down referral and brand sessions. Organic health is intact.",
-    "**New competitor activity**\n- **Amplitude Experiment** published two tier-1 blog posts: **\"Open Weights Experimentation\"** and **\"How NS Prevented $1.8M in Revenue Loss Through Experimentation\"** \u2014 the first is a direct positioning play in the AI/open-weights experimentation space GrowthBook should own; the second is a high-credibility ROI case study format GrowthBook lacks.\n- **Amplitude Experiment** also launched two comparison pages: **\"Best PostHog Alternatives: A/B Testing\"** and **\"Best PostHog Alternatives: Feature Flags\"** \u2014 these intercept buyers searching for PostHog alternatives in exactly the space GrowthBook competes. GrowthBook has no equivalent capture asset.\n- **Amplitude Experiment**'s /compare section surfaced in our tracking (26 pages) \u2014 a structured comparison/roundup hub targeting developers and PMs evaluating analytics tools. Likely a sitemap addition of mostly pre-existing content, but the hub now exists and will accumulate ranking equity.\n- **Harness** published **\"Canaries and Feature Flags\"** (tier 1) \u2014 direct overlap with GrowthBook's feature-flagging use-case content; also has a 22-page /blog section surfaced in tracking covering DevOps, feature flagging, and incident response.\n- **Kameleoon** published **\"Do You Need Experimentation Tools When AI Can Write Code?\"** (tier 1) \u2014 a provocative thought-leadership piece targeting the AI-era buyer question GrowthBook hasn't directly addressed.\n- **PostHog**'s /blog (89 pages) and /questions (37 pages) and /docs (21 pages) sections surfaced in tracking \u2014 structured content hubs covering SDK how-tos, feature flag configuration, and developer tooling. Not a single-week surge; frame as ongoing sitemap-indexed coverage.\n- \u26a0\ufe0f No new pages detected from **Statsig**, **LaunchDarkly**, **Unleash**, **Flagsmith**, or **Eppo** \u2014 likely a monitoring gap, not a content pause.",
-    "**New GrowthBook content**\n- **/blog/unleash-alternatives** (published 2026-06-19): 62 clicks, 10,134 impressions, pos 6.5 \u2014 holding last week's high after prior +158% spike; momentum is stable.\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): 84 clicks, 11,594 impressions, pos 9.7 \u2014 down from 131 last week, third consecutive decline. This one needs attention now.\n- **/blog/how-to-implement-feature-flags-at-scale** (published 2026-05-26): 51 clicks, 19,014 impressions, pos 11.5 \u2014 recovery from 14 clicks last week; high impression-to-click gap persists, answer-capsule treatment still the lever.\n- **/blog/growthbook-version-5-0** (published 2026-07-20): 49 clicks, 847 impressions, pos 6.8 \u2014 new to tracking this week with solid early click rate.\n- **Four new pages noticed this week (zero impressions each):** **/insights/what-is-an-mcp-server** (KD 24), **/blog/edge-scaling-self-serve-experimentation-us-bank**, **/blog/farfetchs-case-for-building-your-own-experimentation-platform**, **/insights/add-targeting-rules-plain-english-growthbook-mcp** \u2014 none will index without internal links.",
-    "**Strategic priorities (ACP)**\n- **Top-10 footprint: 407 keywords (+326 over 3 months)** \u2014 strong upward trajectory.\n- **BOFU comparison page fix remains the highest-ROI unshipped work \u2014 now fifteen consecutive weeks.** Top priorities by ACP and impression volume:\n  - **/compare/growthbook-vs-launchdarkly** (ACP 82, pos 10.7, 2,291 impressions/28d, AI Overview present, GrowthBook cited)\n  - **/compare/growthbook-vs-statsig** (ACP 82, pos 7.5, 3,776 impressions/28d, AI Overview present, GrowthBook cited)\n  - **/compare/growthbook-vs-unleash** (ACP 82, pos 6.4, 387 impressions/28d, AI Overview present, GrowthBook NOT cited)\n  - **/compare/growthbook-vs-posthog** (ACP 80, pos 6.6, 2,922 impressions/28d, AI Overview present, GrowthBook cited)\n- **AI Overview citation gaps** (AI Overview present, GrowthBook NOT cited \u2014 each needs the 40-word answer capsule + schema): **/compare/growthbook-vs-unleash**, **/compare/growthbook-vs-eppo** (pos 5.2, 1,915 impressions/28d), **/compare/growthbook-vs-split**, **/compare/growthbook-vs-absmartly**, **/compare/growthbook-vs-optimizely**, **/compare/growthbook-vs-vwo**, and **\"what is a/b testing\"** (pos 9.59, 2,848 impressions).\n- **\"what is a t test\"** (pos 8.89, 31,277 impressions) \u2014 highest-impression striking-distance query for the fourth consecutive week; position improved from 9.51 to 8.89. Identify the ranking page and add an answer-capsule H2 this week.",
-    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared**: 84 clicks vs. 131 last week (-36%) \u2014 third consecutive decline, now at a level requiring action rather than watching.\n- **/blog/how-to-implement-feature-flags-at-scale**: 51 clicks vs. 14 last week (+264% recovery) \u2014 but pos 11.5 and 19,014 impressions mean significant clicks are still being left on the table.\n- **/insights/vwo-alternatives**: 6 clicks this week vs. 0 last week \u2014 new entrant in the gains list; early signal, watch.\n- **/blog/how-to-reduce-deployment-risk-with-canary-releases-and-feature-flags**: 7 clicks vs. 0 last week \u2014 new gain, timely given **Harness**'s \"Canaries and Feature Flags\" post this week.\n- **GrowthBook insights cluster surging (ETV):** **/insights/what-experimental-units-research** (+1,549% ETV), **/insights/understanding-star-goals-effective-performance** (+4,118% ETV), **/insights/experimental-probability-examples-explained-simply** (+492% ETV) \u2014 ETV WoW percentages are still in the baseline-rotation window (see data quality note); treat as directional signals, not precise figures.\n- **Optimizely decay window:** **/optimization-glossary/feature-flags/** dropped -95.8% ETV over 2 weeks (267 to 11) \u2014 GrowthBook's feature flags content can capture this displaced traffic now.",
-    "**Recommended actions**\n- **Ship the answer-capsule + comparison table + schema to /compare/growthbook-vs-statsig and /compare/growthbook-vs-launchdarkly this week** (ACP 82 each, fifteen consecutive weeks). Statsig has 3,776 impressions/28d.\n- **Apply the same fix to /compare/growthbook-vs-eppo** (pos 5.2, 1,915 impressions/28d, AI Overview present, GrowthBook NOT cited) \u2014 already in the top 5, not cited; highest-leverage uncaptured AI citation in the comparison set.\n- **Add an answer-capsule H2 to the page ranking for \"what is a t test\"** (pos 8.89, 31,277 impressions) \u2014 four consecutive weeks as the highest-impression striking-distance query; position is improving without intervention, but CTR won't follow without the capsule.\n- **Add internal links to all four zero-impression pages** noticed this week: /insights/what-is-an-mcp-server (KD 24), /blog/edge-scaling-self-serve-experimentation-us-bank, /blog/farfetchs-case-for-building-your-own-experimentation-platform, /insights/add-targeting-rules-plain-english-growthbook-mcp. None will index without link equity.\n- **Publish a \"PostHog alternatives\" page** (A/B testing and/or feature flags angle) \u2014 **Amplitude Experiment** just launched two comparison pages on this exact query; GrowthBook has no capture asset here despite being a direct PostHog alternative.",
-    "**Data quality flags**\n- ETV WoW percentages for GrowthBook's own pages show extreme swings (up to +4,118%) consistent with the baseline-rotation artifact noted through 2026-05-24. Treat these as directional only; do not act on specific percentages."
+    "**Site performance**\n- **Overall (GA4, all traffic):** 14,428 sessions (-18.4% WoW) | 10,537 users\n- **Overall (GSC, organic search):** 3,433 clicks (-0.1% WoW) | 218,554 impressions (+3.0% WoW)\n- **Homepage (/):** 7,365 GA4 sessions (-15.8% WoW) all-traffic | 1,774 GSC clicks (-1.1% WoW) organic | 9,820 GSC impressions (-10.4% WoW)\n- **Pricing (/pricing):** 1,089 GA4 sessions (-6.7% WoW) all-traffic | 95 GSC clicks (-14.4% WoW) organic | 4,815 GSC impressions (-7.9% WoW)\n- **Docs (docs.growthbook.io):** 4,599 GA4 sessions (-2.8% WoW) all-traffic | 1,012 GSC clicks (-1.0% WoW) organic | 83,612 GSC impressions (-9.5% WoW)\n- **All other pages:** 8,476 GA4 sessions (-20.2% WoW) all-traffic | 542 GSC clicks (+8.6% WoW) organic | 193,786 GSC impressions (+4.4% WoW)\n- Note: this data is a repeat of last week's payload (same GA4/GSC figures). Flagged in Data quality below.",
+    "**New competitor activity**\n- **Amplitude Experiment** published **\"AI Experimentation\"** and **\"Role of Feature Management\"** (both tier 1) \u2014 direct positioning plays in GrowthBook's core product space. Combined with last week's \"Open Weights Experimentation,\" this is a coordinated push to own AI-era experimentation narrative before GrowthBook does.\n- **Amplitude Experiment**'s /compare hub (30 pages) and /blog (25 pages) surfaced in tracking \u2014 not a single-week surge, but structured BOFU and thought-leadership hubs now indexed and accumulating ranking equity. The /compare hub specifically targets buyers evaluating analytics tools at the bottom of funnel.\n- **Harness** published **\"Canaries and Feature Flags\"** (tier 1) \u2014 direct overlap with GrowthBook feature-flagging content. Their /blog (22 pages) also surfaced as a technical hub covering DevOps and feature flags targeting platform engineers.\n- \u26a0\ufe0f No new pages detected from **Statsig**, **LaunchDarkly**, **Optimizely**, **Unleash**, **Flagsmith**, **Eppo**, **PostHog**, or **Kameleoon** \u2014 likely a monitoring gap, not a content pause.",
+    "**New GrowthBook content**\n- **/blog/unleash-alternatives** (published 2026-06-19): 62 clicks, 10,134 impressions, pos 6.5 \u2014 stable after prior surge; momentum holding.\n- **/blog/best-open-source-feature-flagging-tools-compared** (published 2026-05-18): 84 clicks, 11,594 impressions, pos 9.7 \u2014 third consecutive week of decline (154 \u2192 131 \u2192 84). Needs intervention now, not next week.\n- **/blog/how-to-implement-feature-flags-at-scale** (published 2026-05-26): 51 clicks, 19,014 impressions, pos 11.5 \u2014 large impression-to-click gap persists; answer-capsule H2 is the lever.\n- **/blog/kpi-playbook-ab-testing-metrics** (published 2026-06-03): 19 clicks, 6,653 impressions, pos 6.5 \u2014 first appearance in tracking; clean early signal.\n- **Four zero-impression pages noticed this week** (same as last week \u2014 still not indexed): **/insights/what-is-an-mcp-server** (KD 24), **/blog/edge-scaling-self-serve-experimentation-us-bank**, **/blog/farfetchs-case-for-building-your-own-experimentation-platform**, **/insights/add-targeting-rules-plain-english-growthbook-mcp**. Internal links are the only unblock.",
+    "**Strategic priorities (ACP)**\n- **Top-10 footprint: 407 keywords (+326 over 3 months)** \u2014 strong upward trajectory.\n- **BOFU comparison page fix remains the highest-ROI unshipped work \u2014 now sixteen consecutive weeks.** Top priorities by ACP and impression volume:\n  - **/compare/growthbook-vs-launchdarkly** (ACP 82, pos 10.7, 2,291 impressions/28d, AI Overview present, GrowthBook cited)\n  - **/compare/growthbook-vs-statsig** (ACP 82, pos 7.5, 3,776 impressions/28d, AI Overview present, GrowthBook cited)\n  - **/compare/growthbook-vs-unleash** (ACP 82, pos 6.4, 387 impressions/28d, AI Overview present, GrowthBook NOT cited)\n  - **/compare/growthbook-vs-posthog** (ACP 80, pos 6.6, 2,922 impressions/28d, AI Overview present, GrowthBook cited)\n- **AI Overview citation gaps** (AI Overview present, GrowthBook NOT cited): **/compare/growthbook-vs-unleash**, **/compare/growthbook-vs-eppo** (pos 5.2, 1,915 impressions/28d), **/compare/growthbook-vs-split**, **/compare/growthbook-vs-absmartly**, **/compare/growthbook-vs-optimizely**, **/compare/growthbook-vs-vwo**, and **\"what is a/b testing\"** (pos 9.59, 2,848 impressions).\n- **\"what is a t test\"** (pos 8.89, 31,277 impressions) \u2014 highest-impression striking-distance query for the fifth consecutive week; still no answer-capsule on the ranking page.",
+    "**Organic movers worth watching**\n- **/blog/best-open-source-feature-flagging-tools-compared**: 84 clicks vs. 131 last week (-36%) \u2014 third consecutive decline; act this week.\n- **/blog/how-to-implement-feature-flags-at-scale**: 51 clicks vs. 14 last week (+264%) \u2014 recovery, but pos 11.5 with 19,014 impressions means significant clicks still left on the table.\n- **/insights/vwo-alternatives**: 6 clicks vs. 0 last week \u2014 early signal, watch.\n- **Optimizely decay:** **/optimization-glossary/feature-flags/** at ETV 11 (-95.8% over 2 weeks) \u2014 displaced traffic is capturable with GrowthBook's existing feature-flags content now.",
+    "**Recommended actions**\n- **Ship answer-capsule + comparison table + schema to /compare/growthbook-vs-statsig and /compare/growthbook-vs-launchdarkly** (ACP 82 each, sixteen consecutive weeks). Statsig has 3,776 impressions/28d.\n- **Apply the same fix to /compare/growthbook-vs-eppo** (pos 5.2, 1,915 impressions/28d, AI Overview present, GrowthBook NOT cited) \u2014 top-5 position, uncited; highest-leverage AI citation gap in the set.\n- **Diagnose and refresh /blog/best-open-source-feature-flagging-tools-compared** \u2014 third consecutive week of decline (154 \u2192 131 \u2192 84 clicks); check for a fresher competitor page outranking it and update the content.\n- **Add an answer-capsule H2 to the page ranking for \"what is a t test\"** (pos 8.89, 31,277 impressions) \u2014 five consecutive weeks as the highest-impression striking-distance query with no action taken.\n- **Add internal links to all four zero-impression pages** noticed this week and last: /insights/what-is-an-mcp-server, /blog/edge-scaling-self-serve-experimentation-us-bank, /blog/farfetchs-case-for-building-your-own-experimentation-platform, /insights/add-targeting-rules-plain-english-growthbook-mcp.",
+    "**Data quality flags**\n- The GA4 and GSC figures in this week's payload are identical to last week's payload (same session counts, click counts, and WoW percentages). This is a likely data pipeline issue \u2014 the current-week data may not have refreshed. Treat site performance numbers as unchanged from last week, not as new signals.\n- ETV WoW percentages for GrowthBook's own pages continue to show extreme swings consistent with the baseline-rotation artifact. Treat as directional only."
   ],
   "content_recommendations": [
-    "1. Optimize /compare/growthbook-vs-eppo (ACP 78, pos 5.2, 1,915 impressions/28d): Add a 40-word answer capsule + comparison table + schema markup. An AI Overview is already showing for this query and GrowthBook is NOT cited despite ranking 5th \u2014 this is the easiest AI-citation capture in the comparison set right now.",
-    "2. Optimize /compare/growthbook-vs-statsig and /compare/growthbook-vs-launchdarkly (ACP 82 each, 3,776 and 2,291 impressions/28d respectively): Same answer-capsule + schema treatment. These have been the top-ACP unshipped items for fifteen consecutive weeks. Statsig alone has the highest 28d impression volume of any comparison page.",
-    "3. Write a \"Best PostHog Alternatives for A/B Testing\" page targeting the PostHog-alternatives buyer: Amplitude Experiment just launched two pages on this exact query this week. GrowthBook is a direct PostHog competitor with open-source credibility \u2014 a comparison/roundup page here captures evaluation-stage traffic before Amplitude entrenches.",
-    "4. Add an answer-capsule H2 to the page ranking for \"what is a t test\" (pos 8.89, 31,277 impressions/week): This has been the highest-impression striking-distance query for four consecutive weeks and position is improving organically. A single targeted H2 in answer format converts impression volume into clicks and AI-citation eligibility.",
-    "5. Refresh /blog/best-open-source-feature-flagging-tools-compared (pos 9.7, 11,594 impressions, 84 clicks): Down 36% in clicks over three consecutive weeks. Audit whether it needs a title-tag test, updated comparison data, or an answer-capsule H2 to arrest the decline \u2014 GA4 data should be checked against GSC to confirm whether this is an organic-only drop or broader."
+    "1. Refresh /blog/best-open-source-feature-flagging-tools-compared (pos 9.7, 84 clicks this week vs. 154 three weeks ago, -45% over three weeks). Audit which competitor page is gaining ground, update the tool comparisons, and add an answer-capsule H2. Third consecutive decline means the window to recover without a full rewrite is closing.",
+    "2. Ship the answer-capsule + comparison table + schema to /compare/growthbook-vs-statsig (ACP 82, pos 7.5, 3,776 impressions/28d, AI Overview present, GrowthBook cited). This is the highest-impression BOFU comparison page and the fix has been recommended for sixteen consecutive weeks.",
+    "3. Apply the answer-capsule + schema fix to /compare/growthbook-vs-eppo (ACP 78, pos 5.2, 1,915 impressions/28d, AI Overview present, GrowthBook NOT cited). Already in the top 5 organically but not cited in the AI Overview \u2014 the fix here captures AI citations without needing to move the ranking at all.",
+    "4. Publish a GrowthBook \"PostHog alternatives\" page covering A/B testing and/or feature flags. Amplitude Experiment now has two comparison pages on this exact query. GrowthBook is a direct PostHog alternative with no capture asset here \u2014 this is a gap a competitor is actively filling.",
+    "5. Write a GrowthBook take on \"AI experimentation\" or \"role of feature management\" (Amplitude Experiment published both this week, tier 1, threat score 6). These are on-strategy topics GrowthBook should own and the competitive window to publish first is closing."
   ],
   "opportunities": [
     {
@@ -3956,6 +3353,16 @@
       "bucket": "Content Gap",
       "url": "",
       "why": "Amplitude Exp ranks for 'posthog vs launchdarkly' while GrowthBook has weak or no coverage. Score 70.0."
+    },
+    {
+      "rank": 5,
+      "topic": "ai experimentation",
+      "competitor": "Amplitude Exp",
+      "score": 70.0,
+      "kd": "n/a",
+      "bucket": "Content Gap",
+      "url": "",
+      "why": "Amplitude Exp ranks for 'ai experimentation' while GrowthBook has weak or no coverage. Score 70.0."
     }
   ],
   "top_movers": {
@@ -9653,38 +9060,6 @@
   },
   "new_content": [
     {
-      "competitor": "Amplitude Exp",
-      "slug": "content-editor",
-      "url": "https://amplitude.com/docs/guides-and-surveys/content-editor",
-      "threat": 8,
-      "kd": 0.0,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "product-areas",
-      "url": "https://amplitude.com/docs/wave/product-areas",
-      "threat": 8,
-      "kd": 0.0,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "PostHog",
-      "slug": "duckdb-vs-postgres",
-      "url": "https://posthog.com/blog/duckdb-vs-postgres",
-      "threat": 7,
-      "kd": 2.0,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "PostHog",
-      "slug": "writing-blogs",
-      "url": "https://posthog.com/handbook/engineering/writing-blogs",
-      "threat": 7,
-      "kd": 1.0,
-      "date": "2026-08-15"
-    },
-    {
       "competitor": "Harness",
       "slug": "devops-automation-platform",
       "url": "https://www.harness.io/blog/devops-automation-platform",
@@ -9702,8 +9077,48 @@
     },
     {
       "competitor": "Amplitude Exp",
+      "slug": "agent-analytics",
+      "url": "https://amplitude.com/blog/agent-analytics",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "ai-experimentation",
+      "url": "https://amplitude.com/blog/ai-experimentation",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "ai-visibility-launch",
+      "url": "https://amplitude.com/blog/ai-visibility-launch",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
       "slug": "amplitude-adobe-tags-extension-update",
       "url": "https://amplitude.com/blog/amplitude-adobe-tags-extension-update",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "amplitude-pathfinder-austin-costello",
+      "url": "https://amplitude.com/blog/amplitude-pathfinder-austin-costello",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "attribution-model-frameworks",
+      "url": "https://amplitude.com/blog/attribution-model-frameworks",
       "threat": 6,
       "kd": null,
       "date": "2026-08-15"
@@ -9718,8 +9133,48 @@
     },
     {
       "competitor": "Amplitude Exp",
+      "slug": "churn-rate-cohort-analysis",
+      "url": "https://amplitude.com/blog/churn-rate-cohort-analysis",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
       "slug": "code-mode-data-assistant",
       "url": "https://amplitude.com/blog/code-mode-data-assistant",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "cohorts-to-improve-your-retention",
+      "url": "https://amplitude.com/blog/cohorts-to-improve-your-retention",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "data-lake-vs-warehouse-vs-lakehouse",
+      "url": "https://amplitude.com/blog/data-lake-vs-warehouse-vs-lakehouse",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "good-bad-north-star-metric",
+      "url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "guide-to-behavioral-cohorting",
+      "url": "https://amplitude.com/blog/guide-to-behavioral-cohorting",
       "threat": 6,
       "kd": null,
       "date": "2026-08-15"
@@ -9758,8 +9213,32 @@
     },
     {
       "competitor": "Amplitude Exp",
+      "slug": "product-management-tools",
+      "url": "https://amplitude.com/blog/product-management-tools",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
       "slug": "putting-a-number-on-ai-quality",
       "url": "https://amplitude.com/blog/putting-a-number-on-ai-quality",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "role-of-feature-management",
+      "url": "https://amplitude.com/blog/role-of-feature-management",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "steps-measuring-feature",
+      "url": "https://amplitude.com/blog/steps-measuring-feature",
       "threat": 6,
       "kd": null,
       "date": "2026-08-15"
@@ -9784,6 +9263,22 @@
       "competitor": "Amplitude Exp",
       "slug": "open-weight-ai-models",
       "url": "https://amplitude.com/blog/tag/open-weight-ai-models",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "web-analytics",
+      "url": "https://amplitude.com/blog/web-analytics",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "adobe",
+      "url": "https://amplitude.com/compare/adobe",
       "threat": 6,
       "kd": null,
       "date": "2026-08-15"
@@ -9830,8 +9325,24 @@
     },
     {
       "competitor": "Amplitude Exp",
+      "slug": "best-google-analytics-alternatives",
+      "url": "https://amplitude.com/compare/best-google-analytics-alternatives",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
       "slug": "best-mcp-servers-for-product-analytics",
       "url": "https://amplitude.com/compare/best-mcp-servers-for-product-analytics",
+      "threat": 6,
+      "kd": null,
+      "date": "2026-08-15"
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "slug": "best-mixpanel-alternatives",
+      "url": "https://amplitude.com/compare/best-mixpanel-alternatives",
       "threat": 6,
       "kd": null,
       "date": "2026-08-15"
@@ -9944,110 +9455,6 @@
       "competitor": "Amplitude Exp",
       "slug": "best-web-analytics-tools",
       "url": "https://amplitude.com/compare/best-web-analytics-tools",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "posthog-archive",
-      "url": "https://amplitude.com/compare/posthog-archive",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "posthog-vs-contentsquare",
-      "url": "https://amplitude.com/compare/posthog-vs-contentsquare",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "posthog-vs-google-analytics",
-      "url": "https://amplitude.com/compare/posthog-vs-google-analytics",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "posthog-vs-heap",
-      "url": "https://amplitude.com/compare/posthog-vs-heap",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "posthog-vs-hotjar",
-      "url": "https://amplitude.com/compare/posthog-vs-hotjar",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "posthog-vs-launchdarkly",
-      "url": "https://amplitude.com/compare/posthog-vs-launchdarkly",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "guides-surveys-mcp",
-      "url": "https://amplitude.com/docs/amplitude-ai/guides-surveys-mcp",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "analyze-a-survey",
-      "url": "https://amplitude.com/docs/guides-and-surveys/analyze-a-survey",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "build-a-survey",
-      "url": "https://amplitude.com/docs/guides-and-surveys/build-a-survey",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "conditional-logic",
-      "url": "https://amplitude.com/docs/guides-and-surveys/conditional-logic",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "form-factors",
-      "url": "https://amplitude.com/docs/guides-and-surveys/form-factors",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "guide-overview",
-      "url": "https://amplitude.com/docs/guides-and-surveys/guide-overview",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-08-15"
-    },
-    {
-      "competitor": "Amplitude Exp",
-      "slug": "guide-templates",
-      "url": "https://amplitude.com/docs/guides-and-surveys/guide-templates",
       "threat": 6,
       "kd": null,
       "date": "2026-08-15"
@@ -13081,22 +12488,6 @@
         }
       },
       "by_category": {
-        "Other short": {
-          "current": {
-            "engaged_views": 208,
-            "raw_views": 781,
-            "watch_minutes": 84,
-            "subs_gained": 2,
-            "videos": 26
-          },
-          "prior": {
-            "engaged_views": 1071,
-            "raw_views": 3490,
-            "watch_minutes": 283,
-            "subs_gained": 0,
-            "videos": 22
-          }
-        },
         "Product long-form": {
           "current": {
             "engaged_views": 1719,
@@ -13111,6 +12502,22 @@
             "watch_minutes": 4845,
             "subs_gained": 3,
             "videos": 65
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 191,
+            "raw_views": 192,
+            "watch_minutes": 914,
+            "subs_gained": 3,
+            "videos": 3
+          },
+          "prior": {
+            "engaged_views": 118,
+            "raw_views": 118,
+            "watch_minutes": 821,
+            "subs_gained": 1,
+            "videos": 2
           }
         },
         "Podcast episode": {
@@ -13129,22 +12536,6 @@
             "videos": 27
           }
         },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 414,
-            "raw_views": 414,
-            "watch_minutes": 2434,
-            "subs_gained": 11,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 45,
-            "raw_views": 45,
-            "watch_minutes": 412,
-            "subs_gained": 0,
-            "videos": 1
-          }
-        },
         "Podcast clip": {
           "current": {
             "engaged_views": 138,
@@ -13161,20 +12552,36 @@
             "videos": 21
           }
         },
-        "Other webinar": {
+        "Other short": {
           "current": {
-            "engaged_views": 191,
-            "raw_views": 192,
-            "watch_minutes": 914,
-            "subs_gained": 3,
-            "videos": 3
+            "engaged_views": 208,
+            "raw_views": 781,
+            "watch_minutes": 84,
+            "subs_gained": 2,
+            "videos": 26
           },
           "prior": {
-            "engaged_views": 118,
-            "raw_views": 118,
-            "watch_minutes": 821,
-            "subs_gained": 1,
+            "engaged_views": 1071,
+            "raw_views": 3490,
+            "watch_minutes": 283,
+            "subs_gained": 0,
+            "videos": 22
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 414,
+            "raw_views": 414,
+            "watch_minutes": 2434,
+            "subs_gained": 11,
             "videos": 2
+          },
+          "prior": {
+            "engaged_views": 45,
+            "raw_views": 45,
+            "watch_minutes": 412,
+            "subs_gained": 0,
+            "videos": 1
           }
         }
       },
