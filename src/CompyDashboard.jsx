@@ -701,7 +701,13 @@ function VideoTab({ video }) {
         ? `${catKpi.raw_views.toLocaleString()} raw incl. Shorts swipes`
         : "video-attributed");
 
-  const scatterKey = scatterWindow === "cohort" ? "day28" : "recent";
+  const scatterKey = scatterWindow === "cohort" ? "day28"
+                   : scatterWindow === "week" ? "week" : "recent";
+  const weekWin = (recent_totals.week_window || {});
+  const weekWindow = weekWin.start ? `${weekWin.start} to ${weekWin.end}` : "the last 7 days";
+  // Label for the window currently selected, used in the axis and the caption.
+  const scatterWindowLabel = scatterWindow === "cohort" ? "first 28 days"
+                           : scatterWindow === "week" ? "last 7 days" : "last 30 days";
 
   // Pies always use the FULL category set, never the filtered slice: a
   // part-to-whole chart of one part is meaningless. The active filter dims the
@@ -916,14 +922,13 @@ function VideoTab({ video }) {
         />
       </Section>
 
-      <Section title={scatterWindow === "cohort"
-        ? "Where the attention goes — first 28 days"
-        : "Where the attention goes — last 30 days"}>
+      <Section title={`Where the attention goes — ${scatterWindowLabel}`}>
         <div style={{ display: "flex", gap: 10, alignItems: "baseline", flexWrap: "wrap",
                       marginBottom: 10 }}>
           <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6,
                         overflow: "hidden" }}>
-            {[["cohort", "First 28 days"], ["recent", "Last 30 days"]].map(([k, label]) => (
+            {[["cohort", "First 28 days"], ["recent", "Last 30 days"],
+              ["week", "Last 7 days"]].map(([k, label]) => (
               <button
                 key={k}
                 onClick={() => setScatterWindow(k)}
@@ -940,6 +945,9 @@ function VideoTab({ video }) {
           <div style={{ fontSize: 12.5, color: C.muted, flex: "1 1 300px" }}>
             {scatterWindow === "cohort"
               ? "Each dot is one video measured at 28 days old — fair for comparing launches regardless of publish date."
+              : scatterWindow === "week"
+              ? `Each dot is one video's activity in the week ${weekWindow}. A single week is a small
+                 sample — most videos earn only a few minutes, so read the shape, not any one dot.`
               : `Each dot is one video's activity in ${recentWindow}, whatever its age — what is drawing attention right now.`}
           </div>
         </div>
@@ -952,8 +960,7 @@ function VideoTab({ video }) {
                             offset: -18, fontSize: 11, fill: C.muted }} />
             <YAxis type="number" dataKey="watch" name="Watch min" tick={{ fontSize: 11 }} stroke={C.muted}
                    width={78}
-                   label={{ value: scatterWindow === "cohort"
-                              ? "watch minutes (first 28 days)" : "watch minutes (last 30 days)",
+                   label={{ value: `watch minutes (${scatterWindowLabel})`,
                             angle: -90, position: "insideLeft", offset: 4,
                             style: { fontSize: 11, fill: C.muted, textAnchor: "middle" } }} />
             <ZAxis range={[45, 45]} />
