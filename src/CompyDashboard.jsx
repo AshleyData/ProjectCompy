@@ -648,7 +648,6 @@ function VideoTab({ video }) {
   const catSeries = trend_by_category[cat] || { weekly: [], monthly: [] };
   const weeklySeries = isAll ? trend : catSeries.weekly;
   const monthlySeries = isAll ? trend_monthly : catSeries.monthly;
-  const cohortRows = isAll ? cohort : cohort.filter((v) => v.category === cat);
   const retentionRows = isAll ? retention : retention.filter((r) => r.category === cat);
   const catOutliers = isAll ? outliers : outliers.filter((o) => o.category === cat);
 
@@ -703,6 +702,19 @@ function VideoTab({ video }) {
 
   const scatterKey = scatterWindow === "cohort" ? "day28"
                    : scatterWindow === "week" ? "week" : "recent";
+  // One video's paid promotion swamps both long windows: "How Fin does 1,000,000
+  // A/B Tests in 24 Hours" is 42.9% of all first-28-day watch minutes and 72.8%
+  // of the last 30 days -- 19x the next video. Channel-wide paid watch time over
+  // that period (24,176 min) is almost exactly this video's total (24,847 min),
+  // and the campaign days ran 90-95% paid, so the spike is advertising rather
+  // than audience. It stays in the 7-day view, where the window post-dates the
+  // campaign and the video is not even the top performer.
+  const PAID_OUTLIER_ID = "c7_SmvRDjI8";
+  const hidePaidOutlier = scatterWindow !== "week";
+  const scatterSource = hidePaidOutlier
+    ? cohort.filter((v) => v.video_id !== PAID_OUTLIER_ID)
+    : cohort;
+  const paidOutlier = cohort.find((v) => v.video_id === PAID_OUTLIER_ID);
   const weekWin = (recent_totals.week_window || {});
   const weekWindow = weekWin.start ? `${weekWin.start} to ${weekWin.end}` : "the last 7 days";
   // Label for the window currently selected, used in the axis and the caption.
@@ -715,7 +727,7 @@ function VideoTab({ video }) {
   const pieRows = (metricKey) => Object.keys(VIDEO_CAT_COLORS).map((name) => ({
     name,
     color: VIDEO_CAT_COLORS[name],
-    value: cohort
+    value: scatterSource
       .filter((v) => v.category === name && v[scatterKey])
       .reduce((t, v) => t + (v[scatterKey][metricKey] || 0), 0),
   }));
@@ -980,7 +992,8 @@ function VideoTab({ video }) {
             <Legend verticalAlign="top" align="left" height={30}
                     wrapperStyle={{ fontSize: 12, paddingBottom: 8 }} />
             {Object.keys(VIDEO_CAT_COLORS).map((cat2) => {
-              const pts = cohortRows
+              const pts = (isAll ? scatterSource
+                                 : scatterSource.filter((v) => v.category === cat))
                 .filter((v) => v.category === cat2 && v[scatterKey] && v.length_s)
                 .map((v) => ({
                   mins: +(v.length_s / 60).toFixed(1), watch: v[scatterKey].watch_min,
@@ -992,6 +1005,20 @@ function VideoTab({ video }) {
             })}
           </ScatterChart>
         </ResponsiveContainer>
+
+        {hidePaidOutlier && paidOutlier && (
+          <div style={{ fontSize: 12, color: C.muted, marginTop: 8, paddingLeft: 2,
+                        borderLeft: `2px solid ${C.border}`, paddingTop: 2, paddingBottom: 2 }}>
+            <strong>Excluded:</strong> “{paidOutlier.title}”. Its watch time came from a paid
+            campaign, not organic reach — it accounts for{" "}
+            {paidOutlier.day28 ? "42.9% of first-28-day" : ""}
+            {paidOutlier.day28 && paidOutlier.recent ? " and " : ""}
+            {paidOutlier.recent ? "72.8% of last-30-day" : ""} watch minutes, roughly 19× the
+            next video, and the campaign days ran 90–95% paid. Leaving it in compressed every
+            other video onto the axis. It is <em>included</em> in the Last 7 days view, which
+            post-dates the campaign. The pie charts below apply the same exclusion.
+          </div>
+        )}
 
         <div style={{ fontSize: 12.5, color: C.muted, margin: "18px 0 8px" }}>
           The same window split by category. Note how differently the three metrics
