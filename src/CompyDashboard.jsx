@@ -1726,6 +1726,7 @@ export default function CompyDashboard() {
                       </div>
                       <div style={{ fontSize: 11, color: C.muted, marginTop: 6 }}>
                         {(pf.striking ?? 0).toLocaleString()} in striking distance (11–20) · ETV {(pf.etv ?? 0).toLocaleString()}
+                        {pf.etvAsOf && <span title="keyword_rankings has no ETV, and this week's page-rollup ETV is a different basis from the monthly series — so ETV is carried from the last completed month rather than mixed."> (ETV as of {pf.etvAsOf})</span>}
                       </div>
                     </div>
                     <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 320 }}>
