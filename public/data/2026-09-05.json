@@ -3663,7 +3663,7 @@
           "Best Amplitude Alternatives"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This section is a collection of 74 comparison and alternative-focused pages covering PostHog versus competing analytics, product intelligence, and AI observability tools. It targets buyers actively evaluating options in those categories, likely capturing search traffic from people considering switching from or comparing products like GA4, Adobe Analytics, Amplitude, and ActiveCampaign."
+        "summary": "PostHog's /compare section is a collection of 74 comparison and alternative pages targeting software buyers evaluating analytics, product intelligence, and AI observability tools. It primarily serves decision-makers researching competitors like GA4, Adobe Analytics, Amplitude, and ActiveCampaign, positioning PostHog as a preferred alternative."
       }
     ]
   },
@@ -8869,8 +8869,8 @@
   "competitors": [
     {
       "name": "Statsig",
-      "etv": 17392,
-      "pages": 144,
+      "etv": 18330,
+      "pages": 159,
       "da": 40,
       "da_as_of": "2026-09-01",
       "top_page": "https://www.statsig.com/perspectives/tracking-non-authenticated-users",
@@ -8878,12 +8878,12 @@
     },
     {
       "name": "Datadog",
-      "etv": 8500,
-      "pages": 93,
+      "etv": 17870,
+      "pages": 218,
       "da": 64,
       "da_as_of": "2026-09-01",
-      "top_page": "https://www.datadoghq.com/knowledge-center/metrics/",
-      "top_etv": 774
+      "top_page": "https://docs.datadoghq.com/mcp_server/",
+      "top_etv": 1498
     },
     {
       "name": "Amplitude Exp",
@@ -8896,12 +8896,21 @@
     },
     {
       "name": "Optimizely",
-      "etv": 7350,
-      "pages": 110,
+      "etv": 7455,
+      "pages": 115,
       "da": 83,
       "da_as_of": "2026-09-01",
       "top_page": "https://www.optimizely.com/optimization-glossary/lead-generation",
       "top_etv": 439
+    },
+    {
+      "name": "Harness",
+      "etv": 3970,
+      "pages": 87,
+      "da": 51,
+      "da_as_of": "2026-09-01",
+      "top_page": "https://www.harness.io/blog/parallel-execution-in-modern-ci-best-practices-results",
+      "top_etv": 754
     },
     {
       "name": "PostHog",
@@ -8911,15 +8920,6 @@
       "da_as_of": "2026-09-01",
       "top_page": "https://posthog.com/docs/model-context-protocol",
       "top_etv": 455
-    },
-    {
-      "name": "Harness",
-      "etv": 3428,
-      "pages": 69,
-      "da": 51,
-      "da_as_of": "2026-09-01",
-      "top_page": "https://www.harness.io/blog/parallel-execution-in-modern-ci-best-practices-results",
-      "top_etv": 754
     },
     {
       "name": "Kameleoon",
@@ -8941,8 +8941,8 @@
     },
     {
       "name": "GrowthBook",
-      "etv": 1424,
-      "pages": 34,
+      "etv": 1478,
+      "pages": 43,
       "da": 33,
       "da_as_of": "2026-09-01",
       "top_page": "https://www.growthbook.io/blog/what-is-a-b-testing",
@@ -8950,8 +8950,8 @@
     },
     {
       "name": "Unleash",
-      "etv": 112,
-      "pages": 5,
+      "etv": 157,
+      "pages": 8,
       "da": 38,
       "da_as_of": "2026-09-01",
       "top_page": "https://www.getunleash.io/unleash-brand-guidelines",
@@ -9417,7 +9417,7 @@
       },
       {
         "date": "2026-09-05",
-        "etv": 1424
+        "etv": 1478
       }
     ],
     "Harness": [
@@ -9531,7 +9531,7 @@
       },
       {
         "date": "2026-09-05",
-        "etv": 3428
+        "etv": 3970
       }
     ],
     "LaunchDarkly": [
@@ -9759,7 +9759,7 @@
       },
       {
         "date": "2026-09-05",
-        "etv": 7350
+        "etv": 7455
       }
     ],
     "PostHog": [
@@ -9987,7 +9987,7 @@
       },
       {
         "date": "2026-09-05",
-        "etv": 17392
+        "etv": 18330
       }
     ],
     "Unleash": [
@@ -10101,7 +10101,7 @@
       },
       {
         "date": "2026-09-05",
-        "etv": 112
+        "etv": 157
       }
     ],
     "Kameleoon": [
@@ -10133,7 +10133,7 @@
     "Datadog": [
       {
         "date": "2026-09-05",
-        "etv": 8500
+        "etv": 17870
       }
     ]
   },
@@ -14101,36 +14101,20 @@
         }
       },
       "by_category": {
-        "Podcast clip": {
+        "Kohavi webinar": {
           "current": {
-            "engaged_views": 699,
-            "raw_views": 2713,
-            "watch_minutes": 221,
-            "subs_gained": 1,
-            "videos": 39
+            "engaged_views": 110,
+            "raw_views": 124,
+            "watch_minutes": 987,
+            "subs_gained": 2,
+            "videos": 2
           },
           "prior": {
-            "engaged_views": 1975,
-            "raw_views": 6082,
-            "watch_minutes": 655,
-            "subs_gained": 3,
-            "videos": 27
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1369,
-            "raw_views": 1557,
-            "watch_minutes": 4303,
-            "subs_gained": 6,
-            "videos": 80
-          },
-          "prior": {
-            "engaged_views": 1863,
-            "raw_views": 1996,
-            "watch_minutes": 5599,
-            "subs_gained": 7,
-            "videos": 70
+            "engaged_views": 383,
+            "raw_views": 383,
+            "watch_minutes": 2157,
+            "subs_gained": 10,
+            "videos": 2
           }
         },
         "Podcast episode": {
@@ -14149,22 +14133,6 @@
             "videos": 22
           }
         },
-        "Other webinar": {
-          "current": {
-            "engaged_views": 125,
-            "raw_views": 144,
-            "watch_minutes": 542,
-            "subs_gained": 1,
-            "videos": 10
-          },
-          "prior": {
-            "engaged_views": 247,
-            "raw_views": 247,
-            "watch_minutes": 1296,
-            "subs_gained": 3,
-            "videos": 9
-          }
-        },
         "Other short": {
           "current": {
             "engaged_views": 78,
@@ -14181,20 +14149,52 @@
             "videos": 22
           }
         },
-        "Kohavi webinar": {
+        "Podcast clip": {
           "current": {
-            "engaged_views": 110,
-            "raw_views": 124,
-            "watch_minutes": 987,
-            "subs_gained": 2,
-            "videos": 2
+            "engaged_views": 699,
+            "raw_views": 2713,
+            "watch_minutes": 221,
+            "subs_gained": 1,
+            "videos": 39
           },
           "prior": {
-            "engaged_views": 383,
-            "raw_views": 383,
-            "watch_minutes": 2157,
-            "subs_gained": 10,
-            "videos": 2
+            "engaged_views": 1975,
+            "raw_views": 6082,
+            "watch_minutes": 655,
+            "subs_gained": 3,
+            "videos": 27
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 125,
+            "raw_views": 144,
+            "watch_minutes": 542,
+            "subs_gained": 1,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 247,
+            "raw_views": 247,
+            "watch_minutes": 1296,
+            "subs_gained": 3,
+            "videos": 9
+          }
+        },
+        "Product long-form": {
+          "current": {
+            "engaged_views": 1369,
+            "raw_views": 1557,
+            "watch_minutes": 4303,
+            "subs_gained": 6,
+            "videos": 80
+          },
+          "prior": {
+            "engaged_views": 1863,
+            "raw_views": 1996,
+            "watch_minutes": 5599,
+            "subs_gained": 7,
+            "videos": 70
           }
         }
       },
