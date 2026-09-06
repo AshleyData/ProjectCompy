@@ -3663,7 +3663,7 @@
           "Best Amplitude Alternatives"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /compare section is a collection of 74 comparison and alternative pages targeting buyers evaluating analytics, product intelligence, and AI observability tools against specific competitors like GA4, Adobe Analytics, Amplitude, and ActiveCampaign. It is designed to capture bottom-of-funnel search traffic from users actively researching software alternatives and direct them toward PostHog as a solution."
+        "summary": "This section is a collection of 74 comparison and alternative-focused pages covering PostHog versus competing analytics, product intelligence, and AI observability tools. It targets buyers actively evaluating options in those categories, likely capturing search traffic from people considering switching from or comparing products like GA4, Adobe Analytics, Amplitude, and ActiveCampaign."
       }
     ]
   },
@@ -8942,11 +8942,11 @@
     {
       "name": "GrowthBook",
       "etv": 1424,
-      "pages": 0,
+      "pages": 34,
       "da": 33,
       "da_as_of": "2026-09-01",
-      "top_page": "",
-      "top_etv": 0
+      "top_page": "https://www.growthbook.io/blog/what-is-a-b-testing",
+      "top_etv": 323
     },
     {
       "name": "Unleash",
@@ -14101,20 +14101,20 @@
         }
       },
       "by_category": {
-        "Other short": {
+        "Podcast clip": {
           "current": {
-            "engaged_views": 78,
-            "raw_views": 145,
-            "watch_minutes": 60,
-            "subs_gained": 0,
-            "videos": 27
+            "engaged_views": 699,
+            "raw_views": 2713,
+            "watch_minutes": 221,
+            "subs_gained": 1,
+            "videos": 39
           },
           "prior": {
-            "engaged_views": 263,
-            "raw_views": 1065,
-            "watch_minutes": 98,
-            "subs_gained": 2,
-            "videos": 22
+            "engaged_views": 1975,
+            "raw_views": 6082,
+            "watch_minutes": 655,
+            "subs_gained": 3,
+            "videos": 27
           }
         },
         "Product long-form": {
@@ -14149,22 +14149,6 @@
             "videos": 22
           }
         },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 110,
-            "raw_views": 124,
-            "watch_minutes": 987,
-            "subs_gained": 2,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 383,
-            "raw_views": 383,
-            "watch_minutes": 2157,
-            "subs_gained": 10,
-            "videos": 2
-          }
-        },
         "Other webinar": {
           "current": {
             "engaged_views": 125,
@@ -14181,20 +14165,36 @@
             "videos": 9
           }
         },
-        "Podcast clip": {
+        "Other short": {
           "current": {
-            "engaged_views": 699,
-            "raw_views": 2713,
-            "watch_minutes": 221,
-            "subs_gained": 1,
-            "videos": 39
+            "engaged_views": 78,
+            "raw_views": 145,
+            "watch_minutes": 60,
+            "subs_gained": 0,
+            "videos": 27
           },
           "prior": {
-            "engaged_views": 1975,
-            "raw_views": 6082,
-            "watch_minutes": 655,
-            "subs_gained": 3,
-            "videos": 27
+            "engaged_views": 263,
+            "raw_views": 1065,
+            "watch_minutes": 98,
+            "subs_gained": 2,
+            "videos": 22
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 110,
+            "raw_views": 124,
+            "watch_minutes": 987,
+            "subs_gained": 2,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 383,
+            "raw_views": 383,
+            "watch_minutes": 2157,
+            "subs_gained": 10,
+            "videos": 2
           }
         }
       },
