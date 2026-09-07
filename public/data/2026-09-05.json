@@ -10611,6 +10611,7 @@
       }
     ]
   },
+  "etv_formula_switch": "2026-09-05",
   "new_content": [
     {
       "competitor": "Datadog",
@@ -14170,6 +14171,22 @@
         }
       },
       "by_category": {
+        "Other short": {
+          "current": {
+            "engaged_views": 76,
+            "raw_views": 148,
+            "watch_minutes": 62,
+            "subs_gained": 0,
+            "videos": 27
+          },
+          "prior": {
+            "engaged_views": 266,
+            "raw_views": 1072,
+            "watch_minutes": 99,
+            "subs_gained": 2,
+            "videos": 22
+          }
+        },
         "Podcast clip": {
           "current": {
             "engaged_views": 722,
@@ -14184,38 +14201,6 @@
             "watch_minutes": 627,
             "subs_gained": 3,
             "videos": 27
-          }
-        },
-        "Other webinar": {
-          "current": {
-            "engaged_views": 168,
-            "raw_views": 215,
-            "watch_minutes": 578,
-            "subs_gained": 1,
-            "videos": 11
-          },
-          "prior": {
-            "engaged_views": 241,
-            "raw_views": 241,
-            "watch_minutes": 1147,
-            "subs_gained": 2,
-            "videos": 9
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1329,
-            "raw_views": 1553,
-            "watch_minutes": 4154,
-            "subs_gained": 5,
-            "videos": 80
-          },
-          "prior": {
-            "engaged_views": 1889,
-            "raw_views": 2026,
-            "watch_minutes": 5750,
-            "subs_gained": 8,
-            "videos": 70
           }
         },
         "Podcast episode": {
@@ -14250,20 +14235,36 @@
             "videos": 2
           }
         },
-        "Other short": {
+        "Product long-form": {
           "current": {
-            "engaged_views": 76,
-            "raw_views": 148,
-            "watch_minutes": 62,
-            "subs_gained": 0,
-            "videos": 27
+            "engaged_views": 1329,
+            "raw_views": 1553,
+            "watch_minutes": 4154,
+            "subs_gained": 5,
+            "videos": 80
           },
           "prior": {
-            "engaged_views": 266,
-            "raw_views": 1072,
-            "watch_minutes": 99,
+            "engaged_views": 1889,
+            "raw_views": 2026,
+            "watch_minutes": 5750,
+            "subs_gained": 8,
+            "videos": 70
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 168,
+            "raw_views": 215,
+            "watch_minutes": 578,
+            "subs_gained": 1,
+            "videos": 11
+          },
+          "prior": {
+            "engaged_views": 241,
+            "raw_views": 241,
+            "watch_minutes": 1147,
             "subs_gained": 2,
-            "videos": 22
+            "videos": 9
           }
         }
       },

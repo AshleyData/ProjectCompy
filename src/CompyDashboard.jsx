@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import {
   BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
   ScatterChart, Scatter, ZAxis, LineChart, Line, PieChart, Pie, AreaChart, Area,
-  CartesianGrid, ResponsiveContainer, Cell,
+  CartesianGrid, ResponsiveContainer, Cell, ReferenceLine,
 } from "recharts";
 
 
@@ -2165,6 +2165,14 @@ export default function CompyDashboard() {
               return row;
             });
             const mainComps = Object.keys(d.etv_trend).filter(c => c !== "GrowthBook");
+            // DataForSEO rebuilt its ETV calculation and every line steps down on
+            // the switch date — 54% for Datadog, 94% for Optimizely. That is the
+            // formula, not the market, and without a marker the drop reads as a
+            // collapse. The date comes from the payload (earliest row stamped
+            // "improved") rather than being hardcoded here.
+            const switchDate = d.etv_formula_switch || null;
+            const switchTick = switchDate ? switchDate.slice(5).replace("-", "/") : null;
+            const switchOnChart = switchTick && lineData.some(r => r.date === switchTick);
             return (
               <Section title="Competitor Total ETV — Weekly Trend">
                 <div style={{ display: "flex", gap: 10, alignItems: "baseline", flexWrap: "wrap",
@@ -2196,6 +2204,20 @@ export default function CompyDashboard() {
                     {" "}DataForSEO undercounts GrowthBook's branded traffic, so its line
                     understates real organic performance — see the GSC tab.
                   </p>
+                  {switchOnChart && (
+                    <p style={{ fontSize: 12, color: C.muted, margin: "6px 0 0", flex: "1 1 100%",
+                                textAlign: "left", borderLeft: `3px solid ${C.danger}`,
+                                paddingLeft: 8 }}>
+                      <strong style={{ color: C.danger }}>The step at {switchTick} is a formula
+                      change, not a market move.</strong>{" "}
+                      DataForSEO rebuilt its ETV calculation to account for AI Overviews and other
+                      SERP features. Checked against Search Console on {switchDate}: the old formula
+                      put GrowthBook at 17,814 against 2,968 actual US organic clicks — 6× over —
+                      while the new one gives 2,142. The correction is uneven, so it also reorders
+                      the field: Optimizely fell 94% and Datadog only 54%. Points left of this line
+                      use the old formula and are <em>not</em> comparable to points right of it.
+                    </p>
+                  )}
                 </div>
                 <ResponsiveContainer width="100%" height={340}>
                   <LineChart data={lineData} margin={{ left: 10, right: 60, top: 10, bottom: 10 }}>
@@ -2213,6 +2235,12 @@ export default function CompyDashboard() {
                            tickFormatter={v => v >= 1000 ? `${(v/1000).toFixed(0)}K` : v} />
                     <RTooltip formatter={(v, name) => [v != null ? v.toLocaleString() : "—", name]} />
                     <Legend />
+                    {switchOnChart && (
+                      <ReferenceLine
+                        yAxisId="left" x={switchTick} stroke={C.danger} strokeDasharray="4 4"
+                        label={{ value: "new ETV formula", position: "insideTopRight",
+                                 fill: C.danger, fontSize: 11 }} />
+                    )}
                     {mainComps.map(comp => (
                       <Line key={comp} yAxisId="left" type="monotone" dataKey={comp} stroke={COMP_COLORS[comp] || C.accent} strokeWidth={2} dot={false} connectNulls />
                     ))}
