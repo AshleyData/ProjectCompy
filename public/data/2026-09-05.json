@@ -3663,7 +3663,7 @@
           "Best Amplitude Alternatives"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /compare section is a collection of 74 comparison and alternative pages targeting software buyers evaluating analytics, product intelligence, and AI observability tools. It primarily serves decision-makers researching competitors like GA4, Adobe Analytics, Amplitude, and ActiveCampaign, positioning PostHog as a preferred alternative."
+        "summary": "PostHog's /compare section is a collection of 74 comparison and alternative pages targeting software buyers who are evaluating analytics, product intelligence, and AI observability tools. It primarily serves developers and product teams actively researching competitors like GA4, Adobe Analytics, Amplitude, and ActiveCampaign, positioning PostHog as a preferred alternative."
       }
     ]
   },
@@ -11557,7 +11557,218 @@
     }
   ],
   "gb_sitemap_new_count": 11,
-  "etv_kd": [],
+  "etv_kd": [
+    {
+      "competitor": "Kameleoon",
+      "title": "What Is A/B Testing? Complete Guide with Examples",
+      "url": "https://www.kameleoon.com/ab-testing",
+      "etv": 1721,
+      "kd": 60.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Datadog MCP Server",
+      "url": "https://docs.datadoghq.com/mcp_server/",
+      "etv": 1498,
+      "kd": 34.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "Correlation vs Causation: Learn the Difference",
+      "url": "https://amplitude.com/blog/causation-correlation",
+      "etv": 965,
+      "kd": 18.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "What is Amplitude?",
+      "url": "https://amplitude.com/docs/get-started/what-is-amplitude",
+      "etv": 802,
+      "kd": 20.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "What does it mean to monitor metrics?",
+      "url": "https://www.datadoghq.com/knowledge-center/metrics/",
+      "etv": 774,
+      "kd": 15.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Datadog Watchdog\u2122",
+      "url": "https://docs.datadoghq.com/watchdog/",
+      "etv": 663,
+      "kd": 48.0
+    },
+    {
+      "competitor": "Statsig",
+      "title": "What is Qualtrics?",
+      "url": "https://www.statsig.com/perspectives/what-is-qualtrics",
+      "etv": 638,
+      "kd": 24.0
+    },
+    {
+      "competitor": "Kameleoon",
+      "title": "Customization vs. Personalization: what are the differences ...",
+      "url": "https://www.kameleoon.com/blog/customization-vs-personalization",
+      "etv": 602,
+      "kd": 10.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "What is a T-test? How to Use and Interpret T-test Results",
+      "url": "https://amplitude.com/explore/experiment/t-test",
+      "etv": 593,
+      "kd": 22.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Agent",
+      "url": "https://docs.datadoghq.com/agent/",
+      "etv": 587,
+      "kd": 45.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Log Management & Analytics",
+      "url": "https://www.datadoghq.com/product/log-management/",
+      "etv": 500,
+      "kd": 23.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Agent Observability | LLM Observability",
+      "url": "https://www.datadoghq.com/products/ai/agent-observability/",
+      "etv": 476,
+      "kd": 13.0
+    },
+    {
+      "competitor": "PostHog",
+      "title": "Model Context Protocol (MCP) - Docs",
+      "url": "https://posthog.com/docs/model-context-protocol",
+      "etv": 455,
+      "kd": 58.0
+    },
+    {
+      "competitor": "LaunchDarkly",
+      "title": "What Does Being \"Technical\" Mean?",
+      "url": "https://launchdarkly.com/blog/what-does-being-technical-mean/",
+      "etv": 443,
+      "kd": 11.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Lead generation",
+      "url": "https://www.optimizely.com/optimization-glossary/lead-generation",
+      "etv": 439,
+      "kd": 46.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Hero image",
+      "url": "https://www.optimizely.com/optimization-glossary/hero-image",
+      "etv": 376,
+      "kd": 30.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Search engine marketing",
+      "url": "https://www.optimizely.com/optimization-glossary/search-engine-marketing",
+      "etv": 362,
+      "kd": 32.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is conversion rate optimization (CRO)?",
+      "url": "https://www.optimizely.com/optimization-glossary/conversion-rate-optimization/",
+      "etv": 340,
+      "kd": 43.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "What is A/B testing? With examples",
+      "url": "https://www.optimizely.com/optimization-glossary/ab-testing/",
+      "etv": 337,
+      "kd": 60.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Cloud Cost Management",
+      "url": "https://www.datadoghq.com/product/cloud-cost-management/",
+      "etv": 327,
+      "kd": 30.0
+    },
+    {
+      "competitor": "GrowthBook",
+      "title": "What Is A/B Testing? A Complete Guide",
+      "url": "https://www.growthbook.io/blog/what-is-a-b-testing",
+      "etv": 323,
+      "kd": 49.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "What Is MTTR (Mean Time to Repair)?",
+      "url": "https://www.datadoghq.com/knowledge-center/mttr/",
+      "etv": 323,
+      "kd": 15.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Integrations",
+      "url": "https://docs.datadoghq.com/integrations/",
+      "etv": 301,
+      "kd": 50.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Dogshell",
+      "url": "https://docs.datadoghq.com/extend/guide/dogshell/",
+      "etv": 297,
+      "kd": 0.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Bits AI",
+      "url": "https://docs.datadoghq.com/bits_ai/",
+      "etv": 291,
+      "kd": 25.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Commerce",
+      "url": "https://www.optimizely.com/optimization-glossary/commerce",
+      "etv": 283,
+      "kd": 58.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Getting Started with Private Locations",
+      "url": "https://docs.datadoghq.com/getting_started/synthetics/private_location/",
+      "etv": 283,
+      "kd": 0.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Unique selling point",
+      "url": "https://www.optimizely.com/optimization-glossary/unique-selling-point",
+      "etv": 282,
+      "kd": 23.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "OpenTelemetry in Datadog",
+      "url": "https://docs.datadoghq.com/opentelemetry/",
+      "etv": 276,
+      "kd": 47.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Call to action",
+      "url": "https://www.optimizely.com/optimization-glossary/call-to-action",
+      "etv": 269,
+      "kd": 64.0
+    }
+  ],
   "ga4": {
     "main_site": {
       "sessions": 3379,
@@ -14101,38 +14312,6 @@
         }
       },
       "by_category": {
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 110,
-            "raw_views": 124,
-            "watch_minutes": 987,
-            "subs_gained": 2,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 383,
-            "raw_views": 383,
-            "watch_minutes": 2157,
-            "subs_gained": 10,
-            "videos": 2
-          }
-        },
-        "Podcast episode": {
-          "current": {
-            "engaged_views": 9114,
-            "raw_views": 9329,
-            "watch_minutes": 7111,
-            "subs_gained": 33,
-            "videos": 29
-          },
-          "prior": {
-            "engaged_views": 26336,
-            "raw_views": 27560,
-            "watch_minutes": 21314,
-            "subs_gained": 147,
-            "videos": 22
-          }
-        },
         "Other short": {
           "current": {
             "engaged_views": 78,
@@ -14165,22 +14344,6 @@
             "videos": 27
           }
         },
-        "Other webinar": {
-          "current": {
-            "engaged_views": 125,
-            "raw_views": 144,
-            "watch_minutes": 542,
-            "subs_gained": 1,
-            "videos": 10
-          },
-          "prior": {
-            "engaged_views": 247,
-            "raw_views": 247,
-            "watch_minutes": 1296,
-            "subs_gained": 3,
-            "videos": 9
-          }
-        },
         "Product long-form": {
           "current": {
             "engaged_views": 1369,
@@ -14195,6 +14358,54 @@
             "watch_minutes": 5599,
             "subs_gained": 7,
             "videos": 70
+          }
+        },
+        "Podcast episode": {
+          "current": {
+            "engaged_views": 9114,
+            "raw_views": 9329,
+            "watch_minutes": 7111,
+            "subs_gained": 33,
+            "videos": 29
+          },
+          "prior": {
+            "engaged_views": 26336,
+            "raw_views": 27560,
+            "watch_minutes": 21314,
+            "subs_gained": 147,
+            "videos": 22
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 110,
+            "raw_views": 124,
+            "watch_minutes": 987,
+            "subs_gained": 2,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 383,
+            "raw_views": 383,
+            "watch_minutes": 2157,
+            "subs_gained": 10,
+            "videos": 2
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 125,
+            "raw_views": 144,
+            "watch_minutes": 542,
+            "subs_gained": 1,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 247,
+            "raw_views": 247,
+            "watch_minutes": 1296,
+            "subs_gained": 3,
+            "videos": 9
           }
         }
       },
