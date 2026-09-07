@@ -622,6 +622,8 @@ function VideoTab({ video }) {
   // people arrive with; the age cohort is the follow-up.
   const [scatterWindow, setScatterWindow] = useState("recent");
   const [retView, setRetView] = useState("watch30");
+  // null = the view's own ranking (watch minutes). Otherwise a retention column.
+  const [retSort, setRetSort] = useState(null);   // {key, dir}
   const [cat, setCat] = useState("All");
   // Defaults to the 30-day view so it agrees with the KPI cards above it.
   const [formatWindow, setFormatWindow] = useState("recent");
@@ -812,12 +814,49 @@ function VideoTab({ video }) {
       return pub && pub.slice(0, 10) >= pubCutoff;
     });
   }
-  const worstHooks = [...retPool]
+  // Select the twelve by watch time FIRST, then re-order them. Sorting all 114
+  // by retention instead would surface videos with excellent curves and almost
+  // no viewers — a 100% hook on nine views is noise, not a finding. The set
+  // stays the videos that matter; only the order changes.
+  const retTop = [...retPool]
     .sort((a, b) => minsFor(b.video_id, watchKey) - minsFor(a.video_id, watchKey))
     .slice(0, 12)
     .map((r) => ({ ...r,
       recent_watch_min: minsFor(r.video_id, watchKey),
       published: (cohortById[r.video_id] || {}).published || null }));
+
+  const worstHooks = retSort
+    ? [...retTop].sort((a, b) => {
+        const av = a[retSort.key], bv = b[retSort.key];
+        // Missing curves sort last in both directions rather than pretending to
+        // be zero, which would read as "lost everyone".
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;
+        if (bv == null) return -1;
+        return retSort.dir === "asc" ? av - bv : bv - av;
+      })
+    : retTop;
+
+  const sortHeader = (key, label) => {
+    const active = retSort && retSort.key === key;
+    return (
+      <button
+        onClick={() => setRetSort(
+          !active ? { key, dir: "desc" }
+          : retSort.dir === "desc" ? { key, dir: "asc" }
+          : null)}
+        title={active
+          ? (retSort.dir === "desc" ? "Highest first — click for lowest first"
+                                    : "Lowest first — click to clear")
+          : "Sort by this column"}
+        style={{ background: "none", border: 0, padding: 0, cursor: "pointer",
+                 font: "inherit", color: "inherit", letterSpacing: "inherit",
+                 textTransform: "inherit", opacity: active ? 1 : 0.75 }}
+      >
+        {label}{active ? (retSort.dir === "desc" ? " ▼" : " ▲") : " ⇅"}
+      </button>
+    );
+  };
 
   return (
     <>
@@ -1096,6 +1135,15 @@ function VideoTab({ video }) {
                 ? "last 7 days" : "last 30 days"}, most-watched first.</>}
           {" "}A low hook with a flat curve afterwards means the opening is losing people who would
           otherwise have stayed — shortening the video would not help.
+          {" "}Click <strong>@25%</strong>, <strong>@50%</strong> or <strong>@75%</strong> to
+          re-order these twelve by how many viewers are still watching at that point — once for
+          highest first, again for lowest first, a third time to clear. Sorting re-orders this
+          set rather than picking a new one, so a video with a perfect curve and nine viewers
+          cannot displace one that is actually being watched.
+          {retSort && (
+            <> Currently sorted by <strong>{retSort.key.replace("ret_", "")}%</strong>,
+              {retSort.dir === "desc" ? " highest retention first" : " lowest retention first"}.</>
+          )}
         </div>
         {pubCutoff && worstHooks.length === 0 && (
           <div style={{ ...card({ padding: 14 }), fontSize: 12.5, color: C.muted }}>
@@ -1110,7 +1158,10 @@ function VideoTab({ video }) {
               headers={["Video",
                         retView === "watch7" ? "Watch min (7d)" : "Watch min (30d)",
                         ...(pubCutoff ? ["Published"] : []),
-                        "Length", "Hook 0:30", "@25%", "@50%", "@75%"]}
+                        "Length", "Hook 0:30",
+                        sortHeader("ret_25", "@25%"),
+                        sortHeader("ret_50", "@50%"),
+                        sortHeader("ret_75", "@75%")]}
               rows={worstHooks.map((r) => [
                 <button
                   onClick={() => setSelected(r)}
