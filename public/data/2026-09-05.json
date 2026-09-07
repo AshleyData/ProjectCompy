@@ -14171,36 +14171,20 @@
         }
       },
       "by_category": {
-        "Other short": {
+        "Kohavi webinar": {
           "current": {
-            "engaged_views": 76,
-            "raw_views": 148,
-            "watch_minutes": 62,
-            "subs_gained": 0,
-            "videos": 27
-          },
-          "prior": {
-            "engaged_views": 266,
-            "raw_views": 1072,
-            "watch_minutes": 99,
-            "subs_gained": 2,
-            "videos": 22
-          }
-        },
-        "Podcast clip": {
-          "current": {
-            "engaged_views": 722,
-            "raw_views": 2847,
-            "watch_minutes": 224,
-            "subs_gained": 1,
-            "videos": 42
-          },
-          "prior": {
-            "engaged_views": 1887,
-            "raw_views": 5806,
-            "watch_minutes": 627,
+            "engaged_views": 104,
+            "raw_views": 118,
+            "watch_minutes": 967,
             "subs_gained": 3,
-            "videos": 27
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 393,
+            "raw_views": 393,
+            "watch_minutes": 2205,
+            "subs_gained": 10,
+            "videos": 2
           }
         },
         "Podcast episode": {
@@ -14219,20 +14203,36 @@
             "videos": 23
           }
         },
-        "Kohavi webinar": {
+        "Podcast clip": {
           "current": {
-            "engaged_views": 104,
-            "raw_views": 118,
-            "watch_minutes": 967,
-            "subs_gained": 3,
-            "videos": 2
+            "engaged_views": 722,
+            "raw_views": 2847,
+            "watch_minutes": 224,
+            "subs_gained": 1,
+            "videos": 42
           },
           "prior": {
-            "engaged_views": 393,
-            "raw_views": 393,
-            "watch_minutes": 2205,
-            "subs_gained": 10,
-            "videos": 2
+            "engaged_views": 1887,
+            "raw_views": 5806,
+            "watch_minutes": 627,
+            "subs_gained": 3,
+            "videos": 27
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 76,
+            "raw_views": 148,
+            "watch_minutes": 62,
+            "subs_gained": 0,
+            "videos": 27
+          },
+          "prior": {
+            "engaged_views": 266,
+            "raw_views": 1072,
+            "watch_minutes": 99,
+            "subs_gained": 2,
+            "videos": 22
           }
         },
         "Product long-form": {
@@ -20685,7 +20685,7 @@
       {
         "video_id": "9dvenpgs2SU",
         "title": "Everyone at Supercell can now run and analyze their own A/B tests.",
-        "published": null,
+        "published": "2026-09-01",
         "length_s": 18,
         "category": "Podcast clip",
         "recent": {
@@ -20707,7 +20707,7 @@
       {
         "video_id": "ps64zEUyXHs",
         "title": "GrowthBook in 5 Minutes: Feature Flags, Experiments & Product Analytics",
-        "published": null,
+        "published": "2026-09-03",
         "length_s": 285,
         "category": "Other webinar",
         "recent": {
@@ -20721,7 +20721,7 @@
       {
         "video_id": "ZTrsDoTTz40",
         "title": "How Supercell A/B tests 300 million players without breaking trust",
-        "published": null,
+        "published": "2026-09-01",
         "length_s": 1427,
         "category": "Podcast episode",
         "recent": {
@@ -20743,7 +20743,7 @@
       {
         "video_id": "utjPwY6O3RY",
         "title": "The four questions Early Warning asks before any A/B test",
-        "published": null,
+        "published": "2026-09-03",
         "length_s": 1303,
         "category": "Podcast episode",
         "recent": {
@@ -20757,7 +20757,7 @@
       {
         "video_id": "a8Y5p_3A9ao",
         "title": "Can you A/B test someone's work tool?",
-        "published": null,
+        "published": "2026-08-31",
         "length_s": 22,
         "category": "Podcast clip",
         "recent": {
@@ -20779,7 +20779,7 @@
       {
         "video_id": "0GioLl_UrqM",
         "title": "How do you measure long-term retention in a two-week test?",
-        "published": null,
+        "published": "2026-09-01",
         "length_s": 36,
         "category": "Podcast clip",
         "recent": {
@@ -20801,7 +20801,7 @@
       {
         "video_id": "oQ-um0gW-h8",
         "title": "How do you decide what gets tested?",
-        "published": null,
+        "published": "2026-08-31",
         "length_s": 25,
         "category": "Podcast clip",
         "recent": {
@@ -20823,7 +20823,7 @@
       {
         "video_id": "8C_f9k6zwQw",
         "title": "Hungry customers race three delivery sites at once, so cutting a pizza order from 22 clicks to 5\u2026",
-        "published": null,
+        "published": "2026-08-28",
         "length_s": 35,
         "category": "Podcast clip",
         "recent": {
@@ -20845,7 +20845,7 @@
       {
         "video_id": "NOULnZq3KHc",
         "title": "You can design a brilliant game mechanic, but will it work for 300 million players?",
-        "published": null,
+        "published": "2026-09-01",
         "length_s": 10,
         "category": "Podcast clip",
         "recent": {
@@ -20867,7 +20867,7 @@
       {
         "video_id": "dAKm1kSCAPo",
         "title": "Retention is the North Star, but experiments last two weeks.",
-        "published": null,
+        "published": "2026-09-01",
         "length_s": 22,
         "category": "Podcast clip",
         "recent": {
@@ -20889,7 +20889,7 @@
       {
         "video_id": "mo4XRTyyIX4",
         "title": "What does hospitality look like in a checkout flow?",
-        "published": null,
+        "published": "2026-08-31",
         "length_s": 22,
         "category": "Podcast clip",
         "recent": {
@@ -20911,7 +20911,7 @@
       {
         "video_id": "4_ZQGp4TAwk",
         "title": "Where do you even start with experimentation?",
-        "published": null,
+        "published": "2026-08-28",
         "length_s": 23,
         "category": "Podcast clip",
         "recent": {
@@ -20933,7 +20933,7 @@
       {
         "video_id": "i2hJIpH1fIE",
         "title": "One test won't move you.",
-        "published": null,
+        "published": "2026-08-28",
         "length_s": 11,
         "category": "Podcast clip",
         "recent": {
@@ -20955,7 +20955,7 @@
       {
         "video_id": "eqJEtpOPl3Q",
         "title": "Do you actually have a hypothesis, or are you just poking around?",
-        "published": null,
+        "published": "2026-09-03",
         "length_s": 20,
         "category": "Podcast clip",
         "recent": {
@@ -20969,7 +20969,7 @@
       {
         "video_id": "GIzHzZ4CWM8",
         "title": "Can't run an A/B test?",
-        "published": null,
+        "published": "2026-09-03",
         "length_s": 18,
         "category": "Podcast clip",
         "recent": {
@@ -20983,7 +20983,7 @@
       {
         "video_id": "gOSp4gg5gNw",
         "title": "This is how p-hacking sneaks in.",
-        "published": null,
+        "published": "2026-09-03",
         "length_s": 19,
         "category": "Podcast clip",
         "recent": {
