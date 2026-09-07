@@ -621,6 +621,7 @@ function VideoTab({ video }) {
   // Defaults to the rolling window: "what is working now" is the question
   // people arrive with; the age cohort is the follow-up.
   const [scatterWindow, setScatterWindow] = useState("recent");
+  const [retView, setRetView] = useState("watch30");
   const [cat, setCat] = useState("All");
   // Defaults to the 30-day view so it agrees with the KPI cards above it.
   const [formatWindow, setFormatWindow] = useState("recent");
@@ -778,15 +779,45 @@ function VideoTab({ video }) {
     engaged: t.engaged_views || 0,
   }));
 
-  // Ordered by watch minutes in the last 30 days, descending — the videos
-  // actually carrying the channel right now, rather than the worst hooks on
-  // anything ever captured.
-  const recentMin = {};
-  cohort.forEach((v) => { if (v.recent) recentMin[v.video_id] = v.recent.watch_min || 0; });
-  const worstHooks = [...retentionRows]
-    .sort((a, b) => (recentMin[b.video_id] || 0) - (recentMin[a.video_id] || 0))
+  // Four views. "Most watched" ranks by attention and answers which videos are
+  // carrying the channel; "recently published" ignores watch time entirely and
+  // answers whether the newest work is holding people — a new video can never
+  // out-rank the back catalogue on watch minutes, so it would otherwise never
+  // appear here at all.
+  const RET_VIEWS = [
+    ["watch30", "Most watched · 30d"],
+    ["watch7", "Most watched · 7d"],
+    ["pub14", "Published · last 2 weeks"],
+    ["pub7", "Published · last week"],
+  ];
+  const cohortById = {};
+  cohort.forEach((v) => { cohortById[v.video_id] = v; });
+  const minsFor = (id, key) => ((cohortById[id] || {})[key] || {}).watch_min || 0;
+  // Anchored to the data's own window end, not the browser clock — a dashboard
+  // opened weeks later must still describe the run it belongs to.
+  const windowEnd = (recent_totals.window || {}).end || (meta.recent_window || {}).end || null;
+  const daysBefore = (n) => {
+    if (!windowEnd) return null;
+    const d = new Date(windowEnd + "T00:00:00Z");
+    d.setUTCDate(d.getUTCDate() - n);
+    return d.toISOString().slice(0, 10);
+  };
+  const pubCutoff = retView === "pub14" ? daysBefore(14) : retView === "pub7" ? daysBefore(7) : null;
+  const watchKey = retView === "watch7" ? "week" : "recent";
+
+  let retPool = retentionRows;
+  if (pubCutoff) {
+    retPool = retentionRows.filter((r) => {
+      const pub = (cohortById[r.video_id] || {}).published;
+      return pub && pub.slice(0, 10) >= pubCutoff;
+    });
+  }
+  const worstHooks = [...retPool]
+    .sort((a, b) => minsFor(b.video_id, watchKey) - minsFor(a.video_id, watchKey))
     .slice(0, 12)
-    .map((r) => ({ ...r, recent_watch_min: recentMin[r.video_id] || 0 }));
+    .map((r) => ({ ...r,
+      recent_watch_min: minsFor(r.video_id, watchKey),
+      published: (cohortById[r.video_id] || {}).published || null }));
 
   return (
     <>
@@ -1037,16 +1068,49 @@ function VideoTab({ video }) {
       </Section>
 
       <Section title="Retention — fix the opening, not the length">
+        <div style={{ display: "flex", border: `1px solid ${C.border}`, borderRadius: 6,
+                      overflow: "hidden", width: "fit-content", marginBottom: 10,
+                      flexWrap: "wrap" }}>
+          {RET_VIEWS.map(([k, label]) => (
+            <button
+              key={k}
+              onClick={() => setRetView(k)}
+              aria-pressed={retView === k}
+              style={{ border: 0, cursor: "pointer", fontSize: 11.5, padding: "5px 11px",
+                       background: retView === k ? C.accent : C.white,
+                       color: retView === k ? C.white : C.muted,
+                       fontWeight: retView === k ? 700 : 400 }}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
-          The twelve videos with the most watch time in the last 30 days, most-watched first.
-          A low hook with a flat curve afterwards means the opening is losing people who would
+          {pubCutoff
+            ? <>Everything published since <strong>{pubCutoff}</strong>
+                {worstHooks.length ? <>, ordered by watch time in the last 30 days</> : null}.
+                This view does <em>not</em> rank by attention — a new video cannot out-watch the
+                back catalogue, so it would never surface in the lists above. Small windows mean
+                small samples: read the curve shape, not the exact numbers.</>
+            : <>The twelve videos with the most watch time in the {retView === "watch7"
+                ? "last 7 days" : "last 30 days"}, most-watched first.</>}
+          {" "}A low hook with a flat curve afterwards means the opening is losing people who would
           otherwise have stayed — shortening the video would not help.
         </div>
+        {pubCutoff && worstHooks.length === 0 && (
+          <div style={{ ...card({ padding: 14 }), fontSize: 12.5, color: C.muted }}>
+            No videos published since {pubCutoff} have a retention curve yet. Curves are captured
+            once a video has enough watch data, so the newest uploads appear here after a few days.
+          </div>
+        )}
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 420px", minWidth: 320 }}>
             <Table
               compact
-              headers={["Video", "Watch min (30d)", "Length", "Hook 0:30", "@25%", "@50%", "@75%"]}
+              headers={["Video",
+                        retView === "watch7" ? "Watch min (7d)" : "Watch min (30d)",
+                        ...(pubCutoff ? ["Published"] : []),
+                        "Length", "Hook 0:30", "@25%", "@50%", "@75%"]}
               rows={worstHooks.map((r) => [
                 <button
                   onClick={() => setSelected(r)}
@@ -1059,6 +1123,11 @@ function VideoTab({ video }) {
                 <span style={{ fontVariantNumeric: "tabular-nums", fontWeight: 600 }}>
                   {Math.round(r.recent_watch_min).toLocaleString()}
                 </span>,
+                ...(pubCutoff
+                  ? [<span style={{ fontVariantNumeric: "tabular-nums", fontSize: 11.5 }}>
+                       {r.published ? r.published.slice(0, 10) : "—"}
+                     </span>]
+                  : []),
                 fmtClock(r.length_s),
                 <strong style={{ color: hookColor(r.hook_30s) }}>
                   {r.hook_30s != null ? r.hook_30s.toFixed(2) : "—"}
