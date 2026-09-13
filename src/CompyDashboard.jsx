@@ -2577,7 +2577,7 @@ export default function CompyDashboard() {
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
                 <thead>
                   <tr style={{ background: "#1B4F72" }}>
-                    {["Channel", "Videos (90d)", "Avg Views", "Outliers", "Title", "Views", "Mult", "Date"].map(h => (
+                    {["Channel", "Videos (90d)", "Typical views", "Outliers", "Title", "Views", "vs typical", "Date"].map(h => (
                       <th key={h} style={{ padding: "6px 8px", color: "#fff", textAlign: "left", fontWeight: 700, whiteSpace: "nowrap", ...(h === "Title" ? { minWidth: 360 } : {}) }}>{h}</th>
                     ))}
                   </tr>
@@ -2611,13 +2611,18 @@ export default function CompyDashboard() {
                           <>
                             <td style={{ padding: "5px 8px", fontWeight: 700, color: chColor, verticalAlign: "top" }}>{ch.name}</td>
                             <td style={{ padding: "5px 8px", color: C.muted, verticalAlign: "top", textAlign: "center" }}>{ch.video_count}</td>
-                            <td style={{ padding: "5px 8px", color: C.muted, verticalAlign: "top", textAlign: "right" }}>{(ch.avg_views || 0).toLocaleString()}</td>
+                            <td style={{ padding: "5px 8px", color: C.muted, verticalAlign: "top", textAlign: "right" }}
+                                title={ch.mean_to_median_ratio > 3
+                                  ? `Median of ${ch.video_count} videos. The mean is ${(ch.avg_views || 0).toLocaleString()} — ${ch.mean_to_median_ratio}x higher — because promoted videos sit in this window.`
+                                  : `Median views across ${ch.video_count} videos in the last 90 days.`}>
+                              {(ch.baseline_views ?? ch.avg_views ?? 0).toLocaleString()}
+                            </td>
                             <td style={{ padding: "5px 8px", color: outlierCount > 0 ? C.danger : C.muted, fontWeight: outlierCount > 0 ? 700 : 400, verticalAlign: "top", textAlign: "center" }}>{outlierCount}</td>
                           </>
                         ) : (
                           <><td /><td /><td /><td /></>
                         )}
-                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480, textAlign: "left" }}>{v.is_outlier ? "🔥 " : "📊 "}<a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{v.title}</a></td>
+                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480, textAlign: "left" }}>{v.likely_promoted ? "📣 " : v.is_outlier ? "🔥 " : "📊 "}<a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{v.title}</a></td>
                         <td style={{ padding: "5px 8px", textAlign: "right", whiteSpace: "nowrap" }}>{v.views.toLocaleString()}</td>
                         <td style={{ padding: "5px 8px", fontWeight: 700, color: isGB ? C.success : C.accent, whiteSpace: "nowrap" }}>{v.mult}×</td>
                         <td style={{ padding: "5px 8px", color: C.muted, whiteSpace: "nowrap" }}>{v.date}</td>
@@ -2627,7 +2632,7 @@ export default function CompyDashboard() {
                 </tbody>
               </table>
               <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
-                🔥 = 2× or more views vs channel's 90-day average. 📊 = top non-outlier videos for context. Source: YouTube Data API v3.
+                🔥 = in this channel's top 10% of the last 90 days AND at least 2× its typical video. 📣 = view count so far beyond the channel's norm and subscriber base that it is almost certainly promoted — real reach, but not organic. 📊 = top non-outlier videos for context. "Typical views" is the median, not the mean: on channels running ads the mean is meaningless (Kameleoon's was 86,532 against a median of 31, which made every organic video read as 0.0×). Source: YouTube Data API v3.
               </p>
             </Section>
 

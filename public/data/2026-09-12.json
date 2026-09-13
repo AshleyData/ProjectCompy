@@ -12383,286 +12383,328 @@
       {
         "name": "Optimizely",
         "avg_views": 15690,
+        "baseline_views": 131,
+        "baseline": "median",
+        "mean_to_median_ratio": 119.8,
+        "outlier_threshold": 929,
         "video_count": 34,
         "no_recent": false,
         "videos": [
           {
             "title": "AI agents in one word \ud83d\udc40",
             "views": 302,
-            "mult": 0.0,
+            "mult": 2.3,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=yUIdlUjVeMQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Cutting headcount is NOT a growth strategy",
             "views": 163,
-            "mult": 0.0,
+            "mult": 1.2,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=yLUKsfIDdbg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI in Marketing: Human Edge + One Platform | Opticon 2026",
             "views": 1092,
-            "mult": 0.1,
+            "mult": 8.3,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=MwHtwscIOYg",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "The custom AI agent ASOS built for visibility",
             "views": 425,
-            "mult": 0.0,
+            "mult": 3.2,
             "date": "2026-08-03",
             "url": "https://www.youtube.com/watch?v=s9XaJxTNfAw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Bringing AI into CRO? Start here",
             "views": 127,
-            "mult": 0.0,
+            "mult": 1.0,
             "date": "2026-07-31",
             "url": "https://www.youtube.com/watch?v=JMo-m231c-g",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Build AI agents without prompt engineering | (Optimizely June update)",
             "views": 272,
-            "mult": 0.0,
+            "mult": 2.1,
             "date": "2026-07-29",
             "url": "https://www.youtube.com/watch?v=mzrSntAAkXc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Tech changes. Your testing mindset shouldn't",
             "views": 127,
-            "mult": 0.0,
+            "mult": 1.0,
             "date": "2026-07-29",
             "url": "https://www.youtube.com/watch?v=_HgR3B3BupM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How data teams should actually adopt AI",
             "views": 165,
-            "mult": 0.0,
+            "mult": 1.3,
             "date": "2026-07-27",
             "url": "https://www.youtube.com/watch?v=ZaQdsHt9psI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Rolling out AI without losing trust or governance",
             "views": 50,
-            "mult": 0.0,
+            "mult": 0.4,
             "date": "2026-07-27",
             "url": "https://www.youtube.com/watch?v=pFkkTgtibQM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Your experimentation program is TOO slow",
             "views": 28,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=pHGRqLTJm5U",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to halve your experiment analysis time (like ASOS did)",
             "views": 30,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=A_R3fQPXL8Q",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "By the time you get your data, it's already old",
             "views": 135,
-            "mult": 0.0,
+            "mult": 1.0,
             "date": "2026-07-22",
             "url": "https://www.youtube.com/watch?v=hrYfUwVx6GA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What to do with an inconclusive A/B test (Huel)",
             "views": 28,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=P4SjnfvGS-s",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why AI agents give generic results (Salesforce)",
             "views": 64,
-            "mult": 0.0,
+            "mult": 0.5,
             "date": "2026-07-20",
             "url": "https://www.youtube.com/watch?v=QrInc0Iz5eY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What AI can't replace in Marketing",
             "views": 931,
-            "mult": 0.1,
+            "mult": 7.1,
             "date": "2026-07-17",
             "url": "https://www.youtube.com/watch?v=JJ5EaX5QnYI",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Do your business goals match what your AI agents are out to deliver?",
             "views": 74,
-            "mult": 0.0,
+            "mult": 0.6,
             "date": "2026-07-15",
             "url": "https://www.youtube.com/watch?v=Rrzm70uYh9w",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Huel uses AI to analyse session replays at scale",
             "views": 117,
-            "mult": 0.0,
+            "mult": 0.9,
             "date": "2026-07-13",
             "url": "https://www.youtube.com/watch?v=y2vAHodTqBI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI makes our team faster, not smaller",
             "views": 178,
-            "mult": 0.0,
+            "mult": 1.4,
             "date": "2026-07-13",
             "url": "https://www.youtube.com/watch?v=C4ao-uhYUwQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Is your website readable to AI agents?",
             "views": 69,
-            "mult": 0.0,
+            "mult": 0.5,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=NFRI1XGqWk0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Diary of a CEO uses AI to automate busywork",
             "views": 108,
-            "mult": 0.0,
+            "mult": 0.8,
             "date": "2026-07-08",
             "url": "https://www.youtube.com/watch?v=dEuWbiUULLk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Using AI wrong is killing your brand rep",
             "views": 95,
-            "mult": 0.0,
+            "mult": 0.7,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=dga5eYHZWwQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Should you run more tests, or better ones? (Salesforce)",
             "views": 37,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=nG5b0JVJ06M",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI builds for averages, not outliers",
             "views": 923,
-            "mult": 0.1,
+            "mult": 7.0,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=97PHQkOLhqM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How the BBC got its teams to adopt AI",
             "views": 26,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-03",
             "url": "https://www.youtube.com/watch?v=uC37yStHZac",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Your customers are buying before they reach your website",
             "views": 18,
-            "mult": 0.0,
+            "mult": 0.1,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=eBvNdKmkHUo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Diary of a CEO A/B tests every thumbnail",
             "views": 81,
-            "mult": 0.0,
+            "mult": 0.6,
             "date": "2026-07-01",
             "url": "https://www.youtube.com/watch?v=SUqotkBXSHk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Are shopping habits changing because of AI?",
             "views": 47,
-            "mult": 0.0,
+            "mult": 0.4,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=0HiuCNApx60",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "45+ agent library, Conductor AI search & image editing | Optimizely Opal June 2026",
             "views": 178,
-            "mult": 0.0,
+            "mult": 1.4,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=BQOj5_iF2DE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Free to Grow: Meet the New Optimizely",
             "views": 870,
-            "mult": 0.1,
+            "mult": 6.6,
             "date": "2026-06-22",
             "url": "https://www.youtube.com/watch?v=CF8Kw_-EBZ4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Tales of Mark Eting | AI Platform for Marketing",
             "views": 309738,
-            "mult": 19.7,
+            "mult": 2364.4,
             "date": "2026-06-22",
             "url": "https://www.youtube.com/watch?v=WB22KkYENok",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": true
           },
           {
             "title": "Tales of Mark Eting | AI Platform for Marketing",
             "views": 216458,
-            "mult": 13.8,
+            "mult": 1652.4,
             "date": "2026-06-22",
             "url": "https://www.youtube.com/watch?v=MleVLng-HR4",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": true
           },
           {
             "title": "Why great AI demos break in the real world",
             "views": 179,
-            "mult": 0.0,
+            "mult": 1.4,
             "date": "2026-06-19",
             "url": "https://www.youtube.com/watch?v=FYmsFxmSm4I",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Will AI replace CRO experts?",
             "views": 172,
-            "mult": 0.0,
+            "mult": 1.3,
             "date": "2026-06-17",
             "url": "https://www.youtube.com/watch?v=gRWmZ9cxN3s",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to roll out AI features safely with feature flags",
             "views": 169,
-            "mult": 0.0,
+            "mult": 1.3,
             "date": "2026-06-15",
             "url": "https://www.youtube.com/watch?v=sRwv4_dt7Qg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "Statsig",
         "avg_views": 0,
+        "baseline_views": 0,
+        "baseline": "median",
+        "mean_to_median_ratio": null,
+        "outlier_threshold": 0,
         "video_count": 0,
         "no_recent": true,
         "videos": []
@@ -12670,342 +12712,391 @@
       {
         "name": "Amplitude Exp",
         "avg_views": 115,
+        "baseline_views": 49,
+        "baseline": "median",
+        "mean_to_median_ratio": 2.3,
+        "outlier_threshold": 200,
         "video_count": 41,
         "no_recent": false,
         "videos": [
           {
             "title": "Session Replay Overview - AI Led",
             "views": 145,
-            "mult": 1.3,
+            "mult": 3.0,
             "date": "2026-08-26",
             "url": "https://www.youtube.com/watch?v=cthDKvPwqbU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Amplitude Agent Analytics | Go Beyond Observability",
             "views": 766,
-            "mult": 6.7,
+            "mult": 15.6,
             "date": "2026-08-20",
             "url": "https://www.youtube.com/watch?v=Br7t5u6dfS0",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "How do you say \"Bayesian\"? #statistics #bayestheorem #datascience #funny #amplitude",
             "views": 999,
-            "mult": 8.7,
+            "mult": 20.4,
             "date": "2026-08-17",
             "url": "https://www.youtube.com/watch?v=wZolNCn-eFE",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Navigating Agent Analytics | Amplitude",
             "views": 221,
-            "mult": 1.9,
+            "mult": 4.5,
             "date": "2026-08-11",
             "url": "https://www.youtube.com/watch?v=fXzkaGvZ-24",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Instrumenting Agent Analytics | Amplitude",
             "views": 78,
-            "mult": 0.7,
+            "mult": 1.6,
             "date": "2026-08-11",
             "url": "https://www.youtube.com/watch?v=iiskVeh4AMo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Building Amplitude Agent with Pranjal Joshi | Amplitude AI Builders",
             "views": 72,
-            "mult": 0.6,
+            "mult": 1.5,
             "date": "2026-08-04",
             "url": "https://www.youtube.com/watch?v=lVTkoiqRXrM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Analyze Ad Performance | Amplitude Quickstart, Ep. 21",
             "views": 118,
-            "mult": 1.0,
+            "mult": 2.4,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=zvad4Y-tSzs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How are LLMs Seeing My Brand? | Amplitude Quickstart, Ep. 20",
             "views": 64,
-            "mult": 0.6,
+            "mult": 1.3,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=mGkaRzGxCqk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Analyzing Add-to-Cart and Other Ecomm Conversion | Amplitude Quickstart, Ep. 19",
             "views": 45,
-            "mult": 0.4,
+            "mult": 0.9,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=JK3QADgUxIk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Persisted Properties and Merchandising for Ecomm Analytics | Amplitude Quickstart, Ep. 18",
             "views": 49,
-            "mult": 0.4,
+            "mult": 1.0,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=ZXlckhSNyyw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Track Attribution | Amplitude Quickstart, Ep. 17",
             "views": 37,
-            "mult": 0.3,
+            "mult": 0.8,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=bGlbrTme-Iw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Where Are My Users Coming From? | Amplitude Quickstart, Ep. 16",
             "views": 28,
-            "mult": 0.2,
+            "mult": 0.6,
             "date": "2026-07-24",
             "url": "https://www.youtube.com/watch?v=hHrUVaV2lC4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Do I Go From Launch to Insights to Action? | Amplitude on Amplitude",
             "views": 97,
-            "mult": 0.8,
+            "mult": 2.0,
             "date": "2026-07-20",
             "url": "https://www.youtube.com/watch?v=zdfYrBhZ9Gs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Stop Losing Amplitude Data to Ad Blockers (and Stay GDPR Compliant)",
             "views": 77,
-            "mult": 0.7,
+            "mult": 1.6,
             "date": "2026-07-13",
             "url": "https://www.youtube.com/watch?v=nJfhYaNAVyQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "First Steps to Analyze Activation, Retention, and Feature Discovery in Amplitude",
             "views": 74,
-            "mult": 0.6,
+            "mult": 1.5,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=bVOZAorXKEI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "We Didn't Build a Smarter Agent. We Just Moved It.",
             "views": 450,
-            "mult": 3.9,
+            "mult": 9.2,
             "date": "2026-07-09",
             "url": "https://www.youtube.com/watch?v=qv3ctWYC-wM",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "How Amplitude Defines a New User (and Why You Should Override It)",
             "views": 33,
-            "mult": 0.3,
+            "mult": 0.7,
             "date": "2026-07-09",
             "url": "https://www.youtube.com/watch?v=pnt3Hn3Rtjc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why Your Amplitude CSV Export Has Extra Spaces (and How to Remove Them)",
             "views": 25,
-            "mult": 0.2,
+            "mult": 0.5,
             "date": "2026-07-08",
             "url": "https://www.youtube.com/watch?v=iBBC-UiLt-A",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Remove Bad or Unwanted Data From Amplitude (4 Options)",
             "views": 38,
-            "mult": 0.3,
+            "mult": 0.8,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=V1Gvsk0LCU0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Amplitude Blocks Bots (and How to Filter the Spam It Misses)",
             "views": 46,
-            "mult": 0.4,
+            "mult": 0.9,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=upWI9a4BgCE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Amplitude's AI Answers \"Why\" Without Claiming Causation",
             "views": 49,
-            "mult": 0.4,
+            "mult": 1.0,
             "date": "2026-07-03",
             "url": "https://www.youtube.com/watch?v=QeZBQFFjFI8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Build Cohorts by Login Frequency and Day of Week in Amplitude",
             "views": 83,
-            "mult": 0.7,
+            "mult": 1.7,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=YA2qPTNedgs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Build a Self-Improving Product with AI | Amplitude Wave",
             "views": 164,
-            "mult": 1.4,
+            "mult": 3.3,
             "date": "2026-07-01",
             "url": "https://www.youtube.com/watch?v=BEnTLP2bMiw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why Your Retention Chart Shows a Dotted Line (and What It Really Means)",
             "views": 13,
-            "mult": 0.1,
+            "mult": 0.3,
             "date": "2026-07-01",
             "url": "https://www.youtube.com/watch?v=9vvK7W_iflw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Add Chart Annotations to a Category in Amplitude",
             "views": 66,
-            "mult": 0.6,
+            "mult": 1.3,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=y2MxgsUlt-A",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Inside Amplitude's AI Agents: Your Always-On Data Analyst",
             "views": 100,
-            "mult": 0.9,
+            "mult": 2.0,
             "date": "2026-06-29",
             "url": "https://www.youtube.com/watch?v=CwjFjuUK78c",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Rename Any Chart Label Without Touching Your Data",
             "views": 17,
-            "mult": 0.1,
+            "mult": 0.3,
             "date": "2026-06-28",
             "url": "https://www.youtube.com/watch?v=hmQAWhlzxzQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Monitor Your Data Health With Amplitude Event Alerts",
             "views": 33,
-            "mult": 0.3,
+            "mult": 0.7,
             "date": "2026-06-27",
             "url": "https://www.youtube.com/watch?v=TgLABP3bifc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Should Your Web and Mobile Apps Share the Same Amplitude Project?",
             "views": 23,
-            "mult": 0.2,
+            "mult": 0.5,
             "date": "2026-06-26",
             "url": "https://www.youtube.com/watch?v=Kzvkg0ummss",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "See What Users Actually Click in Your Journeys Chart",
             "views": 23,
-            "mult": 0.2,
+            "mult": 0.5,
             "date": "2026-06-25",
             "url": "https://www.youtube.com/watch?v=CW0oWTfYt9U",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Stop Guessing in Amplitude Journey Charts: Use a Hypothesis First",
             "views": 44,
-            "mult": 0.4,
+            "mult": 0.9,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=77r5-ZDIkPU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Amplitude AI Agents: Already Handled",
             "views": 129,
-            "mult": 1.1,
+            "mult": 2.6,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=nDDT7lHYgMw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Amplitude Custom Agents: AI That Acts on Your Data",
             "views": 136,
-            "mult": 1.2,
+            "mult": 2.8,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=v1GVI2n4uXc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Should Mobile and Web Share the Same Amplitude Project?",
             "views": 15,
-            "mult": 0.1,
+            "mult": 0.3,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=LHv3Ct4DMpU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to See Which Events Fire in Your Funnel",
             "views": 25,
-            "mult": 0.2,
+            "mult": 0.5,
             "date": "2026-06-22",
             "url": "https://www.youtube.com/watch?v=Q6RzqzYW0lU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Group By Property to Read Your User Journeys",
             "views": 30,
-            "mult": 0.3,
+            "mult": 0.6,
             "date": "2026-06-21",
             "url": "https://www.youtube.com/watch?v=UVbc4BpFVMU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Historical Count vs Event Historical Count: Which One To Use",
             "views": 18,
-            "mult": 0.2,
+            "mult": 0.4,
             "date": "2026-06-20",
             "url": "https://www.youtube.com/watch?v=9zitm8a6OsM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Set Up Event Tracking in Lovable Without Breaking Your Taxonomy",
             "views": 34,
-            "mult": 0.3,
+            "mult": 0.7,
             "date": "2026-06-19",
             "url": "https://www.youtube.com/watch?v=GrcIqeYC1Yg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Your Data Health Score Isn't Static (Here's What Moves It)",
             "views": 23,
-            "mult": 0.2,
+            "mult": 0.5,
             "date": "2026-06-18",
             "url": "https://www.youtube.com/watch?v=k3aqNkY5O3A",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Meet Agent Analytics: Connect AI Quality to Conversion and Retention",
             "views": 200,
-            "mult": 1.7,
+            "mult": 4.1,
             "date": "2026-06-17",
             "url": "https://www.youtube.com/watch?v=p5h-U9yEMh8",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Should You Add a Custom Exposure Event? (Usually No)",
             "views": 35,
-            "mult": 0.3,
+            "mult": 0.7,
             "date": "2026-06-17",
             "url": "https://www.youtube.com/watch?v=X6TSLC3xJ0o",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "Harness",
         "avg_views": 412,
+        "baseline_views": 256,
+        "baseline": "median",
+        "mean_to_median_ratio": 1.6,
+        "outlier_threshold": 1220,
         "video_count": 41,
         "no_recent": false,
         "videos": [
@@ -13015,485 +13106,552 @@
             "mult": 0.1,
             "date": "2026-09-11",
             "url": "https://www.youtube.com/watch?v=ltvrw5rDQbE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Achieving Autonomous Resilience in Your Harness CD Pipelines",
             "views": 42,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=yQGicPipUhg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Real Reason SpaceX Paid $60B for Cursor",
             "views": 388,
-            "mult": 0.9,
+            "mult": 1.5,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=pP17JxIZwyA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Monitor Query Costs & Verify Database Changes Automatically - Harness Database DevOps + DBmarlin",
             "views": 57,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-09-08",
             "url": "https://www.youtube.com/watch?v=p97ZbQ3JOoE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Continous ORT Testing with Harness",
             "views": 58,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-09-08",
             "url": "https://www.youtube.com/watch?v=YBWXk3YYUXg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Microsoft Took 8 Months to Fix This Copilot Vulnerability",
             "views": 79,
-            "mult": 0.2,
+            "mult": 0.3,
             "date": "2026-09-04",
             "url": "https://www.youtube.com/watch?v=5sg4sZB3BNM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "When an AI Agent Breaks the Law, Who\u2019s Responsible?",
             "views": 416,
-            "mult": 1.0,
+            "mult": 1.6,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=jcZipJfHB_A",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Gentera Moved Faster With Control Using Harness",
             "views": 118,
-            "mult": 0.3,
+            "mult": 0.5,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=TpKHpPLQleI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Resilience Testing Agents: Find Resilience Risk Before It Reaches Production",
             "views": 66,
-            "mult": 0.2,
+            "mult": 0.3,
             "date": "2026-09-01",
             "url": "https://www.youtube.com/watch?v=xdgQ1Coj4ds",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Bringing Databases into the CI/CD Era",
             "views": 182,
-            "mult": 0.4,
+            "mult": 0.7,
             "date": "2026-08-28",
             "url": "https://www.youtube.com/watch?v=0L16U3TpaNI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Hugging Face Said No to Nvidia. Then Everything Changed.",
             "views": 1349,
-            "mult": 3.3,
+            "mult": 5.3,
             "date": "2026-08-27",
             "url": "https://www.youtube.com/watch?v=9eyzdRLSPek",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "ChatGPT Ditches Reddit  AI Search Changes Explained",
             "views": 121,
-            "mult": 0.3,
+            "mult": 0.5,
             "date": "2026-08-26",
             "url": "https://www.youtube.com/watch?v=B7MZJIT1u7U",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why Microsoft Sat on a Copilot Exploit for 233 Days",
             "views": 203,
-            "mult": 0.5,
+            "mult": 0.8,
             "date": "2026-08-26",
             "url": "https://www.youtube.com/watch?v=alvBhjTsBgs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "ChatGPT Stopped Citing Reddit \u2014 And That Matters",
             "views": 142,
-            "mult": 0.3,
+            "mult": 0.6,
             "date": "2026-08-25",
             "url": "https://www.youtube.com/watch?v=5oeoew03j0s",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Run Playwright Tests with Harness AI Test Automation | CI/CD + AI Failure Analysis",
             "views": 470,
-            "mult": 1.1,
+            "mult": 1.8,
             "date": "2026-08-21",
             "url": "https://www.youtube.com/watch?v=rgtrIGBfaFA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Amazon AI  Code Rewriting Gone Wrong!",
             "views": 604,
-            "mult": 1.5,
+            "mult": 2.4,
             "date": "2026-08-18",
             "url": "https://www.youtube.com/watch?v=E1muOokIvq8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Integrating Security Into Software Delivery",
             "views": 120,
-            "mult": 0.3,
+            "mult": 0.5,
             "date": "2026-08-14",
             "url": "https://www.youtube.com/watch?v=YhPrtcQuJuA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Anthropic's Mythos 5 Fakes Identities Hacking Britain's Government AI Challenge",
             "views": 1266,
-            "mult": 3.1,
+            "mult": 4.9,
             "date": "2026-08-13",
             "url": "https://www.youtube.com/watch?v=kZutQ7P4fQI",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Anthropic's Mythos 5 Created Fake GitHub Identities & the U.S. Government\u2019s New AI Review",
             "views": 145,
-            "mult": 0.4,
+            "mult": 0.6,
             "date": "2026-08-12",
             "url": "https://www.youtube.com/watch?v=WJxnOIvfNhw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Claude Code + Harness | Software Delivery for the Agent Era",
             "views": 413,
-            "mult": 1.0,
+            "mult": 1.6,
             "date": "2026-08-06",
             "url": "https://www.youtube.com/watch?v=6c8OYm33cXA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI Models ESCAPE OpenAI, Target Internet! SCARY",
             "views": 281,
-            "mult": 0.7,
+            "mult": 1.1,
             "date": "2026-08-06",
             "url": "https://www.youtube.com/watch?v=fOSmLNvCVHw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI's BIGGEST Problem, They're Losing Money!",
             "views": 1434,
-            "mult": 3.5,
+            "mult": 5.6,
             "date": "2026-08-05",
             "url": "https://www.youtube.com/watch?v=HaVKjTw8huU",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "The AI Hack Nobody Told You About",
             "views": 997,
-            "mult": 2.4,
+            "mult": 3.9,
             "date": "2026-08-04",
             "url": "https://www.youtube.com/watch?v=NfSxrYkLcz8",
-            "is_outlier": true
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Harness + Devin IDE: Automate Governance and Delivery for the Agentic Era",
             "views": 572,
-            "mult": 1.4,
+            "mult": 2.2,
             "date": "2026-07-29",
             "url": "https://www.youtube.com/watch?v=FD4GaNJYFTg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Are Coding Agents Out of Control?",
             "views": 602,
-            "mult": 1.5,
+            "mult": 2.4,
             "date": "2026-07-29",
             "url": "https://www.youtube.com/watch?v=sJnp8eO9aPM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Catch AI Agent Failures Before They Ship | Harness AI Evals",
             "views": 347,
-            "mult": 0.8,
+            "mult": 1.4,
             "date": "2026-07-23",
             "url": "https://www.youtube.com/watch?v=VXUS-HnFXPE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Chaos Testing Just Got Easier | New ChaosHub & AI Prompt Library | Resilience Testing | Harness",
             "views": 114,
-            "mult": 0.3,
+            "mult": 0.4,
             "date": "2026-07-22",
             "url": "https://www.youtube.com/watch?v=KB3ymXBnIXU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Introducing Harness Agent DLC: Extending your SDLC to AI Agents",
             "views": 179,
-            "mult": 0.4,
+            "mult": 0.7,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=SHEE4Wcr19U",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Elon Musk's Tesla AI Mandate Grok vs Claude for Engineers",
             "views": 1137,
-            "mult": 2.8,
+            "mult": 4.4,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=fiH-f1iAC8I",
-            "is_outlier": true
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Microsoft's 570 Patches Just Armed Every Attacker",
             "views": 335,
-            "mult": 0.8,
+            "mult": 1.3,
             "date": "2026-07-17",
             "url": "https://www.youtube.com/watch?v=kl1h1gMetPY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Harness + Cursor IDE: Accelerating Safe Software Delivery with AI Agents",
             "views": 1495,
-            "mult": 3.6,
+            "mult": 5.8,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=Z8y2KHaiqsw",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "You're already using AI without realizing it",
             "views": 51,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=1MJ6Ef4_wUs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Harness University Tidbit - Custom Plugins in CD Steps",
             "views": 70,
-            "mult": 0.2,
+            "mult": 0.3,
             "date": "2026-07-14",
             "url": "https://www.youtube.com/watch?v=JIL_ehH3kCo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why the U.S. Locked Down Fable and Mythos: AI, National Security, and the Workforce Squeeze",
             "views": 256,
-            "mult": 0.6,
+            "mult": 1.0,
             "date": "2026-07-14",
             "url": "https://www.youtube.com/watch?v=Y7DBjJ7A5m8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Harness Agents",
             "views": 151,
-            "mult": 0.4,
+            "mult": 0.6,
             "date": "2026-07-01",
             "url": "https://www.youtube.com/watch?v=UYV_UEuwkOU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "From a $28,000 AI Bill to $0.60 Per Ticket",
             "views": 140,
-            "mult": 0.3,
+            "mult": 0.5,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=FWRE18x1m7I",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Stop Token Maxing The Future of Al Budget Management",
             "views": 374,
-            "mult": 0.9,
+            "mult": 1.5,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=4lSy86xpotY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Only ONE company has all of DevSecOps \u2014 and it's not who you think",
             "views": 128,
-            "mult": 0.3,
+            "mult": 0.5,
             "date": "2026-06-18",
             "url": "https://www.youtube.com/watch?v=m8o2zopZO9E",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Scaling Agentic Systems  More Engineers Needed!",
             "views": 373,
-            "mult": 0.9,
+            "mult": 1.5,
             "date": "2026-06-16",
             "url": "https://www.youtube.com/watch?v=MXBD1C8gFoM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Setting Up Database CI/CD: Jenkins + Flyway/Liquibase vs Harness",
             "views": 380,
-            "mult": 0.9,
+            "mult": 1.5,
             "date": "2026-06-16",
             "url": "https://www.youtube.com/watch?v=kKF4B7eMpPo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Anthropic Fable 5 & Mythos 5 Suspended  AI Risk Revealed!",
             "views": 1220,
-            "mult": 3.0,
+            "mult": 4.8,
             "date": "2026-06-15",
             "url": "https://www.youtube.com/watch?v=ndCK2-UDazc",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "LaunchDarkly",
         "avg_views": 245,
+        "baseline_views": 100,
+        "baseline": "median",
+        "mean_to_median_ratio": 2.5,
+        "outlier_threshold": 623,
         "video_count": 18,
         "no_recent": false,
         "videos": [
           {
             "title": "Adaptive Triggers: Automatically Respond to Bad Releases",
             "views": 20,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-09-11",
             "url": "https://www.youtube.com/watch?v=9YrTGtkFHYQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Episode 5: The human element",
             "views": 27,
-            "mult": 0.1,
+            "mult": 0.3,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=rdma3wmFkGs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Episode 4: The future of software development",
             "views": 25,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=90zAHVpYsnY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Episode 3: The AI delivery stack",
             "views": 19,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=7o7D8HmK8EA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Episode 2: Deep dive on using agents",
             "views": 51,
-            "mult": 0.2,
+            "mult": 0.5,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=5DFW3nnjXSE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Episode 1: What is a AI-powered software factory?",
             "views": 115,
-            "mult": 0.5,
+            "mult": 1.1,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=jND86G90yjo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What is a guarded release? #devtools #devops #aitools #developertools #softwaretools #codingtools",
             "views": 1240,
-            "mult": 5.1,
+            "mult": 12.4,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=7Is6gP7q4vc",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Control Panel - Episode 2",
             "views": 133,
-            "mult": 0.5,
+            "mult": 1.3,
             "date": "2026-08-24",
             "url": "https://www.youtube.com/watch?v=FkRm-Zf2GPc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Another buzzword explained: adaptive trigger #devops #aitool #devtools #developertools #techbuzz",
             "views": 460,
-            "mult": 1.9,
+            "mult": 4.6,
             "date": "2026-08-20",
             "url": "https://www.youtube.com/watch?v=1kV1TfzFQpk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Control Panel, Ep 1 - Chapter 3: Changing how we build at LaunchDarkly",
             "views": 85,
-            "mult": 0.3,
+            "mult": 0.8,
             "date": "2026-08-14",
             "url": "https://www.youtube.com/watch?v=k50v36Z5M90",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Control Panel, Ep 1 - Chapter 2 Demo: Runtime Control for Agents",
             "views": 57,
-            "mult": 0.2,
+            "mult": 0.6,
             "date": "2026-08-14",
             "url": "https://www.youtube.com/watch?v=S-kSfuMtihQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Control Panel, Ep 1- Chapter 1: Where is this headed?",
             "views": 19,
-            "mult": 0.1,
+            "mult": 0.2,
             "date": "2026-08-14",
             "url": "https://www.youtube.com/watch?v=2zPc2AOA9f4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Let us be the first to sit down and explain key dev phrases to you and your team. #developertools",
             "views": 301,
-            "mult": 1.2,
+            "mult": 3.0,
             "date": "2026-08-14",
             "url": "https://www.youtube.com/watch?v=7CB1h9ViPd4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Platform Overview Demo",
             "views": 145,
-            "mult": 0.6,
+            "mult": 1.4,
             "date": "2026-08-12",
             "url": "https://www.youtube.com/watch?v=utnbTc-1D0E",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "\"Config\" explained in under a minute. #devtools #aitools #config #developerlife #developertools",
             "views": 428,
-            "mult": 1.7,
+            "mult": 4.3,
             "date": "2026-08-05",
             "url": "https://www.youtube.com/watch?v=VGF54YWGCi8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "You're spiraling, and your observability tool knows what broke. #devtools #engineeringtools",
             "views": 1002,
-            "mult": 4.1,
+            "mult": 10.0,
             "date": "2026-07-27",
             "url": "https://www.youtube.com/watch?v=YApXYi8l4k4",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "What if you could roll back your AI agent from a single chat message? #mcpserver #devtools",
             "views": 59,
-            "mult": 0.2,
+            "mult": 0.6,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=Nd27REaNogU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Runtime Control and AgentControl #LaunchDarkly #AIAgents #DevOps #RuntimeControl #AgentControl #SRE",
             "views": 220,
-            "mult": 0.9,
+            "mult": 2.2,
             "date": "2026-07-01",
             "url": "https://www.youtube.com/watch?v=yya8kIflBm8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "Eppo",
         "avg_views": 0,
+        "baseline_views": 0,
+        "baseline": "median",
+        "mean_to_median_ratio": null,
+        "outlier_threshold": 0,
         "video_count": 0,
         "no_recent": true,
         "videos": []
@@ -13501,224 +13659,258 @@
       {
         "name": "PostHog",
         "avg_views": 99925,
+        "baseline_views": 4594,
+        "baseline": "median",
+        "mean_to_median_ratio": 21.8,
+        "outlier_threshold": 29082,
         "video_count": 12,
         "no_recent": false,
         "videos": [
           {
             "title": "Code reviews are a bottleneck",
             "views": 755,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=qoFJwAd6Pgs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Real Error: Hunting Down A Product Killer",
             "views": 1410,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-09-08",
             "url": "https://www.youtube.com/watch?v=lfu--4Jbbf8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "PostHog: Make your product self-driving",
             "views": 12295,
-            "mult": 0.1,
+            "mult": 2.7,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=KsnftAPbbNk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Does anyone read the code anymore?",
             "views": 7424,
-            "mult": 0.1,
+            "mult": 1.6,
             "date": "2026-08-26",
             "url": "https://www.youtube.com/watch?v=-l3eW8SSQ5o",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Here's how PostHog makes your product self-driving",
             "views": 6057,
-            "mult": 0.1,
+            "mult": 1.3,
             "date": "2026-08-13",
             "url": "https://www.youtube.com/watch?v=hFra0uH2NRM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The attack everyone warned about just happened",
             "views": 3130,
-            "mult": 0.0,
+            "mult": 0.7,
             "date": "2026-07-25",
             "url": "https://www.youtube.com/watch?v=aCZgrA9FnKw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Self driving products",
             "views": 1130,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-20",
             "url": "https://www.youtube.com/watch?v=D-KHm5TXZm4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Be careful when growing too fast",
             "views": 648,
-            "mult": 0.0,
+            "mult": 0.1,
             "date": "2026-07-17",
             "url": "https://www.youtube.com/watch?v=edLAh3SEAEg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Successful founders do this first",
             "views": 1600,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=YJNmNfZSOU4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Tag @PostHog in Slack",
             "views": 1123305,
-            "mult": 11.2,
+            "mult": 244.5,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=SaVTePqaPeM",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": true
           },
           {
             "title": "The team structure that scales",
             "views": 30947,
-            "mult": 0.3,
+            "mult": 6.7,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=clHDEg9xsvg",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "We were wrong about product managers",
             "views": 10404,
-            "mult": 0.1,
+            "mult": 2.3,
             "date": "2026-06-18",
             "url": "https://www.youtube.com/watch?v=pW3wlkPoFZs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "Unleash",
         "avg_views": 55,
+        "baseline_views": 44,
+        "baseline": "median",
+        "mean_to_median_ratio": 1.2,
+        "outlier_threshold": 112,
         "video_count": 19,
         "no_recent": false,
         "videos": [
           {
             "title": "Engineering at Scale | Episode 2: Ship more or cut headcount? | Kevin Hill (Salesforce)",
             "views": 45,
-            "mult": 0.8,
+            "mult": 1.0,
             "date": "2026-08-17",
             "url": "https://www.youtube.com/watch?v=gr5J7CzFD9Y",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Engineering at Scale | Episode 1: Why regulated enterprises can't skip AI governance | Kevin Trilli",
             "views": 111,
-            "mult": 2.0,
+            "mult": 2.5,
             "date": "2026-08-17",
             "url": "https://www.youtube.com/watch?v=ABj_f-gaqgI",
-            "is_outlier": true
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Webinar: Implementing a kill switch for AI",
             "views": 210,
-            "mult": 3.8,
+            "mult": 4.8,
             "date": "2026-07-30",
             "url": "https://www.youtube.com/watch?v=4UT-m8p9cpA",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Escaping the Feature Factory - FeatureOps Summit 2026 Keynote with Ivar \u00d8sthus",
             "views": 116,
-            "mult": 2.1,
+            "mult": 2.6,
             "date": "2026-06-25",
             "url": "https://www.youtube.com/watch?v=sarvz_rnEPA",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Feature flag good practices: Field notes and specimens from the wild",
             "views": 50,
-            "mult": 0.9,
+            "mult": 1.1,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=A0NQEy1a41g",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "From Feature Flags to FeatureOps: Lessons Learned Migrating to Unleash",
             "views": 44,
-            "mult": 0.8,
+            "mult": 1.0,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=E8guvFqIyK4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Badass developers release on Fridays",
             "views": 83,
-            "mult": 1.5,
+            "mult": 1.9,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=sd_9YdO7AMQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Compliance by Design: How FeatureOps enables secure and regulated releases",
             "views": 17,
-            "mult": 0.3,
+            "mult": 0.4,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=srg0B2AMh0M",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Keeping pace with AI: Managing speed, governance, and technical debt with Autonomous FeatureOps",
             "views": 61,
-            "mult": 1.1,
+            "mult": 1.4,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=HnEq_XkTedI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Decoupling Deployments from Feature Releases at Norway\u2019s Customs Agency",
             "views": 26,
-            "mult": 0.5,
+            "mult": 0.6,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=3DeqztItW-s",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Accelerating with AI and FeatureOps at Wayfair",
             "views": 26,
-            "mult": 0.5,
+            "mult": 0.6,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=apyjH-dVqb4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What's new in Unleash V8",
             "views": 44,
-            "mult": 0.8,
+            "mult": 1.0,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=M2ZhQcsROr4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Cruise Control:Enabling The AA to drive change with ease",
             "views": 45,
-            "mult": 0.8,
+            "mult": 1.0,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=EtroHFMyZq4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "FeatureOps for CTOs: Fireside chat with Matias Undurraga",
             "views": 18,
-            "mult": 0.3,
+            "mult": 0.4,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=QGWTolMId4I",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Building a culture of FeatureOps to move fast and reduce risk at Allianz",
@@ -13726,45 +13918,54 @@
             "mult": 0.3,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=RAH8SmOGcRA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Understanding the FeatureOps Journey",
             "views": 38,
-            "mult": 0.7,
+            "mult": 0.9,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=gkJhqi0BNLI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "FeatureOps as a Strategy: Governing Hyper-Growth at Lloyds",
             "views": 18,
-            "mult": 0.3,
+            "mult": 0.4,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=MaBBQ_FAU3Q",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Driving FeatureOps from Start to Finish",
             "views": 17,
-            "mult": 0.3,
+            "mult": 0.4,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=eIHDN0tue8g",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "109 Flags in 8 Months: What Happens When AI Joins Your Eng Team",
             "views": 68,
-            "mult": 1.2,
+            "mult": 1.5,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=JqS_MdPvvUI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "Flagsmith",
         "avg_views": 13,
+        "baseline_views": 13,
+        "baseline": "median",
+        "mean_to_median_ratio": 1.0,
+        "outlier_threshold": 26,
         "video_count": 1,
         "no_recent": false,
         "videos": [
@@ -13774,991 +13975,1121 @@
             "mult": 1.0,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=SaIMwlwOR98",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "Kameleoon",
         "avg_views": 86532,
+        "baseline_views": 31,
+        "baseline": "median",
+        "mean_to_median_ratio": 2791.4,
+        "outlier_threshold": 114,
         "video_count": 22,
         "no_recent": false,
         "videos": [
           {
             "title": "Keep every test aligned with a Master Prompt",
             "views": 10,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=CEUEXo0fh8s",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Stop optimizing to optimize: How UX drives experimentation velocity | Craig Kistler, Senior Director",
             "views": 19,
-            "mult": 0.0,
+            "mult": 0.6,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=ITzGafoFQXA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Reuse a feature from your own website",
             "views": 9,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=EPnj9A2lu28",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Claude Connector",
             "views": 118,
-            "mult": 0.0,
+            "mult": 3.8,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=4OqIv4nEkpE",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Top Features Build from sketch",
             "views": 46,
-            "mult": 0.0,
+            "mult": 1.5,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=gcDjpRHVkYw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "\ud83d\uded2 We rebuilt Costco's homepage with one prompt",
             "views": 72,
-            "mult": 0.0,
+            "mult": 2.3,
             "date": "2026-09-02",
             "url": "https://www.youtube.com/watch?v=DOBv9-6zTwA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Pick metrics that surprise you: the economist's rule for experimentation | Zach Flynn, Pricing and M",
             "views": 69,
-            "mult": 0.0,
+            "mult": 2.2,
             "date": "2026-08-27",
             "url": "https://www.youtube.com/watch?v=ehI8O5nFZ50",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Decide how you'll decide before the test starts",
             "views": 28,
-            "mult": 0.0,
+            "mult": 0.9,
             "date": "2026-08-27",
             "url": "https://www.youtube.com/watch?v=vVmogqWa-aQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The idea she hated won the A/B test anyway",
             "views": 22,
-            "mult": 0.0,
+            "mult": 0.7,
             "date": "2026-08-18",
             "url": "https://www.youtube.com/watch?v=-Wc85Rl2ilA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Bad ideas can win: what that means for ego in CRO | Linda Bustos, Founder, Ecom Ideas",
             "views": 15,
-            "mult": 0.0,
+            "mult": 0.5,
             "date": "2026-08-12",
             "url": "https://www.youtube.com/watch?v=uuZLWCrs7oQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "\ud83d\udcb3 We redesigned Bank of America's credit card page in under 5 minutes",
             "views": 32,
-            "mult": 0.0,
+            "mult": 1.0,
             "date": "2026-08-12",
             "url": "https://www.youtube.com/watch?v=szAi8uSOXRU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "See It. Build It. Test It.",
             "views": 1073788,
-            "mult": 12.4,
+            "mult": 34638.3,
             "date": "2026-08-06",
             "url": "https://www.youtube.com/watch?v=VcfqLi9gXmM",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": true
           },
           {
             "title": "Stop guessing why customers drop off",
             "views": 6,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-08-05",
             "url": "https://www.youtube.com/watch?v=ql7fA3Oc77o",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "From Figma to live test in minutes with PBX",
             "views": 829194,
-            "mult": 9.6,
+            "mult": 26748.2,
             "date": "2026-08-04",
             "url": "https://www.youtube.com/watch?v=Ub-RcwM-KCg",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": true
           },
           {
             "title": "Building fast beats building perfect: How AI accelerates experimentation velocity | Akash Doshi",
             "views": 40,
-            "mult": 0.0,
+            "mult": 1.3,
             "date": "2026-07-30",
             "url": "https://www.youtube.com/watch?v=qaWiDr7uyXw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "\ud83d\udcf1We redesigned Verizon's mobile page with AI in under a minute",
             "views": 30,
-            "mult": 0.0,
+            "mult": 1.0,
             "date": "2026-07-29",
             "url": "https://www.youtube.com/watch?v=6lNOc4PZi_c",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Decision quality over quantity: why your experimentation program needs fewer, not more tests",
             "views": 51,
-            "mult": 0.0,
+            "mult": 1.6,
             "date": "2026-07-15",
             "url": "https://www.youtube.com/watch?v=pPOCITnoP6M",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Democratizing experimentation with AI",
             "views": 34,
-            "mult": 0.0,
+            "mult": 1.1,
             "date": "2026-07-15",
             "url": "https://www.youtube.com/watch?v=5QkGVVfapDc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why synthetic audiences can't replace real user research in CRO",
             "views": 26,
-            "mult": 0.0,
+            "mult": 0.8,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=x3DDLR0hz2I",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI does the boring stuff: Why creativity still wins in CRO | Katie Kelly, Subject Consulting",
             "views": 13,
-            "mult": 0.0,
+            "mult": 0.4,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=dG7kq-25pnQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Hot take: your experimentation platform isn't the problem. Your people and process are.",
             "views": 10,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=H_qaV3A4km0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Has experimentation become an anchor? Testing for learning, not validation | Paul Davidson",
             "views": 75,
-            "mult": 0.0,
+            "mult": 2.4,
             "date": "2026-06-17",
             "url": "https://www.youtube.com/watch?v=yYCOmxg-3Z8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       },
       {
         "name": "GrowthBook",
         "avg_views": 618,
+        "baseline_views": 88,
+        "baseline": "median",
+        "mean_to_median_ratio": 7.0,
+        "outlier_threshold": 984,
         "video_count": 99,
         "no_recent": false,
         "videos": [
           {
             "title": "Your North Star metric won't move in a two-week A/B test.",
             "views": 987,
-            "mult": 1.6,
+            "mult": 11.2,
             "date": "2026-09-11",
             "url": "https://www.youtube.com/watch?v=z40zJS2L22U",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "1,000+ experiments a year, and not all of them are safe bets.",
             "views": 303,
-            "mult": 0.5,
+            "mult": 3.4,
             "date": "2026-09-11",
             "url": "https://www.youtube.com/watch?v=AbCAdBZyTXY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Zalando replaced its homepage without knowing how to measure success.",
             "views": 955,
-            "mult": 1.5,
+            "mult": 10.9,
             "date": "2026-09-11",
             "url": "https://www.youtube.com/watch?v=C79N1jMaWL0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Contextual Bandits: Automatically personalize experiences",
             "views": 51,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=Wa8As43Cg1g",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "A 300% attach rate should have been the win of the quarter.",
             "views": 983,
-            "mult": 1.6,
+            "mult": 11.2,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=0snrjBHTrO4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "'I was an English major' \u2014 and she leads experimentation at Realtor.com.",
             "views": 961,
-            "mult": 1.6,
+            "mult": 10.9,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=qgE-OsRPMAY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "30% win. 30% inconclusive. 30% lose.",
             "views": 946,
-            "mult": 1.5,
+            "mult": 10.8,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=YcbcAY07Zu8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Zalando connects every experiment to its North Star",
             "views": 56,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-09-10",
             "url": "https://www.youtube.com/watch?v=etg95AxYqqk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "A new engineer's second merge request was their own A/B test.",
             "views": 1260,
-            "mult": 2.0,
+            "mult": 14.3,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=dXn-KIErUhY",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "They cut the text and conversion dropped.",
             "views": 1097,
-            "mult": 1.8,
+            "mult": 12.5,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=7mXtRUk3mww",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "50,000 to one million subscribers in nine months.",
             "views": 1181,
-            "mult": 1.9,
+            "mult": 13.4,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=y_qIUWuKdHM",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Realtor.com on guardrail metrics, the 30/30/30 rule, & AI as your Jr. data scientist",
             "views": 51,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-09-09",
             "url": "https://www.youtube.com/watch?v=SBE0wf50PEM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Learneo on testing the opposite of every hypothesis",
             "views": 43,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-09-08",
             "url": "https://www.youtube.com/watch?v=7nILaHxiUOg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Can't run an A/B test?",
             "views": 39,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=GIzHzZ4CWM8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Do you actually have a hypothesis, or are you just poking around?",
             "views": 58,
-            "mult": 0.1,
+            "mult": 0.7,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=eqJEtpOPl3Q",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "This is how p-hacking sneaks in.",
             "views": 37,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=gOSp4gg5gNw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "GrowthBook in 5 Minutes: Feature Flags, Experiments & Product Analytics",
             "views": 150,
-            "mult": 0.2,
+            "mult": 1.7,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=ps64zEUyXHs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The four questions Early Warning asks before any A/B test",
             "views": 92,
-            "mult": 0.1,
+            "mult": 1.0,
             "date": "2026-09-03",
             "url": "https://www.youtube.com/watch?v=utjPwY6O3RY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How do you measure long-term retention in a two-week test?",
             "views": 297,
-            "mult": 0.5,
+            "mult": 3.4,
             "date": "2026-09-01",
             "url": "https://www.youtube.com/watch?v=0GioLl_UrqM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Everyone at Supercell can now run and analyze their own A/B tests.",
             "views": 679,
-            "mult": 1.1,
+            "mult": 7.7,
             "date": "2026-09-01",
             "url": "https://www.youtube.com/watch?v=9dvenpgs2SU",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "You can design a brilliant game mechanic, but will it work for 300 million players?",
             "views": 180,
-            "mult": 0.3,
+            "mult": 2.0,
             "date": "2026-09-01",
             "url": "https://www.youtube.com/watch?v=NOULnZq3KHc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Retention is the North Star, but experiments last two weeks.",
             "views": 94,
-            "mult": 0.2,
+            "mult": 1.1,
             "date": "2026-09-01",
             "url": "https://www.youtube.com/watch?v=dAKm1kSCAPo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Supercell A/B tests 300 million players without breaking trust",
             "views": 88,
-            "mult": 0.1,
+            "mult": 1.0,
             "date": "2026-09-01",
             "url": "https://www.youtube.com/watch?v=ZTrsDoTTz40",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What does hospitality look like in a checkout flow?",
             "views": 154,
-            "mult": 0.2,
+            "mult": 1.8,
             "date": "2026-08-31",
             "url": "https://www.youtube.com/watch?v=mo4XRTyyIX4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Can you A/B test someone's work tool?",
             "views": 840,
-            "mult": 1.4,
+            "mult": 9.5,
             "date": "2026-08-31",
             "url": "https://www.youtube.com/watch?v=a8Y5p_3A9ao",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How do you decide what gets tested?",
             "views": 150,
-            "mult": 0.2,
+            "mult": 1.7,
             "date": "2026-08-31",
             "url": "https://www.youtube.com/watch?v=oQ-um0gW-h8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Where do you even start with experimentation?",
             "views": 83,
-            "mult": 0.1,
+            "mult": 0.9,
             "date": "2026-08-28",
             "url": "https://www.youtube.com/watch?v=4_ZQGp4TAwk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Hungry customers race three delivery sites at once, so cutting a pizza order from 22 clicks to 5\u2026",
             "views": 119,
-            "mult": 0.2,
+            "mult": 1.4,
             "date": "2026-08-28",
             "url": "https://www.youtube.com/watch?v=8C_f9k6zwQw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "One test won't move you.",
             "views": 64,
-            "mult": 0.1,
+            "mult": 0.7,
             "date": "2026-08-28",
             "url": "https://www.youtube.com/watch?v=i2hJIpH1fIE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Clover experiments when billions of dollars flow through daily",
             "views": 73,
-            "mult": 0.1,
+            "mult": 0.8,
             "date": "2026-08-27",
             "url": "https://www.youtube.com/watch?v=H-_v64o0aRw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why JobLeads says one test won't move you, but 100 will",
             "views": 91,
-            "mult": 0.1,
+            "mult": 1.0,
             "date": "2026-08-26",
             "url": "https://www.youtube.com/watch?v=d_9zRPBLk7w",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Learnings: Turn experiment learnings into a living knowledge library.",
             "views": 52,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-08-25",
             "url": "https://www.youtube.com/watch?v=Ef0BKbFzO5o",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How The Philadelphia Inquirer is scaling experimentation across the organization",
             "views": 68,
-            "mult": 0.1,
+            "mult": 0.8,
             "date": "2026-08-24",
             "url": "https://www.youtube.com/watch?v=6jBZlGR8Eo0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why The Aspen Group targets a 25% win rate",
             "views": 31,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-08-20",
             "url": "https://www.youtube.com/watch?v=Aagn4kcp1Qg",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Principal A/B tests on customers who don't exist",
             "views": 44,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-08-19",
             "url": "https://www.youtube.com/watch?v=TQcfylFPdhA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Migrate from Statsig to GrowthBook in Minutes, Not Months",
             "views": 34,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-08-14",
             "url": "https://www.youtube.com/watch?v=X8RDc_klHBQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why US Bank considers missing even 1% of customers unacceptable",
             "views": 126,
-            "mult": 0.2,
+            "mult": 1.4,
             "date": "2026-08-11",
             "url": "https://www.youtube.com/watch?v=myw3SdPguHk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why Farfetch manages by learning rate, not win rate",
             "views": 73,
-            "mult": 0.1,
+            "mult": 0.8,
             "date": "2026-08-05",
             "url": "https://www.youtube.com/watch?v=noYsU4RzaFY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "5.0 Release Office Hours",
             "views": 107,
-            "mult": 0.2,
+            "mult": 1.2,
             "date": "2026-07-31",
             "url": "https://www.youtube.com/watch?v=N3PTmgzE23c",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How an AI start-up experiments at scale using GrowthBook",
             "views": 204,
-            "mult": 0.3,
+            "mult": 2.3,
             "date": "2026-07-29",
             "url": "https://www.youtube.com/watch?v=Ji_Bz3iNO_Y",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Every shop loses people in the same two places.",
             "views": 107,
-            "mult": 0.2,
+            "mult": 1.2,
             "date": "2026-07-23",
             "url": "https://www.youtube.com/watch?v=yZ5DYmbDWE4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Alignment Problem Behind Every Stalled Testing Program",
             "views": 45,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-07-23",
             "url": "https://www.youtube.com/watch?v=hKWvNE3NXas",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Cogniteer Built an Experimentation Engine From Scratch",
             "views": 587,
-            "mult": 0.9,
+            "mult": 6.7,
             "date": "2026-07-23",
             "url": "https://www.youtube.com/watch?v=nT_YuogEp8c",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why B2B and B2C Buyers Need Completely Different Tests",
             "views": 91,
-            "mult": 0.1,
+            "mult": 1.0,
             "date": "2026-07-23",
             "url": "https://www.youtube.com/watch?v=m-bb0T-7Sl8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Goodhart's Law: The Trap Hiding in Your Best Metric",
             "views": 269,
-            "mult": 0.4,
+            "mult": 3.1,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=A6wLZy0iaow",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The One Skill AI Can't Take From Experimentation Teams",
             "views": 156,
-            "mult": 0.3,
+            "mult": 1.8,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=AjU0Exa4KbM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Fin does 1,000,000 A/B Tests in 24 Hours",
             "views": 35152,
-            "mult": 56.9,
+            "mult": 399.5,
             "date": "2026-07-21",
             "url": "https://www.youtube.com/watch?v=c7_SmvRDjI8",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Meet the GrowthBook In-App AI Assistant",
             "views": 98,
-            "mult": 0.2,
+            "mult": 1.1,
             "date": "2026-07-20",
             "url": "https://www.youtube.com/watch?v=elJvwWCJ9hk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Disney's Approach to Measuring Education, Not Conversion",
             "views": 19,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=0BD8QMB7uAk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Every GrowthBook API Endpoint in 5.0 | One Platform. Every Endpoint.",
             "views": 52,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=pchg4xOoTSk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Implementation Fix That Unlocked a Whole Testing Program For Disney",
             "views": 56,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=WY6T-S9f1To",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Trustworthy A/B Testing: Red Flags Before You Ship",
             "views": 401,
-            "mult": 0.6,
+            "mult": 4.6,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=Zywxt3nt0JA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Disney Shows How to Test a Feature Before You Build It",
             "views": 42,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-07-16",
             "url": "https://www.youtube.com/watch?v=ghXNyloZJM0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Home Depot Is Speeding Up the Entire Testing Loop",
             "views": 44,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-07-15",
             "url": "https://www.youtube.com/watch?v=vSsIUOIqNNs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Golden Rule, According to Home Depot, for Measuring Real Impact",
             "views": 81,
-            "mult": 0.1,
+            "mult": 0.9,
             "date": "2026-07-15",
             "url": "https://www.youtube.com/watch?v=dEZcIt8dcaE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The $25 Billion Business Most People Don't Know Home Depot Has",
             "views": 183,
-            "mult": 0.3,
+            "mult": 2.1,
             "date": "2026-07-15",
             "url": "https://www.youtube.com/watch?v=4aI0ZL7iP9M",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Bad Result or Bad Experiment, What do You Think?",
             "views": 31,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-07-14",
             "url": "https://www.youtube.com/watch?v=mzYYsQ8X3zc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why the Best Experiment Ideas Come From Outside Your Team",
             "views": 24,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-07-14",
             "url": "https://www.youtube.com/watch?v=DgpKLdTYeOA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Kargo turns losing experiments into competitive edges",
             "views": 78,
-            "mult": 0.1,
+            "mult": 0.9,
             "date": "2026-07-14",
             "url": "https://www.youtube.com/watch?v=rpFikFM7hFM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How to Decide What AI Should Own in Your Testing Workflow",
             "views": 129,
-            "mult": 0.2,
+            "mult": 1.5,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=p3E8nWLdyF8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI-Native Feature Flags with GrowthBook Skills",
             "views": 66,
-            "mult": 0.1,
+            "mult": 0.8,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=5J7ArNskcXM",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "AI Visual Editor: Idea to experiment in minutes",
             "views": 151,
-            "mult": 0.2,
+            "mult": 1.7,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=ku1-rjWooR8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Two Questions That Turn Failed Tests Into Wins",
             "views": 87,
-            "mult": 0.1,
+            "mult": 1.0,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=phCkBrCNHJA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Squarespace Turned a Failed Launch Into a Better Product",
             "views": 33,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-07-10",
             "url": "https://www.youtube.com/watch?v=JCI1DTbkk3o",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Early Signal That Protects Customer Trust",
             "views": 73,
-            "mult": 0.1,
+            "mult": 0.8,
             "date": "2026-07-09",
             "url": "https://www.youtube.com/watch?v=T9n2txWmpEE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Feature Blind Spot That Slowly Kills Products",
             "views": 27,
-            "mult": 0.0,
+            "mult": 0.3,
             "date": "2026-07-09",
             "url": "https://www.youtube.com/watch?v=0cIYoHNTjaE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Your Best Feature Might Be in the Wrong Place",
             "views": 19,
-            "mult": 0.0,
+            "mult": 0.2,
             "date": "2026-07-09",
             "url": "https://www.youtube.com/watch?v=UjwGUoEqGk4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The 'wine effect' and other surprises that reshaped how Box runs e-commerce experiments",
             "views": 74,
-            "mult": 0.1,
+            "mult": 0.8,
             "date": "2026-07-09",
             "url": "https://www.youtube.com/watch?v=-XI5k_awgA8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "When Adding Friction Is the Right Product Decision",
             "views": 123,
-            "mult": 0.2,
+            "mult": 1.4,
             "date": "2026-07-08",
             "url": "https://www.youtube.com/watch?v=8t3BhDL-peA",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Compounding Mistake Every AI-Era Team Is About to Make",
             "views": 87,
-            "mult": 0.1,
+            "mult": 1.0,
             "date": "2026-07-08",
             "url": "https://www.youtube.com/watch?v=yyUvyCVg18E",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The Billion-Dollar Number JPMorganChase Is Proud Of",
             "views": 1173,
-            "mult": 1.9,
+            "mult": 13.3,
             "date": "2026-07-08",
             "url": "https://www.youtube.com/watch?v=YDmERx9BVdA",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Why false negatives quietly kill your best product ideas...",
             "views": 1240,
-            "mult": 2.0,
+            "mult": 14.1,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=HZtLjOoJC_c",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "This four month experiment paid off big",
             "views": 361,
-            "mult": 0.6,
+            "mult": 4.1,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=CBHEb4d41bo",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Most B2B product teams are feature factories. Daniel Layfield wants to change that.",
             "views": 39,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=c8Yj7jJO4sI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The work that decides an experiment happens before you hit play",
             "views": 1201,
-            "mult": 1.9,
+            "mult": 13.6,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=rnDHcIz478M",
-            "is_outlier": false
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "We hadn't raised prices in years. Here's what finally changed our minds...",
             "views": 192,
-            "mult": 0.3,
+            "mult": 2.2,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=tmDa5r0Wa7Q",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Three weeks of user interviews, now done in two hours. Here's how...",
             "views": 857,
-            "mult": 1.4,
+            "mult": 9.7,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=xw0B6lqBwtI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Dilligent explains why moving on from an experiment might cost you",
             "views": 33,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=p9J_YEJjh1I",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Disney Turns Zero Test Ideas Into 110",
             "views": 48,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-07-07",
             "url": "https://www.youtube.com/watch?v=lFoktFud8d0",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Everyone says to shrink your contact form, but he disagrees.",
             "views": 12,
-            "mult": 0.0,
+            "mult": 0.1,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=E-UsUs718Kc",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Why your website traffic is dropping even when demand isn't...",
             "views": 173,
-            "mult": 0.3,
+            "mult": 2.0,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=w1_dfc667CE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The biggest thing Claude Code changed for experimentation",
             "views": 402,
-            "mult": 0.7,
+            "mult": 4.6,
             "date": "2026-07-06",
             "url": "https://www.youtube.com/watch?v=qEgdXNnZfNk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Vibe experimentation is here.",
             "views": 218,
-            "mult": 0.4,
+            "mult": 2.5,
             "date": "2026-07-03",
             "url": "https://www.youtube.com/watch?v=yFYnD-ONOOw",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The biggest wins are in the messaging, not the product. Here's why...",
             "views": 1309,
-            "mult": 2.1,
+            "mult": 14.9,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=d3aDXR2aNZA",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "How to tell what  experiments are worth running",
             "views": 1514,
-            "mult": 2.4,
+            "mult": 17.2,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=JEfsOE9LlJk",
-            "is_outlier": true
+            "is_outlier": true,
+            "likely_promoted": false
           },
           {
             "title": "Why a \"Failed\" Experiment Is Never a Loss",
             "views": 59,
-            "mult": 0.1,
+            "mult": 0.7,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=69aAABEZSqs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What You Cannot Measure, You Cannot Ship",
             "views": 58,
-            "mult": 0.1,
+            "mult": 0.7,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=vTPFMM1cZbQ",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The metric Stitch Fix says every experimenter should chase",
             "views": 79,
-            "mult": 0.1,
+            "mult": 0.9,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=TGVCXSNOOwE",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "The holy grail: a North Star that predicts long-term value",
             "views": 267,
-            "mult": 0.4,
+            "mult": 3.0,
             "date": "2026-07-02",
             "url": "https://www.youtube.com/watch?v=QbVzjDnYFD4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "What the Expedia Group cannot measure, it cannot ship",
             "views": 75,
-            "mult": 0.1,
+            "mult": 0.9,
             "date": "2026-07-01",
             "url": "https://www.youtube.com/watch?v=S1XTumUEl0U",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Fin went from weeks to hours of analysis using AI",
             "views": 42,
-            "mult": 0.1,
+            "mult": 0.5,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=EY9oIDIRaDI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Disney goes from no idea what to test \u2192 110 ranked ideas",
             "views": 57,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-06-30",
             "url": "https://www.youtube.com/watch?v=wiLLlo6cfAk",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Inside The Home Depot's experimentation at a $25B scale",
             "views": 63,
-            "mult": 0.1,
+            "mult": 0.7,
             "date": "2026-06-29",
             "url": "https://www.youtube.com/watch?v=zlNP6J_lQs4",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "How Disney picks which experiments to run",
             "views": 37,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-06-29",
             "url": "https://www.youtube.com/watch?v=9ade3L3lj8s",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Ship faster, measure better: experimentation tips from JPMorgan Chase",
             "views": 155,
-            "mult": 0.3,
+            "mult": 1.8,
             "date": "2026-06-25",
             "url": "https://www.youtube.com/watch?v=KjelgOBAYho",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Twitch on why false negatives kill product ideas",
             "views": 31,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-06-24",
             "url": "https://www.youtube.com/watch?v=b5AQkEVJfpI",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Squarespace killed its blank template and built something better",
             "views": 120,
-            "mult": 0.2,
+            "mult": 1.4,
             "date": "2026-06-23",
             "url": "https://www.youtube.com/watch?v=B6w81dHqlOs",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "Signet Jeweler's \"View All\" page made more money by showing less",
             "views": 34,
-            "mult": 0.1,
+            "mult": 0.4,
             "date": "2026-06-17",
             "url": "https://www.youtube.com/watch?v=_mAnrZA0xWY",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           },
           {
             "title": "RingCentral's DART framework: The four metrics that actually measure AI agents",
             "views": 50,
-            "mult": 0.1,
+            "mult": 0.6,
             "date": "2026-06-15",
             "url": "https://www.youtube.com/watch?v=5LOnLY2VbH8",
-            "is_outlier": false
+            "is_outlier": false,
+            "likely_promoted": false
           }
         ]
       }
