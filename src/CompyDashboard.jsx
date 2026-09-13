@@ -1397,43 +1397,82 @@ export default function CompyDashboard() {
   const [availableDates, setAvailableDates] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  // On mount: find and load the most recent data file immediately, then populate dropdown
+  // On mount: load the newest snapshot immediately, then populate the dropdown.
+  //
+  // The archive is listed by /data/index.json, written at publish time. This
+  // used to probe the last 60 calendar days one fetch at a time, which silently
+  // truncated the history — on 2026-09-12 it could not see past 2026-07-15,
+  // hiding 19 of 28 snapshots — and the cutoff slid forward daily, so older
+  // weeks kept dropping off. Probing remains as a fallback so a deploy made
+  // before the index existed still works.
   useEffect(() => {
-    // Build candidate dates: last 200 days (covers full history back to March 2026)
-    const candidates = [];
-    const d0 = new Date();
-    for (let i = 0; i < 200; i++) {
-      const dt = new Date(d0);
-      dt.setDate(d0.getDate() - i);
-      candidates.push(dt.toISOString().slice(0, 10));
-    }
-
-    // Walk candidates SEQUENTIALLY (not in parallel) — stop as soon as the first valid file is found,
-    // then continue scanning the rest only to build the dropdown (never overwrite d after first load).
-    let loaded = false;
-    const tryLoad = async () => {
-      const found = [];
-      for (let i = 0; i < candidates.length; i++) {
-        const date = candidates[i];
+    const loadFirstOf = async (dates) => {
+      for (const date of dates) {
         try {
           const r = await fetch(`/data/${date}.json`);
           if (!r.ok) continue;
           const data = await r.json();
-          const hasData = !!(data && data.week);  // any coherent payload, not just ones with gb_pages
-          if (hasData) {
-            if (!loaded) {
-              loaded = true;
-              setD(data);
-              setSelectedDate(date);
-            }
-            found.push(date);
+          if (data && data.week) {
+            setD(data);
+            setSelectedDate(date);
+            return date;
           }
+        } catch (_) { /* try the next one */ }
+      }
+      return null;
+    };
+
+    // Fallback only. 200 days rather than 60 so that if the index is ever
+    // missing this still reaches the March 2026 snapshots instead of silently
+    // truncating — but it costs one request per day scanned, which is why the
+    // index exists.
+    const probeRecentDays = async () => {
+      const candidates = [];
+      const d0 = new Date();
+      for (let i = 0; i < 200; i++) {
+        const dt = new Date(d0);
+        dt.setDate(d0.getDate() - i);
+        candidates.push(dt.toISOString().slice(0, 10));
+      }
+      const found = [];
+      let loaded = false;
+      for (const date of candidates) {
+        try {
+          const r = await fetch(`/data/${date}.json`);
+          if (!r.ok) continue;
+          const data = await r.json();
+          if (!(data && data.week)) continue;
+          if (!loaded) { loaded = true; setD(data); setSelectedDate(date); }
+          found.push(date);
         } catch (_) { /* skip */ }
       }
+      return found;
+    };
+
+    (async () => {
+      let dates = null;
+      try {
+        const r = await fetch("/data/index.json");
+        if (r.ok) {
+          const idx = await r.json();
+          // Newest first, and defensive about order so the dropdown and the
+          // initial load agree even if the file is ever written unsorted.
+          if (Array.isArray(idx?.dates) && idx.dates.length) {
+            dates = [...idx.dates].sort().reverse();
+          }
+        }
+      } catch (_) { /* fall through to probing */ }
+
+      if (dates) {
+        const opened = await loadFirstOf(dates);
+        if (opened) { setAvailableDates(dates); return; }
+        // Index exists but nothing in it loaded — treat as no index.
+      }
+
+      const found = await probeRecentDays();
       if (found.length === 0) setLoadError("No data file found.");
       else setAvailableDates(found);
-    };
-    tryLoad();
+    })();
   }, []);
 
   const loadDate = (date) => {
