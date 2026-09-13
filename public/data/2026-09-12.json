@@ -13646,15 +13646,25 @@
         ]
       },
       {
-        "name": "Eppo",
-        "avg_views": 0,
-        "baseline_views": 0,
+        "name": "Datadog",
+        "avg_views": 610,
+        "baseline_views": 610,
         "baseline": "median",
-        "mean_to_median_ratio": null,
-        "outlier_threshold": 0,
-        "video_count": 0,
-        "no_recent": true,
-        "videos": []
+        "mean_to_median_ratio": 1.0,
+        "outlier_threshold": 1220,
+        "video_count": 1,
+        "no_recent": false,
+        "videos": [
+          {
+            "title": "Validate every product decision with Datadog Experiments",
+            "views": 610,
+            "mult": 1.0,
+            "date": "2026-06-22",
+            "url": "https://www.youtube.com/watch?v=A98dpWjGm_A",
+            "is_outlier": false,
+            "likely_promoted": false
+          }
+        ]
       },
       {
         "name": "PostHog",
