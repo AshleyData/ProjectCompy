@@ -1399,10 +1399,10 @@ export default function CompyDashboard() {
 
   // On mount: find and load the most recent data file immediately, then populate dropdown
   useEffect(() => {
-    // Build candidate dates: last 60 days
+    // Build candidate dates: last 200 days (covers full history back to March 2026)
     const candidates = [];
     const d0 = new Date();
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 200; i++) {
       const dt = new Date(d0);
       dt.setDate(d0.getDate() - i);
       candidates.push(dt.toISOString().slice(0, 10));
