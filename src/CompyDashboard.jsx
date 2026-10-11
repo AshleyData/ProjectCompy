@@ -1933,6 +1933,8 @@ export default function CompyDashboard() {
                 { key: "avg_position",    label: "Pos",        align: "right", get: p => p.avg_position },
                 { key: "pageviews",       label: "Pageviews",  align: "right", get: p => p.pageviews },
                 { key: "time_on_page_s",  label: "Time/page",  align: "right", get: p => p.time_on_page_s },
+                { key: "pages_per_session", label: "Pg/session", align: "right", get: p => p.pages_per_session },
+                { key: "went_deeper_pct", label: "Went deeper", align: "right", get: p => p.went_deeper_pct },
                 { key: "bounce_rate_pct", label: "Bounce",     align: "right", get: p => p.bounce_rate_pct },
                 { key: "visit_duration_s",label: "Visit len",  align: "right", get: p => p.visit_duration_s },
               ];
@@ -1964,6 +1966,11 @@ export default function CompyDashboard() {
                     {" "}<b>Time/page</b> belongs to that page. <b>Bounce</b> and <b>Visit len</b> describe the
                     session a page <em>started</em> (entry-page attributed), which credits the page that won
                     the visitor rather than every page the session touched.
+                    {" "}<b>Pg/session</b> is pageviews ÷ sessions for visits that began here — 1.00 means every
+                    visitor read this page and left. <b>Went deeper</b> is the share that viewed at least a
+                    second page. The onward sections below are where those sessions <em>ended</em>, which for a
+                    two-page visit is the second page; longer visits show only their last page, since Plausible
+                    has no full path report.
                   </p>
 
                   <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
@@ -1985,6 +1992,11 @@ export default function CompyDashboard() {
                                <b style={{ fontVariantNumeric: "tabular-nums" }}>{t.pageviews.toLocaleString()}</b></div>
                           <div><div style={{ color: C.muted, fontSize: 10 }}>TIME/PAGE</div>
                                <b>{fmtS(t.avg_time_on_page_s)}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>PAGES/SESSION</div>
+                               <b>{t.pages_per_session ?? "—"}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>WENT DEEPER</div>
+                               <b>{fmtP(t.went_deeper_pct)}</b>
+                               <span style={{ color: C.muted, fontSize: 10 }}> of sessions</span></div>
                           <div><div style={{ color: C.muted, fontSize: 10 }}>BOUNCE</div>
                                <b>{fmtP(t.bounce_rate_pct)}</b></div>
                           <div><div style={{ color: C.muted, fontSize: 10 }}>FORMS</div>
@@ -1993,6 +2005,18 @@ export default function CompyDashboard() {
                                  {t.conv_reliable ? ` (${fmtP(t.form_conv_pct)})` : ""}
                                </span></div>
                         </div>
+                        {(t.onward_sections || []).length > 0 && (
+                          <div style={{ fontSize: 11, color: C.muted, marginTop: 10,
+                                        borderTop: `1px solid ${C.border}`, paddingTop: 8, textAlign: "left" }}>
+                            Of those that went deeper, they ended up in:{" "}
+                            {t.onward_sections.map((o, i) => (
+                              <span key={o.section}>
+                                {i > 0 && " · "}
+                                <b>{o.section}</b> {o.visitors.toLocaleString()}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
@@ -2073,7 +2097,8 @@ export default function CompyDashboard() {
                             {COLS.slice(1).map(c => {
                               const v = c.get(p);
                               const txt = v == null ? "—"
-                                : c.key === "ctr_pct" || c.key === "bounce_rate_pct" ? `${v}%`
+                                : c.key === "ctr_pct" || c.key === "bounce_rate_pct"
+                                  || c.key === "went_deeper_pct" ? `${v}%`
                                 : c.key === "time_on_page_s" || c.key === "visit_duration_s" ? `${v}s`
                                 : typeof v === "number" ? v.toLocaleString() : v;
                               return (

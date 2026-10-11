@@ -8416,7 +8416,7 @@
           "12 Account Based Marketing Tactics That Work"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 348 pieces of editorial content\u2014primarily articles, guides, and curated collections\u2014covering topics like A/B testing, personalization, account-based marketing, and B2B ecommerce. It targets digital marketers, growth practitioners, and experimentation professionals seeking tactical advice and use-case examples."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub of 348 pieces\u2014primarily articles plus a handful of curated collections, guides, and events\u2014covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking actionable how-to guidance and use cases."
       }
     ]
   },
@@ -15901,7 +15901,7 @@
         "track": "Editorial",
         "pages": 263,
         "pages_with_traffic": 187,
-        "thin_pages": 202,
+        "thin_pages": 223,
         "impressions": 340828,
         "clicks": 927,
         "ctr_pct": 0.27,
@@ -15909,6 +15909,27 @@
         "entry_visitors": 1778,
         "avg_time_on_page_s": 66,
         "bounce_rate_pct": 78,
+        "entry_visits": 1849,
+        "pages_per_session": 1.39,
+        "went_deeper_pct": 22,
+        "onward_sections": [
+          {
+            "section": "/(homepage)",
+            "visitors": 48
+          },
+          {
+            "section": "/pricing",
+            "visitors": 32
+          },
+          {
+            "section": "/blog",
+            "visitors": 12
+          },
+          {
+            "section": "/products",
+            "visitors": 12
+          }
+        ],
         "form_submissions": 6,
         "form_conv_pct": 0.34,
         "outbound_clicks": 133,
@@ -15919,7 +15940,7 @@
         "track": "AI Insights",
         "pages": 332,
         "pages_with_traffic": 202,
-        "thin_pages": 261,
+        "thin_pages": 272,
         "impressions": 851908,
         "clicks": 2268,
         "ctr_pct": 0.27,
@@ -15927,6 +15948,15 @@
         "entry_visitors": 2998,
         "avg_time_on_page_s": 64,
         "bounce_rate_pct": 89,
+        "entry_visits": 3060,
+        "pages_per_session": 1.16,
+        "went_deeper_pct": 11,
+        "onward_sections": [
+          {
+            "section": "/(homepage)",
+            "visitors": 35
+          }
+        ],
         "form_submissions": 3,
         "form_conv_pct": 0.1,
         "outbound_clicks": 76,
@@ -15948,6 +15978,10 @@
         "entry_visitors": 304,
         "bounce_rate_pct": 93,
         "visit_duration_s": 42,
+        "entry_visits": 325,
+        "entry_pageviews": 350,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 7,
         "thin": false
       },
       {
@@ -15963,6 +15997,10 @@
         "entry_visitors": 193,
         "bounce_rate_pct": 90,
         "visit_duration_s": 35,
+        "entry_visits": 198,
+        "entry_pageviews": 219,
+        "pages_per_session": 1.11,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -15978,6 +16016,10 @@
         "entry_visitors": 155,
         "bounce_rate_pct": 94,
         "visit_duration_s": 24,
+        "entry_visits": 158,
+        "entry_pageviews": 164,
+        "pages_per_session": 1.04,
+        "went_deeper_pct": 6,
         "thin": false
       },
       {
@@ -15993,6 +16035,10 @@
         "entry_visitors": 121,
         "bounce_rate_pct": 76,
         "visit_duration_s": 97,
+        "entry_visits": 131,
+        "entry_pageviews": 183,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 24,
         "thin": false
       },
       {
@@ -16008,6 +16054,10 @@
         "entry_visitors": 74,
         "bounce_rate_pct": 84,
         "visit_duration_s": 61,
+        "entry_visits": 77,
+        "entry_pageviews": 89,
+        "pages_per_session": 1.16,
+        "went_deeper_pct": 16,
         "thin": false
       },
       {
@@ -16023,6 +16073,10 @@
         "entry_visitors": 91,
         "bounce_rate_pct": 93,
         "visit_duration_s": 47,
+        "entry_visits": 94,
+        "entry_pageviews": 99,
+        "pages_per_session": 1.05,
+        "went_deeper_pct": 7,
         "thin": false
       },
       {
@@ -16038,6 +16092,10 @@
         "entry_visitors": 81,
         "bounce_rate_pct": 77,
         "visit_duration_s": 33,
+        "entry_visits": 83,
+        "entry_pageviews": 117,
+        "pages_per_session": 1.41,
+        "went_deeper_pct": 23,
         "thin": false
       },
       {
@@ -16053,6 +16111,10 @@
         "entry_visitors": 62,
         "bounce_rate_pct": 84,
         "visit_duration_s": 102,
+        "entry_visits": 64,
+        "entry_pageviews": 80,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 16,
         "thin": false
       },
       {
@@ -16068,6 +16130,10 @@
         "entry_visitors": 29,
         "bounce_rate_pct": 80,
         "visit_duration_s": 66,
+        "entry_visits": 30,
+        "entry_pageviews": 37,
+        "pages_per_session": 1.23,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -16083,6 +16149,10 @@
         "entry_visitors": 71,
         "bounce_rate_pct": 90,
         "visit_duration_s": 57,
+        "entry_visits": 73,
+        "entry_pageviews": 79,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -16098,6 +16168,10 @@
         "entry_visitors": 66,
         "bounce_rate_pct": 90,
         "visit_duration_s": 48,
+        "entry_visits": 69,
+        "entry_pageviews": 76,
+        "pages_per_session": 1.1,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -16113,6 +16187,10 @@
         "entry_visitors": 48,
         "bounce_rate_pct": 90,
         "visit_duration_s": 17,
+        "entry_visits": 48,
+        "entry_pageviews": 52,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -16128,6 +16206,10 @@
         "entry_visitors": 49,
         "bounce_rate_pct": 94,
         "visit_duration_s": 23,
+        "entry_visits": 49,
+        "entry_pageviews": 52,
+        "pages_per_session": 1.06,
+        "went_deeper_pct": 6,
         "thin": false
       },
       {
@@ -16143,6 +16225,10 @@
         "entry_visitors": 59,
         "bounce_rate_pct": 80,
         "visit_duration_s": 130,
+        "entry_visits": 60,
+        "entry_pageviews": 84,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -16158,6 +16244,10 @@
         "entry_visitors": 49,
         "bounce_rate_pct": 76,
         "visit_duration_s": 68,
+        "entry_visits": 49,
+        "entry_pageviews": 68,
+        "pages_per_session": 1.39,
+        "went_deeper_pct": 24,
         "thin": false
       },
       {
@@ -16173,6 +16263,10 @@
         "entry_visitors": 71,
         "bounce_rate_pct": 81,
         "visit_duration_s": 111,
+        "entry_visits": 72,
+        "entry_pageviews": 89,
+        "pages_per_session": 1.24,
+        "went_deeper_pct": 19,
         "thin": false
       },
       {
@@ -16188,6 +16282,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 88,
         "visit_duration_s": 171,
+        "entry_visits": 26,
+        "entry_pageviews": 29,
+        "pages_per_session": 1.12,
+        "went_deeper_pct": 12,
         "thin": false
       },
       {
@@ -16203,6 +16301,10 @@
         "entry_visitors": 55,
         "bounce_rate_pct": 93,
         "visit_duration_s": 9,
+        "entry_visits": 59,
+        "entry_pageviews": 65,
+        "pages_per_session": 1.1,
+        "went_deeper_pct": 7,
         "thin": false
       },
       {
@@ -16218,6 +16320,10 @@
         "entry_visitors": 32,
         "bounce_rate_pct": 97,
         "visit_duration_s": 4,
+        "entry_visits": 33,
+        "entry_pageviews": 34,
+        "pages_per_session": 1.03,
+        "went_deeper_pct": 3,
         "thin": false
       },
       {
@@ -16233,6 +16339,10 @@
         "entry_visitors": 45,
         "bounce_rate_pct": 89,
         "visit_duration_s": 5,
+        "entry_visits": 45,
+        "entry_pageviews": 52,
+        "pages_per_session": 1.16,
+        "went_deeper_pct": 11,
         "thin": false
       },
       {
@@ -16248,6 +16358,10 @@
         "entry_visitors": 52,
         "bounce_rate_pct": 96,
         "visit_duration_s": 3,
+        "entry_visits": 52,
+        "entry_pageviews": 56,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -16263,6 +16377,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 96,
         "visit_duration_s": 0,
+        "entry_visits": 26,
+        "entry_pageviews": 27,
+        "pages_per_session": 1.04,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -16278,6 +16396,10 @@
         "entry_visitors": 37,
         "bounce_rate_pct": 89,
         "visit_duration_s": 72,
+        "entry_visits": 37,
+        "entry_pageviews": 44,
+        "pages_per_session": 1.19,
+        "went_deeper_pct": 11,
         "thin": false
       },
       {
@@ -16293,6 +16415,10 @@
         "entry_visitors": 39,
         "bounce_rate_pct": 79,
         "visit_duration_s": 23,
+        "entry_visits": 39,
+        "entry_pageviews": 50,
+        "pages_per_session": 1.28,
+        "went_deeper_pct": 21,
         "thin": false
       },
       {
@@ -16308,6 +16434,10 @@
         "entry_visitors": 18,
         "bounce_rate_pct": 50,
         "visit_duration_s": 102,
+        "entry_visits": 18,
+        "entry_pageviews": 33,
+        "pages_per_session": 1.83,
+        "went_deeper_pct": 50,
         "thin": false
       },
       {
@@ -16323,6 +16453,10 @@
         "entry_visitors": 28,
         "bounce_rate_pct": 96,
         "visit_duration_s": 14,
+        "entry_visits": 28,
+        "entry_pageviews": 29,
+        "pages_per_session": 1.04,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -16338,6 +16472,10 @@
         "entry_visitors": 406,
         "bounce_rate_pct": 74,
         "visit_duration_s": 107,
+        "entry_visits": 419,
+        "entry_pageviews": 554,
+        "pages_per_session": 1.32,
+        "went_deeper_pct": 26,
         "thin": false
       },
       {
@@ -16353,6 +16491,10 @@
         "entry_visitors": 29,
         "bounce_rate_pct": 97,
         "visit_duration_s": 24,
+        "entry_visits": 29,
+        "entry_pageviews": 30,
+        "pages_per_session": 1.03,
+        "went_deeper_pct": 3,
         "thin": false
       },
       {
@@ -16368,6 +16510,10 @@
         "entry_visitors": 27,
         "bounce_rate_pct": 89,
         "visit_duration_s": 14,
+        "entry_visits": 27,
+        "entry_pageviews": 32,
+        "pages_per_session": 1.19,
+        "went_deeper_pct": 11,
         "thin": false
       },
       {
@@ -16383,6 +16529,10 @@
         "entry_visitors": 30,
         "bounce_rate_pct": 81,
         "visit_duration_s": 20,
+        "entry_visits": 31,
+        "entry_pageviews": 38,
+        "pages_per_session": 1.23,
+        "went_deeper_pct": 19,
         "thin": false
       },
       {
@@ -16398,6 +16548,10 @@
         "entry_visitors": 37,
         "bounce_rate_pct": 86,
         "visit_duration_s": 39,
+        "entry_visits": 37,
+        "entry_pageviews": 46,
+        "pages_per_session": 1.24,
+        "went_deeper_pct": 14,
         "thin": false
       },
       {
@@ -16413,6 +16567,10 @@
         "entry_visitors": 24,
         "bounce_rate_pct": 88,
         "visit_duration_s": 63,
+        "entry_visits": 26,
+        "entry_pageviews": 32,
+        "pages_per_session": 1.23,
+        "went_deeper_pct": 12,
         "thin": false
       },
       {
@@ -16428,6 +16586,10 @@
         "entry_visitors": 18,
         "bounce_rate_pct": 63,
         "visit_duration_s": 68,
+        "entry_visits": 19,
+        "entry_pageviews": 33,
+        "pages_per_session": 1.74,
+        "went_deeper_pct": 37,
         "thin": false
       },
       {
@@ -16443,6 +16605,10 @@
         "entry_visitors": 21,
         "bounce_rate_pct": 95,
         "visit_duration_s": 64,
+        "entry_visits": 21,
+        "entry_pageviews": 22,
+        "pages_per_session": 1.05,
+        "went_deeper_pct": 5,
         "thin": false
       },
       {
@@ -16458,6 +16624,10 @@
         "entry_visitors": 19,
         "bounce_rate_pct": 84,
         "visit_duration_s": 48,
+        "entry_visits": 19,
+        "entry_pageviews": 23,
+        "pages_per_session": 1.21,
+        "went_deeper_pct": 16,
         "thin": false
       },
       {
@@ -16473,6 +16643,10 @@
         "entry_visitors": 19,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 19,
+        "entry_pageviews": 19,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -16488,6 +16662,10 @@
         "entry_visitors": 15,
         "bounce_rate_pct": 87,
         "visit_duration_s": 221,
+        "entry_visits": 15,
+        "entry_pageviews": 18,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 13,
         "thin": false
       },
       {
@@ -16503,6 +16681,10 @@
         "entry_visitors": 15,
         "bounce_rate_pct": 73,
         "visit_duration_s": 32,
+        "entry_visits": 15,
+        "entry_pageviews": 27,
+        "pages_per_session": 1.8,
+        "went_deeper_pct": 27,
         "thin": false
       },
       {
@@ -16518,6 +16700,10 @@
         "entry_visitors": 23,
         "bounce_rate_pct": 87,
         "visit_duration_s": 3,
+        "entry_visits": 23,
+        "entry_pageviews": 26,
+        "pages_per_session": 1.13,
+        "went_deeper_pct": 13,
         "thin": false
       },
       {
@@ -16533,6 +16719,10 @@
         "entry_visitors": 20,
         "bounce_rate_pct": 90,
         "visit_duration_s": 92,
+        "entry_visits": 21,
+        "entry_pageviews": 23,
+        "pages_per_session": 1.1,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -16548,6 +16738,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 71,
         "visit_duration_s": 182,
+        "entry_visits": 28,
+        "entry_pageviews": 43,
+        "pages_per_session": 1.54,
+        "went_deeper_pct": 29,
         "thin": false
       },
       {
@@ -16563,6 +16757,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 92,
         "visit_duration_s": 0,
+        "entry_visits": 12,
+        "entry_pageviews": 13,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 8,
         "thin": false
       },
       {
@@ -16578,6 +16776,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 80,
         "visit_duration_s": 46,
+        "entry_visits": 10,
+        "entry_pageviews": 13,
+        "pages_per_session": 1.3,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -16593,6 +16795,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 75,
         "visit_duration_s": 69,
+        "entry_visits": 12,
+        "entry_pageviews": 21,
+        "pages_per_session": 1.75,
+        "went_deeper_pct": 25,
         "thin": false
       },
       {
@@ -16608,6 +16814,10 @@
         "entry_visitors": 16,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 16,
+        "entry_pageviews": 16,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -16623,6 +16833,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 91,
         "visit_duration_s": 14,
+        "entry_visits": 11,
+        "entry_pageviews": 12,
+        "pages_per_session": 1.09,
+        "went_deeper_pct": 9,
         "thin": false
       },
       {
@@ -16638,6 +16852,10 @@
         "entry_visitors": 15,
         "bounce_rate_pct": 87,
         "visit_duration_s": 2,
+        "entry_visits": 15,
+        "entry_pageviews": 16,
+        "pages_per_session": 1.07,
+        "went_deeper_pct": 13,
         "thin": false
       },
       {
@@ -16653,6 +16871,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 10,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -16668,6 +16890,10 @@
         "entry_visitors": 16,
         "bounce_rate_pct": 81,
         "visit_duration_s": 2,
+        "entry_visits": 16,
+        "entry_pageviews": 18,
+        "pages_per_session": 1.12,
+        "went_deeper_pct": 19,
         "thin": false
       },
       {
@@ -16683,6 +16909,10 @@
         "entry_visitors": 21,
         "bounce_rate_pct": 81,
         "visit_duration_s": 36,
+        "entry_visits": 21,
+        "entry_pageviews": 25,
+        "pages_per_session": 1.19,
+        "went_deeper_pct": 19,
         "thin": false
       },
       {
@@ -16698,6 +16928,10 @@
         "entry_visitors": 35,
         "bounce_rate_pct": 80,
         "visit_duration_s": 69,
+        "entry_visits": 35,
+        "entry_pageviews": 57,
+        "pages_per_session": 1.63,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -16713,6 +16947,10 @@
         "entry_visitors": 21,
         "bounce_rate_pct": 86,
         "visit_duration_s": 26,
+        "entry_visits": 21,
+        "entry_pageviews": 26,
+        "pages_per_session": 1.24,
+        "went_deeper_pct": 14,
         "thin": false
       },
       {
@@ -16728,6 +16966,10 @@
         "entry_visitors": 14,
         "bounce_rate_pct": 71,
         "visit_duration_s": 18,
+        "entry_visits": 14,
+        "entry_pageviews": 17,
+        "pages_per_session": 1.21,
+        "went_deeper_pct": 29,
         "thin": false
       },
       {
@@ -16743,6 +16985,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 50,
         "visit_duration_s": 49,
+        "entry_visits": 4,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.75,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -16758,6 +17004,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 75,
         "visit_duration_s": 7,
+        "entry_visits": 4,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -16773,6 +17023,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 67,
         "visit_duration_s": 8,
+        "entry_visits": 6,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -16788,7 +17042,11 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 75,
         "visit_duration_s": 136,
-        "thin": false
+        "entry_visits": 8,
+        "entry_pageviews": 21,
+        "pages_per_session": 2.62,
+        "went_deeper_pct": 25,
+        "thin": true
       },
       {
         "path": "/insights/launchdarkly-pricing",
@@ -16803,6 +17061,10 @@
         "entry_visitors": 16,
         "bounce_rate_pct": 94,
         "visit_duration_s": 105,
+        "entry_visits": 16,
+        "entry_pageviews": 17,
+        "pages_per_session": 1.06,
+        "went_deeper_pct": 6,
         "thin": false
       },
       {
@@ -16818,6 +17080,10 @@
         "entry_visitors": 19,
         "bounce_rate_pct": 89,
         "visit_duration_s": 14,
+        "entry_visits": 19,
+        "entry_pageviews": 21,
+        "pages_per_session": 1.11,
+        "went_deeper_pct": 11,
         "thin": false
       },
       {
@@ -16833,7 +17099,11 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 88,
         "visit_duration_s": 2,
-        "thin": false
+        "entry_visits": 8,
+        "entry_pageviews": 8,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 12,
+        "thin": true
       },
       {
         "path": "/blog/holdouts-in-growthbook",
@@ -16848,6 +17118,10 @@
         "entry_visitors": 14,
         "bounce_rate_pct": 80,
         "visit_duration_s": 199,
+        "entry_visits": 15,
+        "entry_pageviews": 33,
+        "pages_per_session": 2.2,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -16863,6 +17137,10 @@
         "entry_visitors": 19,
         "bounce_rate_pct": 75,
         "visit_duration_s": 139,
+        "entry_visits": 20,
+        "entry_pageviews": 28,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 25,
         "thin": false
       },
       {
@@ -16878,6 +17156,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 83,
         "visit_duration_s": 207,
+        "entry_visits": 12,
+        "entry_pageviews": 18,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 17,
         "thin": false
       },
       {
@@ -16893,6 +17175,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 83,
         "visit_duration_s": 71,
+        "entry_visits": 12,
+        "entry_pageviews": 14,
+        "pages_per_session": 1.17,
+        "went_deeper_pct": 17,
         "thin": false
       },
       {
@@ -16908,6 +17194,10 @@
         "entry_visitors": 15,
         "bounce_rate_pct": 80,
         "visit_duration_s": 3,
+        "entry_visits": 15,
+        "entry_pageviews": 17,
+        "pages_per_session": 1.13,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -16923,6 +17213,10 @@
         "entry_visitors": 21,
         "bounce_rate_pct": 95,
         "visit_duration_s": 5,
+        "entry_visits": 21,
+        "entry_pageviews": 25,
+        "pages_per_session": 1.19,
+        "went_deeper_pct": 5,
         "thin": false
       },
       {
@@ -16938,7 +17232,11 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
-        "thin": false
+        "entry_visits": 7,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
+        "thin": true
       },
       {
         "path": "/blog/12-common-feature-flag-mistakes-to-avoid",
@@ -16953,6 +17251,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 10,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -16968,6 +17270,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 0,
         "visit_duration_s": 1364,
+        "entry_visits": 2,
+        "entry_pageviews": 6,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -16983,6 +17289,10 @@
         "entry_visitors": 18,
         "bounce_rate_pct": 68,
         "visit_duration_s": 131,
+        "entry_visits": 19,
+        "entry_pageviews": 37,
+        "pages_per_session": 1.95,
+        "went_deeper_pct": 32,
         "thin": false
       },
       {
@@ -16998,6 +17308,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 57,
         "visit_duration_s": 135,
+        "entry_visits": 7,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.57,
+        "went_deeper_pct": 43,
         "thin": true
       },
       {
@@ -17013,6 +17327,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 91,
         "visit_duration_s": 83,
+        "entry_visits": 11,
+        "entry_pageviews": 12,
+        "pages_per_session": 1.09,
+        "went_deeper_pct": 9,
         "thin": false
       },
       {
@@ -17028,7 +17346,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 89,
         "visit_duration_s": 2,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.22,
+        "went_deeper_pct": 11,
+        "thin": true
       },
       {
         "path": "/blog/feature-flags-in-ci-cd",
@@ -17043,6 +17365,10 @@
         "entry_visitors": 17,
         "bounce_rate_pct": 88,
         "visit_duration_s": 57,
+        "entry_visits": 17,
+        "entry_pageviews": 20,
+        "pages_per_session": 1.18,
+        "went_deeper_pct": 12,
         "thin": false
       },
       {
@@ -17058,6 +17384,10 @@
         "entry_visitors": 14,
         "bounce_rate_pct": 79,
         "visit_duration_s": 3,
+        "entry_visits": 14,
+        "entry_pageviews": 22,
+        "pages_per_session": 1.57,
+        "went_deeper_pct": 21,
         "thin": false
       },
       {
@@ -17073,7 +17403,11 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 71,
         "visit_duration_s": 61,
-        "thin": false
+        "entry_visits": 7,
+        "entry_pageviews": 12,
+        "pages_per_session": 1.71,
+        "went_deeper_pct": 29,
+        "thin": true
       },
       {
         "path": "/blog/how-to-a-b-test-ai-a-practical-guide",
@@ -17088,6 +17422,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 50,
         "visit_duration_s": 255,
+        "entry_visits": 12,
+        "entry_pageviews": 20,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 50,
         "thin": false
       },
       {
@@ -17103,6 +17441,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 11,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -17118,7 +17460,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
+        "thin": true
       },
       {
         "path": "/insights/sequential-testing",
@@ -17133,6 +17479,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 2,
+        "entry_visits": 5,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -17148,6 +17498,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17163,7 +17517,11 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 67,
         "visit_duration_s": 115,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 16,
+        "pages_per_session": 1.78,
+        "went_deeper_pct": 33,
+        "thin": true
       },
       {
         "path": "/blog/a-b-testing-with-feature-flags-turning-every-rollout-into-an-experiment",
@@ -17178,6 +17536,10 @@
         "entry_visitors": 14,
         "bounce_rate_pct": 71,
         "visit_duration_s": 44,
+        "entry_visits": 14,
+        "entry_pageviews": 23,
+        "pages_per_session": 1.64,
+        "went_deeper_pct": 29,
         "thin": false
       },
       {
@@ -17193,6 +17555,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 83,
         "visit_duration_s": 6,
+        "entry_visits": 12,
+        "entry_pageviews": 13,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 17,
         "thin": false
       },
       {
@@ -17208,6 +17574,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 6,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17223,6 +17593,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17238,6 +17612,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 90,
         "visit_duration_s": 5,
+        "entry_visits": 10,
+        "entry_pageviews": 13,
+        "pages_per_session": 1.3,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -17253,6 +17631,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 86,
         "visit_duration_s": 31,
+        "entry_visits": 7,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.29,
+        "went_deeper_pct": 14,
         "thin": true
       },
       {
@@ -17268,6 +17650,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 92,
         "visit_duration_s": 61,
+        "entry_visits": 26,
+        "entry_pageviews": 28,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 8,
         "thin": false
       },
       {
@@ -17283,6 +17669,10 @@
         "entry_visitors": 20,
         "bounce_rate_pct": 80,
         "visit_duration_s": 30,
+        "entry_visits": 20,
+        "entry_pageviews": 24,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -17298,6 +17688,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 57,
         "visit_duration_s": 438,
+        "entry_visits": 7,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.43,
+        "went_deeper_pct": 43,
         "thin": true
       },
       {
@@ -17313,7 +17707,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 89,
         "visit_duration_s": 0,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.11,
+        "went_deeper_pct": 11,
+        "thin": true
       },
       {
         "path": "/blog/dark-patterns-a-b-testing",
@@ -17328,6 +17726,10 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 89,
         "visit_duration_s": 326,
+        "entry_visits": 9,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.22,
+        "went_deeper_pct": 11,
         "thin": true
       },
       {
@@ -17343,6 +17745,10 @@
         "entry_visitors": 22,
         "bounce_rate_pct": 86,
         "visit_duration_s": 119,
+        "entry_visits": 22,
+        "entry_pageviews": 25,
+        "pages_per_session": 1.14,
+        "went_deeper_pct": 14,
         "thin": false
       },
       {
@@ -17358,7 +17764,11 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 86,
         "visit_duration_s": 5,
-        "thin": false
+        "entry_visits": 7,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.29,
+        "went_deeper_pct": 14,
+        "thin": true
       },
       {
         "path": "/insights/feature-flagging-ai-models-safely-roll-out-changes",
@@ -17373,6 +17783,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 422,
+        "entry_visits": 5,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -17388,6 +17802,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 70,
         "visit_duration_s": 77,
+        "entry_visits": 10,
+        "entry_pageviews": 17,
+        "pages_per_session": 1.7,
+        "went_deeper_pct": 30,
         "thin": false
       },
       {
@@ -17403,6 +17821,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 83,
         "visit_duration_s": 25,
+        "entry_visits": 12,
+        "entry_pageviews": 14,
+        "pages_per_session": 1.17,
+        "went_deeper_pct": 17,
         "thin": false
       },
       {
@@ -17418,6 +17840,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 90,
         "visit_duration_s": 17,
+        "entry_visits": 10,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.1,
+        "went_deeper_pct": 10,
         "thin": false
       },
       {
@@ -17433,7 +17859,11 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 29,
         "visit_duration_s": 235,
-        "thin": false
+        "entry_visits": 7,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.29,
+        "went_deeper_pct": 71,
+        "thin": true
       },
       {
         "path": "/insights/react-feature-flags-growthbook",
@@ -17448,6 +17878,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17463,6 +17897,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17478,6 +17916,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17493,6 +17935,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17508,6 +17954,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 60,
         "visit_duration_s": 24,
+        "entry_visits": 5,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 40,
         "thin": true
       },
       {
@@ -17523,6 +17973,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 40,
         "visit_duration_s": 84,
+        "entry_visits": 5,
+        "entry_pageviews": 14,
+        "pages_per_session": 2.8,
+        "went_deeper_pct": 60,
         "thin": true
       },
       {
@@ -17538,6 +17992,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17553,7 +18011,11 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 800,
-        "thin": false
+        "entry_visits": 4,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 25,
+        "thin": true
       },
       {
         "path": "/blog/growthbook-version-2-9",
@@ -17568,6 +18030,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17583,6 +18049,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 1,
+        "entry_visits": 5,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -17598,6 +18068,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 50,
         "visit_duration_s": 837,
+        "entry_visits": 4,
+        "entry_pageviews": 8,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -17613,6 +18087,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 70,
         "visit_duration_s": 89,
+        "entry_visits": 10,
+        "entry_pageviews": 14,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 30,
         "thin": false
       },
       {
@@ -17628,6 +18106,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17643,6 +18125,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 33,
         "visit_duration_s": 79,
+        "entry_visits": 3,
+        "entry_pageviews": 12,
+        "pages_per_session": 4.0,
+        "went_deeper_pct": 67,
         "thin": true
       },
       {
@@ -17658,6 +18144,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 83,
         "visit_duration_s": 292,
+        "entry_visits": 6,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.17,
+        "went_deeper_pct": 17,
         "thin": true
       },
       {
@@ -17673,6 +18163,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17688,6 +18182,10 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 8,
+        "entry_pageviews": 8,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17703,6 +18201,10 @@
         "entry_visitors": 25,
         "bounce_rate_pct": 96,
         "visit_duration_s": 4,
+        "entry_visits": 25,
+        "entry_pageviews": 26,
+        "pages_per_session": 1.04,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -17718,6 +18220,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17733,6 +18239,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 7,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17748,6 +18258,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 83,
         "visit_duration_s": 154,
+        "entry_visits": 6,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 17,
         "thin": true
       },
       {
@@ -17763,6 +18277,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 6,
+        "entry_visits": 2,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -17778,6 +18296,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17793,6 +18315,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 75,
+        "entry_visits": 4,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -17808,7 +18334,11 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 88,
         "visit_duration_s": 154,
-        "thin": false
+        "entry_visits": 8,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.12,
+        "went_deeper_pct": 12,
+        "thin": true
       },
       {
         "path": "/insights/open-source-alternatives-to-launchdarkly",
@@ -17823,6 +18353,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 83,
         "visit_duration_s": 7,
+        "entry_visits": 12,
+        "entry_pageviews": 15,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 17,
         "thin": false
       },
       {
@@ -17838,6 +18372,10 @@
         "entry_visitors": 10,
         "bounce_rate_pct": 80,
         "visit_duration_s": 8,
+        "entry_visits": 10,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.1,
+        "went_deeper_pct": 20,
         "thin": false
       },
       {
@@ -17853,6 +18391,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 75,
         "visit_duration_s": 24,
+        "entry_visits": 12,
+        "entry_pageviews": 22,
+        "pages_per_session": 1.83,
+        "went_deeper_pct": 25,
         "thin": false
       },
       {
@@ -17868,6 +18410,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17883,6 +18429,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 6,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17898,7 +18448,11 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 40,
         "visit_duration_s": 450,
-        "thin": false
+        "entry_visits": 5,
+        "entry_pageviews": 11,
+        "pages_per_session": 2.2,
+        "went_deeper_pct": 60,
+        "thin": true
       },
       {
         "path": "/blog/auto-fact-tables-impact-analysis-performance-boosts",
@@ -17913,6 +18467,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17928,7 +18486,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 78,
         "visit_duration_s": 1,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 14,
+        "pages_per_session": 1.56,
+        "went_deeper_pct": 22,
+        "thin": true
       },
       {
         "path": "/blog/customize-your-experimentation-workflow-with-custom-fields-and-shareable-experiments",
@@ -17943,6 +18505,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 6,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -17958,6 +18524,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 6,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -17973,6 +18543,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -17988,6 +18562,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 91,
         "visit_duration_s": 25,
+        "entry_visits": 11,
+        "entry_pageviews": 12,
+        "pages_per_session": 1.09,
+        "went_deeper_pct": 9,
         "thin": false
       },
       {
@@ -18003,6 +18581,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 723,
+        "entry_visits": 3,
+        "entry_pageviews": 6,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -18018,6 +18600,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 92,
+        "entry_visits": 3,
+        "entry_pageviews": 7,
+        "pages_per_session": 2.33,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -18033,6 +18619,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18048,7 +18638,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 89,
         "visit_duration_s": 5,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.11,
+        "went_deeper_pct": 11,
+        "thin": true
       },
       {
         "path": "/blog/stale-feature-flag-detection",
@@ -18063,6 +18657,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18078,6 +18676,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18093,6 +18695,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 840,
+        "entry_visits": 4,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -18108,6 +18714,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 0,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -18123,6 +18733,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -18138,6 +18752,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 7,
+        "entry_visits": 3,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.33,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -18153,6 +18771,10 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 8,
+        "entry_pageviews": 8,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18168,6 +18790,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 88,
         "visit_duration_s": 5,
+        "entry_visits": 26,
+        "entry_pageviews": 37,
+        "pages_per_session": 1.42,
+        "went_deeper_pct": 12,
         "thin": false
       },
       {
@@ -18183,6 +18809,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18198,6 +18828,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18213,6 +18847,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18228,6 +18866,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 86,
         "visit_duration_s": 172,
+        "entry_visits": 7,
+        "entry_pageviews": 11,
+        "pages_per_session": 1.57,
+        "went_deeper_pct": 14,
         "thin": true
       },
       {
@@ -18243,6 +18885,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18258,6 +18904,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18273,6 +18923,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18288,6 +18942,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 22,
+        "entry_visits": 4,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -18303,6 +18961,10 @@
         "entry_visitors": 22,
         "bounce_rate_pct": 95,
         "visit_duration_s": 3,
+        "entry_visits": 22,
+        "entry_pageviews": 24,
+        "pages_per_session": 1.09,
+        "went_deeper_pct": 5,
         "thin": false
       },
       {
@@ -18318,6 +18980,10 @@
         "entry_visitors": 25,
         "bounce_rate_pct": 96,
         "visit_duration_s": 0,
+        "entry_visits": 25,
+        "entry_pageviews": 26,
+        "pages_per_session": 1.04,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -18333,6 +18999,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18348,6 +19018,10 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 8,
+        "entry_pageviews": 8,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18363,6 +19037,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 50,
         "visit_duration_s": 366,
+        "entry_visits": 4,
+        "entry_pageviews": 15,
+        "pages_per_session": 3.75,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -18378,6 +19056,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 50,
         "visit_duration_s": 448,
+        "entry_visits": 4,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.75,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -18393,6 +19075,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18408,6 +19094,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18423,6 +19113,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 83,
         "visit_duration_s": 17,
+        "entry_visits": 6,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.17,
+        "went_deeper_pct": 17,
         "thin": true
       },
       {
@@ -18438,6 +19132,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 67,
         "visit_duration_s": 257,
+        "entry_visits": 6,
+        "entry_pageviews": 12,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -18453,6 +19151,10 @@
         "entry_visitors": 14,
         "bounce_rate_pct": 53,
         "visit_duration_s": 288,
+        "entry_visits": 15,
+        "entry_pageviews": 40,
+        "pages_per_session": 2.67,
+        "went_deeper_pct": 47,
         "thin": false
       },
       {
@@ -18468,6 +19170,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18483,6 +19189,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18498,6 +19208,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 134,
+        "entry_visits": 3,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.33,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -18513,6 +19227,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 1113,
+        "entry_visits": 2,
+        "entry_pageviews": 5,
+        "pages_per_session": 2.5,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -18528,6 +19246,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 118,
+        "entry_visits": 4,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -18543,6 +19265,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 9,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -18558,7 +19284,11 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 25,
         "visit_duration_s": 112,
-        "thin": false
+        "entry_visits": 4,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.75,
+        "went_deeper_pct": 75,
+        "thin": true
       },
       {
         "path": "/blog/growthbook-version-1-5",
@@ -18573,6 +19303,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18588,6 +19322,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 117,
+        "entry_visits": 1,
+        "entry_pageviews": 3,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -18603,6 +19341,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18618,6 +19360,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 2,
+        "entry_visits": 5,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -18633,6 +19379,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18648,6 +19398,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18663,6 +19417,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 73,
         "visit_duration_s": 151,
+        "entry_visits": 26,
+        "entry_pageviews": 39,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 27,
         "thin": false
       },
       {
@@ -18678,7 +19436,11 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
-        "thin": false
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
+        "thin": true
       },
       {
         "path": "/blog/new-feature-save-time-with-automatic-metric-generation",
@@ -18693,6 +19455,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -18708,6 +19474,10 @@
         "entry_visitors": 15,
         "bounce_rate_pct": 69,
         "visit_duration_s": 78,
+        "entry_visits": 16,
+        "entry_pageviews": 19,
+        "pages_per_session": 1.19,
+        "went_deeper_pct": 31,
         "thin": false
       },
       {
@@ -18723,6 +19493,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18738,6 +19512,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18753,6 +19531,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18768,6 +19550,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18783,6 +19569,10 @@
         "entry_visitors": 24,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 24,
+        "entry_pageviews": 24,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -18798,6 +19588,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18813,6 +19607,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 987,
+        "entry_visits": 3,
+        "entry_pageviews": 10,
+        "pages_per_session": 3.33,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -18828,6 +19626,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18843,6 +19645,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 4,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -18858,6 +19664,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -18873,6 +19683,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18888,6 +19702,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 74,
+        "entry_visits": 2,
+        "entry_pageviews": 4,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -18903,7 +19721,11 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 52,
-        "thin": false
+        "entry_visits": 4,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 25,
+        "thin": true
       },
       {
         "path": "/insights/multivariate-testing-vs-ab-testing",
@@ -18918,6 +19740,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -18933,6 +19759,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -18948,6 +19778,10 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 88,
         "visit_duration_s": 20,
+        "entry_visits": 8,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.12,
+        "went_deeper_pct": 12,
         "thin": true
       },
       {
@@ -18963,6 +19797,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 71,
         "visit_duration_s": 16,
+        "entry_visits": 7,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.43,
+        "went_deeper_pct": 29,
         "thin": true
       },
       {
@@ -18978,6 +19816,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 199,
+        "entry_visits": 5,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -18993,6 +19835,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19008,6 +19854,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 4,
+        "entry_visits": 4,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -19023,7 +19873,11 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
-        "thin": false
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
+        "thin": true
       },
       {
         "path": "/blog/4000-stars",
@@ -19038,6 +19892,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19053,7 +19911,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 67,
         "visit_duration_s": 24,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 12,
+        "pages_per_session": 1.33,
+        "went_deeper_pct": 33,
+        "thin": true
       },
       {
         "path": "/blog/ai-visual-editor-opening-up-experimentation-for-growth-and-marketing-teams",
@@ -19068,7 +19930,11 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 33,
         "visit_duration_s": 272,
-        "thin": false
+        "entry_visits": 3,
+        "entry_pageviews": 8,
+        "pages_per_session": 2.67,
+        "went_deeper_pct": 67,
+        "thin": true
       },
       {
         "path": "/blog/announcing-growth-book-open-source-release",
@@ -19083,6 +19949,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19098,6 +19968,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 4,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -19113,6 +19987,10 @@
         "entry_visitors": 16,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 16,
+        "entry_pageviews": 16,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -19128,6 +20006,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19143,6 +20025,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19158,6 +20044,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 19,
+        "entry_visits": 1,
+        "entry_pageviews": 3,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -19173,6 +20063,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 80,
+        "entry_visits": 3,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.33,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -19188,6 +20082,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19203,6 +20101,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 1250,
+        "entry_visits": 1,
+        "entry_pageviews": 3,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -19218,6 +20120,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19233,6 +20139,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 32,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -19248,6 +20158,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19263,6 +20177,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19278,6 +20196,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19293,6 +20215,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19308,6 +20234,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19323,6 +20253,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19338,6 +20272,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 285,
+        "entry_visits": 1,
+        "entry_pageviews": 4,
+        "pages_per_session": 4.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -19353,6 +20291,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19368,6 +20310,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 32,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -19383,6 +20329,10 @@
         "entry_visitors": 11,
         "bounce_rate_pct": 75,
         "visit_duration_s": 714,
+        "entry_visits": 12,
+        "entry_pageviews": 30,
+        "pages_per_session": 2.5,
+        "went_deeper_pct": 25,
         "thin": false
       },
       {
@@ -19398,7 +20348,11 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 60,
         "visit_duration_s": 100,
-        "thin": false
+        "entry_visits": 5,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 40,
+        "thin": true
       },
       {
         "path": "/blog/integration-growthbook-rollbar-error-monitoring",
@@ -19413,6 +20367,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19428,6 +20386,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19443,6 +20405,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 33,
         "visit_duration_s": 307,
+        "entry_visits": 3,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 67,
         "thin": true
       },
       {
@@ -19458,6 +20424,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19473,7 +20443,11 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 88,
         "visit_duration_s": 136,
-        "thin": false
+        "entry_visits": 8,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.25,
+        "went_deeper_pct": 12,
+        "thin": true
       },
       {
         "path": "/blog/summing-experiment-wins-overstate-impact",
@@ -19488,6 +20462,10 @@
         "entry_visitors": 26,
         "bounce_rate_pct": 92,
         "visit_duration_s": 6,
+        "entry_visits": 26,
+        "entry_pageviews": 28,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 8,
         "thin": false
       },
       {
@@ -19503,6 +20481,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 33,
         "visit_duration_s": 168,
+        "entry_visits": 3,
+        "entry_pageviews": 9,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 67,
         "thin": true
       },
       {
@@ -19518,6 +20500,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 645,
+        "entry_visits": 2,
+        "entry_pageviews": 12,
+        "pages_per_session": 6.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -19533,6 +20519,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 71,
         "visit_duration_s": 42,
+        "entry_visits": 7,
+        "entry_pageviews": 10,
+        "pages_per_session": 1.43,
+        "went_deeper_pct": 29,
         "thin": true
       },
       {
@@ -19548,6 +20538,10 @@
         "entry_visitors": 13,
         "bounce_rate_pct": 62,
         "visit_duration_s": 226,
+        "entry_visits": 13,
+        "entry_pageviews": 31,
+        "pages_per_session": 2.38,
+        "went_deeper_pct": 38,
         "thin": false
       },
       {
@@ -19563,6 +20557,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19578,6 +20576,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19593,7 +20595,11 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
-        "thin": false
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
+        "thin": true
       },
       {
         "path": "/insights/ab-testing-tools-bigquery-integration",
@@ -19608,6 +20614,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 5,
+        "entry_visits": 5,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.2,
+        "went_deeper_pct": 20,
         "thin": true
       },
       {
@@ -19623,6 +20633,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19638,6 +20652,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19653,6 +20671,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19668,7 +20690,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 67,
         "visit_duration_s": 470,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 15,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 33,
+        "thin": true
       },
       {
         "path": "/insights/automate-feature-flag-lifecycle-growthbook-mcp",
@@ -19683,6 +20709,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19698,6 +20728,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 67,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -19713,6 +20747,10 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 8,
+        "entry_pageviews": 8,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19728,6 +20766,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19743,6 +20785,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 11,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -19758,6 +20804,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19773,6 +20823,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19788,6 +20842,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19803,7 +20861,11 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 43,
         "visit_duration_s": 114,
-        "thin": false
+        "entry_visits": 7,
+        "entry_pageviews": 14,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 57,
+        "thin": true
       },
       {
         "path": "/insights/feature-flags-bigquery",
@@ -19818,6 +20880,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19833,6 +20899,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 64,
+        "entry_visits": 3,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -19848,6 +20918,10 @@
         "entry_visitors": 23,
         "bounce_rate_pct": 96,
         "visit_duration_s": 1,
+        "entry_visits": 23,
+        "entry_pageviews": 25,
+        "pages_per_session": 1.09,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -19863,6 +20937,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19878,6 +20956,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -19893,6 +20975,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19908,6 +20994,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 83,
         "visit_duration_s": 48,
+        "entry_visits": 6,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.17,
+        "went_deeper_pct": 17,
         "thin": true
       },
       {
@@ -19923,6 +21013,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19938,6 +21032,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19953,6 +21051,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 75,
         "visit_duration_s": 4,
+        "entry_visits": 4,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.75,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -19968,6 +21070,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -19983,6 +21089,10 @@
         "entry_visitors": 7,
         "bounce_rate_pct": 86,
         "visit_duration_s": 150,
+        "entry_visits": 7,
+        "entry_pageviews": 15,
+        "pages_per_session": 2.14,
+        "went_deeper_pct": 14,
         "thin": true
       },
       {
@@ -19998,6 +21108,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 60,
+        "entry_visits": 3,
+        "entry_pageviews": 6,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -20013,6 +21127,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 157,
+        "entry_visits": 3,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -20028,6 +21146,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20043,6 +21165,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 19,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -20058,6 +21184,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 528,
+        "entry_visits": 2,
+        "entry_pageviews": 9,
+        "pages_per_session": 4.5,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -20073,6 +21203,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 30,
+        "entry_visits": 2,
+        "entry_pageviews": 4,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -20088,7 +21222,11 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 1010,
-        "thin": false
+        "entry_visits": 1,
+        "entry_pageviews": 45,
+        "pages_per_session": 45.0,
+        "went_deeper_pct": 100,
+        "thin": true
       },
       {
         "path": "/insights/statistical-power",
@@ -20103,6 +21241,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20118,6 +21260,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20133,6 +21279,10 @@
         "entry_visitors": 6,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 6,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20148,6 +21298,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20163,6 +21317,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 0,
         "visit_duration_s": 239,
+        "entry_visits": 2,
+        "entry_pageviews": 8,
+        "pages_per_session": 4.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -20178,6 +21336,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20193,6 +21355,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20208,6 +21374,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 60,
         "visit_duration_s": 188,
+        "entry_visits": 5,
+        "entry_pageviews": 9,
+        "pages_per_session": 1.8,
+        "went_deeper_pct": 40,
         "thin": true
       },
       {
@@ -20223,6 +21393,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -20238,6 +21412,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20253,6 +21431,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20268,6 +21450,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20283,6 +21469,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 2,
+        "entry_visits": 2,
+        "entry_pageviews": 10,
+        "pages_per_session": 5.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -20298,6 +21488,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20313,6 +21507,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20328,6 +21526,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20343,6 +21545,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20358,6 +21564,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20373,6 +21583,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20388,6 +21602,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20403,6 +21621,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20418,7 +21640,11 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 78,
         "visit_duration_s": 66,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 13,
+        "pages_per_session": 1.44,
+        "went_deeper_pct": 22,
+        "thin": true
       },
       {
         "path": "/blog/ab-testing-ai-features",
@@ -20433,6 +21659,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20448,6 +21678,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20463,6 +21697,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20478,6 +21716,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20493,6 +21735,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20508,6 +21754,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20523,6 +21773,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20538,6 +21792,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20553,6 +21811,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20568,6 +21830,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20583,6 +21849,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20598,7 +21868,11 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 60,
         "visit_duration_s": 133,
-        "thin": false
+        "entry_visits": 5,
+        "entry_pageviews": 7,
+        "pages_per_session": 1.4,
+        "went_deeper_pct": 40,
+        "thin": true
       },
       {
         "path": "/blog/b2b-product-discovery-what-milliporesigma-learned-rebuilding-on-site-search-edge",
@@ -20613,6 +21887,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20628,6 +21906,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20643,6 +21925,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20658,6 +21944,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20673,6 +21963,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20688,6 +21982,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20703,6 +22001,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20718,6 +22020,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20733,6 +22039,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20748,6 +22058,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20763,6 +22077,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20778,6 +22096,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20793,6 +22115,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20808,6 +22134,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20823,6 +22153,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 75,
         "visit_duration_s": 331,
+        "entry_visits": 4,
+        "entry_pageviews": 6,
+        "pages_per_session": 1.5,
+        "went_deeper_pct": 25,
         "thin": true
       },
       {
@@ -20838,6 +22172,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20853,6 +22191,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20868,6 +22210,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20883,6 +22229,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20898,6 +22248,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20913,6 +22267,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20928,6 +22286,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20943,7 +22305,11 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 25,
         "visit_duration_s": 191,
-        "thin": false
+        "entry_visits": 4,
+        "entry_pageviews": 9,
+        "pages_per_session": 2.25,
+        "went_deeper_pct": 75,
+        "thin": true
       },
       {
         "path": "/blog/diligent-pms-mistakes-in-experimentation",
@@ -20958,6 +22324,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -20973,6 +22343,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -20988,6 +22362,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21003,6 +22381,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21018,6 +22400,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21033,6 +22419,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21048,6 +22438,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21063,6 +22457,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21078,6 +22476,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21093,6 +22495,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21108,6 +22514,10 @@
         "entry_visitors": 14,
         "bounce_rate_pct": 71,
         "visit_duration_s": 339,
+        "entry_visits": 14,
+        "entry_pageviews": 24,
+        "pages_per_session": 1.71,
+        "went_deeper_pct": 29,
         "thin": false
       },
       {
@@ -21123,6 +22533,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 95,
+        "entry_visits": 3,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -21138,6 +22552,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21153,6 +22571,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21168,6 +22590,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21183,6 +22609,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21198,6 +22628,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21213,6 +22647,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21228,6 +22666,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21243,6 +22685,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21258,6 +22704,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21273,6 +22723,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21288,6 +22742,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21303,6 +22761,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21318,6 +22780,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21333,6 +22799,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21348,6 +22818,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21363,6 +22837,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21378,6 +22856,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21393,6 +22875,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21408,6 +22894,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21423,6 +22913,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21438,6 +22932,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21453,6 +22951,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21468,6 +22970,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21483,6 +22989,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21498,6 +23008,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21513,6 +23027,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21528,6 +23046,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21543,6 +23065,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21558,6 +23084,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21573,6 +23103,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21588,6 +23122,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21603,6 +23141,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21618,6 +23160,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21633,6 +23179,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21648,6 +23198,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21663,6 +23217,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21678,6 +23236,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21693,6 +23255,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21708,6 +23274,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 43,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -21723,6 +23293,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21738,6 +23312,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21753,6 +23331,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21768,6 +23350,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21783,6 +23369,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21798,6 +23388,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21813,6 +23407,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21828,6 +23426,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21843,6 +23445,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21858,6 +23464,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21873,6 +23483,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 2,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -21888,6 +23502,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21903,6 +23521,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21918,6 +23540,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 8,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -21933,7 +23559,11 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 80,
         "visit_duration_s": 417,
-        "thin": false
+        "entry_visits": 5,
+        "entry_pageviews": 8,
+        "pages_per_session": 1.6,
+        "went_deeper_pct": 20,
+        "thin": true
       },
       {
         "path": "/blog/servicenow-s-customer-zero-approach-to-ai-experimentation-edge",
@@ -21948,6 +23578,10 @@
         "entry_visitors": 5,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21963,6 +23597,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -21978,6 +23616,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -21993,6 +23635,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22008,6 +23654,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 50,
         "visit_duration_s": 370,
+        "entry_visits": 4,
+        "entry_pageviews": 12,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -22023,6 +23673,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22038,6 +23692,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22053,6 +23711,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22068,6 +23730,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22083,6 +23749,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 832,
+        "entry_visits": 2,
+        "entry_pageviews": 4,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -22098,6 +23768,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22113,6 +23787,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22128,6 +23806,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22143,6 +23825,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22158,6 +23844,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22173,6 +23863,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22188,6 +23882,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22203,6 +23901,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22218,6 +23920,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22233,6 +23939,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22248,7 +23958,11 @@
         "entry_visitors": 8,
         "bounce_rate_pct": 44,
         "visit_duration_s": 425,
-        "thin": false
+        "entry_visits": 9,
+        "entry_pageviews": 17,
+        "pages_per_session": 1.89,
+        "went_deeper_pct": 56,
+        "thin": true
       },
       {
         "path": "/blog/why-the-impact-of-a-b-testing-can-seem-invisible",
@@ -22263,6 +23977,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22278,6 +23996,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22293,6 +24015,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22308,6 +24034,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22323,6 +24053,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22338,6 +24072,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22353,6 +24091,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22368,6 +24110,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22383,6 +24129,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22398,6 +24148,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22413,6 +24167,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22428,6 +24186,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22443,6 +24205,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22458,6 +24224,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22473,6 +24243,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22488,6 +24262,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22503,6 +24281,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22518,6 +24300,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22533,6 +24319,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22548,6 +24338,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22563,6 +24357,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22578,6 +24376,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22593,6 +24395,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22608,6 +24414,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22623,6 +24433,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22638,6 +24452,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22653,6 +24471,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -22668,6 +24490,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22683,6 +24509,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22698,6 +24528,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22713,6 +24547,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22728,6 +24566,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22743,6 +24585,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22758,6 +24604,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22773,6 +24623,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22788,6 +24642,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22803,6 +24661,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22818,6 +24680,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22833,6 +24699,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22848,6 +24718,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22863,6 +24737,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22878,6 +24756,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22893,6 +24775,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22908,6 +24794,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22923,6 +24813,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22938,6 +24832,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22953,6 +24851,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22968,6 +24870,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22983,6 +24889,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -22998,6 +24908,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23013,6 +24927,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23028,6 +24946,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23043,6 +24965,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23058,6 +24984,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23073,6 +25003,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23088,6 +25022,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23103,6 +25041,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23118,6 +25060,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23133,6 +25079,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23148,6 +25098,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23163,6 +25117,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23178,6 +25136,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23193,6 +25155,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23208,6 +25174,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23223,6 +25193,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23238,6 +25212,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23253,6 +25231,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23268,6 +25250,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23283,6 +25269,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23298,6 +25288,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23313,6 +25307,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23328,6 +25326,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23343,6 +25345,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23358,6 +25364,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23373,6 +25383,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23388,6 +25402,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23403,6 +25421,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23418,6 +25440,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23433,6 +25459,10 @@
         "entry_visitors": 9,
         "bounce_rate_pct": 56,
         "visit_duration_s": 4,
+        "entry_visits": 9,
+        "entry_pageviews": 14,
+        "pages_per_session": 1.56,
+        "went_deeper_pct": 44,
         "thin": true
       },
       {
@@ -23448,6 +25478,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23463,6 +25497,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23478,6 +25516,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 1,
+        "entry_visits": 3,
+        "entry_pageviews": 6,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -23493,6 +25535,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23508,6 +25554,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23523,6 +25573,10 @@
         "entry_visitors": 18,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 18,
+        "entry_pageviews": 18,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -23538,6 +25592,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23553,6 +25611,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23568,6 +25630,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23583,6 +25649,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 1034,
+        "entry_visits": 1,
+        "entry_pageviews": 4,
+        "pages_per_session": 4.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -23598,6 +25668,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23613,6 +25687,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23628,6 +25706,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23643,6 +25725,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -23658,6 +25744,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23673,6 +25763,10 @@
         "entry_visitors": 395,
         "bounce_rate_pct": 93,
         "visit_duration_s": 15,
+        "entry_visits": 398,
+        "entry_pageviews": 430,
+        "pages_per_session": 1.08,
+        "went_deeper_pct": 7,
         "thin": false
       },
       {
@@ -23688,6 +25782,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23703,6 +25801,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23718,6 +25820,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23733,6 +25839,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23748,6 +25858,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23763,6 +25877,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23778,6 +25896,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23793,6 +25915,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23808,6 +25934,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23823,6 +25953,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23838,6 +25972,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 50,
         "visit_duration_s": 11,
+        "entry_visits": 2,
+        "entry_pageviews": 4,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 50,
         "thin": true
       },
       {
@@ -23853,6 +25991,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23868,6 +26010,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23883,6 +26029,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23898,6 +26048,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23913,6 +26067,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23928,6 +26086,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23943,6 +26105,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23958,6 +26124,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23973,6 +26143,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -23988,6 +26162,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24003,6 +26181,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24018,6 +26200,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24033,6 +26219,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24048,6 +26238,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24063,6 +26257,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24078,6 +26276,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24093,6 +26295,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24108,6 +26314,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24123,6 +26333,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 5,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24138,6 +26352,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24153,6 +26371,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24168,6 +26390,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24183,6 +26409,10 @@
         "entry_visitors": 12,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 12,
+        "entry_pageviews": 12,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": false
       },
       {
@@ -24198,6 +26428,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24213,6 +26447,10 @@
         "entry_visitors": 4,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 4,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24228,6 +26466,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24243,6 +26485,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24258,6 +26504,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 33,
         "visit_duration_s": 39,
+        "entry_visits": 3,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 67,
         "thin": true
       },
       {
@@ -24273,6 +26523,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24288,6 +26542,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 2,
+        "entry_visits": 1,
+        "entry_pageviews": 3,
+        "pages_per_session": 3.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -24303,6 +26561,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24318,6 +26580,10 @@
         "entry_visitors": 45,
         "bounce_rate_pct": 96,
         "visit_duration_s": 5,
+        "entry_visits": 47,
+        "entry_pageviews": 49,
+        "pages_per_session": 1.04,
+        "went_deeper_pct": 4,
         "thin": false
       },
       {
@@ -24333,6 +26599,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24348,6 +26618,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24363,6 +26637,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24378,6 +26656,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24393,6 +26675,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24408,6 +26694,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24423,6 +26713,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24438,6 +26732,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24453,6 +26751,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24468,6 +26770,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24483,6 +26789,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24498,6 +26808,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 41,
+        "entry_visits": 3,
+        "entry_pageviews": 4,
+        "pages_per_session": 1.33,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -24513,6 +26827,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24528,6 +26846,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 34,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -24543,6 +26865,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 2,
+        "entry_pageviews": 2,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24558,6 +26884,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24573,6 +26903,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24588,6 +26922,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24603,6 +26941,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24618,6 +26960,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24633,6 +26979,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24648,6 +26998,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24663,6 +27017,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24678,6 +27036,10 @@
         "entry_visitors": 2,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 3,
+        "entry_pageviews": 3,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24693,6 +27055,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24708,6 +27074,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24723,6 +27093,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24738,6 +27112,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24753,6 +27131,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24768,6 +27150,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24783,6 +27169,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 0,
         "visit_duration_s": 43,
+        "entry_visits": 1,
+        "entry_pageviews": 2,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 100,
         "thin": true
       },
       {
@@ -24798,6 +27188,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       },
       {
@@ -24813,6 +27207,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 33,
         "visit_duration_s": 100,
+        "entry_visits": 3,
+        "entry_pageviews": 5,
+        "pages_per_session": 1.67,
+        "went_deeper_pct": 67,
         "thin": true
       },
       {
@@ -24828,6 +27226,10 @@
         "entry_visitors": 3,
         "bounce_rate_pct": 67,
         "visit_duration_s": 148,
+        "entry_visits": 3,
+        "entry_pageviews": 6,
+        "pages_per_session": 2.0,
+        "went_deeper_pct": 33,
         "thin": true
       },
       {
@@ -24843,6 +27245,10 @@
         "entry_visitors": 1,
         "bounce_rate_pct": 100,
         "visit_duration_s": 0,
+        "entry_visits": 1,
+        "entry_pageviews": 1,
+        "pages_per_session": 1.0,
+        "went_deeper_pct": 0,
         "thin": true
       },
       {
@@ -24858,6 +27264,10 @@
         "entry_visitors": 0,
         "bounce_rate_pct": null,
         "visit_duration_s": null,
+        "entry_visits": 0,
+        "entry_pageviews": 0,
+        "pages_per_session": null,
+        "went_deeper_pct": null,
         "thin": true
       }
     ]
@@ -33421,20 +35831,20 @@
         }
       },
       "by_category": {
-        "Other webinar": {
+        "Product long-form": {
           "current": {
-            "engaged_views": 103,
-            "raw_views": 116,
-            "watch_minutes": 409,
-            "subs_gained": 1,
-            "videos": 10
+            "engaged_views": 1380,
+            "raw_views": 2212,
+            "watch_minutes": 4028,
+            "subs_gained": 5,
+            "videos": 71
           },
           "prior": {
-            "engaged_views": 118,
-            "raw_views": 140,
-            "watch_minutes": 437,
-            "subs_gained": 2,
-            "videos": 10
+            "engaged_views": 1330,
+            "raw_views": 1593,
+            "watch_minutes": 3963,
+            "subs_gained": 5,
+            "videos": 79
           }
         },
         "Kohavi webinar": {
@@ -33453,22 +35863,6 @@
             "videos": 2
           }
         },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1380,
-            "raw_views": 2212,
-            "watch_minutes": 4028,
-            "subs_gained": 5,
-            "videos": 71
-          },
-          "prior": {
-            "engaged_views": 1330,
-            "raw_views": 1593,
-            "watch_minutes": 3963,
-            "subs_gained": 5,
-            "videos": 79
-          }
-        },
         "Podcast episode": {
           "current": {
             "engaged_views": 864,
@@ -33483,6 +35877,22 @@
             "watch_minutes": 1725,
             "subs_gained": 1,
             "videos": 29
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 103,
+            "raw_views": 116,
+            "watch_minutes": 409,
+            "subs_gained": 1,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 118,
+            "raw_views": 140,
+            "watch_minutes": 437,
+            "subs_gained": 2,
+            "videos": 10
           }
         },
         "Podcast clip": {
