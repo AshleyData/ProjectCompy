@@ -1391,6 +1391,10 @@ export default function CompyDashboard() {
   // table shows a readable slice by default and says how many it is hiding.
   // A silent slice(0, 25) over 386 rows looks like the full set.
   const [shipLimit, setShipLimit] = useState(25);
+  const [cqTrack, setCqTrack] = useState(null);     // null = all tracks
+  const [cqSort, setCqSort] = useState({ col: "clicks", dir: "desc" });
+  const [cqLimit, setCqLimit] = useState(25);
+  const [cqHideThin, setCqHideThin] = useState(true);
   const [etvScale, setEtvScale] = useState("log");
   const cycleShipSort = (key) => setShipSort(s =>
     s.col !== key ? { col: key, dir: "desc" }
@@ -1909,6 +1913,181 @@ export default function CompyDashboard() {
                   <p style={{ fontSize: 11, color: C.muted, marginTop: 8, textAlign: "left" }}>
                     GrowthBook's monthly organic keyword footprint (DataForSEO). Top-10 growth = a persistently expanding presence, not single-week noise.
                   </p>
+                </Section>
+              );
+            })()}
+
+            {/* Click Quality — GSC clicks joined to Plausible engagement */}
+            {d.content_quality && (d.content_quality.tracks || []).length > 0 && (() => {
+              const cq = d.content_quality;
+              const w = cq.window || {};
+              const fmtS = v => (v == null ? "—" : `${v}s`);
+              const fmtP = v => (v == null ? "—" : `${v}%`);
+              const tracks = cq.tracks || [];
+              const anyReliable = tracks.some(t => t.conv_reliable);
+
+              const COLS = [
+                { key: "path",            label: "Page",       align: "left",  get: p => p.path },
+                { key: "clicks",          label: "Clicks",     align: "right", get: p => p.clicks },
+                { key: "ctr_pct",         label: "CTR",        align: "right", get: p => p.ctr_pct },
+                { key: "avg_position",    label: "Pos",        align: "right", get: p => p.avg_position },
+                { key: "pageviews",       label: "Pageviews",  align: "right", get: p => p.pageviews },
+                { key: "time_on_page_s",  label: "Time/page",  align: "right", get: p => p.time_on_page_s },
+                { key: "bounce_rate_pct", label: "Bounce",     align: "right", get: p => p.bounce_rate_pct },
+                { key: "visit_duration_s",label: "Visit len",  align: "right", get: p => p.visit_duration_s },
+              ];
+
+              let rows = (cq.pages || []).filter(p => !cqTrack || p.track === cqTrack);
+              // Thin pages carry real clicks but their RATES are noise — one
+              // visitor swings bounce by double digits — so they are hidden by
+              // default rather than allowed to top a "worst pages" sort.
+              const thinCount = rows.filter(p => p.thin).length;
+              if (cqHideThin) rows = rows.filter(p => !p.thin);
+              const col = COLS.find(c => c.key === cqSort.col) || COLS[1];
+              rows = [...rows].sort((a, b) => {
+                const av = col.get(a), bv = col.get(b);
+                if (av == null && bv == null) return 0;
+                if (av == null) return 1;           // missing sorts last, always
+                if (bv == null) return -1;
+                const cmp = (typeof av === "number" && typeof bv === "number")
+                  ? av - bv : String(av).localeCompare(String(bv));
+                return cqSort.dir === "asc" ? cmp : -cmp;
+              });
+              const total = rows.length;
+              rows = rows.slice(0, cqLimit);
+
+              return (
+                <Section title="🔍 Click Quality — Editorial vs AI Insights">
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 10, textAlign: "left" }}>
+                    What happens <em>after</em> the click. Search columns (clicks, CTR, position) come from
+                    Google Search Console; engagement and conversion come from Plausible, {w.start} to {w.end}.
+                    {" "}<b>Time/page</b> belongs to that page. <b>Bounce</b> and <b>Visit len</b> describe the
+                    session a page <em>started</em> (entry-page attributed), which credits the page that won
+                    the visitor rather than every page the session touched.
+                  </p>
+
+                  <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+                    {tracks.map(t => (
+                      <div key={t.track} style={{ ...card({ padding: 14, flex: 1, minWidth: 260,
+                           borderLeft: `4px solid ${t.track === "Editorial" ? C.accent : "#9B59B6"}` }) }}>
+                        <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>
+                          {t.track}
+                          <span style={{ fontWeight: 400, color: C.muted }}>
+                            {" "}· {t.pages_with_traffic} of {t.pages} pages with traffic
+                          </span>
+                        </div>
+                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8, fontSize: 12 }}>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>CLICKS</div>
+                               <b style={{ fontVariantNumeric: "tabular-nums" }}>{t.clicks.toLocaleString()}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>CTR</div>
+                               <b>{fmtP(t.ctr_pct)}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>PAGEVIEWS</div>
+                               <b style={{ fontVariantNumeric: "tabular-nums" }}>{t.pageviews.toLocaleString()}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>TIME/PAGE</div>
+                               <b>{fmtS(t.avg_time_on_page_s)}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>BOUNCE</div>
+                               <b>{fmtP(t.bounce_rate_pct)}</b></div>
+                          <div><div style={{ color: C.muted, fontSize: 10 }}>FORMS</div>
+                               <b>{t.form_submissions}</b>
+                               <span style={{ color: C.muted }}>
+                                 {t.conv_reliable ? ` (${fmtP(t.form_conv_pct)})` : ""}
+                               </span></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {!anyReliable && (
+                    <div style={{ fontSize: 11, color: C.warning, marginBottom: 10, textAlign: "left" }}>
+                      ⚠️ Form submissions are in single digits per track, so the conversion
+                      <em> rates</em> are not yet comparable — one or two forms would reverse them.
+                      The counts are shown; the percentages are withheld until n ≥ 30. Engagement
+                      metrics above run to thousands of pageviews and are solid now.
+                    </div>
+                  )}
+
+                  <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center", marginBottom: 8 }}>
+                    {[null, ...tracks.map(t => t.track)].map(tk => (
+                      <button key={tk || "all"} onClick={() => { setCqTrack(tk); setCqLimit(25); }}
+                        style={{ padding: "4px 10px", fontSize: 11, borderRadius: 4, cursor: "pointer",
+                          border: `1px solid ${cqTrack === tk ? C.primary : C.border}`,
+                          background: cqTrack === tk ? C.primary : C.white,
+                          color: cqTrack === tk ? C.white : C.primary }}>
+                        {tk || "All pages"}
+                      </button>
+                    ))}
+                    <label style={{ fontSize: 11, color: C.muted, display: "flex", alignItems: "center", gap: 5, cursor: "pointer" }}>
+                      <input type="checkbox" checked={cqHideThin}
+                             onChange={e => { setCqHideThin(e.target.checked); setCqLimit(25); }} />
+                      Hide pages under {cq.thin_pageviews} pageviews ({thinCount} hidden)
+                    </label>
+                  </div>
+
+                  <div style={{ fontSize: 11, color: C.muted, marginBottom: 6, textAlign: "left" }}>
+                    Showing <b>{Math.min(cqLimit, total)}</b> of <b>{total}</b> pages
+                    {total > cqLimit && (
+                      <> · <button onClick={() => setCqLimit(total)}
+                           style={{ background: "none", border: 0, padding: 0, cursor: "pointer",
+                                    font: "inherit", color: C.accent, textDecoration: "underline" }}>
+                        show all {total}</button></>
+                    )}
+                    {cqLimit > 25 && (
+                      <> · <button onClick={() => setCqLimit(25)}
+                           style={{ background: "none", border: 0, padding: 0, cursor: "pointer",
+                                    font: "inherit", color: C.accent, textDecoration: "underline" }}>
+                        show top 25</button></>
+                    )}
+                  </div>
+
+                  <div style={{ overflowX: "auto" }}>
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                      <thead>
+                        <tr style={{ background: C.primary }}>
+                          {COLS.map(c => {
+                            const active = cqSort.col === c.key;
+                            return (
+                              <th key={c.key} style={{ padding: "6px 8px", color: "#fff", textAlign: c.align,
+                                   whiteSpace: "nowrap", fontSize: 11 }}>
+                                <button onClick={() => setCqSort({ col: c.key,
+                                          dir: active && cqSort.dir === "desc" ? "asc" : "desc" })}
+                                  style={{ background: "none", border: 0, padding: 0, cursor: "pointer",
+                                           font: "inherit", color: "inherit", opacity: active ? 1 : 0.8 }}>
+                                  {c.label}{active ? (cqSort.dir === "desc" ? " ▼" : " ▲") : " ⇅"}
+                                </button>
+                              </th>
+                            );
+                          })}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {rows.map((p, i) => (
+                          <tr key={p.path} style={{ background: i % 2 === 0 ? C.white : "#F8F9FA" }}>
+                            <td style={{ padding: "5px 8px", borderBottom: `1px solid ${C.border}`, textAlign: "left" }}>
+                              <a href={safeHref("https://www.growthbook.io" + p.path)} target="_blank"
+                                 rel="noopener noreferrer"
+                                 style={{ color: C.accent, textDecoration: "none" }}>{p.path}</a>
+                              <span style={{ color: C.muted, fontSize: 10 }}>
+                                {" "}· {p.track === "Editorial" ? "Ed" : "AI"}
+                              </span>
+                            </td>
+                            {COLS.slice(1).map(c => {
+                              const v = c.get(p);
+                              const txt = v == null ? "—"
+                                : c.key === "ctr_pct" || c.key === "bounce_rate_pct" ? `${v}%`
+                                : c.key === "time_on_page_s" || c.key === "visit_duration_s" ? `${v}s`
+                                : typeof v === "number" ? v.toLocaleString() : v;
+                              return (
+                                <td key={c.key} style={{ padding: "5px 8px", textAlign: "right",
+                                     borderBottom: `1px solid ${C.border}`, whiteSpace: "nowrap",
+                                     fontVariantNumeric: "tabular-nums",
+                                     color: v == null ? C.muted : "inherit" }}>{txt}</td>
+                              );
+                            })}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </Section>
               );
             })()}
