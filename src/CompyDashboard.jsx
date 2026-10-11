@@ -1387,6 +1387,10 @@ export default function CompyDashboard() {
   const [ncvTrack, setNcvTrack] = useState(null);
   // Recently-Shipped column sort: {col, dir}. Clicking a header cycles desc → asc → none.
   const [shipSort, setShipSort] = useState({ col: null, dir: null });
+  // Recently Shipped now spans the whole content era (hundreds of pages), so the
+  // table shows a readable slice by default and says how many it is hiding.
+  // A silent slice(0, 25) over 386 rows looks like the full set.
+  const [shipLimit, setShipLimit] = useState(25);
   const [etvScale, setEtvScale] = useState("log");
   const cycleShipSort = (key) => setShipSort(s =>
     s.col !== key ? { col: key, dir: "desc" }
@@ -1909,6 +1913,155 @@ export default function CompyDashboard() {
               );
             })()}
 
+            {/* Recently Shipped — New Content Value (AI vs Editorial) */}
+            {strat.recentlyShipped && (strat.recentlyShipped.items || []).length > 0 && (() => {
+              const rs = strat.recentlyShipped;
+              const VC = { "Winner": C.success, "Stranded": C.warning, "Surprise": C.accent, "Let it ride": C.muted };
+              return (
+                <Section title="🌱 Recently Shipped — Is It Working?">
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 8 }}>
+                    All GrowthBook pages shipped since {rs.windowStart ? new Date(rs.windowStart + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", month: "long", day: "numeric", year: "numeric" }) : `the last ${rs.windowWeeks} weeks`} — {(rs.items || []).length} pages — scored on strategic value × realized GSC traction (age-adjusted). AI-generated <code>/insights/</code> is tracked separately from editorial. Winner = promote · Stranded = refresh · Surprise = harvest intent · Let it ride = deprioritize.
+                    {rs.dataStartsAt && rs.dataStartsAt > rs.windowStart && (
+                      <> Sitemap detection begins {new Date(rs.dataStartsAt + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", month: "short", day: "numeric" })}, so anything published before that is part of the baseline crawl and not counted as shipped.</>
+                    )}
+                  </p>
+                  <details style={{ marginBottom: 12 }}>
+                    <summary style={{ cursor: "pointer", fontSize: 12, color: C.accent }}>What do NCV, Strat, Perf, and the verdicts mean?</summary>
+                    <div style={{ fontSize: 12, color: "#2C3E50", marginTop: 8, lineHeight: 1.6, textAlign: "left" }}>
+                      <p style={{ margin: "0 0 8px" }}>Each page is scored on two independent 0–5 axes, then bucketed into a verdict. The question this answers: <em>of what we recently published, what's worth more investment vs. what to leave alone?</em></p>
+                      <ul style={{ margin: "0 0 8px 18px", padding: 0 }}>
+                        <li style={{ margin: "3px 0" }}><strong>Strat (Strategic Value, 0–5)</strong> — how valuable the topic is <em>regardless of traffic</em>: funnel proximity (bottom-funnel comparison/pricing pages score highest) × 0.4 + AI-citation potential (comparison and definitional formats get cited most) × 0.4 + strategic fit (categories GrowthBook should own — feature flags, experimentation, A/B testing) × 0.2.</li>
+                        <li style={{ margin: "3px 0" }}><strong>Performance (0–5)</strong> — realized GSC traction, <em>age-adjusted</em>. Ranks each page's velocity (impressions ÷ weeks live) against the rest of the cohort, then +1 if it's already averaging a top-10 position. A 2-week-old page isn't penalized for not yet matching an 8-week-old one. <em>(Shown in the table as the concrete Impr / Clicks / Pos columns rather than a raw score.)</em></li>
+                        <li style={{ margin: "3px 0" }}><strong>NCV (New Content Value, 0–100)</strong> — the headline score: an equal 50/50 blend of Strat and Perf. High NCV = a strategically valuable page that's also earning traction.</li>
+                      </ul>
+                      <p style={{ margin: "0 0 4px" }}>The four <strong>verdicts</strong> come from crossing the two axes (high = ≥3):</p>
+                      <ul style={{ margin: "0 0 0 18px", padding: 0 }}>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.success }}>Winner</strong> — high Strat <em>and</em> high Perf. On-strategy and working. <em>Promote: add internal links + a signup CTA and amplify.</em></li>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.warning }}>Stranded</strong> — high Strat, low Perf. Right topic, weak traction. <em>Refresh: rewrite the title, add an answer capsule + internal links to unstick it.</em></li>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.accent }}>Surprise</strong> — low Strat, high Perf. Unexpected traction on a lower-priority topic. <em>Harvest the intent: add a bottom-funnel follow-up or CTA to convert it.</em></li>
+                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.muted }}>Let it ride</strong> — low Strat <em>and</em> low Perf. <em>Don't reinvest — leave it.</em></li>
+                      </ul>
+                    </div>
+                  </details>
+                  <div style={{ fontSize: 11, color: C.muted, marginBottom: 6, textAlign: "left" }}>
+                    Click a cohort to filter the list below by track{ncvTrack ? <> · <button onClick={() => setNcvTrack(null)} style={{ border: "none", background: "none", color: C.accent, cursor: "pointer", fontSize: 11, padding: 0, textDecoration: "underline" }}>show all</button></> : null}
+                  </div>
+                  <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
+                    {rs.cohorts.map(c => {
+                      const active = ncvTrack === c.track;
+                      return (
+                      <div key={c.track}
+                        onClick={() => setNcvTrack(active ? null : c.track)}
+                        role="button"
+                        aria-pressed={active}
+                        title={active ? "Click to show all tracks" : `Show only ${c.track} pages`}
+                        style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }), cursor: "pointer",
+                          // Light outline by default; darker + bolder when selected.
+                          border: active ? `3px solid ${C.primary}` : `2px solid ${C.border}`,
+                          background: active ? "#EAF2FB" : undefined,
+                          opacity: ncvTrack && !active ? 0.55 : 1, transition: "opacity .12s, border-color .12s, border-width .12s" }}>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{c.track} {active ? "▾" : ""}</div>
+                        <div style={{ fontSize: 24, fontWeight: 800, color: C.primary, margin: "2px 0" }}>{c.count} <span style={{ fontSize: 12, fontWeight: 400, color: C.muted }}>pages</span></div>
+                        <div style={{ fontSize: 12, color: C.muted }}>{c.impressions.toLocaleString()} impr · {c.clicks} clicks · avg pos {c.avgPosition ?? "—"}</div>
+                        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
+                          {Object.entries(c.verdicts).map(([v, n]) => (
+                            <span key={v} style={{ fontSize: 10, fontWeight: 600, color: VC[v], background: C.bg, padding: "1px 6px", borderRadius: 4 }}>{v} {n}</span>
+                          ))}
+                        </div>
+                      </div>
+                      );
+                    })}
+                  </div>
+                  {(() => {
+                    const adviceCtx = {
+                      brand: "GrowthBook",
+                      objective: "Maximize AI-citation share + bottom-funnel signups per unit of effort.",
+                      methodology: strat.note,
+                      northStar: strat.northStar,
+                      portfolio: strat.portfolio,
+                      verdictMeaning: { Winner: "promote", Stranded: "refresh", Surprise: "harvest intent", "Let it ride": "deprioritize" },
+                    };
+                    // Column spec: `sort` returns the value to sort by (null = not sortable).
+                    const COLS = [
+                      { key: "title", label: "Page", align: "left", sort: it => (it.title || "").toLowerCase(), render: it => it.title },
+                      { key: "track", label: "Track", align: "left", sort: it => it.track || "", render: it => it.track },
+                      { key: "ncvScore", label: "NCV", align: "right", sort: it => it.ncvScore ?? -1, render: it => <strong style={{ color: C.primary }}>{it.ncvScore}</strong> },
+                      { key: "strategicValue", label: "Strat", align: "right", sort: it => it.strategicValue ?? -1, render: it => it.strategicValue },
+                      { key: "impressions", label: "Impr", align: "right", sort: it => it.impressions ?? -1, render: it => it.impressions.toLocaleString() },
+                      { key: "clicks", label: "Clicks", align: "right", sort: it => it.clicks ?? -1, render: it => (it.clicks ?? 0).toLocaleString() },
+                      { key: "position", label: "Pos", align: "right", sort: it => it.position ?? 9999, render: it => it.position ?? "—" },
+                      { key: "shippedDate", label: "Shipped", align: "left", sort: it => it.shippedDate || "",
+                        render: it => <span title={it.dateSource === "published" ? "verified publish date" : "first detected — publish date unverified"}
+                          style={{ color: it.dateSource === "published" ? "#2C3E50" : C.muted }}>{it.shippedDate || "—"}{it.dateSource !== "published" && it.shippedDate ? " ~" : ""}</span> },
+                      { key: "verdict", label: "Verdict", align: "left", sort: it => it.verdict || "", render: it => <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span> },
+                      { key: null, label: "Action", align: "left", sort: null, render: it => <AdviceCell item={it} fallback={it.action} context={adviceCtx} /> },
+                    ];
+                    let rows = rs.items.filter(it => !ncvTrack || it.track === ncvTrack);
+                    if (shipSort.col) {
+                      const col = COLS.find(c => c.key === shipSort.col);
+                      rows = [...rows].sort((a, b) => {
+                        const av = col.sort(a), bv = col.sort(b);
+                        const cmp = (typeof av === "number" && typeof bv === "number") ? av - bv : String(av).localeCompare(String(bv));
+                        return shipSort.dir === "asc" ? cmp : -cmp;
+                      });
+                    }
+                    const totalRows = rows.length;
+                    const shown = Math.min(shipLimit, totalRows);
+                    rows = rows.slice(0, shipLimit);
+                    return (
+                      <>
+                      <div style={{ fontSize: 11, color: C.muted, marginBottom: 6, textAlign: "left" }}>
+                        Showing <b>{shown}</b> of <b>{totalRows}</b>
+                        {ncvTrack ? ` ${ncvTrack} ` : " "}pages
+                        {totalRows > shown && (
+                          <> · <button onClick={() => setShipLimit(totalRows)}
+                               style={{ background: "none", border: 0, padding: 0, cursor: "pointer",
+                                        font: "inherit", color: C.accent, textDecoration: "underline" }}>
+                            show all {totalRows}
+                          </button></>
+                        )}
+                        {shipLimit > 25 && (
+                          <> · <button onClick={() => setShipLimit(25)}
+                               style={{ background: "none", border: 0, padding: 0, cursor: "pointer",
+                                        font: "inherit", color: C.accent, textDecoration: "underline" }}>
+                            show top 25
+                          </button></>
+                        )}
+                      </div>
+                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                        <thead>
+                          <tr style={{ background: C.primary }}>
+                            {COLS.map(c => {
+                              const active = shipSort.col === c.key;
+                              return (
+                                <th key={c.label}
+                                  onClick={c.sort ? () => cycleShipSort(c.key) : undefined}
+                                  title={c.sort ? "Click to sort (desc → asc → none)" : undefined}
+                                  style={{ padding: "6px 8px", color: "#fff", textAlign: c.align, fontWeight: 700, whiteSpace: "nowrap",
+                                    cursor: c.sort ? "pointer" : "default", userSelect: "none" }}>
+                                  {c.label}{active ? (shipSort.dir === "desc" ? " ▼" : " ▲") : (c.sort ? <span style={{ opacity: 0.4 }}> ⇅</span> : "")}
+                                </th>
+                              );
+                            })}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {rows.map((it, ri) => (
+                            <tr key={it.url || ri} style={{ background: ri % 2 === 0 ? "#fff" : "#F8F9FA" }}>
+                              {COLS.map(c => (
+                                <td key={c.label} style={{ padding: "6px 8px", textAlign: c.align, verticalAlign: "top" }}>{c.render(it)}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      </>
+                    );
+                  })()}
+                </Section>
+              );
+            })()}
+
             {/* Portfolio board */}
             <Section title="🎯 Opportunity Portfolio">
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "flex-start" }}>
@@ -2019,130 +2172,6 @@ export default function CompyDashboard() {
                 />
               </Section>
             )}
-
-            {/* Recently Shipped — New Content Value (AI vs Editorial) */}
-            {strat.recentlyShipped && (strat.recentlyShipped.items || []).length > 0 && (() => {
-              const rs = strat.recentlyShipped;
-              const VC = { "Winner": C.success, "Stranded": C.warning, "Surprise": C.accent, "Let it ride": C.muted };
-              return (
-                <Section title="🌱 Recently Shipped — Is It Working?">
-                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 8 }}>
-                    GrowthBook pages published in the last {rs.windowWeeks} weeks, scored on strategic value × realized GSC traction (age-adjusted). AI-generated <code>/insights/</code> is tracked separately from editorial. Winner = promote · Stranded = refresh · Surprise = harvest intent · Let it ride = deprioritize.
-                  </p>
-                  <details style={{ marginBottom: 12 }}>
-                    <summary style={{ cursor: "pointer", fontSize: 12, color: C.accent }}>What do NCV, Strat, Perf, and the verdicts mean?</summary>
-                    <div style={{ fontSize: 12, color: "#2C3E50", marginTop: 8, lineHeight: 1.6, textAlign: "left" }}>
-                      <p style={{ margin: "0 0 8px" }}>Each page is scored on two independent 0–5 axes, then bucketed into a verdict. The question this answers: <em>of what we recently published, what's worth more investment vs. what to leave alone?</em></p>
-                      <ul style={{ margin: "0 0 8px 18px", padding: 0 }}>
-                        <li style={{ margin: "3px 0" }}><strong>Strat (Strategic Value, 0–5)</strong> — how valuable the topic is <em>regardless of traffic</em>: funnel proximity (bottom-funnel comparison/pricing pages score highest) × 0.4 + AI-citation potential (comparison and definitional formats get cited most) × 0.4 + strategic fit (categories GrowthBook should own — feature flags, experimentation, A/B testing) × 0.2.</li>
-                        <li style={{ margin: "3px 0" }}><strong>Performance (0–5)</strong> — realized GSC traction, <em>age-adjusted</em>. Ranks each page's velocity (impressions ÷ weeks live) against the rest of the cohort, then +1 if it's already averaging a top-10 position. A 2-week-old page isn't penalized for not yet matching an 8-week-old one. <em>(Shown in the table as the concrete Impr / Clicks / Pos columns rather than a raw score.)</em></li>
-                        <li style={{ margin: "3px 0" }}><strong>NCV (New Content Value, 0–100)</strong> — the headline score: an equal 50/50 blend of Strat and Perf. High NCV = a strategically valuable page that's also earning traction.</li>
-                      </ul>
-                      <p style={{ margin: "0 0 4px" }}>The four <strong>verdicts</strong> come from crossing the two axes (high = ≥3):</p>
-                      <ul style={{ margin: "0 0 0 18px", padding: 0 }}>
-                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.success }}>Winner</strong> — high Strat <em>and</em> high Perf. On-strategy and working. <em>Promote: add internal links + a signup CTA and amplify.</em></li>
-                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.warning }}>Stranded</strong> — high Strat, low Perf. Right topic, weak traction. <em>Refresh: rewrite the title, add an answer capsule + internal links to unstick it.</em></li>
-                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.accent }}>Surprise</strong> — low Strat, high Perf. Unexpected traction on a lower-priority topic. <em>Harvest the intent: add a bottom-funnel follow-up or CTA to convert it.</em></li>
-                        <li style={{ margin: "3px 0" }}><strong style={{ color: C.muted }}>Let it ride</strong> — low Strat <em>and</em> low Perf. <em>Don't reinvest — leave it.</em></li>
-                      </ul>
-                    </div>
-                  </details>
-                  <div style={{ fontSize: 11, color: C.muted, marginBottom: 6, textAlign: "left" }}>
-                    Click a cohort to filter the list below by track{ncvTrack ? <> · <button onClick={() => setNcvTrack(null)} style={{ border: "none", background: "none", color: C.accent, cursor: "pointer", fontSize: 11, padding: 0, textDecoration: "underline" }}>show all</button></> : null}
-                  </div>
-                  <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
-                    {rs.cohorts.map(c => {
-                      const active = ncvTrack === c.track;
-                      return (
-                      <div key={c.track}
-                        onClick={() => setNcvTrack(active ? null : c.track)}
-                        role="button"
-                        aria-pressed={active}
-                        title={active ? "Click to show all tracks" : `Show only ${c.track} pages`}
-                        style={{ ...card({ padding: "12px 16px", flex: 1, minWidth: 250 }), cursor: "pointer",
-                          // Light outline by default; darker + bolder when selected.
-                          border: active ? `3px solid ${C.primary}` : `2px solid ${C.border}`,
-                          background: active ? "#EAF2FB" : undefined,
-                          opacity: ncvTrack && !active ? 0.55 : 1, transition: "opacity .12s, border-color .12s, border-width .12s" }}>
-                        <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{c.track} {active ? "▾" : ""}</div>
-                        <div style={{ fontSize: 24, fontWeight: 800, color: C.primary, margin: "2px 0" }}>{c.count} <span style={{ fontSize: 12, fontWeight: 400, color: C.muted }}>pages</span></div>
-                        <div style={{ fontSize: 12, color: C.muted }}>{c.impressions.toLocaleString()} impr · {c.clicks} clicks · avg pos {c.avgPosition ?? "—"}</div>
-                        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
-                          {Object.entries(c.verdicts).map(([v, n]) => (
-                            <span key={v} style={{ fontSize: 10, fontWeight: 600, color: VC[v], background: C.bg, padding: "1px 6px", borderRadius: 4 }}>{v} {n}</span>
-                          ))}
-                        </div>
-                      </div>
-                      );
-                    })}
-                  </div>
-                  {(() => {
-                    const adviceCtx = {
-                      brand: "GrowthBook",
-                      objective: "Maximize AI-citation share + bottom-funnel signups per unit of effort.",
-                      methodology: strat.note,
-                      northStar: strat.northStar,
-                      portfolio: strat.portfolio,
-                      verdictMeaning: { Winner: "promote", Stranded: "refresh", Surprise: "harvest intent", "Let it ride": "deprioritize" },
-                    };
-                    // Column spec: `sort` returns the value to sort by (null = not sortable).
-                    const COLS = [
-                      { key: "title", label: "Page", align: "left", sort: it => (it.title || "").toLowerCase(), render: it => it.title },
-                      { key: "track", label: "Track", align: "left", sort: it => it.track || "", render: it => it.track },
-                      { key: "ncvScore", label: "NCV", align: "right", sort: it => it.ncvScore ?? -1, render: it => <strong style={{ color: C.primary }}>{it.ncvScore}</strong> },
-                      { key: "strategicValue", label: "Strat", align: "right", sort: it => it.strategicValue ?? -1, render: it => it.strategicValue },
-                      { key: "impressions", label: "Impr", align: "right", sort: it => it.impressions ?? -1, render: it => it.impressions.toLocaleString() },
-                      { key: "clicks", label: "Clicks", align: "right", sort: it => it.clicks ?? -1, render: it => (it.clicks ?? 0).toLocaleString() },
-                      { key: "position", label: "Pos", align: "right", sort: it => it.position ?? 9999, render: it => it.position ?? "—" },
-                      { key: "shippedDate", label: "Shipped", align: "left", sort: it => it.shippedDate || "",
-                        render: it => <span title={it.dateSource === "published" ? "verified publish date" : "first detected — publish date unverified"}
-                          style={{ color: it.dateSource === "published" ? "#2C3E50" : C.muted }}>{it.shippedDate || "—"}{it.dateSource !== "published" && it.shippedDate ? " ~" : ""}</span> },
-                      { key: "verdict", label: "Verdict", align: "left", sort: it => it.verdict || "", render: it => <span style={{ color: VC[it.verdict], fontWeight: 600 }}>{it.verdict}</span> },
-                      { key: null, label: "Action", align: "left", sort: null, render: it => <AdviceCell item={it} fallback={it.action} context={adviceCtx} /> },
-                    ];
-                    let rows = rs.items.filter(it => !ncvTrack || it.track === ncvTrack);
-                    if (shipSort.col) {
-                      const col = COLS.find(c => c.key === shipSort.col);
-                      rows = [...rows].sort((a, b) => {
-                        const av = col.sort(a), bv = col.sort(b);
-                        const cmp = (typeof av === "number" && typeof bv === "number") ? av - bv : String(av).localeCompare(String(bv));
-                        return shipSort.dir === "asc" ? cmp : -cmp;
-                      });
-                    }
-                    rows = rows.slice(0, 25);
-                    return (
-                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
-                        <thead>
-                          <tr style={{ background: C.primary }}>
-                            {COLS.map(c => {
-                              const active = shipSort.col === c.key;
-                              return (
-                                <th key={c.label}
-                                  onClick={c.sort ? () => cycleShipSort(c.key) : undefined}
-                                  title={c.sort ? "Click to sort (desc → asc → none)" : undefined}
-                                  style={{ padding: "6px 8px", color: "#fff", textAlign: c.align, fontWeight: 700, whiteSpace: "nowrap",
-                                    cursor: c.sort ? "pointer" : "default", userSelect: "none" }}>
-                                  {c.label}{active ? (shipSort.dir === "desc" ? " ▼" : " ▲") : (c.sort ? <span style={{ opacity: 0.4 }}> ⇅</span> : "")}
-                                </th>
-                              );
-                            })}
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {rows.map((it, ri) => (
-                            <tr key={it.url || ri} style={{ background: ri % 2 === 0 ? "#fff" : "#F8F9FA" }}>
-                              {COLS.map(c => (
-                                <td key={c.label} style={{ padding: "6px 8px", textAlign: c.align, verticalAlign: "top" }}>{c.render(it)}</td>
-                              ))}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    );
-                  })()}
-                </Section>
-              );
-            })()}
 
             {/* GrowthBook video performance — own-channel signal sits next to own
                 content (Recently Shipped) so "is what we ship working?" covers
