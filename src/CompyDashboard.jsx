@@ -3168,12 +3168,24 @@ export default function CompyDashboard() {
           const top10T = _clip(seoT.top10);
           const _cur = a => (a.length ? a[a.length - 1].v : null);
           const _wow = a => { const c = _cur(a), p = a.length >= 2 ? a[a.length - 2].v : null; return (c != null && p) ? +(((c - p) / p) * 100).toFixed(1) : null; };
-          const _sum = a => a.reduce((s, p) => s + (p.v || 0), 0);
-          const _4w = a => _sum(a.slice(-4));
-          const _4wp = a => { const c = _sum(a.slice(-4)), p = _sum(a.slice(-8, -4)); return (a.slice(-8, -4).length === 4 && p > 0) ? +(((c - p) / p) * 100).toFixed(1) : null; };
+          // A null `v` means the week was NOT MEASURED, which is different from a
+          // week that measured zero. AI Assistant data only starts 2026-06-13
+          // (when GA4 added that channel grouping), and a vendor switch can leave
+          // a gap too. Summing nulls as 0 would quietly understate a 4-week total
+          // and then compare it against a fully-measured window.
+          const _sum = a => a.reduce((s, p) => s + (p.v ?? 0), 0);
+          const _whole = a => a.length > 0 && a.every(p => p.v != null);
+          const _4w = a => (_whole(a.slice(-4)) ? _sum(a.slice(-4)) : null);
+          const _4wp = a => {
+            const cw = a.slice(-4), pw = a.slice(-8, -4);
+            if (!_whole(cw) || pw.length !== 4 || !_whole(pw)) return null;
+            const c = _sum(cw), p = _sum(pw);
+            return p > 0 ? +(((c - p) / p) * 100).toFixed(1) : null;
+          };
           const _ser = a => a.map(p => ({ label: p.week.slice(5), v: p.v }));
           const _kpi = a => (_cur(a) != null ? { value: _cur(a).toLocaleString(), pct: _wow(a) } : { pending: true });
-          const _kpi4 = a => (_4w(a) > 0 ? { value: _4w(a).toLocaleString(), pct: _4wp(a) } : { pending: true });
+          const _kpi4 = a => { const t = _4w(a); return (t != null && t > 0)
+            ? { value: t.toLocaleString(), pct: _4wp(a) } : { pending: true }; };
           const _moAgg = (a, mode) => {
             const m = {}, order = [];
             (a || []).forEach(p => { const mo = p.week.slice(0, 7); if (!(mo in m)) { m[mo] = (mode === "sum" ? 0 : null); order.push(mo); } m[mo] = mode === "sum" ? m[mo] + (p.v || 0) : p.v; });
