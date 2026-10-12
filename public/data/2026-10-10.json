@@ -8416,7 +8416,7 @@
           "12 Account Based Marketing Tactics That Work"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub containing 348 pieces of editorial content\u2014primarily articles, guides, and curated collections\u2014covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking actionable strategies and use cases."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub of 348 pieces\u2014primarily articles plus a small number of curated collections, guides, and events\u2014covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking tactical guidance on campaign optimization and account-based marketing."
       }
     ]
   },
@@ -15896,7 +15896,7 @@
     "conversion_defs": [
       {
         "key": "app_clicks",
-        "label": "App signup click",
+        "label": "App visit",
         "high_intent": false
       },
       {
@@ -15913,7 +15913,7 @@
     "page_conversion_defs": [
       {
         "key": "app_clicks",
-        "label": "App clicks"
+        "label": "App visits"
       },
       {
         "key": "form_fills",
@@ -15929,6 +15929,7 @@
       }
     ],
     "conv_reliable_min": 30,
+    "app_visit_caveat": "App visits count clicks through to app.growthbook.io. They are NOT signups and must never be described as such. Every app link targets the bare root, so a signup cannot be distinguished from a login, and no new-vs-returning dimension is available. Measured against real signup counts, at most ~7% of app visits became a signup, so the large majority are existing users logging in. Product and feature pages sit on the path existing users take to reach the app, which inflates their app-visit rate relative to blog content that draws first-time visitors from search.",
     "thin_pageviews": 10,
     "tracks": [
       {
@@ -15967,7 +15968,7 @@
         "conversions": [
           {
             "key": "app_clicks",
-            "label": "App signup click",
+            "label": "App visit",
             "visitors": 20,
             "high_intent": false,
             "rate_pct": 1.12,
@@ -16016,7 +16017,7 @@
         "conversions": [
           {
             "key": "app_clicks",
-            "label": "App signup click",
+            "label": "App visit",
             "visitors": 24,
             "high_intent": false,
             "rate_pct": 0.8,
@@ -16085,7 +16086,7 @@
         "conversions": [
           {
             "key": "app_clicks",
-            "label": "App signup click",
+            "label": "App visit",
             "visitors": 98,
             "high_intent": false,
             "rate_pct": 11.72,
@@ -38703,22 +38704,6 @@
         }
       },
       "by_category": {
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 79,
-            "raw_views": 103,
-            "watch_minutes": 567,
-            "subs_gained": 1,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 97,
-            "raw_views": 114,
-            "watch_minutes": 759,
-            "subs_gained": 3,
-            "videos": 2
-          }
-        },
         "Other webinar": {
           "current": {
             "engaged_views": 103,
@@ -38733,22 +38718,6 @@
             "watch_minutes": 437,
             "subs_gained": 2,
             "videos": 10
-          }
-        },
-        "Other short": {
-          "current": {
-            "engaged_views": 33,
-            "raw_views": 69,
-            "watch_minutes": 10,
-            "subs_gained": 0,
-            "videos": 13
-          },
-          "prior": {
-            "engaged_views": 62,
-            "raw_views": 105,
-            "watch_minutes": 55,
-            "subs_gained": 0,
-            "videos": 26
           }
         },
         "Podcast clip": {
@@ -38783,6 +38752,22 @@
             "videos": 79
           }
         },
+        "Other short": {
+          "current": {
+            "engaged_views": 33,
+            "raw_views": 69,
+            "watch_minutes": 10,
+            "subs_gained": 0,
+            "videos": 13
+          },
+          "prior": {
+            "engaged_views": 62,
+            "raw_views": 105,
+            "watch_minutes": 55,
+            "subs_gained": 0,
+            "videos": 26
+          }
+        },
         "Podcast episode": {
           "current": {
             "engaged_views": 864,
@@ -38797,6 +38782,22 @@
             "watch_minutes": 1725,
             "subs_gained": 1,
             "videos": 29
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 79,
+            "raw_views": 103,
+            "watch_minutes": 567,
+            "subs_gained": 1,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 97,
+            "raw_views": 114,
+            "watch_minutes": 759,
+            "subs_gained": 3,
+            "videos": 2
           }
         }
       },

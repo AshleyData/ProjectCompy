@@ -1936,7 +1936,7 @@ export default function CompyDashboard() {
                 { key: "pages_per_session", label: "Pg/session", align: "right", get: p => p.pages_per_session },
                 { key: "went_deeper_pct", label: "Went deeper", align: "right", get: p => p.went_deeper_pct },
                 { key: "bounce_rate_pct", label: "Bounce",     align: "right", get: p => p.bounce_rate_pct },
-                { key: "app_clicks",      label: "App clicks", align: "right", get: p => p.app_clicks },
+                { key: "app_clicks",      label: "App visits", align: "right", get: p => p.app_clicks },
                 { key: "form_fills",      label: "Form fills", align: "right", get: p => p.form_fills },
                 { key: "dev_clicks",      label: "Docs/GitHub", align: "right", get: p => p.dev_clicks },
                 { key: "external_clicks", label: "External",   align: "right", get: p => p.external_clicks },
@@ -1975,7 +1975,7 @@ export default function CompyDashboard() {
                     two-page visit is the second page; longer visits show only their last page, since Plausible
                     has no full path report.
                     {" "}Per-article click columns are credited to the page that <em>won</em> the visitor.
-                    <b> App clicks</b> go to app.growthbook.io, <b>Docs/GitHub</b> to the documentation or
+                    <b> App visits</b> go to app.growthbook.io, <b>Docs/GitHub</b> to the documentation or
                     GrowthBook's own repos (evaluation, not signup), and <b>External</b> genuinely off-site.
                     That split matters: 88% of all "outbound" clicks go to the app and ~99% to a
                     GrowthBook-owned property — they only register as outbound because the app and docs sit
@@ -2037,6 +2037,19 @@ export default function CompyDashboard() {
                     ))}
                   </div>
 
+                  {cq.app_visit_caveat && (
+                    <div style={{ fontSize: 11, marginBottom: 10, textAlign: "left",
+                                  background: "#FFF8E1", border: "1px solid #FFE082",
+                                  borderRadius: 6, padding: "8px 10px", color: "#5D4037" }}>
+                      <b>App visits are not signups.</b> Every app link points at the bare root, so a
+                      signup cannot be told apart from a login, and no new-vs-returning dimension is
+                      available. Measured against real signup counts, at most <b>~7%</b> of app visits
+                      became a signup — the large majority are existing users logging in. Product and
+                      feature pages sit on the path existing users take to reach the app, which inflates
+                      their rate relative to blog content that draws first-time visitors from search.
+                      {" "}To separate the two, point "Get started" and "Log in" at distinct URLs.
+                    </div>
+                  )}
                   <div style={{ fontSize: 11, color: C.muted, marginBottom: 10, textAlign: "left" }}>
                     ★ = high-intent. Conversions are defined by filter, not by raw Plausible goal:
                     the site's only two goals are "any outbound click" and "any form submit", so
