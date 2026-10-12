@@ -1938,7 +1938,8 @@ export default function CompyDashboard() {
                 { key: "bounce_rate_pct", label: "Bounce",     align: "right", get: p => p.bounce_rate_pct },
                 { key: "app_clicks",      label: "App clicks", align: "right", get: p => p.app_clicks },
                 { key: "form_fills",      label: "Form fills", align: "right", get: p => p.form_fills },
-                { key: "other_clicks",    label: "Other clicks", align: "right", get: p => p.other_clicks },
+                { key: "dev_clicks",      label: "Docs/GitHub", align: "right", get: p => p.dev_clicks },
+                { key: "external_clicks", label: "External",   align: "right", get: p => p.external_clicks },
               ];
 
               let rows = (cq.pages || []).filter(p => !cqTrack || p.track === cqTrack);
@@ -1973,11 +1974,13 @@ export default function CompyDashboard() {
                     second page. The onward sections below are where those sessions <em>ended</em>, which for a
                     two-page visit is the second page; longer visits show only their last page, since Plausible
                     has no full path report.
-                    {" "}Per-article <b>App clicks</b> (to app.growthbook.io), <b>Form fills</b> (any form)
-                    and <b>Other clicks</b> (outbound to anywhere else — GitHub, docs, social) are credited
-                    to the page that <em>won</em> the visitor, so an article gets credit for what its
-                    readers went on to do. Other clicks uses a negated filter rather than subtraction:
-                    one visitor can click both the app and GitHub, so the two buckets legitimately overlap.
+                    {" "}Per-article click columns are credited to the page that <em>won</em> the visitor.
+                    <b> App clicks</b> go to app.growthbook.io, <b>Docs/GitHub</b> to the documentation or
+                    GrowthBook's own repos (evaluation, not signup), and <b>External</b> genuinely off-site.
+                    That split matters: 88% of all "outbound" clicks go to the app and ~99% to a
+                    GrowthBook-owned property — they only register as outbound because the app and docs sit
+                    on separate subdomains. External is a negated filter over every owned destination, not a
+                    subtraction, since one visitor can click both the app and LinkedIn.
                   </p>
 
                   <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
@@ -2119,7 +2122,7 @@ export default function CompyDashboard() {
                             {COLS.slice(1).map(c => {
                               const v = c.get(p);
                               const isConv = c.key === "app_clicks" || c.key === "form_fills"
-                                          || c.key === "other_clicks";
+                                          || c.key === "dev_clicks" || c.key === "external_clicks";
                               const txt = v == null ? "—"
                                 : isConv ? v.toLocaleString()
                                 : c.key === "ctr_pct" || c.key === "bounce_rate_pct"
