@@ -1999,11 +1999,17 @@ export default function CompyDashboard() {
                                <span style={{ color: C.muted, fontSize: 10 }}> of sessions</span></div>
                           <div><div style={{ color: C.muted, fontSize: 10 }}>BOUNCE</div>
                                <b>{fmtP(t.bounce_rate_pct)}</b></div>
-                          <div><div style={{ color: C.muted, fontSize: 10 }}>FORMS</div>
-                               <b>{t.form_submissions}</b>
-                               <span style={{ color: C.muted }}>
-                                 {t.conv_reliable ? ` (${fmtP(t.form_conv_pct)})` : ""}
-                               </span></div>
+                          {(t.conversions || []).map(cv => (
+                            <div key={cv.key}>
+                              <div style={{ color: C.muted, fontSize: 10, whiteSpace: "nowrap" }}>
+                                {cv.label.toUpperCase()}{cv.high_intent ? " ★" : ""}
+                              </div>
+                              <b>{cv.visitors}</b>
+                              <span style={{ color: C.muted }}>
+                                {cv.reliable ? ` (${fmtP(cv.rate_pct)})` : ""}
+                              </span>
+                            </div>
+                          ))}
                         </div>
                         {(t.onward_sections || []).length > 0 && (
                           <div style={{ fontSize: 11, color: C.muted, marginTop: 10,
@@ -2021,14 +2027,23 @@ export default function CompyDashboard() {
                     ))}
                   </div>
 
-                  {!anyReliable && (
-                    <div style={{ fontSize: 11, color: C.warning, marginBottom: 10, textAlign: "left" }}>
-                      ⚠️ Form submissions are in single digits per track, so the conversion
-                      <em> rates</em> are not yet comparable — one or two forms would reverse them.
-                      The counts are shown; the percentages are withheld until n ≥ 30. Engagement
-                      metrics above run to thousands of pageviews and are solid now.
-                    </div>
-                  )}
+                  <div style={{ fontSize: 11, color: C.muted, marginBottom: 10, textAlign: "left" }}>
+                    ★ = high-intent. Conversions are defined by filter, not by raw Plausible goal:
+                    the site's only two goals are "any outbound click" and "any form submit", so
+                    unfiltered they count clicks to the careers page and Steam Deck giveaway entries
+                    as conversions. <b>App signup click</b> is outbound traffic to app.growthbook.io;
+                    <b> Demo request</b> and <b>Contact form</b> are form submits on those specific
+                    pages. Giveaway and event-registration forms are excluded deliberately.
+                    {!anyReliable && (
+                      <span style={{ color: C.warning }}>
+                        {" "}⚠️ Every conversion type is currently under {cq.conv_reliable_min} per
+                        track, so the <em>rates</em> are not comparable — one or two events would
+                        reverse them. Counts are shown; percentages are withheld until there are
+                        enough. Engagement metrics above run to thousands of pageviews and are
+                        solid now.
+                      </span>
+                    )}
+                  </div>
 
                   <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center", marginBottom: 8 }}>
                     {[null, ...tracks.map(t => t.track)].map(tk => (

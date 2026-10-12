@@ -8416,7 +8416,7 @@
           "12 Account Based Marketing Tactics That Work"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub of 348 pieces\u2014primarily articles plus a handful of curated collections, guides, and events\u2014covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking actionable how-to guidance and use cases."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub of nearly 350 articles, guides, and curated collections covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking actionable strategies and use cases relevant to Optimizely's platform capabilities."
       }
     ]
   },
@@ -15893,8 +15893,24 @@
       "days": 28
     },
     "source": "plausible",
-    "goal_primary": "Form: Submission",
-    "goal_secondary": "Outbound Link: Click",
+    "conversion_defs": [
+      {
+        "key": "app_clicks",
+        "label": "App signup click",
+        "high_intent": false
+      },
+      {
+        "key": "demo_requests",
+        "label": "Demo request",
+        "high_intent": true
+      },
+      {
+        "key": "contact",
+        "label": "Contact form",
+        "high_intent": true
+      }
+    ],
+    "conv_reliable_min": 30,
     "thin_pageviews": 10,
     "tracks": [
       {
@@ -15930,10 +15946,32 @@
             "visitors": 12
           }
         ],
-        "form_submissions": 6,
-        "form_conv_pct": 0.34,
-        "outbound_clicks": 133,
-        "outbound_conv_pct": 7.5,
+        "conversions": [
+          {
+            "key": "app_clicks",
+            "label": "App signup click",
+            "visitors": 20,
+            "high_intent": false,
+            "rate_pct": 1.12,
+            "reliable": false
+          },
+          {
+            "key": "demo_requests",
+            "label": "Demo request",
+            "visitors": 1,
+            "high_intent": true,
+            "rate_pct": 0.06,
+            "reliable": false
+          },
+          {
+            "key": "contact",
+            "label": "Contact form",
+            "visitors": 0,
+            "high_intent": true,
+            "rate_pct": 0.0,
+            "reliable": false
+          }
+        ],
         "conv_reliable": false
       },
       {
@@ -15957,10 +15995,32 @@
             "visitors": 35
           }
         ],
-        "form_submissions": 3,
-        "form_conv_pct": 0.1,
-        "outbound_clicks": 76,
-        "outbound_conv_pct": 2.5,
+        "conversions": [
+          {
+            "key": "app_clicks",
+            "label": "App signup click",
+            "visitors": 24,
+            "high_intent": false,
+            "rate_pct": 0.8,
+            "reliable": false
+          },
+          {
+            "key": "demo_requests",
+            "label": "Demo request",
+            "visitors": 1,
+            "high_intent": true,
+            "rate_pct": 0.03,
+            "reliable": false
+          },
+          {
+            "key": "contact",
+            "label": "Contact form",
+            "visitors": 1,
+            "high_intent": true,
+            "rate_pct": 0.03,
+            "reliable": false
+          }
+        ],
         "conv_reliable": false
       }
     ],
@@ -35847,22 +35907,6 @@
             "videos": 79
           }
         },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 79,
-            "raw_views": 103,
-            "watch_minutes": 567,
-            "subs_gained": 1,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 97,
-            "raw_views": 114,
-            "watch_minutes": 759,
-            "subs_gained": 3,
-            "videos": 2
-          }
-        },
         "Podcast episode": {
           "current": {
             "engaged_views": 864,
@@ -35877,6 +35921,22 @@
             "watch_minutes": 1725,
             "subs_gained": 1,
             "videos": 29
+          }
+        },
+        "Podcast clip": {
+          "current": {
+            "engaged_views": 6008,
+            "raw_views": 24236,
+            "watch_minutes": 1893,
+            "subs_gained": 8,
+            "videos": 61
+          },
+          "prior": {
+            "engaged_views": 726,
+            "raw_views": 2847,
+            "watch_minutes": 229,
+            "subs_gained": 1,
+            "videos": 38
           }
         },
         "Other webinar": {
@@ -35895,20 +35955,20 @@
             "videos": 10
           }
         },
-        "Podcast clip": {
+        "Kohavi webinar": {
           "current": {
-            "engaged_views": 6008,
-            "raw_views": 24236,
-            "watch_minutes": 1893,
-            "subs_gained": 8,
-            "videos": 61
+            "engaged_views": 79,
+            "raw_views": 103,
+            "watch_minutes": 567,
+            "subs_gained": 1,
+            "videos": 2
           },
           "prior": {
-            "engaged_views": 726,
-            "raw_views": 2847,
-            "watch_minutes": 229,
-            "subs_gained": 1,
-            "videos": 38
+            "engaged_views": 97,
+            "raw_views": 114,
+            "watch_minutes": 759,
+            "subs_gained": 3,
+            "videos": 2
           }
         },
         "Other short": {
