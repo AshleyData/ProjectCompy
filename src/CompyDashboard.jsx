@@ -1936,7 +1936,9 @@ export default function CompyDashboard() {
                 { key: "pages_per_session", label: "Pg/session", align: "right", get: p => p.pages_per_session },
                 { key: "went_deeper_pct", label: "Went deeper", align: "right", get: p => p.went_deeper_pct },
                 { key: "bounce_rate_pct", label: "Bounce",     align: "right", get: p => p.bounce_rate_pct },
-                { key: "visit_duration_s",label: "Visit len",  align: "right", get: p => p.visit_duration_s },
+                { key: "app_clicks",      label: "App clicks", align: "right", get: p => p.app_clicks },
+                { key: "form_fills",      label: "Form fills", align: "right", get: p => p.form_fills },
+                { key: "other_clicks",    label: "Other clicks", align: "right", get: p => p.other_clicks },
               ];
 
               let rows = (cq.pages || []).filter(p => !cqTrack || p.track === cqTrack);
@@ -1971,6 +1973,11 @@ export default function CompyDashboard() {
                     second page. The onward sections below are where those sessions <em>ended</em>, which for a
                     two-page visit is the second page; longer visits show only their last page, since Plausible
                     has no full path report.
+                    {" "}Per-article <b>App clicks</b> (to app.growthbook.io), <b>Form fills</b> (any form)
+                    and <b>Other clicks</b> (outbound to anywhere else — GitHub, docs, social) are credited
+                    to the page that <em>won</em> the visitor, so an article gets credit for what its
+                    readers went on to do. Other clicks uses a negated filter rather than subtraction:
+                    one visitor can click both the app and GitHub, so the two buckets legitimately overlap.
                   </p>
 
                   <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 14 }}>
@@ -2111,7 +2118,10 @@ export default function CompyDashboard() {
                             </td>
                             {COLS.slice(1).map(c => {
                               const v = c.get(p);
+                              const isConv = c.key === "app_clicks" || c.key === "form_fills"
+                                          || c.key === "other_clicks";
                               const txt = v == null ? "—"
+                                : isConv ? v.toLocaleString()
                                 : c.key === "ctr_pct" || c.key === "bounce_rate_pct"
                                   || c.key === "went_deeper_pct" ? `${v}%`
                                 : c.key === "time_on_page_s" || c.key === "visit_duration_s" ? `${v}s`
@@ -2120,7 +2130,9 @@ export default function CompyDashboard() {
                                 <td key={c.key} style={{ padding: "5px 8px", textAlign: "right",
                                      borderBottom: `1px solid ${C.border}`, whiteSpace: "nowrap",
                                      fontVariantNumeric: "tabular-nums",
-                                     color: v == null ? C.muted : "inherit" }}>{txt}</td>
+                                     fontWeight: isConv && v > 0 ? 700 : 400,
+                                     color: v == null ? C.muted
+                                          : isConv && v === 0 ? C.muted : "inherit" }}>{txt}</td>
                               );
                             })}
                           </tr>

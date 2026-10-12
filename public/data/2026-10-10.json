@@ -8416,7 +8416,7 @@
           "12 Account Based Marketing Tactics That Work"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub of nearly 350 articles, guides, and curated collections covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking actionable strategies and use cases relevant to Optimizely's platform capabilities."
+        "summary": "Optimizely's /field-notes section is a practitioner-focused content hub of 348 pieces\u2014primarily articles plus a handful of curated collections, guides, and events\u2014covering experimentation, A/B testing, personalization, and B2B marketing tactics. It targets digital marketers, growth teams, and ecommerce professionals seeking actionable strategies and use cases."
       }
     ]
   },
@@ -16042,6 +16042,9 @@
         "entry_pageviews": 350,
         "pages_per_session": 1.08,
         "went_deeper_pct": 7,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -16061,6 +16064,9 @@
         "entry_pageviews": 219,
         "pages_per_session": 1.11,
         "went_deeper_pct": 10,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 4,
         "thin": false
       },
       {
@@ -16080,6 +16086,9 @@
         "entry_pageviews": 164,
         "pages_per_session": 1.04,
         "went_deeper_pct": 6,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 6,
         "thin": false
       },
       {
@@ -16099,6 +16108,9 @@
         "entry_pageviews": 183,
         "pages_per_session": 1.4,
         "went_deeper_pct": 24,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 6,
         "thin": false
       },
       {
@@ -16118,6 +16130,9 @@
         "entry_pageviews": 89,
         "pages_per_session": 1.16,
         "went_deeper_pct": 16,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16137,6 +16152,9 @@
         "entry_pageviews": 99,
         "pages_per_session": 1.05,
         "went_deeper_pct": 7,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -16156,6 +16174,9 @@
         "entry_pageviews": 117,
         "pages_per_session": 1.41,
         "went_deeper_pct": 23,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -16175,6 +16196,9 @@
         "entry_pageviews": 80,
         "pages_per_session": 1.25,
         "went_deeper_pct": 16,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -16194,6 +16218,9 @@
         "entry_pageviews": 37,
         "pages_per_session": 1.23,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16213,6 +16240,9 @@
         "entry_pageviews": 79,
         "pages_per_session": 1.08,
         "went_deeper_pct": 10,
+        "app_clicks": 0,
+        "form_fills": 1,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16232,6 +16262,9 @@
         "entry_pageviews": 76,
         "pages_per_session": 1.1,
         "went_deeper_pct": 10,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16251,6 +16284,9 @@
         "entry_pageviews": 52,
         "pages_per_session": 1.08,
         "went_deeper_pct": 10,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16270,6 +16306,9 @@
         "entry_pageviews": 52,
         "pages_per_session": 1.06,
         "went_deeper_pct": 6,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16289,6 +16328,9 @@
         "entry_pageviews": 84,
         "pages_per_session": 1.4,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 4,
         "thin": false
       },
       {
@@ -16308,6 +16350,9 @@
         "entry_pageviews": 68,
         "pages_per_session": 1.39,
         "went_deeper_pct": 24,
+        "app_clicks": 3,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -16327,6 +16372,9 @@
         "entry_pageviews": 89,
         "pages_per_session": 1.24,
         "went_deeper_pct": 19,
+        "app_clicks": 2,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -16346,6 +16394,9 @@
         "entry_pageviews": 29,
         "pages_per_session": 1.12,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16365,6 +16416,9 @@
         "entry_pageviews": 65,
         "pages_per_session": 1.1,
         "went_deeper_pct": 7,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16384,6 +16438,9 @@
         "entry_pageviews": 34,
         "pages_per_session": 1.03,
         "went_deeper_pct": 3,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16403,6 +16460,9 @@
         "entry_pageviews": 52,
         "pages_per_session": 1.16,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16422,6 +16482,9 @@
         "entry_pageviews": 56,
         "pages_per_session": 1.08,
         "went_deeper_pct": 4,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16441,6 +16504,9 @@
         "entry_pageviews": 27,
         "pages_per_session": 1.04,
         "went_deeper_pct": 4,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16460,6 +16526,9 @@
         "entry_pageviews": 44,
         "pages_per_session": 1.19,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16479,6 +16548,9 @@
         "entry_pageviews": 50,
         "pages_per_session": 1.28,
         "went_deeper_pct": 21,
+        "app_clicks": 4,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16498,6 +16570,9 @@
         "entry_pageviews": 33,
         "pages_per_session": 1.83,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -16517,6 +16592,9 @@
         "entry_pageviews": 29,
         "pages_per_session": 1.04,
         "went_deeper_pct": 4,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16536,6 +16614,9 @@
         "entry_pageviews": 554,
         "pages_per_session": 1.32,
         "went_deeper_pct": 26,
+        "app_clicks": 8,
+        "form_fills": 2,
+        "other_clicks": 51,
         "thin": false
       },
       {
@@ -16555,6 +16636,9 @@
         "entry_pageviews": 30,
         "pages_per_session": 1.03,
         "went_deeper_pct": 3,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16574,6 +16658,9 @@
         "entry_pageviews": 32,
         "pages_per_session": 1.19,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16593,6 +16680,9 @@
         "entry_pageviews": 38,
         "pages_per_session": 1.23,
         "went_deeper_pct": 19,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16612,6 +16702,9 @@
         "entry_pageviews": 46,
         "pages_per_session": 1.24,
         "went_deeper_pct": 14,
+        "app_clicks": 1,
+        "form_fills": 1,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16631,6 +16724,9 @@
         "entry_pageviews": 32,
         "pages_per_session": 1.23,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 1,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -16650,6 +16746,9 @@
         "entry_pageviews": 33,
         "pages_per_session": 1.74,
         "went_deeper_pct": 37,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -16669,6 +16768,9 @@
         "entry_pageviews": 22,
         "pages_per_session": 1.05,
         "went_deeper_pct": 5,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16688,6 +16790,9 @@
         "entry_pageviews": 23,
         "pages_per_session": 1.21,
         "went_deeper_pct": 16,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16707,6 +16812,9 @@
         "entry_pageviews": 19,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16726,6 +16834,9 @@
         "entry_pageviews": 18,
         "pages_per_session": 1.2,
         "went_deeper_pct": 13,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16745,6 +16856,9 @@
         "entry_pageviews": 27,
         "pages_per_session": 1.8,
         "went_deeper_pct": 27,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16764,6 +16878,9 @@
         "entry_pageviews": 26,
         "pages_per_session": 1.13,
         "went_deeper_pct": 13,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16783,6 +16900,9 @@
         "entry_pageviews": 23,
         "pages_per_session": 1.1,
         "went_deeper_pct": 10,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16802,6 +16922,9 @@
         "entry_pageviews": 43,
         "pages_per_session": 1.54,
         "went_deeper_pct": 29,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -16821,6 +16944,9 @@
         "entry_pageviews": 13,
         "pages_per_session": 1.08,
         "went_deeper_pct": 8,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16840,6 +16966,9 @@
         "entry_pageviews": 13,
         "pages_per_session": 1.3,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16859,6 +16988,9 @@
         "entry_pageviews": 21,
         "pages_per_session": 1.75,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16878,6 +17010,9 @@
         "entry_pageviews": 16,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16897,6 +17032,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 1.09,
         "went_deeper_pct": 9,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16916,6 +17054,9 @@
         "entry_pageviews": 16,
         "pages_per_session": 1.07,
         "went_deeper_pct": 13,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16935,6 +17076,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16954,6 +17098,9 @@
         "entry_pageviews": 18,
         "pages_per_session": 1.12,
         "went_deeper_pct": 19,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -16973,6 +17120,9 @@
         "entry_pageviews": 25,
         "pages_per_session": 1.19,
         "went_deeper_pct": 19,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -16992,6 +17142,9 @@
         "entry_pageviews": 57,
         "pages_per_session": 1.63,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 2,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -17011,6 +17164,9 @@
         "entry_pageviews": 26,
         "pages_per_session": 1.24,
         "went_deeper_pct": 14,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17030,6 +17186,9 @@
         "entry_pageviews": 17,
         "pages_per_session": 1.21,
         "went_deeper_pct": 29,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -17049,6 +17208,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.75,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -17068,6 +17230,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.25,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17087,6 +17252,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.0,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": true
       },
       {
@@ -17106,6 +17274,9 @@
         "entry_pageviews": 21,
         "pages_per_session": 2.62,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17125,6 +17296,9 @@
         "entry_pageviews": 17,
         "pages_per_session": 1.06,
         "went_deeper_pct": 6,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17144,6 +17318,9 @@
         "entry_pageviews": 21,
         "pages_per_session": 1.11,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17163,6 +17340,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 1.0,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -17182,6 +17362,9 @@
         "entry_pageviews": 33,
         "pages_per_session": 2.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17201,6 +17384,9 @@
         "entry_pageviews": 28,
         "pages_per_session": 1.4,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17220,6 +17406,9 @@
         "entry_pageviews": 18,
         "pages_per_session": 1.5,
         "went_deeper_pct": 17,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17239,6 +17428,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 1.17,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17258,6 +17450,9 @@
         "entry_pageviews": 17,
         "pages_per_session": 1.13,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17277,6 +17472,9 @@
         "entry_pageviews": 25,
         "pages_per_session": 1.19,
         "went_deeper_pct": 5,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17296,6 +17494,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17315,6 +17516,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17334,6 +17538,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 3.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17353,6 +17560,9 @@
         "entry_pageviews": 37,
         "pages_per_session": 1.95,
         "went_deeper_pct": 32,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17372,6 +17582,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.57,
         "went_deeper_pct": 43,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": true
       },
       {
@@ -17391,6 +17604,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 1.09,
         "went_deeper_pct": 9,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17410,6 +17626,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.22,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17429,6 +17648,9 @@
         "entry_pageviews": 20,
         "pages_per_session": 1.18,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17448,6 +17670,9 @@
         "entry_pageviews": 22,
         "pages_per_session": 1.57,
         "went_deeper_pct": 21,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17467,6 +17692,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 1.71,
         "went_deeper_pct": 29,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17486,6 +17714,9 @@
         "entry_pageviews": 20,
         "pages_per_session": 1.67,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -17505,6 +17736,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17524,6 +17758,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17543,6 +17780,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.4,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17562,6 +17802,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17581,6 +17824,9 @@
         "entry_pageviews": 16,
         "pages_per_session": 1.78,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17600,6 +17846,9 @@
         "entry_pageviews": 23,
         "pages_per_session": 1.64,
         "went_deeper_pct": 29,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17619,6 +17868,9 @@
         "entry_pageviews": 13,
         "pages_per_session": 1.08,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17638,6 +17890,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17657,6 +17912,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17676,6 +17934,9 @@
         "entry_pageviews": 13,
         "pages_per_session": 1.3,
         "went_deeper_pct": 10,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17695,6 +17956,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.29,
         "went_deeper_pct": 14,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17714,6 +17978,9 @@
         "entry_pageviews": 28,
         "pages_per_session": 1.08,
         "went_deeper_pct": 8,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17733,6 +18000,9 @@
         "entry_pageviews": 24,
         "pages_per_session": 1.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17752,6 +18022,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.43,
         "went_deeper_pct": 43,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17771,6 +18044,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.11,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17790,6 +18066,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.22,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17809,6 +18088,9 @@
         "entry_pageviews": 25,
         "pages_per_session": 1.14,
         "went_deeper_pct": 14,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17828,6 +18110,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.29,
         "went_deeper_pct": 14,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17847,6 +18132,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17866,6 +18154,9 @@
         "entry_pageviews": 17,
         "pages_per_session": 1.7,
         "went_deeper_pct": 30,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17885,6 +18176,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 1.17,
         "went_deeper_pct": 17,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -17904,6 +18198,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.1,
         "went_deeper_pct": 10,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -17923,6 +18220,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.29,
         "went_deeper_pct": 71,
+        "app_clicks": 3,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17942,6 +18242,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17961,6 +18264,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17980,6 +18286,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -17999,6 +18308,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18018,6 +18330,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.2,
         "went_deeper_pct": 40,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -18037,6 +18352,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 2.8,
         "went_deeper_pct": 60,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18056,6 +18374,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18075,6 +18396,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.5,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18094,6 +18418,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18113,6 +18440,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18132,6 +18462,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 2.0,
         "went_deeper_pct": 50,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -18151,6 +18484,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 1.4,
         "went_deeper_pct": 30,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -18170,6 +18506,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18189,6 +18528,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 4.0,
         "went_deeper_pct": 67,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18208,6 +18550,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.17,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18227,6 +18572,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18246,6 +18594,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18265,6 +18616,9 @@
         "entry_pageviews": 26,
         "pages_per_session": 1.04,
         "went_deeper_pct": 4,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -18284,6 +18638,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18303,6 +18660,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18322,6 +18682,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.5,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18341,6 +18704,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.5,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18360,6 +18726,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18379,6 +18748,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.25,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18398,6 +18770,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.12,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18417,6 +18792,9 @@
         "entry_pageviews": 15,
         "pages_per_session": 1.25,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -18436,6 +18814,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.1,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -18455,6 +18836,9 @@
         "entry_pageviews": 22,
         "pages_per_session": 1.83,
         "went_deeper_pct": 25,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -18474,6 +18858,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18493,6 +18880,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18512,6 +18902,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 2.2,
         "went_deeper_pct": 60,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18531,6 +18924,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18550,6 +18946,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 1.56,
         "went_deeper_pct": 22,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18569,6 +18968,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -18588,6 +18990,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -18607,6 +19012,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18626,6 +19034,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 1.09,
         "went_deeper_pct": 9,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -18645,6 +19056,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 2.0,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18664,6 +19078,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 2.33,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18683,6 +19100,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18702,6 +19122,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.11,
         "went_deeper_pct": 11,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18721,6 +19144,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18740,6 +19166,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18759,6 +19188,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.25,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18778,6 +19210,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 20,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18797,6 +19232,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18816,6 +19254,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.33,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18835,6 +19276,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18854,6 +19298,9 @@
         "entry_pageviews": 37,
         "pages_per_session": 1.42,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -18873,6 +19320,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18892,6 +19342,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18911,6 +19364,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18930,6 +19386,9 @@
         "entry_pageviews": 11,
         "pages_per_session": 1.57,
         "went_deeper_pct": 14,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -18949,6 +19408,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18968,6 +19430,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -18987,6 +19452,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19006,6 +19474,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.25,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19025,6 +19496,9 @@
         "entry_pageviews": 24,
         "pages_per_session": 1.09,
         "went_deeper_pct": 5,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -19044,6 +19518,9 @@
         "entry_pageviews": 26,
         "pages_per_session": 1.04,
         "went_deeper_pct": 4,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -19063,6 +19540,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19082,6 +19562,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19101,6 +19584,9 @@
         "entry_pageviews": 15,
         "pages_per_session": 3.75,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -19120,6 +19606,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.75,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -19139,6 +19628,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19158,6 +19650,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19177,6 +19672,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.17,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19196,6 +19694,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 2.0,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -19215,6 +19716,9 @@
         "entry_pageviews": 40,
         "pages_per_session": 2.67,
         "went_deeper_pct": 47,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -19234,6 +19738,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19253,6 +19760,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19272,6 +19782,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.33,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19291,6 +19804,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 2.5,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -19310,6 +19826,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.5,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19329,6 +19848,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19348,6 +19870,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.75,
         "went_deeper_pct": 75,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -19367,6 +19892,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19386,6 +19914,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 3.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19405,6 +19936,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19424,6 +19958,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19443,6 +19980,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19462,6 +20002,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19481,6 +20024,9 @@
         "entry_pageviews": 39,
         "pages_per_session": 1.5,
         "went_deeper_pct": 27,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": false
       },
       {
@@ -19500,6 +20046,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19519,6 +20068,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19538,6 +20090,9 @@
         "entry_pageviews": 19,
         "pages_per_session": 1.19,
         "went_deeper_pct": 31,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 3,
         "thin": false
       },
       {
@@ -19557,6 +20112,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19576,6 +20134,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19595,6 +20156,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19614,6 +20178,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19633,6 +20200,9 @@
         "entry_pageviews": 24,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -19652,6 +20222,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19671,6 +20244,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 3.33,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19690,6 +20266,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19709,6 +20288,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -19728,6 +20310,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19747,6 +20332,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19766,6 +20354,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 2.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19785,6 +20376,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.25,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19804,6 +20398,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19823,6 +20420,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19842,6 +20442,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.12,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19861,6 +20464,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.43,
         "went_deeper_pct": 29,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19880,6 +20486,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19899,6 +20508,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19918,6 +20530,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.5,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19937,6 +20552,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19956,6 +20574,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19975,6 +20596,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 1.33,
         "went_deeper_pct": 33,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -19994,6 +20618,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 2.67,
         "went_deeper_pct": 67,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20013,6 +20640,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20032,6 +20662,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20051,6 +20684,9 @@
         "entry_pageviews": 16,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -20070,6 +20706,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20089,6 +20728,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20108,6 +20750,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 3.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20127,6 +20772,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.33,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20146,6 +20794,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20165,6 +20816,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 3.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20184,6 +20838,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20203,6 +20860,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20222,6 +20882,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20241,6 +20904,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20260,6 +20926,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20279,6 +20948,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20298,6 +20970,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20317,6 +20992,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20336,6 +21014,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 4.0,
         "went_deeper_pct": 100,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20355,6 +21036,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20374,6 +21058,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20393,6 +21080,9 @@
         "entry_pageviews": 30,
         "pages_per_session": 2.5,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -20412,6 +21102,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.4,
         "went_deeper_pct": 40,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20431,6 +21124,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20450,6 +21146,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20469,6 +21168,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.67,
         "went_deeper_pct": 67,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20488,6 +21190,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20507,6 +21212,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.25,
         "went_deeper_pct": 12,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20526,6 +21234,9 @@
         "entry_pageviews": 28,
         "pages_per_session": 1.08,
         "went_deeper_pct": 8,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -20545,6 +21256,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 3.0,
         "went_deeper_pct": 67,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20564,6 +21278,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 6.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20583,6 +21300,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 1.43,
         "went_deeper_pct": 29,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20602,6 +21322,9 @@
         "entry_pageviews": 31,
         "pages_per_session": 2.38,
         "went_deeper_pct": 38,
+        "app_clicks": 0,
+        "form_fills": 1,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -20621,6 +21344,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20640,6 +21366,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20659,6 +21388,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20678,6 +21410,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.2,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20697,6 +21432,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20716,6 +21454,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20735,6 +21476,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20754,6 +21498,9 @@
         "entry_pageviews": 15,
         "pages_per_session": 1.67,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20773,6 +21520,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20792,6 +21542,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -20811,6 +21564,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20830,6 +21586,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20849,6 +21608,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20868,6 +21630,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20887,6 +21652,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20906,6 +21674,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20925,6 +21696,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 2.0,
         "went_deeper_pct": 57,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20944,6 +21718,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20963,6 +21740,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.67,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -20982,6 +21762,9 @@
         "entry_pageviews": 25,
         "pages_per_session": 1.09,
         "went_deeper_pct": 4,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -21001,6 +21784,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21020,6 +21806,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21039,6 +21828,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21058,6 +21850,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.17,
         "went_deeper_pct": 17,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21077,6 +21872,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21096,6 +21894,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21115,6 +21916,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.75,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21134,6 +21938,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21153,6 +21960,9 @@
         "entry_pageviews": 15,
         "pages_per_session": 2.14,
         "went_deeper_pct": 14,
+        "app_clicks": 1,
+        "form_fills": 1,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21172,6 +21982,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 2.0,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21191,6 +22004,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.67,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -21210,6 +22026,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21229,6 +22048,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -21248,6 +22070,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 4.5,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21267,6 +22092,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 2.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21286,6 +22114,9 @@
         "entry_pageviews": 45,
         "pages_per_session": 45.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21305,6 +22136,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21324,6 +22158,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21343,6 +22180,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21362,6 +22202,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21381,6 +22224,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 4.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21400,6 +22246,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21419,6 +22268,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21438,6 +22290,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 1.8,
         "went_deeper_pct": 40,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21457,6 +22312,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.5,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21476,6 +22334,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21495,6 +22356,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21514,6 +22378,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21533,6 +22400,9 @@
         "entry_pageviews": 10,
         "pages_per_session": 5.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21552,6 +22422,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21571,6 +22444,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21590,6 +22466,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21609,6 +22488,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21628,6 +22510,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21647,6 +22532,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21666,6 +22554,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21685,6 +22576,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21704,6 +22598,9 @@
         "entry_pageviews": 13,
         "pages_per_session": 1.44,
         "went_deeper_pct": 22,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21723,6 +22620,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21742,6 +22642,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21761,6 +22664,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21780,6 +22686,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21799,6 +22708,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21818,6 +22730,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21837,6 +22752,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21856,6 +22774,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21875,6 +22796,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21894,6 +22818,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21913,6 +22840,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21932,6 +22862,9 @@
         "entry_pageviews": 7,
         "pages_per_session": 1.4,
         "went_deeper_pct": 40,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21951,6 +22884,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21970,6 +22906,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -21989,6 +22928,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22008,6 +22950,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22027,6 +22972,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22046,6 +22994,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22065,6 +23016,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22084,6 +23038,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22103,6 +23060,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22122,6 +23082,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22141,6 +23104,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22160,6 +23126,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22179,6 +23148,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22198,6 +23170,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22217,6 +23192,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 1.5,
         "went_deeper_pct": 25,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22236,6 +23214,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22255,6 +23236,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22274,6 +23258,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22293,6 +23280,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22312,6 +23302,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22331,6 +23324,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22350,6 +23346,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22369,6 +23368,9 @@
         "entry_pageviews": 9,
         "pages_per_session": 2.25,
         "went_deeper_pct": 75,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22388,6 +23390,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22407,6 +23412,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22426,6 +23434,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22445,6 +23456,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22464,6 +23478,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22483,6 +23500,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22502,6 +23522,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22521,6 +23544,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22540,6 +23566,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22559,6 +23588,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22578,6 +23610,9 @@
         "entry_pageviews": 24,
         "pages_per_session": 1.71,
         "went_deeper_pct": 29,
+        "app_clicks": 1,
+        "form_fills": 0,
+        "other_clicks": 2,
         "thin": false
       },
       {
@@ -22597,6 +23632,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.67,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22616,6 +23654,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22635,6 +23676,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22654,6 +23698,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22673,6 +23720,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22692,6 +23742,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22711,6 +23764,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22730,6 +23786,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22749,6 +23808,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22768,6 +23830,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22787,6 +23852,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22806,6 +23874,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22825,6 +23896,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22844,6 +23918,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22863,6 +23940,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22882,6 +23962,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22901,6 +23984,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22920,6 +24006,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22939,6 +24028,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22958,6 +24050,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22977,6 +24072,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -22996,6 +24094,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23015,6 +24116,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23034,6 +24138,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23053,6 +24160,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23072,6 +24182,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23091,6 +24204,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23110,6 +24226,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23129,6 +24248,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23148,6 +24270,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23167,6 +24292,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23186,6 +24314,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23205,6 +24336,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23224,6 +24358,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23243,6 +24380,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23262,6 +24402,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23281,6 +24424,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23300,6 +24446,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23319,6 +24468,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23338,6 +24490,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23357,6 +24512,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23376,6 +24534,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23395,6 +24556,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23414,6 +24578,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23433,6 +24600,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23452,6 +24622,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23471,6 +24644,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23490,6 +24666,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23509,6 +24688,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23528,6 +24710,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23547,6 +24732,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23566,6 +24754,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23585,6 +24776,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23604,6 +24798,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23623,6 +24820,9 @@
         "entry_pageviews": 8,
         "pages_per_session": 1.6,
         "went_deeper_pct": 20,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23642,6 +24842,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23661,6 +24864,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23680,6 +24886,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23699,6 +24908,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23718,6 +24930,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 3.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23737,6 +24952,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23756,6 +24974,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23775,6 +24996,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23794,6 +25018,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23813,6 +25040,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 2.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23832,6 +25062,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23851,6 +25084,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23870,6 +25106,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23889,6 +25128,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23908,6 +25150,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23927,6 +25172,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23946,6 +25194,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23965,6 +25216,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -23984,6 +25238,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24003,6 +25260,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24022,6 +25282,9 @@
         "entry_pageviews": 17,
         "pages_per_session": 1.89,
         "went_deeper_pct": 56,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24041,6 +25304,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24060,6 +25326,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24079,6 +25348,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24098,6 +25370,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24117,6 +25392,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24136,6 +25414,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24155,6 +25436,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24174,6 +25458,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24193,6 +25480,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24212,6 +25502,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24231,6 +25524,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24250,6 +25546,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24269,6 +25568,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24288,6 +25590,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24307,6 +25612,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24326,6 +25634,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24345,6 +25656,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24364,6 +25678,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24383,6 +25700,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24402,6 +25722,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24421,6 +25744,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24440,6 +25766,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24459,6 +25788,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24478,6 +25810,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24497,6 +25832,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24516,6 +25854,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24535,6 +25876,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24554,6 +25898,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24573,6 +25920,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24592,6 +25942,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24611,6 +25964,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24630,6 +25986,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24649,6 +26008,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24668,6 +26030,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24687,6 +26052,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24706,6 +26074,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24725,6 +26096,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24744,6 +26118,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24763,6 +26140,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24782,6 +26162,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24801,6 +26184,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24820,6 +26206,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24839,6 +26228,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24858,6 +26250,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24877,6 +26272,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24896,6 +26294,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24915,6 +26316,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24934,6 +26338,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24953,6 +26360,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24972,6 +26382,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -24991,6 +26404,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25010,6 +26426,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25029,6 +26448,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25048,6 +26470,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25067,6 +26492,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25086,6 +26514,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25105,6 +26536,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25124,6 +26558,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25143,6 +26580,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25162,6 +26602,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25181,6 +26624,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25200,6 +26646,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25219,6 +26668,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25238,6 +26690,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25257,6 +26712,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25276,6 +26734,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25295,6 +26756,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25314,6 +26778,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25333,6 +26800,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25352,6 +26822,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25371,6 +26844,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25390,6 +26866,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25409,6 +26888,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25428,6 +26910,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25447,6 +26932,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25466,6 +26954,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25485,6 +26976,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25504,6 +26998,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25523,6 +27020,9 @@
         "entry_pageviews": 14,
         "pages_per_session": 1.56,
         "went_deeper_pct": 44,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25542,6 +27042,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25561,6 +27064,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25580,6 +27086,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 2.0,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25599,6 +27108,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25618,6 +27130,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25637,6 +27152,9 @@
         "entry_pageviews": 18,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -25656,6 +27174,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25675,6 +27196,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25694,6 +27218,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25713,6 +27240,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 4.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25732,6 +27262,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25751,6 +27284,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25770,6 +27306,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25789,6 +27328,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25808,6 +27350,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25827,6 +27372,9 @@
         "entry_pageviews": 430,
         "pages_per_session": 1.08,
         "went_deeper_pct": 7,
+        "app_clicks": 6,
+        "form_fills": 0,
+        "other_clicks": 8,
         "thin": false
       },
       {
@@ -25846,6 +27394,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25865,6 +27416,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25884,6 +27438,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25903,6 +27460,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25922,6 +27482,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25941,6 +27504,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25960,6 +27526,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25979,6 +27548,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -25998,6 +27570,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26017,6 +27592,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26036,6 +27614,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 2.0,
         "went_deeper_pct": 50,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26055,6 +27636,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26074,6 +27658,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26093,6 +27680,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26112,6 +27702,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26131,6 +27724,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26150,6 +27746,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26169,6 +27768,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26188,6 +27790,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26207,6 +27812,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26226,6 +27834,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26245,6 +27856,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26264,6 +27878,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26283,6 +27900,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26302,6 +27922,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26321,6 +27944,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26340,6 +27966,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26359,6 +27988,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26378,6 +28010,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26397,6 +28032,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26416,6 +28054,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26435,6 +28076,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26454,6 +28098,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26473,6 +28120,9 @@
         "entry_pageviews": 12,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -26492,6 +28142,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26511,6 +28164,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26530,6 +28186,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26549,6 +28208,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26568,6 +28230,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.67,
         "went_deeper_pct": 67,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -26587,6 +28252,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26606,6 +28274,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 3.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26625,6 +28296,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26644,6 +28318,9 @@
         "entry_pageviews": 49,
         "pages_per_session": 1.04,
         "went_deeper_pct": 4,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": false
       },
       {
@@ -26663,6 +28340,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26682,6 +28362,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26701,6 +28384,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26720,6 +28406,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26739,6 +28428,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26758,6 +28450,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26777,6 +28472,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26796,6 +28494,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26815,6 +28516,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26834,6 +28538,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26853,6 +28560,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26872,6 +28582,9 @@
         "entry_pageviews": 4,
         "pages_per_session": 1.33,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26891,6 +28604,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26910,6 +28626,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 1,
         "thin": true
       },
       {
@@ -26929,6 +28648,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26948,6 +28670,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26967,6 +28692,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -26986,6 +28714,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27005,6 +28736,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27024,6 +28758,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27043,6 +28780,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27062,6 +28802,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27081,6 +28824,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27100,6 +28846,9 @@
         "entry_pageviews": 3,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27119,6 +28868,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27138,6 +28890,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27157,6 +28912,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27176,6 +28934,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27195,6 +28956,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27214,6 +28978,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27233,6 +29000,9 @@
         "entry_pageviews": 2,
         "pages_per_session": 2.0,
         "went_deeper_pct": 100,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27252,6 +29022,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27271,6 +29044,9 @@
         "entry_pageviews": 5,
         "pages_per_session": 1.67,
         "went_deeper_pct": 67,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27290,6 +29066,9 @@
         "entry_pageviews": 6,
         "pages_per_session": 2.0,
         "went_deeper_pct": 33,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27309,6 +29088,9 @@
         "entry_pageviews": 1,
         "pages_per_session": 1.0,
         "went_deeper_pct": 0,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       },
       {
@@ -27328,6 +29110,9 @@
         "entry_pageviews": 0,
         "pages_per_session": null,
         "went_deeper_pct": null,
+        "app_clicks": 0,
+        "form_fills": 0,
+        "other_clicks": 0,
         "thin": true
       }
     ]
@@ -35891,6 +37676,70 @@
         }
       },
       "by_category": {
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 79,
+            "raw_views": 103,
+            "watch_minutes": 567,
+            "subs_gained": 1,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 97,
+            "raw_views": 114,
+            "watch_minutes": 759,
+            "subs_gained": 3,
+            "videos": 2
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 103,
+            "raw_views": 116,
+            "watch_minutes": 409,
+            "subs_gained": 1,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 118,
+            "raw_views": 140,
+            "watch_minutes": 437,
+            "subs_gained": 2,
+            "videos": 10
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 33,
+            "raw_views": 69,
+            "watch_minutes": 10,
+            "subs_gained": 0,
+            "videos": 13
+          },
+          "prior": {
+            "engaged_views": 62,
+            "raw_views": 105,
+            "watch_minutes": 55,
+            "subs_gained": 0,
+            "videos": 26
+          }
+        },
+        "Podcast clip": {
+          "current": {
+            "engaged_views": 6008,
+            "raw_views": 24236,
+            "watch_minutes": 1893,
+            "subs_gained": 8,
+            "videos": 61
+          },
+          "prior": {
+            "engaged_views": 726,
+            "raw_views": 2847,
+            "watch_minutes": 229,
+            "subs_gained": 1,
+            "videos": 38
+          }
+        },
         "Product long-form": {
           "current": {
             "engaged_views": 1380,
@@ -35921,70 +37770,6 @@
             "watch_minutes": 1725,
             "subs_gained": 1,
             "videos": 29
-          }
-        },
-        "Podcast clip": {
-          "current": {
-            "engaged_views": 6008,
-            "raw_views": 24236,
-            "watch_minutes": 1893,
-            "subs_gained": 8,
-            "videos": 61
-          },
-          "prior": {
-            "engaged_views": 726,
-            "raw_views": 2847,
-            "watch_minutes": 229,
-            "subs_gained": 1,
-            "videos": 38
-          }
-        },
-        "Other webinar": {
-          "current": {
-            "engaged_views": 103,
-            "raw_views": 116,
-            "watch_minutes": 409,
-            "subs_gained": 1,
-            "videos": 10
-          },
-          "prior": {
-            "engaged_views": 118,
-            "raw_views": 140,
-            "watch_minutes": 437,
-            "subs_gained": 2,
-            "videos": 10
-          }
-        },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 79,
-            "raw_views": 103,
-            "watch_minutes": 567,
-            "subs_gained": 1,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 97,
-            "raw_views": 114,
-            "watch_minutes": 759,
-            "subs_gained": 3,
-            "videos": 2
-          }
-        },
-        "Other short": {
-          "current": {
-            "engaged_views": 33,
-            "raw_views": 69,
-            "watch_minutes": 10,
-            "subs_gained": 0,
-            "videos": 13
-          },
-          "prior": {
-            "engaged_views": 62,
-            "raw_views": 105,
-            "watch_minutes": 55,
-            "subs_gained": 0,
-            "videos": 26
           }
         }
       },
