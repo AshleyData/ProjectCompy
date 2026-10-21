@@ -1770,7 +1770,10 @@ export default function CompyDashboard() {
                 if (!base || Math.abs(new Date(p.date).getTime() - target) < Math.abs(new Date(base.date).getTime() - target)) base = p;
               }
               const delta = last && base && base.etv ? Math.round(((last.etv - base.etv) / base.etv) * 100) : null;
-              return { comp, etv: last?.etv ?? null, delta, isGB: comp === "GrowthBook" };
+              const meta = (d.competitors || []).find(c => c.name === comp) || {};
+              return { comp, etv: last?.etv ?? null, delta, isGB: comp === "GrowthBook",
+                       unfiltered: meta.etv_unfiltered ?? null,
+                       brandedPct: meta.branded_pct ?? null };
             })
             .filter(r => r.etv != null)
             .sort((a, b) => (b.etv ?? 0) - (a.etv ?? 0));
@@ -1811,7 +1814,13 @@ export default function CompyDashboard() {
                   </div>
                   {/* Per-competitor ETV WoW */}
                   <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 240 }}>
-                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 8 }}>Organic ETV · 4-wk Δ</div>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 2 }}>Non-brand content ETV · 4-wk Δ</div>
+                    <div style={{ fontSize: 10, color: C.muted, marginBottom: 8, lineHeight: 1.35, textAlign: "left" }}>
+                      Contestable demand only. Excludes homepages (93–99% brand search across
+                      competitors), pricing, login and careers pages, and collapses keyword variants
+                      that would otherwise count the same visitors several times. The grey figure is
+                      total unfiltered visibility, shown for scale.
+                    </div>
                     {heatEtv.length === 0
                       ? <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>No ETV trend yet.</div>
                       : heatEtv.map((r, i) => {
@@ -1826,7 +1835,18 @@ export default function CompyDashboard() {
                                 {r.comp}{r.isGB ? " ★" : ""}
                               </span>
                               <span style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
-                                <span style={{ color: "#2C3E50", fontWeight: r.isGB ? 700 : 400 }}>{r.etv.toLocaleString()}{r.isGB ? "*" : ""}</span>
+                                <span style={{ color: "#2C3E50", fontWeight: r.isGB ? 700 : 400,
+                                               fontVariantNumeric: "tabular-nums" }}>
+                                  {r.etv.toLocaleString()}{r.isGB ? "*" : ""}
+                                </span>
+                                {r.unfiltered != null && (
+                                  <span style={{ color: C.muted, fontSize: 11, minWidth: 52,
+                                                 textAlign: "right", fontVariantNumeric: "tabular-nums" }}
+                                        title={`Total unfiltered ETV ${r.unfiltered.toLocaleString()}`
+                                               + (r.brandedPct != null ? ` · ${r.brandedPct}% branded` : "")}>
+                                    {r.unfiltered.toLocaleString()}
+                                  </span>
+                                )}
                                 <span style={{ fontWeight: 700, minWidth: 56, textAlign: "right", color: (noBase || zero) ? C.muted : (up ? C.success : C.danger) }}>
                                   {noBase ? "—" : zero ? "≈0%" : `${up ? "▲" : "▼"} ${Math.abs(r.delta)}%`}
                                 </span>
@@ -1836,7 +1856,9 @@ export default function CompyDashboard() {
                         })}
                     {heatEtv.some(r => r.isGB) && (
                       <div style={{ fontSize: 10, color: C.muted, marginTop: 6, lineHeight: 1.4 }}>
-                        ★ GrowthBook. *Its ETV underreports — DataForSEO excludes branded search (~55% of GrowthBook clicks), so its true organic footprint is higher than shown.
+                        ★ GrowthBook. *Brand search is excluded here by design, and ~55% of GrowthBook's
+                        search clicks are branded — so this measures contested demand, not total footprint.
+                        Grey = unfiltered total. Hover a grey figure for its branded share.
                       </div>
                     )}
                   </div>
