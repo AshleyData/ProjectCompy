@@ -30517,7 +30517,10 @@
       "da": 40,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.statsig.com/perspectives/tracking-non-authenticated-users",
-      "top_etv": 4889
+      "top_etv": 4889,
+      "etv_unfiltered": 37345,
+      "branded_pct": 20.5,
+      "homepage_etv": 6515
     },
     {
       "name": "Datadog",
@@ -30526,7 +30529,10 @@
       "da": 64,
       "da_as_of": "2026-10-01",
       "top_page": "https://docs.datadoghq.com/mcp_server/",
-      "top_etv": 2146
+      "top_etv": 2146,
+      "etv_unfiltered": 48103,
+      "branded_pct": 0.4,
+      "homepage_etv": 11813
     },
     {
       "name": "Amplitude Exp",
@@ -30535,7 +30541,10 @@
       "da": 62,
       "da_as_of": "2026-10-01",
       "top_page": "https://amplitude.com/explore/metrics/what-are-metrics-guide",
-      "top_etv": 1380
+      "top_etv": 1380,
+      "etv_unfiltered": 23315,
+      "branded_pct": 38.1,
+      "homepage_etv": 6194
     },
     {
       "name": "Optimizely",
@@ -30544,7 +30553,10 @@
       "da": 83,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.optimizely.com/optimization-glossary/unique-selling-point",
-      "top_etv": 1029
+      "top_etv": 1029,
+      "etv_unfiltered": 19469,
+      "branded_pct": 18.1,
+      "homepage_etv": 2212
     },
     {
       "name": "Harness",
@@ -30553,7 +30565,10 @@
       "da": 51,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.harness.io/blog/parallel-execution-in-modern-ci-best-practices-results",
-      "top_etv": 1153
+      "top_etv": 1153,
+      "etv_unfiltered": 8869,
+      "branded_pct": 43.5,
+      "homepage_etv": 2792
     },
     {
       "name": "PostHog",
@@ -30562,7 +30577,10 @@
       "da": 47,
       "da_as_of": "2026-10-01",
       "top_page": "https://posthog.com/docs/model-context-protocol",
-      "top_etv": 585
+      "top_etv": 585,
+      "etv_unfiltered": 10232,
+      "branded_pct": 86.8,
+      "homepage_etv": 4742
     },
     {
       "name": "LaunchDarkly",
@@ -30571,7 +30589,10 @@
       "da": 51,
       "da_as_of": "2026-10-01",
       "top_page": "https://launchdarkly.com/blog/what-does-being-technical-mean/",
-      "top_etv": 605
+      "top_etv": 605,
+      "etv_unfiltered": 13092,
+      "branded_pct": 73.5,
+      "homepage_etv": 8178
     },
     {
       "name": "GrowthBook",
@@ -30580,7 +30601,10 @@
       "da": 33,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.growthbook.io/insights/experimental-probability-examples-explained-simply",
-      "top_etv": 191
+      "top_etv": 191,
+      "etv_unfiltered": 2208,
+      "branded_pct": 5.6,
+      "homepage_etv": 84
     },
     {
       "name": "Kameleoon",
@@ -30589,7 +30613,10 @@
       "da": 53,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.kameleoon.com/blog/customization-vs-personalization",
-      "top_etv": 649
+      "top_etv": 649,
+      "etv_unfiltered": 1646,
+      "branded_pct": 9.1,
+      "homepage_etv": 151
     },
     {
       "name": "Flagsmith",
@@ -30598,7 +30625,10 @@
       "da": 37,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.flagsmith.com/blog/launchdarkly-went-dark-during-aws-outage-flagsmith-didnt",
-      "top_etv": 47
+      "top_etv": 47,
+      "etv_unfiltered": 449,
+      "branded_pct": 1.5,
+      "homepage_etv": 150
     },
     {
       "name": "Unleash",
@@ -30607,7 +30637,10 @@
       "da": 38,
       "da_as_of": "2026-10-01",
       "top_page": "https://www.getunleash.io/blog/11-open-source-feature-flag-tools",
-      "top_etv": 26
+      "top_etv": 26,
+      "etv_unfiltered": 1004,
+      "branded_pct": 0.0,
+      "homepage_etv": 781
     }
   ],
   "etv_trend": {
@@ -30747,116 +30780,6 @@
       {
         "date": "2026-10-17",
         "etv": 10732
-      }
-    ],
-    "Eppo": [
-      {
-        "date": "2026-03-27",
-        "etv": 11299
-      },
-      {
-        "date": "2026-03-28",
-        "etv": 11482
-      },
-      {
-        "date": "2026-03-29",
-        "etv": 7383
-      },
-      {
-        "date": "2026-03-30",
-        "etv": 7383
-      },
-      {
-        "date": "2026-04-04",
-        "etv": 7637
-      },
-      {
-        "date": "2026-04-11",
-        "etv": 7634
-      },
-      {
-        "date": "2026-04-18",
-        "etv": 7634
-      },
-      {
-        "date": "2026-04-25",
-        "etv": 7648
-      },
-      {
-        "date": "2026-05-02",
-        "etv": 7648
-      },
-      {
-        "date": "2026-05-09",
-        "etv": 9062
-      },
-      {
-        "date": "2026-05-10",
-        "etv": 9062
-      },
-      {
-        "date": "2026-05-16",
-        "etv": 9035
-      },
-      {
-        "date": "2026-05-23",
-        "etv": 8849
-      },
-      {
-        "date": "2026-05-30",
-        "etv": 8755
-      },
-      {
-        "date": "2026-06-06",
-        "etv": 8763
-      },
-      {
-        "date": "2026-06-13",
-        "etv": 8764
-      },
-      {
-        "date": "2026-06-20",
-        "etv": 8896
-      },
-      {
-        "date": "2026-06-27",
-        "etv": 8608
-      },
-      {
-        "date": "2026-07-04",
-        "etv": 8391
-      },
-      {
-        "date": "2026-07-11",
-        "etv": 8280
-      },
-      {
-        "date": "2026-07-18",
-        "etv": 8280
-      },
-      {
-        "date": "2026-07-25",
-        "etv": 8129
-      },
-      {
-        "date": "2026-08-01",
-        "etv": 8081
-      },
-      {
-        "date": "2026-08-08",
-        "etv": 8041
-      },
-      {
-        "date": "2026-08-15",
-        "etv": 8249
-      },
-      {
-        "date": "2026-08-22",
-        "etv": 8255
-      },
-      {
-        "date": "2026-08-29",
-        "etv": 5557
       }
     ],
     "Flagsmith": [
@@ -36013,22 +35936,6 @@
         }
       },
       "by_category": {
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1380,
-            "raw_views": 2212,
-            "watch_minutes": 4028,
-            "subs_gained": 5,
-            "videos": 71
-          },
-          "prior": {
-            "engaged_views": 1330,
-            "raw_views": 1593,
-            "watch_minutes": 3963,
-            "subs_gained": 5,
-            "videos": 79
-          }
-        },
         "Podcast clip": {
           "current": {
             "engaged_views": 6008,
@@ -36045,36 +35952,36 @@
             "videos": 38
           }
         },
-        "Other webinar": {
+        "Product long-form": {
           "current": {
-            "engaged_views": 103,
-            "raw_views": 116,
-            "watch_minutes": 409,
-            "subs_gained": 1,
-            "videos": 10
+            "engaged_views": 1380,
+            "raw_views": 2212,
+            "watch_minutes": 4028,
+            "subs_gained": 5,
+            "videos": 71
           },
           "prior": {
-            "engaged_views": 118,
-            "raw_views": 140,
-            "watch_minutes": 437,
-            "subs_gained": 2,
-            "videos": 10
+            "engaged_views": 1330,
+            "raw_views": 1593,
+            "watch_minutes": 3963,
+            "subs_gained": 5,
+            "videos": 79
           }
         },
-        "Kohavi webinar": {
+        "Other short": {
           "current": {
-            "engaged_views": 79,
-            "raw_views": 103,
-            "watch_minutes": 567,
-            "subs_gained": 1,
-            "videos": 2
+            "engaged_views": 33,
+            "raw_views": 69,
+            "watch_minutes": 10,
+            "subs_gained": 0,
+            "videos": 13
           },
           "prior": {
-            "engaged_views": 97,
-            "raw_views": 114,
-            "watch_minutes": 759,
-            "subs_gained": 3,
-            "videos": 2
+            "engaged_views": 62,
+            "raw_views": 105,
+            "watch_minutes": 55,
+            "subs_gained": 0,
+            "videos": 26
           }
         },
         "Podcast episode": {
@@ -36093,20 +36000,36 @@
             "videos": 29
           }
         },
-        "Other short": {
+        "Kohavi webinar": {
           "current": {
-            "engaged_views": 33,
-            "raw_views": 69,
-            "watch_minutes": 10,
-            "subs_gained": 0,
-            "videos": 13
+            "engaged_views": 79,
+            "raw_views": 103,
+            "watch_minutes": 567,
+            "subs_gained": 1,
+            "videos": 2
           },
           "prior": {
-            "engaged_views": 62,
-            "raw_views": 105,
-            "watch_minutes": 55,
-            "subs_gained": 0,
-            "videos": 26
+            "engaged_views": 97,
+            "raw_views": 114,
+            "watch_minutes": 759,
+            "subs_gained": 3,
+            "videos": 2
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 103,
+            "raw_views": 116,
+            "watch_minutes": 409,
+            "subs_gained": 1,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 118,
+            "raw_views": 140,
+            "watch_minutes": 437,
+            "subs_gained": 2,
+            "videos": 10
           }
         }
       },
