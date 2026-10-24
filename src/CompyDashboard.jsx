@@ -2908,7 +2908,7 @@ export default function CompyDashboard() {
               </p>
             </Section>
 
-            <Section title="All Channels — YouTube Tracker (90-day window, 2× outlier threshold)">
+            <Section title="All Channels — YouTube Tracker (90-day window, organic only)">
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
                 <thead>
                   <tr style={{ background: "#1B4F72" }}>
@@ -2957,7 +2957,7 @@ export default function CompyDashboard() {
                         ) : (
                           <><td /><td /><td /><td /></>
                         )}
-                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480, textAlign: "left" }}>{v.likely_promoted ? "📣 " : v.is_outlier ? "🔥 " : "📊 "}<a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{v.title}</a></td>
+                        <td style={{ padding: "5px 8px", minWidth: 360, maxWidth: 480, textAlign: "left" }}>{v.likely_promoted ? "📣 AD · " : v.is_outlier ? "🔥 " : "📊 "}<a href={v.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none" }} onMouseOver={e => e.target.style.textDecoration="underline"} onMouseOut={e => e.target.style.textDecoration="none"}>{v.title}</a></td>
                         <td style={{ padding: "5px 8px", textAlign: "right", whiteSpace: "nowrap" }}>{v.views.toLocaleString()}</td>
                         <td style={{ padding: "5px 8px", fontWeight: 700, color: isGB ? C.success : C.accent, whiteSpace: "nowrap" }}>{v.mult}×</td>
                         <td style={{ padding: "5px 8px", color: C.muted, whiteSpace: "nowrap" }}>{v.date}</td>
@@ -2967,7 +2967,7 @@ export default function CompyDashboard() {
                 </tbody>
               </table>
               <p style={{ fontSize: 12, color: C.muted, marginTop: 10, textAlign: "left" }}>
-                🔥 = in this channel's top 10% of the last 90 days AND at least 2× its typical video. 📣 = view count so far beyond the channel's norm and subscriber base that it is almost certainly promoted — real reach, but not organic. 📊 = top non-outlier videos for context. "Typical views" is the median, not the mean: on channels running ads the mean is meaningless (Kameleoon's was 86,532 against a median of 31, which made every organic video read as 0.0×). Source: YouTube Data API v3.
+                🔥 = in this channel's top 10% of the last 90 days AND at least 2× its typical video. 📣 <b>AD</b> = at or above 100× the channel's typical video — advertising, not reach. Nothing organic does that; the observed cases run 165× to 23,000×. These are excluded from "Typical views", from the outlier threshold and from the outlier count, so organic performance is judged against organic peers. 📊 = top non-outlier videos for context. "Typical views" is the median, not the mean: on channels running ads the mean is meaningless (Kameleoon's was 86,532 against a median of 46). Source: YouTube Data API v3.
               </p>
             </Section>
 
