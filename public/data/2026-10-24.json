@@ -8975,12 +8975,12 @@
           "Ai Observability"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /learn section is an educational resource hub containing 37 pages of guided content\u2014including pocket guides and live playgrounds\u2014organized around their core product capabilities such as session replay, feature flags, AI observability, and product analytics. It targets developers and product teams who want hands-on introductions or quick-reference material for PostHog's toolset."
+        "summary": "PostHog's /learn section is an educational resource hub containing 37 pages of structured guides, pocket references, and interactive playgrounds organized around their core product capabilities: session replay, AI observability, feature flags, and product analytics. It targets developers and product engineers who want hands-on or quick-reference learning for PostHog's toolset."
       }
     ]
   },
   "exec_summary": [
-    "Site traffic (GA4, 2026-10-17 to 2026-10-23): growthbook.io had 8,244 sessions and 7,233 users (+13.8% week over week).",
+    "Site traffic (Plausible, 2026-10-17 to 2026-10-23): growthbook.io had 8,244 sessions and 7,233 users (+13.8% week over week).",
     "## Week of 2026-10-24",
     "**Site performance**\n- **Overall (GA4, all traffic):** 8,244 visits (+13.8% WoW) | 7,233 users (+12.8% WoW)\n- **Overall (GSC, organic search):** 3,417 clicks (+2.6% WoW) | 276,038 impressions (-4.0% WoW)\n- **Homepage (/):** 5,928 sessions (WoW % not meaningful \u2014 prior week Plausible anomaly) all-traffic | 1,486 GSC clicks (-0.1% WoW) organic | 18,167 impressions (+30.0% WoW)\n- **Pricing (/pricing):** 755 sessions (+6.9% WoW) all-traffic | 80 GSC clicks (-9.1% WoW) organic | 5,894 impressions (+55.7% WoW)\n- **Docs (docs.growthbook.io):** 2,118 sessions (+0.1% WoW) all-traffic | 849 GSC clicks (-3.9% WoW) organic | 51,312 impressions (+0.6% WoW)\n- **All other pages:** 3,499 sessions (+27.9% WoW) all-traffic | 997 GSC clicks (+9.9% WoW) organic | 273,016 impressions (-0.8% WoW)\n- All-other-pages continues to be the cleanest signal: all-traffic (+27.9%) and organic clicks (+9.9%) moving up together \u2014 genuine non-branded organic growth.\n- Pricing AI-displacement pattern persists: all-traffic up +6.9% while organic clicks fell -9.1% and impressions surged +55.7% \u2014 pricing-intent traffic increasingly arriving via non-Google channels.",
     "**New competitor activity**\n- **Amplitude Exp** published three AI-tooling comparison pages this week: **\"Best AI Observability Tools\"**, **\"Best MCP Servers\"**, and **\"Best AI Agent Evaluation Tools\"** (KD 11, 14, and unknown). Three coordinated pages on a single AI-adjacent theme in one week is a deliberate moat-building move in a category where GrowthBook has no comparable assets.\n- **PostHog** published **\"Feature Flags\"** and **\"Flag to Experiment\"** in their **/learn** hub \u2014 core category content directly overlapping GrowthBook's primary use case at KD 40 and unknown.\n- **PostHog**'s **/learn** section (37 pages) remains in our tracking as a structured educational hub with internal-linking authority across session replay, AI observability, feature flags, and product analytics. Pre-existing content, not a one-week blitz \u2014 but the hub now competes for every top-of-funnel developer query GrowthBook targets.\n- **LaunchDarkly** published **\"The Frontier Loves Feature Flags\"** (tier 1) \u2014 an AI/feature-flag narrative piece. 2 additional pages shipped below the relevance bar.\n- **Kameleoon** published **\"Manage Your Kameleoon Experiments Directly From Claude\"** \u2014 a direct MCP/AI integration play competing with GrowthBook's **/platform/mcp-server** framing. Also published **\"Synthetic Users\"** (KD 9, tier 3).\n- **Flagsmith** published **\"AI CLI Feature Flags\"** (tier 1) \u2014 targets developers building AI tooling with feature flags, a gap GrowthBook doesn't explicitly own.\n- **Statsig** and **Unleash** \u2014 zero pages detected. \u26a0\ufe0f Both simultaneously at zero \u2014 verify fetch warnings before treating as a genuine content pause.\n- **Optimizely** (4 pages), **Harness** (8 pages), **PostHog** (40 pages additional), **Datadog** (5 pages), **Amplitude Exp** (4 pages additional) \u2014 all shipped below the relevance bar this week.",
@@ -32488,6 +32488,7 @@
         }
       ],
       "snapshot_date": "2026-10-24",
+      "source": "plausible",
       "organic_sessions": 2514,
       "organic_sessions_wow_pct": 4.4,
       "organic_sessions_4w": 9886,
@@ -32501,7 +32502,8 @@
       "wow_sessions_pct": 0.1,
       "week_start": "2026-10-17",
       "week_end": "2026-10-23",
-      "snapshot_date": "2026-10-24"
+      "snapshot_date": "2026-10-24",
+      "source": "plausible"
     }
   },
   "youtube": {
@@ -35923,38 +35925,6 @@
         }
       },
       "by_category": {
-        "Podcast episode": {
-          "current": {
-            "engaged_views": 941,
-            "raw_views": 1356,
-            "watch_minutes": 2557,
-            "subs_gained": 11,
-            "videos": 37
-          },
-          "prior": {
-            "engaged_views": 722,
-            "raw_views": 1212,
-            "watch_minutes": 2581,
-            "subs_gained": 10,
-            "videos": 33
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1283,
-            "raw_views": 2032,
-            "watch_minutes": 3910,
-            "subs_gained": 5,
-            "videos": 64
-          },
-          "prior": {
-            "engaged_views": 1326,
-            "raw_views": 1905,
-            "watch_minutes": 3791,
-            "subs_gained": 6,
-            "videos": 85
-          }
-        },
         "Other webinar": {
           "current": {
             "engaged_views": 87,
@@ -35971,20 +35941,20 @@
             "videos": 10
           }
         },
-        "Other short": {
+        "Podcast episode": {
           "current": {
-            "engaged_views": 26,
-            "raw_views": 48,
-            "watch_minutes": 6,
-            "subs_gained": 0,
-            "videos": 11
+            "engaged_views": 941,
+            "raw_views": 1356,
+            "watch_minutes": 2557,
+            "subs_gained": 11,
+            "videos": 37
           },
           "prior": {
-            "engaged_views": 62,
-            "raw_views": 114,
-            "watch_minutes": 51,
-            "subs_gained": 0,
-            "videos": 26
+            "engaged_views": 722,
+            "raw_views": 1212,
+            "watch_minutes": 2581,
+            "subs_gained": 10,
+            "videos": 33
           }
         },
         "Kohavi webinar": {
@@ -36017,6 +35987,38 @@
             "watch_minutes": 1314,
             "subs_gained": 6,
             "videos": 42
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 26,
+            "raw_views": 48,
+            "watch_minutes": 6,
+            "subs_gained": 0,
+            "videos": 11
+          },
+          "prior": {
+            "engaged_views": 62,
+            "raw_views": 114,
+            "watch_minutes": 51,
+            "subs_gained": 0,
+            "videos": 26
+          }
+        },
+        "Product long-form": {
+          "current": {
+            "engaged_views": 1283,
+            "raw_views": 2032,
+            "watch_minutes": 3910,
+            "subs_gained": 5,
+            "videos": 64
+          },
+          "prior": {
+            "engaged_views": 1326,
+            "raw_views": 1905,
+            "watch_minutes": 3791,
+            "subs_gained": 6,
+            "videos": 85
           }
         }
       },

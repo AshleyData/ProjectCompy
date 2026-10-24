@@ -1815,11 +1815,32 @@ export default function CompyDashboard() {
                   {/* Per-competitor ETV WoW */}
                   <div style={{ ...card({ padding: "12px 14px" }), flex: 1, minWidth: 240 }}>
                     <div style={{ fontSize: 12, fontWeight: 700, color: C.primary, marginBottom: 2 }}>Non-brand content ETV · 4-wk Δ</div>
-                    <div style={{ fontSize: 10, color: C.muted, marginBottom: 8, lineHeight: 1.35, textAlign: "left" }}>
-                      Contestable demand only. Excludes homepages (93–99% brand search across
-                      competitors), pricing, login and careers pages, and collapses keyword variants
-                      that would otherwise count the same visitors several times. The grey figure is
-                      total unfiltered visibility, shown for scale.
+                    <div style={{ fontSize: 10, color: C.muted, marginBottom: 8, lineHeight: 1.4, textAlign: "left" }}>
+                      How much search demand each competitor earns that GrowthBook could realistically
+                      compete for. Brand searches are excluded — nobody wins "launchdarkly" but
+                      LaunchDarkly — along with homepages (93–99% brand search), pricing, login and
+                      careers pages. Keyword variants that return the same page are collapsed so one
+                      visitor is not counted several times.
+                    </div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
+                                  gap: 8, padding: "0 0 4px", marginBottom: 4,
+                                  borderBottom: `1px solid ${C.border}` }}>
+                      <span style={{ fontSize: 9.5, fontWeight: 700, color: C.muted,
+                                     textTransform: "uppercase", letterSpacing: 0.4 }}>Competitor</span>
+                      <span style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
+                        <span style={{ fontSize: 9.5, fontWeight: 700, color: C.muted, textTransform: "uppercase",
+                                       letterSpacing: 0.4, minWidth: 54, textAlign: "right" }}
+                              title="Search demand excluding brand terms — what is actually contestable">
+                          Contestable</span>
+                        <span style={{ fontSize: 9.5, fontWeight: 700, color: C.muted, textTransform: "uppercase",
+                                       letterSpacing: 0.4, minWidth: 52, textAlign: "right" }}
+                              title="Total search visibility including brand terms. Hover a figure for its branded share.">
+                          Total</span>
+                        <span style={{ fontSize: 9.5, fontWeight: 700, color: C.muted, textTransform: "uppercase",
+                                       letterSpacing: 0.4, minWidth: 56, textAlign: "right" }}
+                              title="Change in contestable demand over the last 4 weeks">
+                          4-wk Δ</span>
+                      </span>
                     </div>
                     {heatEtv.length === 0
                       ? <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic" }}>No ETV trend yet.</div>
@@ -1836,6 +1857,7 @@ export default function CompyDashboard() {
                               </span>
                               <span style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
                                 <span style={{ color: "#2C3E50", fontWeight: r.isGB ? 700 : 400,
+                                               minWidth: 54, textAlign: "right",
                                                fontVariantNumeric: "tabular-nums" }}>
                                   {r.etv.toLocaleString()}{r.isGB ? "*" : ""}
                                 </span>
