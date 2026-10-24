@@ -8975,7 +8975,7 @@
           "Ai Observability"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /learn section is an educational resource hub containing 37 pages of structured guides, pocket references, and interactive playgrounds organized around their core product capabilities: session replay, AI observability, feature flags, and product analytics. It targets developers and product engineers who want hands-on or quick-reference learning for PostHog's toolset."
+        "summary": "PostHog's /learn section is an educational resource hub containing 37 pages of structured guides, pocket references, and interactive live playgrounds organized around their core product capabilities: session replay, AI observability, feature flags, and product analytics. It targets developers and product teams who want hands-on or quick-reference learning for PostHog's toolset."
       }
     ]
   },
@@ -35925,22 +35925,6 @@
         }
       },
       "by_category": {
-        "Other webinar": {
-          "current": {
-            "engaged_views": 87,
-            "raw_views": 101,
-            "watch_minutes": 466,
-            "subs_gained": 0,
-            "videos": 8
-          },
-          "prior": {
-            "engaged_views": 130,
-            "raw_views": 158,
-            "watch_minutes": 497,
-            "subs_gained": 2,
-            "videos": 10
-          }
-        },
         "Podcast episode": {
           "current": {
             "engaged_views": 941,
@@ -35955,6 +35939,22 @@
             "watch_minutes": 2581,
             "subs_gained": 10,
             "videos": 33
+          }
+        },
+        "Podcast clip": {
+          "current": {
+            "engaged_views": 2782,
+            "raw_views": 12422,
+            "watch_minutes": 907,
+            "subs_gained": 3,
+            "videos": 65
+          },
+          "prior": {
+            "engaged_views": 4262,
+            "raw_views": 15944,
+            "watch_minutes": 1314,
+            "subs_gained": 6,
+            "videos": 42
           }
         },
         "Kohavi webinar": {
@@ -35973,20 +35973,20 @@
             "videos": 2
           }
         },
-        "Podcast clip": {
+        "Other webinar": {
           "current": {
-            "engaged_views": 2782,
-            "raw_views": 12422,
-            "watch_minutes": 907,
-            "subs_gained": 3,
-            "videos": 65
+            "engaged_views": 87,
+            "raw_views": 101,
+            "watch_minutes": 466,
+            "subs_gained": 0,
+            "videos": 8
           },
           "prior": {
-            "engaged_views": 4262,
-            "raw_views": 15944,
-            "watch_minutes": 1314,
-            "subs_gained": 6,
-            "videos": 42
+            "engaged_views": 130,
+            "raw_views": 158,
+            "watch_minutes": 497,
+            "subs_gained": 2,
+            "videos": 10
           }
         },
         "Other short": {
@@ -123041,38 +123041,38 @@
           },
           {
             "week_end": "2026-07-22",
-            "engaged_views": 140,
-            "watch_minutes": 387,
+            "engaged_views": 79,
+            "watch_minutes": 146,
             "subs_gained": 1
           },
           {
             "week_end": "2026-07-29",
-            "engaged_views": 7000,
-            "watch_minutes": 5956,
-            "subs_gained": 30
+            "engaged_views": 262,
+            "watch_minutes": 282,
+            "subs_gained": 3
           },
           {
             "week_end": "2026-08-05",
-            "engaged_views": 21828,
-            "watch_minutes": 16165,
-            "subs_gained": 125
+            "engaged_views": 524,
+            "watch_minutes": 879,
+            "subs_gained": 0
           },
           {
             "week_end": "2026-08-12",
-            "engaged_views": 5726,
-            "watch_minutes": 3862,
-            "subs_gained": 21
+            "engaged_views": 227,
+            "watch_minutes": 388,
+            "subs_gained": 0
           },
           {
             "week_end": "2026-08-19",
-            "engaged_views": 136,
-            "watch_minutes": 277,
+            "engaged_views": 114,
+            "watch_minutes": 138,
             "subs_gained": 0
           },
           {
             "week_end": "2026-08-26",
-            "engaged_views": 107,
-            "watch_minutes": 409,
+            "engaged_views": 97,
+            "watch_minutes": 368,
             "subs_gained": 1
           },
           {
@@ -123083,19 +123083,19 @@
           },
           {
             "week_end": "2026-09-09",
-            "engaged_views": 163,
-            "watch_minutes": 275,
+            "engaged_views": 155,
+            "watch_minutes": 251,
             "subs_gained": 3
           },
           {
             "week_end": "2026-09-16",
-            "engaged_views": 268,
-            "watch_minutes": 1217,
+            "engaged_views": 263,
+            "watch_minutes": 1216,
             "subs_gained": 3
           },
           {
             "week_end": "2026-09-23",
-            "engaged_views": 156,
+            "engaged_views": 155,
             "watch_minutes": 400,
             "subs_gained": 3
           },
@@ -123107,20 +123107,20 @@
           },
           {
             "week_end": "2026-10-07",
-            "engaged_views": 211,
-            "watch_minutes": 828,
+            "engaged_views": 206,
+            "watch_minutes": 826,
             "subs_gained": 1
           },
           {
             "week_end": "2026-10-14",
-            "engaged_views": 316,
+            "engaged_views": 314,
             "watch_minutes": 792,
             "subs_gained": 3
           },
           {
             "week_end": "2026-10-21",
-            "engaged_views": 205,
-            "watch_minutes": 498,
+            "engaged_views": 203,
+            "watch_minutes": 494,
             "subs_gained": 4
           }
         ],
@@ -123151,26 +123151,26 @@
           },
           {
             "month": "2026-07",
-            "engaged_views": 7497,
-            "watch_minutes": 7513,
-            "subs_gained": 35
+            "engaged_views": 698,
+            "watch_minutes": 1598,
+            "subs_gained": 8
           },
           {
             "month": "2026-08",
-            "engaged_views": 27797,
-            "watch_minutes": 20713,
-            "subs_gained": 147
+            "engaged_views": 962,
+            "watch_minutes": 1773,
+            "subs_gained": 1
           },
           {
             "month": "2026-09",
-            "engaged_views": 928,
-            "watch_minutes": 2850,
+            "engaged_views": 914,
+            "watch_minutes": 2825,
             "subs_gained": 10
           },
           {
             "month": "2026-10",
-            "engaged_views": 1083,
-            "watch_minutes": 2983,
+            "engaged_views": 1074,
+            "watch_minutes": 2977,
             "subs_gained": 15
           }
         ]
@@ -123604,8 +123604,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 425,
+        "organic_minutes": 1234,
+        "organic_subs": 1
       },
       {
         "week_start": "2025-10-30",
@@ -123617,8 +123621,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 349,
+        "organic_minutes": 1154,
+        "organic_subs": 4
       },
       {
         "week_start": "2025-11-06",
@@ -123630,8 +123638,12 @@
         "subs_lost": 1,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 332,
+        "organic_minutes": 1037,
+        "organic_subs": 4
       },
       {
         "week_start": "2025-11-13",
@@ -123643,8 +123655,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 299,
+        "organic_minutes": 796,
+        "organic_subs": 4
       },
       {
         "week_start": "2025-11-20",
@@ -123656,8 +123672,12 @@
         "subs_lost": 3,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 298,
+        "organic_minutes": 899,
+        "organic_subs": 4
       },
       {
         "week_start": "2025-11-27",
@@ -123669,8 +123689,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 280,
+        "organic_minutes": 752,
+        "organic_subs": 0
       },
       {
         "week_start": "2025-12-04",
@@ -123682,8 +123706,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 337,
+        "organic_minutes": 1069,
+        "organic_subs": 7
       },
       {
         "week_start": "2025-12-11",
@@ -123695,8 +123723,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 356,
+        "organic_minutes": 952,
+        "organic_subs": 5
       },
       {
         "week_start": "2025-12-18",
@@ -123708,8 +123740,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 204,
+        "organic_minutes": 784,
+        "organic_subs": 4
       },
       {
         "week_start": "2025-12-25",
@@ -123721,8 +123757,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 177,
+        "organic_minutes": 599,
+        "organic_subs": 3
       },
       {
         "week_start": "2026-01-01",
@@ -123734,8 +123774,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 294,
+        "organic_minutes": 775,
+        "organic_subs": 1
       },
       {
         "week_start": "2026-01-08",
@@ -123747,8 +123791,12 @@
         "subs_lost": 1,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 386,
+        "organic_minutes": 1177,
+        "organic_subs": 4
       },
       {
         "week_start": "2026-01-15",
@@ -123760,8 +123808,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 397,
+        "organic_minutes": 1159,
+        "organic_subs": 4
       },
       {
         "week_start": "2026-01-22",
@@ -123773,8 +123825,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 466,
+        "organic_minutes": 1392,
+        "organic_subs": 2
       },
       {
         "week_start": "2026-01-29",
@@ -123786,8 +123842,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 425,
+        "organic_minutes": 1667,
+        "organic_subs": 3
       },
       {
         "week_start": "2026-02-05",
@@ -123799,8 +123859,12 @@
         "subs_lost": 1,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 415,
+        "organic_minutes": 1578,
+        "organic_subs": 7
       },
       {
         "week_start": "2026-02-12",
@@ -123812,8 +123876,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 310,
+        "organic_minutes": 1122,
+        "organic_subs": 2
       },
       {
         "week_start": "2026-02-19",
@@ -123825,8 +123893,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 445,
+        "organic_minutes": 1834,
+        "organic_subs": 5
       },
       {
         "week_start": "2026-02-26",
@@ -123838,8 +123910,12 @@
         "subs_lost": 3,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 494,
+        "organic_minutes": 2113,
+        "organic_subs": 12
       },
       {
         "week_start": "2026-03-05",
@@ -123851,8 +123927,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 905,
+        "organic_minutes": 3381,
+        "organic_subs": 4
       },
       {
         "week_start": "2026-03-12",
@@ -123864,8 +123944,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 859,
+        "organic_minutes": 2950,
+        "organic_subs": 12
       },
       {
         "week_start": "2026-03-19",
@@ -123877,8 +123961,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1169,
+        "organic_minutes": 2585,
+        "organic_subs": 6
       },
       {
         "week_start": "2026-03-26",
@@ -123890,8 +123978,12 @@
         "subs_lost": 3,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 629,
+        "organic_minutes": 1855,
+        "organic_subs": 5
       },
       {
         "week_start": "2026-04-02",
@@ -123903,8 +123995,12 @@
         "subs_lost": 3,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 2057,
+        "organic_minutes": 2273,
+        "organic_subs": 11
       },
       {
         "week_start": "2026-04-09",
@@ -123916,8 +124012,12 @@
         "subs_lost": 1,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 486,
+        "organic_minutes": 1754,
+        "organic_subs": 6
       },
       {
         "week_start": "2026-04-16",
@@ -123929,8 +124029,12 @@
         "subs_lost": 1,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 991,
+        "organic_minutes": 2148,
+        "organic_subs": 7
       },
       {
         "week_start": "2026-04-23",
@@ -123942,8 +124046,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 571,
+        "organic_minutes": 2145,
+        "organic_subs": 3
       },
       {
         "week_start": "2026-04-30",
@@ -123955,8 +124063,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 387,
+        "organic_minutes": 1820,
+        "organic_subs": 2
       },
       {
         "week_start": "2026-05-07",
@@ -123968,8 +124080,12 @@
         "subs_lost": 0,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 514,
+        "organic_minutes": 1585,
+        "organic_subs": 9
       },
       {
         "week_start": "2026-05-14",
@@ -123981,8 +124097,12 @@
         "subs_lost": 5,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 460,
+        "organic_minutes": 1502,
+        "organic_subs": 5
       },
       {
         "week_start": "2026-05-21",
@@ -123994,8 +124114,12 @@
         "subs_lost": 1,
         "paid_engaged": 2,
         "paid_minutes": 2,
+        "paid_subs": 0,
         "paid_pct": 0.4,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 486,
+        "organic_minutes": 1814,
+        "organic_subs": 6
       },
       {
         "week_start": "2026-05-28",
@@ -124007,8 +124131,12 @@
         "subs_lost": 2,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 439,
+        "organic_minutes": 1466,
+        "organic_subs": 6
       },
       {
         "week_start": "2026-06-04",
@@ -124020,8 +124148,12 @@
         "subs_lost": 2,
         "paid_engaged": 3,
         "paid_minutes": 7,
+        "paid_subs": 0,
         "paid_pct": 0.6,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 522,
+        "organic_minutes": 1598,
+        "organic_subs": 2
       },
       {
         "week_start": "2026-06-11",
@@ -124033,8 +124165,12 @@
         "subs_lost": 2,
         "paid_engaged": 18,
         "paid_minutes": 4,
+        "paid_subs": 0,
         "paid_pct": 4.6,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 370,
+        "organic_minutes": 1699,
+        "organic_subs": 7
       },
       {
         "week_start": "2026-06-18",
@@ -124046,8 +124182,12 @@
         "subs_lost": 2,
         "paid_engaged": 21,
         "paid_minutes": 65,
+        "paid_subs": 0,
         "paid_pct": 3.7,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 549,
+        "organic_minutes": 1852,
+        "organic_subs": 6
       },
       {
         "week_start": "2026-06-25",
@@ -124059,8 +124199,12 @@
         "subs_lost": 4,
         "paid_engaged": 15,
         "paid_minutes": 16,
+        "paid_subs": 0,
         "paid_pct": 2.3,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 626,
+        "organic_minutes": 2041,
+        "organic_subs": 11
       },
       {
         "week_start": "2026-07-02",
@@ -124072,8 +124216,12 @@
         "subs_lost": 2,
         "paid_engaged": 16,
         "paid_minutes": 26,
+        "paid_subs": 0,
         "paid_pct": 0.5,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 3357,
+        "organic_minutes": 2513,
+        "organic_subs": 10
       },
       {
         "week_start": "2026-07-09",
@@ -124085,8 +124233,12 @@
         "subs_lost": 1,
         "paid_engaged": 12,
         "paid_minutes": 7,
+        "paid_subs": 0,
         "paid_pct": 1.5,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 807,
+        "organic_minutes": 2169,
+        "organic_subs": 8
       },
       {
         "week_start": "2026-07-16",
@@ -124098,8 +124250,12 @@
         "subs_lost": 2,
         "paid_engaged": 8,
         "paid_minutes": 12,
+        "paid_subs": 0,
         "paid_pct": 0.7,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1114,
+        "organic_minutes": 3210,
+        "organic_subs": 16
       },
       {
         "week_start": "2026-07-23",
@@ -124111,8 +124267,12 @@
         "subs_lost": 132,
         "paid_engaged": 6685,
         "paid_minutes": 5454,
+        "paid_subs": 1868,
         "paid_pct": 87.9,
-        "paid_material": true
+        "paid_material": true,
+        "organic_engaged": 920,
+        "organic_minutes": 2660,
+        "organic_subs": 100
       },
       {
         "week_start": "2026-07-30",
@@ -124124,8 +124284,12 @@
         "subs_lost": 500,
         "paid_engaged": 21270,
         "paid_minutes": 15162,
+        "paid_subs": 4996,
         "paid_pct": 94.6,
-        "paid_material": true
+        "paid_material": true,
+        "organic_engaged": 1206,
+        "organic_minutes": 3200,
+        "organic_subs": 8
       },
       {
         "week_start": "2026-08-06",
@@ -124137,8 +124301,12 @@
         "subs_lost": 94,
         "paid_engaged": 5709,
         "paid_minutes": 3560,
+        "paid_subs": 1344,
         "paid_pct": 89.3,
-        "paid_material": true
+        "paid_material": true,
+        "organic_engaged": 683,
+        "organic_minutes": 2434,
+        "organic_subs": 10
       },
       {
         "week_start": "2026-08-13",
@@ -124150,8 +124318,12 @@
         "subs_lost": 17,
         "paid_engaged": 4,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.8,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 480,
+        "organic_minutes": 1209,
+        "organic_subs": 2
       },
       {
         "week_start": "2026-08-20",
@@ -124163,8 +124335,12 @@
         "subs_lost": 20,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 609,
+        "organic_minutes": 2236,
+        "organic_subs": 4
       },
       {
         "week_start": "2026-08-27",
@@ -124176,8 +124352,12 @@
         "subs_lost": 22,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1091,
+        "organic_minutes": 1549,
+        "organic_subs": 7
       },
       {
         "week_start": "2026-09-03",
@@ -124189,8 +124369,12 @@
         "subs_lost": 5,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1450,
+        "organic_minutes": 1618,
+        "organic_subs": 10
       },
       {
         "week_start": "2026-09-10",
@@ -124202,8 +124386,12 @@
         "subs_lost": 18,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 2887,
+        "organic_minutes": 2877,
+        "organic_subs": 8
       },
       {
         "week_start": "2026-09-17",
@@ -124215,8 +124403,12 @@
         "subs_lost": 8,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 907,
+        "organic_minutes": 1809,
+        "organic_subs": 10
       },
       {
         "week_start": "2026-09-24",
@@ -124228,8 +124420,12 @@
         "subs_lost": 13,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 2920,
+        "organic_minutes": 2587,
+        "organic_subs": 9
       },
       {
         "week_start": "2026-10-01",
@@ -124241,8 +124437,12 @@
         "subs_lost": 12,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 739,
+        "organic_minutes": 2000,
+        "organic_subs": 4
       },
       {
         "week_start": "2026-10-08",
@@ -124254,8 +124454,12 @@
         "subs_lost": 10,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 810,
+        "organic_minutes": 2022,
+        "organic_subs": 8
       },
       {
         "week_start": "2026-10-15",
@@ -124267,8 +124471,12 @@
         "subs_lost": 15,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 733,
+        "organic_minutes": 1695,
+        "organic_subs": 7
       }
     ],
     "trend_monthly": [
@@ -124282,8 +124490,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 2130,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2025-08",
@@ -124295,8 +124507,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1811,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2025-09",
@@ -124308,8 +124524,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1702,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2025-10",
@@ -124321,8 +124541,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1950,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2025-11",
@@ -124334,8 +124558,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1299,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2025-12",
@@ -124347,8 +124575,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1229,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-01",
@@ -124360,8 +124592,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1712,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-02",
@@ -124373,8 +124609,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1581,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-03",
@@ -124386,8 +124626,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 3753,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-04",
@@ -124399,8 +124643,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 4330,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-05",
@@ -124412,8 +124660,12 @@
         "days_covered": null,
         "paid_engaged": 2,
         "paid_minutes": 2,
+        "paid_subs": 0,
         "paid_pct": 0.1,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 1949,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-06",
@@ -124425,8 +124677,12 @@
         "days_covered": null,
         "paid_engaged": 51,
         "paid_minutes": 91,
+        "paid_subs": 0,
         "paid_pct": 2.2,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 2239,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-07",
@@ -124438,8 +124694,12 @@
         "days_covered": null,
         "paid_engaged": 11784,
         "paid_minutes": 9091,
+        "paid_subs": 0,
         "paid_pct": 63.7,
-        "paid_material": true
+        "paid_material": true,
+        "organic_engaged": 6701,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-08",
@@ -124451,8 +124711,12 @@
         "days_covered": null,
         "paid_engaged": 21926,
         "paid_minutes": 15131,
+        "paid_subs": 0,
         "paid_pct": 88.3,
-        "paid_material": true
+        "paid_material": true,
+        "organic_engaged": 2898,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-09",
@@ -124464,8 +124728,12 @@
         "days_covered": null,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 8920,
+        "organic_minutes": 0,
+        "organic_subs": 0
       },
       {
         "month": "2026-10",
@@ -124477,8 +124745,12 @@
         "days_covered": 22,
         "paid_engaged": 0,
         "paid_minutes": 0,
+        "paid_subs": 0,
         "paid_pct": 0.0,
-        "paid_material": false
+        "paid_material": false,
+        "organic_engaged": 2282,
+        "organic_minutes": 0,
+        "organic_subs": 0
       }
     ],
     "meta": {

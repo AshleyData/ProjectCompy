@@ -383,7 +383,18 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
       row[name] = v;
       total += v;
     });
-    const channelTotal = r[metricKey] || 0;
+    // Organic only. The ad campaign of 2026-07-26..08-07 put one video at 21.6%
+    // of a year's watch time and added 8,326 subscribers against a 5-16/week
+    // baseline — a spike that flattened every organic series beneath it. The
+    // campaign video is already excluded from the category bands server-side,
+    // so the channel total has to be the organic one or Unattributed would
+    // absorb the whole campaign instead.
+    const ORGANIC_OF = { engaged_views: "organic_engaged",
+                         watch_minutes: "organic_minutes",
+                         subs_gained: "organic_subs" };
+    const organicKey = ORGANIC_OF[metricKey];
+    const channelTotal = (organicKey && r[organicKey] != null)
+      ? r[organicKey] : (r[metricKey] || 0);
     row[UNATTRIBUTED] = isAll ? Math.max(0, channelTotal - total) : 0;
     row.__attributed = total;
     row.__total = isAll ? Math.max(channelTotal, total) : total;
@@ -498,9 +509,11 @@ function TrendChart({ title, metricKey, allWeekly, allMonthly, byCategory, cat,
       )}
       {rows.some((r) => r.__paidMaterial) && (
         <div style={{ fontSize: 10.5, color: C.danger, marginTop: 4 }}>
-          † paid-ad traffic supplied a material share of{" "}
-          {rows.filter((r) => r.__paidMaterial).map((r) => `${r.label.replace("†", "")} (${r.__paidPct}%)`).join(", ")}
-          {" "}— bought reach, not organic performance
+          † These series show ORGANIC only. A paid campaign dominated{" "}
+          {rows.filter((r) => r.__paidMaterial).map((r) => `${r.label.replace("†", "")} (${r.__paidPct}% of views)`).join(", ")}
+          {" "}and has been removed, along with the video it promoted. Subscribers
+          cannot be attributed to a traffic source by the API, so campaign
+          subscribers are inferred from the country the campaign ran in.
         </div>
       )}
       {hasPartial && (
@@ -687,9 +700,11 @@ function VideoTab({ video }) {
   // axis as "All".
   const seriesMax = (rows, key) => rows.reduce((m, r) => Math.max(m, r[key] || 0), 0);
   const yMax = {
-    engaged_views: [seriesMax(trend, "engaged_views"), seriesMax(trend_monthly, "engaged_views")],
-    watch_minutes: [seriesMax(trend, "watch_minutes"), seriesMax(trend_monthly, "watch_minutes")],
-    subs_gained: [seriesMax(trend, "subs_gained"), seriesMax(trend_monthly, "subs_gained")],
+    // Scale to the ORGANIC series — using the raw totals left the axis set by
+    // the campaign spike, so every organic week rendered as a flat line.
+    engaged_views: [seriesMax(trend, "organic_engaged"), seriesMax(trend_monthly, "organic_engaged")],
+    watch_minutes: [seriesMax(trend, "organic_minutes"), seriesMax(trend_monthly, "organic_minutes")],
+    subs_gained: [seriesMax(trend, "organic_subs"), seriesMax(trend_monthly, "organic_subs")],
   };
 
   const shownFormats = formatWindow === "recent" ? formats_recent : formats;
