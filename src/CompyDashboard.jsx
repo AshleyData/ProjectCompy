@@ -58,7 +58,9 @@ function Bar({ label, value, max, color }) {
   );
 }
 
-function Table({ headers, rows, compact }) {
+// `totalRow` is optional — rendered in a <tfoot> so it stays put and is not
+// mistaken for data. Every existing caller omits it and is unaffected.
+function Table({ headers, rows, compact, totalRow }) {
   const p = compact ? "5px 8px" : "8px 12px";
   return (
     <div style={{ overflowX: "auto" }}>
@@ -73,6 +75,16 @@ function Table({ headers, rows, compact }) {
             </tr>
           ))}
         </tbody>
+        {totalRow && (
+          <tfoot>
+            <tr style={{ background: "#EEF3F7" }}>
+              {totalRow.map((cell, j) => (
+                <td key={j} style={{ padding: p, borderTop: `2px solid ${C.primary}`,
+                                     fontVariantNumeric: "tabular-nums" }}>{cell}</td>
+              ))}
+            </tr>
+          </tfoot>
+        )}
       </table>
     </div>
   );
@@ -2819,9 +2831,42 @@ export default function CompyDashboard() {
               <p style={{ fontSize: 12, color: C.muted, marginBottom: 14, textAlign: "left" }}>
                 GrowthBook /compare/ page performance from Google Search Console. Clicks, impressions, and average position this week vs prior week.
               </p>
+              {(() => {
+                const cps = d.compare_pages || [];
+                const sum = (f) => cps.reduce((a, p) => a + (f(p) || 0), 0);
+                const tImp = sum(p => p.impressions);
+                // Position is an average, so it cannot be added. Weighted by
+                // impressions it answers "where does a typical impression for
+                // these pages sit", which is the only meaningful aggregate.
+                const wPos = tImp ? sum(p => p.position * p.impressions) / tImp : null;
+                const totals = {
+                  position: wPos, impressions: tImp,
+                  clicks_this: sum(p => p.clicks_this),
+                  clicks_delta: sum(p => p.clicks_delta),
+                  clicks_28d: sum(p => p.clicks_28d),
+                  clicks_28d_delta: sum(p => p.clicks_28d_delta),
+                };
+                const dColor = (v) => v > 0 ? C.success : v < 0 ? C.danger : C.muted;
+                const totalRow = [
+                  <span style={{ fontWeight: 800, color: C.primary, textAlign: "left", display: "block" }}>
+                    All {cps.length} pages
+                  </span>,
+                  <span style={{ fontWeight: 700 }} title="Impression-weighted average — positions cannot be summed">
+                    {wPos != null ? wPos.toFixed(1) : "—"}<span style={{ color: C.muted, fontWeight: 400 }}> avg</span>
+                  </span>,
+                  <span style={{ fontWeight: 800 }}>{totals.impressions.toLocaleString()}</span>,
+                  <span style={{ fontWeight: 800 }}>{totals.clicks_this}</span>,
+                  <span style={{ fontWeight: 800, color: dColor(totals.clicks_delta) }}>
+                    {totals.clicks_delta > 0 ? "+" : ""}{totals.clicks_delta}</span>,
+                  <span style={{ fontWeight: 800 }}>{totals.clicks_28d}</span>,
+                  <span style={{ fontWeight: 800, color: dColor(totals.clicks_28d_delta) }}>
+                    {totals.clicks_28d_delta > 0 ? "+" : ""}{totals.clicks_28d_delta}</span>,
+                ];
+                return (
               <Table
                 headers={["Page", "Position", "Impressions", "Clicks (7d)", "WoW", "Clicks (28d)", "28d Δ"]}
-                rows={(d.compare_pages || []).map(p => [
+                totalRow={totalRow}
+                rows={cps.map(p => [
                   <a href={p.url} target="_blank" rel="noopener noreferrer" style={{ color: C.accent, textDecoration: "none", display: "block", textAlign: "left" }} onMouseOver={e => e.currentTarget.style.textDecoration="underline"} onMouseOut={e => e.currentTarget.style.textDecoration="none"}>{p.label}</a>,
                   p.position,
                   p.impressions.toLocaleString(),
@@ -2832,6 +2877,8 @@ export default function CompyDashboard() {
                 ])}
                 compact
               />
+                );
+              })()}
             </Section>
           )}
 
