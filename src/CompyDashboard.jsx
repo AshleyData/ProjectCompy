@@ -1418,6 +1418,10 @@ export default function CompyDashboard() {
   // table shows a readable slice by default and says how many it is hiding.
   // A silent slice(0, 25) over 386 rows looks like the full set.
   const [shipLimit, setShipLimit] = useState(25);
+  // Views span ~2,000x between the largest and smallest vendor, so a linear
+  // axis collapses every line but the leader onto the floor. Log by default,
+  // with a toggle because log axes mislead anyone not expecting them.
+  const [logScale, setLogScale] = useState(true);
   const [cqTrack, setCqTrack] = useState(null);     // null = all tracks
   const [cqSort, setCqSort] = useState({ col: "clicks", dir: "desc" });
   const [cqLimit, setCqLimit] = useState(25);
@@ -2926,67 +2930,85 @@ export default function CompyDashboard() {
               const vo = d.video_output;
               const cal = vo.engaged_calibration;
               const months = vo.months || [];
-              const kindTable = (kind, title, note) => {
+              // One line per vendor. Colour comes from COMP_COLORS, which is
+              // keyed on the competitor name — so a vendor keeps its colour
+              // whatever its rank, and the eye can follow it between charts.
+              const kindChart = (kind, title, note) => {
                 const data = (vo.published || {})[kind] || {};
-                const chans = Object.keys(data).sort((a, b) => {
-                  const tot = (c) => months.reduce((t, m) => t + (((data[c] || {})[m] || {}).views || 0), 0);
-                  return tot(b) - tot(a);
-                });
+                const chans = Object.keys(data).filter(c =>
+                  months.some(m => ((data[c] || {})[m] || {}).views > 0));
                 if (!chans.length) return null;
+                const rows = months.map(m => {
+                  const row = { month: m.slice(2) };
+                  chans.forEach(c => {
+                    const cell = (data[c] || {})[m];
+                    // null, not 0 — a month with no upload is a gap, and a log
+                    // axis cannot plot zero anyway.
+                    row[c] = cell && cell.views > 0 ? cell.views : null;
+                  });
+                  return row;
+                });
+                const ordered = [...chans].sort((a, b) => {
+                  const t = (c) => months.reduce((x, m) => x + (((data[c] || {})[m] || {}).views || 0), 0);
+                  return t(b) - t(a);
+                });
                 return (
-                  <div style={{ marginBottom: 20 }}>
+                  <div style={{ marginBottom: 26 }}>
                     <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{title}</div>
-                    <div style={{ fontSize: 11, color: C.muted, margin: "2px 0 8px", textAlign: "left" }}>{note}</div>
-                    <div style={{ overflowX: "auto" }}>
-                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
-                        <thead>
-                          <tr style={{ background: C.primary }}>
-                            <th style={{ padding: "6px 8px", color: "#fff", textAlign: "left", fontSize: 10,
-                                         textTransform: "uppercase", letterSpacing: 0.3 }}>Channel</th>
-                            {months.map(m => (
-                              <th key={m} style={{ padding: "6px 8px", color: "#fff", textAlign: "right",
-                                   fontSize: 10, whiteSpace: "nowrap" }}>{m.slice(2)}</th>))}
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {chans.map((c, i) => (
-                            <tr key={c} style={{ background: c === "GrowthBook" ? "#F0FFF4" : (i % 2 ? "#F8F9FA" : C.white) }}>
-                              <td style={{ padding: "5px 8px", fontWeight: c === "GrowthBook" ? 800 : 600,
-                                   color: c === "GrowthBook" ? C.success : (COMP_COLORS[c] || C.primary),
-                                   borderBottom: `1px solid ${C.border}`, textAlign: "left", whiteSpace: "nowrap" }}>
-                                {c}{c === "GrowthBook" ? " \u2605" : ""}</td>
-                              {months.map(m => {
-                                const cell = (data[c] || {})[m];
-                                return (
-                                  <td key={m} style={{ padding: "5px 8px", textAlign: "right",
-                                       borderBottom: `1px solid ${C.border}`, whiteSpace: "nowrap",
-                                       fontVariantNumeric: "tabular-nums", color: cell ? "inherit" : C.muted }}>
-                                    {cell ? <>{Math.round(cell.views / cell.videos).toLocaleString()}
-                                      <span style={{ color: C.muted, fontSize: 10 }}> /{cell.videos}</span></> : "\u00b7"}
-                                  </td>);
-                              })}
-                            </tr>))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>);
+                    <div style={{ fontSize: 11, color: C.muted, margin: "2px 0 10px", textAlign: "left" }}>{note}</div>
+                    <ResponsiveContainer width="100%" height={300}>
+                      <LineChart data={rows} margin={{ top: 6, right: 16, bottom: 4, left: 4 }}>
+                        <CartesianGrid stroke={C.border} strokeDasharray="3 3" vertical={false} />
+                        <XAxis dataKey="month" tick={{ fontSize: 11, fill: C.muted }}
+                               axisLine={{ stroke: C.border }} tickLine={false} />
+                        <YAxis scale={logScale ? "log" : "linear"}
+                               domain={logScale ? [10, "auto"] : [0, "auto"]}
+                               allowDataOverflow={false}
+                               tick={{ fontSize: 11, fill: C.muted }}
+                               axisLine={{ stroke: C.border }} tickLine={false}
+                               tickFormatter={(v) => v >= 1000 ? `${Math.round(v / 1000)}k` : v} />
+                        <RTooltip
+                          contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
+                          formatter={(v, n) => [v != null ? v.toLocaleString() + " views" : "no upload", n]}
+                          itemSorter={(it) => -(it.value || 0)} />
+                        <Legend wrapperStyle={{ fontSize: 11, paddingTop: 6 }} iconType="plainline" />
+                        {ordered.map(c => (
+                          <Line key={c} type="monotone" dataKey={c} name={c}
+                                stroke={c === "GrowthBook" ? C.success : (COMP_COLORS[c] || C.accent)}
+                                strokeWidth={c === "GrowthBook" ? 3 : 1.6}
+                                dot={{ r: c === "GrowthBook" ? 3 : 2 }}
+                                activeDot={{ r: 5 }} connectNulls={false} />
+                        ))}
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                );
               };
+
               return (
                 <Section title="\ud83d\udcf9 Content Output \u2014 what each channel ships, and how it lands">
                   <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 14, textAlign: "left" }}>
-                    Views earned by videos <b>published</b> in each month, shown as
-                    <b> views per video / number published</b>. A raw monthly total mostly measures how much a
-                    channel shipped \u2014 GrowthBook published 1 video in one month and 59 in another \u2014 so the
-                    per-video figure is the comparable one. Advertised videos are excluded.
+                    <b>Total views</b> earned by videos <b>published</b> in each month, one line per vendor.
+                    Advertised videos are excluded. Note this counts output as well as performance \u2014 a
+                    higher line can mean a vendor shipped more, not that each video did better; hover a point
+                    for the exact figure. Gaps are months with no upload.
                     {cal && (<> <b>Shorts and long-form are listed apart on purpose:</b> on our own channel, where
                       both raw and engaged views are visible, shorts convert at <b>{cal.short_pct}%</b> engaged
                       against <b>{cal.long_pct}%</b> for long-form. Competitor APIs expose raw views only, so treat
                       a shorts number as worth roughly a third of a long-form one.</>)}
                   </p>
-                  {kindTable("long", "Long-form (> 3 min)",
-                    "Distributed by search and suggestion. Higher engaged-view rate, lower volume.")}
-                  {kindTable("short", "Shorts (\u2264 3 min)",
-                    "Distributed by the Shorts feed. High raw view counts, much lower engagement.")}
+                  <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 4 }}>
+                    <button onClick={() => setLogScale(!logScale)}
+                      style={{ fontSize: 11, padding: "3px 9px", borderRadius: 4, cursor: "pointer",
+                               border: `1px solid ${C.border}`, background: C.white, color: C.primary }}
+                      title="Views span roughly 2,000x between the biggest and smallest vendor. On a linear axis every line except the leader flattens to the floor.">
+                      {logScale ? "Log scale \u2713" : "Linear scale"}
+                    </button>
+                  </div>
+                  {kindChart("long", "Long-form (> 3 min)",
+                    "Total views earned by videos published each month. Distributed by search and suggestion.")}
+                  {kindChart("short", "Shorts (\u2264 3 min)",
+                    "Total views earned by shorts published each month. Distributed by the Shorts feed.")}
                   <div style={{ marginTop: 6, paddingTop: 12, borderTop: `1px solid ${C.border}` }}>
                     <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>Back-catalogue growth</div>
                     {vo.incremental_available ? (
