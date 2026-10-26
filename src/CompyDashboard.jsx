@@ -2921,6 +2921,102 @@ export default function CompyDashboard() {
               ).join("; ") + ".";
 
           return (<>
+            {/* Content output — publishing volume and back-catalogue growth */}
+            {d.video_output && (d.video_output.months || []).length > 0 && (() => {
+              const vo = d.video_output;
+              const cal = vo.engaged_calibration;
+              const months = vo.months || [];
+              const kindTable = (kind, title, note) => {
+                const data = (vo.published || {})[kind] || {};
+                const chans = Object.keys(data).sort((a, b) => {
+                  const tot = (c) => months.reduce((t, m) => t + (((data[c] || {})[m] || {}).views || 0), 0);
+                  return tot(b) - tot(a);
+                });
+                if (!chans.length) return null;
+                return (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>{title}</div>
+                    <div style={{ fontSize: 11, color: C.muted, margin: "2px 0 8px", textAlign: "left" }}>{note}</div>
+                    <div style={{ overflowX: "auto" }}>
+                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                        <thead>
+                          <tr style={{ background: C.primary }}>
+                            <th style={{ padding: "6px 8px", color: "#fff", textAlign: "left", fontSize: 10,
+                                         textTransform: "uppercase", letterSpacing: 0.3 }}>Channel</th>
+                            {months.map(m => (
+                              <th key={m} style={{ padding: "6px 8px", color: "#fff", textAlign: "right",
+                                   fontSize: 10, whiteSpace: "nowrap" }}>{m.slice(2)}</th>))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {chans.map((c, i) => (
+                            <tr key={c} style={{ background: c === "GrowthBook" ? "#F0FFF4" : (i % 2 ? "#F8F9FA" : C.white) }}>
+                              <td style={{ padding: "5px 8px", fontWeight: c === "GrowthBook" ? 800 : 600,
+                                   color: c === "GrowthBook" ? C.success : (COMP_COLORS[c] || C.primary),
+                                   borderBottom: `1px solid ${C.border}`, textAlign: "left", whiteSpace: "nowrap" }}>
+                                {c}{c === "GrowthBook" ? " \u2605" : ""}</td>
+                              {months.map(m => {
+                                const cell = (data[c] || {})[m];
+                                return (
+                                  <td key={m} style={{ padding: "5px 8px", textAlign: "right",
+                                       borderBottom: `1px solid ${C.border}`, whiteSpace: "nowrap",
+                                       fontVariantNumeric: "tabular-nums", color: cell ? "inherit" : C.muted }}>
+                                    {cell ? <>{Math.round(cell.views / cell.videos).toLocaleString()}
+                                      <span style={{ color: C.muted, fontSize: 10 }}> /{cell.videos}</span></> : "\u00b7"}
+                                  </td>);
+                              })}
+                            </tr>))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>);
+              };
+              return (
+                <Section title="\ud83d\udcf9 Content Output \u2014 what each channel ships, and how it lands">
+                  <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 14, textAlign: "left" }}>
+                    Views earned by videos <b>published</b> in each month, shown as
+                    <b> views per video / number published</b>. A raw monthly total mostly measures how much a
+                    channel shipped \u2014 GrowthBook published 1 video in one month and 59 in another \u2014 so the
+                    per-video figure is the comparable one. Advertised videos are excluded.
+                    {cal && (<> <b>Shorts and long-form are listed apart on purpose:</b> on our own channel, where
+                      both raw and engaged views are visible, shorts convert at <b>{cal.short_pct}%</b> engaged
+                      against <b>{cal.long_pct}%</b> for long-form. Competitor APIs expose raw views only, so treat
+                      a shorts number as worth roughly a third of a long-form one.</>)}
+                  </p>
+                  {kindTable("long", "Long-form (> 3 min)",
+                    "Distributed by search and suggestion. Higher engaged-view rate, lower volume.")}
+                  {kindTable("short", "Shorts (\u2264 3 min)",
+                    "Distributed by the Shorts feed. High raw view counts, much lower engagement.")}
+                  <div style={{ marginTop: 6, paddingTop: 12, borderTop: `1px solid ${C.border}` }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: C.primary }}>Back-catalogue growth</div>
+                    {vo.incremental_available ? (
+                      <div style={{ overflowX: "auto" }}>
+                        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                          <tbody>
+                            {Object.entries(vo.incremental).map(([c, series]) => (
+                              <tr key={c}>
+                                <td style={{ padding: "5px 8px", fontWeight: 600, textAlign: "left" }}>{c}</td>
+                                {series.map(pt => (
+                                  <td key={pt.month} style={{ padding: "5px 8px", textAlign: "right",
+                                       fontVariantNumeric: "tabular-nums" }}>{pt.views.toLocaleString()}
+                                    <span style={{ color: C.muted, fontSize: 10 }}> /{pt.videos}</span></td>))}
+                              </tr>))}
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : (
+                      <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic", textAlign: "left", marginTop: 4 }}>
+                        Needs two consecutive monthly captures. Collection started 2026-10 \u2014 the first
+                        figures appear with the November run, then build from there.
+                      </div>)}
+                    <div style={{ fontSize: 11, color: C.muted, marginTop: 6, textAlign: "left" }}>
+                      Views gained month over month on videos already tracked \u2014 the only way to see whether an
+                      older video is still earning attention. Same-video basis only.
+                    </div>
+                  </div>
+                </Section>);
+            })()}
+
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
               <div style={{ ...card({ padding: 18, flex: 1, minWidth: 280, borderLeft: `4px solid ${C.success}` }) }}>
                 <div style={{ fontSize: 12, fontWeight: 700, color: C.success, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>GrowthBook YouTube</div>

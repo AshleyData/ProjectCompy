@@ -9210,7 +9210,7 @@
           "Ai Observability"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "PostHog's /learn section is an educational resource hub containing 37 pages of structured guides, pocket references, and interactive live playgrounds organized around their core product capabilities: session replay, AI observability, feature flags, and product analytics. It targets developers and product teams who want hands-on or quick-reference learning for PostHog's toolset."
+        "summary": "PostHog's /learn section is an educational resource hub containing 37 pages of structured guides, pocket references, and interactive live playgrounds organized around their core product capabilities: session replay, AI observability, feature flags, and product analytics. It targets developers and product teams who want hands-on or quick-reference learning for PostHog's specific toolset."
       }
     ]
   },
@@ -29709,6 +29709,675 @@
       }
     ]
   },
+  "video_output": {
+    "short_max_s": 180,
+    "published": {
+      "long": {
+        "GrowthBook": {
+          "2026-07": {
+            "views": 36993,
+            "videos": 11
+          },
+          "2026-03": {
+            "views": 2015,
+            "videos": 11
+          },
+          "2026-09": {
+            "views": 2567,
+            "videos": 20
+          },
+          "2026-04": {
+            "views": 1079,
+            "videos": 5
+          },
+          "2026-05": {
+            "views": 835,
+            "videos": 5
+          },
+          "2026-02": {
+            "views": 315,
+            "videos": 1
+          },
+          "2026-10": {
+            "views": 677,
+            "videos": 6
+          },
+          "2026-08": {
+            "views": 688,
+            "videos": 8
+          },
+          "2026-06": {
+            "views": 628,
+            "videos": 9
+          }
+        },
+        "LaunchDarkly": {
+          "2026-05": {
+            "views": 2567,
+            "videos": 1
+          },
+          "2026-09": {
+            "views": 1271,
+            "videos": 6
+          },
+          "2026-06": {
+            "views": 563,
+            "videos": 1
+          },
+          "2026-08": {
+            "views": 846,
+            "videos": 5
+          },
+          "2026-04": {
+            "views": 691,
+            "videos": 4
+          },
+          "2026-03": {
+            "views": 702,
+            "videos": 3
+          }
+        },
+        "Statsig": {
+          "2026-01": {
+            "views": 652,
+            "videos": 1
+          }
+        },
+        "Optimizely": {
+          "2026-09": {
+            "views": 2237,
+            "videos": 2
+          },
+          "2026-04": {
+            "views": 2079,
+            "videos": 7
+          },
+          "2026-01": {
+            "views": 1119,
+            "videos": 1
+          },
+          "2026-10": {
+            "views": 1114,
+            "videos": 5
+          },
+          "2026-03": {
+            "views": 1245,
+            "videos": 8
+          },
+          "2026-02": {
+            "views": 280,
+            "videos": 1
+          },
+          "2026-07": {
+            "views": 369,
+            "videos": 6
+          }
+        },
+        "Harness": {
+          "2026-10": {
+            "views": 44496,
+            "videos": 20
+          },
+          "2026-07": {
+            "views": 4067,
+            "videos": 7
+          },
+          "2026-05": {
+            "views": 6620,
+            "videos": 44
+          },
+          "2026-03": {
+            "views": 2475,
+            "videos": 8
+          },
+          "2026-08": {
+            "views": 2285,
+            "videos": 7
+          },
+          "2026-04": {
+            "views": 1813,
+            "videos": 6
+          },
+          "2026-09": {
+            "views": 3108,
+            "videos": 10
+          },
+          "2026-06": {
+            "views": 756,
+            "videos": 3
+          },
+          "2026-02": {
+            "views": 864,
+            "videos": 3
+          },
+          "2026-01": {
+            "views": 269,
+            "videos": 1
+          }
+        },
+        "Datadog": {
+          "2026-06": {
+            "views": 25279,
+            "videos": 49
+          },
+          "2026-03": {
+            "views": 12390,
+            "videos": 13
+          },
+          "2026-04": {
+            "views": 7573,
+            "videos": 9
+          },
+          "2026-09": {
+            "views": 2777,
+            "videos": 2
+          },
+          "2026-02": {
+            "views": 2003,
+            "videos": 1
+          },
+          "2026-05": {
+            "views": 4075,
+            "videos": 9
+          },
+          "2026-08": {
+            "views": 2698,
+            "videos": 3
+          },
+          "2026-10": {
+            "views": 3828,
+            "videos": 9
+          }
+        },
+        "Amplitude Exp": {
+          "2026-04": {
+            "views": 2838,
+            "videos": 3
+          },
+          "2026-08": {
+            "views": 1999,
+            "videos": 3
+          },
+          "2026-09": {
+            "views": 2222,
+            "videos": 28
+          },
+          "2026-02": {
+            "views": 944,
+            "videos": 1
+          },
+          "2026-03": {
+            "views": 1708,
+            "videos": 3
+          },
+          "2026-05": {
+            "views": 4455,
+            "videos": 13
+          },
+          "2026-06": {
+            "views": 551,
+            "videos": 4
+          },
+          "2026-01": {
+            "views": 300,
+            "videos": 1
+          },
+          "2026-07": {
+            "views": 808,
+            "videos": 10
+          }
+        },
+        "Unleash": {
+          "2026-02": {
+            "views": 312,
+            "videos": 1
+          },
+          "2026-07": {
+            "views": 263,
+            "videos": 1
+          },
+          "2026-10": {
+            "views": 437,
+            "videos": 2
+          },
+          "2026-01": {
+            "views": 146,
+            "videos": 1
+          },
+          "2026-08": {
+            "views": 181,
+            "videos": 2
+          },
+          "2026-06": {
+            "views": 746,
+            "videos": 16
+          }
+        },
+        "Flagsmith": {
+          "2026-09": {
+            "views": 156,
+            "videos": 1
+          },
+          "2026-03": {
+            "views": 238,
+            "videos": 2
+          },
+          "2026-01": {
+            "views": 143,
+            "videos": 1
+          }
+        },
+        "Kameleoon": {
+          "2026-06": {
+            "views": 233,
+            "videos": 4
+          },
+          "2026-03": {
+            "views": 264,
+            "videos": 4
+          },
+          "2026-08": {
+            "views": 96,
+            "videos": 2
+          },
+          "2026-07": {
+            "views": 102,
+            "videos": 2
+          },
+          "2026-10": {
+            "views": 30,
+            "videos": 1
+          },
+          "2026-09": {
+            "views": 108,
+            "videos": 2
+          },
+          "2026-05": {
+            "views": 74,
+            "videos": 2
+          }
+        },
+        "PostHog": {
+          "2026-04": {
+            "views": 55084,
+            "videos": 1
+          },
+          "2026-06": {
+            "views": 55397,
+            "videos": 4
+          },
+          "2026-09": {
+            "views": 23682,
+            "videos": 1
+          },
+          "2026-10": {
+            "views": 26459,
+            "videos": 3
+          },
+          "2026-08": {
+            "views": 7802,
+            "videos": 1
+          },
+          "2026-02": {
+            "views": 6757,
+            "videos": 1
+          },
+          "2026-07": {
+            "views": 3181,
+            "videos": 1
+          },
+          "2026-01": {
+            "views": 5963,
+            "videos": 3
+          },
+          "2026-03": {
+            "views": 4662,
+            "videos": 3
+          },
+          "2026-05": {
+            "views": 1851,
+            "videos": 1
+          }
+        }
+      },
+      "short": {
+        "GrowthBook": {
+          "2026-04": {
+            "views": 4112,
+            "videos": 8
+          },
+          "2026-07": {
+            "views": 11323,
+            "videos": 41
+          },
+          "2026-03": {
+            "views": 3819,
+            "videos": 10
+          },
+          "2026-09": {
+            "views": 25185,
+            "videos": 39
+          },
+          "2026-08": {
+            "views": 1460,
+            "videos": 7
+          },
+          "2026-10": {
+            "views": 1895,
+            "videos": 27
+          },
+          "2026-05": {
+            "views": 361,
+            "videos": 3
+          },
+          "2026-06": {
+            "views": 57,
+            "videos": 1
+          }
+        },
+        "LaunchDarkly": {
+          "2026-06": {
+            "views": 244488,
+            "videos": 6
+          },
+          "2026-09": {
+            "views": 1634,
+            "videos": 6
+          },
+          "2026-07": {
+            "views": 1312,
+            "videos": 3
+          },
+          "2026-04": {
+            "views": 954,
+            "videos": 2
+          },
+          "2026-10": {
+            "views": 2964,
+            "videos": 10
+          },
+          "2026-08": {
+            "views": 1220,
+            "videos": 3
+          },
+          "2026-05": {
+            "views": 566,
+            "videos": 7
+          },
+          "2026-03": {
+            "views": 885,
+            "videos": 6
+          }
+        },
+        "Optimizely": {
+          "2026-06": {
+            "views": 3820,
+            "videos": 9
+          },
+          "2026-10": {
+            "views": 3179,
+            "videos": 8
+          },
+          "2026-07": {
+            "views": 3701,
+            "videos": 16
+          },
+          "2026-04": {
+            "views": 1209,
+            "videos": 7
+          },
+          "2026-03": {
+            "views": 2543,
+            "videos": 15
+          },
+          "2026-08": {
+            "views": 457,
+            "videos": 1
+          },
+          "2026-09": {
+            "views": 1078,
+            "videos": 6
+          },
+          "2026-02": {
+            "views": 489,
+            "videos": 2
+          },
+          "2026-05": {
+            "views": 1066,
+            "videos": 5
+          },
+          "2026-01": {
+            "views": 523,
+            "videos": 3
+          }
+        },
+        "Harness": {
+          "2026-10": {
+            "views": 7445,
+            "videos": 21
+          },
+          "2026-08": {
+            "views": 6134,
+            "videos": 7
+          },
+          "2026-04": {
+            "views": 4669,
+            "videos": 9
+          },
+          "2026-06": {
+            "views": 5149,
+            "videos": 9
+          },
+          "2026-07": {
+            "views": 1998,
+            "videos": 5
+          },
+          "2026-05": {
+            "views": 7772,
+            "videos": 31
+          },
+          "2026-03": {
+            "views": 2323,
+            "videos": 4
+          },
+          "2026-09": {
+            "views": 2310,
+            "videos": 9
+          },
+          "2026-02": {
+            "views": 378,
+            "videos": 1
+          }
+        },
+        "Datadog": {
+          "2026-03": {
+            "views": 6641,
+            "videos": 7
+          },
+          "2026-01": {
+            "views": 3474,
+            "videos": 2
+          },
+          "2026-09": {
+            "views": 2609,
+            "videos": 2
+          },
+          "2026-06": {
+            "views": 2189,
+            "videos": 4
+          },
+          "2026-02": {
+            "views": 2608,
+            "videos": 3
+          },
+          "2026-04": {
+            "views": 1971,
+            "videos": 3
+          },
+          "2026-10": {
+            "views": 440,
+            "videos": 1
+          },
+          "2026-08": {
+            "views": 660,
+            "videos": 1
+          },
+          "2026-07": {
+            "views": 308,
+            "videos": 1
+          },
+          "2026-05": {
+            "views": 1072,
+            "videos": 2
+          }
+        },
+        "Amplitude Exp": {
+          "2026-02": {
+            "views": 2195,
+            "videos": 5
+          },
+          "2026-08": {
+            "views": 1428,
+            "videos": 3
+          },
+          "2026-06": {
+            "views": 2040,
+            "videos": 19
+          },
+          "2026-07": {
+            "views": 994,
+            "videos": 8
+          },
+          "2026-10": {
+            "views": 335,
+            "videos": 1
+          },
+          "2026-05": {
+            "views": 512,
+            "videos": 2
+          },
+          "2026-01": {
+            "views": 757,
+            "videos": 4
+          },
+          "2026-03": {
+            "views": 1015,
+            "videos": 11
+          },
+          "2026-09": {
+            "views": 949,
+            "videos": 23
+          },
+          "2026-04": {
+            "views": 98,
+            "videos": 1
+          }
+        },
+        "Unleash": {
+          "2026-10": {
+            "views": 62,
+            "videos": 3
+          }
+        },
+        "Flagsmith": {
+          "2026-10": {
+            "views": 145,
+            "videos": 1
+          }
+        },
+        "Kameleoon": {
+          "2026-09": {
+            "views": 13052,
+            "videos": 9
+          },
+          "2026-05": {
+            "views": 133,
+            "videos": 2
+          },
+          "2026-10": {
+            "views": 50,
+            "videos": 1
+          },
+          "2026-08": {
+            "views": 109,
+            "videos": 4
+          },
+          "2026-07": {
+            "views": 100,
+            "videos": 3
+          },
+          "2026-06": {
+            "views": 61,
+            "videos": 2
+          },
+          "2026-04": {
+            "views": 51,
+            "videos": 1
+          }
+        },
+        "PostHog": {
+          "2026-09": {
+            "views": 17913,
+            "videos": 4
+          },
+          "2026-08": {
+            "views": 6538,
+            "videos": 1
+          },
+          "2026-06": {
+            "views": 6817,
+            "videos": 2
+          },
+          "2026-05": {
+            "views": 7323,
+            "videos": 3
+          },
+          "2026-02": {
+            "views": 6351,
+            "videos": 2
+          },
+          "2026-04": {
+            "views": 2626,
+            "videos": 2
+          },
+          "2026-10": {
+            "views": 2491,
+            "videos": 2
+          },
+          "2026-01": {
+            "views": 9160,
+            "videos": 6
+          },
+          "2026-07": {
+            "views": 3531,
+            "videos": 3
+          },
+          "2026-03": {
+            "views": 342,
+            "videos": 1
+          }
+        }
+      }
+    },
+    "incremental": {},
+    "months": [
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "engaged_calibration": {
+      "short_pct": 23.0,
+      "long_pct": 67.1,
+      "source": "GrowthBook own-channel Analytics, trailing 30 days"
+    },
+    "incremental_available": false
+  },
   "homepage_weekly": [
     {
       "week": "2025-12-29",
@@ -36248,36 +36917,20 @@
         }
       },
       "by_category": {
-        "Other webinar": {
+        "Podcast clip": {
           "current": {
-            "engaged_views": 87,
-            "raw_views": 101,
-            "watch_minutes": 466,
-            "subs_gained": 0,
-            "videos": 8
+            "engaged_views": 2782,
+            "raw_views": 12422,
+            "watch_minutes": 907,
+            "subs_gained": 3,
+            "videos": 65
           },
           "prior": {
-            "engaged_views": 130,
-            "raw_views": 158,
-            "watch_minutes": 497,
-            "subs_gained": 2,
-            "videos": 10
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1283,
-            "raw_views": 2032,
-            "watch_minutes": 3910,
-            "subs_gained": 5,
-            "videos": 64
-          },
-          "prior": {
-            "engaged_views": 1326,
-            "raw_views": 1905,
-            "watch_minutes": 3791,
+            "engaged_views": 4262,
+            "raw_views": 15944,
+            "watch_minutes": 1314,
             "subs_gained": 6,
-            "videos": 85
+            "videos": 42
           }
         },
         "Kohavi webinar": {
@@ -36296,22 +36949,6 @@
             "videos": 2
           }
         },
-        "Other short": {
-          "current": {
-            "engaged_views": 26,
-            "raw_views": 48,
-            "watch_minutes": 6,
-            "subs_gained": 0,
-            "videos": 11
-          },
-          "prior": {
-            "engaged_views": 62,
-            "raw_views": 114,
-            "watch_minutes": 51,
-            "subs_gained": 0,
-            "videos": 26
-          }
-        },
         "Podcast episode": {
           "current": {
             "engaged_views": 941,
@@ -36328,20 +36965,52 @@
             "videos": 33
           }
         },
-        "Podcast clip": {
+        "Product long-form": {
           "current": {
-            "engaged_views": 2782,
-            "raw_views": 12422,
-            "watch_minutes": 907,
-            "subs_gained": 3,
-            "videos": 65
+            "engaged_views": 1283,
+            "raw_views": 2032,
+            "watch_minutes": 3910,
+            "subs_gained": 5,
+            "videos": 64
           },
           "prior": {
-            "engaged_views": 4262,
-            "raw_views": 15944,
-            "watch_minutes": 1314,
+            "engaged_views": 1326,
+            "raw_views": 1905,
+            "watch_minutes": 3791,
             "subs_gained": 6,
-            "videos": 42
+            "videos": 85
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 87,
+            "raw_views": 101,
+            "watch_minutes": 466,
+            "subs_gained": 0,
+            "videos": 8
+          },
+          "prior": {
+            "engaged_views": 130,
+            "raw_views": 158,
+            "watch_minutes": 497,
+            "subs_gained": 2,
+            "videos": 10
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 26,
+            "raw_views": 48,
+            "watch_minutes": 6,
+            "subs_gained": 0,
+            "videos": 11
+          },
+          "prior": {
+            "engaged_views": 62,
+            "raw_views": 114,
+            "watch_minutes": 51,
+            "subs_gained": 0,
+            "videos": 26
           }
         }
       },
