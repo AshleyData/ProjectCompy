@@ -1776,7 +1776,7 @@ export default function CompyDashboard() {
 
           const metricCard = (m) => {
             const rows = m.points.map(p => ({
-              label: `W${p.week}`, week: p.week,
+              label: p.week === 0 ? "Start" : `W${p.week}`, week: p.week,
               actual: p.value, target: p.target, partial: p.partial,
             }));
             const l = m.latest;
@@ -1806,6 +1806,11 @@ export default function CompyDashboard() {
                         <span style={{ fontSize: 12, fontWeight: 700,
                                        color: ahead ? C.success : C.danger }}>
                           {ahead ? "\u25b2 " : "\u25bc "}{fmt(Math.abs(m.gap), m.unit)} vs pace
+                        </span>
+                      )}
+                      {m.required_per_week != null && (
+                        <span style={{ fontSize: 11, color: C.muted }}>
+                          needs {fmt(m.required_per_week, m.unit)}/wk
                         </span>
                       )}
                     </div>
@@ -1840,7 +1845,10 @@ export default function CompyDashboard() {
                   </ResponsiveContainer>
                   <div style={{ fontSize: 10, color: C.muted, marginTop: 4, textAlign: "left" }}>
                     {m.kind === "stock"
-                      ? "A balance, not a running total \u2014 each point is the pipeline standing at that week, so it is not accumulated."
+                      ? `A balance, not a running total \u2014 each point is the pipeline standing at that week, so it is not accumulated.${
+                          m.baseline != null
+                            ? ` The target ramps from the ${fmt(m.baseline, m.unit)} the quarter opened with to ${fmt(m.target, m.unit)}, so it measures the ${fmt(m.target - m.baseline, m.unit)} of growth required \u2014 not the balance itself.`
+                            : ""}`
                       : "Cumulative through the quarter against a straight-line target."}
                     {l && l.partial && " The last point is a week still in progress."}
                   </div>
@@ -1854,9 +1862,10 @@ export default function CompyDashboard() {
             <Section title="\ud83c\udfaf Quarterly KPIs">
               <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 14, textAlign: "left" }}>
                 Quarter <b>{k.quarter_start}</b> to <b>{k.quarter_end}</b> \u2014 {k.weeks} weeks,
-                Sunday-aligned. The dashed line is the target divided evenly across the quarter;
-                the solid line is what actually happened, captured weekly so later edits in
-                HubSpot cannot rewrite what an earlier week looked like.
+                Sunday-aligned. The dashed line is the target spread evenly across the quarter \u2014
+                from zero for metrics that accumulate, and from the balance the quarter opened
+                with for those that do not. The solid line is what actually happened, captured
+                weekly so later edits in HubSpot cannot rewrite what an earlier week looked like.
               </p>
               {k.metrics.map(metricCard)}
             </Section>

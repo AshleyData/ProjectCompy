@@ -20709,6 +20709,8 @@
         "kind": "flow",
         "unit": "count",
         "target": 225,
+        "required_per_week": 17.31,
+        "baseline": null,
         "points": [
           {
             "week": 1,
@@ -20847,6 +20849,8 @@
         "kind": "flow",
         "unit": "usd",
         "target": 10700000,
+        "required_per_week": 823076.92,
+        "baseline": null,
         "points": [
           {
             "week": 1,
@@ -20985,14 +20989,25 @@
         "kind": "stock",
         "unit": "usd",
         "target": 9700000,
+        "required_per_week": 307692.31,
+        "baseline": 5700000,
         "points": [
+          {
+            "week": 0,
+            "week_start": "2026-11-01",
+            "week_end": "2026-11-01",
+            "value": 5700000.0,
+            "target": 5700000.0,
+            "period": null,
+            "partial": false
+          },
           {
             "week": 1,
             "week_start": "2026-11-01",
             "week_end": "2026-11-07",
             "value": null,
             "period": null,
-            "target": 746153.85,
+            "target": 6007692.31,
             "partial": false
           },
           {
@@ -21001,7 +21016,7 @@
             "week_end": "2026-11-14",
             "value": 5699000.0,
             "period": null,
-            "target": 1492307.69,
+            "target": 6315384.62,
             "partial": true
           },
           {
@@ -21010,7 +21025,7 @@
             "week_end": "2026-11-21",
             "value": null,
             "period": null,
-            "target": 2238461.54,
+            "target": 6623076.92,
             "partial": false
           },
           {
@@ -21019,7 +21034,7 @@
             "week_end": "2026-11-28",
             "value": null,
             "period": null,
-            "target": 2984615.38,
+            "target": 6930769.23,
             "partial": false
           },
           {
@@ -21028,7 +21043,7 @@
             "week_end": "2026-12-05",
             "value": null,
             "period": null,
-            "target": 3730769.23,
+            "target": 7238461.54,
             "partial": false
           },
           {
@@ -21037,7 +21052,7 @@
             "week_end": "2026-12-12",
             "value": null,
             "period": null,
-            "target": 4476923.08,
+            "target": 7546153.85,
             "partial": false
           },
           {
@@ -21046,7 +21061,7 @@
             "week_end": "2026-12-19",
             "value": null,
             "period": null,
-            "target": 5223076.92,
+            "target": 7853846.15,
             "partial": false
           },
           {
@@ -21055,7 +21070,7 @@
             "week_end": "2026-12-26",
             "value": null,
             "period": null,
-            "target": 5969230.77,
+            "target": 8161538.46,
             "partial": false
           },
           {
@@ -21064,7 +21079,7 @@
             "week_end": "2027-01-02",
             "value": null,
             "period": null,
-            "target": 6715384.62,
+            "target": 8469230.77,
             "partial": false
           },
           {
@@ -21073,7 +21088,7 @@
             "week_end": "2027-01-09",
             "value": null,
             "period": null,
-            "target": 7461538.46,
+            "target": 8776923.08,
             "partial": false
           },
           {
@@ -21082,7 +21097,7 @@
             "week_end": "2027-01-16",
             "value": null,
             "period": null,
-            "target": 8207692.31,
+            "target": 9084615.38,
             "partial": false
           },
           {
@@ -21091,7 +21106,7 @@
             "week_end": "2027-01-23",
             "value": null,
             "period": null,
-            "target": 8953846.15,
+            "target": 9392307.69,
             "partial": false
           },
           {
@@ -21111,10 +21126,10 @@
           "week_end": "2026-11-14",
           "value": 5699000.0,
           "period": null,
-          "target": 1492307.69,
+          "target": 6315384.62,
           "partial": true
         },
-        "gap": 4206692.31,
+        "gap": -616384.62,
         "has_data": true
       },
       {
@@ -21123,6 +21138,8 @@
         "kind": "flow",
         "unit": "count",
         "target": null,
+        "required_per_week": null,
+        "baseline": null,
         "points": [
           {
             "week": 1,
@@ -28412,20 +28429,36 @@
         }
       },
       "by_category": {
-        "Other short": {
+        "Podcast episode": {
           "current": {
-            "engaged_views": 74,
-            "raw_views": 238,
-            "watch_minutes": 43,
-            "subs_gained": 0,
-            "videos": 11
+            "engaged_views": 762,
+            "raw_views": 1071,
+            "watch_minutes": 2198,
+            "subs_gained": 12,
+            "videos": 42
           },
           "prior": {
-            "engaged_views": 33,
-            "raw_views": 73,
-            "watch_minutes": 10,
-            "subs_gained": 0,
-            "videos": 14
+            "engaged_views": 869,
+            "raw_views": 1386,
+            "watch_minutes": 2908,
+            "subs_gained": 10,
+            "videos": 39
+          }
+        },
+        "Product long-form": {
+          "current": {
+            "engaged_views": 1174,
+            "raw_views": 1728,
+            "watch_minutes": 3583,
+            "subs_gained": 5,
+            "videos": 63
+          },
+          "prior": {
+            "engaged_views": 1398,
+            "raw_views": 2222,
+            "watch_minutes": 4111,
+            "subs_gained": 5,
+            "videos": 70
           }
         },
         "Kohavi webinar": {
@@ -28476,36 +28509,20 @@
             "videos": 63
           }
         },
-        "Podcast episode": {
+        "Other short": {
           "current": {
-            "engaged_views": 762,
-            "raw_views": 1071,
-            "watch_minutes": 2198,
-            "subs_gained": 12,
-            "videos": 42
+            "engaged_views": 74,
+            "raw_views": 238,
+            "watch_minutes": 43,
+            "subs_gained": 0,
+            "videos": 11
           },
           "prior": {
-            "engaged_views": 869,
-            "raw_views": 1386,
-            "watch_minutes": 2908,
-            "subs_gained": 10,
-            "videos": 39
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1174,
-            "raw_views": 1728,
-            "watch_minutes": 3583,
-            "subs_gained": 5,
-            "videos": 63
-          },
-          "prior": {
-            "engaged_views": 1398,
-            "raw_views": 2222,
-            "watch_minutes": 4111,
-            "subs_gained": 5,
-            "videos": 70
+            "engaged_views": 33,
+            "raw_views": 73,
+            "watch_minutes": 10,
+            "subs_gained": 0,
+            "videos": 14
           }
         }
       },
