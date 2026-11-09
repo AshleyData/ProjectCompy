@@ -1335,6 +1335,7 @@ function VideoTab({ video }) {
 // reference material reachable from the "More ▾" drawer. The Opportunities tab was
 // retired into Strategy, so it no longer appears here.
 const PRIMARY_TABS = [
+  { id: "kpi", label: "🎯 KPIs" },
   { id: "strategy", label: "🧭 Strategy" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
   { id: "summary", label: "📊 Summary" },
@@ -1759,6 +1760,110 @@ export default function CompyDashboard() {
             Distance sections now live inside the Strategy tab below. */}
 
         {/* ── STRATEGY (🧭 ACP decision layer) ── */}
+        {/* ── KPIs ── */}
+        {tab === "kpi" && (() => {
+          const k = d.kpi;
+          if (!k || !(k.metrics || []).length) {
+            return <Section title="\ud83c\udfaf Quarterly KPIs">
+              <div style={{ fontSize: 13, color: C.muted, fontStyle: "italic" }}>
+                No KPI snapshot for this week yet.
+              </div></Section>;
+          }
+          const fmt = (v, unit) => v == null ? "\u2014"
+            : unit === "usd"
+              ? (Math.abs(v) >= 1e6 ? `$${(v / 1e6).toFixed(2)}M` : `$${Math.round(v).toLocaleString()}`)
+              : Math.round(v).toLocaleString();
+
+          const metricCard = (m) => {
+            const rows = m.points.map(p => ({
+              label: `W${p.week}`, week: p.week,
+              actual: p.value, target: p.target, partial: p.partial,
+            }));
+            const l = m.latest;
+            const pct = l && m.target ? (l.value / m.target) * 100 : null;
+            const ahead = m.gap != null && m.gap >= 0;
+            return (
+              <div key={m.key} style={{ ...card({ padding: 16, marginBottom: 18 }) }}>
+                <div style={{ display: "flex", justifyContent: "space-between",
+                              alignItems: "baseline", flexWrap: "wrap", gap: 8 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: C.primary }}>
+                    {m.label}
+                    <span style={{ fontSize: 10, color: C.muted, fontWeight: 400,
+                                   textTransform: "uppercase", letterSpacing: 0.4, marginLeft: 8 }}>
+                      {m.kind === "stock" ? "balance" : "cumulative"}
+                    </span>
+                  </div>
+                  {m.has_data && (
+                    <div style={{ display: "flex", gap: 14, alignItems: "baseline" }}>
+                      <span style={{ fontSize: 20, fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
+                        {fmt(l.value, m.unit)}
+                      </span>
+                      <span style={{ fontSize: 12, color: C.muted }}>
+                        of {fmt(m.target, m.unit)}
+                        {pct != null && <strong style={{ marginLeft: 6, color: C.primary }}>{pct.toFixed(0)}%</strong>}
+                      </span>
+                      {m.gap != null && (
+                        <span style={{ fontSize: 12, fontWeight: 700,
+                                       color: ahead ? C.success : C.danger }}>
+                          {ahead ? "\u25b2 " : "\u25bc "}{fmt(Math.abs(m.gap), m.unit)} vs pace
+                        </span>
+                      )}
+                    </div>
+                  )}
+                </div>
+                {!m.has_data ? (
+                  <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, textAlign: "left" }}>
+                    Not yet tracked \u2014 {m.source}
+                  </div>
+                ) : (
+                  <>
+                  <ResponsiveContainer width="100%" height={210}>
+                    <LineChart data={rows} margin={{ top: 10, right: 12, bottom: 2, left: 4 }}>
+                      <CartesianGrid stroke={C.border} strokeDasharray="3 3" vertical={false} />
+                      <XAxis dataKey="label" tick={{ fontSize: 10, fill: C.muted }}
+                             axisLine={{ stroke: C.border }} tickLine={false} />
+                      <YAxis tick={{ fontSize: 10, fill: C.muted }} axisLine={{ stroke: C.border }}
+                             tickLine={false}
+                             tickFormatter={(v) => m.unit === "usd"
+                               ? (v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : `${Math.round(v / 1000)}k`)
+                               : v} />
+                      <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
+                        formatter={(v, n) => [v == null ? "not measured" : fmt(v, m.unit), n]} />
+                      <Legend wrapperStyle={{ fontSize: 11 }} iconType="plainline" />
+                      <Line type="monotone" dataKey="target" name="Target pace"
+                            stroke={C.muted} strokeWidth={1.6} strokeDasharray="5 4"
+                            dot={false} connectNulls />
+                      <Line type="monotone" dataKey="actual" name="Actual"
+                            stroke={ahead ? C.success : C.accent} strokeWidth={2.6}
+                            dot={{ r: 3 }} connectNulls={false} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                  <div style={{ fontSize: 10, color: C.muted, marginTop: 4, textAlign: "left" }}>
+                    {m.kind === "stock"
+                      ? "A balance, not a running total \u2014 each point is the pipeline standing at that week, so it is not accumulated."
+                      : "Cumulative through the quarter against a straight-line target."}
+                    {l && l.partial && " The last point is a week still in progress."}
+                  </div>
+                  </>
+                )}
+              </div>
+            );
+          };
+
+          return (<>
+            <Section title="\ud83c\udfaf Quarterly KPIs">
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 14, textAlign: "left" }}>
+                Quarter <b>{k.quarter_start}</b> to <b>{k.quarter_end}</b> \u2014 {k.weeks} weeks,
+                Sunday-aligned. The dashed line is the target divided evenly across the quarter;
+                the solid line is what actually happened, captured weekly so later edits in
+                HubSpot cannot rewrite what an earlier week looked like.
+              </p>
+              {k.metrics.map(metricCard)}
+            </Section>
+          </>);
+        })()}
+
+
         {tab === "strategy" && (() => {
           const strat = d.strategy;
           if (!strat || !(strat.opportunities || []).length) {
