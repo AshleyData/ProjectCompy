@@ -1764,7 +1764,7 @@ export default function CompyDashboard() {
         {tab === "kpi" && (() => {
           const k = d.kpi;
           if (!k || !(k.metrics || []).length) {
-            return <Section title="\ud83c\udfaf Quarterly KPIs">
+            return <Section title="Quarterly Pipeline Generate KPIs">
               <div style={{ fontSize: 13, color: C.muted, fontStyle: "italic" }}>
                 No KPI snapshot for this week yet.
               </div></Section>;
@@ -1859,7 +1859,7 @@ export default function CompyDashboard() {
           };
 
           return (<>
-            <Section title="\ud83c\udfaf Quarterly KPIs">
+            <Section title="Quarterly Pipeline Generate KPIs">
               <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 14, textAlign: "left" }}>
                 Quarter <b>{k.quarter_start}</b> to <b>{k.quarter_end}</b> \u2014 {k.weeks} weeks,
                 Sunday-aligned. The dashed line is the target spread evenly across the quarter \u2014
