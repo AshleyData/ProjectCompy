@@ -1722,12 +1722,12 @@
           "pipeline": 2,
           "aiCitation": 2,
           "demand": 3,
-          "winnability": 3,
+          "winnability": 2,
           "strategicFit": 3
         },
-        "weightedImpact": 48.0,
+        "weightedImpact": 46.0,
         "effortTier": "M",
-        "acpScore": 19.2,
+        "acpScore": 18.4,
         "horizon": "Own the Category",
         "northStarMetric": "AI Share of Voice",
         "action": "Publish a GrowthBook asset for \u201cwhat null hypothesis\u201d to own this category. Demand is real (competitors rank here); lead with GrowthBook's open-source + experimentation angle and an answer-format H2 for AI citation.",
@@ -1736,7 +1736,7 @@
           "pipeline": "intent inferred from \u201cwhat null hypothesis\u201d",
           "aiCitation": "asset-type lift + informational intent",
           "demand": "14,800 monthly searches (DataForSEO)",
-          "winnability": "KD 10",
+          "winnability": "KD 23",
           "strategicFit": "advances an on-strategy category GrowthBook should own"
         }
       },
@@ -10506,7 +10506,7 @@
           "Twig"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "The /learn section is an educational resource hub containing 22 pages focused on teaching developers and engineers how to use PostHog's error tracking and AI observability features. It targets technical practitioners who want to understand concepts like stack traces, prompt management, and evaluation methods for AI-powered products."
+        "summary": "The /learn section is an educational resource hub containing 22 pages focused on teaching developers and product engineers how to use PostHog's error tracking and AI observability features. It targets technical users seeking practical guidance on topics like stack traces, prompt management, evaluation methods, and monitoring AI-powered products."
       }
     ]
   },
@@ -30936,6 +30936,583 @@
     },
     "incremental_available": true
   },
+  "kpi": {
+    "quarter_start": "2026-11-01",
+    "quarter_end": "2027-01-31",
+    "weeks": 13,
+    "metrics": [
+      {
+        "key": "demo_requests",
+        "label": "Demo requests",
+        "kind": "flow",
+        "unit": "count",
+        "target": 225,
+        "required_per_week": 17.31,
+        "baseline": null,
+        "points": [
+          {
+            "week": 1,
+            "week_start": "2026-11-01",
+            "week_end": "2026-11-07",
+            "value": 8.0,
+            "period": 8.0,
+            "target": 17.31,
+            "partial": false
+          },
+          {
+            "week": 2,
+            "week_start": "2026-11-08",
+            "week_end": "2026-11-14",
+            "value": 9.0,
+            "period": 1.0,
+            "target": 34.62,
+            "partial": true
+          },
+          {
+            "week": 3,
+            "week_start": "2026-11-15",
+            "week_end": "2026-11-21",
+            "value": null,
+            "period": null,
+            "target": 51.92,
+            "partial": false
+          },
+          {
+            "week": 4,
+            "week_start": "2026-11-22",
+            "week_end": "2026-11-28",
+            "value": null,
+            "period": null,
+            "target": 69.23,
+            "partial": false
+          },
+          {
+            "week": 5,
+            "week_start": "2026-11-29",
+            "week_end": "2026-12-05",
+            "value": null,
+            "period": null,
+            "target": 86.54,
+            "partial": false
+          },
+          {
+            "week": 6,
+            "week_start": "2026-12-06",
+            "week_end": "2026-12-12",
+            "value": null,
+            "period": null,
+            "target": 103.85,
+            "partial": false
+          },
+          {
+            "week": 7,
+            "week_start": "2026-12-13",
+            "week_end": "2026-12-19",
+            "value": null,
+            "period": null,
+            "target": 121.15,
+            "partial": false
+          },
+          {
+            "week": 8,
+            "week_start": "2026-12-20",
+            "week_end": "2026-12-26",
+            "value": null,
+            "period": null,
+            "target": 138.46,
+            "partial": false
+          },
+          {
+            "week": 9,
+            "week_start": "2026-12-27",
+            "week_end": "2027-01-02",
+            "value": null,
+            "period": null,
+            "target": 155.77,
+            "partial": false
+          },
+          {
+            "week": 10,
+            "week_start": "2027-01-03",
+            "week_end": "2027-01-09",
+            "value": null,
+            "period": null,
+            "target": 173.08,
+            "partial": false
+          },
+          {
+            "week": 11,
+            "week_start": "2027-01-10",
+            "week_end": "2027-01-16",
+            "value": null,
+            "period": null,
+            "target": 190.38,
+            "partial": false
+          },
+          {
+            "week": 12,
+            "week_start": "2027-01-17",
+            "week_end": "2027-01-23",
+            "value": null,
+            "period": null,
+            "target": 207.69,
+            "partial": false
+          },
+          {
+            "week": 13,
+            "week_start": "2027-01-24",
+            "week_end": "2027-01-31",
+            "value": null,
+            "period": null,
+            "target": 225.0,
+            "partial": false
+          }
+        ],
+        "source": "CONTACT.demo_request=true by demo_request_date, company-wide",
+        "latest": {
+          "week": 2,
+          "week_start": "2026-11-08",
+          "week_end": "2026-11-14",
+          "value": 9.0,
+          "period": 1.0,
+          "target": 34.62,
+          "partial": true
+        },
+        "gap": -25.62,
+        "has_data": true
+      },
+      {
+        "key": "pipeline_created",
+        "label": "Pipeline created",
+        "kind": "flow",
+        "unit": "usd",
+        "target": 10700000,
+        "required_per_week": 823076.92,
+        "baseline": null,
+        "points": [
+          {
+            "week": 1,
+            "week_start": "2026-11-01",
+            "week_end": "2026-11-07",
+            "value": 230000.0,
+            "period": 230000.0,
+            "target": 823076.92,
+            "partial": false
+          },
+          {
+            "week": 2,
+            "week_start": "2026-11-08",
+            "week_end": "2026-11-14",
+            "value": 230000.0,
+            "period": 0.0,
+            "target": 1646153.85,
+            "partial": true
+          },
+          {
+            "week": 3,
+            "week_start": "2026-11-15",
+            "week_end": "2026-11-21",
+            "value": null,
+            "period": null,
+            "target": 2469230.77,
+            "partial": false
+          },
+          {
+            "week": 4,
+            "week_start": "2026-11-22",
+            "week_end": "2026-11-28",
+            "value": null,
+            "period": null,
+            "target": 3292307.69,
+            "partial": false
+          },
+          {
+            "week": 5,
+            "week_start": "2026-11-29",
+            "week_end": "2026-12-05",
+            "value": null,
+            "period": null,
+            "target": 4115384.62,
+            "partial": false
+          },
+          {
+            "week": 6,
+            "week_start": "2026-12-06",
+            "week_end": "2026-12-12",
+            "value": null,
+            "period": null,
+            "target": 4938461.54,
+            "partial": false
+          },
+          {
+            "week": 7,
+            "week_start": "2026-12-13",
+            "week_end": "2026-12-19",
+            "value": null,
+            "period": null,
+            "target": 5761538.46,
+            "partial": false
+          },
+          {
+            "week": 8,
+            "week_start": "2026-12-20",
+            "week_end": "2026-12-26",
+            "value": null,
+            "period": null,
+            "target": 6584615.38,
+            "partial": false
+          },
+          {
+            "week": 9,
+            "week_start": "2026-12-27",
+            "week_end": "2027-01-02",
+            "value": null,
+            "period": null,
+            "target": 7407692.31,
+            "partial": false
+          },
+          {
+            "week": 10,
+            "week_start": "2027-01-03",
+            "week_end": "2027-01-09",
+            "value": null,
+            "period": null,
+            "target": 8230769.23,
+            "partial": false
+          },
+          {
+            "week": 11,
+            "week_start": "2027-01-10",
+            "week_end": "2027-01-16",
+            "value": null,
+            "period": null,
+            "target": 9053846.15,
+            "partial": false
+          },
+          {
+            "week": 12,
+            "week_start": "2027-01-17",
+            "week_end": "2027-01-23",
+            "value": null,
+            "period": null,
+            "target": 9876923.08,
+            "partial": false
+          },
+          {
+            "week": 13,
+            "week_start": "2027-01-24",
+            "week_end": "2027-01-31",
+            "value": null,
+            "period": null,
+            "target": 10700000.0,
+            "partial": false
+          }
+        ],
+        "source": "DEAL.sao=true by createdate, sum amount_in_home_currency",
+        "latest": {
+          "week": 2,
+          "week_start": "2026-11-08",
+          "week_end": "2026-11-14",
+          "value": 230000.0,
+          "period": 0.0,
+          "target": 1646153.85,
+          "partial": true
+        },
+        "gap": -1416153.85,
+        "has_data": true
+      },
+      {
+        "key": "next_qtr_pipeline",
+        "label": "Entering next-quarter pipeline",
+        "kind": "stock",
+        "unit": "usd",
+        "target": 9700000,
+        "required_per_week": 307692.31,
+        "baseline": 5700000,
+        "points": [
+          {
+            "week": 0,
+            "week_start": "2026-11-01",
+            "week_end": "2026-11-01",
+            "value": 5700000.0,
+            "target": 5700000.0,
+            "period": null,
+            "partial": false
+          },
+          {
+            "week": 1,
+            "week_start": "2026-11-01",
+            "week_end": "2026-11-07",
+            "value": null,
+            "period": null,
+            "target": 6007692.31,
+            "partial": false
+          },
+          {
+            "week": 2,
+            "week_start": "2026-11-08",
+            "week_end": "2026-11-14",
+            "value": 5699000.0,
+            "period": null,
+            "target": 6315384.62,
+            "partial": true
+          },
+          {
+            "week": 3,
+            "week_start": "2026-11-15",
+            "week_end": "2026-11-21",
+            "value": null,
+            "period": null,
+            "target": 6623076.92,
+            "partial": false
+          },
+          {
+            "week": 4,
+            "week_start": "2026-11-22",
+            "week_end": "2026-11-28",
+            "value": null,
+            "period": null,
+            "target": 6930769.23,
+            "partial": false
+          },
+          {
+            "week": 5,
+            "week_start": "2026-11-29",
+            "week_end": "2026-12-05",
+            "value": null,
+            "period": null,
+            "target": 7238461.54,
+            "partial": false
+          },
+          {
+            "week": 6,
+            "week_start": "2026-12-06",
+            "week_end": "2026-12-12",
+            "value": null,
+            "period": null,
+            "target": 7546153.85,
+            "partial": false
+          },
+          {
+            "week": 7,
+            "week_start": "2026-12-13",
+            "week_end": "2026-12-19",
+            "value": null,
+            "period": null,
+            "target": 7853846.15,
+            "partial": false
+          },
+          {
+            "week": 8,
+            "week_start": "2026-12-20",
+            "week_end": "2026-12-26",
+            "value": null,
+            "period": null,
+            "target": 8161538.46,
+            "partial": false
+          },
+          {
+            "week": 9,
+            "week_start": "2026-12-27",
+            "week_end": "2027-01-02",
+            "value": null,
+            "period": null,
+            "target": 8469230.77,
+            "partial": false
+          },
+          {
+            "week": 10,
+            "week_start": "2027-01-03",
+            "week_end": "2027-01-09",
+            "value": null,
+            "period": null,
+            "target": 8776923.08,
+            "partial": false
+          },
+          {
+            "week": 11,
+            "week_start": "2027-01-10",
+            "week_end": "2027-01-16",
+            "value": null,
+            "period": null,
+            "target": 9084615.38,
+            "partial": false
+          },
+          {
+            "week": 12,
+            "week_start": "2027-01-17",
+            "week_end": "2027-01-23",
+            "value": null,
+            "period": null,
+            "target": 9392307.69,
+            "partial": false
+          },
+          {
+            "week": 13,
+            "week_start": "2027-01-24",
+            "week_end": "2027-01-31",
+            "value": null,
+            "period": null,
+            "target": 9700000.0,
+            "partial": false
+          }
+        ],
+        "source": "DEAL.sao=true, open, closedate within next quarter",
+        "latest": {
+          "week": 2,
+          "week_start": "2026-11-08",
+          "week_end": "2026-11-14",
+          "value": 5699000.0,
+          "period": null,
+          "target": 6315384.62,
+          "partial": true
+        },
+        "gap": -616384.62,
+        "has_data": true
+      },
+      {
+        "key": "mqls",
+        "label": "MQLs",
+        "kind": "flow",
+        "unit": "count",
+        "target": null,
+        "required_per_week": null,
+        "baseline": null,
+        "points": [
+          {
+            "week": 1,
+            "week_start": "2026-11-01",
+            "week_end": "2026-11-07",
+            "value": 0.0,
+            "period": 0.0,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 2,
+            "week_start": "2026-11-08",
+            "week_end": "2026-11-14",
+            "value": 0.0,
+            "period": 0.0,
+            "target": null,
+            "partial": true
+          },
+          {
+            "week": 3,
+            "week_start": "2026-11-15",
+            "week_end": "2026-11-21",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 4,
+            "week_start": "2026-11-22",
+            "week_end": "2026-11-28",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 5,
+            "week_start": "2026-11-29",
+            "week_end": "2026-12-05",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 6,
+            "week_start": "2026-12-06",
+            "week_end": "2026-12-12",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 7,
+            "week_start": "2026-12-13",
+            "week_end": "2026-12-19",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 8,
+            "week_start": "2026-12-20",
+            "week_end": "2026-12-26",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 9,
+            "week_start": "2026-12-27",
+            "week_end": "2027-01-02",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 10,
+            "week_start": "2027-01-03",
+            "week_end": "2027-01-09",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 11,
+            "week_start": "2027-01-10",
+            "week_end": "2027-01-16",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 12,
+            "week_start": "2027-01-17",
+            "week_end": "2027-01-23",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          },
+          {
+            "week": 13,
+            "week_start": "2027-01-24",
+            "week_end": "2027-01-31",
+            "value": null,
+            "period": null,
+            "target": null,
+            "partial": false
+          }
+        ],
+        "source": "CONTACT.mql_date \u2014 property exists but is empty as of 2026-11-08",
+        "latest": {
+          "week": 2,
+          "week_start": "2026-11-08",
+          "week_end": "2026-11-14",
+          "value": 0.0,
+          "period": 0.0,
+          "target": null,
+          "partial": true
+        },
+        "gap": null,
+        "has_data": true
+      }
+    ],
+    "run_date": "2026-11-07"
+  },
   "homepage_weekly": [
     {
       "week": "2025-12-29",
@@ -38271,6 +38848,38 @@
         }
       },
       "by_category": {
+        "Other webinar": {
+          "current": {
+            "engaged_views": 91,
+            "raw_views": 106,
+            "watch_minutes": 675,
+            "subs_gained": 0,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 105,
+            "raw_views": 118,
+            "watch_minutes": 425,
+            "subs_gained": 2,
+            "videos": 10
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 74,
+            "raw_views": 238,
+            "watch_minutes": 43,
+            "subs_gained": 0,
+            "videos": 11
+          },
+          "prior": {
+            "engaged_views": 33,
+            "raw_views": 73,
+            "watch_minutes": 10,
+            "subs_gained": 0,
+            "videos": 14
+          }
+        },
         "Product long-form": {
           "current": {
             "engaged_views": 1174,
@@ -38285,6 +38894,22 @@
             "watch_minutes": 4111,
             "subs_gained": 5,
             "videos": 70
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 90,
+            "raw_views": 141,
+            "watch_minutes": 440,
+            "subs_gained": 0,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 85,
+            "raw_views": 112,
+            "watch_minutes": 652,
+            "subs_gained": 1,
+            "videos": 2
           }
         },
         "Podcast episode": {
@@ -38317,54 +38942,6 @@
             "watch_minutes": 1878,
             "subs_gained": 8,
             "videos": 63
-          }
-        },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 90,
-            "raw_views": 141,
-            "watch_minutes": 440,
-            "subs_gained": 0,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 85,
-            "raw_views": 112,
-            "watch_minutes": 652,
-            "subs_gained": 1,
-            "videos": 2
-          }
-        },
-        "Other short": {
-          "current": {
-            "engaged_views": 74,
-            "raw_views": 238,
-            "watch_minutes": 43,
-            "subs_gained": 0,
-            "videos": 11
-          },
-          "prior": {
-            "engaged_views": 33,
-            "raw_views": 73,
-            "watch_minutes": 10,
-            "subs_gained": 0,
-            "videos": 14
-          }
-        },
-        "Other webinar": {
-          "current": {
-            "engaged_views": 91,
-            "raw_views": 106,
-            "watch_minutes": 675,
-            "subs_gained": 0,
-            "videos": 10
-          },
-          "prior": {
-            "engaged_views": 105,
-            "raw_views": 118,
-            "watch_minutes": 425,
-            "subs_gained": 2,
-            "videos": 10
           }
         }
       },
