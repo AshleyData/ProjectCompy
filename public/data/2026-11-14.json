@@ -674,7 +674,7 @@
       },
       {
         "week": "2026-11-14",
-        "v": 656
+        "v": 655
       }
     ]
   },
@@ -699,10 +699,10 @@
       }
     },
     "portfolio": {
-      "top10": 656,
-      "striking": 439,
+      "top10": 655,
+      "striking": 441,
       "etv": 2444.1,
-      "top10Delta3mo": 71,
+      "top10Delta3mo": 70,
       "direction": "growing",
       "isCurrent": true,
       "etvAsOf": "2026-11",
@@ -751,8 +751,8 @@
         },
         {
           "period": "2026-11",
-          "top10": 656,
-          "striking": 439,
+          "top10": 655,
+          "striking": 441,
           "etv": 2444.1,
           "partial": true
         }
@@ -10859,30 +10859,30 @@
   "exec_summary": [
     "Site traffic (Plausible, 2026-11-07 to 2026-11-13): growthbook.io had 7,850 sessions and 6,932 users (-2.3% week over week).",
     "## Week of 2026-11-14",
-    "**Site performance**\n- **Overall (all traffic):** 7,850 visits (-2.3% WoW) | 6,932 users (-2.8% WoW)\n- **Overall (GSC, organic search):** 3,624 clicks (+4.9% WoW) | 432,949 impressions (+12.1% WoW)\n- **Homepage (/):** 5,424 sessions (+1.5% WoW) all-traffic | 1,418 GSC clicks (+1.0% WoW) organic | 16,397 impressions (+5.1% WoW)\n- **Pricing (/pricing):** 693 sessions (-2.9% WoW) all-traffic | 90 GSC clicks (-9.1% WoW) organic | 5,531 impressions (+3.4% WoW)\n- **Docs (docs.growthbook.io):** 2,072 sessions (-2.5% WoW) all-traffic | 820 GSC clicks (+2.9% WoW) organic | 41,780 impressions (+1.3% WoW)\n- **All other pages:** 3,439 sessions (-7.5% WoW) all-traffic | 1,283 GSC clicks (+11.6% WoW) organic | 432,241 impressions (+11.7% WoW)\n- All-other-pages organic clicks +11.6% and impressions +11.7% while all-traffic sessions fell -7.5% \u2014 the same AI-displacement pattern as prior weeks: Google organic is growing but non-search channels (direct, social, referral) are soft, pulling total visits down.\n- Pricing: organic clicks down -9.1% while impressions are up +3.4% and all-traffic sessions only -2.9% \u2014 worth watching whether AI assistants are absorbing the click gap again.",
-    "**New competitor activity**\n- **PostHog** published **\"Best Feature Flag Tools For Developers\"** (tier 1, /compare section) \u2014 a direct category-capture play targeting developer-focused feature flag queries. So what: PostHog is building comparison-hub authority in GrowthBook's core acquisition query space; GrowthBook has no equivalent developer-centric feature flag comparison asset.\n- **PostHog** moved **/compare/posthog-vs-amplitude** from /blog to /compare \u2014 continuing the comparison-hub consolidation observed the past two weeks. The pattern is deliberate and ongoing.\n- **Kameleoon** published **\"Always Valid Inference\"** (tier 2) \u2014 stats methodology content that competes directly with GrowthBook's /insights/ cluster on experimentation credibility. So what: Kameleoon is building technical authority in the same stats-methodology space GrowthBook's /insights/ pages are winning traffic from.\n- **LaunchDarkly** shipped 3 changelog pages (Application Views, New Navigation, Preset Roles) \u2014 product-update content below the core relevance bar, plus 3 additional pages below the bar. No tier-1 threat this week.\n- **Harness** published **\"FME Metric Check Step Gate Rollouts\"** (tier 2) \u2014 ties feature flag rollouts to metric-gated deployment, an angle GrowthBook's deployment-gates content gap is directly adjacent to.\n- **Unleash** published **\"Dynamic Configuration Patterns For Ops Toggles\"** and **\"FeatureOps Explained\"** \u2014 continuing their platform-resilience and feature-ops narrative build.\n- **Amplitude Exp** (8 pages), **Datadog** (10 pages), **Optimizely** (4 pages) shipped pages this week with none in core topics.\n- **Statsig**, **Eppo**, **Flagsmith** \u2014 zero pages detected. \u26a0\ufe0f Verify fetch warnings before treating as a genuine content pause.",
-    "**New GrowthBook content**\n- Seven new **/blog/** pages noticed this week (all zero impressions): **[/blog/dark-launch-ai-features](https://www.growthbook.io/blog/dark-launch-ai-features)**, **[/blog/feature-flags-ai-coding-agents](https://www.growthbook.io/blog/feature-flags-ai-coding-agents)**, **[/blog/ai-visual-editing-experiments-without-engineering](https://www.growthbook.io/blog/ai-visual-editing-experiments-without-engineering)**, **[/blog/ab-testing-pioneers](https://www.growthbook.io/blog/ab-testing-pioneers)**, **[/blog/experimentation-edge-season-1-wrap](https://www.growthbook.io/blog/experimentation-edge-season-1-wrap)**, **[/blog/how-ge-healthcare-tests-for-quality-leads-not-just-more-clicks-edge](https://www.growthbook.io/blog/how-ge-healthcare-tests-for-quality-leads-not-just-more-clicks-edge)**, **[/blog/jev-applied-scoring-experiment-quality-with-a-decision-model](https://www.growthbook.io/blog/jev-applied-scoring-experiment-quality-with-a-decision-model)**. Standouts: the AI cluster (**dark-launch-ai-features**, **feature-flags-ai-coding-agents**, **ai-visual-editing-experiments-without-engineering**) directly answers LaunchDarkly and Harness's AI-native narrative; add internal links from docs and feature-flag product pages to accelerate indexing.\n- Three new **/product-updates/** pages noticed this week (all zero impressions): **[/product-updates/contextual-bandits-visual-editor](https://www.growthbook.io/product-updates/contextual-bandits-visual-editor)**, **[/product-updates/data-onboarding-redesign](https://www.growthbook.io/product-updates/data-onboarding-redesign)**, **[/product-updates/datadog-triggered-rollback](https://www.growthbook.io/product-updates/datadog-triggered-rollback)**. The **datadog-triggered-rollback** page is directly adjacent to the deployment-gates opportunity (top opportunity this week, KD 6) \u2014 cross-link these.",
-    "**Strategic priorities (ACP)**\n- **Top-10 footprint: 679 keywords (+272 over 3 months)** \u2014 momentum strong and continuing.\n- **BOFU comparison page fix remains the highest-ROI unshipped work \u2014 now thirty-five consecutive weeks.** Top act-now items:\n  - **/compare/growthbook-vs-unleash** (ACP 86, pos 5.6, AI Overview present, GrowthBook NOT cited) \u2014 28-day clicks fell from 4 to 6 (slight recovery) but 7-day clicks dropped from 3 to 1; still not cited in AI Overview. Week thirty-five.\n  - **/compare/growthbook-vs-launchdarkly** (ACP 86, pos 9.0, AI Overview present, GrowthBook cited) \u2014 28-day clicks at 9, down from 11; 7-day clicks at 5.\n  - **/compare/growthbook-vs-statsig** (ACP 86, pos 6.2, AI Overview present, GrowthBook cited) \u2014 28-day clicks at 5, down from 13 four weeks ago; 7-day ticked up to 3.\n- **AI Overview citation gaps to prioritize this week:** **/compare/posthog-vs-growthbook** (ACP 82, pos 1.0, 70 monthly searches, GrowthBook NOT cited) \u2014 pos 1 with near-zero clicks; answer capsule is the fastest fix. **/compare/growthbook-vs-optimizely** (ACP 84, pos 15.5, GrowthBook NOT cited) \u2014 impressions rebuilding. **/compare/growthbook-vs-unleash** \u2014 NOT cited; compliance and FeatureOps content from Unleash is live.\n- **Deployment Gates opportunity (composite score 80, KD 6):** **Datadog** owns this query. GrowthBook's newly detected **/product-updates/datadog-triggered-rollback** is adjacent \u2014 a dedicated blog post or landing page targeting \"deployment gates\" at KD 6 is a fast-win with real search demand.",
-    "**Organic movers worth watching**\n- **/blog/what-is-a-b-testing**: +21 clicks WoW (20 to 41, +105%) \u2014 largest gain this week and a sharp reversal from last week's -8. Flagsmith's \"Best AB Testing Software\" page is indexed but GrowthBook's page is surging anyway; still not cited in AI Overview.\n- **/insights/how-interpret-confidence-interval-step-by-step**: +28 clicks WoW (79 to 107, +35%) \u2014 new entrant to top gainers; stats methodology cluster continues to compound.\n- **/insights/95-confidence-interval**: +20 clicks WoW (165 to 185, +12%) \u2014 sixth consecutive week of growth; now the highest-click insights page on the site at 185 clicks.\n- **/blog/growthbook-version-5-2**: 11 clicks from zero \u2014 first organic traction on the v5.2 release post.\n- **/insights/matched-pairs-design-explained**: -17 clicks WoW (47 to 30, -36%) \u2014 sharp drop; check for ranking movement or query seasonality.\n- **/insights/t-test**: -12 clicks WoW (24 to 12, -50%) \u2014 reverses last week's +100% gain; likely volatility on a low-volume page but worth monitoring.\n- **/pricing**: -9 clicks WoW (99 to 90, -9.1%) \u2014 snaps a two-week organic recovery streak.\n- **Comparison pages (28-day):** 45 clicks to 30 clicks (-33%) \u2014 portfolio-level bleed continues.",
-    "**Recommended actions**\n- **Ship answer capsule + comparison table + schema to /compare/growthbook-vs-unleash this week** (ACP 86, pos 5.6, NOT cited in AI Overview) \u2014 Unleash published two more content pieces this week building their FeatureOps narrative. Week thirty-five.\n- **Add answer capsule + schema to /compare/posthog-vs-growthbook** (ACP 82, pos 1.0, 70 monthly searches, NOT cited) \u2014 PostHog's comparison-hub consolidation is accelerating; GrowthBook ranks first but captures almost no clicks.\n- **Publish a \"Deployment Gates\" post targeting KD 6** \u2014 the top opportunity this week (composite score 80) with Datadog as the incumbent. GrowthBook's new **/product-updates/datadog-triggered-rollback** page is a natural internal-link anchor; a 1,000-word post with an answer-format H2 is enough to compete at KD 6.\n- **Add internal links from docs and feature-flag product pages to the three new AI-cluster blog posts** (/blog/dark-launch-ai-features, /blog/feature-flags-ai-coding-agents, /blog/ai-visual-editing-experiments-without-engineering) \u2014 zero impressions pages with direct relevance to LaunchDarkly and Harness's AI-native positioning; cross-links accelerate indexing."
+    "**Site performance**\n- **Overall (all traffic):** 7,850 visits (-2.3% WoW) | 6,932 users (-2.8% WoW)\n- **Overall (GSC, organic search):** 3,624 clicks (+4.9% WoW) | 432,949 impressions (+12.1% WoW)\n- **Homepage (/):** 5,424 sessions (+1.5% WoW) all-traffic | 1,418 GSC clicks (+1.0% WoW) organic | 16,397 impressions (+5.1% WoW)\n- **Pricing (/pricing):** 693 sessions (-2.9% WoW) all-traffic | 90 GSC clicks (-9.1% WoW) organic | 5,531 impressions (+3.4% WoW)\n- **Docs (docs.growthbook.io):** 2,072 sessions (-2.5% WoW) all-traffic | 820 GSC clicks (+2.9% WoW) organic | 41,780 impressions (+1.3% WoW)\n- **All other pages:** 3,439 sessions (-7.5% WoW) all-traffic | 1,283 GSC clicks (+11.6% WoW) organic | 432,241 impressions (+11.7% WoW)\n- All-other-pages organic clicks +11.6% and impressions +11.7% while all-traffic sessions fell -7.5% \u2014 consistent with the ongoing AI-displacement pattern: Google organic is growing but non-search channels are soft.\n- Pricing: GSC impressions +3.4% but organic clicks -9.1% while all-traffic sessions only -2.9% \u2014 AI assistants continue to absorb clicks that GSC can't see.",
+    "**New competitor activity**\n- **PostHog** published **\"Best Feature Flag Tools For Developers\"** (tier 1, /compare section) \u2014 direct category-capture in developer-focused feature flag queries. GrowthBook has no equivalent developer-centric comparison asset.\n- **PostHog** moved **/compare/posthog-vs-amplitude** from /blog to /compare \u2014 continuing the comparison-hub consolidation observed the past three weeks. The pattern is deliberate.\n- **Kameleoon** published **\"Always Valid Inference\"** (tier 2) \u2014 stats methodology content competing directly with GrowthBook's /insights/ cluster on experimentation credibility.\n- **Kameleoon** published **\"What Is A Heat Map\"** (tier 3, KD 10) \u2014 lower relevance but signals Kameleoon broadening into general CRO content.\n- **Harness** published **\"FME Metric Check Step Gate Rollouts\"** (tier 2) \u2014 metric-gated deployment content directly adjacent to GrowthBook's deployment-gates gap.\n- **Unleash** published **\"Dynamic Configuration Patterns For Ops Toggles\"** and **\"FeatureOps Explained\"** \u2014 continuing their platform-resilience and feature-ops narrative.\n- **LaunchDarkly** shipped 3 changelog pages (Application Views, New Navigation, Preset Roles) \u2014 product-update content below the core relevance bar, plus 3 additional pages below the bar.\n- **Amplitude Exp** (8 pages), **Datadog** (10 pages), **Harness** (8 additional pages), **Optimizely** (4 pages), **PostHog** (6 additional pages) shipped pages with none in core topics.\n- \u26a0\ufe0f No new pages detected from **Flagsmith** or **Statsig** \u2014 verify fetch warnings before treating as a genuine content pause.",
+    "**New GrowthBook content**\n- Same 10 pages noticed last week (all still at zero impressions): the AI cluster (**[/blog/dark-launch-ai-features](https://www.growthbook.io/blog/dark-launch-ai-features)**, **[/blog/feature-flags-ai-coding-agents](https://www.growthbook.io/blog/feature-flags-ai-coding-agents)**, **[/blog/ai-visual-editing-experiments-without-engineering](https://www.growthbook.io/blog/ai-visual-editing-experiments-without-engineering)**), plus **[/blog/ab-testing-pioneers](https://www.growthbook.io/blog/ab-testing-pioneers)**, **[/blog/experimentation-edge-season-1-wrap](https://www.growthbook.io/blog/experimentation-edge-season-1-wrap)**, two Experimentation Edge case studies, and three **/product-updates/** pages (**contextual-bandits-visual-editor**, **data-onboarding-redesign**, **datadog-triggered-rollback**). Still zero impressions \u2014 internal links from docs and product pages are needed to accelerate indexing.",
+    "**Strategic priorities (ACP)**\n- **Top-10 footprint: 679 keywords (+272 over 3 months)** \u2014 momentum strong.\n- **BOFU comparison page fix remains the highest-ROI unshipped work \u2014 now thirty-six consecutive weeks.** Top act-now items (all ACP 86, all past the 5-week persistence gate):\n  - **/compare/growthbook-vs-unleash** (pos 5.6, AI Overview present, GrowthBook NOT cited) \u2014 7-day clicks fell from 3 to 1; still not cited. Week thirty-six.\n  - **/compare/growthbook-vs-launchdarkly** (pos 9.0, AI Overview present, GrowthBook cited) \u2014 28-day clicks at 9, 7-day at 5; stable but not growing.\n  - **/compare/growthbook-vs-statsig** (pos 6.2, AI Overview present, GrowthBook cited) \u2014 28-day clicks at 5, down from 13 four weeks ago.\n- **AI Overview citation gaps (highest priority):** **/compare/posthog-vs-growthbook** (ACP 82, pos 1.0, 70 monthly searches, NOT cited) \u2014 ranks first, captures near-zero clicks. **/compare/growthbook-vs-optimizely** (ACP 84, pos 15.5, NOT cited) \u2014 impressions rebuilding. **/compare/growthbook-vs-datadog-experiments** (ACP 80, pos 5.8, NOT cited) \u2014 especially relevant given Datadog's deployment-gates ownership.\n- **Deployment Gates opportunity (composite score 85, KD 6):** **Datadog** owns this query. GrowthBook's **/product-updates/datadog-triggered-rollback** is the natural internal-link anchor for a dedicated post.\n- **Comparison page portfolio (28-day):** 45 clicks to 30 clicks (-33%) \u2014 portfolio-level bleed continues at the same rate as last week.",
+    "**Organic movers worth watching**\n- **/insights/95-confidence-interval**: 185 clicks (+12% WoW) \u2014 sixth consecutive week of growth; highest-click insights page on the site.\n- **/insights/how-interpret-confidence-interval-step-by-step**: 107 clicks (+35% WoW) \u2014 stats methodology cluster compounding.\n- **/blog/what-is-a-b-testing**: 41 clicks (+105% WoW) \u2014 sharp reversal from last week's -8; still not cited in AI Overview despite the surge.\n- **/insights/matched-pairs-design-explained**: 30 clicks (-36% WoW) \u2014 sharp drop; check for ranking movement.\n- **/insights/experimental-probability-examples-explained-simply**: 18 clicks (-42% WoW) \u2014 notable decline; likely homework-query seasonality but worth monitoring.\n- **/insights/t-test**: 12 clicks (-50% WoW) \u2014 reverses last week's +100%; low-volume volatility but two-week pattern worth watching.\n- **/pricing**: 90 clicks (-9.1% WoW) \u2014 snaps two-week recovery streak.",
+    "**Recommended actions**\n- **Ship answer capsule + comparison table + schema to /compare/growthbook-vs-unleash this week** (ACP 86, pos 5.6, NOT cited in AI Overview) \u2014 Unleash published two more content pieces this week. Week thirty-six.\n- **Add answer capsule + schema to /compare/posthog-vs-growthbook** (ACP 82, pos 1.0, 70 monthly searches, NOT cited) \u2014 PostHog's comparison-hub consolidation is in its fourth consecutive week; GrowthBook ranks first but captures almost no clicks.\n- **Publish a \"Deployment Gates\" post targeting KD 6** (composite score 85) \u2014 cross-link from **/product-updates/datadog-triggered-rollback**; a 1,000-word answer-format post is enough to compete at KD 6 against Datadog.\n- **Add internal links from docs and feature-flag product pages to the three AI-cluster blog posts** (/blog/dark-launch-ai-features, /blog/feature-flags-ai-coding-agents, /blog/ai-visual-editing-experiments-without-engineering) \u2014 all still at zero impressions after two weeks; cross-links are the fastest indexing signal."
   ],
   "content_recommendations": [
-    "1. Optimize /compare/growthbook-vs-unleash with a 40-word answer capsule + comparison table + schema (ACP 86, pos 5.6, AI Overview present but GrowthBook NOT cited) \u2014 Unleash shipped two more content pieces this week reinforcing their FeatureOps moat; every week without this fix cedes AI citation ground.",
-    "2. Optimize /compare/posthog-vs-growthbook with a 40-word answer capsule + schema (ACP 82, pos 1.0, 70 monthly searches, NOT cited) \u2014 GrowthBook ranks first but earns near-zero clicks; this is the clearest citation-capture opportunity on the board with the lowest effort required.",
-    "3. Write a \"Deployment Gates\" post targeting the query \"deployment gates\" (KD 6, composite score 80, Datadog is the only incumbent) \u2014 GrowthBook's new /product-updates/datadog-triggered-rollback page provides a ready internal-link anchor; a focused 1,000-word piece with an answer H2 can capture this at low difficulty.",
-    "4. Expand /blog/what-is-a-b-testing with an answer-capsule H2 + FAQ schema (pos 8.71 on \"a/b testing\", 9,397 impressions this week, AI Overview present, GrowthBook NOT cited) \u2014 the page surged +105% in clicks this week to 41; Optimizely and Harness A/B testing pages are near zero ETV, leaving the AI Overview slot open.",
-    "5. Refresh /compare/growthbook-vs-optimizely with a 40-word answer capsule + schema (ACP 84, pos 15.5, AI Overview present, GrowthBook NOT cited, impressions rebuilding) \u2014 Optimizely's core A/B testing pages continue to decay, making the comparison query increasingly winnable."
+    "1. Optimize /compare/growthbook-vs-unleash (ACP 86, pos 5.6, AI Overview present, NOT cited): add a 40-word answer capsule + comparison table + FAQ schema this week. The page has 7-day clicks of 1 (down from 3) and Unleash is actively publishing FeatureOps content. This is week thirty-six of the same recommendation \u2014 ship it.",
+    "2. Optimize /compare/posthog-vs-growthbook (ACP 82, pos 1.0, 70 monthly searches, NOT cited in AI Overview): add answer capsule + schema. Ranking first but capturing near-zero clicks is the clearest citation-capture opportunity on the board, and PostHog is in its fourth week of comparison-hub consolidation.",
+    "3. Write a \"Deployment Gates\" landing page or blog post targeting KD 6 (composite score 85, real search demand, Datadog as incumbent): use /product-updates/datadog-triggered-rollback as the primary internal link anchor. At KD 6 a focused 1,000-word post with an answer-format H2 is sufficient to compete.",
+    "4. Optimize /compare/growthbook-vs-optimizely (ACP 84, pos 15.5, NOT cited in AI Overview): add answer capsule + comparison table. Impressions have been rebuilding for five weeks and Optimizely's main A/B testing page has collapsed from 51,080 ETV to 11.6 \u2014 the SERP slot is opening.",
+    "5. Add internal links from /insights/ stats methodology pages and /compare/ pages to the three zero-impression AI-cluster blog posts (dark-launch-ai-features, feature-flags-ai-coding-agents, ai-visual-editing-experiments-without-engineering). Both were detected two weeks ago and remain at zero impressions \u2014 cross-links from already-indexed pages are the fastest crawl signal."
   ],
   "opportunities": [
     {
       "rank": 1,
       "topic": "deployment gates",
       "competitor": "Datadog",
-      "score": 80.0,
+      "score": 85.0,
       "kd": "n/a",
       "bucket": "Quick Win",
       "url": "",
-      "why": "Datadog ranks for 'deployment gates' while GrowthBook has weak or no coverage. Score 80.0."
+      "why": "Datadog ranks for 'deployment gates' while GrowthBook has weak or no coverage. Score 85.0."
     }
   ],
   "top_movers": {
@@ -31294,7 +31294,7 @@
             "videos": 2
           },
           "2026-10": {
-            "views": 857,
+            "views": 858,
             "videos": 8
           },
           "2026-06": {
@@ -31306,7 +31306,7 @@
             "videos": 8
           },
           "2026-11": {
-            "views": 420,
+            "views": 425,
             "videos": 9
           }
         },
@@ -31320,7 +31320,7 @@
             "videos": 6
           },
           "2026-08": {
-            "views": 1095,
+            "views": 1096,
             "videos": 5
           },
           "2026-06": {
@@ -31328,7 +31328,7 @@
             "videos": 1
           },
           "2026-11": {
-            "views": 233,
+            "views": 242,
             "videos": 3
           },
           "2026-04": {
@@ -31348,7 +31348,7 @@
         },
         "Optimizely": {
           "2026-09": {
-            "views": 2404,
+            "views": 2405,
             "videos": 2
           },
           "2026-04": {
@@ -31356,19 +31356,19 @@
             "videos": 7
           },
           "2026-01": {
-            "views": 1285,
+            "views": 1286,
             "videos": 1
           },
           "2026-11": {
-            "views": 730,
+            "views": 731,
             "videos": 2
           },
           "2026-10": {
-            "views": 1768,
+            "views": 1770,
             "videos": 6
           },
           "2026-03": {
-            "views": 1297,
+            "views": 1299,
             "videos": 8
           },
           "2026-02": {
@@ -31382,15 +31382,15 @@
         },
         "Harness": {
           "2026-10": {
-            "views": 8678,
+            "views": 8683,
             "videos": 22
           },
           "2026-07": {
-            "views": 4314,
+            "views": 4316,
             "videos": 7
           },
           "2026-05": {
-            "views": 7190,
+            "views": 7193,
             "videos": 44
           },
           "2026-03": {
@@ -31402,11 +31402,11 @@
             "videos": 7
           },
           "2026-04": {
-            "views": 1922,
+            "views": 1924,
             "videos": 6
           },
           "2026-09": {
-            "views": 3148,
+            "views": 3149,
             "videos": 10
           },
           "2026-06": {
@@ -31414,7 +31414,7 @@
             "videos": 3
           },
           "2026-11": {
-            "views": 898,
+            "views": 908,
             "videos": 5
           },
           "2026-02": {
@@ -31428,15 +31428,15 @@
         },
         "Datadog": {
           "2026-06": {
-            "views": 26683,
+            "views": 26690,
             "videos": 49
           },
           "2026-03": {
-            "views": 12494,
+            "views": 12495,
             "videos": 10
           },
           "2026-04": {
-            "views": 8271,
+            "views": 8281,
             "videos": 9
           },
           "2026-09": {
@@ -31448,15 +31448,15 @@
             "videos": 1
           },
           "2026-05": {
-            "views": 4382,
+            "views": 4383,
             "videos": 9
           },
           "2026-08": {
-            "views": 3127,
+            "views": 3128,
             "videos": 3
           },
           "2026-10": {
-            "views": 6769,
+            "views": 6780,
             "videos": 12
           }
         },
@@ -31466,7 +31466,7 @@
             "videos": 3
           },
           "2026-08": {
-            "views": 2364,
+            "views": 2367,
             "videos": 3
           },
           "2026-09": {
@@ -31482,7 +31482,7 @@
             "videos": 3
           },
           "2026-05": {
-            "views": 5068,
+            "views": 5069,
             "videos": 13
           },
           "2026-06": {
@@ -31524,7 +31524,7 @@
             "videos": 16
           },
           "2026-11": {
-            "views": 61,
+            "views": 62,
             "videos": 2
           }
         },
@@ -31578,11 +31578,11 @@
         },
         "PostHog": {
           "2026-04": {
-            "views": 61047,
+            "views": 61069,
             "videos": 1
           },
           "2026-06": {
-            "views": 56586,
+            "views": 56597,
             "videos": 4
           },
           "2026-09": {
@@ -31590,7 +31590,7 @@
             "videos": 1
           },
           "2026-10": {
-            "views": 34188,
+            "views": 34204,
             "videos": 4
           },
           "2026-08": {
@@ -31610,7 +31610,7 @@
             "videos": 3
           },
           "2026-03": {
-            "views": 2684,
+            "views": 2686,
             "videos": 1
           },
           "2026-05": {
@@ -31650,7 +31650,7 @@
             "videos": 3
           },
           "2026-11": {
-            "views": 1161,
+            "views": 1168,
             "videos": 25
           },
           "2026-06": {
@@ -31684,7 +31684,7 @@
             "videos": 3
           },
           "2026-11": {
-            "views": 3784,
+            "views": 3886,
             "videos": 3
           },
           "2026-05": {
@@ -31710,7 +31710,7 @@
             "videos": 10
           },
           "2026-07": {
-            "views": 3771,
+            "views": 3772,
             "videos": 16
           },
           "2026-04": {
@@ -31744,7 +31744,7 @@
         },
         "Harness": {
           "2026-10": {
-            "views": 13548,
+            "views": 13549,
             "videos": 27
           },
           "2026-08": {
@@ -31752,11 +31752,11 @@
             "videos": 7
           },
           "2026-04": {
-            "views": 5185,
+            "views": 5191,
             "videos": 9
           },
           "2026-06": {
-            "views": 5162,
+            "views": 5166,
             "videos": 9
           },
           "2026-07": {
@@ -31764,15 +31764,15 @@
             "videos": 5
           },
           "2026-03": {
-            "views": 3257,
+            "views": 3266,
             "videos": 4
           },
           "2026-05": {
-            "views": 8419,
+            "views": 8424,
             "videos": 31
           },
           "2026-09": {
-            "views": 2425,
+            "views": 2426,
             "videos": 9
           },
           "2026-02": {
@@ -31780,13 +31780,13 @@
             "videos": 1
           },
           "2026-11": {
-            "views": 2142,
+            "views": 2187,
             "videos": 9
           }
         },
         "Datadog": {
           "2026-03": {
-            "views": 5833,
+            "views": 5834,
             "videos": 5
           },
           "2026-01": {
@@ -31794,7 +31794,7 @@
             "videos": 2
           },
           "2026-09": {
-            "views": 2972,
+            "views": 2973,
             "videos": 2
           },
           "2026-06": {
@@ -31802,11 +31802,11 @@
             "videos": 4
           },
           "2026-02": {
-            "views": 2682,
+            "views": 2683,
             "videos": 3
           },
           "2026-04": {
-            "views": 2102,
+            "views": 2104,
             "videos": 3
           },
           "2026-10": {
@@ -31844,7 +31844,7 @@
             "videos": 8
           },
           "2026-10": {
-            "views": 405,
+            "views": 406,
             "videos": 1
           },
           "2026-01": {
@@ -31864,7 +31864,7 @@
             "videos": 1
           },
           "2026-11": {
-            "views": 178,
+            "views": 179,
             "videos": 2
           },
           "2026-04": {
@@ -31890,7 +31890,7 @@
         },
         "Kameleoon": {
           "2026-09": {
-            "views": 13334,
+            "views": 13335,
             "videos": 9
           },
           "2026-05": {
@@ -31920,23 +31920,23 @@
         },
         "PostHog": {
           "2026-09": {
-            "views": 18350,
+            "views": 18351,
             "videos": 4
           },
           "2026-08": {
-            "views": 9473,
+            "views": 9486,
             "videos": 1
           },
           "2026-06": {
-            "views": 7024,
+            "views": 7025,
             "videos": 2
           },
           "2026-05": {
-            "views": 7590,
+            "views": 7593,
             "videos": 3
           },
           "2026-02": {
-            "views": 6517,
+            "views": 6519,
             "videos": 2
           },
           "2026-04": {
@@ -31944,7 +31944,7 @@
             "videos": 2
           },
           "2026-10": {
-            "views": 3633,
+            "views": 3634,
             "videos": 3
           },
           "2026-01": {
@@ -31956,7 +31956,7 @@
             "videos": 3
           },
           "2026-11": {
-            "views": 4609,
+            "views": 4636,
             "videos": 4
           }
         }
@@ -31966,49 +31966,49 @@
       "GrowthBook": [
         {
           "month": "2026-11",
-          "views": 622,
+          "views": 623,
           "videos": 220
         }
       ],
       "LaunchDarkly": [
         {
           "month": "2026-11",
-          "views": 1344,
+          "views": 1345,
           "videos": 137
         }
       ],
       "Statsig": [
         {
           "month": "2026-11",
-          "views": 1267,
+          "views": 1273,
           "videos": 100
         }
       ],
       "Optimizely": [
         {
           "month": "2026-11",
-          "views": 1237,
+          "views": 1244,
           "videos": 119
         }
       ],
       "Harness": [
         {
           "month": "2026-11",
-          "views": 4112,
+          "views": 4152,
           "videos": 214
         }
       ],
       "Datadog": [
         {
           "month": "2026-11",
-          "views": 7731,
+          "views": 7781,
           "videos": 188
         }
       ],
       "Amplitude Exp": [
         {
           "month": "2026-11",
-          "views": 1857,
+          "views": 1862,
           "videos": 184
         }
       ],
@@ -32029,14 +32029,14 @@
       "Kameleoon": [
         {
           "month": "2026-11",
-          "views": 334,
+          "views": 335,
           "videos": 115
         }
       ],
       "PostHog": [
         {
           "month": "2026-11",
-          "views": 14714,
+          "views": 14807,
           "videos": 104
         }
       ]
@@ -32825,87 +32825,87 @@
   "competitors": [
     {
       "name": "Statsig",
-      "etv": 22604,
-      "pages": 192,
+      "etv": 22646,
+      "pages": 194,
       "da": 41,
       "da_as_of": "2026-11-01",
       "top_page": "https://www.statsig.com/perspectives/tracking-non-authenticated-users",
       "top_etv": 4012,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 37285,
+      "branded_pct": 18.8,
+      "homepage_etv": 5901
     },
     {
       "name": "Datadog",
-      "etv": 22022,
-      "pages": 347,
+      "etv": 21818,
+      "pages": 345,
       "da": 64,
       "da_as_of": "2026-11-01",
       "top_page": "https://docs.datadoghq.com/mcp_server/",
       "top_etv": 2437,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 56401,
+      "branded_pct": 0.4,
+      "homepage_etv": 12070
     },
     {
       "name": "Amplitude Exp",
-      "etv": 12988,
+      "etv": 12930,
       "pages": 140,
       "da": 62,
       "da_as_of": "2026-11-01",
       "top_page": "https://amplitude.com/explore/metrics/what-are-metrics-guide",
       "top_etv": 1402,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 29243,
+      "branded_pct": 31.5,
+      "homepage_etv": 6348
     },
     {
       "name": "Optimizely",
-      "etv": 11813,
+      "etv": 11674,
       "pages": 117,
       "da": 82,
       "da_as_of": "2026-11-01",
       "top_page": "https://www.optimizely.com/optimization-glossary/conversion-rate-optimization",
-      "top_etv": 1108,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "top_etv": 1100,
+      "etv_unfiltered": 19661,
+      "branded_pct": 17.9,
+      "homepage_etv": 1977
     },
     {
       "name": "Harness",
-      "etv": 5306,
-      "pages": 108,
+      "etv": 5172,
+      "pages": 106,
       "da": 52,
       "da_as_of": "2026-11-01",
       "top_page": "https://www.harness.io/blog/parallel-execution-in-modern-ci-best-practices-results",
       "top_etv": 1153,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 11184,
+      "branded_pct": 39.7,
+      "homepage_etv": 3101
     },
     {
       "name": "PostHog",
-      "etv": 3681,
-      "pages": 86,
+      "etv": 3658,
+      "pages": 85,
       "da": 48,
       "da_as_of": "2026-11-01",
       "top_page": "https://posthog.com/docs/model-context-protocol",
       "top_etv": 586,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 10548,
+      "branded_pct": 82.2,
+      "homepage_etv": 4764
     },
     {
       "name": "LaunchDarkly",
-      "etv": 3143,
+      "etv": 3139,
       "pages": 59,
       "da": 52,
       "da_as_of": "2026-11-01",
       "top_page": "https://launchdarkly.com/blog/what-does-being-technical-mean/",
       "top_etv": 615,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 14089,
+      "branded_pct": 74.5,
+      "homepage_etv": 8744
     },
     {
       "name": "GrowthBook",
@@ -32915,21 +32915,21 @@
       "da_as_of": "2026-11-01",
       "top_page": "https://www.growthbook.io/insights/experimental-probability-examples-explained-simply",
       "top_etv": 227,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 2444,
+      "branded_pct": 5.2,
+      "homepage_etv": 87
     },
     {
       "name": "Kameleoon",
-      "etv": 1336,
+      "etv": 1337,
       "pages": 10,
       "da": 52,
       "da_as_of": "2026-11-01",
       "top_page": "https://www.kameleoon.com/blog/customization-vs-personalization",
-      "top_etv": 803,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "top_etv": 804,
+      "etv_unfiltered": 1915,
+      "branded_pct": 8.5,
+      "homepage_etv": 163
     },
     {
       "name": "Flagsmith",
@@ -32939,21 +32939,21 @@
       "da_as_of": "2026-11-01",
       "top_page": "https://www.flagsmith.com/blog/launchdarkly-went-dark-during-aws-outage-flagsmith-didnt",
       "top_etv": 45,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 442,
+      "branded_pct": 1.6,
+      "homepage_etv": 148
     },
     {
       "name": "Unleash",
-      "etv": 102,
+      "etv": 98,
       "pages": 6,
       "da": 38,
       "da_as_of": "2026-11-01",
       "top_page": "https://www.getunleash.io/unleash-brand-guidelines",
       "top_etv": 24,
-      "etv_unfiltered": null,
-      "branded_pct": null,
-      "homepage_etv": null
+      "etv_unfiltered": 1248,
+      "branded_pct": 0.0,
+      "homepage_etv": 1019
     }
   ],
   "etv_trend": {
@@ -33109,6 +33109,10 @@
       {
         "date": "2026-11-07",
         "etv": 12988
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 12930
       }
     ],
     "Flagsmith": [
@@ -33262,6 +33266,10 @@
       },
       {
         "date": "2026-11-07",
+        "etv": 139
+      },
+      {
+        "date": "2026-11-14",
         "etv": 139
       }
     ],
@@ -33417,6 +33425,10 @@
       {
         "date": "2026-11-07",
         "etv": 1649
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 1649
       }
     ],
     "Harness": [
@@ -33571,6 +33583,10 @@
       {
         "date": "2026-11-07",
         "etv": 5306
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 5172
       }
     ],
     "LaunchDarkly": [
@@ -33725,6 +33741,10 @@
       {
         "date": "2026-11-07",
         "etv": 3143
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 3139
       }
     ],
     "Optimizely": [
@@ -33879,6 +33899,10 @@
       {
         "date": "2026-11-07",
         "etv": 11813
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 11674
       }
     ],
     "PostHog": [
@@ -34033,6 +34057,10 @@
       {
         "date": "2026-11-07",
         "etv": 3681
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 3658
       }
     ],
     "Statsig": [
@@ -34187,6 +34215,10 @@
       {
         "date": "2026-11-07",
         "etv": 22604
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 22646
       }
     ],
     "Unleash": [
@@ -34341,6 +34373,10 @@
       {
         "date": "2026-11-07",
         "etv": 102
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 98
       }
     ],
     "Kameleoon": [
@@ -34407,6 +34443,10 @@
       {
         "date": "2026-11-07",
         "etv": 1336
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 1337
       }
     ],
     "Datadog": [
@@ -34453,6 +34493,10 @@
       {
         "date": "2026-11-07",
         "etv": 22022
+      },
+      {
+        "date": "2026-11-14",
+        "etv": 21818
       }
     ]
   },
@@ -34462,8 +34506,16 @@
       "competitor": "Datadog",
       "slug": "deployment-gates",
       "url": "https://www.datadoghq.com/blog/deployment-gates",
-      "threat": 8,
+      "threat": 9,
       "kd": 6.0,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "aws-account-management",
+      "url": "https://www.datadoghq.com/blog/aws-account-management",
+      "threat": 9,
+      "kd": 25.0,
       "date": "2026-11-14"
     },
     {
@@ -34480,6 +34532,70 @@
       "url": "https://amplitude.com/blog/wave-launch",
       "threat": 8,
       "kd": 0.0,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "cloud-siem-investigate-user-entity-risks",
+      "url": "https://www.datadoghq.com/blog/cloud-siem-investigate-user-entity-risks",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "datadog-cyber-essentials-plus-certification",
+      "url": "https://www.datadoghq.com/blog/datadog-cyber-essentials-plus-certification",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "detect-respond-php2shell-datadog",
+      "url": "https://www.datadoghq.com/blog/detect-respond-php2shell-datadog",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "end-user-device-monitoring",
+      "url": "https://www.datadoghq.com/blog/end-user-device-monitoring",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "kubernetes-inference-workload-monitoring",
+      "url": "https://www.datadoghq.com/blog/kubernetes-inference-workload-monitoring",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "kubernetes-processes-datadog-mcp-server",
+      "url": "https://www.datadoghq.com/blog/kubernetes-processes-datadog-mcp-server",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "monitor-oci-government-cloud-datadog",
+      "url": "https://www.datadoghq.com/blog/monitor-oci-government-cloud-datadog",
+      "threat": 8,
+      "kd": null,
+      "date": "2026-11-14"
+    },
+    {
+      "competitor": "Datadog",
+      "slug": "monitor-openai-codex-with-datadog",
+      "url": "https://www.datadoghq.com/blog/monitor-openai-codex-with-datadog",
+      "threat": 8,
+      "kd": null,
       "date": "2026-11-14"
     },
     {
@@ -34515,14 +34631,6 @@
       "date": "2026-11-14"
     },
     {
-      "competitor": "Datadog",
-      "slug": "aws-account-management",
-      "url": "https://www.datadoghq.com/blog/aws-account-management",
-      "threat": 7,
-      "kd": 25.0,
-      "date": "2026-11-14"
-    },
-    {
       "competitor": "Kameleoon",
       "slug": "what-is-a-heat-map",
       "url": "https://www.kameleoon.com/blog/what-is-a-heat-map",
@@ -34534,72 +34642,8 @@
       "competitor": "PostHog",
       "slug": "prompts",
       "url": "https://posthog.com/learn/prompts",
-      "threat": 7,
+      "threat": 6,
       "kd": 7.0,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "cloud-siem-investigate-user-entity-risks",
-      "url": "https://www.datadoghq.com/blog/cloud-siem-investigate-user-entity-risks",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "datadog-cyber-essentials-plus-certification",
-      "url": "https://www.datadoghq.com/blog/datadog-cyber-essentials-plus-certification",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "detect-respond-php2shell-datadog",
-      "url": "https://www.datadoghq.com/blog/detect-respond-php2shell-datadog",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "end-user-device-monitoring",
-      "url": "https://www.datadoghq.com/blog/end-user-device-monitoring",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "kubernetes-inference-workload-monitoring",
-      "url": "https://www.datadoghq.com/blog/kubernetes-inference-workload-monitoring",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "kubernetes-processes-datadog-mcp-server",
-      "url": "https://www.datadoghq.com/blog/kubernetes-processes-datadog-mcp-server",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "monitor-oci-government-cloud-datadog",
-      "url": "https://www.datadoghq.com/blog/monitor-oci-government-cloud-datadog",
-      "threat": 6,
-      "kd": null,
-      "date": "2026-11-14"
-    },
-    {
-      "competitor": "Datadog",
-      "slug": "monitor-openai-codex-with-datadog",
-      "url": "https://www.datadoghq.com/blog/monitor-openai-codex-with-datadog",
-      "threat": 6,
-      "kd": null,
       "date": "2026-11-14"
     },
     {
@@ -35270,7 +35314,7 @@
       "competitor": "Amplitude Exp",
       "title": "What is Amplitude?",
       "url": "https://amplitude.com/docs/get-started/what-is-amplitude",
-      "etv": 1194,
+      "etv": 1182,
       "kd": 20.0
     },
     {
@@ -35284,43 +35328,36 @@
       "competitor": "Optimizely",
       "title": "Conversion Rate Optimization (CRO)",
       "url": "https://www.optimizely.com/optimization-glossary/conversion-rate-optimization",
-      "etv": 1108,
+      "etv": 1100,
       "kd": 43.0
     },
     {
       "competitor": "Optimizely",
       "title": "Unique selling point",
       "url": "https://www.optimizely.com/optimization-glossary/unique-selling-point",
-      "etv": 1083,
+      "etv": 975,
       "kd": 23.0
     },
     {
       "competitor": "Datadog",
       "title": "What does it mean to monitor metrics?",
       "url": "https://www.datadoghq.com/knowledge-center/metrics/",
-      "etv": 842,
+      "etv": 843,
       "kd": 15.0
     },
     {
       "competitor": "Kameleoon",
       "title": "Customization vs. Personalization: what are the differences ...",
       "url": "https://www.kameleoon.com/blog/customization-vs-personalization",
-      "etv": 803,
+      "etv": 804,
       "kd": 0.0
     },
     {
       "competitor": "Amplitude Exp",
       "title": "P Values: What They Are and How to Calculate Them",
       "url": "https://amplitude.com/explore/experiment/p-values",
-      "etv": 736,
+      "etv": 740,
       "kd": 27.0
-    },
-    {
-      "competitor": "Datadog",
-      "title": "Agent Observability | LLM Observability",
-      "url": "https://www.datadoghq.com/products/ai/agent-observability/",
-      "etv": 719,
-      "kd": 29.0
     },
     {
       "competitor": "Statsig",
@@ -35330,18 +35367,25 @@
       "kd": 24.0
     },
     {
-      "competitor": "Amplitude Exp",
-      "title": "What is a T-test? How to Use and Interpret T-test Results",
-      "url": "https://amplitude.com/explore/experiment/t-test",
-      "etv": 701,
-      "kd": 24.0
-    },
-    {
       "competitor": "Optimizely",
       "title": "Commerce",
       "url": "https://www.optimizely.com/optimization-glossary/commerce",
       "etv": 696,
       "kd": 58.0
+    },
+    {
+      "competitor": "Amplitude Exp",
+      "title": "What is a T-test? How to Use and Interpret T-test Results",
+      "url": "https://amplitude.com/explore/experiment/t-test",
+      "etv": 685,
+      "kd": 24.0
+    },
+    {
+      "competitor": "Datadog",
+      "title": "Agent Observability | LLM Observability",
+      "url": "https://www.datadoghq.com/products/ai/agent-observability/",
+      "etv": 638,
+      "kd": 29.0
     },
     {
       "competitor": "Optimizely",
@@ -35375,14 +35419,14 @@
       "competitor": "Optimizely",
       "title": "Hero image",
       "url": "https://www.optimizely.com/optimization-glossary/hero-image",
-      "etv": 499,
+      "etv": 495,
       "kd": 30.0
     },
     {
       "competitor": "Optimizely",
       "title": "Lead generation",
       "url": "https://www.optimizely.com/optimization-glossary/lead-generation",
-      "etv": 486,
+      "etv": 491,
       "kd": 46.0
     },
     {
@@ -35396,7 +35440,7 @@
       "competitor": "Optimizely",
       "title": "Call to action",
       "url": "https://www.optimizely.com/optimization-glossary/call-to-action",
-      "etv": 472,
+      "etv": 471,
       "kd": 53.0
     },
     {
@@ -35410,7 +35454,7 @@
       "competitor": "Optimizely",
       "title": "Search engine marketing",
       "url": "https://www.optimizely.com/optimization-glossary/search-engine-marketing",
-      "etv": 455,
+      "etv": 456,
       "kd": 26.0
     },
     {
@@ -35424,8 +35468,15 @@
       "competitor": "Datadog",
       "title": "Real User Monitoring",
       "url": "https://www.datadoghq.com/product/real-user-monitoring/",
-      "etv": 327,
+      "etv": 317,
       "kd": 23.0
+    },
+    {
+      "competitor": "Optimizely",
+      "title": "Content management system",
+      "url": "https://www.optimizely.com/optimization-glossary/content-management-system",
+      "etv": 304,
+      "kd": 21.0
     },
     {
       "competitor": "Datadog",
@@ -35433,13 +35484,6 @@
       "url": "https://www.datadoghq.com/monitoring/cloud-observability/",
       "etv": 299,
       "kd": 17.0
-    },
-    {
-      "competitor": "Optimizely",
-      "title": "Content management system",
-      "url": "https://www.optimizely.com/optimization-glossary/content-management-system",
-      "etv": 296,
-      "kd": 21.0
     },
     {
       "competitor": "Statsig",
@@ -39497,22 +39541,6 @@
         }
       },
       "by_category": {
-        "Other short": {
-          "current": {
-            "engaged_views": 86,
-            "raw_views": 270,
-            "watch_minutes": 49,
-            "subs_gained": 0,
-            "videos": 10
-          },
-          "prior": {
-            "engaged_views": 31,
-            "raw_views": 65,
-            "watch_minutes": 9,
-            "subs_gained": 0,
-            "videos": 13
-          }
-        },
         "Podcast episode": {
           "current": {
             "engaged_views": 715,
@@ -39527,6 +39555,22 @@
             "watch_minutes": 2918,
             "subs_gained": 7,
             "videos": 40
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 97,
+            "raw_views": 156,
+            "watch_minutes": 552,
+            "subs_gained": 1,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 78,
+            "raw_views": 99,
+            "watch_minutes": 474,
+            "subs_gained": 1,
+            "videos": 2
           }
         },
         "Product long-form": {
@@ -39545,22 +39589,6 @@
             "videos": 66
           }
         },
-        "Other webinar": {
-          "current": {
-            "engaged_views": 79,
-            "raw_views": 92,
-            "watch_minutes": 603,
-            "subs_gained": 0,
-            "videos": 10
-          },
-          "prior": {
-            "engaged_views": 122,
-            "raw_views": 135,
-            "watch_minutes": 497,
-            "subs_gained": 0,
-            "videos": 10
-          }
-        },
         "Podcast clip": {
           "current": {
             "engaged_views": 628,
@@ -39577,20 +39605,36 @@
             "videos": 60
           }
         },
-        "Kohavi webinar": {
+        "Other short": {
           "current": {
-            "engaged_views": 97,
-            "raw_views": 156,
-            "watch_minutes": 552,
-            "subs_gained": 1,
-            "videos": 2
+            "engaged_views": 86,
+            "raw_views": 270,
+            "watch_minutes": 49,
+            "subs_gained": 0,
+            "videos": 10
           },
           "prior": {
-            "engaged_views": 78,
-            "raw_views": 99,
-            "watch_minutes": 474,
-            "subs_gained": 1,
-            "videos": 2
+            "engaged_views": 31,
+            "raw_views": 65,
+            "watch_minutes": 9,
+            "subs_gained": 0,
+            "videos": 13
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 79,
+            "raw_views": 92,
+            "watch_minutes": 603,
+            "subs_gained": 0,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 122,
+            "raw_views": 135,
+            "watch_minutes": 497,
+            "subs_gained": 0,
+            "videos": 10
           }
         }
       },
@@ -77882,6 +77926,418 @@
         ]
       },
       {
+        "video_id": "uyg92UxV_Uc",
+        "title": "A/B Testing Made Easy: Sanity + GrowthBook + Next.js Tutorial",
+        "category": "Product long-form",
+        "length_s": 1669,
+        "hook_30s": 0.492,
+        "ret_25": 0.2403,
+        "ret_50": 0.2189,
+        "ret_75": 0.1421,
+        "curve": [
+          [
+            0.01,
+            0.8843
+          ],
+          [
+            0.02,
+            0.4918
+          ],
+          [
+            0.03,
+            0.4906
+          ],
+          [
+            0.04,
+            0.522
+          ],
+          [
+            0.05,
+            0.4994
+          ],
+          [
+            0.06,
+            0.4704
+          ],
+          [
+            0.07,
+            0.4088
+          ],
+          [
+            0.08,
+            0.405
+          ],
+          [
+            0.09,
+            0.3723
+          ],
+          [
+            0.1,
+            0.3308
+          ],
+          [
+            0.11,
+            0.3358
+          ],
+          [
+            0.12,
+            0.3208
+          ],
+          [
+            0.13,
+            0.3132
+          ],
+          [
+            0.14,
+            0.3044
+          ],
+          [
+            0.15,
+            0.327
+          ],
+          [
+            0.16,
+            0.3082
+          ],
+          [
+            0.17,
+            0.2868
+          ],
+          [
+            0.18,
+            0.2931
+          ],
+          [
+            0.19,
+            0.2906
+          ],
+          [
+            0.2,
+            0.2931
+          ],
+          [
+            0.21,
+            0.2818
+          ],
+          [
+            0.22,
+            0.2566
+          ],
+          [
+            0.23,
+            0.2465
+          ],
+          [
+            0.24,
+            0.2352
+          ],
+          [
+            0.25,
+            0.2403
+          ],
+          [
+            0.26,
+            0.2264
+          ],
+          [
+            0.27,
+            0.2264
+          ],
+          [
+            0.28,
+            0.2226
+          ],
+          [
+            0.29,
+            0.2164
+          ],
+          [
+            0.3,
+            0.2302
+          ],
+          [
+            0.31,
+            0.2151
+          ],
+          [
+            0.32,
+            0.244
+          ],
+          [
+            0.33,
+            0.2465
+          ],
+          [
+            0.34,
+            0.2352
+          ],
+          [
+            0.35,
+            0.2252
+          ],
+          [
+            0.36,
+            0.2252
+          ],
+          [
+            0.37,
+            0.2101
+          ],
+          [
+            0.38,
+            0.2189
+          ],
+          [
+            0.39,
+            0.2038
+          ],
+          [
+            0.4,
+            0.2088
+          ],
+          [
+            0.41,
+            0.2038
+          ],
+          [
+            0.42,
+            0.2
+          ],
+          [
+            0.43,
+            0.2189
+          ],
+          [
+            0.44,
+            0.2151
+          ],
+          [
+            0.45,
+            0.2264
+          ],
+          [
+            0.46,
+            0.2302
+          ],
+          [
+            0.47,
+            0.2277
+          ],
+          [
+            0.48,
+            0.2277
+          ],
+          [
+            0.49,
+            0.2252
+          ],
+          [
+            0.5,
+            0.2189
+          ],
+          [
+            0.51,
+            0.2138
+          ],
+          [
+            0.52,
+            0.2075
+          ],
+          [
+            0.53,
+            0.1975
+          ],
+          [
+            0.54,
+            0.1887
+          ],
+          [
+            0.55,
+            0.195
+          ],
+          [
+            0.56,
+            0.2113
+          ],
+          [
+            0.57,
+            0.1937
+          ],
+          [
+            0.58,
+            0.195
+          ],
+          [
+            0.59,
+            0.2025
+          ],
+          [
+            0.6,
+            0.1925
+          ],
+          [
+            0.61,
+            0.1748
+          ],
+          [
+            0.62,
+            0.1799
+          ],
+          [
+            0.63,
+            0.1786
+          ],
+          [
+            0.64,
+            0.1484
+          ],
+          [
+            0.65,
+            0.1648
+          ],
+          [
+            0.66,
+            0.1635
+          ],
+          [
+            0.67,
+            0.156
+          ],
+          [
+            0.68,
+            0.1648
+          ],
+          [
+            0.69,
+            0.1572
+          ],
+          [
+            0.7,
+            0.156
+          ],
+          [
+            0.71,
+            0.1484
+          ],
+          [
+            0.72,
+            0.1585
+          ],
+          [
+            0.73,
+            0.1409
+          ],
+          [
+            0.74,
+            0.1472
+          ],
+          [
+            0.75,
+            0.1421
+          ],
+          [
+            0.76,
+            0.1484
+          ],
+          [
+            0.77,
+            0.1409
+          ],
+          [
+            0.78,
+            0.1371
+          ],
+          [
+            0.79,
+            0.1296
+          ],
+          [
+            0.8,
+            0.1233
+          ],
+          [
+            0.81,
+            0.1132
+          ],
+          [
+            0.82,
+            0.117
+          ],
+          [
+            0.83,
+            0.1157
+          ],
+          [
+            0.84,
+            0.1182
+          ],
+          [
+            0.85,
+            0.0994
+          ],
+          [
+            0.86,
+            0.1094
+          ],
+          [
+            0.87,
+            0.1157
+          ],
+          [
+            0.88,
+            0.1195
+          ],
+          [
+            0.89,
+            0.1182
+          ],
+          [
+            0.9,
+            0.1182
+          ],
+          [
+            0.91,
+            0.1195
+          ],
+          [
+            0.92,
+            0.1283
+          ],
+          [
+            0.93,
+            0.1157
+          ],
+          [
+            0.94,
+            0.1258
+          ],
+          [
+            0.95,
+            0.1409
+          ],
+          [
+            0.96,
+            0.1371
+          ],
+          [
+            0.97,
+            0.1119
+          ],
+          [
+            0.98,
+            0.0906
+          ],
+          [
+            0.99,
+            0.0604
+          ],
+          [
+            1.0,
+            0.0403
+          ]
+        ]
+      },
+      {
         "video_id": "J8tyS4j3DtA",
         "title": "Feature flagging and A/B testing with NextJS and GrowthBook",
         "category": "Product long-form",
@@ -78290,418 +78746,6 @@
           [
             1.0,
             0.1515
-          ]
-        ]
-      },
-      {
-        "video_id": "uyg92UxV_Uc",
-        "title": "A/B Testing Made Easy: Sanity + GrowthBook + Next.js Tutorial",
-        "category": "Product long-form",
-        "length_s": 1669,
-        "hook_30s": 0.498,
-        "ret_25": 0.2339,
-        "ret_50": 0.2156,
-        "ret_75": 0.1449,
-        "curve": [
-          [
-            0.01,
-            0.8843
-          ],
-          [
-            0.02,
-            0.4982
-          ],
-          [
-            0.03,
-            0.4945
-          ],
-          [
-            0.04,
-            0.5262
-          ],
-          [
-            0.05,
-            0.5006
-          ],
-          [
-            0.06,
-            0.4702
-          ],
-          [
-            0.07,
-            0.4129
-          ],
-          [
-            0.08,
-            0.4032
-          ],
-          [
-            0.09,
-            0.3715
-          ],
-          [
-            0.1,
-            0.3325
-          ],
-          [
-            0.11,
-            0.3386
-          ],
-          [
-            0.12,
-            0.3191
-          ],
-          [
-            0.13,
-            0.3106
-          ],
-          [
-            0.14,
-            0.3033
-          ],
-          [
-            0.15,
-            0.3228
-          ],
-          [
-            0.16,
-            0.3033
-          ],
-          [
-            0.17,
-            0.2826
-          ],
-          [
-            0.18,
-            0.2899
-          ],
-          [
-            0.19,
-            0.2911
-          ],
-          [
-            0.2,
-            0.2935
-          ],
-          [
-            0.21,
-            0.2801
-          ],
-          [
-            0.22,
-            0.2558
-          ],
-          [
-            0.23,
-            0.2497
-          ],
-          [
-            0.24,
-            0.2326
-          ],
-          [
-            0.25,
-            0.2339
-          ],
-          [
-            0.26,
-            0.2266
-          ],
-          [
-            0.27,
-            0.2253
-          ],
-          [
-            0.28,
-            0.2192
-          ],
-          [
-            0.29,
-            0.2132
-          ],
-          [
-            0.3,
-            0.2266
-          ],
-          [
-            0.31,
-            0.2095
-          ],
-          [
-            0.32,
-            0.24
-          ],
-          [
-            0.33,
-            0.2436
-          ],
-          [
-            0.34,
-            0.229
-          ],
-          [
-            0.35,
-            0.2229
-          ],
-          [
-            0.36,
-            0.2217
-          ],
-          [
-            0.37,
-            0.2083
-          ],
-          [
-            0.38,
-            0.2192
-          ],
-          [
-            0.39,
-            0.2022
-          ],
-          [
-            0.4,
-            0.2058
-          ],
-          [
-            0.41,
-            0.2046
-          ],
-          [
-            0.42,
-            0.1985
-          ],
-          [
-            0.43,
-            0.2168
-          ],
-          [
-            0.44,
-            0.2144
-          ],
-          [
-            0.45,
-            0.2253
-          ],
-          [
-            0.46,
-            0.229
-          ],
-          [
-            0.47,
-            0.2278
-          ],
-          [
-            0.48,
-            0.2241
-          ],
-          [
-            0.49,
-            0.2217
-          ],
-          [
-            0.5,
-            0.2156
-          ],
-          [
-            0.51,
-            0.2156
-          ],
-          [
-            0.52,
-            0.2083
-          ],
-          [
-            0.53,
-            0.1998
-          ],
-          [
-            0.54,
-            0.1864
-          ],
-          [
-            0.55,
-            0.1912
-          ],
-          [
-            0.56,
-            0.2095
-          ],
-          [
-            0.57,
-            0.1912
-          ],
-          [
-            0.58,
-            0.1924
-          ],
-          [
-            0.59,
-            0.1998
-          ],
-          [
-            0.6,
-            0.1912
-          ],
-          [
-            0.61,
-            0.173
-          ],
-          [
-            0.62,
-            0.1778
-          ],
-          [
-            0.63,
-            0.1778
-          ],
-          [
-            0.64,
-            0.1474
-          ],
-          [
-            0.65,
-            0.162
-          ],
-          [
-            0.66,
-            0.1608
-          ],
-          [
-            0.67,
-            0.1535
-          ],
-          [
-            0.68,
-            0.1632
-          ],
-          [
-            0.69,
-            0.1547
-          ],
-          [
-            0.7,
-            0.1547
-          ],
-          [
-            0.71,
-            0.1474
-          ],
-          [
-            0.72,
-            0.1571
-          ],
-          [
-            0.73,
-            0.1389
-          ],
-          [
-            0.74,
-            0.1462
-          ],
-          [
-            0.75,
-            0.1449
-          ],
-          [
-            0.76,
-            0.1474
-          ],
-          [
-            0.77,
-            0.1425
-          ],
-          [
-            0.78,
-            0.1376
-          ],
-          [
-            0.79,
-            0.1303
-          ],
-          [
-            0.8,
-            0.123
-          ],
-          [
-            0.81,
-            0.1157
-          ],
-          [
-            0.82,
-            0.1169
-          ],
-          [
-            0.83,
-            0.1157
-          ],
-          [
-            0.84,
-            0.1181
-          ],
-          [
-            0.85,
-            0.0999
-          ],
-          [
-            0.86,
-            0.1096
-          ],
-          [
-            0.87,
-            0.1157
-          ],
-          [
-            0.88,
-            0.1194
-          ],
-          [
-            0.89,
-            0.1181
-          ],
-          [
-            0.9,
-            0.1206
-          ],
-          [
-            0.91,
-            0.1218
-          ],
-          [
-            0.92,
-            0.1303
-          ],
-          [
-            0.93,
-            0.1194
-          ],
-          [
-            0.94,
-            0.1267
-          ],
-          [
-            0.95,
-            0.1425
-          ],
-          [
-            0.96,
-            0.1376
-          ],
-          [
-            0.97,
-            0.1133
-          ],
-          [
-            0.98,
-            0.0926
-          ],
-          [
-            0.99,
-            0.0621
-          ],
-          [
-            1.0,
-            0.0414
           ]
         ]
       },
@@ -96082,418 +96126,6 @@
         ]
       },
       {
-        "video_id": "AzAeirxwPJk",
-        "title": "How Khan Academy Became a Leader in A/B Testing AI for Better Education",
-        "category": "Other webinar",
-        "length_s": 2971,
-        "hook_30s": 0.873,
-        "ret_25": 0.1864,
-        "ret_50": 0.1182,
-        "ret_75": 0.0591,
-        "curve": [
-          [
-            0.01,
-            0.8727
-          ],
-          [
-            0.02,
-            0.3409
-          ],
-          [
-            0.03,
-            0.3
-          ],
-          [
-            0.04,
-            0.3045
-          ],
-          [
-            0.05,
-            0.2955
-          ],
-          [
-            0.06,
-            0.3136
-          ],
-          [
-            0.07,
-            0.2545
-          ],
-          [
-            0.08,
-            0.2682
-          ],
-          [
-            0.09,
-            0.2409
-          ],
-          [
-            0.1,
-            0.2409
-          ],
-          [
-            0.11,
-            0.2273
-          ],
-          [
-            0.12,
-            0.2318
-          ],
-          [
-            0.13,
-            0.2318
-          ],
-          [
-            0.14,
-            0.2273
-          ],
-          [
-            0.15,
-            0.25
-          ],
-          [
-            0.16,
-            0.2318
-          ],
-          [
-            0.17,
-            0.2227
-          ],
-          [
-            0.18,
-            0.2273
-          ],
-          [
-            0.19,
-            0.2
-          ],
-          [
-            0.2,
-            0.1818
-          ],
-          [
-            0.21,
-            0.1909
-          ],
-          [
-            0.22,
-            0.1818
-          ],
-          [
-            0.23,
-            0.2045
-          ],
-          [
-            0.24,
-            0.1864
-          ],
-          [
-            0.25,
-            0.1864
-          ],
-          [
-            0.26,
-            0.1727
-          ],
-          [
-            0.27,
-            0.1636
-          ],
-          [
-            0.28,
-            0.1727
-          ],
-          [
-            0.29,
-            0.1773
-          ],
-          [
-            0.3,
-            0.1773
-          ],
-          [
-            0.31,
-            0.1727
-          ],
-          [
-            0.32,
-            0.1682
-          ],
-          [
-            0.33,
-            0.1682
-          ],
-          [
-            0.34,
-            0.1545
-          ],
-          [
-            0.35,
-            0.1591
-          ],
-          [
-            0.36,
-            0.1818
-          ],
-          [
-            0.37,
-            0.1545
-          ],
-          [
-            0.38,
-            0.1273
-          ],
-          [
-            0.39,
-            0.1318
-          ],
-          [
-            0.4,
-            0.1409
-          ],
-          [
-            0.41,
-            0.1364
-          ],
-          [
-            0.42,
-            0.1364
-          ],
-          [
-            0.43,
-            0.1273
-          ],
-          [
-            0.44,
-            0.1409
-          ],
-          [
-            0.45,
-            0.1227
-          ],
-          [
-            0.46,
-            0.1182
-          ],
-          [
-            0.47,
-            0.1273
-          ],
-          [
-            0.48,
-            0.1182
-          ],
-          [
-            0.49,
-            0.1227
-          ],
-          [
-            0.5,
-            0.1182
-          ],
-          [
-            0.51,
-            0.1364
-          ],
-          [
-            0.52,
-            0.1273
-          ],
-          [
-            0.53,
-            0.1182
-          ],
-          [
-            0.54,
-            0.1136
-          ],
-          [
-            0.55,
-            0.1273
-          ],
-          [
-            0.56,
-            0.1
-          ],
-          [
-            0.57,
-            0.1045
-          ],
-          [
-            0.58,
-            0.1045
-          ],
-          [
-            0.59,
-            0.1045
-          ],
-          [
-            0.6,
-            0.1136
-          ],
-          [
-            0.61,
-            0.0955
-          ],
-          [
-            0.62,
-            0.0909
-          ],
-          [
-            0.63,
-            0.1045
-          ],
-          [
-            0.64,
-            0.0818
-          ],
-          [
-            0.65,
-            0.0818
-          ],
-          [
-            0.66,
-            0.0773
-          ],
-          [
-            0.67,
-            0.0773
-          ],
-          [
-            0.68,
-            0.1045
-          ],
-          [
-            0.69,
-            0.1045
-          ],
-          [
-            0.7,
-            0.0818
-          ],
-          [
-            0.71,
-            0.0727
-          ],
-          [
-            0.72,
-            0.0818
-          ],
-          [
-            0.73,
-            0.05
-          ],
-          [
-            0.74,
-            0.0591
-          ],
-          [
-            0.75,
-            0.0591
-          ],
-          [
-            0.76,
-            0.0545
-          ],
-          [
-            0.77,
-            0.0545
-          ],
-          [
-            0.78,
-            0.0545
-          ],
-          [
-            0.79,
-            0.05
-          ],
-          [
-            0.8,
-            0.0545
-          ],
-          [
-            0.81,
-            0.05
-          ],
-          [
-            0.82,
-            0.0636
-          ],
-          [
-            0.83,
-            0.05
-          ],
-          [
-            0.84,
-            0.0545
-          ],
-          [
-            0.85,
-            0.0545
-          ],
-          [
-            0.86,
-            0.0591
-          ],
-          [
-            0.87,
-            0.0591
-          ],
-          [
-            0.88,
-            0.0591
-          ],
-          [
-            0.89,
-            0.0455
-          ],
-          [
-            0.9,
-            0.0455
-          ],
-          [
-            0.91,
-            0.0455
-          ],
-          [
-            0.92,
-            0.0409
-          ],
-          [
-            0.93,
-            0.0409
-          ],
-          [
-            0.94,
-            0.0409
-          ],
-          [
-            0.95,
-            0.0409
-          ],
-          [
-            0.96,
-            0.0409
-          ],
-          [
-            0.97,
-            0.0455
-          ],
-          [
-            0.98,
-            0.0409
-          ],
-          [
-            0.99,
-            0.05
-          ],
-          [
-            1.0,
-            0.05
-          ]
-        ]
-      },
-      {
         "video_id": "6jBZlGR8Eo0",
         "title": "How The Philadelphia Inquirer is scaling experimentation across the organization",
         "category": "Other webinar",
@@ -97314,6 +96946,418 @@
           [
             1.0,
             0.0513
+          ]
+        ]
+      },
+      {
+        "video_id": "AzAeirxwPJk",
+        "title": "How Khan Academy Became a Leader in A/B Testing AI for Better Education",
+        "category": "Other webinar",
+        "length_s": 2971,
+        "hook_30s": 0.898,
+        "ret_25": 0.1811,
+        "ret_50": 0.126,
+        "ret_75": 0.0669,
+        "curve": [
+          [
+            0.01,
+            0.8976
+          ],
+          [
+            0.02,
+            0.3543
+          ],
+          [
+            0.03,
+            0.3189
+          ],
+          [
+            0.04,
+            0.3189
+          ],
+          [
+            0.05,
+            0.3031
+          ],
+          [
+            0.06,
+            0.3228
+          ],
+          [
+            0.07,
+            0.2638
+          ],
+          [
+            0.08,
+            0.2677
+          ],
+          [
+            0.09,
+            0.2441
+          ],
+          [
+            0.1,
+            0.248
+          ],
+          [
+            0.11,
+            0.2362
+          ],
+          [
+            0.12,
+            0.2323
+          ],
+          [
+            0.13,
+            0.2323
+          ],
+          [
+            0.14,
+            0.2283
+          ],
+          [
+            0.15,
+            0.2441
+          ],
+          [
+            0.16,
+            0.2244
+          ],
+          [
+            0.17,
+            0.2165
+          ],
+          [
+            0.18,
+            0.2165
+          ],
+          [
+            0.19,
+            0.1969
+          ],
+          [
+            0.2,
+            0.1772
+          ],
+          [
+            0.21,
+            0.189
+          ],
+          [
+            0.22,
+            0.1811
+          ],
+          [
+            0.23,
+            0.2008
+          ],
+          [
+            0.24,
+            0.189
+          ],
+          [
+            0.25,
+            0.1811
+          ],
+          [
+            0.26,
+            0.1693
+          ],
+          [
+            0.27,
+            0.1614
+          ],
+          [
+            0.28,
+            0.1732
+          ],
+          [
+            0.29,
+            0.1772
+          ],
+          [
+            0.3,
+            0.1772
+          ],
+          [
+            0.31,
+            0.1732
+          ],
+          [
+            0.32,
+            0.1732
+          ],
+          [
+            0.33,
+            0.1732
+          ],
+          [
+            0.34,
+            0.1614
+          ],
+          [
+            0.35,
+            0.1654
+          ],
+          [
+            0.36,
+            0.185
+          ],
+          [
+            0.37,
+            0.1614
+          ],
+          [
+            0.38,
+            0.1378
+          ],
+          [
+            0.39,
+            0.1417
+          ],
+          [
+            0.4,
+            0.1496
+          ],
+          [
+            0.41,
+            0.1457
+          ],
+          [
+            0.42,
+            0.1417
+          ],
+          [
+            0.43,
+            0.1339
+          ],
+          [
+            0.44,
+            0.1457
+          ],
+          [
+            0.45,
+            0.1378
+          ],
+          [
+            0.46,
+            0.126
+          ],
+          [
+            0.47,
+            0.1339
+          ],
+          [
+            0.48,
+            0.126
+          ],
+          [
+            0.49,
+            0.1299
+          ],
+          [
+            0.5,
+            0.126
+          ],
+          [
+            0.51,
+            0.1417
+          ],
+          [
+            0.52,
+            0.1339
+          ],
+          [
+            0.53,
+            0.1181
+          ],
+          [
+            0.54,
+            0.1142
+          ],
+          [
+            0.55,
+            0.126
+          ],
+          [
+            0.56,
+            0.0984
+          ],
+          [
+            0.57,
+            0.1024
+          ],
+          [
+            0.58,
+            0.1024
+          ],
+          [
+            0.59,
+            0.1024
+          ],
+          [
+            0.6,
+            0.1102
+          ],
+          [
+            0.61,
+            0.0945
+          ],
+          [
+            0.62,
+            0.0906
+          ],
+          [
+            0.63,
+            0.1063
+          ],
+          [
+            0.64,
+            0.0906
+          ],
+          [
+            0.65,
+            0.0906
+          ],
+          [
+            0.66,
+            0.0866
+          ],
+          [
+            0.67,
+            0.0827
+          ],
+          [
+            0.68,
+            0.1063
+          ],
+          [
+            0.69,
+            0.1142
+          ],
+          [
+            0.7,
+            0.1063
+          ],
+          [
+            0.71,
+            0.0866
+          ],
+          [
+            0.72,
+            0.0866
+          ],
+          [
+            0.73,
+            0.0591
+          ],
+          [
+            0.74,
+            0.0669
+          ],
+          [
+            0.75,
+            0.0669
+          ],
+          [
+            0.76,
+            0.063
+          ],
+          [
+            0.77,
+            0.063
+          ],
+          [
+            0.78,
+            0.063
+          ],
+          [
+            0.79,
+            0.0591
+          ],
+          [
+            0.8,
+            0.063
+          ],
+          [
+            0.81,
+            0.0591
+          ],
+          [
+            0.82,
+            0.0709
+          ],
+          [
+            0.83,
+            0.0591
+          ],
+          [
+            0.84,
+            0.063
+          ],
+          [
+            0.85,
+            0.063
+          ],
+          [
+            0.86,
+            0.0669
+          ],
+          [
+            0.87,
+            0.0669
+          ],
+          [
+            0.88,
+            0.0669
+          ],
+          [
+            0.89,
+            0.0551
+          ],
+          [
+            0.9,
+            0.0551
+          ],
+          [
+            0.91,
+            0.0551
+          ],
+          [
+            0.92,
+            0.0512
+          ],
+          [
+            0.93,
+            0.0512
+          ],
+          [
+            0.94,
+            0.0512
+          ],
+          [
+            0.95,
+            0.0512
+          ],
+          [
+            0.96,
+            0.0512
+          ],
+          [
+            0.97,
+            0.0551
+          ],
+          [
+            0.98,
+            0.0472
+          ],
+          [
+            0.99,
+            0.0551
+          ],
+          [
+            1.0,
+            0.0551
           ]
         ]
       },
@@ -141450,12 +141494,12 @@
     }
   },
   "keyword_rankings": {
-    "snapshot_date": "2026-11-07",
+    "snapshot_date": "2026-11-14",
     "top3_count": 170,
-    "top10_count": 656,
-    "top20_count": 1095,
+    "top10_count": 655,
+    "top20_count": 1096,
     "total_tracked": 2000,
-    "top10_mom": -4.2,
+    "top10_mom": -0.8,
     "new_top10": [],
     "top10_keywords": [
       {
@@ -141597,6 +141641,12 @@
         "url": "https://www.growthbook.io/insights/free-optimizely-alternatives"
       },
       {
+        "keyword": "matched pair t test example",
+        "position": 1,
+        "search_volume": 50,
+        "url": "https://www.growthbook.io/insights/matched-pairs-experiment-definition-examples"
+      },
+      {
         "keyword": "advantage of matched pairs design",
         "position": 1,
         "search_volume": 30,
@@ -141607,12 +141657,6 @@
         "position": 1,
         "search_volume": 20,
         "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
-      },
-      {
-        "keyword": "matched pair t test example",
-        "position": 1,
-        "search_volume": 50,
-        "url": "https://www.growthbook.io/insights/matched-pairs-experiment-definition-examples"
       },
       {
         "keyword": "matched pair t-test example",
@@ -141687,15 +141731,15 @@
         "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
       },
       {
-        "keyword": "how to interpret a confidence interval",
-        "position": 2,
-        "search_volume": 1600,
-        "url": "https://www.growthbook.io/insights/how-interpret-confidence-interval-step-by-step"
-      },
-      {
         "keyword": "matched pair design",
         "position": 2,
         "search_volume": 4400,
+        "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
+      },
+      {
+        "keyword": "what is matched pairs design",
+        "position": 2,
+        "search_volume": 1000,
         "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
       },
       {
@@ -141703,12 +141747,6 @@
         "position": 2,
         "search_volume": 2400,
         "url": "https://www.growthbook.io/insights/how-interpret-confidence-interval-step-by-step"
-      },
-      {
-        "keyword": "what is matched pairs design",
-        "position": 2,
-        "search_volume": 1000,
-        "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
       },
       {
         "keyword": "interpretation of confidence interval",
@@ -141798,6 +141836,12 @@
         "keyword": "how to interpret a 95 confidence interval",
         "position": 2,
         "search_volume": 210,
+        "url": "https://www.growthbook.io/insights/how-interpret-confidence-interval-step-by-step"
+      },
+      {
+        "keyword": "how to interpret a confidence interval",
+        "position": 2,
+        "search_volume": 1600,
         "url": "https://www.growthbook.io/insights/how-interpret-confidence-interval-step-by-step"
       },
       {
@@ -142179,12 +142223,6 @@
         "url": "https://www.growthbook.io/insights/true-positive-definition-examples-testing"
       },
       {
-        "keyword": "we are 95 percent confident that",
-        "position": 3,
-        "search_volume": 390,
-        "url": "https://www.growthbook.io/insights/95-confidence-interval"
-      },
-      {
         "keyword": "experiment probability definition",
         "position": 3,
         "search_volume": 880,
@@ -142201,6 +142239,12 @@
         "position": 3,
         "search_volume": 480,
         "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
+      },
+      {
+        "keyword": "we are 95 percent confident that",
+        "position": 3,
+        "search_volume": 390,
+        "url": "https://www.growthbook.io/insights/95-confidence-interval"
       },
       {
         "keyword": "experimental probability formula",
@@ -142791,6 +142835,12 @@
         "url": "https://www.growthbook.io/insights/best-ai-coding-tools-for-feature-flag-management-in-2026"
       },
       {
+        "keyword": "statistical construct",
+        "position": 4,
+        "search_volume": 30,
+        "url": "https://www.growthbook.io/insights/statistical-validity-what-means-research"
+      },
+      {
         "keyword": "statsig wikipedia",
         "position": 4,
         "search_volume": 10,
@@ -142807,12 +142857,6 @@
         "position": 4,
         "search_volume": 390,
         "url": "https://www.growthbook.io/insights/constants-experiment-what-they"
-      },
-      {
-        "keyword": "statistical construct",
-        "position": 4,
-        "search_volume": 30,
-        "url": "https://www.growthbook.io/insights/statistical-validity-what-means-research"
       },
       {
         "keyword": "experimental probability definition math",
@@ -142911,12 +142955,6 @@
         "url": "https://www.growthbook.io/insights/experimental-probability-examples-explained-simply"
       },
       {
-        "keyword": "chi-square test vs t-test",
-        "position": 5,
-        "search_volume": 1300,
-        "url": "https://www.growthbook.io/insights/t-test-vs-chi-square-key-differences-explained"
-      },
-      {
         "keyword": "experimental unit",
         "position": 5,
         "search_volume": 2400,
@@ -143007,12 +143045,6 @@
         "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
       },
       {
-        "keyword": "matched pairs vs block design",
-        "position": 5,
-        "search_volume": 90,
-        "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
-      },
-      {
         "keyword": "confidence interval interpretation sentence",
         "position": 5,
         "search_volume": 50,
@@ -143023,6 +143055,12 @@
         "position": 5,
         "search_volume": 70,
         "url": "https://www.growthbook.io/insights/growthbook-vs-launchdarkly-vs-statsig"
+      },
+      {
+        "keyword": "matched pairs vs block design",
+        "position": 5,
+        "search_volume": 90,
+        "url": "https://www.growthbook.io/insights/matched-pairs-design-explained-definition-benefits"
       },
       {
         "keyword": "false positive vs true positive",
@@ -143121,12 +143159,6 @@
         "url": "https://www.growthbook.io/blog/find-flags-faster-with-search-filters"
       },
       {
-        "keyword": "constant meaning in biology",
-        "position": 5,
-        "search_volume": 30,
-        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
-      },
-      {
         "keyword": "hypothesis diagram",
         "position": 5,
         "search_volume": 70,
@@ -143167,6 +143199,12 @@
         "position": 5,
         "search_volume": 30,
         "url": "https://www.growthbook.io/insights/understanding-false-causality-examples"
+      },
+      {
+        "keyword": "constant meaning in biology",
+        "position": 5,
+        "search_volume": 30,
+        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
       },
       {
         "keyword": "experimental units statistics definition",
@@ -143349,6 +143387,12 @@
         "url": "https://www.growthbook.io/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning"
       },
       {
+        "keyword": "chi-square test vs t-test",
+        "position": 5,
+        "search_volume": 1300,
+        "url": "https://www.growthbook.io/insights/t-test-vs-chi-square-key-differences-explained"
+      },
+      {
         "keyword": "401 errorcode",
         "position": 6,
         "search_volume": 3600,
@@ -143493,16 +143537,16 @@
         "url": "https://www.growthbook.io/insights/constants-experiment-what-they"
       },
       {
-        "keyword": "statistical validity definition",
-        "position": 6,
-        "search_volume": 110,
-        "url": "https://www.growthbook.io/insights/statistical-validity-what-means-research"
-      },
-      {
         "keyword": "constant in science experiment",
         "position": 6,
         "search_volume": 110,
         "url": "https://www.growthbook.io/insights/constants-experiment-what-they"
+      },
+      {
+        "keyword": "statistical validity definition",
+        "position": 6,
+        "search_volume": 110,
+        "url": "https://www.growthbook.io/insights/statistical-validity-what-means-research"
       },
       {
         "keyword": "experimental units definition",
@@ -143895,12 +143939,6 @@
         "url": "https://www.growthbook.io/insights/experimental-probability-examples-explained-simply"
       },
       {
-        "keyword": "feature flags open source",
-        "position": 6,
-        "search_volume": 50,
-        "url": "https://www.growthbook.io/blog/best-open-source-feature-flagging-tools-compared"
-      },
-      {
         "keyword": "when to use chi-square test vs t-test",
         "position": 6,
         "search_volume": 50,
@@ -144003,12 +144041,6 @@
         "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
       },
       {
-        "keyword": "what is a constant variable in science",
-        "position": 7,
-        "search_volume": 480,
-        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
-      },
-      {
         "keyword": "constant science example",
         "position": 7,
         "search_volume": 390,
@@ -144097,6 +144129,24 @@
         "position": 7,
         "search_volume": 170,
         "url": "https://www.growthbook.io/insights/true-positive-definition-examples-testing"
+      },
+      {
+        "keyword": "what is a constant variable in science",
+        "position": 7,
+        "search_volume": 480,
+        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
+      },
+      {
+        "keyword": "what is constant variable in science",
+        "position": 7,
+        "search_volume": 480,
+        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
+      },
+      {
+        "keyword": "what is the constant variable in science",
+        "position": 7,
+        "search_volume": 480,
+        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
       },
       {
         "keyword": "localhost 3100",
@@ -144273,16 +144323,16 @@
         "url": "https://docs.growthbook.io/statistics/sequential"
       },
       {
+        "keyword": "testing sequence",
+        "position": 7,
+        "search_volume": 50,
+        "url": "https://docs.growthbook.io/statistics/sequential"
+      },
+      {
         "keyword": "meaning of constant in science",
         "position": 7,
         "search_volume": 3600,
         "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
-      },
-      {
-        "keyword": "student t-test vs chi-square",
-        "position": 7,
-        "search_volume": 1300,
-        "url": "https://www.growthbook.io/insights/t-test-vs-chi-square-key-differences-explained"
       },
       {
         "keyword": "what makes a controlled experiment",
@@ -144297,28 +144347,16 @@
         "url": "https://www.growthbook.io/blog/unleash-alternatives"
       },
       {
-        "keyword": "testing sequence",
-        "position": 7,
-        "search_volume": 50,
-        "url": "https://docs.growthbook.io/statistics/sequential"
-      },
-      {
         "keyword": "3 sided marketplace",
         "position": 7,
         "search_volume": 30,
         "url": "https://www.growthbook.io/blog/doordash-runs-12-000-experiments-per-year-across-3-sided-marketplace"
       },
       {
-        "keyword": "what is constant variable in science",
+        "keyword": "student t-test vs chi-square",
         "position": 7,
-        "search_volume": 480,
-        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
-      },
-      {
-        "keyword": "what is the constant variable in science",
-        "position": 7,
-        "search_volume": 480,
-        "url": "https://www.growthbook.io/insights/what-constant-experiment-explained"
+        "search_volume": 1300,
+        "url": "https://www.growthbook.io/insights/t-test-vs-chi-square-key-differences-explained"
       },
       {
         "keyword": "what is the constant group in an experiment",
@@ -144537,16 +144575,16 @@
         "url": "https://www.growthbook.io/insights/t-test-vs-z-test"
       },
       {
-        "keyword": "a/b experiment design",
-        "position": 8,
-        "search_volume": 50,
-        "url": "https://www.growthbook.io/blog/what-is-a-b-testing"
-      },
-      {
         "keyword": "ci flag",
         "position": 8,
         "search_volume": 50,
         "url": "https://www.growthbook.io/blog/feature-flags-in-ci-cd"
+      },
+      {
+        "keyword": "a/b experiment design",
+        "position": 8,
+        "search_volume": 50,
+        "url": "https://www.growthbook.io/blog/what-is-a-b-testing"
       },
       {
         "keyword": "reversing causal direction fallacy",
@@ -144567,15 +144605,9 @@
         "url": "https://www.growthbook.io/insights/what-experimental-units-research"
       },
       {
-        "keyword": "ways to improve experiments",
-        "position": 8,
-        "search_volume": 30,
-        "url": "https://www.growthbook.io/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning"
-      },
-      {
         "keyword": "feature flags implementation",
         "position": 8,
-        "search_volume": 40,
+        "search_volume": 50,
         "url": "https://www.growthbook.io/blog/how-to-implement-feature-flags-at-scale"
       },
       {
@@ -144607,6 +144639,12 @@
         "position": 8,
         "search_volume": 30,
         "url": "https://docs.growthbook.io/statistics/multiple-corrections"
+      },
+      {
+        "keyword": "ways to improve experiments",
+        "position": 8,
+        "search_volume": 30,
+        "url": "https://www.growthbook.io/blog/chasing-velocity-in-a-b-testing-why-more-experiments-can-mean-less-learning"
       },
       {
         "keyword": "causal fallacy examples",
@@ -145299,16 +145337,16 @@
         "url": "https://www.growthbook.io/blog/12-common-feature-flag-mistakes-to-avoid"
       },
       {
-        "keyword": "how to calculate p value from t score",
-        "position": 10,
-        "search_volume": 40,
-        "url": "https://www.growthbook.io/insights/how-to-calculate-p-value"
-      },
-      {
         "keyword": "two one-sided t-test",
         "position": 10,
         "search_volume": 50,
         "url": "https://www.growthbook.io/insights/one-tailed-vs-two-tailed-test"
+      },
+      {
+        "keyword": "how to calculate p value from t score",
+        "position": 10,
+        "search_volume": 40,
+        "url": "https://www.growthbook.io/insights/how-to-calculate-p-value"
       },
       {
         "keyword": "boolean json schema",
@@ -145395,7 +145433,7 @@
         "url": "https://www.growthbook.io/insights/t-test-vs-z-test"
       }
     ],
-    "prev_snapshot_date": "2026-10-17",
+    "prev_snapshot_date": "2026-10-24",
     "source": "dataforseo"
   },
   "athenahq": {
