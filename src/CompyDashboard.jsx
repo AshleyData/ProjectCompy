@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import {
   BarChart, Bar as RBar, XAxis, YAxis, Tooltip as RTooltip, Legend,
   ScatterChart, Scatter, ZAxis, LineChart, Line, PieChart, Pie, AreaChart, Area,
-  CartesianGrid, ResponsiveContainer, Cell, ReferenceLine,
+  CartesianGrid, ResponsiveContainer, Cell, ReferenceLine, LabelList,
 } from "recharts";
 
 
@@ -1415,6 +1415,10 @@ export default function CompyDashboard() {
   // grain the weekly brief and the rest of the dashboard speak in.
   const [tcGrain, setTcGrain] = useState("week");
   const [tcSection, setTcSection] = useState("growthbook.io|total");
+  // Lock the Y axis to the All-Pages maximum so section charts are read at the
+  // same scale — otherwise every section auto-scales to fill the panel and
+  // Pricing (hundreds) looks the same height as Home (thousands).
+  const [tcLockY, setTcLockY] = useState(true);
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -1769,7 +1773,7 @@ export default function CompyDashboard() {
         {tab === "traffic_channels" && (() => {
           const tc = d.traffic_channels;
           if (!tc || !(tc.sections || []).length) {
-            return <Section title="\ud83d\udcc8 Traffic Channels">
+            return <Section title="Traffic Channels">
               <div style={{ fontSize: 13, color: C.muted, fontStyle: "italic" }}>
                 No Plausible channel history yet — run plausible_channels.py --backfill.
               </div></Section>;
@@ -1792,8 +1796,30 @@ export default function CompyDashboard() {
           };
           const rows = pts.map(p => ({
             label: fmtPeriod(p.period), period: p.period, _total: p.total,
+            // The bar label is the SUM OF THE DRAWN SEGMENTS, not p.total —
+            // the deduplicated total is ~2% lower, and a label that disagrees
+            // with the bar it sits on reads as a rendering bug.
+            _stack: present.reduce((n, c) => n + ((p.by_channel || {})[c] || 0), 0),
             ...Object.fromEntries(present.map(c => [c, (p.by_channel || {})[c] || 0])),
           }));
+
+          // Reference scale: the All-Pages series at the same grain. Bars are
+          // stacked, so the ceiling is the largest stack, not the largest
+          // single channel.
+          const refPts = (tc.series["growthbook.io|total"] || {})[tcGrain] || [];
+          const stackMax = (arr) => arr.reduce((mx, p) => Math.max(mx,
+            Object.values(p.by_channel || {}).reduce((n, v) => n + v, 0)), 0);
+          const refMax = stackMax(refPts);
+          // Never below this section's own peak. Every main-site section is a
+          // subset of All pages so the ceiling is normally the All-pages max,
+          // but docs is a SEPARATE site and is not bounded by it — clamping to
+          // a smaller ceiling would silently cut the tops off its bars.
+          const lockMax = Math.max(refMax, stackMax(pts));
+          const yDomain = (tcLockY && lockMax) ? [0, Math.ceil(lockMax * 1.08)] : [0, "auto"];
+
+          // Daily is 90 bars; a number above each one is unreadable, so the
+          // labels appear on the grains where they fit.
+          const showBarTotals = rows.length <= 26;
           const latest = pts.length ? pts[pts.length - 1] : null;
           const prior  = pts.length > 1 ? pts[pts.length - 2] : null;
           const pct = (latest?.total != null && prior?.total)
@@ -1806,7 +1832,7 @@ export default function CompyDashboard() {
                       fontWeight: active ? 700 : 400 }),
           });
           return (<>
-            <Section title="\ud83d\udcc8 Traffic Channels">
+            <Section title="Traffic Channels">
               <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
                 Plausible visitors by acquisition channel, refreshed daily. Each grain is
                 fetched from Plausible at that grain rather than summed up from days —
@@ -1820,7 +1846,7 @@ export default function CompyDashboard() {
                 <div style={{ marginBottom: 7 }}>
                   {(tc.grains || []).map(g =>
                     <span key={g} style={btn(g === tcGrain)} onClick={() => setTcGrain(g)}>
-                      {g[0].toUpperCase() + g.slice(1)}ly
+                      {({ day: "Daily", week: "Weekly", month: "Monthly" })[g] || g}
                     </span>)}
                 </div>
                 <div>
@@ -1830,12 +1856,24 @@ export default function CompyDashboard() {
                       {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
                     </span>)}
                 </div>
+                <label style={{ display: "inline-flex", alignItems: "center", gap: 6,
+                                marginTop: 9, fontSize: 11, color: C.muted, cursor: "pointer" }}>
+                  <input type="checkbox" checked={tcLockY}
+                         onChange={e => setTcLockY(e.target.checked)} />
+                  Fixed Y axis (scaled to All pages) — compare sections at the same scale
+                </label>
+                {!showBarTotals && (
+                  <div style={{ fontSize: 10, color: C.muted, marginTop: 5 }}>
+                    Bar totals are hidden on the daily view — {rows.length} bars is too many to label.
+                    Switch to Weekly or Monthly to see them.
+                  </div>
+                )}
               </div>
               {latest && (
                 <div style={{ display: "flex", gap: 22, alignItems: "baseline", marginBottom: 10 }}>
                   <div>
                     <div style={{ fontSize: 10, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                      Latest {tcGrain} \u2014 {fmtPeriod(latest.period)}
+                      Latest {tcGrain} — {fmtPeriod(latest.period)}
                     </div>
                     <div style={{ fontSize: 23, fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
                       {latest.total != null ? latest.total.toLocaleString() : "\u2014"}
@@ -1850,7 +1888,7 @@ export default function CompyDashboard() {
                   )}
                   {latest.pageviews != null && (
                     <div style={{ fontSize: 12, color: C.muted }}>
-                      {latest.pageviews.toLocaleString()} pageviews \u00b7 {(latest.visits || 0).toLocaleString()} visits
+                      {latest.pageviews.toLocaleString()} pageviews · {(latest.visits || 0).toLocaleString()} visits
                     </div>
                   )}
                 </div>
@@ -1862,13 +1900,22 @@ export default function CompyDashboard() {
                          axisLine={{ stroke: C.border }} tickLine={false}
                          interval={tcGrain === "day" ? 6 : 0} />
                   <YAxis tick={{ fontSize: 10, fill: C.muted }} axisLine={{ stroke: C.border }}
-                         tickLine={false}
+                         tickLine={false} domain={yDomain} allowDataOverflow={tcLockY}
                          tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v} />
                   <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
                             formatter={(v, n) => [v.toLocaleString(), n]} />
                   <Legend wrapperStyle={{ fontSize: 11 }} />
-                  {present.map(c =>
-                    <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted} />)}
+                  {present.map((c, i) =>
+                    <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted}>
+                      {/* Only the topmost segment carries the label, so it sits
+                          above the whole stack rather than inside it. */}
+                      {showBarTotals && i === present.length - 1 && (
+                        <LabelList dataKey="_stack" position="top"
+                                   style={{ fontSize: 9, fill: C.muted }}
+                                   formatter={v => v >= 10000 ? `${(v / 1000).toFixed(1)}k`
+                                                              : v.toLocaleString()} />
+                      )}
+                    </RBar>)}
                 </BarChart>
               </ResponsiveContainer>
             </Section>
@@ -1933,7 +1980,7 @@ export default function CompyDashboard() {
                 </div>
                 {!m.has_data ? (
                   <div style={{ fontSize: 12, color: C.muted, fontStyle: "italic", marginTop: 10, textAlign: "left" }}>
-                    Not yet tracked \u2014 {m.source}
+                    Not yet tracked — {m.source}
                   </div>
                 ) : (
                   <>
