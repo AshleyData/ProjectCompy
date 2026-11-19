@@ -1836,12 +1836,15 @@ export default function CompyDashboard() {
           return (<>
             <Section title="Web Traffic">
               <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
-                Plausible visitors by acquisition channel, refreshed daily. Each grain is
-                fetched from Plausible at that grain rather than summed up from days —
-                visitors are deduplicated per period, so a week is not the sum of its days.
-                For the same reason the stacked bars total slightly more than the headline
-                figure: one person arriving via search and later direct is one visitor but
-                two channel rows.
+                Plausible visitors by acquisition channel, refreshed daily. Sections are
+                measured by <b>entry page</b> — the page the visit landed on — so the channel
+                beside it describes how that visitor actually arrived. A visitor who lands on
+                the blog and then clicks to Pricing counts under Blog, not Pricing.
+                Each grain is fetched from Plausible at that grain rather than summed up from
+                days, because visitors are deduplicated per period: a week is not the sum of
+                its days. For the same reason the stacked bars total slightly more than the
+                headline figure, and the sections total slightly more than All pages — one
+                person can arrive twice, by different routes.
                 {tc.updated_at && <> Last updated <b>{tc.updated_at.slice(0, 16).replace("T", " ")} UTC</b>.</>}
               </p>
               <div style={{ marginBottom: 12 }}>
