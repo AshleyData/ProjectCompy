@@ -1338,6 +1338,7 @@ const PRIMARY_TABS = [
   { id: "kpi", label: "🎯 KPIs" },
   { id: "strategy", label: "🧭 Strategy" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
+  { id: "traffic_channels", label: "📈 Traffic Channels" },
   { id: "summary", label: "📊 Summary" },
   { id: "gb_youtube", label: "🎬 GrowthBook YouTube" },
 ];
@@ -1410,6 +1411,10 @@ function AdviceCell({ item, context, fallback }) {
 
 export default function CompyDashboard() {
   const [tab, setTab] = useState("strategy");
+  // Traffic Channels tab controls. Week is the default grain because it is the
+  // grain the weekly brief and the rest of the dashboard speak in.
+  const [tcGrain, setTcGrain] = useState("week");
+  const [tcSection, setTcSection] = useState("growthbook.io|total");
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -1761,6 +1766,116 @@ export default function CompyDashboard() {
 
         {/* ── STRATEGY (🧭 ACP decision layer) ── */}
         {/* ── KPIs ── */}
+        {tab === "traffic_channels" && (() => {
+          const tc = d.traffic_channels;
+          if (!tc || !(tc.sections || []).length) {
+            return <Section title="\ud83d\udcc8 Traffic Channels">
+              <div style={{ fontSize: 13, color: C.muted, fontStyle: "italic" }}>
+                No Plausible channel history yet — run plausible_channels.py --backfill.
+              </div></Section>;
+          }
+          const CH_COLORS = {
+            "Direct": "#4285F4", "Organic Search": "#F5A15C", "Referral": "#A77BE3",
+            "Paid Search": "#A3C759", "Organic Social": "#1FBFC4", "AI Assistants": "#F2C230",
+            "Email": "#EE7BA8", "Paid Social": "#E8705A", "Organic Video": "#8E9BAA",
+          };
+          const series = tc.series[tcSection] || {};
+          const pts = series[tcGrain] || [];
+          // Only draw channels this section actually has — otherwise every
+          // chart carries nine legend entries, most of them flat zero.
+          const present = (tc.channels || []).filter(c =>
+            pts.some(p => (p.by_channel || {})[c]));
+          const fmtPeriod = (iso) => {
+            const [y, m, dd] = iso.split("-");
+            if (tcGrain === "month") return `${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]} ${y}`;
+            return `${m}/${dd}`;
+          };
+          const rows = pts.map(p => ({
+            label: fmtPeriod(p.period), period: p.period, _total: p.total,
+            ...Object.fromEntries(present.map(c => [c, (p.by_channel || {})[c] || 0])),
+          }));
+          const latest = pts.length ? pts[pts.length - 1] : null;
+          const prior  = pts.length > 1 ? pts[pts.length - 2] : null;
+          const pct = (latest?.total != null && prior?.total)
+            ? ((latest.total - prior.total) / prior.total * 100) : null;
+          const btn = (active) => ({
+            ...card({ padding: "5px 11px", marginRight: 6, cursor: "pointer",
+                      display: "inline-block", fontSize: 12,
+                      background: active ? C.primary : "transparent",
+                      color: active ? "#fff" : C.muted,
+                      fontWeight: active ? 700 : 400 }),
+          });
+          return (<>
+            <Section title="\ud83d\udcc8 Traffic Channels">
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
+                Plausible visitors by acquisition channel, refreshed daily. Each grain is
+                fetched from Plausible at that grain rather than summed up from days —
+                visitors are deduplicated per period, so a week is not the sum of its days.
+                For the same reason the stacked bars total slightly more than the headline
+                figure: one person arriving via search and later direct is one visitor but
+                two channel rows.
+                {tc.updated_at && <> Last updated <b>{tc.updated_at.slice(0, 16).replace("T", " ")} UTC</b>.</>}
+              </p>
+              <div style={{ marginBottom: 12 }}>
+                <div style={{ marginBottom: 7 }}>
+                  {(tc.grains || []).map(g =>
+                    <span key={g} style={btn(g === tcGrain)} onClick={() => setTcGrain(g)}>
+                      {g[0].toUpperCase() + g.slice(1)}ly
+                    </span>)}
+                </div>
+                <div>
+                  {(tc.sections || []).map(sec =>
+                    <span key={sec.key} style={btn(sec.key === tcSection)}
+                          onClick={() => setTcSection(sec.key)}>
+                      {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
+                    </span>)}
+                </div>
+              </div>
+              {latest && (
+                <div style={{ display: "flex", gap: 22, alignItems: "baseline", marginBottom: 10 }}>
+                  <div>
+                    <div style={{ fontSize: 10, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>
+                      Latest {tcGrain} \u2014 {fmtPeriod(latest.period)}
+                    </div>
+                    <div style={{ fontSize: 23, fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
+                      {latest.total != null ? latest.total.toLocaleString() : "\u2014"}
+                      <span style={{ fontSize: 11, color: C.muted, fontWeight: 400 }}> visitors</span>
+                    </div>
+                  </div>
+                  {pct != null && (
+                    <div style={{ fontSize: 13, fontWeight: 700, color: pct >= 0 ? C.success : C.danger }}>
+                      {pct >= 0 ? "\u25b2 " : "\u25bc "}{Math.abs(pct).toFixed(1)}%
+                      <span style={{ color: C.muted, fontWeight: 400 }}> vs prior {tcGrain}</span>
+                    </div>
+                  )}
+                  {latest.pageviews != null && (
+                    <div style={{ fontSize: 12, color: C.muted }}>
+                      {latest.pageviews.toLocaleString()} pageviews \u00b7 {(latest.visits || 0).toLocaleString()} visits
+                    </div>
+                  )}
+                </div>
+              )}
+              <ResponsiveContainer width="100%" height={380}>
+                <BarChart data={rows} margin={{ top: 8, right: 14, bottom: 4, left: 4 }}>
+                  <CartesianGrid stroke={C.border} strokeDasharray="3 3" vertical={false} />
+                  <XAxis dataKey="label" tick={{ fontSize: 10, fill: C.muted }}
+                         axisLine={{ stroke: C.border }} tickLine={false}
+                         interval={tcGrain === "day" ? 6 : 0} />
+                  <YAxis tick={{ fontSize: 10, fill: C.muted }} axisLine={{ stroke: C.border }}
+                         tickLine={false}
+                         tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v} />
+                  <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
+                            formatter={(v, n) => [v.toLocaleString(), n]} />
+                  <Legend wrapperStyle={{ fontSize: 11 }} />
+                  {present.map(c =>
+                    <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted} />)}
+                </BarChart>
+              </ResponsiveContainer>
+            </Section>
+          </>);
+        })()}
+
+
         {tab === "kpi" && (() => {
           const k = d.kpi;
           if (!k || !(k.metrics || []).length) {
