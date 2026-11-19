@@ -1336,9 +1336,11 @@ function VideoTab({ video }) {
 // retired into Strategy, so it no longer appears here.
 const PRIMARY_TABS = [
   { id: "kpi", label: "🎯 KPIs" },
+  // id stays `traffic_channels` — it is referenced by the tab body and any
+  // bookmarked ?tab= link; only the label changed.
+  { id: "traffic_channels", label: "📈 Web Traffic" },
   { id: "strategy", label: "🧭 Strategy" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
-  { id: "traffic_channels", label: "📈 Traffic Channels" },
   { id: "summary", label: "📊 Summary" },
   { id: "gb_youtube", label: "🎬 GrowthBook YouTube" },
 ];
@@ -1773,7 +1775,7 @@ export default function CompyDashboard() {
         {tab === "traffic_channels" && (() => {
           const tc = d.traffic_channels;
           if (!tc || !(tc.sections || []).length) {
-            return <Section title="Traffic Channels">
+            return <Section title="Web Traffic">
               <div style={{ fontSize: 13, color: C.muted, fontStyle: "italic" }}>
                 No Plausible channel history yet — run plausible_channels.py --backfill.
               </div></Section>;
@@ -1832,7 +1834,7 @@ export default function CompyDashboard() {
                       fontWeight: active ? 700 : 400 }),
           });
           return (<>
-            <Section title="Traffic Channels">
+            <Section title="Web Traffic">
               <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
                 Plausible visitors by acquisition channel, refreshed daily. Each grain is
                 fetched from Plausible at that grain rather than summed up from days —
