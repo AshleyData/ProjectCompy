@@ -1420,7 +1420,7 @@ export default function CompyDashboard() {
   // Lock the Y axis to the All-Pages maximum so section charts are read at the
   // same scale — otherwise every section auto-scales to fill the panel and
   // Pricing (hundreds) looks the same height as Home (thousands).
-  const [tcLockY, setTcLockY] = useState(true);
+  const [tcLockY, setTcLockY] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -1822,6 +1822,17 @@ export default function CompyDashboard() {
           // Daily is 90 bars; a number above each one is unreadable, so the
           // labels appear on the grains where they fit.
           const showBarTotals = rows.length <= 26;
+
+          // The stack total is drawn by one segment's LabelList, and a segment
+          // with no value in a given week renders no label. Anchoring it to the
+          // last CONFIGURED channel meant Organic Video — zero most weeks — so
+          // totals vanished on those bars and sat mid-stack on others.
+          // Anchor instead to whichever present channel is non-zero in the most
+          // bars, and render it last so "top" really is the top of the stack.
+          const anchorCh = [...present].sort((a, b) =>
+            rows.filter(r => r[b] > 0).length - rows.filter(r => r[a] > 0).length
+          )[0];
+          const stackOrder = [...present.filter(c => c !== anchorCh), anchorCh];
           const latest = pts.length ? pts[pts.length - 1] : null;
           const prior  = pts.length > 1 ? pts[pts.length - 2] : null;
           const pct = (latest?.total != null && prior?.total)
@@ -1910,13 +1921,13 @@ export default function CompyDashboard() {
                   <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
                             formatter={(v, n) => [v.toLocaleString(), n]} />
                   <Legend wrapperStyle={{ fontSize: 11 }} />
-                  {present.map((c, i) =>
+                  {stackOrder.map(c =>
                     <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted}>
-                      {/* Only the topmost segment carries the label, so it sits
+                      {/* Only the anchor segment carries the label, so it sits
                           above the whole stack rather than inside it. */}
-                      {showBarTotals && i === present.length - 1 && (
-                        <LabelList dataKey="_stack" position="top"
-                                   style={{ fontSize: 9, fill: C.muted }}
+                      {showBarTotals && c === anchorCh && (
+                        <LabelList dataKey="_stack" position="top" offset={6}
+                                   style={{ fontSize: 9, fill: C.muted, fontWeight: 600 }}
                                    formatter={v => v >= 10000 ? `${(v / 1000).toFixed(1)}k`
                                                               : v.toLocaleString()} />
                       )}
