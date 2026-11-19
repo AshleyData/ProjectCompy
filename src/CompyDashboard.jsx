@@ -1421,6 +1421,9 @@ export default function CompyDashboard() {
   // same scale — otherwise every section auto-scales to fill the panel and
   // Pricing (hundreds) looks the same height as Home (thousands).
   const [tcLockY, setTcLockY] = useState(false);
+  // Channels hidden from the Web Traffic chart. Hidden rather than "shown" so
+  // a channel that only appears in later data is visible by default.
+  const [tcHidden, setTcHidden] = useState([]);
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -1796,13 +1799,17 @@ export default function CompyDashboard() {
             if (tcGrain === "month") return `${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]} ${y}`;
             return `${m}/${dd}`;
           };
+          const isHidden = (c) => tcHidden.includes(c);
+          const visible = present.filter(c => !isHidden(c));
           const rows = pts.map(p => ({
             label: fmtPeriod(p.period), period: p.period, _total: p.total,
             // The bar label is the SUM OF THE DRAWN SEGMENTS, not p.total —
             // the deduplicated total is ~2% lower, and a label that disagrees
             // with the bar it sits on reads as a rendering bug.
-            _stack: present.reduce((n, c) => n + ((p.by_channel || {})[c] || 0), 0),
-            ...Object.fromEntries(present.map(c => [c, (p.by_channel || {})[c] || 0])),
+            // Sum only what is drawn — with channels toggled off the label
+            // must match the shortened bar, not the full-stack total.
+            _stack: visible.reduce((n, c) => n + ((p.by_channel || {})[c] || 0), 0),
+            ...Object.fromEntries(visible.map(c => [c, (p.by_channel || {})[c] || 0])),
           }));
 
           // Reference scale: the All-Pages series at the same grain. Bars are
@@ -1829,10 +1836,11 @@ export default function CompyDashboard() {
           // totals vanished on those bars and sat mid-stack on others.
           // Anchor instead to whichever present channel is non-zero in the most
           // bars, and render it last so "top" really is the top of the stack.
-          const anchorCh = [...present].sort((a, b) =>
+          const anchorCh = [...visible].sort((a, b) =>
             rows.filter(r => r[b] > 0).length - rows.filter(r => r[a] > 0).length
           )[0];
-          const stackOrder = [...present.filter(c => c !== anchorCh), anchorCh];
+          const stackOrder = visible.length
+            ? [...visible.filter(c => c !== anchorCh), anchorCh] : [];
           const latest = pts.length ? pts[pts.length - 1] : null;
           const prior  = pts.length > 1 ? pts[pts.length - 2] : null;
           const pct = (latest?.total != null && prior?.total)
@@ -1878,6 +1886,34 @@ export default function CompyDashboard() {
                          onChange={e => setTcLockY(e.target.checked)} />
                   Fixed Y axis (scaled to All pages) — compare sections at the same scale
                 </label>
+                <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap",
+                              gap: 5, alignItems: "center" }}>
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 4 }}>Channels</span>
+                  <span style={btn(false)} onClick={() => setTcHidden(
+                          visible.length ? (tc.channels || []) : [])}>
+                    {visible.length ? "None" : "All"}
+                  </span>
+                  {present.map(c => {
+                    const on = !isHidden(c);
+                    return (
+                      <span key={c}
+                            onClick={() => setTcHidden(on ? [...tcHidden, c]
+                                                          : tcHidden.filter(x => x !== c))}
+                            style={{ ...card({ padding: "4px 9px", cursor: "pointer",
+                                               display: "inline-flex", alignItems: "center",
+                                               gap: 5, fontSize: 11,
+                                               opacity: on ? 1 : 0.4,
+                                               fontWeight: on ? 600 : 400,
+                                               color: on ? C.primary : C.muted }) }}>
+                        <span style={{ width: 9, height: 9, borderRadius: 2, flexShrink: 0,
+                                       background: on ? (CH_COLORS[c] || C.muted) : "transparent",
+                                       border: `1px solid ${CH_COLORS[c] || C.muted}` }} />
+                        {c}
+                      </span>
+                    );
+                  })}
+                </div>
                 {!showBarTotals && (
                   <div style={{ fontSize: 10, color: C.muted, marginTop: 5 }}>
                     Bar totals are hidden on the daily view — {rows.length} bars is too many to label.
@@ -1909,6 +1945,13 @@ export default function CompyDashboard() {
                   )}
                 </div>
               )}
+              {!visible.length ? (
+                <div style={{ height: 380, display: "flex", alignItems: "center",
+                              justifyContent: "center", fontSize: 12, color: C.muted,
+                              fontStyle: "italic" }}>
+                  All channels hidden — turn one back on above.
+                </div>
+              ) : (
               <ResponsiveContainer width="100%" height={380}>
                 <BarChart data={rows} margin={{ top: 8, right: 14, bottom: 4, left: 4 }}>
                   <CartesianGrid stroke={C.border} strokeDasharray="3 3" vertical={false} />
@@ -1920,7 +1963,6 @@ export default function CompyDashboard() {
                          tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v} />
                   <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
                             formatter={(v, n) => [v.toLocaleString(), n]} />
-                  <Legend wrapperStyle={{ fontSize: 11 }} />
                   {stackOrder.map(c =>
                     <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted}>
                       {/* Only the anchor segment carries the label, so it sits
@@ -1934,6 +1976,7 @@ export default function CompyDashboard() {
                     </RBar>)}
                 </BarChart>
               </ResponsiveContainer>
+              )}
             </Section>
           </>);
         })()}
