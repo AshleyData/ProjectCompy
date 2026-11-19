@@ -3809,7 +3809,7 @@ export default function CompyDashboard() {
           const wowData = {
             organic:  _kpi(orgT),
             ai:       _kpi(aiT),
-            branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: null },
+            branded:  { value: (d.gsc?.branded ?? 0).toLocaleString(), pct: d.gsc?.wow_branded ?? null },
             top10:    { value: sem.top10_count ?? "—", pct: sem.top10_mom ?? null },
             signups:  suCur != null ? { value: suCur.toLocaleString(), pct: suWowPct } : { pending: true },
             sov:      { value: `${aeo.share_of_voice}%`, pct: aeo.share_of_voice_mom, sample: aeoIsSample },
