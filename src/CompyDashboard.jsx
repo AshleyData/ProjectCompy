@@ -1339,6 +1339,7 @@ const PRIMARY_TABS = [
   // id stays `traffic_channels` — it is referenced by the tab body and any
   // bookmarked ?tab= link; only the label changed.
   { id: "traffic_channels", label: "📈 Web Traffic" },
+  { id: "conversions", label: "🎯 Conversions" },
   { id: "strategy", label: "🧭 Strategy" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
   { id: "summary", label: "📊 Summary" },
@@ -1424,6 +1425,9 @@ export default function CompyDashboard() {
   // Channels hidden from the Web Traffic chart. Hidden rather than "shown" so
   // a channel that only appears in later data is visible by default.
   const [tcHidden, setTcHidden] = useState([]);
+  const [cvGrain, setCvGrain] = useState("month");   // small numbers; coarse by default
+  const [cvSection, setCvSection] = useState("growthbook.io|total");
+  const [cvPick, setCvPick] = useState("demo_request");
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -1977,6 +1981,169 @@ export default function CompyDashboard() {
                 </BarChart>
               </ResponsiveContainer>
               )}
+            </Section>
+          </>);
+        })()}
+
+
+        {tab === "conversions" && (() => {
+          const cv = d.conversions;
+          if (!cv || !(cv.conversions || []).length) {
+            return <Section title="Conversions">
+              <div style={{ fontSize: 13, color: C.muted, fontStyle: "italic" }}>
+                No conversion history yet — run plausible_channels.py --backfill.
+              </div></Section>;
+          }
+          const CH_COLORS = {
+            "Direct": "#4285F4", "Organic Search": "#F5A15C", "Referral": "#A77BE3",
+            "Paid Search": "#A3C759", "Organic Social": "#1FBFC4", "AI Assistants": "#F2C230",
+            "Email": "#EE7BA8", "Paid Social": "#E8705A", "Organic Video": "#8E9BAA",
+          };
+          const btn = (active) => ({
+            ...card({ padding: "5px 11px", marginRight: 6, marginBottom: 5, cursor: "pointer",
+                      display: "inline-block", fontSize: 12,
+                      background: active ? C.primary : "transparent",
+                      color: active ? "#fff" : C.muted, fontWeight: active ? 700 : 400 }),
+          });
+          const fmtPeriod = (iso) => {
+            const [y, m, dd] = iso.split("-");
+            if (cvGrain === "month") return `${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]} ${y.slice(2)}`;
+            return `${m}/${dd}`;
+          };
+          const pts = (cv.series[cvSection] || {})[cvGrain] || [];
+          const picked = cv.conversions.find(c => c.key === cvPick) || cv.conversions[0];
+          const chanTotals = {};
+          pts.forEach(p => Object.entries((p.cells || {})[cvPick] || {})
+            .forEach(([ch, v]) => { chanTotals[ch] = (chanTotals[ch] || 0) + v; }));
+          const chans = (cv.channels || []).filter(c => chanTotals[c]);
+          const rows = pts.map(p => {
+            const cells = (p.cells || {})[cvPick] || {};
+            const tot = Object.values(cells).reduce((n, v) => n + v, 0);
+            return { label: fmtPeriod(p.period), _stack: tot,
+                     ...Object.fromEntries(chans.map(c => [c, cells[c] || 0])) };
+          });
+          const anchorCh = [...chans].sort((a, b) =>
+            rows.filter(r => r[b] > 0).length - rows.filter(r => r[a] > 0).length)[0];
+          const stackOrder = chans.length ? [...chans.filter(c => c !== anchorCh), anchorCh] : [];
+          const grand = rows.reduce((n, r) => n + r._stack, 0);
+
+          // Matrix: every conversion x every section, summed over the periods
+          // shown. The per-period chart is too sparse to read at these volumes,
+          // so the table is where the cross-tab actually lives.
+          const matrix = cv.conversions.map(c => {
+            const cells = (cv.sections || []).map(sec => {
+              const sp = (cv.series[sec.key] || {})[cvGrain] || [];
+              return sp.reduce((n, p) => n + Object.values((p.cells || {})[c.key] || {})
+                .reduce((m, v) => m + v, 0), 0);
+            });
+            return { c, cells, total: cells[0] || 0 };
+          });
+
+          return (<>
+            <Section title="Conversions">
+              <p style={{ fontSize: 11, color: C.muted, marginTop: 0, marginBottom: 12, textAlign: "left" }}>
+                Plausible conversions by <b>entry page</b> and channel — where the visit
+                started, not where it converted. Plausible has a single generic form goal, so
+                these are split apart by the form's path. Volumes are small (single digits per
+                week for most), so the default grain is monthly and the table below carries the
+                cross-tab; the chart is indicative.
+              </p>
+              <div style={{ marginBottom: 10 }}>
+                <div>{(cv.grains || []).map(g =>
+                  <span key={g} style={btn(g === cvGrain)} onClick={() => setCvGrain(g)}>
+                    {({ day: "Daily", week: "Weekly", month: "Monthly" })[g] || g}
+                  </span>)}</div>
+                <div>{(cv.sections || []).map(sec =>
+                  <span key={sec.key} style={btn(sec.key === cvSection)}
+                        onClick={() => setCvSection(sec.key)}>
+                    {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
+                  </span>)}</div>
+                <div>{cv.conversions.map(c =>
+                  <span key={c.key} style={btn(c.key === cvPick)} onClick={() => setCvPick(c.key)}>
+                    {c.label}
+                  </span>)}</div>
+              </div>
+              {picked?.caveat && (
+                <div style={{ ...card({ padding: "7px 11px", marginBottom: 10,
+                                        background: "#FFF8E1" }),
+                              fontSize: 11, color: "#7A6000" }}>
+                  <b>Caveat:</b> {picked.caveat}
+                </div>
+              )}
+              <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 2 }}>
+                {grand.toLocaleString()}
+                <span style={{ fontSize: 11, color: C.muted, fontWeight: 400 }}>
+                  {" "}{picked?.label} over the {rows.length} {cvGrain}s shown
+                </span>
+              </div>
+              {!chans.length ? (
+                <div style={{ height: 200, display: "flex", alignItems: "center",
+                              justifyContent: "center", fontSize: 12, color: C.muted,
+                              fontStyle: "italic" }}>
+                  No {picked?.label} recorded for this entry page.
+                </div>
+              ) : (
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={rows} margin={{ top: 14, right: 14, bottom: 4, left: 4 }}>
+                  <CartesianGrid stroke={C.border} strokeDasharray="3 3" vertical={false} />
+                  <XAxis dataKey="label" tick={{ fontSize: 10, fill: C.muted }}
+                         axisLine={{ stroke: C.border }} tickLine={false}
+                         interval={cvGrain === "day" ? 6 : 0} />
+                  <YAxis tick={{ fontSize: 10, fill: C.muted }} axisLine={{ stroke: C.border }}
+                         tickLine={false} allowDecimals={false} />
+                  <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }} />
+                  <Legend wrapperStyle={{ fontSize: 11 }} />
+                  {stackOrder.map(c =>
+                    <RBar key={c} dataKey={c} stackId="cv" fill={CH_COLORS[c] || C.muted}>
+                      {c === anchorCh && (
+                        <LabelList dataKey="_stack" position="top" offset={6}
+                                   style={{ fontSize: 9, fill: C.muted, fontWeight: 600 }}
+                                   formatter={v => v || ""} />
+                      )}
+                    </RBar>)}
+                </BarChart>
+              </ResponsiveContainer>
+              )}
+            </Section>
+
+            <Section title="Conversions by entry page">
+              <div style={{ overflowX: "auto" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                  <thead><tr>
+                    <th style={{ textAlign: "left", padding: "6px 8px", color: C.muted,
+                                 borderBottom: `1px solid ${C.border}` }}>Conversion</th>
+                    {(cv.sections || []).map(sec =>
+                      <th key={sec.key} style={{ textAlign: "right", padding: "6px 8px",
+                                                 color: C.muted, fontWeight: 600,
+                                                 borderBottom: `1px solid ${C.border}` }}>
+                        {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
+                      </th>)}
+                  </tr></thead>
+                  <tbody>
+                    {matrix.map(({ c, cells }) =>
+                      <tr key={c.key}>
+                        <td style={{ padding: "5px 8px", borderBottom: `1px solid ${C.border}` }}>
+                          {c.label}
+                          {c.caveat && <span title={c.caveat} style={{ color: "#C9A227" }}> ⚠</span>}
+                        </td>
+                        {cells.map((v, i) =>
+                          <td key={i} style={{ textAlign: "right", padding: "5px 8px",
+                                               fontVariantNumeric: "tabular-nums",
+                                               color: v ? C.primary : C.border,
+                                               fontWeight: i === 0 ? 700 : 400,
+                                               borderBottom: `1px solid ${C.border}` }}>
+                            {v || "·"}
+                          </td>)}
+                      </tr>)}
+                  </tbody>
+                </table>
+              </div>
+              <div style={{ fontSize: 10, color: C.muted, marginTop: 7, textAlign: "left" }}>
+                Totals over the {cvGrain}s held in the payload. "All pages" is Plausible's own
+                figure for the whole site, so it is not the sum of the columns beside it — one
+                visitor can start two visits on different pages in the same period. ⚠ marks a
+                conversion whose definition carries a caveat; hover it.
+              </div>
             </Section>
           </>);
         })()}

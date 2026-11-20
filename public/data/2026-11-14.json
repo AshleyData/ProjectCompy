@@ -33990,17 +33990,18 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Direct": 408,
-              "Organic Search": 285,
-              "Referral": 80,
-              "Paid Search": 59,
-              "Organic Social": 10,
-              "AI Assistants": 5,
-              "Paid Social": 3
+              "Direct": 512,
+              "Organic Search": 381,
+              "Referral": 97,
+              "Paid Search": 85,
+              "Organic Social": 11,
+              "AI Assistants": 7,
+              "Paid Social": 5,
+              "Email": 1
             },
-            "total": 835,
-            "visits": 940,
-            "pageviews": 1328
+            "total": 1074,
+            "visits": 1226,
+            "pageviews": 1825
           }
         ],
         "week": [
@@ -34196,19 +34197,19 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Direct": 2311,
-              "Organic Search": 1878,
-              "Referral": 560,
-              "Paid Search": 338,
-              "Organic Social": 72,
-              "AI Assistants": 42,
-              "Paid Social": 17,
-              "Email": 14,
+              "Direct": 2414,
+              "Organic Search": 1973,
+              "Referral": 577,
+              "Paid Search": 364,
+              "Organic Social": 73,
+              "AI Assistants": 44,
+              "Paid Social": 19,
+              "Email": 15,
               "Organic Video": 2
             },
-            "total": 5110,
-            "visits": 5813,
-            "pageviews": 8219
+            "total": 5346,
+            "visits": 6099,
+            "pageviews": 8716
           }
         ],
         "month": [
@@ -34250,19 +34251,19 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Direct": 8891,
-              "Organic Search": 7025,
-              "Referral": 2277,
-              "Paid Search": 1168,
-              "Organic Social": 247,
-              "Email": 235,
-              "AI Assistants": 215,
-              "Paid Social": 75,
+              "Direct": 8994,
+              "Organic Search": 7120,
+              "Referral": 2294,
+              "Paid Search": 1194,
+              "Organic Social": 248,
+              "Email": 236,
+              "AI Assistants": 217,
+              "Paid Social": 77,
               "Organic Video": 19
             },
-            "total": 19698,
-            "visits": 22284,
-            "pageviews": 32182
+            "total": 19934,
+            "visits": 22570,
+            "pageviews": 32679
           }
         ]
       },
@@ -35411,17 +35412,17 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Direct": 302,
-              "Organic Search": 151,
-              "Referral": 75,
-              "Paid Search": 54,
+              "Direct": 387,
+              "Organic Search": 191,
+              "Referral": 90,
+              "Paid Search": 75,
               "Organic Social": 7,
               "Paid Social": 1,
               "AI Assistants": 1
             },
-            "total": 582,
-            "visits": 661,
-            "pageviews": 926
+            "total": 736,
+            "visits": 847,
+            "pageviews": 1256
           }
         ],
         "week": [
@@ -35609,18 +35610,18 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Direct": 1700,
-              "Organic Search": 913,
-              "Referral": 490,
-              "Paid Search": 291,
+              "Direct": 1784,
+              "Organic Search": 953,
+              "Referral": 505,
+              "Paid Search": 312,
               "Organic Social": 28,
               "AI Assistants": 12,
               "Paid Social": 7,
               "Email": 2
             },
-            "total": 3385,
-            "visits": 3861,
-            "pageviews": 5475
+            "total": 3538,
+            "visits": 4047,
+            "pageviews": 5805
           }
         ],
         "month": [
@@ -35661,19 +35662,19 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Direct": 6361,
-              "Organic Search": 3544,
-              "Referral": 2010,
-              "Paid Search": 966,
+              "Direct": 6445,
+              "Organic Search": 3584,
+              "Referral": 2025,
+              "Paid Search": 987,
               "Organic Social": 102,
               "AI Assistants": 73,
               "Paid Social": 14,
               "Email": 7,
               "Organic Video": 2
             },
-            "total": 12875,
-            "visits": 14592,
-            "pageviews": 20849
+            "total": 13028,
+            "visits": 14778,
+            "pageviews": 21179
           }
         ]
       },
@@ -36609,14 +36610,14 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Direct": 25,
-              "Organic Search": 11,
-              "Referral": 1,
-              "Paid Search": 1
+              "Direct": 29,
+              "Organic Search": 13,
+              "Referral": 2,
+              "Paid Search": 2
             },
-            "total": 38,
-            "visits": 44,
-            "pageviews": 64
+            "total": 46,
+            "visits": 52,
+            "pageviews": 74
           }
         ],
         "week": [
@@ -36772,16 +36773,16 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Direct": 113,
-              "Organic Search": 61,
-              "Referral": 5,
-              "Paid Search": 3,
+              "Direct": 117,
+              "Organic Search": 63,
+              "Referral": 6,
+              "Paid Search": 4,
               "AI Assistants": 1,
               "Organic Social": 1
             },
-            "total": 181,
-            "visits": 196,
-            "pageviews": 273
+            "total": 189,
+            "visits": 204,
+            "pageviews": 283
           }
         ],
         "month": [
@@ -36817,16 +36818,16 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Direct": 485,
-              "Organic Search": 195,
-              "Paid Search": 25,
+              "Direct": 489,
+              "Organic Search": 197,
+              "Paid Search": 26,
               "AI Assistants": 21,
-              "Referral": 18,
+              "Referral": 19,
               "Organic Social": 1
             },
-            "total": 736,
-            "visits": 785,
-            "pageviews": 1169
+            "total": 744,
+            "visits": 793,
+            "pageviews": 1179
           }
         ]
       },
@@ -37775,13 +37776,14 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Organic Search": 78,
-              "Direct": 14,
-              "AI Assistants": 3
+              "Organic Search": 118,
+              "Direct": 17,
+              "AI Assistants": 3,
+              "Referral": 1
             },
-            "total": 95,
-            "visits": 97,
-            "pageviews": 127
+            "total": 140,
+            "visits": 144,
+            "pageviews": 183
           }
         ],
         "week": [
@@ -37942,15 +37944,15 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Organic Search": 595,
-              "Direct": 96,
-              "Referral": 11,
+              "Organic Search": 634,
+              "Direct": 99,
+              "Referral": 12,
               "AI Assistants": 8,
               "Organic Video": 2
             },
-            "total": 712,
-            "visits": 719,
-            "pageviews": 840
+            "total": 756,
+            "visits": 766,
+            "pageviews": 896
           }
         ],
         "month": [
@@ -37988,17 +37990,17 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Organic Search": 2360,
-              "Direct": 466,
+              "Organic Search": 2399,
+              "Direct": 469,
               "AI Assistants": 28,
-              "Referral": 28,
+              "Referral": 29,
               "Organic Social": 7,
               "Organic Video": 7,
               "Paid Search": 1
             },
-            "total": 2893,
-            "visits": 2948,
-            "pageviews": 3441
+            "total": 2937,
+            "visits": 2995,
+            "pageviews": 3497
           }
         ]
       },
@@ -39041,15 +39043,16 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Organic Search": 30,
-              "Direct": 18,
-              "Referral": 2,
+              "Organic Search": 37,
+              "Direct": 21,
+              "Referral": 3,
               "Organic Social": 2,
-              "Paid Social": 1
+              "Paid Social": 1,
+              "AI Assistants": 1
             },
-            "total": 53,
-            "visits": 55,
-            "pageviews": 64
+            "total": 65,
+            "visits": 67,
+            "pageviews": 89
           }
         ],
         "week": [
@@ -39223,17 +39226,17 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Organic Search": 218,
-              "Direct": 134,
+              "Organic Search": 225,
+              "Direct": 137,
               "Organic Social": 39,
-              "Referral": 18,
-              "AI Assistants": 11,
+              "Referral": 19,
+              "AI Assistants": 12,
               "Email": 4,
               "Paid Social": 3
             },
-            "total": 424,
-            "visits": 446,
-            "pageviews": 639
+            "total": 436,
+            "visits": 458,
+            "pageviews": 664
           }
         ],
         "month": [
@@ -39273,19 +39276,19 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Organic Search": 565,
-              "Direct": 502,
+              "Organic Search": 572,
+              "Direct": 505,
               "Email": 190,
               "Organic Social": 106,
-              "Referral": 65,
-              "AI Assistants": 42,
+              "Referral": 66,
+              "AI Assistants": 43,
               "Paid Social": 11,
               "Organic Video": 5,
               "Paid Search": 2
             },
-            "total": 1474,
-            "visits": 1553,
-            "pageviews": 2346
+            "total": 1486,
+            "visits": 1565,
+            "pageviews": 2371
           }
         ]
       },
@@ -40047,11 +40050,11 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Paid Search": 1
+              "Paid Search": 2
             },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 2
+            "total": 2,
+            "visits": 2,
+            "pageviews": 3
           }
         ],
         "week": [
@@ -40195,12 +40198,12 @@
             "period": "2026-11-16",
             "by_channel": {
               "Direct": 11,
-              "Paid Search": 7,
+              "Paid Search": 8,
               "Organic Search": 2
             },
-            "total": 20,
-            "visits": 20,
-            "pageviews": 36
+            "total": 21,
+            "visits": 21,
+            "pageviews": 37
           }
         ],
         "month": [
@@ -40236,13 +40239,13 @@
             "period": "2026-11-01",
             "by_channel": {
               "Direct": 44,
-              "Paid Search": 16,
+              "Paid Search": 17,
               "Organic Search": 15,
               "AI Assistants": 1
             },
-            "total": 76,
-            "visits": 78,
-            "pageviews": 133
+            "total": 77,
+            "visits": 79,
+            "pageviews": 134
           }
         ]
       },
@@ -41413,17 +41416,18 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Direct": 56,
-              "Organic Search": 15,
-              "Paid Search": 4,
+              "Direct": 73,
+              "Organic Search": 22,
+              "Paid Search": 7,
               "Referral": 2,
-              "Paid Social": 1,
-              "Organic Social": 1,
-              "AI Assistants": 1
+              "Paid Social": 3,
+              "Organic Social": 2,
+              "AI Assistants": 2,
+              "Email": 1
             },
-            "total": 79,
-            "visits": 82,
-            "pageviews": 145
+            "total": 109,
+            "visits": 115,
+            "pageviews": 221
           }
         ],
         "week": [
@@ -41609,18 +41613,18 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Direct": 339,
-              "Organic Search": 96,
-              "Paid Search": 39,
+              "Direct": 356,
+              "Organic Search": 103,
+              "Paid Search": 42,
               "Referral": 36,
-              "AI Assistants": 10,
-              "Email": 9,
-              "Paid Social": 7,
-              "Organic Social": 4
+              "AI Assistants": 11,
+              "Email": 10,
+              "Paid Social": 9,
+              "Organic Social": 5
             },
-            "total": 535,
-            "visits": 571,
-            "pageviews": 956
+            "total": 565,
+            "visits": 604,
+            "pageviews": 1032
           }
         ],
         "month": [
@@ -41661,19 +41665,19 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Direct": 1293,
-              "Organic Search": 388,
+              "Direct": 1310,
+              "Organic Search": 395,
               "Referral": 165,
-              "Paid Search": 163,
-              "AI Assistants": 53,
-              "Paid Social": 50,
-              "Email": 40,
-              "Organic Social": 32,
+              "Paid Search": 166,
+              "AI Assistants": 54,
+              "Paid Social": 52,
+              "Email": 41,
+              "Organic Social": 33,
               "Organic Video": 5
             },
-            "total": 2157,
-            "visits": 2328,
-            "pageviews": 4244
+            "total": 2187,
+            "visits": 2361,
+            "pageviews": 4320
           }
         ]
       },
@@ -42634,16 +42638,16 @@
           {
             "period": "2026-11-19",
             "by_channel": {
-              "Direct": 109,
-              "Organic Search": 78,
-              "Referral": 31,
-              "Organic Social": 6,
-              "Email": 2,
-              "AI Assistants": 1
+              "Direct": 142,
+              "Organic Search": 93,
+              "Referral": 41,
+              "Organic Social": 10,
+              "Email": 3,
+              "AI Assistants": 2
             },
-            "total": 217,
-            "visits": 243,
-            "pageviews": 552
+            "total": 275,
+            "visits": 317,
+            "pageviews": 772
           }
         ],
         "week": [
@@ -42797,17 +42801,17 @@
           {
             "period": "2026-11-16",
             "by_channel": {
-              "Direct": 750,
-              "Organic Search": 467,
-              "Referral": 201,
-              "Organic Social": 30,
-              "AI Assistants": 16,
-              "Email": 12,
+              "Direct": 783,
+              "Organic Search": 482,
+              "Referral": 211,
+              "Organic Social": 34,
+              "AI Assistants": 17,
+              "Email": 13,
               "Paid Search": 1
             },
-            "total": 1427,
-            "visits": 1619,
-            "pageviews": 3755
+            "total": 1484,
+            "visits": 1693,
+            "pageviews": 3975
           }
         ],
         "month": [
@@ -42846,22 +42850,6185 @@
           {
             "period": "2026-11-01",
             "by_channel": {
-              "Direct": 2593,
-              "Organic Search": 1800,
-              "Referral": 791,
-              "Organic Social": 128,
-              "AI Assistants": 47,
-              "Email": 43,
+              "Direct": 2626,
+              "Organic Search": 1815,
+              "Referral": 801,
+              "Organic Social": 132,
+              "AI Assistants": 48,
+              "Email": 44,
               "Paid Search": 2
             },
-            "total": 5200,
-            "visits": 5948,
-            "pageviews": 13651
+            "total": 5257,
+            "visits": 6022,
+            "pageviews": 13871
           }
         ]
       }
     },
-    "updated_at": "2026-11-19T18:53:59+00:00"
+    "updated_at": "2026-11-20T00:01:56+00:00"
+  },
+  "conversions": {
+    "conversions": [
+      {
+        "key": "demo_request",
+        "label": "Demo request",
+        "caveat": null
+      },
+      {
+        "key": "contact_sales",
+        "label": "Contact / talk to sales",
+        "caveat": null
+      },
+      {
+        "key": "live_demo",
+        "label": "Live group demo / event",
+        "caveat": null
+      },
+      {
+        "key": "asset_download",
+        "label": "Asset download",
+        "caveat": "form submission on a /guides or /resources page, not a download event"
+      },
+      {
+        "key": "giveaway",
+        "label": "Giveaway / contest",
+        "caveat": null
+      },
+      {
+        "key": "newsletter",
+        "label": "Newsletter",
+        "caveat": "assumed to be the subscribe box on the index pages \u2014 unconfirmed"
+      },
+      {
+        "key": "other_form",
+        "label": "Other form",
+        "caveat": null
+      },
+      {
+        "key": "signup_click",
+        "label": "Sign-up click",
+        "caveat": "a click on the sign-up CTA, not a completed sign-up"
+      }
+    ],
+    "sections": [
+      {
+        "key": "growthbook.io|total",
+        "site": "growthbook.io",
+        "section": "total",
+        "label": "All pages"
+      },
+      {
+        "key": "growthbook.io|home",
+        "site": "growthbook.io",
+        "section": "home",
+        "label": "Home page"
+      },
+      {
+        "key": "growthbook.io|pricing",
+        "site": "growthbook.io",
+        "section": "pricing",
+        "label": "Pricing"
+      },
+      {
+        "key": "growthbook.io|insights",
+        "site": "growthbook.io",
+        "section": "insights",
+        "label": "Insights"
+      },
+      {
+        "key": "growthbook.io|blog",
+        "site": "growthbook.io",
+        "section": "blog",
+        "label": "Blog"
+      },
+      {
+        "key": "growthbook.io|compare",
+        "site": "growthbook.io",
+        "section": "compare",
+        "label": "Compare pages"
+      },
+      {
+        "key": "growthbook.io|other",
+        "site": "growthbook.io",
+        "section": "other",
+        "label": "All other"
+      },
+      {
+        "key": "docs.growthbook.io|total",
+        "site": "docs.growthbook.io",
+        "section": "total",
+        "label": "All pages"
+      }
+    ],
+    "channels": [
+      "Direct",
+      "Organic Search",
+      "Referral",
+      "Paid Search",
+      "Organic Social",
+      "AI Assistants",
+      "Email",
+      "Paid Social",
+      "Organic Video"
+    ],
+    "grains": [
+      "day",
+      "week",
+      "month"
+    ],
+    "series": {
+      "growthbook.io|total": {
+        "day": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1,
+                "Organic Social": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-03",
+            "cells": {
+              "newsletter": {
+                "Direct": 3
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-04",
+            "cells": {
+              "demo_request": {
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-09-06",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-08",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Email": 2,
+                "Referral": 2,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-09",
+            "cells": {
+              "live_demo": {
+                "Email": 5,
+                "Organic Search": 1,
+                "Referral": 1
+              },
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 2
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-10",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 2,
+                "Referral": 1,
+                "Paid Search": 1,
+                "Organic Social": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-11",
+            "cells": {
+              "demo_request": {
+                "Direct": 2,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              },
+              "contact_sales": {
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-12",
+            "cells": {
+              "giveaway": {
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-09-13",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "demo_request": {
+                "Direct": 4,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-15",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 4,
+                "Direct": 3
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-16",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-17",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Direct": 2,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-18",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1,
+                "Referral": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-19",
+            "cells": {
+              "giveaway": {
+                "Direct": 13
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-20",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-22",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "AI Assistants": 1
+              },
+              "other_form": {
+                "Email": 2
+              },
+              "giveaway": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-23",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Paid Search": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 3,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-24",
+            "cells": {
+              "live_demo": {
+                "Direct": 4
+              },
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-25",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 3
+              },
+              "live_demo": {
+                "Referral": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              },
+              "giveaway": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-26",
+            "cells": {
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-27",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "demo_request": {
+                "Direct": 4
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-29",
+            "cells": {
+              "contact_sales": {
+                "Direct": 3
+              },
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 2
+              },
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-30",
+            "cells": {
+              "giveaway": {
+                "Direct": 39
+              },
+              "demo_request": {
+                "Organic Search": 3,
+                "Referral": 2,
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "giveaway": {
+                "Direct": 44,
+                "Referral": 1
+              },
+              "demo_request": {
+                "Organic Search": 3,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Email": 1,
+                "Referral": 1
+              },
+              "other_form": {
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-02",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1,
+                "Referral": 2
+              },
+              "demo_request": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-03",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-04",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Email": 1,
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Organic Search": 1,
+                "Email": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "asset_download": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Referral": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-06",
+            "cells": {
+              "live_demo": {
+                "Email": 5,
+                "Referral": 2,
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-07",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-08",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2,
+                "Paid Search": 1
+              },
+              "demo_request": {
+                "Direct": 2,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-09",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-11",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 2
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-13",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1,
+                "Paid Search": 1
+              },
+              "demo_request": {
+                "Paid Search": 1,
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              },
+              "asset_download": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-14",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 3,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 2
+              },
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-15",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-16",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Referral": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-17",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-18",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "live_demo": {
+                "AI Assistants": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-20",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Referral": 1,
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 2
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 5,
+                "Paid Search": 2,
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-22",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 12,
+                "Organic Search": 8,
+                "Paid Search": 5,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-23",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 2
+              },
+              "signup_click": {
+                "Direct": 10,
+                "Organic Search": 6,
+                "Paid Search": 3,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-24",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 7,
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-10-25",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 6,
+                "Direct": 5,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 4,
+                "Direct": 3
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 3
+              },
+              "signup_click": {
+                "Organic Search": 14,
+                "Direct": 9,
+                "Paid Search": 4,
+                "AI Assistants": 2,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-27",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 3,
+                "Direct": 1,
+                "Referral": 2
+              },
+              "demo_request": {
+                "Organic Search": 2,
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 23,
+                "Direct": 20,
+                "Paid Search": 6,
+                "Referral": 4,
+                "AI Assistants": 3,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "newsletter": {
+                "Organic Search": 2,
+                "Direct": 3
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 22,
+                "Direct": 11,
+                "Paid Search": 5,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-29",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 3,
+                "Direct": 2,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Email": 2,
+                "Organic Search": 1,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 15,
+                "Direct": 11,
+                "Paid Search": 3,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-30",
+            "cells": {
+              "live_demo": {
+                "Referral": 2,
+                "Organic Search": 1,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Organic Search": 1,
+                "Email": 1,
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 12,
+                "Direct": 11,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-31",
+            "cells": {
+              "signup_click": {
+                "Direct": 8,
+                "Organic Search": 6
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              },
+              "signup_click": {
+                "Organic Search": 11,
+                "Direct": 7,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "other_form": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 16,
+                "Direct": 10,
+                "Referral": 3,
+                "Paid Search": 2,
+                "Organic Social": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-03",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              },
+              "signup_click": {
+                "Direct": 8,
+                "Organic Search": 7,
+                "Referral": 4,
+                "Paid Search": 3,
+                "Organic Social": 1,
+                "Organic Video": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-04",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 2
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 16,
+                "Direct": 14,
+                "Referral": 3,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-05",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              },
+              "signup_click": {
+                "Organic Search": 15,
+                "Direct": 10,
+                "Paid Search": 3,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-06",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 13,
+                "Direct": 4,
+                "AI Assistants": 3,
+                "Referral": 2,
+                "Paid Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-07",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 8,
+                "Direct": 3,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-08",
+            "cells": {
+              "live_demo": {
+                "Referral": 1,
+                "Organic Social": 1
+              },
+              "signup_click": {
+                "Organic Search": 5,
+                "Referral": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 2
+              },
+              "other_form": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Email": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 12,
+                "Organic Search": 9,
+                "Paid Search": 3,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-10",
+            "cells": {
+              "live_demo": {
+                "Referral": 3,
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "AI Assistants": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 17,
+                "Direct": 9,
+                "Referral": 2,
+                "Paid Search": 1,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-11",
+            "cells": {
+              "live_demo": {
+                "Referral": 1,
+                "Organic Social": 1
+              },
+              "signup_click": {
+                "Organic Search": 14,
+                "Direct": 7,
+                "Referral": 3,
+                "Paid Search": 3
+              }
+            }
+          },
+          {
+            "period": "2026-11-12",
+            "cells": {
+              "contact_sales": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 19,
+                "Organic Search": 14,
+                "Paid Search": 4,
+                "Referral": 3,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-13",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 2
+              },
+              "newsletter": {
+                "Direct": 3
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Paid Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 12,
+                "Direct": 11,
+                "Paid Search": 4,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-14",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 5,
+                "Direct": 2,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-15",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Direct": 6,
+                "Organic Search": 5
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Direct": 4,
+                "Paid Search": 2,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 16,
+                "Direct": 14,
+                "Referral": 3,
+                "Paid Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-17",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Email": 2
+              },
+              "demo_request": {
+                "Organic Social": 1,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 14,
+                "Direct": 12,
+                "Paid Search": 4,
+                "Referral": 2,
+                "AI Assistants": 1,
+                "Email": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "contact_sales": {
+                "Direct": 3,
+                "Referral": 1,
+                "Paid Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Email": 1
+              },
+              "signup_click": {
+                "Organic Search": 24,
+                "Direct": 13,
+                "Paid Search": 6,
+                "Referral": 4
+              }
+            }
+          },
+          {
+            "period": "2026-11-19",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Paid Search": 1,
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 17,
+                "Direct": 8,
+                "Paid Search": 2,
+                "AI Assistants": 1,
+                "Referral": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "demo_request": {
+                "Direct": 6,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 4
+              },
+              "contact_sales": {
+                "Direct": 4
+              },
+              "live_demo": {
+                "Direct": 2,
+                "Organic Search": 1,
+                "Organic Social": 1
+              },
+              "other_form": {
+                "Paid Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "demo_request": {
+                "Direct": 9,
+                "Organic Search": 4,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Email": 7,
+                "Referral": 5,
+                "Organic Search": 1,
+                "Direct": 3,
+                "Paid Search": 1,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 3,
+                "Paid Search": 1,
+                "AI Assistants": 1,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 2,
+                "Referral": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 2
+              },
+              "giveaway": {
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "giveaway": {
+                "Direct": 13
+              },
+              "demo_request": {
+                "Direct": 9,
+                "Organic Search": 7,
+                "Paid Search": 2,
+                "Referral": 1
+              },
+              "newsletter": {
+                "Direct": 5,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 3,
+                "Organic Search": 2
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Organic Search": 2,
+                "Direct": 2
+              },
+              "asset_download": {
+                "Organic Search": 2,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 14,
+                "Organic Search": 7,
+                "Paid Search": 1,
+                "AI Assistants": 1
+              },
+              "contact_sales": {
+                "Direct": 8,
+                "Referral": 1,
+                "AI Assistants": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 9,
+                "Referral": 6,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Email": 2
+              },
+              "giveaway": {
+                "Direct": 3
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "giveaway": {
+                "Direct": 83,
+                "Referral": 1
+              },
+              "demo_request": {
+                "Organic Search": 9,
+                "Direct": 8,
+                "Referral": 2,
+                "Paid Search": 2
+              },
+              "contact_sales": {
+                "Direct": 7,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 9,
+                "Organic Social": 1,
+                "Email": 1,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 1,
+                "Organic Social": 1
+              },
+              "newsletter": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 8,
+                "Direct": 7,
+                "Email": 1,
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Direct": 8,
+                "Organic Search": 2,
+                "Paid Search": 1,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Email": 6,
+                "Referral": 5,
+                "Direct": 2,
+                "Organic Search": 2
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "asset_download": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 7,
+                "Direct": 5,
+                "Paid Search": 2,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Organic Search": 5,
+                "Direct": 5,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 3,
+                "Referral": 3,
+                "Direct": 1
+              },
+              "asset_download": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "demo_request": {
+                "Direct": 9,
+                "Organic Search": 6,
+                "Paid Search": 1,
+                "Referral": 1
+              },
+              "newsletter": {
+                "Direct": 5,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 6,
+                "Direct": 3,
+                "Organic Search": 1,
+                "AI Assistants": 1
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "signup_click": {
+                "Direct": 32,
+                "Organic Search": 32,
+                "Paid Search": 10,
+                "Referral": 5,
+                "AI Assistants": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 11,
+                "Direct": 6,
+                "Paid Search": 2,
+                "Email": 1
+              },
+              "live_demo": {
+                "Organic Search": 8,
+                "Referral": 6,
+                "Email": 2,
+                "Organic Social": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 5
+              },
+              "newsletter": {
+                "Direct": 4,
+                "Organic Search": 2
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 103,
+                "Direct": 75,
+                "Paid Search": 18,
+                "Referral": 7,
+                "AI Assistants": 6,
+                "Organic Social": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "demo_request": {
+                "Direct": 4,
+                "Organic Search": 2,
+                "Paid Search": 2
+              },
+              "contact_sales": {
+                "Direct": 4,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 5,
+                "Organic Social": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "other_form": {
+                "Direct": 2
+              },
+              "signup_click": {
+                "Organic Search": 79,
+                "Direct": 49,
+                "Referral": 15,
+                "Paid Search": 11,
+                "AI Assistants": 5,
+                "Organic Social": 2,
+                "Organic Video": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "live_demo": {
+                "Referral": 5,
+                "Email": 1,
+                "Organic Social": 1,
+                "Paid Search": 1,
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 5,
+                "Organic Search": 4,
+                "AI Assistants": 1
+              },
+              "demo_request": {
+                "Direct": 5,
+                "Organic Search": 4,
+                "Paid Search": 2
+              },
+              "newsletter": {
+                "Direct": 6,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 76,
+                "Direct": 64,
+                "Paid Search": 15,
+                "Referral": 13,
+                "Organic Social": 2,
+                "AI Assistants": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "contact_sales": {
+                "Direct": 6,
+                "Paid Search": 1,
+                "Referral": 1
+              },
+              "demo_request": {
+                "Direct": 6,
+                "Organic Search": 5,
+                "Paid Search": 3,
+                "Organic Social": 1
+              },
+              "live_demo": {
+                "Email": 3,
+                "Referral": 2,
+                "Direct": 2
+              },
+              "other_form": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "signup_click": {
+                "Organic Search": 71,
+                "Direct": 47,
+                "Paid Search": 14,
+                "Referral": 10,
+                "AI Assistants": 2,
+                "Email": 1
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "demo_request": {
+                "Direct": 45,
+                "Organic Search": 23,
+                "Paid Search": 5,
+                "Referral": 3,
+                "AI Assistants": 1
+              },
+              "giveaway": {
+                "Direct": 58
+              },
+              "contact_sales": {
+                "Direct": 23,
+                "Organic Search": 5,
+                "AI Assistants": 2,
+                "Referral": 1,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 13,
+                "Organic Search": 2,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 18,
+                "Direct": 16,
+                "Email": 7,
+                "Organic Search": 5,
+                "Organic Social": 3,
+                "Paid Search": 1
+              },
+              "asset_download": {
+                "Organic Search": 6,
+                "Paid Search": 1
+              },
+              "other_form": {
+                "Email": 2,
+                "Paid Search": 1,
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "giveaway": {
+                "Direct": 44,
+                "Referral": 1
+              },
+              "demo_request": {
+                "Organic Search": 37,
+                "Direct": 28,
+                "Paid Search": 7,
+                "Referral": 2,
+                "Email": 2
+              },
+              "contact_sales": {
+                "Direct": 22,
+                "Organic Search": 7,
+                "Paid Search": 2,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 23,
+                "Organic Search": 15,
+                "Email": 9,
+                "Direct": 7,
+                "Organic Social": 1,
+                "AI Assistants": 1
+              },
+              "newsletter": {
+                "Direct": 12,
+                "Organic Search": 3
+              },
+              "asset_download": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1,
+                "Direct": 2,
+                "Organic Social": 1
+              },
+              "signup_click": {
+                "Organic Search": 124,
+                "Direct": 99,
+                "Paid Search": 28,
+                "Referral": 12,
+                "AI Assistants": 8,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "demo_request": {
+                "Direct": 15,
+                "Organic Search": 11,
+                "Paid Search": 7,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 15,
+                "Organic Search": 5,
+                "Paid Search": 1,
+                "AI Assistants": 1,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 13,
+                "Email": 4,
+                "Direct": 5,
+                "Organic Social": 2,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 10,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 5,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 236,
+                "Direct": 167,
+                "Paid Search": 40,
+                "Referral": 38,
+                "AI Assistants": 9,
+                "Organic Social": 5,
+                "Email": 1,
+                "Organic Video": 1
+              }
+            }
+          }
+        ]
+      },
+      "growthbook.io|home": {
+        "day": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-03",
+            "cells": {
+              "live_demo": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-04",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-08",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-09",
+            "cells": {
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-10",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              },
+              "live_demo": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-11",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-15",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 3,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-16",
+            "cells": {
+              "asset_download": {
+                "Organic Search": 2
+              },
+              "demo_request": {
+                "Paid Search": 1,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-17",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-18",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-20",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-22",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-23",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Paid Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-24",
+            "cells": {
+              "live_demo": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-25",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-27",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-29",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-30",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 3,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              },
+              "contact_sales": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-02",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-03",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-06",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-07",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-09",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-11",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-13",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "Organic Search": 1,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-14",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-15",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-16",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Referral": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-17",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-20",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Paid Search": 1,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-21",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 5,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-22",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 10,
+                "Organic Search": 7,
+                "Paid Search": 4,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-23",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 8,
+                "Organic Search": 5,
+                "Paid Search": 2,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-24",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 6,
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-10-25",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 6,
+                "Direct": 5,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 12,
+                "Direct": 6,
+                "AI Assistants": 2,
+                "Paid Search": 2,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-27",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 22,
+                "Direct": 13,
+                "Referral": 4,
+                "Paid Search": 4,
+                "AI Assistants": 2,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 16,
+                "Direct": 8,
+                "Paid Search": 5,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-29",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Paid Search": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 10,
+                "Direct": 9,
+                "Paid Search": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-30",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 10,
+                "Direct": 7,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-31",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 5,
+                "Direct": 5
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 9,
+                "Direct": 5,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "live_demo": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 13,
+                "Direct": 8,
+                "Referral": 3,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-03",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "signup_click": {
+                "Direct": 7,
+                "Organic Search": 6,
+                "Referral": 4,
+                "Paid Search": 3,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-04",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 12,
+                "Direct": 10,
+                "Referral": 3,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-05",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 13,
+                "Direct": 6,
+                "Referral": 1,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-06",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 10,
+                "Direct": 3,
+                "AI Assistants": 2,
+                "Referral": 2,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-07",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 6,
+                "Direct": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-08",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 4,
+                "Referral": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 9,
+                "Direct": 9,
+                "Paid Search": 2,
+                "Referral": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-10",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 12,
+                "Direct": 6,
+                "Referral": 2,
+                "Paid Search": 1,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-11",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 13,
+                "Direct": 4,
+                "Referral": 3,
+                "Paid Search": 3
+              }
+            }
+          },
+          {
+            "period": "2026-11-12",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Direct": 14,
+                "Organic Search": 10,
+                "Referral": 3,
+                "Paid Search": 2,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-13",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 10,
+                "Direct": 8,
+                "Paid Search": 3,
+                "Referral": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-14",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 4,
+                "Direct": 2,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-15",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 5,
+                "Direct": 4
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 2,
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 12,
+                "Direct": 11,
+                "Referral": 2,
+                "Paid Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-17",
+            "cells": {
+              "demo_request": {
+                "Organic Social": 1,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 10,
+                "Direct": 8,
+                "Paid Search": 3,
+                "AI Assistants": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2,
+                "Referral": 1,
+                "Paid Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 20,
+                "Direct": 10,
+                "Paid Search": 4,
+                "Referral": 4
+              }
+            }
+          },
+          {
+            "period": "2026-11-19",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 14,
+                "Direct": 6,
+                "AI Assistants": 1,
+                "Referral": 1,
+                "Paid Search": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "demo_request": {
+                "Direct": 4,
+                "Organic Search": 3,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Paid Search": 1,
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "asset_download": {
+                "Organic Search": 2
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "demo_request": {
+                "Direct": 6,
+                "Organic Search": 5,
+                "Paid Search": 2
+              },
+              "newsletter": {
+                "Direct": 3
+              },
+              "live_demo": {
+                "Organic Search": 2
+              },
+              "asset_download": {
+                "Organic Search": 2
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 5,
+                "Organic Search": 3,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 8,
+                "Direct": 2,
+                "Paid Search": 1,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 4,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 7,
+                "Direct": 3
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 4,
+                "Paid Search": 2,
+                "Referral": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 3,
+                "Direct": 2,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "demo_request": {
+                "Direct": 5,
+                "Organic Search": 5,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 3,
+                "AI Assistants": 1,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 29,
+                "Direct": 27,
+                "Paid Search": 6,
+                "Referral": 5,
+                "AI Assistants": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 8,
+                "Direct": 3,
+                "Paid Search": 2
+              },
+              "live_demo": {
+                "Organic Search": 2
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 84,
+                "Direct": 51,
+                "Paid Search": 12,
+                "Referral": 7,
+                "AI Assistants": 5,
+                "Organic Social": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 2,
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 63,
+                "Direct": 35,
+                "Referral": 15,
+                "Paid Search": 6,
+                "AI Assistants": 3,
+                "Organic Social": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 63,
+                "Direct": 46,
+                "Referral": 12,
+                "Paid Search": 11,
+                "Organic Social": 2,
+                "AI Assistants": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 3,
+                "Direct": 2,
+                "Organic Search": 2,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Paid Search": 1,
+                "Referral": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 56,
+                "Direct": 35,
+                "Paid Search": 10,
+                "Referral": 8,
+                "AI Assistants": 2
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "demo_request": {
+                "Direct": 18,
+                "Organic Search": 15,
+                "Paid Search": 4,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 7,
+                "Organic Search": 3,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 4,
+                "Organic Search": 5,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 4
+              },
+              "asset_download": {
+                "Organic Search": 4
+              },
+              "other_form": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 28,
+                "Direct": 12,
+                "Paid Search": 6,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 7,
+                "Organic Search": 4,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 7,
+                "Direct": 5,
+                "AI Assistants": 1
+              },
+              "newsletter": {
+                "Direct": 5,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 104,
+                "Direct": 72,
+                "Paid Search": 18,
+                "Referral": 12,
+                "AI Assistants": 7,
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 6,
+                "Organic Search": 5,
+                "Direct": 4,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 5,
+                "Organic Search": 2,
+                "Paid Search": 1,
+                "Referral": 1
+              },
+              "other_form": {
+                "Direct": 3
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 191,
+                "Direct": 121,
+                "Referral": 35,
+                "Paid Search": 27,
+                "AI Assistants": 7,
+                "Organic Social": 5
+              }
+            }
+          }
+        ]
+      },
+      "growthbook.io|pricing": {
+        "day": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-09",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-10",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-15",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-17",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-22",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-23",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-24",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-08",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-14",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-22",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-23",
+            "cells": {
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 3,
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-27",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-29",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-30",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-03",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-04",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-05",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-06",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-07",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-08",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-10",
+            "cells": {
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-11",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-12",
+            "cells": {
+              "signup_click": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-13",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Paid Search": 1
+              },
+              "signup_click": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-17",
+            "cells": {
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-19",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 2
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 2,
+                "Organic Search": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "signup_click": {
+                "Direct": 3,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 7,
+                "Organic Search": 5
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 5,
+                "Organic Search": 4,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Paid Search": 1
+              },
+              "signup_click": {
+                "Direct": 8,
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 6,
+                "Organic Search": 6
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 5,
+                "Direct": 4,
+                "AI Assistants": 1
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "demo_request": {
+                "Direct": 4,
+                "Organic Search": 3,
+                "Paid Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 10,
+                "Organic Search": 6
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 3,
+                "Direct": 3,
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Paid Search": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 19,
+                "Organic Search": 12,
+                "AI Assistants": 1
+              }
+            }
+          }
+        ]
+      },
+      "growthbook.io|insights": {
+        "day": [
+          {
+            "period": "2026-09-03",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-09",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-25",
+            "cells": {
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-08",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-14",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-20",
+            "cells": {
+              "demo_request": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-22",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-24",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-29",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-30",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-04",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 2,
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-06",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-07",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-10",
+            "cells": {
+              "signup_click": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-11",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-12",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-13",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-14",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-17",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-19",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "asset_download": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "demo_request": {
+                "Referral": 1
+              },
+              "signup_click": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 5
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 4,
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 5,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 3
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "asset_download": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Organic Search": 1,
+                "Referral": 1
+              },
+              "signup_click": {
+                "Organic Search": 6
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 13,
+                "Direct": 3
+              }
+            }
+          }
+        ]
+      },
+      "growthbook.io|blog": {
+        "day": [
+          {
+            "period": "2026-09-09",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-10",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-16",
+            "cells": {
+              "newsletter": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-18",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-22",
+            "cells": {
+              "other_form": {
+                "Email": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-29",
+            "cells": {
+              "asset_download": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "other_form": {
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-18",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-27",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-29",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-03",
+            "cells": {
+              "signup_click": {
+                "Organic Video": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-13",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "newsletter": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "newsletter": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "other_form": {
+                "Email": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "asset_download": {
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Social": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "newsletter": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 2,
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "signup_click": {
+                "Organic Video": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 2
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "newsletter": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Email": 2
+              },
+              "asset_download": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 1,
+                "Organic Social": 1,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 2,
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 2,
+                "Organic Video": 1
+              }
+            }
+          }
+        ]
+      },
+      "growthbook.io|compare": {
+        "day": [
+          {
+            "period": "2026-09-18",
+            "cells": {
+              "demo_request": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-29",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-30",
+            "cells": {
+              "demo_request": {
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-23",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-05",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-06",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-12",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-19",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "demo_request": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "demo_request": {
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 1,
+                "Direct": 1,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1,
+                "Paid Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "signup_click": {
+                "Direct": 1,
+                "Paid Search": 1
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "demo_request": {
+                "Referral": 1,
+                "Direct": 1,
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "newsletter": {
+                "Direct": 2
+              },
+              "signup_click": {
+                "Paid Search": 2,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "signup_click": {
+                "Direct": 3,
+                "Paid Search": 2,
+                "Organic Search": 2
+              }
+            }
+          }
+        ]
+      },
+      "growthbook.io|other": {
+        "day": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Direct": 1,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Paid Search": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-03",
+            "cells": {
+              "newsletter": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-04",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-06",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-08",
+            "cells": {
+              "live_demo": {
+                "Email": 2,
+                "Referral": 2,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-09",
+            "cells": {
+              "live_demo": {
+                "Email": 5,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-10",
+            "cells": {
+              "live_demo": {
+                "Organic Social": 1,
+                "Referral": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-11",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "AI Assistants": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-12",
+            "cells": {
+              "giveaway": {
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-09-13",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-15",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "asset_download": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-17",
+            "cells": {
+              "live_demo": {
+                "Direct": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-18",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-19",
+            "cells": {
+              "giveaway": {
+                "Direct": 13
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Referral": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-22",
+            "cells": {
+              "giveaway": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-23",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-24",
+            "cells": {
+              "live_demo": {
+                "Direct": 3
+              },
+              "demo_request": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-09-25",
+            "cells": {
+              "contact_sales": {
+                "Direct": 3
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "giveaway": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-26",
+            "cells": {
+              "live_demo": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-27",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "live_demo": {
+                "Referral": 2,
+                "Organic Social": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-29",
+            "cells": {
+              "contact_sales": {
+                "Direct": 3
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 2
+              },
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-30",
+            "cells": {
+              "giveaway": {
+                "Direct": 39
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "giveaway": {
+                "Direct": 44,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 1,
+                "Email": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-02",
+            "cells": {
+              "live_demo": {
+                "Referral": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-04",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "live_demo": {
+                "Referral": 2,
+                "Email": 1
+              },
+              "asset_download": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Email": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Referral": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-06",
+            "cells": {
+              "live_demo": {
+                "Email": 5,
+                "Referral": 2,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-07",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-08",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-09",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-11",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 1,
+                "Referral": 1
+              },
+              "asset_download": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-13",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "asset_download": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-14",
+            "cells": {
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-15",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-20",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-21",
+            "cells": {
+              "live_demo": {
+                "Referral": 2
+              },
+              "demo_request": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Paid Search": 2,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-22",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Paid Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-23",
+            "cells": {
+              "live_demo": {
+                "Referral": 2
+              },
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-24",
+            "cells": {
+              "demo_request": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-25",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "live_demo": {
+                "Organic Search": 3
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-27",
+            "cells": {
+              "live_demo": {
+                "Referral": 2,
+                "Organic Search": 2,
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 4,
+                "Paid Search": 2,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-28",
+            "cells": {
+              "newsletter": {
+                "Organic Search": 1,
+                "Direct": 2
+              },
+              "signup_click": {
+                "Organic Search": 2,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-29",
+            "cells": {
+              "live_demo": {
+                "Email": 2,
+                "Referral": 1,
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "signup_click": {
+                "Paid Search": 2,
+                "Organic Search": 2,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-30",
+            "cells": {
+              "live_demo": {
+                "Referral": 2,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "demo_request": {
+                "Email": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 3,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-31",
+            "cells": {
+              "signup_click": {
+                "Direct": 3,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              },
+              "signup_click": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 2,
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-03",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              },
+              "signup_click": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-04",
+            "cells": {
+              "live_demo": {
+                "Referral": 2
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-05",
+            "cells": {
+              "live_demo": {
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 2,
+                "Direct": 2,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-06",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 1,
+                "Paid Search": 1,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-07",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Organic Search": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-08",
+            "cells": {
+              "live_demo": {
+                "Organic Social": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "other_form": {
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Email": 1,
+                "Referral": 1
+              },
+              "signup_click": {
+                "Paid Search": 1,
+                "Direct": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-10",
+            "cells": {
+              "live_demo": {
+                "Referral": 3,
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "AI Assistants": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 3
+              }
+            }
+          },
+          {
+            "period": "2026-11-11",
+            "cells": {
+              "live_demo": {
+                "Organic Social": 1,
+                "Referral": 1
+              },
+              "signup_click": {
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-12",
+            "cells": {
+              "contact_sales": {
+                "Direct": 3
+              },
+              "newsletter": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 3,
+                "Organic Search": 3,
+                "Paid Search": 2
+              }
+            }
+          },
+          {
+            "period": "2026-11-13",
+            "cells": {
+              "newsletter": {
+                "Direct": 2
+              },
+              "signup_click": {
+                "Direct": 2,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-14",
+            "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-15",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Direct": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "demo_request": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Direct": 1,
+                "Referral": 1
+              },
+              "signup_click": {
+                "Organic Search": 3,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-17",
+            "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
+              "live_demo": {
+                "Email": 2
+              },
+              "signup_click": {
+                "Direct": 2,
+                "Email": 1,
+                "Referral": 1,
+                "Organic Search": 1,
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "live_demo": {
+                "Email": 1,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 3,
+                "Paid Search": 2,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-19",
+            "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-09-02",
+            "cells": {
+              "demo_request": {
+                "Direct": 5
+              },
+              "newsletter": {
+                "Direct": 3
+              },
+              "contact_sales": {
+                "Direct": 2
+              },
+              "other_form": {
+                "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Social": 1,
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-07",
+            "cells": {
+              "live_demo": {
+                "Email": 7,
+                "Referral": 5,
+                "Organic Social": 1,
+                "Direct": 2
+              },
+              "demo_request": {
+                "Direct": 4
+              },
+              "contact_sales": {
+                "Direct": 1,
+                "Organic Search": 1,
+                "AI Assistants": 1
+              },
+              "newsletter": {
+                "Referral": 1
+              },
+              "giveaway": {
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-09-14",
+            "cells": {
+              "giveaway": {
+                "Direct": 13
+              },
+              "demo_request": {
+                "Direct": 3
+              },
+              "live_demo": {
+                "Referral": 2,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 2
+              },
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "asset_download": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-09-21",
+            "cells": {
+              "demo_request": {
+                "Direct": 7,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 6,
+                "AI Assistants": 1,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 6,
+                "Direct": 7
+              },
+              "giveaway": {
+                "Direct": 3
+              }
+            }
+          },
+          {
+            "period": "2026-09-28",
+            "cells": {
+              "giveaway": {
+                "Direct": 83,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 9,
+                "Organic Social": 1,
+                "Email": 1
+              },
+              "demo_request": {
+                "Direct": 4,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 3
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-05",
+            "cells": {
+              "contact_sales": {
+                "Direct": 7,
+                "Referral": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 5,
+                "Email": 6,
+                "Organic Search": 1
+              },
+              "demo_request": {
+                "Direct": 4,
+                "Email": 1,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "live_demo": {
+                "Referral": 3,
+                "Organic Search": 1
+              },
+              "contact_sales": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 1,
+                "Organic Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-19",
+            "cells": {
+              "demo_request": {
+                "Direct": 4,
+                "Organic Search": 1
+              },
+              "live_demo": {
+                "Referral": 6
+              },
+              "newsletter": {
+                "Direct": 3
+              },
+              "signup_click": {
+                "Paid Search": 3,
+                "Direct": 2
+              }
+            }
+          },
+          {
+            "period": "2026-10-26",
+            "cells": {
+              "live_demo": {
+                "Referral": 6,
+                "Organic Search": 5,
+                "Email": 2,
+                "Organic Social": 1,
+                "Direct": 1
+              },
+              "contact_sales": {
+                "Direct": 3
+              },
+              "demo_request": {
+                "Organic Search": 2,
+                "Direct": 2,
+                "Email": 1
+              },
+              "newsletter": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 14,
+                "Organic Search": 6,
+                "Paid Search": 5,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-02",
+            "cells": {
+              "live_demo": {
+                "Referral": 5,
+                "Organic Social": 1
+              },
+              "contact_sales": {
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Organic Search": 7,
+                "Direct": 6,
+                "Paid Search": 4,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "live_demo": {
+                "Referral": 5,
+                "Direct": 2,
+                "Organic Social": 1,
+                "Email": 1
+              },
+              "contact_sales": {
+                "Direct": 4,
+                "Organic Search": 2,
+                "AI Assistants": 1
+              },
+              "demo_request": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "newsletter": {
+                "Direct": 4,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Direct": 10,
+                "Organic Search": 7,
+                "Paid Search": 4,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "contact_sales": {
+                "Direct": 4
+              },
+              "demo_request": {
+                "Direct": 3
+              },
+              "live_demo": {
+                "Email": 3,
+                "Referral": 2,
+                "Direct": 1
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 5,
+                "Organic Search": 5,
+                "Paid Search": 3,
+                "Referral": 2,
+                "Email": 1
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-09-01",
+            "cells": {
+              "giveaway": {
+                "Direct": 58
+              },
+              "demo_request": {
+                "Direct": 22,
+                "Organic Search": 1,
+                "Referral": 1
+              },
+              "contact_sales": {
+                "Direct": 13,
+                "Organic Search": 2,
+                "AI Assistants": 2,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 18,
+                "Email": 7,
+                "Direct": 11,
+                "Organic Social": 3
+              },
+              "newsletter": {
+                "Direct": 6,
+                "Referral": 1
+              },
+              "other_form": {
+                "Paid Search": 1,
+                "Direct": 1
+              },
+              "asset_download": {
+                "Paid Search": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "giveaway": {
+                "Direct": 44,
+                "Referral": 1
+              },
+              "live_demo": {
+                "Referral": 23,
+                "Email": 9,
+                "Organic Search": 7,
+                "Organic Social": 1,
+                "Direct": 1
+              },
+              "demo_request": {
+                "Direct": 12,
+                "Organic Search": 5,
+                "Email": 2
+              },
+              "contact_sales": {
+                "Direct": 12,
+                "Organic Search": 2,
+                "Referral": 1
+              },
+              "newsletter": {
+                "Direct": 6,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Direct": 3
+              },
+              "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "Direct": 14,
+                "Paid Search": 8,
+                "Organic Search": 6,
+                "AI Assistants": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "contact_sales": {
+                "Direct": 9,
+                "Organic Search": 2,
+                "AI Assistants": 1
+              },
+              "live_demo": {
+                "Referral": 13,
+                "Email": 4,
+                "Organic Social": 2,
+                "Direct": 3
+              },
+              "demo_request": {
+                "Direct": 7,
+                "Organic Search": 2
+              },
+              "newsletter": {
+                "Direct": 6,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 2,
+                "Organic Search": 1
+              },
+              "signup_click": {
+                "Direct": 23,
+                "Organic Search": 18,
+                "Paid Search": 11,
+                "Referral": 3,
+                "Email": 1,
+                "AI Assistants": 1
+              }
+            }
+          }
+        ]
+      },
+      "docs.growthbook.io|total": {
+        "day": [
+          {
+            "period": "2026-10-15",
+            "cells": {
+              "other_form": {
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-10-18",
+            "cells": {
+              "other_form": {
+                "Direct": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-10",
+            "cells": {
+              "other_form": {
+                "Referral": 1
+              }
+            }
+          }
+        ],
+        "week": [
+          {
+            "period": "2026-10-12",
+            "cells": {
+              "other_form": {
+                "Direct": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-09",
+            "cells": {
+              "other_form": {
+                "Referral": 1
+              }
+            }
+          }
+        ],
+        "month": [
+          {
+            "period": "2026-10-01",
+            "cells": {
+              "other_form": {
+                "Direct": 1,
+                "Referral": 1
+              }
+            }
+          },
+          {
+            "period": "2026-11-01",
+            "cells": {
+              "other_form": {
+                "Referral": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "caveats": {
+      "asset_download": "form submission on a /guides or /resources page, not a download event",
+      "newsletter": "assumed to be the subscribe box on the index pages \u2014 unconfirmed",
+      "signup_click": "a click on the sign-up CTA, not a completed sign-up"
+    }
   },
   "homepage_weekly": [
     {
@@ -49768,68 +55935,20 @@
         }
       },
       "by_category": {
-        "Other short": {
+        "Other webinar": {
           "current": {
-            "engaged_views": 86,
-            "raw_views": 270,
-            "watch_minutes": 49,
+            "engaged_views": 79,
+            "raw_views": 92,
+            "watch_minutes": 603,
             "subs_gained": 0,
             "videos": 10
           },
           "prior": {
-            "engaged_views": 31,
-            "raw_views": 65,
-            "watch_minutes": 9,
+            "engaged_views": 122,
+            "raw_views": 135,
+            "watch_minutes": 497,
             "subs_gained": 0,
-            "videos": 13
-          }
-        },
-        "Kohavi webinar": {
-          "current": {
-            "engaged_views": 97,
-            "raw_views": 156,
-            "watch_minutes": 552,
-            "subs_gained": 1,
-            "videos": 2
-          },
-          "prior": {
-            "engaged_views": 78,
-            "raw_views": 99,
-            "watch_minutes": 474,
-            "subs_gained": 1,
-            "videos": 2
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1175,
-            "raw_views": 1776,
-            "watch_minutes": 3729,
-            "subs_gained": 4,
-            "videos": 65
-          },
-          "prior": {
-            "engaged_views": 1451,
-            "raw_views": 2276,
-            "watch_minutes": 4395,
-            "subs_gained": 7,
-            "videos": 66
-          }
-        },
-        "Podcast clip": {
-          "current": {
-            "engaged_views": 628,
-            "raw_views": 2369,
-            "watch_minutes": 209,
-            "subs_gained": 0,
-            "videos": 63
-          },
-          "prior": {
-            "engaged_views": 3885,
-            "raw_views": 15858,
-            "watch_minutes": 1209,
-            "subs_gained": 5,
-            "videos": 60
+            "videos": 10
           }
         },
         "Podcast episode": {
@@ -49848,20 +55967,68 @@
             "videos": 40
           }
         },
-        "Other webinar": {
+        "Product long-form": {
           "current": {
-            "engaged_views": 79,
-            "raw_views": 92,
-            "watch_minutes": 603,
+            "engaged_views": 1175,
+            "raw_views": 1776,
+            "watch_minutes": 3729,
+            "subs_gained": 4,
+            "videos": 65
+          },
+          "prior": {
+            "engaged_views": 1451,
+            "raw_views": 2276,
+            "watch_minutes": 4395,
+            "subs_gained": 7,
+            "videos": 66
+          }
+        },
+        "Kohavi webinar": {
+          "current": {
+            "engaged_views": 97,
+            "raw_views": 156,
+            "watch_minutes": 552,
+            "subs_gained": 1,
+            "videos": 2
+          },
+          "prior": {
+            "engaged_views": 78,
+            "raw_views": 99,
+            "watch_minutes": 474,
+            "subs_gained": 1,
+            "videos": 2
+          }
+        },
+        "Other short": {
+          "current": {
+            "engaged_views": 86,
+            "raw_views": 270,
+            "watch_minutes": 49,
             "subs_gained": 0,
             "videos": 10
           },
           "prior": {
-            "engaged_views": 122,
-            "raw_views": 135,
-            "watch_minutes": 497,
+            "engaged_views": 31,
+            "raw_views": 65,
+            "watch_minutes": 9,
             "subs_gained": 0,
-            "videos": 10
+            "videos": 13
+          }
+        },
+        "Podcast clip": {
+          "current": {
+            "engaged_views": 628,
+            "raw_views": 2369,
+            "watch_minutes": 209,
+            "subs_gained": 0,
+            "videos": 63
+          },
+          "prior": {
+            "engaged_views": 3885,
+            "raw_views": 15858,
+            "watch_minutes": 1209,
+            "subs_gained": 5,
+            "videos": 60
           }
         }
       },
