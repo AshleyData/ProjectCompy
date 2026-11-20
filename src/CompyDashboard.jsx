@@ -1337,8 +1337,8 @@ function VideoTab({ video }) {
 const PRIMARY_TABS = [
   // id stays `traffic_channels` — it is referenced by the tab body and any
   // bookmarked ?tab= link; only the label changed.
-  { id: "traffic_channels", label: "📈 Web Traffic" },
   { id: "conversions", label: "🎯 Conversions" },
+  { id: "traffic_channels", label: "📈 Web Traffic" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
   { id: "kpi", label: "🎯 KPIs" },
   { id: "summary", label: "📊 Summary" },
@@ -1413,7 +1413,7 @@ function AdviceCell({ item, context, fallback }) {
 }
 
 export default function CompyDashboard() {
-  const [tab, setTab] = useState("traffic_channels");
+  const [tab, setTab] = useState("conversions");
   // Traffic Channels tab controls. Week is the default grain because it is the
   // grain the weekly brief and the rest of the dashboard speak in.
   const [tcGrain, setTcGrain] = useState("week");
@@ -1427,8 +1427,12 @@ export default function CompyDashboard() {
   const [tcHidden, setTcHidden] = useState([]);
   const [cvGrain, setCvGrain] = useState("week");
   const [cvSection, setCvSection] = useState("growthbook.io|total");
-  const [cvPick, setCvPick] = useState(null);   // null = "All"; else an array of keys
-  const [cvStackBy, setCvStackBy] = useState("channel");   // channel | conversion
+  // "__nosignup__" is a PRESET, not a key list: resolved against the live
+  // taxonomy at render, so a conversion added later is handled without a
+  // stale default silently excluding it.
+  const [cvPick, setCvPick] = useState("__nosignup__");
+  const [cvHiddenSec, setCvHiddenSec] = useState([]);
+  const [cvStackBy, setCvStackBy] = useState("section");   // section | channel | conversion
   const [cvHiddenCh, setCvHiddenCh] = useState([]);
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
@@ -2003,6 +2007,12 @@ export default function CompyDashboard() {
           };
           // Distinct from the channel palette — the two stack dimensions must
           // not share colours or a stack looks like the same series re-cut.
+          const SEC_COLORS = {
+            "growthbook.io|home": "#4285F4", "growthbook.io|pricing": "#E8705A",
+            "growthbook.io|insights": "#F5A15C", "growthbook.io|blog": "#A77BE3",
+            "growthbook.io|compare": "#1FBFC4", "growthbook.io|other": "#8E9BAA",
+            "docs.growthbook.io|total": "#2E9E83",
+          };
           const CV_COLORS = {
             demo_request: "#2E6FD6", contact_sales: "#C2553D", live_demo: "#7E57C2",
             asset_download: "#2E9E83", newsletter: "#D99A1E", other_form: "#8E9BAA",
@@ -2031,9 +2041,12 @@ export default function CompyDashboard() {
           // each channel, By Conversion shows the selection as the series.
           // null means "everything", so a conversion added later is included
           // by default rather than silently missing from a stored list.
-          const wanted = cvPick === null ? convKeys : cvPick.filter(k => convKeys.includes(k));
+          const NO_SIGNUP = "__nosignup__";
           const noSignupSet = convKeys.filter(k => k !== "signup_click");
-          const isAll = wanted.length === convKeys.length;
+          const wanted = cvPick === null ? convKeys
+            : cvPick === NO_SIGNUP ? noSignupSet
+            : cvPick.filter(k => convKeys.includes(k));
+          const isAll = cvPick === null || wanted.length === convKeys.length;
           const isNoSignup = !isAll && wanted.length === noSignupSet.length
             && noSignupSet.every(k => wanted.includes(k));
           const label = isAll ? "All"
@@ -2048,34 +2061,71 @@ export default function CompyDashboard() {
             .filter(c => c?.caveat);
           const toggleConv = (k) => {
             const next = wanted.includes(k) ? wanted.filter(x => x !== k) : [...wanted, k];
-            setCvPick(next.length === convKeys.length ? null : next);
+            setCvPick(next.length === convKeys.length ? null : next);   // presets collapse to a list
           };
 
           const chanOn = (c) => !cvHiddenCh.includes(c);
           const visibleChans = (cv.channels || []).filter(chanOn);
+          const bySection = cvStackBy === "section";
+
+          // Sections that partition the traffic. "All pages" is the aggregate
+          // of the others, so stacking it alongside them would double every
+          // bar; docs is a separate site and belongs in the stack.
+          const stackSections = (cv.sections || [])
+            .filter(x => x.key !== "growthbook.io|total");
+          const secOn = (k) => !cvHiddenSec.includes(k);
+          const visibleSections = stackSections.filter(x => secOn(x.key));
+          const secLabel = (k) => {
+            const x = (cv.sections || []).find(y => y.key === k);
+            return !x ? k : (x.site === "docs.growthbook.io" ? "Docs" : x.label);
+          };
 
           // One accessor for both stack dimensions, with the channel filter
           // applied in each — a hidden channel must drop out of a conversion
           // stack just as it does from a channel stack.
+          // Sum the selected conversions x visible channels out of one period
+          // blob. Used directly in section mode (one blob per section) and as
+          // the inner sum for the other two.
+          const sumCells = (cells, onlyConv) => wanted.reduce((n, ck) => {
+            if (onlyConv && ck !== onlyConv) return n;
+            return n + Object.entries((cells || {})[ck] || {})
+              .reduce((m, [ch, v]) => m + (chanOn(ch) ? v : 0), 0);
+          }, 0);
+
           const valueFor = (p, seriesKey) => {
             const cells = p.cells || {};
-            if (byConversion) {
-              return Object.entries(cells[seriesKey] || {})
-                .reduce((n, [ch, v]) => n + (chanOn(ch) ? v : 0), 0);
-            }
+            if (byConversion) return sumCells(cells, seriesKey);
             return wanted.reduce((n, ck) => n + ((cells[ck] || {})[seriesKey] || 0), 0);
           };
 
           const candidates = byConversion ? wanted : visibleChans;
-          const seriesKeys = candidates.filter(k => pts.some(p => valueFor(p, k) > 0));
-          const labelFor = (k) => byConversion
-            ? (cv.conversions.find(c => c.key === k)?.label || k) : k;
-          const colorFor = (k) => byConversion
-            ? (CV_COLORS[k] || C.muted) : (CH_COLORS[k] || C.muted);
+          // Section mode reads across sections, so periods come from the union
+          // of their series — a sparse section may be missing a period that
+          // another one has, and indexing off a single section would drop it.
+          const secSeries = Object.fromEntries(visibleSections.map(x =>
+            [x.key, (cv.series[x.key] || {})[cvGrain] || []]));
+          const sectionPeriods = [...new Set(
+            Object.values(secSeries).flat().map(p => p.period))].sort();
 
-          const rows = pts.map(p => {
-            const vals = Object.fromEntries(seriesKeys.map(k => [labelFor(k), valueFor(p, k)]));
-            return { label: fmtPeriod(p.period),
+          const seriesKeys = bySection
+            ? visibleSections.map(x => x.key)
+                .filter(k => (secSeries[k] || []).some(p => sumCells(p.cells) > 0))
+            : candidates.filter(k => pts.some(p => valueFor(p, k) > 0));
+          const labelFor = (k) => bySection ? secLabel(k)
+            : byConversion ? (cv.conversions.find(c => c.key === k)?.label || k) : k;
+          const colorFor = (k) => bySection ? (SEC_COLORS[k] || C.muted)
+            : byConversion ? (CV_COLORS[k] || C.muted) : (CH_COLORS[k] || C.muted);
+
+          const rows = (bySection ? sectionPeriods : pts.map(p => p.period)).map(pd => {
+            const vals = Object.fromEntries(seriesKeys.map(k => {
+              if (bySection) {
+                const p = (secSeries[k] || []).find(x => x.period === pd);
+                return [labelFor(k), p ? sumCells(p.cells) : 0];
+              }
+              const p = pts.find(x => x.period === pd);
+              return [labelFor(k), p ? valueFor(p, k) : 0];
+            }));
+            return { label: fmtPeriod(pd),
                      _stack: Object.values(vals).reduce((n, v) => n + v, 0), ...vals };
           });
           const anchorKey = [...seriesKeys].sort((a, b) =>
@@ -2113,15 +2163,47 @@ export default function CompyDashboard() {
                   <span key={g} style={btn(g === cvGrain)} onClick={() => setCvGrain(g)}>
                     {({ day: "Daily", week: "Weekly", month: "Monthly" })[g] || g}
                   </span>)}</div>
-                <div>{(cv.sections || []).map(sec =>
-                  <span key={sec.key} style={btn(sec.key === cvSection)}
-                        onClick={() => setCvSection(sec.key)}>
-                    {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
-                  </span>)}</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 5, alignItems: "center" }}>
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 1 }}>
+                    {bySection ? "Sections stacked" : "Entry page"}
+                  </span>
+                  {bySection
+                    ? <>
+                        <span style={btn(false)} onClick={() => setCvHiddenSec(
+                                visibleSections.length ? stackSections.map(x => x.key) : [])}>
+                          {visibleSections.length ? "None" : "All"}
+                        </span>
+                        {stackSections.map(sec => {
+                          const on = secOn(sec.key);
+                          return (
+                            <span key={sec.key}
+                                  onClick={() => setCvHiddenSec(on
+                                    ? [...cvHiddenSec, sec.key]
+                                    : cvHiddenSec.filter(x => x !== sec.key))}
+                                  style={{ ...card({ padding: "4px 9px", cursor: "pointer",
+                                                     display: "inline-flex", alignItems: "center",
+                                                     gap: 5, fontSize: 11, opacity: on ? 1 : 0.4,
+                                                     fontWeight: on ? 600 : 400,
+                                                     color: on ? C.primary : C.muted }) }}>
+                              <span style={{ width: 9, height: 9, borderRadius: 2, flexShrink: 0,
+                                             background: on ? (SEC_COLORS[sec.key] || C.muted) : "transparent",
+                                             border: `1px solid ${SEC_COLORS[sec.key] || C.muted}` }} />
+                              {secLabel(sec.key)}
+                            </span>);
+                        })}
+                      </>
+                    : (cv.sections || []).map(sec =>
+                        <span key={sec.key} style={btn(sec.key === cvSection)}
+                              onClick={() => setCvSection(sec.key)}>
+                          {secLabel(sec.key)}
+                        </span>)}
+                </div>
                 <div>
                   <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
                                  letterSpacing: 0.5, marginRight: 6 }}>Stack</span>
-                  {[["channel", "By Channel"], ["conversion", "By Conversion"]].map(([v, lbl]) =>
+                  {[["section", "By Section"], ["channel", "By Channel"],
+                    ["conversion", "By Conversion"]].map(([v, lbl]) =>
                     <span key={v} style={btn(cvStackBy === v)} onClick={() => setCvStackBy(v)}>
                       {lbl}
                     </span>)}
@@ -2189,7 +2271,7 @@ export default function CompyDashboard() {
               <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 2 }}>
                 {grand.toLocaleString()}
                 <span style={{ fontSize: 11, color: C.muted, fontWeight: 400 }}>
-                  {" "}{picked?.label} over the {rows.length} {cvGrain}s shown
+                  {" "}{picked?.label}{bySection ? " across all sections" : ""} over the {rows.length} {cvGrain}s shown
                   {wanted.length > 1
                     ? " — conversion types added together, so one visitor doing two counts twice"
                     : ""}
@@ -2206,7 +2288,7 @@ export default function CompyDashboard() {
                 <div style={{ height: 200, display: "flex", alignItems: "center",
                               justifyContent: "center", fontSize: 12, color: C.muted,
                               fontStyle: "italic" }}>
-                  No {picked?.label} recorded for this entry page with the current channel filter.
+                  No {picked?.label} recorded{bySection ? "" : " for this entry page"} with the current filters.
                 </div>
               ) : (
               <ResponsiveContainer width="100%" height={300}>
