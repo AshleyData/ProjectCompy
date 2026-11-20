@@ -42887,12 +42887,12 @@
       {
         "key": "asset_download",
         "label": "Asset download",
-        "caveat": "form submission on a /guides or /resources page, not a download event"
+        "caveat": null
       },
       {
         "key": "newsletter",
         "label": "Newsletter",
-        "caveat": "assumed to be the subscribe box on the index pages \u2014 unconfirmed"
+        "caveat": null
       },
       {
         "key": "other_form",
@@ -48935,8 +48935,6 @@
       }
     },
     "caveats": {
-      "asset_download": "form submission on a /guides or /resources page, not a download event",
-      "newsletter": "assumed to be the subscribe box on the index pages \u2014 unconfirmed",
       "signup_click": "a click on the sign-up CTA, not a completed sign-up"
     }
   },
@@ -55845,20 +55843,20 @@
         }
       },
       "by_category": {
-        "Podcast episode": {
+        "Podcast clip": {
           "current": {
-            "engaged_views": 715,
-            "raw_views": 1079,
-            "watch_minutes": 2198,
-            "subs_gained": 12,
-            "videos": 45
+            "engaged_views": 628,
+            "raw_views": 2369,
+            "watch_minutes": 209,
+            "subs_gained": 0,
+            "videos": 63
           },
           "prior": {
-            "engaged_views": 854,
-            "raw_views": 1304,
-            "watch_minutes": 2918,
-            "subs_gained": 7,
-            "videos": 40
+            "engaged_views": 3885,
+            "raw_views": 15858,
+            "watch_minutes": 1209,
+            "subs_gained": 5,
+            "videos": 60
           }
         },
         "Kohavi webinar": {
@@ -55877,36 +55875,20 @@
             "videos": 2
           }
         },
-        "Other webinar": {
+        "Podcast episode": {
           "current": {
-            "engaged_views": 79,
-            "raw_views": 92,
-            "watch_minutes": 603,
-            "subs_gained": 0,
-            "videos": 10
+            "engaged_views": 715,
+            "raw_views": 1079,
+            "watch_minutes": 2198,
+            "subs_gained": 12,
+            "videos": 45
           },
           "prior": {
-            "engaged_views": 122,
-            "raw_views": 135,
-            "watch_minutes": 497,
-            "subs_gained": 0,
-            "videos": 10
-          }
-        },
-        "Podcast clip": {
-          "current": {
-            "engaged_views": 628,
-            "raw_views": 2369,
-            "watch_minutes": 209,
-            "subs_gained": 0,
-            "videos": 63
-          },
-          "prior": {
-            "engaged_views": 3885,
-            "raw_views": 15858,
-            "watch_minutes": 1209,
-            "subs_gained": 5,
-            "videos": 60
+            "engaged_views": 854,
+            "raw_views": 1304,
+            "watch_minutes": 2918,
+            "subs_gained": 7,
+            "videos": 40
           }
         },
         "Product long-form": {
@@ -55939,6 +55921,22 @@
             "watch_minutes": 9,
             "subs_gained": 0,
             "videos": 13
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 79,
+            "raw_views": 92,
+            "watch_minutes": 603,
+            "subs_gained": 0,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 122,
+            "raw_views": 135,
+            "watch_minutes": 497,
+            "subs_gained": 0,
+            "videos": 10
           }
         }
       },
