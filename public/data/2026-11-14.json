@@ -42890,11 +42890,6 @@
         "caveat": "form submission on a /guides or /resources page, not a download event"
       },
       {
-        "key": "giveaway",
-        "label": "Giveaway / contest",
-        "caveat": null
-      },
-      {
         "key": "newsletter",
         "label": "Newsletter",
         "caveat": "assumed to be the subscribe box on the index pages \u2014 unconfirmed"
@@ -43128,14 +43123,6 @@
             }
           },
           {
-            "period": "2026-09-12",
-            "cells": {
-              "giveaway": {
-                "Direct": 3
-              }
-            }
-          },
-          {
             "period": "2026-09-13",
             "cells": {
               "demo_request": {
@@ -43229,9 +43216,6 @@
           {
             "period": "2026-09-19",
             "cells": {
-              "giveaway": {
-                "Direct": 13
-              },
               "contact_sales": {
                 "Direct": 1
               }
@@ -43272,9 +43256,6 @@
               },
               "other_form": {
                 "Email": 2
-              },
-              "giveaway": {
-                "Direct": 2
               },
               "live_demo": {
                 "Referral": 1,
@@ -43333,9 +43314,6 @@
               },
               "asset_download": {
                 "Organic Search": 1
-              },
-              "giveaway": {
-                "Direct": 1
               }
             }
           },
@@ -43400,9 +43378,6 @@
           {
             "period": "2026-09-30",
             "cells": {
-              "giveaway": {
-                "Direct": 39
-              },
               "demo_request": {
                 "Organic Search": 3,
                 "Referral": 2,
@@ -43424,10 +43399,6 @@
           {
             "period": "2026-10-01",
             "cells": {
-              "giveaway": {
-                "Direct": 44,
-                "Referral": 1
-              },
               "demo_request": {
                 "Organic Search": 3,
                 "Direct": 1
@@ -44316,7 +44287,7 @@
               },
               "signup_click": {
                 "Organic Search": 17,
-                "Direct": 8,
+                "Direct": 9,
                 "Paid Search": 2,
                 "AI Assistants": 1,
                 "Referral": 1
@@ -44380,18 +44351,12 @@
               },
               "asset_download": {
                 "Organic Search": 2
-              },
-              "giveaway": {
-                "Direct": 3
               }
             }
           },
           {
             "period": "2026-09-14",
             "cells": {
-              "giveaway": {
-                "Direct": 13
-              },
               "demo_request": {
                 "Direct": 9,
                 "Organic Search": 7,
@@ -44440,9 +44405,6 @@
               "other_form": {
                 "Email": 2
               },
-              "giveaway": {
-                "Direct": 3
-              },
               "newsletter": {
                 "Direct": 1
               },
@@ -44454,10 +44416,6 @@
           {
             "period": "2026-09-28",
             "cells": {
-              "giveaway": {
-                "Direct": 83,
-                "Referral": 1
-              },
               "demo_request": {
                 "Organic Search": 9,
                 "Direct": 8,
@@ -44714,7 +44672,7 @@
               },
               "signup_click": {
                 "Organic Search": 71,
-                "Direct": 47,
+                "Direct": 48,
                 "Paid Search": 14,
                 "Referral": 10,
                 "AI Assistants": 2,
@@ -44733,9 +44691,6 @@
                 "Paid Search": 5,
                 "Referral": 3,
                 "AI Assistants": 1
-              },
-              "giveaway": {
-                "Direct": 58
               },
               "contact_sales": {
                 "Direct": 23,
@@ -44771,10 +44726,6 @@
           {
             "period": "2026-10-01",
             "cells": {
-              "giveaway": {
-                "Direct": 44,
-                "Referral": 1
-              },
               "demo_request": {
                 "Organic Search": 37,
                 "Direct": 28,
@@ -44852,7 +44803,7 @@
               },
               "signup_click": {
                 "Organic Search": 236,
-                "Direct": 167,
+                "Direct": 168,
                 "Paid Search": 40,
                 "Referral": 38,
                 "AI Assistants": 9,
@@ -44880,10 +44831,10 @@
               "live_demo": {
                 "Direct": 1
               },
-              "contact_sales": {
+              "other_form": {
                 "Direct": 1
               },
-              "other_form": {
+              "contact_sales": {
                 "Direct": 1
               }
             }
@@ -44922,11 +44873,11 @@
                 "Direct": 2,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Organic Search": 1
-              },
               "asset_download": {
                 "Organic Search": 2
+              },
+              "live_demo": {
+                "Organic Search": 1
               }
             }
           },
@@ -44936,11 +44887,11 @@
               "demo_request": {
                 "Organic Search": 2
               },
-              "live_demo": {
-                "Direct": 1,
-                "Paid Search": 1
-              },
               "other_form": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Paid Search": 1,
                 "Direct": 1
               }
             }
@@ -44986,12 +44937,12 @@
               "asset_download": {
                 "Organic Search": 2
               },
+              "newsletter": {
+                "Direct": 1
+              },
               "demo_request": {
                 "Paid Search": 1,
                 "Organic Search": 1
-              },
-              "newsletter": {
-                "Direct": 1
               },
               "live_demo": {
                 "Organic Search": 1
@@ -45061,11 +45012,11 @@
           {
             "period": "2026-09-24",
             "cells": {
-              "live_demo": {
-                "Direct": 1
-              },
               "demo_request": {
                 "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
               }
             }
           },
@@ -45131,11 +45082,11 @@
           {
             "period": "2026-10-02",
             "cells": {
-              "live_demo": {
-                "Organic Search": 1
-              },
               "demo_request": {
                 "Paid Search": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
               }
             }
           },
@@ -45209,12 +45160,12 @@
           {
             "period": "2026-10-13",
             "cells": {
-              "demo_request": {
-                "Organic Search": 1,
-                "Paid Search": 1
-              },
               "contact_sales": {
-                "Direct": 1,
+                "Organic Search": 1,
+                "Paid Search": 1,
+                "Direct": 1
+              },
+              "demo_request": {
                 "Organic Search": 1,
                 "Paid Search": 1
               }
@@ -45223,10 +45174,10 @@
           {
             "period": "2026-10-14",
             "cells": {
-              "demo_request": {
+              "contact_sales": {
                 "Organic Search": 1
               },
-              "contact_sales": {
+              "demo_request": {
                 "Organic Search": 1
               },
               "live_demo": {
@@ -45237,11 +45188,11 @@
           {
             "period": "2026-10-15",
             "cells": {
-              "live_demo": {
-                "Organic Search": 1
-              },
               "demo_request": {
                 "Direct": 1,
+                "Organic Search": 1
+              },
+              "live_demo": {
                 "Organic Search": 1
               }
             }
@@ -45249,15 +45200,15 @@
           {
             "period": "2026-10-16",
             "cells": {
+              "live_demo": {
+                "Organic Search": 1
+              },
               "contact_sales": {
                 "Organic Search": 1
               },
               "demo_request": {
-                "Referral": 1,
-                "Paid Search": 1
-              },
-              "live_demo": {
-                "Organic Search": 1
+                "Paid Search": 1,
+                "Referral": 1
               }
             }
           },
@@ -45279,12 +45230,12 @@
                 "Direct": 3,
                 "Organic Search": 1
               },
+              "live_demo": {
+                "AI Assistants": 1,
+                "Direct": 1
+              },
               "newsletter": {
                 "Organic Search": 1
-              },
-              "live_demo": {
-                "Direct": 1,
-                "AI Assistants": 1
               }
             }
           },
@@ -45295,8 +45246,8 @@
                 "Organic Search": 1
               },
               "demo_request": {
-                "Paid Search": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Paid Search": 1
               },
               "newsletter": {
                 "Direct": 1
@@ -45325,10 +45276,10 @@
           {
             "period": "2026-10-22",
             "cells": {
-              "demo_request": {
+              "live_demo": {
                 "Direct": 1
               },
-              "live_demo": {
+              "demo_request": {
                 "Direct": 1
               },
               "signup_click": {
@@ -45343,11 +45294,11 @@
           {
             "period": "2026-10-23",
             "cells": {
-              "demo_request": {
-                "Organic Search": 1
-              },
               "contact_sales": {
                 "Direct": 1
+              },
+              "demo_request": {
+                "Organic Search": 1
               },
               "signup_click": {
                 "Direct": 8,
@@ -45438,8 +45389,8 @@
             "cells": {
               "demo_request": {
                 "Organic Search": 2,
-                "Paid Search": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Paid Search": 1
               },
               "contact_sales": {
                 "Direct": 1
@@ -45456,8 +45407,8 @@
             "period": "2026-10-30",
             "cells": {
               "demo_request": {
-                "Organic Search": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Organic Search": 1
               },
               "live_demo": {
                 "Organic Search": 1
@@ -45491,16 +45442,16 @@
           {
             "period": "2026-11-02",
             "cells": {
-              "live_demo": {
-                "Direct": 1
-              },
               "contact_sales": {
                 "Organic Search": 1
+              },
+              "other_form": {
+                "Direct": 1
               },
               "newsletter": {
                 "Direct": 1
               },
-              "other_form": {
+              "live_demo": {
                 "Direct": 1
               },
               "signup_click": {
@@ -45593,8 +45544,8 @@
             "period": "2026-11-09",
             "cells": {
               "demo_request": {
-                "Organic Search": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Organic Search": 1
               },
               "other_form": {
                 "Direct": 1
@@ -45709,8 +45660,8 @@
             "period": "2026-11-17",
             "cells": {
               "demo_request": {
-                "Organic Social": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Organic Social": 1
               },
               "signup_click": {
                 "Organic Search": 10,
@@ -45726,8 +45677,8 @@
             "cells": {
               "contact_sales": {
                 "Direct": 2,
-                "Referral": 1,
-                "Paid Search": 1
+                "Paid Search": 1,
+                "Referral": 1
               },
               "signup_click": {
                 "Organic Search": 20,
@@ -45740,11 +45691,11 @@
           {
             "period": "2026-11-19",
             "cells": {
-              "demo_request": {
-                "Direct": 1,
-                "Paid Search": 1
-              },
               "other_form": {
+                "Direct": 1
+              },
+              "demo_request": {
+                "Paid Search": 1,
                 "Direct": 1
               },
               "signup_click": {
@@ -45784,14 +45735,14 @@
                 "Organic Search": 3,
                 "Paid Search": 1
               },
-              "live_demo": {
+              "contact_sales": {
                 "Paid Search": 1,
-                "Organic Search": 1,
                 "Direct": 1
               },
-              "contact_sales": {
-                "Direct": 1,
-                "Paid Search": 1
+              "live_demo": {
+                "Organic Search": 1,
+                "Paid Search": 1,
+                "Direct": 1
               },
               "asset_download": {
                 "Organic Search": 2
@@ -45922,8 +45873,8 @@
                 "Direct": 2
               },
               "newsletter": {
-                "Direct": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Direct": 1
               },
               "signup_click": {
                 "Organic Search": 29,
@@ -47726,14 +47677,6 @@
             }
           },
           {
-            "period": "2026-09-12",
-            "cells": {
-              "giveaway": {
-                "Direct": 3
-              }
-            }
-          },
-          {
             "period": "2026-09-13",
             "cells": {
               "demo_request": {
@@ -47789,9 +47732,6 @@
           {
             "period": "2026-09-19",
             "cells": {
-              "giveaway": {
-                "Direct": 13
-              },
               "contact_sales": {
                 "Direct": 1
               }
@@ -47816,9 +47756,6 @@
           {
             "period": "2026-09-22",
             "cells": {
-              "giveaway": {
-                "Direct": 2
-              },
               "live_demo": {
                 "Referral": 1,
                 "Direct": 1
@@ -47862,9 +47799,6 @@
                 "Direct": 1,
                 "Organic Search": 1
               },
-              "giveaway": {
-                "Direct": 1
-              },
               "live_demo": {
                 "Referral": 1
               }
@@ -47889,12 +47823,12 @@
           {
             "period": "2026-09-28",
             "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Organic Social": 1
-              },
               "other_form": {
                 "Direct": 1
+              },
+              "live_demo": {
+                "Organic Social": 1,
+                "Referral": 2
               },
               "demo_request": {
                 "Direct": 1
@@ -47921,9 +47855,6 @@
           {
             "period": "2026-09-30",
             "cells": {
-              "giveaway": {
-                "Direct": 39
-              },
               "demo_request": {
                 "Direct": 1,
                 "Referral": 1
@@ -47936,10 +47867,6 @@
           {
             "period": "2026-10-01",
             "cells": {
-              "giveaway": {
-                "Direct": 44,
-                "Referral": 1
-              },
               "live_demo": {
                 "Referral": 1,
                 "Email": 1
@@ -48061,14 +47988,14 @@
               "demo_request": {
                 "Direct": 1
               },
-              "live_demo": {
-                "Referral": 1
+              "asset_download": {
+                "Direct": 1
               },
               "contact_sales": {
                 "Direct": 1
               },
-              "asset_download": {
-                "Direct": 1
+              "live_demo": {
+                "Referral": 1
               }
             }
           },
@@ -48084,33 +48011,33 @@
           {
             "period": "2026-10-15",
             "cells": {
-              "newsletter": {
-                "Direct": 1
-              },
               "live_demo": {
                 "Referral": 1
+              },
+              "newsletter": {
+                "Direct": 1
               }
             }
           },
           {
             "period": "2026-10-20",
             "cells": {
-              "demo_request": {
-                "Direct": 1
-              },
               "live_demo": {
                 "Referral": 2
+              },
+              "demo_request": {
+                "Direct": 1
               }
             }
           },
           {
             "period": "2026-10-21",
             "cells": {
-              "live_demo": {
-                "Referral": 2
-              },
               "demo_request": {
                 "Direct": 2
+              },
+              "live_demo": {
+                "Referral": 2
               },
               "newsletter": {
                 "Direct": 1
@@ -48163,15 +48090,15 @@
           {
             "period": "2026-10-26",
             "cells": {
-              "live_demo": {
-                "Organic Search": 3
+              "contact_sales": {
+                "Direct": 1
               },
               "demo_request": {
                 "Direct": 1,
                 "Organic Search": 1
               },
-              "contact_sales": {
-                "Direct": 1
+              "live_demo": {
+                "Organic Search": 3
               },
               "signup_click": {
                 "Paid Search": 1
@@ -48197,8 +48124,8 @@
             "period": "2026-10-28",
             "cells": {
               "newsletter": {
-                "Organic Search": 1,
-                "Direct": 2
+                "Direct": 2,
+                "Organic Search": 1
               },
               "signup_click": {
                 "Organic Search": 2,
@@ -48228,12 +48155,12 @@
           {
             "period": "2026-10-30",
             "cells": {
+              "contact_sales": {
+                "Direct": 2
+              },
               "live_demo": {
                 "Referral": 2,
                 "Organic Social": 1
-              },
-              "contact_sales": {
-                "Direct": 2
               },
               "demo_request": {
                 "Email": 1
@@ -48329,9 +48256,9 @@
                 "Direct": 1
               },
               "signup_click": {
+                "AI Assistants": 1,
                 "Organic Search": 1,
-                "Paid Search": 1,
-                "AI Assistants": 1
+                "Paid Search": 1
               }
             }
           },
@@ -48365,17 +48292,17 @@
               "demo_request": {
                 "Direct": 1
               },
-              "contact_sales": {
-                "Organic Search": 1
-              },
               "live_demo": {
                 "Email": 1,
                 "Referral": 1
               },
+              "contact_sales": {
+                "Organic Search": 1
+              },
               "signup_click": {
                 "Paid Search": 1,
-                "Direct": 1,
-                "Referral": 1
+                "Referral": 1,
+                "Direct": 1
               }
             }
           },
@@ -48389,11 +48316,11 @@
               "demo_request": {
                 "Direct": 2
               },
-              "contact_sales": {
-                "AI Assistants": 1
-              },
               "newsletter": {
                 "Direct": 1
+              },
+              "contact_sales": {
+                "AI Assistants": 1
               },
               "signup_click": {
                 "Organic Search": 3
@@ -48423,8 +48350,8 @@
                 "Direct": 1
               },
               "signup_click": {
-                "Direct": 3,
                 "Organic Search": 3,
+                "Direct": 3,
                 "Paid Search": 2
               }
             }
@@ -48489,8 +48416,8 @@
               },
               "signup_click": {
                 "Direct": 2,
-                "Email": 1,
                 "Referral": 1,
+                "Email": 1,
                 "Organic Search": 1,
                 "Paid Search": 1
               }
@@ -48499,12 +48426,12 @@
           {
             "period": "2026-11-18",
             "cells": {
+              "contact_sales": {
+                "Direct": 1
+              },
               "live_demo": {
                 "Email": 1,
                 "Referral": 1
-              },
-              "contact_sales": {
-                "Direct": 1
               },
               "demo_request": {
                 "Direct": 1
@@ -48526,6 +48453,9 @@
                 "Direct": 1
               },
               "other_form": {
+                "Direct": 1
+              },
+              "signup_click": {
                 "Direct": 1
               }
             }
@@ -48572,18 +48502,12 @@
               },
               "newsletter": {
                 "Referral": 1
-              },
-              "giveaway": {
-                "Direct": 3
               }
             }
           },
           {
             "period": "2026-09-14",
             "cells": {
-              "giveaway": {
-                "Direct": 13
-              },
               "demo_request": {
                 "Direct": 3
               },
@@ -48618,19 +48542,12 @@
               "live_demo": {
                 "Referral": 6,
                 "Direct": 7
-              },
-              "giveaway": {
-                "Direct": 3
               }
             }
           },
           {
             "period": "2026-09-28",
             "cells": {
-              "giveaway": {
-                "Direct": 83,
-                "Referral": 1
-              },
               "live_demo": {
                 "Referral": 9,
                 "Organic Social": 1,
@@ -48831,7 +48748,7 @@
                 "Direct": 1
               },
               "signup_click": {
-                "Direct": 5,
+                "Direct": 6,
                 "Organic Search": 5,
                 "Paid Search": 3,
                 "Referral": 2,
@@ -48844,9 +48761,6 @@
           {
             "period": "2026-09-01",
             "cells": {
-              "giveaway": {
-                "Direct": 58
-              },
               "demo_request": {
                 "Direct": 22,
                 "Organic Search": 1,
@@ -48880,10 +48794,6 @@
           {
             "period": "2026-10-01",
             "cells": {
-              "giveaway": {
-                "Direct": 44,
-                "Referral": 1
-              },
               "live_demo": {
                 "Referral": 23,
                 "Email": 9,
@@ -48946,7 +48856,7 @@
                 "Organic Search": 1
               },
               "signup_click": {
-                "Direct": 23,
+                "Direct": 24,
                 "Organic Search": 18,
                 "Paid Search": 11,
                 "Referral": 3,
@@ -55935,20 +55845,20 @@
         }
       },
       "by_category": {
-        "Other webinar": {
+        "Podcast clip": {
           "current": {
-            "engaged_views": 79,
-            "raw_views": 92,
-            "watch_minutes": 603,
+            "engaged_views": 628,
+            "raw_views": 2369,
+            "watch_minutes": 209,
             "subs_gained": 0,
-            "videos": 10
+            "videos": 63
           },
           "prior": {
-            "engaged_views": 122,
-            "raw_views": 135,
-            "watch_minutes": 497,
-            "subs_gained": 0,
-            "videos": 10
+            "engaged_views": 3885,
+            "raw_views": 15858,
+            "watch_minutes": 1209,
+            "subs_gained": 5,
+            "videos": 60
           }
         },
         "Podcast episode": {
@@ -55965,22 +55875,6 @@
             "watch_minutes": 2918,
             "subs_gained": 7,
             "videos": 40
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1175,
-            "raw_views": 1776,
-            "watch_minutes": 3729,
-            "subs_gained": 4,
-            "videos": 65
-          },
-          "prior": {
-            "engaged_views": 1451,
-            "raw_views": 2276,
-            "watch_minutes": 4395,
-            "subs_gained": 7,
-            "videos": 66
           }
         },
         "Kohavi webinar": {
@@ -56015,20 +55909,36 @@
             "videos": 13
           }
         },
-        "Podcast clip": {
+        "Product long-form": {
           "current": {
-            "engaged_views": 628,
-            "raw_views": 2369,
-            "watch_minutes": 209,
-            "subs_gained": 0,
-            "videos": 63
+            "engaged_views": 1175,
+            "raw_views": 1776,
+            "watch_minutes": 3729,
+            "subs_gained": 4,
+            "videos": 65
           },
           "prior": {
-            "engaged_views": 3885,
-            "raw_views": 15858,
-            "watch_minutes": 1209,
-            "subs_gained": 5,
-            "videos": 60
+            "engaged_views": 1451,
+            "raw_views": 2276,
+            "watch_minutes": 4395,
+            "subs_gained": 7,
+            "videos": 66
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 79,
+            "raw_views": 92,
+            "watch_minutes": 603,
+            "subs_gained": 0,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 122,
+            "raw_views": 135,
+            "watch_minutes": 497,
+            "subs_gained": 0,
+            "videos": 10
           }
         }
       },

@@ -1425,7 +1425,7 @@ export default function CompyDashboard() {
   // Channels hidden from the Web Traffic chart. Hidden rather than "shown" so
   // a channel that only appears in later data is visible by default.
   const [tcHidden, setTcHidden] = useState([]);
-  const [cvGrain, setCvGrain] = useState("month");   // small numbers; coarse by default
+  const [cvGrain, setCvGrain] = useState("week");
   const [cvSection, setCvSection] = useState("growthbook.io|total");
   const [cvPick, setCvPick] = useState("demo_request");
   const [moreOpen, setMoreOpen] = useState(false);
@@ -2045,8 +2045,10 @@ export default function CompyDashboard() {
                 Plausible conversions by <b>entry page</b> and channel — where the visit
                 started, not where it converted. Plausible has a single generic form goal, so
                 these are split apart by the form's path. Volumes are small (single digits per
-                week for most), so the default grain is monthly and the table below carries the
-                cross-tab; the chart is indicative.
+                week for most), so the table below carries the cross-tab and the chart is
+                indicative. Giveaway and contest entry forms are excluded — they are campaign
+                sign-ups rather than buying intent, and at ~100 a quarter they would have
+                dominated whichever bucket held them.
               </p>
               <div style={{ marginBottom: 10 }}>
                 <div>{(cv.grains || []).map(g =>
@@ -2136,10 +2138,30 @@ export default function CompyDashboard() {
                           </td>)}
                       </tr>)}
                   </tbody>
+                  <tfoot>
+                    <tr>
+                      <td style={{ padding: "7px 8px", fontWeight: 700,
+                                   borderTop: `2px solid ${C.border}` }}>
+                        Total conversions
+                      </td>
+                      {(cv.sections || []).map((sec, i) => {
+                        const t = matrix.reduce((n, m) => n + (m.cells[i] || 0), 0);
+                        return (
+                          <td key={sec.key} style={{ textAlign: "right", padding: "7px 8px",
+                                                     fontWeight: 700,
+                                                     fontVariantNumeric: "tabular-nums",
+                                                     color: t ? C.primary : C.border,
+                                                     borderTop: `2px solid ${C.border}` }}>
+                            {t || "·"}
+                          </td>);
+                      })}
+                    </tr>
+                  </tfoot>
                 </table>
               </div>
               <div style={{ fontSize: 10, color: C.muted, marginTop: 7, textAlign: "left" }}>
-                Totals over the {cvGrain}s held in the payload. "All pages" is Plausible's own
+                The total row adds the conversion types together, so one visitor who both
+                requested a demo and subscribed counts twice. "All pages" is Plausible's own
                 figure for the whole site, so it is not the sum of the columns beside it — one
                 visitor can start two visits on different pages in the same period. ⚠ marks a
                 conversion whose definition carries a caveat; hover it.
