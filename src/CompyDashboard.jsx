@@ -1427,7 +1427,7 @@ export default function CompyDashboard() {
   const [tcHidden, setTcHidden] = useState([]);
   const [cvGrain, setCvGrain] = useState("week");
   const [cvSection, setCvSection] = useState("growthbook.io|total");
-  const [cvPick, setCvPick] = useState("demo_request");
+  const [cvPick, setCvPick] = useState(null);   // null = "All"; else an array of keys
   const [cvStackBy, setCvStackBy] = useState("channel");   // channel | conversion
   const [cvHiddenCh, setCvHiddenCh] = useState([]);
   const [moreOpen, setMoreOpen] = useState(false);
@@ -2023,20 +2023,33 @@ export default function CompyDashboard() {
             return `${m}/${dd}`;
           };
           const pts = (cv.series[cvSection] || {})[cvGrain] || [];
-          const ALL = "__all__";
-          const NO_SIGNUP = "__nosignup__";
           const byConversion = cvStackBy === "conversion";
           const convKeys = cv.conversions.map(c => c.key);
 
           // The picker is a FILTER over conversions, not a stack selector, so
           // it stays live in both modes: By Channel sums the selection into
           // each channel, By Conversion shows the selection as the series.
-          const wanted = cvPick === ALL ? convKeys
-            : cvPick === NO_SIGNUP ? convKeys.filter(k => k !== "signup_click")
-            : [cvPick];
-          const picked = cvPick === ALL ? { key: ALL, label: "All" }
-            : cvPick === NO_SIGNUP ? { key: NO_SIGNUP, label: "All except sign-ups" }
-            : (cv.conversions.find(c => c.key === cvPick) || cv.conversions[0]);
+          // null means "everything", so a conversion added later is included
+          // by default rather than silently missing from a stored list.
+          const wanted = cvPick === null ? convKeys : cvPick.filter(k => convKeys.includes(k));
+          const noSignupSet = convKeys.filter(k => k !== "signup_click");
+          const isAll = wanted.length === convKeys.length;
+          const isNoSignup = !isAll && wanted.length === noSignupSet.length
+            && noSignupSet.every(k => wanted.includes(k));
+          const label = isAll ? "All"
+            : isNoSignup ? "All except sign-ups"
+            : wanted.length === 1
+              ? (cv.conversions.find(c => c.key === wanted[0])?.label || wanted[0])
+              : `${wanted.length} conversions`;
+          const picked = { label };
+          // Caveats for whatever is selected — several can apply at once.
+          const activeCaveats = wanted
+            .map(k => cv.conversions.find(c => c.key === k))
+            .filter(c => c?.caveat);
+          const toggleConv = (k) => {
+            const next = wanted.includes(k) ? wanted.filter(x => x !== k) : [...wanted, k];
+            setCvPick(next.length === convKeys.length ? null : next);
+          };
 
           const chanOn = (c) => !cvHiddenCh.includes(c);
           const visibleChans = (cv.channels || []).filter(chanOn);
@@ -2116,13 +2129,27 @@ export default function CompyDashboard() {
                 <div>
                   <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
                                  letterSpacing: 0.5, marginRight: 6 }}>Conversion</span>
-                  {[{ key: ALL, label: "All" },
-                    { key: NO_SIGNUP, label: "No Sign-ups" },
-                    ...cv.conversions].map(c =>
-                    <span key={c.key} style={btn(c.key === cvPick)}
-                          onClick={() => setCvPick(c.key)}>
-                      {c.label}
-                    </span>)}
+                  <span style={btn(isAll)} onClick={() => setCvPick(null)}>All</span>
+                  <span style={btn(isNoSignup)} onClick={() => setCvPick(noSignupSet)}>
+                    No Sign-ups
+                  </span>
+                  <span style={{ color: C.border, margin: "0 4px" }}>|</span>
+                  {cv.conversions.map(c => {
+                    const on = wanted.includes(c.key);
+                    return (
+                      <span key={c.key} onClick={() => toggleConv(c.key)}
+                            style={{ ...card({ padding: "4px 9px", marginRight: 5,
+                                               marginBottom: 5, cursor: "pointer",
+                                               display: "inline-flex", alignItems: "center",
+                                               gap: 5, fontSize: 11, opacity: on ? 1 : 0.4,
+                                               fontWeight: on ? 600 : 400,
+                                               color: on ? C.primary : C.muted }) }}>
+                        <span style={{ width: 9, height: 9, borderRadius: 2, flexShrink: 0,
+                                       background: on ? (CV_COLORS[c.key] || C.muted) : "transparent",
+                                       border: `1px solid ${CV_COLORS[c.key] || C.muted}` }} />
+                        {c.label}{c.caveat ? " ⚠" : ""}
+                      </span>);
+                  })}
                 </div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 5,
                               alignItems: "center", marginTop: 3 }}>
@@ -2151,11 +2178,12 @@ export default function CompyDashboard() {
                   })}
                 </div>
               </div>
-              {picked?.caveat && (
+              {activeCaveats.length > 0 && (
                 <div style={{ ...card({ padding: "7px 11px", marginBottom: 10,
                                         background: "#FFF8E1" }),
                               fontSize: 11, color: "#7A6000" }}>
-                  <b>Caveat:</b> {picked.caveat}
+                  {activeCaveats.map(c =>
+                    <div key={c.key}><b>{c.label}:</b> {c.caveat}</div>)}
                 </div>
               )}
               <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 2 }}>
@@ -2168,7 +2196,13 @@ export default function CompyDashboard() {
                   {cvHiddenCh.length ? ` · ${cvHiddenCh.length} channel(s) hidden` : ""}
                 </span>
               </div>
-              {!seriesKeys.length ? (
+              {!wanted.length ? (
+                <div style={{ height: 200, display: "flex", alignItems: "center",
+                              justifyContent: "center", fontSize: 12, color: C.muted,
+                              fontStyle: "italic" }}>
+                  No conversions selected — pick one above.
+                </div>
+              ) : !seriesKeys.length ? (
                 <div style={{ height: 200, display: "flex", alignItems: "center",
                               justifyContent: "center", fontSize: 12, color: C.muted,
                               fontStyle: "italic" }}>
