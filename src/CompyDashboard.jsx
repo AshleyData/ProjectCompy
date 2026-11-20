@@ -1335,17 +1335,17 @@ function VideoTab({ video }) {
 // reference material reachable from the "More ▾" drawer. The Opportunities tab was
 // retired into Strategy, so it no longer appears here.
 const PRIMARY_TABS = [
-  { id: "kpi", label: "🎯 KPIs" },
   // id stays `traffic_channels` — it is referenced by the tab body and any
   // bookmarked ?tab= link; only the label changed.
   { id: "traffic_channels", label: "📈 Web Traffic" },
   { id: "conversions", label: "🎯 Conversions" },
-  { id: "strategy", label: "🧭 Strategy" },
   { id: "seo_scorecard", label: "🏆 SEO Scorecard" },
+  { id: "kpi", label: "🎯 KPIs" },
   { id: "summary", label: "📊 Summary" },
   { id: "gb_youtube", label: "🎬 GrowthBook YouTube" },
 ];
 const MORE_TABS = [
+  { id: "strategy", label: "🧭 Strategy" },
   { id: "ai_visibility", label: "🔎 AI Visibility" },
   { id: "backlinks", label: "🔗 Backlinks" },
   { id: "competitors", label: "🏁 Competitors" },
@@ -1413,7 +1413,7 @@ function AdviceCell({ item, context, fallback }) {
 }
 
 export default function CompyDashboard() {
-  const [tab, setTab] = useState("strategy");
+  const [tab, setTab] = useState("traffic_channels");
   // Traffic Channels tab controls. Week is the default grain because it is the
   // grain the weekly brief and the rest of the dashboard speak in.
   const [tcGrain, setTcGrain] = useState("week");
