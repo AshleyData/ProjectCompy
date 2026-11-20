@@ -1428,6 +1428,7 @@ export default function CompyDashboard() {
   const [cvGrain, setCvGrain] = useState("week");
   const [cvSection, setCvSection] = useState("growthbook.io|total");
   const [cvPick, setCvPick] = useState("demo_request");
+  const [cvStackBy, setCvStackBy] = useState("channel");   // channel | conversion
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -1999,11 +2000,21 @@ export default function CompyDashboard() {
             "Paid Search": "#A3C759", "Organic Social": "#1FBFC4", "AI Assistants": "#F2C230",
             "Email": "#EE7BA8", "Paid Social": "#E8705A", "Organic Video": "#8E9BAA",
           };
-          const btn = (active) => ({
-            ...card({ padding: "5px 11px", marginRight: 6, marginBottom: 5, cursor: "pointer",
+          // Distinct from the channel palette — the two stack dimensions must
+          // not share colours or a stack looks like the same series re-cut.
+          const CV_COLORS = {
+            demo_request: "#2E6FD6", contact_sales: "#C2553D", live_demo: "#7E57C2",
+            asset_download: "#2E9E83", newsletter: "#D99A1E", other_form: "#8E9BAA",
+            signup_click: "#B0457B",
+          };
+          const btn = (active, disabled) => ({
+            ...card({ padding: "5px 11px", marginRight: 6, marginBottom: 5,
+                      cursor: disabled ? "default" : "pointer",
                       display: "inline-block", fontSize: 12,
-                      background: active ? C.primary : "transparent",
-                      color: active ? "#fff" : C.muted, fontWeight: active ? 700 : 400 }),
+                      opacity: disabled ? 0.35 : 1,
+                      background: active && !disabled ? C.primary : "transparent",
+                      color: active && !disabled ? "#fff" : C.muted,
+                      fontWeight: active && !disabled ? 700 : 400 }),
           });
           const fmtPeriod = (iso) => {
             const [y, m, dd] = iso.split("-");
@@ -2011,20 +2022,42 @@ export default function CompyDashboard() {
             return `${m}/${dd}`;
           };
           const pts = (cv.series[cvSection] || {})[cvGrain] || [];
-          const picked = cv.conversions.find(c => c.key === cvPick) || cv.conversions[0];
-          const chanTotals = {};
-          pts.forEach(p => Object.entries((p.cells || {})[cvPick] || {})
-            .forEach(([ch, v]) => { chanTotals[ch] = (chanTotals[ch] || 0) + v; }));
-          const chans = (cv.channels || []).filter(c => chanTotals[c]);
+          const ALL = "__all__";
+          const byConversion = cvStackBy === "conversion";
+          const picked = cvPick === ALL
+            ? { key: ALL, label: "All conversions" }
+            : (cv.conversions.find(c => c.key === cvPick) || cv.conversions[0]);
+
+          // One accessor for both stack dimensions. In channel mode a series is
+          // a channel and we sum the chosen conversion(s) into it; in conversion
+          // mode a series is a conversion and we sum every channel into it.
+          const convKeys = cv.conversions.map(c => c.key);
+          const wanted = (byConversion || cvPick === ALL) ? convKeys : [cvPick];
+          const valueFor = (p, seriesKey) => {
+            const cells = p.cells || {};
+            if (byConversion) {
+              return Object.values(cells[seriesKey] || {}).reduce((n, v) => n + v, 0);
+            }
+            return wanted.reduce((n, ck) => n + ((cells[ck] || {})[seriesKey] || 0), 0);
+          };
+
+          const candidates = byConversion ? convKeys : (cv.channels || []);
+          const seriesKeys = candidates.filter(k => pts.some(p => valueFor(p, k) > 0));
+          const labelFor = (k) => byConversion
+            ? (cv.conversions.find(c => c.key === k)?.label || k) : k;
+          const colorFor = (k) => byConversion
+            ? (CV_COLORS[k] || C.muted) : (CH_COLORS[k] || C.muted);
+
           const rows = pts.map(p => {
-            const cells = (p.cells || {})[cvPick] || {};
-            const tot = Object.values(cells).reduce((n, v) => n + v, 0);
-            return { label: fmtPeriod(p.period), _stack: tot,
-                     ...Object.fromEntries(chans.map(c => [c, cells[c] || 0])) };
+            const vals = Object.fromEntries(seriesKeys.map(k => [labelFor(k), valueFor(p, k)]));
+            return { label: fmtPeriod(p.period),
+                     _stack: Object.values(vals).reduce((n, v) => n + v, 0), ...vals };
           });
-          const anchorCh = [...chans].sort((a, b) =>
-            rows.filter(r => r[b] > 0).length - rows.filter(r => r[a] > 0).length)[0];
-          const stackOrder = chans.length ? [...chans.filter(c => c !== anchorCh), anchorCh] : [];
+          const anchorKey = [...seriesKeys].sort((a, b) =>
+            rows.filter(r => r[labelFor(b)] > 0).length
+            - rows.filter(r => r[labelFor(a)] > 0).length)[0];
+          const stackOrder = seriesKeys.length
+            ? [...seriesKeys.filter(k => k !== anchorKey), anchorKey] : [];
           const grand = rows.reduce((n, r) => n + r._stack, 0);
 
           // Matrix: every conversion x every section, summed over the periods
@@ -2060,12 +2093,32 @@ export default function CompyDashboard() {
                         onClick={() => setCvSection(sec.key)}>
                     {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
                   </span>)}</div>
-                <div>{cv.conversions.map(c =>
-                  <span key={c.key} style={btn(c.key === cvPick)} onClick={() => setCvPick(c.key)}>
-                    {c.label}
-                  </span>)}</div>
+                <div>
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 6 }}>Stack</span>
+                  {[["channel", "By Channel"], ["conversion", "By Conversion"]].map(([v, lbl]) =>
+                    <span key={v} style={btn(cvStackBy === v)} onClick={() => setCvStackBy(v)}>
+                      {lbl}
+                    </span>)}
+                </div>
+                <div>
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 6 }}>Conversion</span>
+                  {[{ key: ALL, label: "All conversions" }, ...cv.conversions].map(c =>
+                    <span key={c.key}
+                          style={btn(c.key === cvPick, byConversion)}
+                          onClick={() => { if (!byConversion) setCvPick(c.key); }}>
+                      {c.label}
+                    </span>)}
+                </div>
+                {byConversion && (
+                  <div style={{ fontSize: 10, color: C.muted, marginTop: 2 }}>
+                    Every conversion is stacked when grouping by conversion — switch to
+                    By Channel to isolate one.
+                  </div>
+                )}
               </div>
-              {picked?.caveat && (
+              {!byConversion && cvPick !== ALL && picked?.caveat && (
                 <div style={{ ...card({ padding: "7px 11px", marginBottom: 10,
                                         background: "#FFF8E1" }),
                               fontSize: 11, color: "#7A6000" }}>
@@ -2075,14 +2128,17 @@ export default function CompyDashboard() {
               <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 2 }}>
                 {grand.toLocaleString()}
                 <span style={{ fontSize: 11, color: C.muted, fontWeight: 400 }}>
-                  {" "}{picked?.label} over the {rows.length} {cvGrain}s shown
+                  {" "}{byConversion ? "conversions" : picked?.label} over the {rows.length} {cvGrain}s shown
+                  {byConversion || cvPick === ALL
+                    ? " — conversion types added together, so one visitor doing two counts twice"
+                    : ""}
                 </span>
               </div>
-              {!chans.length ? (
+              {!seriesKeys.length ? (
                 <div style={{ height: 200, display: "flex", alignItems: "center",
                               justifyContent: "center", fontSize: 12, color: C.muted,
                               fontStyle: "italic" }}>
-                  No {picked?.label} recorded for this entry page.
+                  No {byConversion ? "conversions" : picked?.label} recorded for this entry page.
                 </div>
               ) : (
               <ResponsiveContainer width="100%" height={300}>
@@ -2095,9 +2151,9 @@ export default function CompyDashboard() {
                          tickLine={false} allowDecimals={false} />
                   <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }} />
                   <Legend wrapperStyle={{ fontSize: 11 }} />
-                  {stackOrder.map(c =>
-                    <RBar key={c} dataKey={c} stackId="cv" fill={CH_COLORS[c] || C.muted}>
-                      {c === anchorCh && (
+                  {stackOrder.map(k =>
+                    <RBar key={k} dataKey={labelFor(k)} stackId="cv" fill={colorFor(k)}>
+                      {k === anchorKey && (
                         <LabelList dataKey="_stack" position="top" offset={6}
                                    style={{ fontSize: 9, fill: C.muted, fontWeight: 600 }}
                                    formatter={v => v || ""} />
