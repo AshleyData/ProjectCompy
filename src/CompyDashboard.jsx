@@ -1429,6 +1429,7 @@ export default function CompyDashboard() {
   const [cvSection, setCvSection] = useState("growthbook.io|total");
   const [cvPick, setCvPick] = useState("demo_request");
   const [cvStackBy, setCvStackBy] = useState("channel");   // channel | conversion
+  const [cvHiddenCh, setCvHiddenCh] = useState([]);
   const [moreOpen, setMoreOpen] = useState(false);
   // Recently-Shipped track filter: null = show all; else "AI (Insights)" | "Editorial".
   const [ncvTrack, setNcvTrack] = useState(null);
@@ -2023,25 +2024,36 @@ export default function CompyDashboard() {
           };
           const pts = (cv.series[cvSection] || {})[cvGrain] || [];
           const ALL = "__all__";
+          const NO_SIGNUP = "__nosignup__";
           const byConversion = cvStackBy === "conversion";
-          const picked = cvPick === ALL
-            ? { key: ALL, label: "All conversions" }
+          const convKeys = cv.conversions.map(c => c.key);
+
+          // The picker is a FILTER over conversions, not a stack selector, so
+          // it stays live in both modes: By Channel sums the selection into
+          // each channel, By Conversion shows the selection as the series.
+          const wanted = cvPick === ALL ? convKeys
+            : cvPick === NO_SIGNUP ? convKeys.filter(k => k !== "signup_click")
+            : [cvPick];
+          const picked = cvPick === ALL ? { key: ALL, label: "All" }
+            : cvPick === NO_SIGNUP ? { key: NO_SIGNUP, label: "All except sign-ups" }
             : (cv.conversions.find(c => c.key === cvPick) || cv.conversions[0]);
 
-          // One accessor for both stack dimensions. In channel mode a series is
-          // a channel and we sum the chosen conversion(s) into it; in conversion
-          // mode a series is a conversion and we sum every channel into it.
-          const convKeys = cv.conversions.map(c => c.key);
-          const wanted = (byConversion || cvPick === ALL) ? convKeys : [cvPick];
+          const chanOn = (c) => !cvHiddenCh.includes(c);
+          const visibleChans = (cv.channels || []).filter(chanOn);
+
+          // One accessor for both stack dimensions, with the channel filter
+          // applied in each — a hidden channel must drop out of a conversion
+          // stack just as it does from a channel stack.
           const valueFor = (p, seriesKey) => {
             const cells = p.cells || {};
             if (byConversion) {
-              return Object.values(cells[seriesKey] || {}).reduce((n, v) => n + v, 0);
+              return Object.entries(cells[seriesKey] || {})
+                .reduce((n, [ch, v]) => n + (chanOn(ch) ? v : 0), 0);
             }
             return wanted.reduce((n, ck) => n + ((cells[ck] || {})[seriesKey] || 0), 0);
           };
 
-          const candidates = byConversion ? convKeys : (cv.channels || []);
+          const candidates = byConversion ? wanted : visibleChans;
           const seriesKeys = candidates.filter(k => pts.some(p => valueFor(p, k) > 0));
           const labelFor = (k) => byConversion
             ? (cv.conversions.find(c => c.key === k)?.label || k) : k;
@@ -2104,21 +2116,42 @@ export default function CompyDashboard() {
                 <div>
                   <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
                                  letterSpacing: 0.5, marginRight: 6 }}>Conversion</span>
-                  {[{ key: ALL, label: "All conversions" }, ...cv.conversions].map(c =>
-                    <span key={c.key}
-                          style={btn(c.key === cvPick, byConversion)}
-                          onClick={() => { if (!byConversion) setCvPick(c.key); }}>
+                  {[{ key: ALL, label: "All" },
+                    { key: NO_SIGNUP, label: "No Sign-ups" },
+                    ...cv.conversions].map(c =>
+                    <span key={c.key} style={btn(c.key === cvPick)}
+                          onClick={() => setCvPick(c.key)}>
                       {c.label}
                     </span>)}
                 </div>
-                {byConversion && (
-                  <div style={{ fontSize: 10, color: C.muted, marginTop: 2 }}>
-                    Every conversion is stacked when grouping by conversion — switch to
-                    By Channel to isolate one.
-                  </div>
-                )}
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 5,
+                              alignItems: "center", marginTop: 3 }}>
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 1 }}>Channels</span>
+                  <span style={btn(false)} onClick={() => setCvHiddenCh(
+                          visibleChans.length ? (cv.channels || []) : [])}>
+                    {visibleChans.length ? "None" : "All"}
+                  </span>
+                  {(cv.channels || []).map(ch => {
+                    const on = chanOn(ch);
+                    return (
+                      <span key={ch}
+                            onClick={() => setCvHiddenCh(on ? [...cvHiddenCh, ch]
+                                                            : cvHiddenCh.filter(x => x !== ch))}
+                            style={{ ...card({ padding: "4px 9px", cursor: "pointer",
+                                               display: "inline-flex", alignItems: "center",
+                                               gap: 5, fontSize: 11, opacity: on ? 1 : 0.4,
+                                               fontWeight: on ? 600 : 400,
+                                               color: on ? C.primary : C.muted }) }}>
+                        <span style={{ width: 9, height: 9, borderRadius: 2, flexShrink: 0,
+                                       background: on ? (CH_COLORS[ch] || C.muted) : "transparent",
+                                       border: `1px solid ${CH_COLORS[ch] || C.muted}` }} />
+                        {ch}
+                      </span>);
+                  })}
+                </div>
               </div>
-              {!byConversion && cvPick !== ALL && picked?.caveat && (
+              {picked?.caveat && (
                 <div style={{ ...card({ padding: "7px 11px", marginBottom: 10,
                                         background: "#FFF8E1" }),
                               fontSize: 11, color: "#7A6000" }}>
@@ -2128,17 +2161,18 @@ export default function CompyDashboard() {
               <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 2 }}>
                 {grand.toLocaleString()}
                 <span style={{ fontSize: 11, color: C.muted, fontWeight: 400 }}>
-                  {" "}{byConversion ? "conversions" : picked?.label} over the {rows.length} {cvGrain}s shown
-                  {byConversion || cvPick === ALL
+                  {" "}{picked?.label} over the {rows.length} {cvGrain}s shown
+                  {wanted.length > 1
                     ? " — conversion types added together, so one visitor doing two counts twice"
                     : ""}
+                  {cvHiddenCh.length ? ` · ${cvHiddenCh.length} channel(s) hidden` : ""}
                 </span>
               </div>
               {!seriesKeys.length ? (
                 <div style={{ height: 200, display: "flex", alignItems: "center",
                               justifyContent: "center", fontSize: 12, color: C.muted,
                               fontStyle: "italic" }}>
-                  No {byConversion ? "conversions" : picked?.label} recorded for this entry page.
+                  No {picked?.label} recorded for this entry page with the current channel filter.
                 </div>
               ) : (
               <ResponsiveContainer width="100%" height={300}>
