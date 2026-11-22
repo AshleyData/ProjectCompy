@@ -1812,7 +1812,8 @@ export default function CompyDashboard() {
           const isHidden = (c) => tcHidden.includes(c);
           const visible = present.filter(c => !isHidden(c));
           const rows = pts.map(p => ({
-            label: fmtPeriod(p.period), period: p.period, _total: p.total,
+            label: fmtPeriod(p.period) + (p.partial ? "*" : ""),
+            period: p.period, _total: p.total, _partial: !!p.partial,
             // The bar label is the SUM OF THE DRAWN SEGMENTS, not p.total —
             // the deduplicated total is ~2% lower, and a label that disagrees
             // with the bar it sits on reads as a rendering bug.
@@ -1851,8 +1852,15 @@ export default function CompyDashboard() {
           )[0];
           const stackOrder = visible.length
             ? [...visible.filter(c => c !== anchorCh), anchorCh] : [];
-          const latest = pts.length ? pts[pts.length - 1] : null;
-          const prior  = pts.length > 1 ? pts[pts.length - 2] : null;
+          // Compare like with like: the newest period is still accruing, so a
+          // part-week against a full week reads as a crash (-27.4% for a month
+          // that was 21 days in). Headline uses the last COMPLETE period and
+          // the in-progress one is reported separately.
+          const inProgress = pts.length && pts[pts.length - 1].partial
+            ? pts[pts.length - 1] : null;
+          const done = pts.filter(p => !p.partial);
+          const latest = done.length ? done[done.length - 1] : null;
+          const prior  = done.length > 1 ? done[done.length - 2] : null;
           const pct = (latest?.total != null && prior?.total)
             ? ((latest.total - prior.total) / prior.total * 100) : null;
           const btn = (active) => ({
@@ -1924,6 +1932,12 @@ export default function CompyDashboard() {
                     );
                   })}
                 </div>
+                {rows.some(r => r._partial) && (
+                  <div style={{ fontSize: 10, color: C.muted, marginTop: 5 }}>
+                    * {fmtPeriod(rows[rows.length - 1].period)} is still in progress — shown
+                    faded and excluded from the comparison above.
+                  </div>
+                )}
                 {!showBarTotals && (
                   <div style={{ fontSize: 10, color: C.muted, marginTop: 5 }}>
                     Bar totals are hidden on the daily view — {rows.length} bars is too many to label.
@@ -1935,7 +1949,7 @@ export default function CompyDashboard() {
                 <div style={{ display: "flex", gap: 22, alignItems: "baseline", marginBottom: 10 }}>
                   <div>
                     <div style={{ fontSize: 10, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                      Latest {tcGrain} — {fmtPeriod(latest.period)}
+                      Last complete {tcGrain} — {fmtPeriod(latest.period)}
                     </div>
                     <div style={{ fontSize: 23, fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
                       {latest.total != null ? latest.total.toLocaleString() : "\u2014"}
@@ -1951,6 +1965,12 @@ export default function CompyDashboard() {
                   {latest.pageviews != null && (
                     <div style={{ fontSize: 12, color: C.muted }}>
                       {latest.pageviews.toLocaleString()} pageviews · {(latest.visits || 0).toLocaleString()} visits
+                    </div>
+                  )}
+                  {inProgress && (
+                    <div style={{ fontSize: 12, color: C.muted }}>
+                      {fmtPeriod(inProgress.period)} in progress:{" "}
+                      <b>{(inProgress.total ?? 0).toLocaleString()}</b> so far
                     </div>
                   )}
                 </div>
@@ -1973,8 +1993,15 @@ export default function CompyDashboard() {
                          tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v} />
                   <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
                             formatter={(v, n) => [v.toLocaleString(), n]} />
+                  {/* in-progress period drawn translucent so a short bar reads
+                      as "not finished", not "fell off a cliff" */}
                   {stackOrder.map(c =>
-                    <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted}>
+                    <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted}
+                          shape={(props) => (
+                            <rect x={props.x} y={props.y} width={props.width}
+                                  height={props.height} fill={props.fill}
+                                  opacity={props.payload && props.payload._partial ? 0.45 : 1} />
+                          )}>
                       {/* Only the anchor segment carries the label, so it sits
                           above the whole stack rather than inside it. */}
                       {showBarTotals && c === anchorCh && (
@@ -2125,7 +2152,13 @@ export default function CompyDashboard() {
               const p = pts.find(x => x.period === pd);
               return [labelFor(k), p ? valueFor(p, k) : 0];
             }));
-            return { label: fmtPeriod(pd),
+            // A period is in progress if ANY contributing series says so —
+            // they all share one calendar, so one flag is enough.
+            const isPartial = bySection
+              ? Object.values(secSeries).some(arr =>
+                  arr.some(x => x.period === pd && x.partial))
+              : !!(pts.find(x => x.period === pd) || {}).partial;
+            return { label: fmtPeriod(pd) + (isPartial ? "*" : ""), _partial: isPartial,
                      _stack: Object.values(vals).reduce((n, v) => n + v, 0), ...vals };
           });
           const anchorKey = [...seriesKeys].sort((a, b) =>
@@ -2133,7 +2166,9 @@ export default function CompyDashboard() {
             - rows.filter(r => r[labelFor(a)] > 0).length)[0];
           const stackOrder = seriesKeys.length
             ? [...seriesKeys.filter(k => k !== anchorKey), anchorKey] : [];
-          const grand = rows.reduce((n, r) => n + r._stack, 0);
+          const doneRows = rows.filter(r => !r._partial);
+          const grand = doneRows.reduce((n, r) => n + r._stack, 0);
+          const openRow = rows.find(r => r._partial);
 
           // Matrix: every conversion x every section, summed over the periods
           // shown. The per-period chart is too sparse to read at these volumes,
@@ -2271,12 +2306,18 @@ export default function CompyDashboard() {
               <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 2 }}>
                 {grand.toLocaleString()}
                 <span style={{ fontSize: 11, color: C.muted, fontWeight: 400 }}>
-                  {" "}{picked?.label}{bySection ? " across all sections" : ""} over the {rows.length} {cvGrain}s shown
+                  {" "}{picked?.label}{bySection ? " across all sections" : ""} over the {doneRows.length} complete {cvGrain}s
                   {wanted.length > 1
                     ? " — conversion types added together, so one visitor doing two counts twice"
                     : ""}
                   {cvHiddenCh.length ? ` · ${cvHiddenCh.length} channel(s) hidden` : ""}
                 </span>
+                {openRow && (
+                  <div style={{ fontSize: 11, color: C.muted, fontWeight: 400, marginTop: 2 }}>
+                    {openRow.label.replace("*", "")} in progress: <b>{openRow._stack}</b> so far
+                    — shown faded, excluded from the total above.
+                  </div>
+                )}
               </div>
               {!wanted.length ? (
                 <div style={{ height: 200, display: "flex", alignItems: "center",
@@ -2302,7 +2343,12 @@ export default function CompyDashboard() {
                   <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }} />
                   <Legend wrapperStyle={{ fontSize: 11 }} />
                   {stackOrder.map(k =>
-                    <RBar key={k} dataKey={labelFor(k)} stackId="cv" fill={colorFor(k)}>
+                    <RBar key={k} dataKey={labelFor(k)} stackId="cv" fill={colorFor(k)}
+                          shape={(props) => (
+                            <rect x={props.x} y={props.y} width={props.width}
+                                  height={props.height} fill={props.fill}
+                                  opacity={props.payload && props.payload._partial ? 0.45 : 1} />
+                          )}>
                       {k === anchorKey && (
                         <LabelList dataKey="_stack" position="top" offset={6}
                                    style={{ fontSize: 9, fill: C.muted, fontWeight: 600 }}
