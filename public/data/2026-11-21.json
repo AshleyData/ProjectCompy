@@ -11180,7 +11180,7 @@
           "Ai Code Review"
         ],
         "note": "Large block surfaced in the sitemap this week \u2014 likely a content section newly exposed (hub launch, migration, or sitemap change), so it probably includes pages published earlier, not all net-new this week. Counted in totals, flagged here for context.",
-        "summary": "This section is Harness's product catalog, covering their software delivery and testing platform modules such as CI/CD, chaos engineering, load testing, API testing, SAST, and AI-powered features like code review and cost management. It targets software engineering teams and DevOps practitioners evaluating or using Harness's modular platform, with the /jp subsection indicating a Japanese-language version of the same content."
+        "summary": "This section is Harness's product catalog, covering their software delivery and testing platform modules such as CI/CD, chaos engineering, load testing, API testing, SAST, and AI-powered features like code review and cost management. It targets software engineering teams and DevOps practitioners evaluating or using Harness's suite of developer tools."
       }
     ]
   },
@@ -51787,7 +51787,7 @@
       },
       {
         "key": "live_demo",
-        "label": "Event",
+        "label": "Live demo",
         "caveat": null
       },
       {
@@ -51920,11 +51920,6 @@
                 "Direct": 2,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Organic Search": 1,
-                "Direct": 1,
-                "Organic Social": 1
-              },
               "newsletter": {
                 "Direct": 1
               },
@@ -51989,9 +51984,7 @@
                 "Direct": 2
               },
               "live_demo": {
-                "Email": 2,
-                "Referral": 2,
-                "Direct": 1
+                "Email": 2
               },
               "newsletter": {
                 "Referral": 1
@@ -52007,8 +52000,7 @@
             "cells": {
               "live_demo": {
                 "Email": 5,
-                "Organic Search": 1,
-                "Referral": 1
+                "Organic Search": 1
               },
               "demo_request": {
                 "Direct": 2,
@@ -52033,16 +52025,14 @@
                 "Organic Search": 2,
                 "Direct": 1
               },
-              "live_demo": {
-                "Direct": 2,
-                "Referral": 1,
-                "Paid Search": 1,
-                "Organic Social": 1
-              },
               "newsletter": {
                 "Direct": 1
               },
               "other_form": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1,
                 "Direct": 1
               },
               "contact_sales": {
@@ -52057,9 +52047,6 @@
               "demo_request": {
                 "Direct": 2,
                 "Paid Search": 1
-              },
-              "live_demo": {
-                "Referral": 1
               },
               "contact_sales": {
                 "AI Assistants": 1
@@ -52085,9 +52072,6 @@
               },
               "newsletter": {
                 "Direct": 2
-              },
-              "live_demo": {
-                "Referral": 1
               }
             },
             "partial": false
@@ -52138,8 +52122,7 @@
                 "Direct": 2
               },
               "live_demo": {
-                "Direct": 2,
-                "Referral": 1
+                "Direct": 1
               },
               "contact_sales": {
                 "Direct": 1
@@ -52189,14 +52172,13 @@
                 "Direct": 3,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Referral": 2,
-                "Direct": 2,
-                "Organic Search": 1
-              },
               "contact_sales": {
                 "Direct": 1,
                 "Referral": 1
+              },
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -52211,12 +52193,11 @@
               "other_form": {
                 "Email": 2
               },
-              "live_demo": {
-                "Referral": 1,
-                "Direct": 1
-              },
               "contact_sales": {
                 "Organic Search": 1
+              },
+              "live_demo": {
+                "Direct": 1
               },
               "newsletter": {
                 "Direct": 1
@@ -52232,13 +52213,12 @@
                 "Paid Search": 1,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Referral": 2,
-                "Direct": 1
-              },
               "contact_sales": {
                 "Direct": 3,
                 "AI Assistants": 1
+              },
+              "live_demo": {
+                "Direct": 1
               }
             },
             "partial": false
@@ -52247,7 +52227,7 @@
             "period": "2026-09-24",
             "cells": {
               "live_demo": {
-                "Direct": 4
+                "Direct": 2
               },
               "demo_request": {
                 "Direct": 2,
@@ -52266,20 +52246,8 @@
               "contact_sales": {
                 "Direct": 3
               },
-              "live_demo": {
-                "Referral": 1
-              },
               "asset_download": {
                 "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-26",
-            "cells": {
-              "live_demo": {
-                "Direct": 1
               }
             },
             "partial": false
@@ -52301,10 +52269,6 @@
             "cells": {
               "demo_request": {
                 "Direct": 4
-              },
-              "live_demo": {
-                "Referral": 2,
-                "Organic Social": 1
               },
               "contact_sales": {
                 "Direct": 1
@@ -52328,9 +52292,6 @@
               "newsletter": {
                 "Direct": 1
               },
-              "live_demo": {
-                "Referral": 2
-              },
               "asset_download": {
                 "Organic Search": 1
               }
@@ -52352,9 +52313,6 @@
               },
               "newsletter": {
                 "Organic Search": 1
-              },
-              "live_demo": {
-                "Referral": 1
               }
             },
             "partial": false
@@ -52369,10 +52327,6 @@
               "contact_sales": {
                 "Direct": 2
               },
-              "live_demo": {
-                "Email": 1,
-                "Referral": 1
-              },
               "other_form": {
                 "Organic Social": 1
               }
@@ -52383,8 +52337,7 @@
             "period": "2026-10-02",
             "cells": {
               "live_demo": {
-                "Organic Search": 1,
-                "Referral": 2
+                "Organic Search": 1
               },
               "demo_request": {
                 "Paid Search": 1
@@ -52402,15 +52355,6 @@
             "partial": false
           },
           {
-            "period": "2026-10-04",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-10-05",
             "cells": {
               "demo_request": {
@@ -52418,14 +52362,12 @@
                 "Email": 1,
                 "Direct": 1
               },
-              "live_demo": {
-                "Referral": 2,
-                "Organic Search": 1,
-                "Email": 1,
-                "Direct": 1
-              },
               "newsletter": {
                 "Direct": 2
+              },
+              "live_demo": {
+                "Organic Search": 1,
+                "Direct": 1
               },
               "asset_download": {
                 "Direct": 1
@@ -52441,9 +52383,7 @@
             "period": "2026-10-06",
             "cells": {
               "live_demo": {
-                "Email": 5,
-                "Referral": 2,
-                "Organic Search": 1
+                "Email": 4
               },
               "demo_request": {
                 "Direct": 2,
@@ -52466,9 +52406,6 @@
               "demo_request": {
                 "Organic Search": 2,
                 "Direct": 1
-              },
-              "live_demo": {
-                "Referral": 1
               }
             },
             "partial": false
@@ -52520,7 +52457,6 @@
                 "Organic Search": 2
               },
               "live_demo": {
-                "Referral": 1,
                 "Organic Search": 1
               },
               "asset_download": {
@@ -52545,9 +52481,6 @@
                 "Direct": 1,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Referral": 1
-              },
               "asset_download": {
                 "Direct": 1
               }
@@ -52564,9 +52497,6 @@
               "contact_sales": {
                 "Direct": 2,
                 "Organic Search": 2
-              },
-              "live_demo": {
-                "Direct": 1
               }
             },
             "partial": false
@@ -52582,8 +52512,7 @@
                 "Direct": 1
               },
               "live_demo": {
-                "Organic Search": 1,
-                "Referral": 1
+                "Organic Search": 1
               }
             },
             "partial": false
@@ -52656,7 +52585,7 @@
                 "Paid Search": 1
               },
               "live_demo": {
-                "Referral": 2,
+                "Referral": 1,
                 "Organic Search": 1
               },
               "newsletter": {
@@ -52673,7 +52602,6 @@
                 "Organic Search": 2
               },
               "live_demo": {
-                "Referral": 2,
                 "Direct": 1
               },
               "newsletter": {
@@ -52699,9 +52627,6 @@
               "newsletter": {
                 "Direct": 1
               },
-              "live_demo": {
-                "Direct": 1
-              },
               "signup_click": {
                 "Direct": 12,
                 "Organic Search": 8,
@@ -52720,9 +52645,6 @@
               },
               "contact_sales": {
                 "Direct": 1
-              },
-              "live_demo": {
-                "Referral": 2
               },
               "signup_click": {
                 "Direct": 10,
@@ -52775,7 +52697,7 @@
                 "Direct": 1
               },
               "live_demo": {
-                "Organic Search": 3
+                "Organic Search": 1
               },
               "signup_click": {
                 "Organic Search": 14,
@@ -52791,9 +52713,8 @@
             "period": "2026-10-27",
             "cells": {
               "live_demo": {
-                "Organic Search": 3,
-                "Direct": 1,
-                "Referral": 2
+                "Organic Search": 2,
+                "Direct": 1
               },
               "demo_request": {
                 "Organic Search": 2,
@@ -52845,8 +52766,7 @@
               },
               "live_demo": {
                 "Email": 2,
-                "Organic Search": 1,
-                "Referral": 1
+                "Organic Search": 1
               },
               "contact_sales": {
                 "Direct": 1
@@ -52863,11 +52783,6 @@
           {
             "period": "2026-10-30",
             "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Organic Search": 1,
-                "Organic Social": 1
-              },
               "contact_sales": {
                 "Direct": 2
               },
@@ -52875,6 +52790,9 @@
                 "Organic Search": 1,
                 "Email": 1,
                 "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
               },
               "other_form": {
                 "Direct": 1
@@ -52900,9 +52818,6 @@
           {
             "period": "2026-11-01",
             "cells": {
-              "live_demo": {
-                "Referral": 1
-              },
               "signup_click": {
                 "Organic Search": 11,
                 "Direct": 7,
@@ -52947,9 +52862,6 @@
                 "Direct": 1,
                 "Paid Search": 1
               },
-              "live_demo": {
-                "Referral": 1
-              },
               "signup_click": {
                 "Direct": 8,
                 "Organic Search": 7,
@@ -52969,7 +52881,7 @@
                 "Organic Search": 1
               },
               "live_demo": {
-                "Referral": 2
+                "Referral": 1
               },
               "other_form": {
                 "Direct": 1
@@ -52991,9 +52903,6 @@
               },
               "demo_request": {
                 "Direct": 1
-              },
-              "live_demo": {
-                "Referral": 1
               },
               "signup_click": {
                 "Organic Search": 15,
@@ -53041,10 +52950,6 @@
           {
             "period": "2026-11-08",
             "cells": {
-              "live_demo": {
-                "Referral": 1,
-                "Organic Social": 1
-              },
               "signup_click": {
                 "Organic Search": 5,
                 "Referral": 2
@@ -53064,7 +52969,6 @@
                 "Organic Search": 1
               },
               "live_demo": {
-                "Referral": 1,
                 "Email": 1
               },
               "contact_sales": {
@@ -53086,16 +52990,15 @@
           {
             "period": "2026-11-10",
             "cells": {
-              "live_demo": {
-                "Referral": 3,
-                "Direct": 2
-              },
               "demo_request": {
                 "Direct": 2
               },
               "contact_sales": {
                 "Direct": 1,
                 "AI Assistants": 1
+              },
+              "live_demo": {
+                "Direct": 1
               },
               "newsletter": {
                 "Direct": 1
@@ -53113,10 +53016,6 @@
           {
             "period": "2026-11-11",
             "cells": {
-              "live_demo": {
-                "Referral": 1,
-                "Organic Social": 1
-              },
               "signup_click": {
                 "Organic Search": 14,
                 "Direct": 7,
@@ -53212,8 +53111,7 @@
                 "Organic Search": 1
               },
               "live_demo": {
-                "Referral": 1,
-                "Direct": 1
+                "Referral": 1
               },
               "newsletter": {
                 "Direct": 1
@@ -53388,7 +53286,8 @@
             "period": "2026-11-24",
             "cells": {
               "other_form": {
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Direct": 1
               },
               "newsletter": {
                 "Direct": 1
@@ -53427,9 +53326,7 @@
                 "Paid Search": 1
               },
               "live_demo": {
-                "Organic Search": 1,
-                "Direct": 2,
-                "Organic Social": 1
+                "Direct": 1
               }
             },
             "partial": false
@@ -53444,11 +53341,9 @@
               },
               "live_demo": {
                 "Email": 7,
-                "Referral": 5,
-                "Direct": 3,
-                "Organic Search": 1,
-                "Paid Search": 1,
-                "Organic Social": 1
+                "Direct": 1,
+                "Referral": 1,
+                "Organic Search": 1
               },
               "contact_sales": {
                 "Direct": 3,
@@ -53487,9 +53382,8 @@
                 "Organic Search": 2
               },
               "live_demo": {
-                "Referral": 2,
                 "Organic Search": 2,
-                "Direct": 2
+                "Direct": 1
               },
               "asset_download": {
                 "Organic Search": 2,
@@ -53514,8 +53408,7 @@
                 "Referral": 1
               },
               "live_demo": {
-                "Direct": 9,
-                "Referral": 6,
+                "Direct": 5,
                 "Organic Search": 1
               },
               "other_form": {
@@ -53543,12 +53436,6 @@
                 "Direct": 7,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Referral": 9,
-                "Email": 1,
-                "Organic Search": 1,
-                "Organic Social": 1
-              },
               "newsletter": {
                 "Direct": 1,
                 "Organic Search": 1
@@ -53559,6 +53446,9 @@
               "other_form": {
                 "Direct": 1,
                 "Organic Social": 1
+              },
+              "live_demo": {
+                "Organic Search": 1
               }
             },
             "partial": false
@@ -53579,10 +53469,9 @@
                 "Paid Search": 1
               },
               "live_demo": {
-                "Email": 6,
-                "Referral": 5,
+                "Email": 4,
                 "Direct": 2,
-                "Organic Search": 2
+                "Organic Search": 1
               },
               "newsletter": {
                 "Direct": 2
@@ -53603,21 +53492,19 @@
                 "Referral": 1
               },
               "contact_sales": {
-                "Direct": 5,
                 "Organic Search": 5,
+                "Direct": 5,
                 "Paid Search": 1
               },
               "live_demo": {
-                "Organic Search": 3,
-                "Referral": 3,
-                "Direct": 1
-              },
-              "newsletter": {
-                "Direct": 1
+                "Organic Search": 3
               },
               "asset_download": {
                 "Organic Search": 1,
                 "Direct": 2
+              },
+              "newsletter": {
+                "Direct": 1
               },
               "other_form": {
                 "Organic Search": 1,
@@ -53640,9 +53527,9 @@
                 "Organic Search": 1
               },
               "live_demo": {
-                "Referral": 6,
-                "Direct": 3,
+                "Direct": 2,
                 "Organic Search": 1,
+                "Referral": 1,
                 "AI Assistants": 1
               },
               "contact_sales": {
@@ -53668,18 +53555,16 @@
                 "Email": 1
               },
               "live_demo": {
-                "Organic Search": 8,
-                "Referral": 6,
+                "Organic Search": 6,
                 "Email": 2,
-                "Direct": 1,
-                "Organic Social": 1
+                "Direct": 1
               },
               "contact_sales": {
                 "Direct": 5
               },
               "newsletter": {
-                "Organic Search": 2,
-                "Direct": 4
+                "Direct": 4,
+                "Organic Search": 2
               },
               "other_form": {
                 "Direct": 1
@@ -53698,24 +53583,23 @@
           {
             "period": "2026-11-02",
             "cells": {
+              "contact_sales": {
+                "Direct": 4,
+                "Organic Search": 1
+              },
               "demo_request": {
                 "Direct": 4,
                 "Organic Search": 2,
                 "Paid Search": 2
               },
-              "contact_sales": {
-                "Direct": 4,
-                "Organic Search": 1
+              "newsletter": {
+                "Direct": 2
               },
               "live_demo": {
-                "Referral": 5,
-                "Organic Social": 1,
+                "Referral": 1,
                 "Direct": 1
               },
               "other_form": {
-                "Direct": 2
-              },
-              "newsletter": {
                 "Direct": 2
               },
               "signup_click": {
@@ -53733,26 +53617,24 @@
           {
             "period": "2026-11-09",
             "cells": {
-              "demo_request": {
-                "Direct": 5,
-                "Organic Search": 4,
-                "Paid Search": 2
-              },
-              "live_demo": {
-                "Referral": 5,
-                "Direct": 2,
-                "Paid Search": 1,
-                "Organic Social": 1,
-                "Email": 1
-              },
               "contact_sales": {
                 "Direct": 5,
                 "Organic Search": 4,
                 "AI Assistants": 1
               },
+              "demo_request": {
+                "Direct": 5,
+                "Organic Search": 4,
+                "Paid Search": 2
+              },
               "newsletter": {
                 "Direct": 6,
                 "Organic Search": 1
+              },
+              "live_demo": {
+                "Paid Search": 1,
+                "Direct": 1,
+                "Email": 1
               },
               "other_form": {
                 "Organic Search": 1,
@@ -53784,7 +53666,7 @@
                 "Organic Social": 1
               },
               "live_demo": {
-                "Direct": 5,
+                "Direct": 4,
                 "Email": 3,
                 "Referral": 2,
                 "Paid Search": 1
@@ -53813,15 +53695,16 @@
               "demo_request": {
                 "Direct": 5
               },
+              "other_form": {
+                "Organic Search": 1,
+                "Direct": 1
+              },
               "newsletter": {
                 "Direct": 2
               },
-              "other_form": {
-                "Organic Search": 1
-              },
               "contact_sales": {
-                "Organic Search": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Organic Search": 1
               },
               "signup_click": {
                 "Organic Search": 38,
@@ -53858,12 +53741,10 @@
                 "Referral": 1
               },
               "live_demo": {
-                "Referral": 18,
-                "Direct": 16,
+                "Direct": 8,
                 "Email": 7,
-                "Organic Search": 5,
-                "Organic Social": 3,
-                "Paid Search": 1
+                "Organic Search": 4,
+                "Referral": 1
               },
               "asset_download": {
                 "Organic Search": 6,
@@ -53894,11 +53775,10 @@
                 "Referral": 1
               },
               "live_demo": {
-                "Referral": 23,
-                "Organic Search": 15,
-                "Email": 9,
-                "Direct": 7,
-                "Organic Social": 1,
+                "Organic Search": 12,
+                "Email": 6,
+                "Direct": 5,
+                "Referral": 1,
                 "AI Assistants": 1
               },
               "newsletter": {
@@ -53941,19 +53821,18 @@
                 "Paid Search": 1,
                 "Referral": 1
               },
-              "live_demo": {
-                "Referral": 13,
-                "Direct": 8,
-                "Email": 4,
-                "Organic Social": 2,
-                "Paid Search": 2
-              },
               "newsletter": {
                 "Direct": 15,
                 "Organic Search": 1
               },
+              "live_demo": {
+                "Direct": 6,
+                "Email": 4,
+                "Referral": 3,
+                "Paid Search": 2
+              },
               "other_form": {
-                "Direct": 5,
+                "Direct": 6,
                 "Organic Search": 3
               },
               "signup_click": {
@@ -53973,15 +53852,6 @@
       },
       "growthbook.io|home": {
         "day": [
-          {
-            "period": "2026-09-02",
-            "cells": {
-              "live_demo": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
           {
             "period": "2026-09-03",
             "cells": {
@@ -54050,8 +53920,7 @@
                 "Organic Search": 2
               },
               "live_demo": {
-                "Direct": 1,
-                "Paid Search": 1
+                "Direct": 1
               },
               "other_form": {
                 "Direct": 1
@@ -54366,9 +54235,6 @@
               "demo_request": {
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Direct": 1
-              },
               "contact_sales": {
                 "Organic Search": 1
               }
@@ -54473,9 +54339,6 @@
             "period": "2026-10-22",
             "cells": {
               "demo_request": {
-                "Direct": 1
-              },
-              "live_demo": {
                 "Direct": 1
               },
               "signup_click": {
@@ -55032,15 +54895,14 @@
               "contact_sales": {
                 "Direct": 1
               },
-              "live_demo": {
-                "Organic Search": 1,
-                "Direct": 1
-              },
               "other_form": {
                 "Direct": 1
               },
               "demo_request": {
                 "AI Assistants": 1,
+                "Direct": 1
+              },
+              "live_demo": {
                 "Direct": 1
               }
             },
@@ -55056,8 +54918,7 @@
               },
               "live_demo": {
                 "Direct": 1,
-                "Organic Search": 1,
-                "Paid Search": 1
+                "Organic Search": 1
               },
               "contact_sales": {
                 "Paid Search": 1,
@@ -55172,8 +55033,7 @@
                 "Paid Search": 1
               },
               "live_demo": {
-                "Organic Search": 2,
-                "Direct": 1
+                "Organic Search": 2
               },
               "asset_download": {
                 "Organic Search": 1
@@ -55193,7 +55053,7 @@
                 "Direct": 2
               },
               "live_demo": {
-                "Direct": 3,
+                "Direct": 2,
                 "Organic Search": 1,
                 "AI Assistants": 1
               },
@@ -55377,8 +55237,7 @@
               },
               "live_demo": {
                 "Direct": 4,
-                "Organic Search": 5,
-                "Paid Search": 1
+                "Organic Search": 4
               },
               "newsletter": {
                 "Direct": 4
@@ -55408,7 +55267,7 @@
               },
               "live_demo": {
                 "Organic Search": 7,
-                "Direct": 5,
+                "Direct": 3,
                 "AI Assistants": 1
               },
               "newsletter": {
@@ -57779,22 +57638,10 @@
       "growthbook.io|events": {
         "day": [
           {
-            "period": "2026-09-02",
-            "cells": {
-              "live_demo": {
-                "Organic Social": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-09-08",
             "cells": {
               "live_demo": {
-                "Email": 2,
-                "Referral": 2,
-                "Direct": 1
+                "Email": 2
               },
               "newsletter": {
                 "Referral": 1
@@ -57806,8 +57653,7 @@
             "period": "2026-09-09",
             "cells": {
               "live_demo": {
-                "Email": 5,
-                "Referral": 1
+                "Email": 5
               }
             },
             "partial": false
@@ -57816,35 +57662,6 @@
             "period": "2026-09-10",
             "cells": {
               "live_demo": {
-                "Referral": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-11",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-14",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-17",
-            "cells": {
-              "live_demo": {
-                "Direct": 1,
                 "Referral": 1
               }
             },
@@ -57860,29 +57677,9 @@
             "partial": false
           },
           {
-            "period": "2026-09-21",
-            "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-22",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-09-23",
             "cells": {
               "live_demo": {
-                "Referral": 2,
                 "Direct": 1
               }
             },
@@ -57892,7 +57689,7 @@
             "period": "2026-09-24",
             "cells": {
               "live_demo": {
-                "Direct": 3
+                "Direct": 1
               },
               "demo_request": {
                 "Direct": 1
@@ -57901,86 +57698,8 @@
             "partial": false
           },
           {
-            "period": "2026-09-25",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-26",
-            "cells": {
-              "live_demo": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-28",
-            "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Organic Social": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-29",
-            "cells": {
-              "live_demo": {
-                "Referral": 2
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-30",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-01",
-            "cells": {
-              "live_demo": {
-                "Referral": 1,
-                "Email": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-02",
-            "cells": {
-              "live_demo": {
-                "Referral": 2
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-04",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-10-05",
             "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Email": 1
-              },
               "demo_request": {
                 "Email": 1
               }
@@ -57991,45 +57710,7 @@
             "period": "2026-10-06",
             "cells": {
               "live_demo": {
-                "Email": 5,
-                "Referral": 2,
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-07",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-12",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-13",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-15",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
+                "Email": 4
               }
             },
             "partial": false
@@ -58037,29 +57718,11 @@
           {
             "period": "2026-10-20",
             "cells": {
-              "live_demo": {
-                "Referral": 2
-              },
               "demo_request": {
                 "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-21",
-            "cells": {
+              },
               "live_demo": {
-                "Referral": 2
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-23",
-            "cells": {
-              "live_demo": {
-                "Referral": 2
+                "Referral": 1
               }
             },
             "partial": false
@@ -58068,7 +57731,6 @@
             "period": "2026-10-27",
             "cells": {
               "live_demo": {
-                "Referral": 2,
                 "Organic Search": 1
               }
             },
@@ -58078,8 +57740,7 @@
             "period": "2026-10-29",
             "cells": {
               "live_demo": {
-                "Email": 2,
-                "Referral": 1
+                "Email": 2
               }
             },
             "partial": false
@@ -58087,10 +57748,6 @@
           {
             "period": "2026-10-30",
             "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Organic Social": 1
-              },
               "demo_request": {
                 "Email": 1
               }
@@ -58107,47 +57764,10 @@
             "partial": false
           },
           {
-            "period": "2026-11-01",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-03",
-            "cells": {
-              "live_demo": {
-                "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-11-04",
             "cells": {
               "live_demo": {
-                "Referral": 2
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-05",
-            "cells": {
-              "live_demo": {
                 "Referral": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-08",
-            "cells": {
-              "live_demo": {
-                "Referral": 1,
-                "Organic Social": 1
               }
             },
             "partial": false
@@ -58156,8 +57776,7 @@
             "period": "2026-11-09",
             "cells": {
               "live_demo": {
-                "Email": 1,
-                "Referral": 1
+                "Email": 1
               },
               "signup_click": {
                 "Referral": 1
@@ -58166,31 +57785,10 @@
             "partial": false
           },
           {
-            "period": "2026-11-10",
-            "cells": {
-              "live_demo": {
-                "Referral": 3,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-11",
-            "cells": {
-              "live_demo": {
-                "Referral": 1,
-                "Organic Social": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-11-16",
             "cells": {
               "live_demo": {
-                "Referral": 1,
-                "Direct": 1
+                "Referral": 1
               },
               "signup_click": {
                 "Referral": 1
@@ -58214,8 +57812,8 @@
             "period": "2026-11-18",
             "cells": {
               "live_demo": {
-                "Email": 1,
-                "Referral": 1
+                "Referral": 1,
+                "Email": 1
               }
             },
             "partial": false
@@ -58241,22 +57839,11 @@
         ],
         "week": [
           {
-            "period": "2026-08-31",
-            "cells": {
-              "live_demo": {
-                "Organic Social": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-09-07",
             "cells": {
               "live_demo": {
                 "Email": 7,
-                "Referral": 5,
-                "Direct": 2
+                "Referral": 1
               },
               "newsletter": {
                 "Referral": 1
@@ -58267,10 +57854,6 @@
           {
             "period": "2026-09-14",
             "cells": {
-              "live_demo": {
-                "Referral": 2,
-                "Direct": 1
-              },
               "newsletter": {
                 "Direct": 1
               }
@@ -58281,22 +57864,10 @@
             "period": "2026-09-21",
             "cells": {
               "live_demo": {
-                "Referral": 6,
-                "Direct": 6
+                "Direct": 2
               },
               "demo_request": {
                 "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-09-28",
-            "cells": {
-              "live_demo": {
-                "Referral": 9,
-                "Organic Social": 1,
-                "Email": 1
               }
             },
             "partial": false
@@ -58305,9 +57876,7 @@
             "period": "2026-10-05",
             "cells": {
               "live_demo": {
-                "Email": 6,
-                "Referral": 5,
-                "Organic Search": 1
+                "Email": 4
               },
               "demo_request": {
                 "Email": 1
@@ -58316,22 +57885,13 @@
             "partial": false
           },
           {
-            "period": "2026-10-12",
-            "cells": {
-              "live_demo": {
-                "Referral": 3
-              }
-            },
-            "partial": false
-          },
-          {
             "period": "2026-10-19",
             "cells": {
-              "live_demo": {
-                "Referral": 6
-              },
               "demo_request": {
                 "Direct": 1
+              },
+              "live_demo": {
+                "Referral": 1
               }
             },
             "partial": false
@@ -58340,9 +57900,7 @@
             "period": "2026-10-26",
             "cells": {
               "live_demo": {
-                "Referral": 6,
                 "Email": 2,
-                "Organic Social": 1,
                 "Organic Search": 1
               },
               "demo_request": {
@@ -58358,8 +57916,7 @@
             "period": "2026-11-02",
             "cells": {
               "live_demo": {
-                "Referral": 5,
-                "Organic Social": 1
+                "Referral": 1
               }
             },
             "partial": false
@@ -58368,9 +57925,6 @@
             "period": "2026-11-09",
             "cells": {
               "live_demo": {
-                "Referral": 5,
-                "Direct": 1,
-                "Organic Social": 1,
                 "Email": 1
               },
               "signup_click": {
@@ -58385,7 +57939,7 @@
               "live_demo": {
                 "Email": 3,
                 "Referral": 2,
-                "Direct": 2
+                "Direct": 1
               },
               "signup_click": {
                 "Email": 1,
@@ -58409,10 +57963,9 @@
             "period": "2026-09-01",
             "cells": {
               "live_demo": {
-                "Referral": 18,
                 "Email": 7,
-                "Direct": 10,
-                "Organic Social": 2
+                "Direct": 2,
+                "Referral": 1
               },
               "newsletter": {
                 "Referral": 1,
@@ -58428,10 +57981,9 @@
             "period": "2026-10-01",
             "cells": {
               "live_demo": {
-                "Referral": 23,
-                "Email": 9,
-                "Organic Search": 2,
-                "Organic Social": 1
+                "Email": 6,
+                "Organic Search": 1,
+                "Referral": 1
               },
               "demo_request": {
                 "Email": 2,
@@ -58447,10 +57999,9 @@
             "period": "2026-11-01",
             "cells": {
               "live_demo": {
-                "Referral": 13,
                 "Email": 4,
-                "Organic Social": 2,
-                "Direct": 3
+                "Referral": 3,
+                "Direct": 1
               },
               "demo_request": {
                 "Direct": 1
@@ -58626,15 +58177,6 @@
       },
       "growthbook.io|unknown": {
         "day": [
-          {
-            "period": "2026-09-10",
-            "cells": {
-              "live_demo": {
-                "Organic Social": 1
-              }
-            },
-            "partial": false
-          },
           {
             "period": "2026-09-11",
             "cells": {
@@ -58899,9 +58441,6 @@
             "cells": {
               "demo_request": {
                 "Direct": 2
-              },
-              "live_demo": {
-                "Organic Social": 1
               }
             },
             "partial": false
@@ -59025,7 +58564,6 @@
                 "Direct": 3
               },
               "live_demo": {
-                "Organic Social": 1,
                 "Direct": 1
               }
             },
@@ -59084,10 +58622,10 @@
           {
             "period": "2026-09-03",
             "cells": {
-              "newsletter": {
+              "contact_sales": {
                 "Direct": 1
               },
-              "contact_sales": {
+              "newsletter": {
                 "Direct": 1
               }
             },
@@ -59141,11 +58679,11 @@
           {
             "period": "2026-09-11",
             "cells": {
-              "demo_request": {
-                "Direct": 1
-              },
               "contact_sales": {
                 "AI Assistants": 1
+              },
+              "demo_request": {
+                "Direct": 1
               }
             },
             "partial": false
@@ -59177,11 +58715,11 @@
           {
             "period": "2026-09-18",
             "cells": {
-              "contact_sales": {
-                "Organic Search": 1
-              },
               "newsletter": {
                 "Direct": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1
               }
             },
             "partial": false
@@ -59215,8 +58753,8 @@
                 "Direct": 2
               },
               "contact_sales": {
-                "AI Assistants": 1,
-                "Direct": 1
+                "Direct": 1,
+                "AI Assistants": 1
               }
             },
             "partial": false
@@ -59237,8 +58775,8 @@
                 "Direct": 3
               },
               "demo_request": {
-                "Organic Search": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Organic Search": 1
               }
             },
             "partial": false
@@ -59294,15 +58832,15 @@
           {
             "period": "2026-10-05",
             "cells": {
-              "contact_sales": {
-                "Referral": 1,
+              "demo_request": {
                 "Direct": 1
               },
               "asset_download": {
                 "Direct": 1
               },
-              "demo_request": {
-                "Direct": 1
+              "contact_sales": {
+                "Direct": 1,
+                "Referral": 1
               }
             },
             "partial": false
@@ -59310,12 +58848,12 @@
           {
             "period": "2026-10-06",
             "cells": {
-              "demo_request": {
+              "contact_sales": {
+                "Direct": 1,
                 "Organic Search": 1
               },
-              "contact_sales": {
-                "Organic Search": 1,
-                "Direct": 1
+              "demo_request": {
+                "Organic Search": 1
               }
             },
             "partial": false
@@ -59405,14 +58943,14 @@
           {
             "period": "2026-10-26",
             "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
               "live_demo": {
-                "Organic Search": 3
+                "Organic Search": 1
               },
               "contact_sales": {
                 "Direct": 1
-              },
-              "demo_request": {
-                "Organic Search": 1
               }
             },
             "partial": false
@@ -59420,9 +58958,6 @@
           {
             "period": "2026-10-27",
             "cells": {
-              "live_demo": {
-                "Organic Search": 1
-              },
               "signup_click": {
                 "Direct": 2,
                 "AI Assistants": 1
@@ -59607,10 +59142,10 @@
           {
             "period": "2026-11-18",
             "cells": {
-              "demo_request": {
+              "contact_sales": {
                 "Direct": 1
               },
-              "contact_sales": {
+              "demo_request": {
                 "Direct": 1
               }
             },
@@ -59658,6 +59193,9 @@
           {
             "period": "2026-11-24",
             "cells": {
+              "other_form": {
+                "Direct": 1
+              },
               "signup_click": {
                 "Direct": 1
               }
@@ -59701,18 +59239,18 @@
           {
             "period": "2026-09-14",
             "cells": {
-              "newsletter": {
-                "Direct": 2
-              },
               "demo_request": {
                 "Direct": 2
               },
-              "contact_sales": {
-                "Direct": 1,
-                "Organic Search": 1
+              "newsletter": {
+                "Direct": 2
               },
               "asset_download": {
                 "Paid Search": 1
+              },
+              "contact_sales": {
+                "Organic Search": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -59726,8 +59264,8 @@
               },
               "contact_sales": {
                 "Direct": 6,
-                "AI Assistants": 1,
-                "Referral": 1
+                "Referral": 1,
+                "AI Assistants": 1
               }
             },
             "partial": false
@@ -59749,8 +59287,8 @@
             "cells": {
               "contact_sales": {
                 "Direct": 5,
-                "Organic Search": 1,
-                "Referral": 1
+                "Referral": 1,
+                "Organic Search": 1
               },
               "demo_request": {
                 "Direct": 2,
@@ -59769,11 +59307,11 @@
                 "Direct": 2,
                 "Organic Search": 1
               },
-              "live_demo": {
-                "Organic Search": 1
-              },
               "asset_download": {
                 "Direct": 2
+              },
+              "live_demo": {
+                "Organic Search": 1
               }
             },
             "partial": false
@@ -59797,12 +59335,12 @@
               "contact_sales": {
                 "Direct": 3
               },
-              "live_demo": {
-                "Organic Search": 4
-              },
               "demo_request": {
                 "Organic Search": 2,
                 "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 2
               },
               "newsletter": {
                 "Organic Search": 1
@@ -59819,8 +59357,8 @@
             "period": "2026-11-02",
             "cells": {
               "demo_request": {
-                "Direct": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Direct": 1
               },
               "other_form": {
                 "Direct": 1
@@ -59878,6 +59416,9 @@
               "demo_request": {
                 "Direct": 3
               },
+              "other_form": {
+                "Direct": 1
+              },
               "signup_click": {
                 "Direct": 1
               }
@@ -59924,7 +59465,7 @@
                 "Organic Search": 4
               },
               "live_demo": {
-                "Organic Search": 5
+                "Organic Search": 3
               },
               "asset_download": {
                 "Direct": 3
@@ -59956,7 +59497,7 @@
                 "Direct": 3
               },
               "other_form": {
-                "Direct": 1
+                "Direct": 2
               },
               "live_demo": {
                 "Direct": 1
@@ -68055,22 +67596,6 @@
         }
       },
       "by_category": {
-        "Podcast episode": {
-          "current": {
-            "engaged_views": 497,
-            "raw_views": 843,
-            "watch_minutes": 1690,
-            "subs_gained": 6,
-            "videos": 45
-          },
-          "prior": {
-            "engaged_views": 928,
-            "raw_views": 1366,
-            "watch_minutes": 2457,
-            "subs_gained": 10,
-            "videos": 40
-          }
-        },
         "Product long-form": {
           "current": {
             "engaged_views": 1254,
@@ -68101,6 +67626,22 @@
             "watch_minutes": 623,
             "subs_gained": 1,
             "videos": 2
+          }
+        },
+        "Podcast episode": {
+          "current": {
+            "engaged_views": 497,
+            "raw_views": 843,
+            "watch_minutes": 1690,
+            "subs_gained": 6,
+            "videos": 45
+          },
+          "prior": {
+            "engaged_views": 928,
+            "raw_views": 1366,
+            "watch_minutes": 2457,
+            "subs_gained": 10,
+            "videos": 40
           }
         },
         "Other webinar": {

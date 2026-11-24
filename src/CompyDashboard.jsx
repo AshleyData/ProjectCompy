@@ -2239,9 +2239,10 @@ export default function CompyDashboard() {
                 started, not where it converted. Plausible has a single generic form goal, so
                 these are split apart by the form's path. Volumes are small (single digits per
                 week for most), so the table below carries the cross-tab and the chart is
-                indicative. Giveaway and contest entry forms are excluded — they are campaign
-                sign-ups rather than buying intent, and at ~100 a quarter they would have
-                dominated whichever bucket held them.
+                indicative. Two kinds of form are excluded as not web-driven: giveaway and contest
+                entries, and field-marketing registrations under /events/ — exec dinners,
+                conferences and meetups, which merely use a web sign-up page. The live group
+                demo is the one /events/ form kept, since that one is inbound.
               </p>
               <div style={{ marginBottom: 10 }}>
                 <div>{(cv.grains || []).map(g =>
