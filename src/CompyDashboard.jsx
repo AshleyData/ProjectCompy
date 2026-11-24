@@ -1334,6 +1334,51 @@ function VideoTab({ video }) {
 // Primary tabs carry the decision-layer story (Strategy first). Everything else is
 // reference material reachable from the "More ▾" drawer. The Opportunities tab was
 // retired into Strategy, so it no longer appears here.
+// Compact tooltip for the stacked charts.
+//
+// Recharts' default lists EVERY series including the zeros, which on a 13-
+// section stack produced a box taller than the chart, drifting over the legend
+// and semi-transparent enough to read through. This one drops zero rows, sorts
+// by size, tightens the leading, is fully opaque, and totals at the foot.
+function StackTooltip({ active, payload, label }) {
+  if (!active || !payload || !payload.length) return null;
+  const rows = payload
+    .filter((p) => (p.value || 0) > 0)
+    .sort((a, b) => (b.value || 0) - (a.value || 0));
+  const total = payload.reduce((n, p) => n + (p.value || 0), 0);
+  if (!total) return null;
+  const line = { display: "flex", justifyContent: "space-between", gap: 14,
+                 lineHeight: 1.3 };
+  return (
+    <div style={{
+      background: C.white, border: `1px solid ${C.border}`, borderRadius: 6,
+      padding: "7px 9px", fontSize: 11, color: C.primary, minWidth: 150,
+      maxHeight: 260, overflowY: "auto",
+      boxShadow: "0 3px 12px rgba(0,0,0,0.16)",
+    }}>
+      <div style={{ fontWeight: 700, marginBottom: 4 }}>{label}</div>
+      {rows.map((p) => (
+        <div key={p.name} style={line}>
+          <span style={{ color: p.color, whiteSpace: "nowrap" }}>
+            <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: 1,
+                           background: p.color, marginRight: 5 }} />
+            {p.name}
+          </span>
+          <span style={{ fontVariantNumeric: "tabular-nums" }}>
+            {(p.value || 0).toLocaleString()}
+          </span>
+        </div>
+      ))}
+      <div style={{ ...line, borderTop: `1px solid ${C.border}`, marginTop: 4,
+                    paddingTop: 3, fontWeight: 700 }}>
+        <span>Total</span>
+        <span style={{ fontVariantNumeric: "tabular-nums" }}>{total.toLocaleString()}</span>
+      </div>
+    </div>
+  );
+}
+
+
 const PRIMARY_TABS = [
   // id stays `traffic_channels` — it is referenced by the tab body and any
   // bookmarked ?tab= link; only the label changed.
@@ -1991,8 +2036,7 @@ export default function CompyDashboard() {
                   <YAxis tick={{ fontSize: 10, fill: C.muted }} axisLine={{ stroke: C.border }}
                          tickLine={false} domain={yDomain} allowDataOverflow={tcLockY}
                          tickFormatter={v => v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v} />
-                  <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }}
-                            formatter={(v, n) => [v.toLocaleString(), n]} />
+                  <RTooltip content={<StackTooltip />} cursor={{ fill: "rgba(0,0,0,0.04)" }} />
                   {/* in-progress period drawn translucent so a short bar reads
                       as "not finished", not "fell off a cliff" */}
                   {stackOrder.map(c =>
@@ -2038,10 +2082,10 @@ export default function CompyDashboard() {
           // key falls back to grey, and in a stacked chart several grey bands
           // are indistinguishable.
           const SEC_COLORS = {
-            "growthbook.io|home": "#4285F4", "growthbook.io|products": "#D4604A",
-            "growthbook.io|platform": "#7E57C2", "growthbook.io|pricing": "#E8705A",
+            "growthbook.io|home": "#4285F4", "growthbook.io|product": "#7E57C2",
+            "growthbook.io|pricing": "#E8705A",
             "growthbook.io|insights": "#F5A15C", "growthbook.io|blog": "#A77BE3",
-            "growthbook.io|product_updates": "#C9A227", "growthbook.io|compare": "#1FBFC4",
+            "growthbook.io|compare": "#1FBFC4",
             "growthbook.io|events": "#D9739B", "growthbook.io|podcast": "#5B8DEF",
             "growthbook.io|company": "#6B8E6B", "growthbook.io|unknown": "#B0B7BF",
             "growthbook.io|other": "#8E9BAA", "docs.growthbook.io|total": "#2E9E83",
@@ -2346,7 +2390,7 @@ export default function CompyDashboard() {
                          interval={cvGrain === "day" ? 6 : 0} />
                   <YAxis tick={{ fontSize: 10, fill: C.muted }} axisLine={{ stroke: C.border }}
                          tickLine={false} allowDecimals={false} />
-                  <RTooltip contentStyle={{ fontSize: 12, borderRadius: 6, border: `1px solid ${C.border}` }} />
+                  <RTooltip content={<StackTooltip />} cursor={{ fill: "rgba(0,0,0,0.04)" }} />
                   <Legend wrapperStyle={{ fontSize: 11 }} />
                   {stackOrder.map(k =>
                     <RBar key={k} dataKey={labelFor(k)} stackId="cv" fill={colorFor(k)}

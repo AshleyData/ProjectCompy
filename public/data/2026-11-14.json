@@ -32676,12 +32676,10 @@
     "section_labels": {
       "total": "All pages",
       "home": "Home page",
-      "products": "Products",
-      "platform": "Platform",
+      "product": "Product",
       "pricing": "Pricing",
       "insights": "Insights",
       "blog": "Blog",
-      "product_updates": "Product updates",
       "compare": "Compare pages",
       "events": "Events",
       "podcast": "Podcast",
@@ -32708,16 +32706,10 @@
         "label": "Home page"
       },
       {
-        "key": "growthbook.io|products",
+        "key": "growthbook.io|product",
         "site": "growthbook.io",
-        "section": "products",
-        "label": "Products"
-      },
-      {
-        "key": "growthbook.io|platform",
-        "site": "growthbook.io",
-        "section": "platform",
-        "label": "Platform"
+        "section": "product",
+        "label": "Product"
       },
       {
         "key": "growthbook.io|pricing",
@@ -32736,12 +32728,6 @@
         "site": "growthbook.io",
         "section": "blog",
         "label": "Blog"
-      },
-      {
-        "key": "growthbook.io|product_updates",
-        "site": "growthbook.io",
-        "section": "product_updates",
-        "label": "Product updates"
       },
       {
         "key": "growthbook.io|compare",
@@ -34227,17 +34213,18 @@
             "partial": true,
             "by_channel": {
               "Direct": 473,
-              "Organic Search": 393,
-              "Referral": 107,
+              "Organic Search": 396,
+              "Referral": 108,
               "Paid Search": 67,
               "Organic Social": 21,
               "AI Assistants": 12,
               "Email": 4,
-              "Paid Social": 1
+              "Paid Social": 1,
+              "Organic Video": 1
             },
-            "total": 1050,
-            "visits": 1165,
-            "pageviews": 1653
+            "total": 1055,
+            "visits": 1172,
+            "pageviews": 1667
           }
         ],
         "week": [
@@ -34464,17 +34451,18 @@
             "partial": true,
             "by_channel": {
               "Direct": 1163,
-              "Organic Search": 983,
-              "Referral": 233,
+              "Organic Search": 986,
+              "Referral": 234,
               "Paid Search": 157,
               "Organic Social": 33,
               "Email": 18,
               "AI Assistants": 17,
-              "Paid Social": 5
+              "Paid Social": 5,
+              "Organic Video": 1
             },
-            "total": 2547,
-            "visits": 2887,
-            "pageviews": 4050
+            "total": 2552,
+            "visits": 2894,
+            "pageviews": 4064
           }
         ],
         "month": [
@@ -34520,18 +34508,18 @@
             "partial": true,
             "by_channel": {
               "Direct": 11196,
-              "Organic Search": 8891,
-              "Referral": 2718,
+              "Organic Search": 8894,
+              "Referral": 2719,
               "Paid Search": 1425,
               "Organic Social": 303,
               "AI Assistants": 263,
               "Email": 257,
               "Paid Social": 94,
-              "Organic Video": 21
+              "Organic Video": 22
             },
-            "total": 24595,
-            "visits": 27811,
-            "pageviews": 39915
+            "total": 24600,
+            "visits": 27818,
+            "pageviews": 39929
           }
         ]
       },
@@ -35841,16 +35829,17 @@
             "partial": true,
             "by_channel": {
               "Direct": 340,
-              "Organic Search": 197,
-              "Referral": 99,
+              "Organic Search": 198,
+              "Referral": 100,
               "Paid Search": 58,
               "Organic Social": 10,
               "AI Assistants": 7,
-              "Email": 3
+              "Email": 3,
+              "Organic Video": 1
             },
-            "total": 696,
-            "visits": 775,
-            "pageviews": 1165
+            "total": 699,
+            "visits": 780,
+            "pageviews": 1175
           }
         ],
         "week": [
@@ -36004,8 +35993,8 @@
               "Organic Social": 33,
               "AI Assistants": 24,
               "Paid Social": 3,
-              "Organic Video": 1,
-              "Email": 1
+              "Email": 1,
+              "Organic Video": 1
             },
             "total": 4606,
             "visits": 5175,
@@ -36068,17 +36057,18 @@
             "partial": true,
             "by_channel": {
               "Direct": 792,
-              "Organic Search": 487,
-              "Referral": 215,
+              "Organic Search": 488,
+              "Referral": 216,
               "Paid Search": 135,
               "Organic Social": 16,
               "Email": 15,
               "AI Assistants": 9,
-              "Paid Social": 1
+              "Paid Social": 1,
+              "Organic Video": 1
             },
-            "total": 1627,
-            "visits": 1877,
-            "pageviews": 2733
+            "total": 1630,
+            "visits": 1882,
+            "pageviews": 2743
           }
         ],
         "month": [
@@ -36123,58 +36113,60 @@
             "partial": true,
             "by_channel": {
               "Direct": 7851,
-              "Organic Search": 4396,
-              "Referral": 2401,
+              "Organic Search": 4397,
+              "Referral": 2402,
               "Paid Search": 1178,
               "Organic Social": 129,
               "AI Assistants": 92,
               "Email": 23,
               "Paid Social": 18,
-              "Organic Video": 2
+              "Organic Video": 3
             },
-            "total": 15811,
-            "visits": 17964,
-            "pageviews": 25785
+            "total": 15814,
+            "visits": 17969,
+            "pageviews": 25795
           }
         ]
       },
-      "growthbook.io|products": {
+      "growthbook.io|product": {
         "day": [
           {
             "period": "2026-09-02",
             "partial": false,
             "by_channel": {
               "Paid Search": 62,
-              "Direct": 14,
-              "Organic Search": 1
+              "Direct": 19,
+              "Organic Search": 5
             },
-            "total": 77,
-            "visits": 79,
-            "pageviews": 90
+            "total": 86,
+            "visits": 88,
+            "pageviews": 109
           },
           {
             "period": "2026-09-03",
             "partial": false,
             "by_channel": {
               "Paid Search": 46,
-              "Direct": 16,
-              "Organic Search": 2,
-              "Referral": 1
+              "Direct": 22,
+              "Organic Search": 4,
+              "Referral": 3,
+              "AI Assistants": 1
             },
-            "total": 64,
-            "visits": 66,
-            "pageviews": 72
+            "total": 75,
+            "visits": 78,
+            "pageviews": 94
           },
           {
             "period": "2026-09-04",
             "partial": false,
             "by_channel": {
               "Paid Search": 41,
-              "Direct": 9
+              "Direct": 12,
+              "Organic Search": 5
             },
-            "total": 50,
-            "visits": 50,
-            "pageviews": 58
+            "total": 58,
+            "visits": 58,
+            "pageviews": 76
           },
           {
             "period": "2026-09-05",
@@ -36195,1015 +36187,1064 @@
             "by_channel": {
               "Paid Search": 16,
               "Direct": 6,
-              "AI Assistants": 1
+              "AI Assistants": 1,
+              "Organic Search": 1
             },
-            "total": 23,
-            "visits": 24,
-            "pageviews": 25
+            "total": 24,
+            "visits": 25,
+            "pageviews": 27
           },
           {
             "period": "2026-09-07",
             "partial": false,
             "by_channel": {
-              "Direct": 8,
+              "Direct": 11,
               "Paid Search": 6,
-              "AI Assistants": 1
+              "Organic Search": 2,
+              "AI Assistants": 2
             },
-            "total": 15,
-            "visits": 16,
-            "pageviews": 21
+            "total": 21,
+            "visits": 22,
+            "pageviews": 30
           },
           {
             "period": "2026-09-08",
             "partial": false,
             "by_channel": {
-              "Direct": 13,
-              "Organic Social": 1,
-              "Paid Search": 1,
-              "Organic Search": 1
+              "Direct": 14,
+              "Organic Search": 5,
+              "Referral": 3,
+              "Paid Search": 2,
+              "AI Assistants": 2,
+              "Organic Social": 1
             },
-            "total": 16,
-            "visits": 17,
-            "pageviews": 21
+            "total": 27,
+            "visits": 28,
+            "pageviews": 37
           },
           {
             "period": "2026-09-09",
             "partial": false,
             "by_channel": {
-              "Direct": 19,
-              "Paid Search": 5,
-              "Organic Search": 5,
+              "Direct": 22,
+              "Organic Search": 14,
+              "Paid Search": 9,
               "AI Assistants": 2,
-              "Referral": 1
+              "Referral": 2
             },
-            "total": 32,
-            "visits": 33,
-            "pageviews": 40
+            "total": 49,
+            "visits": 56,
+            "pageviews": 77
           },
           {
             "period": "2026-09-10",
             "partial": false,
             "by_channel": {
-              "Paid Search": 15,
-              "Direct": 10,
-              "Organic Search": 2,
-              "Referral": 1
+              "Paid Search": 20,
+              "Direct": 11,
+              "Organic Search": 6,
+              "Referral": 2,
+              "AI Assistants": 1
             },
-            "total": 28,
-            "visits": 28,
-            "pageviews": 55
+            "total": 40,
+            "visits": 42,
+            "pageviews": 69
           },
           {
             "period": "2026-09-11",
             "partial": false,
             "by_channel": {
-              "Direct": 11,
-              "Paid Search": 5,
-              "Organic Search": 1
+              "Direct": 17,
+              "Paid Search": 9,
+              "Organic Search": 4
             },
-            "total": 17,
-            "visits": 17,
-            "pageviews": 19
+            "total": 30,
+            "visits": 30,
+            "pageviews": 34
           },
           {
             "period": "2026-09-12",
             "partial": false,
             "by_channel": {
-              "Direct": 2,
+              "Direct": 4,
               "Organic Video": 1
             },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 3
+            "total": 5,
+            "visits": 5,
+            "pageviews": 5
           },
           {
             "period": "2026-09-13",
             "partial": false,
             "by_channel": {
-              "Direct": 5
+              "Direct": 9,
+              "Organic Search": 5
             },
-            "total": 5,
-            "visits": 6,
-            "pageviews": 7
+            "total": 13,
+            "visits": 15,
+            "pageviews": 22
           },
           {
             "period": "2026-09-14",
             "partial": false,
             "by_channel": {
-              "Direct": 16,
-              "Paid Search": 6,
-              "Organic Search": 2,
+              "Direct": 23,
+              "Paid Search": 11,
+              "Organic Search": 7,
               "AI Assistants": 1,
               "Organic Social": 1
             },
-            "total": 26,
-            "visits": 26,
-            "pageviews": 41
+            "total": 43,
+            "visits": 44,
+            "pageviews": 81
           },
           {
             "period": "2026-09-15",
             "partial": false,
             "by_channel": {
-              "Paid Search": 10,
-              "Direct": 10,
-              "Organic Search": 4,
+              "Paid Search": 19,
+              "Direct": 14,
+              "Organic Search": 8,
               "AI Assistants": 1,
               "Referral": 1
             },
-            "total": 26,
-            "visits": 26,
-            "pageviews": 28
+            "total": 43,
+            "visits": 43,
+            "pageviews": 60
           },
           {
             "period": "2026-09-16",
             "partial": false,
             "by_channel": {
-              "Direct": 17,
-              "Paid Search": 15,
-              "Organic Search": 4,
-              "AI Assistants": 1
+              "Paid Search": 21,
+              "Direct": 20,
+              "Organic Search": 8,
+              "AI Assistants": 2
             },
-            "total": 37,
-            "visits": 41,
-            "pageviews": 53
+            "total": 50,
+            "visits": 56,
+            "pageviews": 81
           },
           {
             "period": "2026-09-17",
             "partial": false,
             "by_channel": {
-              "Paid Search": 16,
-              "Direct": 9,
-              "Organic Search": 3,
+              "Paid Search": 25,
+              "Direct": 14,
+              "Organic Search": 5,
               "AI Assistants": 1
             },
-            "total": 29,
-            "visits": 33,
-            "pageviews": 39
+            "total": 45,
+            "visits": 49,
+            "pageviews": 64
           },
           {
             "period": "2026-09-18",
             "partial": false,
             "by_channel": {
-              "Direct": 10,
-              "Paid Search": 5,
+              "Direct": 16,
+              "Paid Search": 7,
+              "Organic Search": 6,
               "AI Assistants": 1
             },
-            "total": 16,
-            "visits": 17,
-            "pageviews": 21
+            "total": 30,
+            "visits": 31,
+            "pageviews": 91
           },
           {
             "period": "2026-09-19",
             "partial": false,
             "by_channel": {
-              "Direct": 4,
-              "Organic Search": 1
+              "Direct": 5,
+              "Organic Search": 2
             },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 11
+            "total": 7,
+            "visits": 7,
+            "pageviews": 15
           },
           {
             "period": "2026-09-20",
             "partial": false,
             "by_channel": {
-              "Direct": 6,
-              "Organic Search": 1
+              "Direct": 8,
+              "Organic Search": 3
             },
-            "total": 7,
-            "visits": 7,
-            "pageviews": 8
+            "total": 11,
+            "visits": 12,
+            "pageviews": 14
           },
           {
             "period": "2026-09-21",
             "partial": false,
             "by_channel": {
-              "Direct": 15,
-              "Organic Search": 3,
-              "Paid Search": 3,
-              "AI Assistants": 1
+              "Direct": 19,
+              "Paid Search": 6,
+              "Organic Search": 5,
+              "AI Assistants": 3
             },
-            "total": 22,
-            "visits": 27,
-            "pageviews": 28
+            "total": 33,
+            "visits": 39,
+            "pageviews": 43
           },
           {
             "period": "2026-09-22",
             "partial": false,
             "by_channel": {
-              "Direct": 12,
-              "Organic Search": 4,
-              "Paid Search": 2,
+              "Direct": 19,
+              "Organic Search": 8,
+              "Paid Search": 4,
               "AI Assistants": 2
             },
-            "total": 20,
-            "visits": 23,
-            "pageviews": 33
+            "total": 33,
+            "visits": 36,
+            "pageviews": 68
           },
           {
             "period": "2026-09-23",
             "partial": false,
             "by_channel": {
-              "Direct": 15,
-              "Organic Search": 5,
-              "Paid Search": 3,
+              "Direct": 23,
+              "Organic Search": 14,
+              "Paid Search": 4,
+              "AI Assistants": 2,
               "Referral": 2
             },
-            "total": 25,
-            "visits": 27,
-            "pageviews": 48
+            "total": 45,
+            "visits": 49,
+            "pageviews": 84
           },
           {
             "period": "2026-09-24",
             "partial": false,
             "by_channel": {
-              "Direct": 8,
-              "Paid Search": 4,
-              "Organic Search": 3,
-              "AI Assistants": 1
+              "Direct": 14,
+              "Paid Search": 5,
+              "Organic Search": 5,
+              "AI Assistants": 2,
+              "Referral": 1
             },
-            "total": 16,
-            "visits": 16,
-            "pageviews": 22
+            "total": 27,
+            "visits": 27,
+            "pageviews": 37
           },
           {
             "period": "2026-09-25",
             "partial": false,
             "by_channel": {
-              "Direct": 12,
-              "Paid Search": 4,
-              "Organic Search": 2,
-              "AI Assistants": 2
+              "Direct": 16,
+              "Organic Search": 7,
+              "Paid Search": 5,
+              "AI Assistants": 3
             },
-            "total": 20,
-            "visits": 20,
-            "pageviews": 25
+            "total": 31,
+            "visits": 31,
+            "pageviews": 40
           },
           {
             "period": "2026-09-26",
             "partial": false,
             "by_channel": {
               "Direct": 6,
-              "Organic Search": 2,
-              "Paid Search": 1
+              "Organic Search": 3,
+              "Paid Search": 2,
+              "AI Assistants": 1
             },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 11
+            "total": 12,
+            "visits": 12,
+            "pageviews": 14
           },
           {
             "period": "2026-09-27",
             "partial": false,
             "by_channel": {
-              "Direct": 9,
+              "Direct": 10,
               "Organic Search": 1,
-              "Organic Social": 1
+              "Organic Social": 1,
+              "AI Assistants": 1
             },
-            "total": 11,
-            "visits": 12,
-            "pageviews": 12
+            "total": 13,
+            "visits": 14,
+            "pageviews": 14
           },
           {
             "period": "2026-09-28",
             "partial": false,
             "by_channel": {
-              "Direct": 18,
-              "Organic Search": 6,
-              "Paid Search": 3,
+              "Direct": 22,
+              "Organic Search": 11,
+              "Paid Search": 5,
               "Referral": 3,
-              "AI Assistants": 1
+              "AI Assistants": 2
             },
-            "total": 31,
-            "visits": 31,
-            "pageviews": 33
+            "total": 43,
+            "visits": 43,
+            "pageviews": 59
           },
           {
             "period": "2026-09-29",
             "partial": false,
             "by_channel": {
-              "Direct": 19,
-              "Organic Search": 4,
-              "Paid Search": 3
+              "Direct": 22,
+              "Organic Search": 8,
+              "Paid Search": 3,
+              "Referral": 1
             },
-            "total": 26,
-            "visits": 26,
-            "pageviews": 36
+            "total": 34,
+            "visits": 35,
+            "pageviews": 60
           },
           {
             "period": "2026-09-30",
             "partial": false,
             "by_channel": {
-              "Direct": 12,
-              "AI Assistants": 4,
-              "Referral": 2
+              "Direct": 16,
+              "Referral": 9,
+              "Organic Search": 6,
+              "AI Assistants": 5,
+              "Paid Search": 1
             },
-            "total": 18,
-            "visits": 19,
-            "pageviews": 29
+            "total": 37,
+            "visits": 39,
+            "pageviews": 54
           },
           {
             "period": "2026-10-01",
             "partial": false,
             "by_channel": {
-              "Direct": 21,
-              "Paid Search": 6,
-              "Organic Search": 4
+              "Direct": 26,
+              "Organic Search": 10,
+              "Paid Search": 8,
+              "Referral": 4
             },
-            "total": 31,
-            "visits": 31,
-            "pageviews": 46
+            "total": 48,
+            "visits": 48,
+            "pageviews": 71
           },
           {
             "period": "2026-10-02",
             "partial": false,
             "by_channel": {
               "Paid Search": 9,
-              "Direct": 3,
-              "Organic Search": 2
+              "Organic Search": 6,
+              "Direct": 4,
+              "Referral": 1
             },
-            "total": 14,
-            "visits": 14,
-            "pageviews": 16
+            "total": 20,
+            "visits": 20,
+            "pageviews": 26
           },
           {
             "period": "2026-10-03",
             "partial": false,
             "by_channel": {
-              "Direct": 6
+              "Direct": 6,
+              "Organic Search": 1
             },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 6
+            "total": 7,
+            "visits": 7,
+            "pageviews": 11
           },
           {
             "period": "2026-10-04",
             "partial": false,
             "by_channel": {
-              "Direct": 6,
+              "Direct": 11,
               "Organic Search": 1,
               "Organic Social": 1
             },
-            "total": 8,
-            "visits": 8,
-            "pageviews": 8
+            "total": 13,
+            "visits": 13,
+            "pageviews": 13
           },
           {
             "period": "2026-10-05",
             "partial": false,
             "by_channel": {
-              "Direct": 21,
-              "Paid Search": 10,
-              "Organic Search": 3
+              "Direct": 25,
+              "Paid Search": 13,
+              "Organic Search": 6
             },
-            "total": 34,
-            "visits": 35,
-            "pageviews": 55
+            "total": 44,
+            "visits": 45,
+            "pageviews": 73
           },
           {
             "period": "2026-10-06",
             "partial": false,
             "by_channel": {
-              "Direct": 19,
-              "Paid Search": 9,
-              "Organic Search": 7,
+              "Direct": 24,
+              "Paid Search": 13,
+              "Organic Search": 12,
               "Referral": 1
             },
-            "total": 36,
-            "visits": 38,
-            "pageviews": 67
+            "total": 50,
+            "visits": 52,
+            "pageviews": 84
           },
           {
             "period": "2026-10-07",
             "partial": false,
             "by_channel": {
-              "Paid Search": 11,
-              "Direct": 11,
+              "Paid Search": 17,
+              "Direct": 17,
+              "Organic Search": 4,
+              "Referral": 1,
               "Organic Social": 1,
-              "Organic Search": 1
+              "AI Assistants": 1
             },
-            "total": 24,
-            "visits": 25,
-            "pageviews": 41
+            "total": 41,
+            "visits": 42,
+            "pageviews": 59
           },
           {
             "period": "2026-10-08",
             "partial": false,
             "by_channel": {
-              "Direct": 17,
-              "Paid Search": 5,
-              "Referral": 2,
-              "Organic Search": 1
+              "Direct": 25,
+              "Paid Search": 8,
+              "Organic Search": 4,
+              "Referral": 2
             },
-            "total": 25,
-            "visits": 27,
-            "pageviews": 34
+            "total": 39,
+            "visits": 41,
+            "pageviews": 52
           },
           {
             "period": "2026-10-09",
             "partial": false,
             "by_channel": {
               "Direct": 17,
-              "Paid Search": 5,
+              "Paid Search": 16,
+              "Organic Search": 10,
               "Organic Social": 1,
-              "Organic Search": 1,
               "Referral": 1
             },
-            "total": 25,
-            "visits": 25,
-            "pageviews": 33
+            "total": 45,
+            "visits": 45,
+            "pageviews": 59
           },
           {
             "period": "2026-10-10",
             "partial": false,
             "by_channel": {
               "Direct": 2,
+              "AI Assistants": 1,
               "Organic Search": 1
             },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 4
+            "total": 4,
+            "visits": 4,
+            "pageviews": 5
           },
           {
             "period": "2026-10-11",
             "partial": false,
             "by_channel": {
-              "Direct": 7,
-              "Organic Search": 1,
+              "Direct": 8,
+              "Organic Search": 3,
               "Paid Search": 1,
               "Organic Social": 1
             },
-            "total": 10,
-            "visits": 10,
-            "pageviews": 12
+            "total": 13,
+            "visits": 13,
+            "pageviews": 17
           },
           {
             "period": "2026-10-12",
             "partial": false,
             "by_channel": {
-              "Direct": 9,
-              "Paid Search": 5,
-              "Referral": 1
+              "Paid Search": 15,
+              "Direct": 11,
+              "Organic Search": 2,
+              "Referral": 2
             },
-            "total": 15,
-            "visits": 17,
-            "pageviews": 17
+            "total": 30,
+            "visits": 33,
+            "pageviews": 39
           },
           {
             "period": "2026-10-13",
             "partial": false,
             "by_channel": {
-              "Direct": 11,
-              "Paid Search": 9,
-              "Organic Search": 5
+              "Direct": 21,
+              "Paid Search": 15,
+              "Organic Search": 10,
+              "Referral": 1
             },
-            "total": 25,
-            "visits": 25,
-            "pageviews": 34
+            "total": 47,
+            "visits": 47,
+            "pageviews": 76
           },
           {
             "period": "2026-10-14",
             "partial": false,
             "by_channel": {
-              "Direct": 10,
-              "Paid Search": 4,
-              "Organic Search": 4,
-              "Referral": 1
+              "Direct": 15,
+              "Organic Search": 11,
+              "Paid Search": 9,
+              "Referral": 1,
+              "AI Assistants": 1
             },
-            "total": 19,
-            "visits": 19,
-            "pageviews": 25
+            "total": 37,
+            "visits": 37,
+            "pageviews": 52
           },
           {
             "period": "2026-10-15",
             "partial": false,
             "by_channel": {
-              "Paid Search": 8,
-              "Organic Search": 6,
-              "Direct": 5,
+              "Direct": 14,
+              "Paid Search": 14,
+              "Organic Search": 7,
               "Referral": 2
             },
-            "total": 21,
-            "visits": 24,
-            "pageviews": 34
+            "total": 37,
+            "visits": 40,
+            "pageviews": 51
           },
           {
             "period": "2026-10-16",
             "partial": false,
             "by_channel": {
-              "Direct": 13,
-              "Paid Search": 7,
-              "Organic Search": 4
+              "Direct": 16,
+              "Paid Search": 14,
+              "Organic Search": 6,
+              "AI Assistants": 1
             },
-            "total": 24,
-            "visits": 24,
-            "pageviews": 35
+            "total": 37,
+            "visits": 38,
+            "pageviews": 56
           },
           {
             "period": "2026-10-17",
             "partial": false,
             "by_channel": {
-              "Direct": 4,
-              "Paid Search": 2
+              "Direct": 7,
+              "Paid Search": 2,
+              "AI Assistants": 1
             },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 7
+            "total": 10,
+            "visits": 10,
+            "pageviews": 13
           },
           {
             "period": "2026-10-18",
             "partial": false,
             "by_channel": {
-              "Direct": 5,
-              "Organic Search": 1
+              "Direct": 7,
+              "Organic Search": 3
             },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 10
+            "total": 10,
+            "visits": 11,
+            "pageviews": 15
           },
           {
             "period": "2026-10-19",
             "partial": false,
             "by_channel": {
-              "Direct": 12,
-              "Paid Search": 4,
-              "Organic Search": 1,
+              "Direct": 15,
+              "Paid Search": 6,
+              "Organic Search": 4,
               "AI Assistants": 1
             },
-            "total": 18,
-            "visits": 18,
-            "pageviews": 32
+            "total": 26,
+            "visits": 26,
+            "pageviews": 40
           },
           {
             "period": "2026-10-20",
             "partial": false,
             "by_channel": {
-              "Direct": 23,
-              "Paid Search": 5,
-              "Organic Search": 3
+              "Direct": 28,
+              "Paid Search": 15,
+              "Organic Search": 8,
+              "AI Assistants": 1
             },
-            "total": 31,
-            "visits": 31,
-            "pageviews": 68
+            "total": 52,
+            "visits": 52,
+            "pageviews": 95
           },
           {
             "period": "2026-10-21",
             "partial": false,
             "by_channel": {
-              "Direct": 21,
-              "Paid Search": 8,
-              "Organic Search": 3
+              "Direct": 36,
+              "Paid Search": 14,
+              "Organic Search": 5,
+              "AI Assistants": 1
             },
-            "total": 32,
-            "visits": 36,
-            "pageviews": 59
+            "total": 56,
+            "visits": 61,
+            "pageviews": 87
           },
           {
             "period": "2026-10-22",
             "partial": false,
             "by_channel": {
-              "Direct": 14,
-              "Paid Search": 8,
-              "Organic Search": 3,
-              "AI Assistants": 1
+              "Direct": 19,
+              "Paid Search": 13,
+              "Organic Search": 9,
+              "AI Assistants": 2
             },
-            "total": 26,
-            "visits": 29,
-            "pageviews": 49
+            "total": 43,
+            "visits": 46,
+            "pageviews": 76
           },
           {
             "period": "2026-10-23",
             "partial": false,
             "by_channel": {
-              "Direct": 16,
-              "Paid Search": 8,
-              "Organic Search": 6,
+              "Direct": 24,
+              "Paid Search": 16,
+              "Organic Search": 8,
+              "AI Assistants": 1,
               "Paid Social": 1,
               "Referral": 1
             },
-            "total": 32,
-            "visits": 33,
-            "pageviews": 44
+            "total": 51,
+            "visits": 52,
+            "pageviews": 68
           },
           {
             "period": "2026-10-24",
             "partial": false,
             "by_channel": {
-              "Direct": 11
+              "Direct": 16,
+              "Organic Search": 2
             },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 18
+            "total": 18,
+            "visits": 18,
+            "pageviews": 25
           },
           {
             "period": "2026-10-25",
             "partial": false,
             "by_channel": {
-              "Direct": 9,
-              "Organic Search": 4
+              "Direct": 14,
+              "Organic Search": 5
             },
-            "total": 13,
-            "visits": 14,
-            "pageviews": 15
+            "total": 19,
+            "visits": 20,
+            "pageviews": 21
           },
           {
             "period": "2026-10-26",
             "partial": false,
             "by_channel": {
-              "Direct": 15,
-              "Paid Search": 6,
-              "Organic Search": 5,
-              "Referral": 1
+              "Direct": 32,
+              "Paid Search": 14,
+              "Organic Search": 11,
+              "Referral": 10,
+              "AI Assistants": 2,
+              "Organic Social": 1
             },
-            "total": 27,
-            "visits": 31,
-            "pageviews": 38
+            "total": 70,
+            "visits": 77,
+            "pageviews": 209
           },
           {
             "period": "2026-10-27",
             "partial": false,
             "by_channel": {
-              "Direct": 13,
-              "Organic Search": 5,
-              "Paid Search": 3,
+              "Direct": 28,
+              "Paid Search": 17,
+              "Organic Search": 9,
               "Organic Social": 1
             },
-            "total": 22,
-            "visits": 22,
-            "pageviews": 42
+            "total": 55,
+            "visits": 55,
+            "pageviews": 80
           },
           {
             "period": "2026-10-28",
             "partial": false,
             "by_channel": {
-              "Direct": 14,
-              "Paid Search": 5,
-              "Organic Search": 3,
+              "Direct": 28,
+              "Paid Search": 12,
+              "Organic Search": 7,
               "Paid Social": 1,
               "AI Assistants": 1
             },
-            "total": 24,
-            "visits": 29,
-            "pageviews": 38
+            "total": 49,
+            "visits": 56,
+            "pageviews": 87
           },
           {
             "period": "2026-10-29",
             "partial": false,
             "by_channel": {
-              "Direct": 8,
-              "Paid Search": 7,
-              "Organic Search": 5,
+              "Direct": 23,
+              "Paid Search": 18,
+              "Organic Search": 9,
               "Paid Social": 3,
+              "AI Assistants": 1,
               "Referral": 1
             },
-            "total": 24,
-            "visits": 25,
-            "pageviews": 33
+            "total": 55,
+            "visits": 59,
+            "pageviews": 122
           },
           {
             "period": "2026-10-30",
             "partial": false,
             "by_channel": {
-              "Direct": 10,
-              "Organic Search": 2,
-              "Paid Search": 2,
-              "AI Assistants": 2,
+              "Direct": 21,
+              "Paid Search": 11,
+              "Organic Search": 7,
+              "AI Assistants": 3,
               "Paid Social": 1
             },
-            "total": 17,
-            "visits": 17,
-            "pageviews": 31
+            "total": 43,
+            "visits": 44,
+            "pageviews": 70
           },
           {
             "period": "2026-10-31",
             "partial": false,
             "by_channel": {
-              "Direct": 7
+              "Direct": 13,
+              "Organic Search": 2,
+              "Referral": 1
             },
-            "total": 7,
-            "visits": 7,
-            "pageviews": 7
+            "total": 16,
+            "visits": 16,
+            "pageviews": 22
           },
           {
             "period": "2026-11-01",
             "partial": false,
             "by_channel": {
-              "Direct": 8,
-              "Paid Social": 1,
-              "Organic Search": 1
+              "Direct": 12,
+              "Organic Search": 3,
+              "Paid Social": 1
             },
-            "total": 10,
-            "visits": 10,
-            "pageviews": 10
+            "total": 16,
+            "visits": 16,
+            "pageviews": 17
           },
           {
             "period": "2026-11-02",
             "partial": false,
             "by_channel": {
-              "Direct": 17,
-              "Organic Search": 4,
-              "Paid Search": 3,
-              "AI Assistants": 3,
+              "Direct": 30,
+              "Paid Search": 12,
+              "Organic Search": 8,
+              "AI Assistants": 4,
               "Referral": 1
             },
-            "total": 28,
-            "visits": 29,
-            "pageviews": 53
+            "total": 55,
+            "visits": 57,
+            "pageviews": 86
           },
           {
             "period": "2026-11-03",
             "partial": false,
             "by_channel": {
-              "Direct": 14,
-              "Paid Search": 4,
-              "Organic Search": 3,
+              "Direct": 40,
+              "Organic Search": 13,
+              "Paid Search": 12,
               "Paid Social": 2,
-              "AI Assistants": 1,
-              "Referral": 1
+              "Referral": 2,
+              "AI Assistants": 1
             },
-            "total": 25,
-            "visits": 27,
-            "pageviews": 32
+            "total": 70,
+            "visits": 72,
+            "pageviews": 103
           },
           {
             "period": "2026-11-04",
             "partial": false,
             "by_channel": {
-              "Direct": 19,
-              "Paid Search": 6,
-              "Organic Search": 4,
+              "Direct": 33,
+              "Paid Search": 10,
+              "Organic Search": 10,
               "Paid Social": 3,
               "Organic Social": 1
             },
-            "total": 33,
-            "visits": 33,
-            "pageviews": 75
+            "total": 57,
+            "visits": 58,
+            "pageviews": 121
           },
           {
             "period": "2026-11-05",
             "partial": false,
             "by_channel": {
-              "Direct": 15,
-              "Paid Search": 6,
-              "Organic Search": 4,
+              "Direct": 28,
+              "Paid Search": 12,
+              "Organic Search": 12,
               "Paid Social": 3,
               "Referral": 1,
               "Organic Social": 1,
               "AI Assistants": 1
             },
-            "total": 31,
-            "visits": 31,
-            "pageviews": 48
+            "total": 58,
+            "visits": 58,
+            "pageviews": 89
           },
           {
             "period": "2026-11-06",
             "partial": false,
             "by_channel": {
-              "Paid Search": 6,
+              "Direct": 23,
+              "Paid Search": 10,
+              "Organic Search": 6,
               "Referral": 5,
-              "Direct": 5,
-              "Organic Search": 3,
+              "AI Assistants": 3,
               "Paid Social": 2
             },
-            "total": 21,
-            "visits": 21,
-            "pageviews": 34
+            "total": 49,
+            "visits": 49,
+            "pageviews": 74
           },
           {
             "period": "2026-11-07",
             "partial": false,
             "by_channel": {
-              "Direct": 6,
-              "Paid Social": 2
+              "Direct": 8,
+              "Paid Social": 2,
+              "Referral": 1,
+              "Organic Search": 1
             },
-            "total": 8,
-            "visits": 8,
-            "pageviews": 8
+            "total": 12,
+            "visits": 12,
+            "pageviews": 16
           },
           {
             "period": "2026-11-08",
             "partial": false,
             "by_channel": {
-              "Direct": 7,
-              "Organic Search": 5,
+              "Direct": 10,
+              "Organic Search": 8,
+              "Referral": 2,
               "Paid Social": 1,
-              "Organic Video": 1,
-              "Referral": 1
+              "Organic Video": 1
             },
-            "total": 15,
-            "visits": 15,
-            "pageviews": 21
+            "total": 22,
+            "visits": 22,
+            "pageviews": 35
           },
           {
             "period": "2026-11-09",
             "partial": false,
             "by_channel": {
-              "Direct": 13,
-              "Organic Search": 2,
+              "Direct": 30,
+              "Organic Search": 6,
+              "Paid Search": 4,
               "AI Assistants": 1,
-              "Organic Social": 1,
-              "Paid Search": 1
+              "Organic Social": 1
             },
-            "total": 18,
-            "visits": 19,
-            "pageviews": 24
+            "total": 42,
+            "visits": 43,
+            "pageviews": 52
           },
           {
             "period": "2026-11-10",
             "partial": false,
             "by_channel": {
-              "Direct": 12,
-              "Organic Search": 6,
-              "Paid Search": 5,
+              "Direct": 21,
+              "Organic Search": 15,
+              "Paid Search": 7,
               "Referral": 2,
-              "Paid Social": 1,
-              "AI Assistants": 1
+              "AI Assistants": 2,
+              "Paid Social": 1
             },
-            "total": 27,
-            "visits": 28,
-            "pageviews": 32
+            "total": 48,
+            "visits": 50,
+            "pageviews": 71
           },
           {
             "period": "2026-11-11",
             "partial": false,
             "by_channel": {
-              "Direct": 12,
-              "Organic Search": 7,
+              "Direct": 16,
+              "Organic Search": 12,
+              "Paid Search": 4,
               "Paid Social": 3,
+              "Referral": 2,
               "Organic Social": 2,
-              "Referral": 1,
-              "Paid Search": 1
+              "AI Assistants": 1
             },
-            "total": 26,
-            "visits": 28,
-            "pageviews": 49
+            "total": 40,
+            "visits": 42,
+            "pageviews": 73
           },
           {
             "period": "2026-11-12",
             "partial": false,
             "by_channel": {
-              "Direct": 14,
-              "Paid Search": 9,
-              "Organic Search": 4,
+              "Direct": 23,
+              "Paid Search": 12,
+              "Organic Search": 7,
+              "Referral": 5,
               "Paid Social": 2,
               "AI Assistants": 1,
-              "Organic Video": 1,
-              "Referral": 1
+              "Organic Video": 1
             },
-            "total": 31,
-            "visits": 35,
-            "pageviews": 58
+            "total": 50,
+            "visits": 54,
+            "pageviews": 100
           },
           {
             "period": "2026-11-13",
             "partial": false,
             "by_channel": {
-              "Direct": 9,
-              "Organic Search": 5,
+              "Direct": 20,
+              "Organic Search": 9,
+              "Paid Search": 3,
               "Paid Social": 2,
-              "Referral": 1
+              "Referral": 2
             },
-            "total": 16,
-            "visits": 19,
-            "pageviews": 51
+            "total": 35,
+            "visits": 39,
+            "pageviews": 78
           },
           {
             "period": "2026-11-14",
             "partial": false,
             "by_channel": {
-              "Direct": 3,
-              "Organic Search": 1,
+              "Direct": 8,
+              "Organic Search": 2,
               "Paid Social": 1
             },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 13
+            "total": 11,
+            "visits": 11,
+            "pageviews": 19
           },
           {
             "period": "2026-11-15",
             "partial": false,
             "by_channel": {
+              "Direct": 10,
               "Paid Social": 4,
-              "Direct": 4,
-              "AI Assistants": 1,
+              "AI Assistants": 2,
               "Paid Search": 1
             },
-            "total": 10,
-            "visits": 14,
-            "pageviews": 23
+            "total": 17,
+            "visits": 22,
+            "pageviews": 36
           },
           {
             "period": "2026-11-16",
             "partial": false,
             "by_channel": {
-              "Direct": 16,
-              "Paid Search": 6,
-              "Organic Search": 5,
+              "Direct": 28,
+              "Organic Search": 11,
+              "Paid Search": 9,
+              "Referral": 1,
               "Paid Social": 1,
               "AI Assistants": 1
             },
-            "total": 29,
-            "visits": 29,
-            "pageviews": 54
+            "total": 51,
+            "visits": 52,
+            "pageviews": 113
           },
           {
             "period": "2026-11-17",
             "partial": false,
             "by_channel": {
-              "Direct": 16,
-              "Paid Search": 4,
-              "Referral": 2,
-              "Paid Social": 2,
-              "Organic Search": 2,
-              "AI Assistants": 1
+              "Direct": 39,
+              "Paid Search": 12,
+              "Organic Search": 10,
+              "Referral": 5,
+              "AI Assistants": 2,
+              "Paid Social": 2
             },
-            "total": 27,
-            "visits": 28,
-            "pageviews": 42
+            "total": 70,
+            "visits": 71,
+            "pageviews": 108
           },
           {
             "period": "2026-11-18",
             "partial": false,
             "by_channel": {
-              "Direct": 18,
-              "Paid Search": 5,
-              "Organic Search": 1
+              "Direct": 40,
+              "Paid Search": 7,
+              "Organic Search": 6,
+              "AI Assistants": 1,
+              "Referral": 1
             },
-            "total": 24,
-            "visits": 24,
-            "pageviews": 32
+            "total": 55,
+            "visits": 56,
+            "pageviews": 87
           },
           {
             "period": "2026-11-19",
             "partial": false,
             "by_channel": {
-              "Direct": 11,
+              "Direct": 30,
+              "Paid Search": 5,
+              "Organic Search": 5,
               "Paid Social": 3,
-              "Paid Search": 2,
-              "Organic Search": 2,
-              "AI Assistants": 2,
+              "AI Assistants": 3,
+              "Referral": 1,
               "Organic Social": 1
             },
-            "total": 21,
-            "visits": 22,
-            "pageviews": 24
+            "total": 48,
+            "visits": 49,
+            "pageviews": 56
           },
           {
             "period": "2026-11-20",
             "partial": false,
             "by_channel": {
-              "Direct": 8,
-              "Paid Search": 6,
+              "Direct": 18,
+              "Organic Search": 9,
+              "Paid Search": 8,
               "Paid Social": 4,
-              "Organic Search": 4
+              "AI Assistants": 1,
+              "Referral": 1
             },
-            "total": 22,
-            "visits": 22,
-            "pageviews": 38
+            "total": 41,
+            "visits": 41,
+            "pageviews": 60
           },
           {
             "period": "2026-11-21",
             "partial": false,
             "by_channel": {
-              "Direct": 6
+              "Direct": 18,
+              "Referral": 12,
+              "Organic Search": 3
             },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 6
+            "total": 33,
+            "visits": 33,
+            "pageviews": 36
           },
           {
             "period": "2026-11-22",
             "partial": false,
             "by_channel": {
-              "Direct": 4,
+              "Direct": 8,
               "AI Assistants": 1
             },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 7
+            "total": 9,
+            "visits": 9,
+            "pageviews": 11
           },
           {
             "period": "2026-11-23",
             "partial": false,
             "by_channel": {
-              "Direct": 20,
-              "Paid Search": 5,
-              "Organic Search": 4
+              "Direct": 33,
+              "Organic Search": 9,
+              "Paid Search": 8,
+              "Referral": 1
             },
-            "total": 29,
-            "visits": 29,
-            "pageviews": 39
+            "total": 51,
+            "visits": 52,
+            "pageviews": 72
           },
           {
             "period": "2026-11-24",
             "partial": true,
             "by_channel": {
-              "Direct": 14,
-              "Paid Search": 3,
-              "Organic Search": 2
+              "Direct": 28,
+              "Organic Search": 10,
+              "Paid Search": 6,
+              "Referral": 2
             },
-            "total": 19,
-            "visits": 20,
-            "pageviews": 29
+            "total": 46,
+            "visits": 47,
+            "pageviews": 65
           }
         ],
         "week": [
@@ -37212,196 +37253,199 @@
             "partial": false,
             "by_channel": {
               "Paid Search": 212,
-              "Direct": 54,
-              "Organic Search": 4,
-              "Referral": 2,
-              "Organic Social": 1,
-              "AI Assistants": 1
+              "Direct": 68,
+              "Organic Search": 17,
+              "Referral": 4,
+              "AI Assistants": 3,
+              "Organic Social": 1
             },
-            "total": 273,
-            "visits": 284,
-            "pageviews": 318
+            "total": 304,
+            "visits": 316,
+            "pageviews": 381
           },
           {
             "period": "2026-09-07",
             "partial": false,
             "by_channel": {
-              "Direct": 66,
-              "Paid Search": 32,
-              "Organic Search": 9,
-              "AI Assistants": 3,
-              "Referral": 2,
+              "Direct": 86,
+              "Paid Search": 46,
+              "Organic Search": 35,
+              "Referral": 7,
+              "AI Assistants": 7,
               "Organic Social": 1,
               "Organic Video": 1
             },
-            "total": 114,
-            "visits": 120,
-            "pageviews": 166
+            "total": 182,
+            "visits": 198,
+            "pageviews": 274
           },
           {
             "period": "2026-09-14",
             "partial": false,
             "by_channel": {
-              "Direct": 69,
-              "Paid Search": 52,
-              "Organic Search": 15,
-              "AI Assistants": 5,
+              "Direct": 95,
+              "Paid Search": 83,
+              "Organic Search": 39,
+              "AI Assistants": 6,
               "Organic Social": 1,
               "Referral": 1
             },
-            "total": 143,
-            "visits": 155,
-            "pageviews": 201
+            "total": 224,
+            "visits": 242,
+            "pageviews": 406
           },
           {
             "period": "2026-09-21",
             "partial": false,
             "by_channel": {
-              "Direct": 76,
-              "Organic Search": 20,
-              "Paid Search": 17,
-              "AI Assistants": 6,
-              "Referral": 2,
+              "Direct": 106,
+              "Organic Search": 43,
+              "Paid Search": 26,
+              "AI Assistants": 14,
+              "Referral": 3,
               "Organic Social": 1
             },
-            "total": 122,
-            "visits": 134,
-            "pageviews": 179
+            "total": 193,
+            "visits": 208,
+            "pageviews": 300
           },
           {
             "period": "2026-09-28",
             "partial": false,
             "by_channel": {
-              "Direct": 84,
-              "Paid Search": 21,
-              "Organic Search": 17,
-              "AI Assistants": 5,
-              "Referral": 5,
+              "Direct": 106,
+              "Organic Search": 43,
+              "Paid Search": 26,
+              "Referral": 18,
+              "AI Assistants": 7,
               "Organic Social": 1
             },
-            "total": 133,
-            "visits": 135,
-            "pageviews": 174
+            "total": 201,
+            "visits": 205,
+            "pageviews": 294
           },
           {
             "period": "2026-10-05",
+            "partial": false,
+            "by_channel": {
+              "Direct": 113,
+              "Paid Search": 68,
+              "Organic Search": 40,
+              "Referral": 5,
+              "Organic Social": 3,
+              "AI Assistants": 2
+            },
+            "total": 231,
+            "visits": 242,
+            "pageviews": 349
+          },
+          {
+            "period": "2026-10-12",
             "partial": false,
             "by_channel": {
               "Direct": 91,
-              "Paid Search": 41,
-              "Organic Search": 15,
-              "Referral": 4,
-              "Organic Social": 3
+              "Paid Search": 69,
+              "Organic Search": 39,
+              "Referral": 6,
+              "AI Assistants": 3
             },
-            "total": 154,
-            "visits": 163,
-            "pageviews": 246
-          },
-          {
-            "period": "2026-10-12",
-            "partial": false,
-            "by_channel": {
-              "Direct": 57,
-              "Paid Search": 35,
-              "Organic Search": 20,
-              "Referral": 4
-            },
-            "total": 116,
-            "visits": 121,
-            "pageviews": 162
+            "total": 208,
+            "visits": 216,
+            "pageviews": 302
           },
           {
             "period": "2026-10-19",
             "partial": false,
             "by_channel": {
-              "Direct": 105,
-              "Paid Search": 33,
-              "Organic Search": 20,
-              "AI Assistants": 2,
-              "Paid Social": 1,
-              "Referral": 1
+              "Direct": 151,
+              "Paid Search": 64,
+              "Organic Search": 41,
+              "AI Assistants": 6,
+              "Referral": 1,
+              "Paid Social": 1
             },
-            "total": 162,
-            "visits": 172,
-            "pageviews": 285
+            "total": 264,
+            "visits": 275,
+            "pageviews": 412
           },
           {
             "period": "2026-10-26",
             "partial": false,
             "by_channel": {
-              "Direct": 74,
-              "Paid Search": 23,
-              "Organic Search": 21,
+              "Direct": 155,
+              "Paid Search": 72,
+              "Organic Search": 48,
+              "Referral": 12,
+              "AI Assistants": 7,
               "Paid Social": 6,
-              "AI Assistants": 3,
-              "Referral": 2,
-              "Organic Social": 1
+              "Organic Social": 2
             },
-            "total": 130,
-            "visits": 141,
-            "pageviews": 199
+            "total": 302,
+            "visits": 323,
+            "pageviews": 607
           },
           {
             "period": "2026-11-02",
             "partial": false,
             "by_channel": {
-              "Direct": 79,
-              "Paid Search": 25,
-              "Organic Search": 22,
+              "Direct": 168,
+              "Organic Search": 57,
+              "Paid Search": 56,
               "Paid Social": 13,
-              "Referral": 9,
-              "AI Assistants": 5,
+              "Referral": 12,
+              "AI Assistants": 9,
               "Organic Social": 2,
               "Organic Video": 1
             },
-            "total": 156,
-            "visits": 163,
-            "pageviews": 271
+            "total": 317,
+            "visits": 327,
+            "pageviews": 524
           },
           {
             "period": "2026-11-09",
             "partial": false,
             "by_channel": {
-              "Direct": 65,
-              "Organic Search": 25,
-              "Paid Search": 17,
+              "Direct": 125,
+              "Organic Search": 51,
+              "Paid Search": 31,
               "Paid Social": 13,
-              "Referral": 5,
-              "AI Assistants": 4,
+              "Referral": 11,
+              "AI Assistants": 7,
               "Organic Social": 3,
               "Organic Video": 1
             },
-            "total": 131,
-            "visits": 148,
-            "pageviews": 250
+            "total": 239,
+            "visits": 260,
+            "pageviews": 429
           },
           {
             "period": "2026-11-16",
             "partial": false,
             "by_channel": {
-              "Direct": 78,
-              "Paid Search": 23,
-              "Organic Search": 14,
+              "Direct": 180,
+              "Organic Search": 43,
+              "Paid Search": 41,
+              "Referral": 21,
               "Paid Social": 10,
-              "AI Assistants": 5,
-              "Referral": 2,
+              "AI Assistants": 9,
               "Organic Social": 1
             },
-            "total": 133,
-            "visits": 136,
-            "pageviews": 203
+            "total": 305,
+            "visits": 311,
+            "pageviews": 471
           },
           {
             "period": "2026-11-23",
             "partial": true,
             "by_channel": {
-              "Direct": 34,
-              "Paid Search": 8,
-              "Organic Search": 6
+              "Direct": 61,
+              "Organic Search": 19,
+              "Paid Search": 14,
+              "Referral": 3
             },
-            "total": 48,
-            "visits": 49,
-            "pageviews": 68
+            "total": 97,
+            "visits": 99,
+            "pageviews": 137
           }
         ],
         "month": [
@@ -37409,1280 +37453,50 @@
             "period": "2026-09-01",
             "partial": false,
             "by_channel": {
-              "Paid Search": 319,
-              "Direct": 310,
-              "Organic Search": 58,
-              "AI Assistants": 20,
-              "Referral": 12,
+              "Direct": 411,
+              "Paid Search": 376,
+              "Organic Search": 159,
+              "AI Assistants": 37,
+              "Referral": 28,
               "Organic Social": 4,
               "Organic Video": 1
             },
-            "total": 723,
-            "visits": 769,
-            "pageviews": 962
+            "total": 1013,
+            "visits": 1081,
+            "pageviews": 1534
           },
           {
             "period": "2026-10-01",
             "partial": false,
             "by_channel": {
-              "Direct": 355,
-              "Paid Search": 147,
-              "Organic Search": 81,
-              "Referral": 11,
+              "Direct": 545,
+              "Paid Search": 290,
+              "Organic Search": 182,
+              "Referral": 29,
+              "AI Assistants": 18,
               "Paid Social": 6,
-              "Organic Social": 5,
-              "AI Assistants": 5
+              "Organic Social": 6
             },
-            "total": 610,
-            "visits": 646,
-            "pageviews": 958
+            "total": 1076,
+            "visits": 1128,
+            "pageviews": 1774
           },
           {
             "period": "2026-11-01",
             "partial": true,
             "by_channel": {
-              "Direct": 264,
-              "Paid Search": 73,
-              "Organic Search": 68,
+              "Direct": 546,
+              "Organic Search": 172,
+              "Paid Search": 142,
+              "Referral": 47,
               "Paid Social": 37,
-              "Referral": 16,
-              "AI Assistants": 14,
+              "AI Assistants": 25,
               "Organic Social": 6,
               "Organic Video": 2
             },
-            "total": 478,
-            "visits": 506,
-            "pageviews": 802
-          }
-        ]
-      },
-      "growthbook.io|platform": {
-        "day": [
-          {
-            "period": "2026-09-02",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5,
-              "Organic Search": 4
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 19
-          },
-          {
-            "period": "2026-09-03",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 2,
-              "Direct": 2,
-              "AI Assistants": 1
-            },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-09-04",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 5,
-              "Direct": 3
-            },
-            "total": 8,
-            "visits": 8,
-            "pageviews": 18
-          },
-          {
-            "period": "2026-09-06",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-09-07",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3,
-              "Organic Search": 2,
-              "AI Assistants": 1
-            },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 9
-          },
-          {
-            "period": "2026-09-08",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 4,
-              "Referral": 3,
-              "AI Assistants": 2,
-              "Paid Search": 1,
-              "Direct": 1
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-09-09",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 9,
-              "Paid Search": 4,
-              "Direct": 3,
-              "Referral": 1
-            },
-            "total": 17,
-            "visits": 23,
-            "pageviews": 37
-          },
-          {
-            "period": "2026-09-10",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 5,
-              "Organic Search": 4,
-              "AI Assistants": 1,
-              "Referral": 1
-            },
-            "total": 11,
-            "visits": 13,
-            "pageviews": 13
-          },
-          {
-            "period": "2026-09-11",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Paid Search": 4,
-              "Organic Search": 3
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 13
-          },
-          {
-            "period": "2026-09-12",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-09-13",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 5,
-              "Direct": 4
-            },
-            "total": 8,
-            "visits": 9,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-14",
-            "partial": false,
-            "by_channel": {
-              "Direct": 7,
-              "Paid Search": 5,
-              "Organic Search": 4
-            },
-            "total": 16,
-            "visits": 17,
-            "pageviews": 35
-          },
-          {
-            "period": "2026-09-15",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 9,
-              "Organic Search": 4,
-              "Direct": 2
-            },
-            "total": 15,
-            "visits": 15,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-16",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 6,
-              "Organic Search": 4,
-              "Direct": 3,
-              "AI Assistants": 1
-            },
-            "total": 13,
-            "visits": 15,
-            "pageviews": 28
-          },
-          {
-            "period": "2026-09-17",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 9,
-              "Direct": 5,
-              "Organic Search": 2
-            },
-            "total": 16,
-            "visits": 16,
-            "pageviews": 25
-          },
-          {
-            "period": "2026-09-18",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Organic Search": 5,
-              "Paid Search": 2
-            },
-            "total": 13,
-            "visits": 13,
-            "pageviews": 66
-          },
-          {
-            "period": "2026-09-19",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1,
-              "Direct": 1
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 4
-          },
-          {
-            "period": "2026-09-20",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2,
-              "Organic Search": 2
-            },
-            "total": 4,
-            "visits": 5,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-09-21",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Paid Search": 3,
-              "AI Assistants": 2,
-              "Organic Search": 2
-            },
-            "total": 11,
-            "visits": 12,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-22",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Organic Search": 4,
-              "Paid Search": 2
-            },
-            "total": 10,
-            "visits": 10,
-            "pageviews": 20
-          },
-          {
-            "period": "2026-09-23",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 9,
-              "Direct": 9,
-              "AI Assistants": 2,
-              "Paid Search": 1
-            },
-            "total": 21,
-            "visits": 22,
-            "pageviews": 36
-          },
-          {
-            "period": "2026-09-24",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Organic Search": 2,
-              "Referral": 1,
-              "AI Assistants": 1,
-              "Paid Search": 1
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-25",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 5,
-              "Direct": 4,
-              "AI Assistants": 1,
-              "Paid Search": 1
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-26",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1,
-              "Paid Search": 1,
-              "AI Assistants": 1
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 3
-          },
-          {
-            "period": "2026-09-27",
-            "partial": false,
-            "by_channel": {
-              "AI Assistants": 1,
-              "Direct": 1
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-09-28",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 5,
-              "Direct": 2,
-              "Paid Search": 2,
-              "AI Assistants": 1
-            },
-            "total": 10,
-            "visits": 10,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-29",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 4,
-              "Direct": 3,
-              "Referral": 1
-            },
-            "total": 8,
-            "visits": 9,
-            "pageviews": 24
-          },
-          {
-            "period": "2026-09-30",
-            "partial": false,
-            "by_channel": {
-              "Referral": 6,
-              "Organic Search": 5,
-              "Direct": 4,
-              "Paid Search": 1,
-              "AI Assistants": 1
-            },
-            "total": 17,
-            "visits": 18,
-            "pageviews": 22
-          },
-          {
-            "period": "2026-10-01",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 6,
-              "Direct": 5,
-              "Referral": 4,
-              "Paid Search": 2
-            },
-            "total": 17,
-            "visits": 17,
-            "pageviews": 25
-          },
-          {
-            "period": "2026-10-02",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 4,
-              "Referral": 1,
-              "Direct": 1
-            },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 10
-          },
-          {
-            "period": "2026-10-03",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-10-04",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5
-            },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-10-05",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Paid Search": 3,
-              "Organic Search": 2
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 14
-          },
-          {
-            "period": "2026-10-06",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 5,
-              "Direct": 5,
-              "Paid Search": 4
-            },
-            "total": 14,
-            "visits": 14,
-            "pageviews": 17
-          },
-          {
-            "period": "2026-10-07",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Paid Search": 6,
-              "Organic Search": 3,
-              "AI Assistants": 1,
-              "Referral": 1
-            },
-            "total": 17,
-            "visits": 17,
-            "pageviews": 18
-          },
-          {
-            "period": "2026-10-08",
-            "partial": false,
-            "by_channel": {
-              "Direct": 8,
-              "Organic Search": 3,
-              "Paid Search": 3
-            },
-            "total": 14,
-            "visits": 14,
-            "pageviews": 18
-          },
-          {
-            "period": "2026-10-09",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 11,
-              "Organic Search": 9
-            },
-            "total": 20,
-            "visits": 20,
-            "pageviews": 26
-          },
-          {
-            "period": "2026-10-10",
-            "partial": false,
-            "by_channel": {
-              "AI Assistants": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 1
-          },
-          {
-            "period": "2026-10-11",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 2,
-              "Direct": 1
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-10-12",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 10,
-              "Organic Search": 2,
-              "Direct": 2,
-              "Referral": 1
-            },
-            "total": 15,
-            "visits": 16,
-            "pageviews": 22
-          },
-          {
-            "period": "2026-10-13",
-            "partial": false,
-            "by_channel": {
-              "Direct": 10,
-              "Paid Search": 6,
-              "Organic Search": 5,
-              "Referral": 1
-            },
-            "total": 22,
-            "visits": 22,
-            "pageviews": 42
-          },
-          {
-            "period": "2026-10-14",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 7,
-              "Direct": 5,
-              "Paid Search": 5,
-              "AI Assistants": 1
-            },
-            "total": 18,
-            "visits": 18,
-            "pageviews": 27
-          },
-          {
-            "period": "2026-10-15",
-            "partial": false,
-            "by_channel": {
-              "Direct": 9,
-              "Paid Search": 6,
-              "Organic Search": 1
-            },
-            "total": 16,
-            "visits": 16,
-            "pageviews": 17
-          },
-          {
-            "period": "2026-10-16",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 7,
-              "Direct": 4,
-              "Organic Search": 2,
-              "AI Assistants": 1
-            },
-            "total": 14,
-            "visits": 14,
-            "pageviews": 21
-          },
-          {
-            "period": "2026-10-17",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3,
-              "AI Assistants": 1
-            },
-            "total": 4,
-            "visits": 4,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-10-18",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3,
-              "Organic Search": 2
-            },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-10-19",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 3,
-              "Paid Search": 2,
-              "Direct": 1
-            },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-10-20",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 10,
-              "Organic Search": 5,
-              "Direct": 5,
-              "AI Assistants": 1
-            },
-            "total": 21,
-            "visits": 21,
-            "pageviews": 27
-          },
-          {
-            "period": "2026-10-21",
-            "partial": false,
-            "by_channel": {
-              "Direct": 15,
-              "Paid Search": 6,
-              "Organic Search": 2,
-              "AI Assistants": 1
-            },
-            "total": 24,
-            "visits": 25,
-            "pageviews": 28
-          },
-          {
-            "period": "2026-10-22",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 6,
-              "Paid Search": 5,
-              "Direct": 5,
-              "AI Assistants": 1
-            },
-            "total": 17,
-            "visits": 17,
-            "pageviews": 27
-          },
-          {
-            "period": "2026-10-23",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 8,
-              "Direct": 7,
-              "Organic Search": 2,
-              "AI Assistants": 1
-            },
-            "total": 18,
-            "visits": 18,
-            "pageviews": 21
-          },
-          {
-            "period": "2026-10-24",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5,
-              "Organic Search": 2
-            },
-            "total": 7,
-            "visits": 7,
-            "pageviews": 7
-          },
-          {
-            "period": "2026-10-25",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5,
-              "Organic Search": 1
-            },
-            "total": 6,
-            "visits": 6,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-10-26",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 8,
-              "Direct": 6,
-              "Organic Search": 4,
-              "AI Assistants": 2,
-              "Referral": 1,
-              "Organic Social": 1
-            },
-            "total": 22,
-            "visits": 22,
-            "pageviews": 23
-          },
-          {
-            "period": "2026-10-27",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 14,
-              "Direct": 9,
-              "Organic Search": 2
-            },
-            "total": 25,
-            "visits": 25,
-            "pageviews": 28
-          },
-          {
-            "period": "2026-10-28",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 7,
-              "Direct": 3,
-              "Organic Search": 3
-            },
-            "total": 13,
-            "visits": 13,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-10-29",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 11,
-              "Organic Search": 3,
-              "Direct": 3,
-              "AI Assistants": 1
-            },
-            "total": 18,
-            "visits": 18,
-            "pageviews": 21
-          },
-          {
-            "period": "2026-10-30",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 9,
-              "Organic Search": 3,
-              "Direct": 2,
-              "AI Assistants": 1
-            },
-            "total": 15,
-            "visits": 15,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-10-31",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5,
-              "Organic Search": 2,
-              "Referral": 1
-            },
-            "total": 8,
-            "visits": 8,
-            "pageviews": 13
-          },
-          {
-            "period": "2026-11-01",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2,
-              "Organic Search": 2
-            },
-            "total": 4,
-            "visits": 4,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-11-02",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 9,
-              "Direct": 5,
-              "Organic Search": 3,
-              "AI Assistants": 1
-            },
-            "total": 18,
-            "visits": 18,
-            "pageviews": 19
-          },
-          {
-            "period": "2026-11-03",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 8,
-              "Organic Search": 7,
-              "Direct": 5,
-              "Referral": 1
-            },
-            "total": 21,
-            "visits": 21,
-            "pageviews": 32
-          },
-          {
-            "period": "2026-11-04",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Paid Search": 4,
-              "Organic Search": 3
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-11-05",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 7,
-              "Paid Search": 6,
-              "Direct": 1
-            },
-            "total": 14,
-            "visits": 14,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-11-06",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 4,
-              "Direct": 3,
-              "Organic Search": 2
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 14
-          },
-          {
-            "period": "2026-11-07",
-            "partial": false,
-            "by_channel": {
-              "Direct": 1,
-              "Referral": 1
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-11-08",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 2,
-              "Referral": 1,
-              "Direct": 1
-            },
-            "total": 4,
-            "visits": 4,
-            "pageviews": 4
-          },
-          {
-            "period": "2026-11-09",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 3,
-              "Organic Search": 1,
-              "Direct": 1
-            },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-11-10",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 6,
-              "Direct": 6,
-              "Paid Search": 2
-            },
-            "total": 14,
-            "visits": 15,
-            "pageviews": 25
-          },
-          {
-            "period": "2026-11-11",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 3,
-              "Organic Search": 3,
-              "Direct": 2,
-              "Referral": 1
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 14
-          },
-          {
-            "period": "2026-11-12",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Paid Search": 3,
-              "Organic Search": 2
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 23
-          },
-          {
-            "period": "2026-11-13",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5,
-              "Paid Search": 3,
-              "Organic Search": 3
-            },
-            "total": 11,
-            "visits": 11,
-            "pageviews": 11
-          },
-          {
-            "period": "2026-11-14",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 3
-          },
-          {
-            "period": "2026-11-15",
-            "partial": false,
-            "by_channel": {
-              "AI Assistants": 1,
-              "Direct": 1
-            },
-            "total": 2,
-            "visits": 3,
-            "pageviews": 8
-          },
-          {
-            "period": "2026-11-16",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3,
-              "Organic Search": 3,
-              "Paid Search": 3
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 11
-          },
-          {
-            "period": "2026-11-17",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 8,
-              "Direct": 8,
-              "Organic Search": 4,
-              "Referral": 3
-            },
-            "total": 23,
-            "visits": 23,
-            "pageviews": 44
-          },
-          {
-            "period": "2026-11-18",
-            "partial": false,
-            "by_channel": {
-              "Direct": 12,
-              "Organic Search": 4,
-              "Paid Search": 2,
-              "AI Assistants": 1
-            },
-            "total": 19,
-            "visits": 19,
-            "pageviews": 28
-          },
-          {
-            "period": "2026-11-19",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Paid Search": 3
-            },
-            "total": 7,
-            "visits": 7,
-            "pageviews": 9
-          },
-          {
-            "period": "2026-11-20",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Organic Search": 2,
-              "Paid Search": 2
-            },
-            "total": 10,
-            "visits": 10,
-            "pageviews": 12
-          },
-          {
-            "period": "2026-11-21",
-            "partial": false,
-            "by_channel": {
-              "Direct": 10,
-              "Organic Search": 2,
-              "Referral": 1
-            },
-            "total": 13,
-            "visits": 13,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-11-22",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-11-23",
-            "partial": false,
-            "by_channel": {
-              "Direct": 8,
-              "Paid Search": 3,
-              "Organic Search": 2
-            },
-            "total": 13,
-            "visits": 13,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-11-24",
-            "partial": true,
-            "by_channel": {
-              "Organic Search": 4,
-              "Paid Search": 3,
-              "Referral": 1,
-              "Direct": 1
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 16
-          }
-        ],
-        "week": [
-          {
-            "period": "2026-08-31",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 13,
-              "Direct": 10,
-              "AI Assistants": 2
-            },
-            "total": 25,
-            "visits": 25,
-            "pageviews": 47
-          },
-          {
-            "period": "2026-09-07",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 26,
-              "Direct": 17,
-              "Paid Search": 14,
-              "Referral": 5,
-              "AI Assistants": 4
-            },
-            "total": 65,
-            "visits": 75,
-            "pageviews": 105
-          },
-          {
-            "period": "2026-09-14",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 31,
-              "Direct": 25,
-              "Organic Search": 22,
-              "AI Assistants": 1
-            },
-            "total": 78,
-            "visits": 83,
-            "pageviews": 179
-          },
-          {
-            "period": "2026-09-21",
-            "partial": false,
-            "by_channel": {
-              "Direct": 28,
-              "Organic Search": 23,
-              "Paid Search": 9,
-              "AI Assistants": 8,
-              "Referral": 1
-            },
-            "total": 69,
-            "visits": 71,
-            "pageviews": 106
-          },
-          {
-            "period": "2026-09-28",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 25,
-              "Direct": 20,
-              "Referral": 12,
-              "Paid Search": 5,
-              "AI Assistants": 2
-            },
-            "total": 64,
-            "visits": 66,
-            "pageviews": 106
-          },
-          {
-            "period": "2026-10-05",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 27,
-              "Direct": 24,
-              "Organic Search": 24,
-              "AI Assistants": 2,
-              "Referral": 1
-            },
-            "total": 78,
-            "visits": 78,
-            "pageviews": 99
-          },
-          {
-            "period": "2026-10-12",
-            "partial": false,
-            "by_channel": {
-              "Direct": 36,
-              "Paid Search": 34,
-              "Organic Search": 19,
-              "AI Assistants": 3,
-              "Referral": 2
-            },
-            "total": 94,
-            "visits": 95,
-            "pageviews": 140
-          },
-          {
-            "period": "2026-10-19",
-            "partial": false,
-            "by_channel": {
-              "Direct": 43,
-              "Paid Search": 31,
-              "Organic Search": 21,
-              "AI Assistants": 4
-            },
-            "total": 99,
-            "visits": 100,
-            "pageviews": 122
-          },
-          {
-            "period": "2026-10-26",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 49,
-              "Direct": 29,
-              "Organic Search": 19,
-              "AI Assistants": 4,
-              "Referral": 2,
-              "Organic Social": 1
-            },
-            "total": 104,
-            "visits": 105,
-            "pageviews": 121
-          },
-          {
-            "period": "2026-11-02",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 31,
-              "Organic Search": 24,
-              "Direct": 20,
-              "Referral": 3,
-              "AI Assistants": 1
-            },
-            "total": 79,
-            "visits": 79,
-            "pageviews": 103
-          },
-          {
-            "period": "2026-11-09",
-            "partial": false,
-            "by_channel": {
-              "Direct": 24,
-              "Organic Search": 15,
-              "Paid Search": 14,
-              "Referral": 1,
-              "AI Assistants": 1
-            },
-            "total": 55,
-            "visits": 57,
-            "pageviews": 90
-          },
-          {
-            "period": "2026-11-16",
-            "partial": false,
-            "by_channel": {
-              "Direct": 45,
-              "Paid Search": 18,
-              "Organic Search": 14,
-              "Referral": 4,
-              "AI Assistants": 1
-            },
-            "total": 82,
-            "visits": 83,
-            "pageviews": 121
-          },
-          {
-            "period": "2026-11-23",
-            "partial": true,
-            "by_channel": {
-              "Direct": 9,
-              "Organic Search": 6,
-              "Paid Search": 6,
-              "Referral": 1
-            },
-            "total": 22,
-            "visits": 22,
-            "pageviews": 32
-          }
-        ],
-        "month": [
-          {
-            "period": "2026-09-01",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 98,
-              "Direct": 89,
-              "Paid Search": 57,
-              "AI Assistants": 17,
-              "Referral": 13
-            },
-            "total": 272,
-            "visits": 291,
-            "pageviews": 498
-          },
-          {
-            "period": "2026-10-01",
-            "partial": false,
-            "by_channel": {
-              "Paid Search": 143,
-              "Direct": 141,
-              "Organic Search": 92,
-              "AI Assistants": 13,
-              "Referral": 10,
-              "Organic Social": 1
-            },
-            "total": 400,
-            "visits": 403,
-            "pageviews": 522
-          },
-          {
-            "period": "2026-11-01",
-            "partial": true,
-            "by_channel": {
-              "Direct": 100,
-              "Paid Search": 69,
-              "Organic Search": 61,
-              "Referral": 9,
-              "AI Assistants": 3
-            },
-            "total": 242,
-            "visits": 245,
-            "pageviews": 351
+            "total": 973,
+            "visits": 1012,
+            "pageviews": 1578
           }
         ]
       },
@@ -41103,14 +39917,14 @@
             "period": "2026-11-24",
             "partial": true,
             "by_channel": {
-              "Organic Search": 149,
+              "Organic Search": 151,
               "Direct": 25,
               "AI Assistants": 2,
               "Referral": 1
             },
-            "total": 176,
-            "visits": 179,
-            "pageviews": 197
+            "total": 178,
+            "visits": 181,
+            "pageviews": 199
           }
         ],
         "week": [
@@ -41242,8 +40056,8 @@
               "Direct": 247,
               "AI Assistants": 14,
               "Referral": 10,
-              "Organic Social": 3,
-              "Organic Video": 3
+              "Organic Video": 3,
+              "Organic Social": 3
             },
             "total": 1039,
             "visits": 1069,
@@ -41298,14 +40112,14 @@
             "period": "2026-11-23",
             "partial": true,
             "by_channel": {
-              "Organic Search": 365,
+              "Organic Search": 367,
               "Direct": 76,
               "Referral": 3,
               "AI Assistants": 3
             },
-            "total": 446,
-            "visits": 454,
-            "pageviews": 500
+            "total": 448,
+            "visits": 456,
+            "pageviews": 502
           }
         ],
         "month": [
@@ -41346,7 +40160,7 @@
             "period": "2026-11-01",
             "partial": true,
             "by_channel": {
-              "Organic Search": 3116,
+              "Organic Search": 3118,
               "Direct": 634,
               "AI Assistants": 35,
               "Referral": 35,
@@ -41354,9 +40168,9 @@
               "Organic Social": 8,
               "Paid Search": 1
             },
-            "total": 3832,
-            "visits": 3911,
-            "pageviews": 4510
+            "total": 3834,
+            "visits": 3913,
+            "pageviews": 4512
           }
         ]
       },
@@ -42616,8 +41430,8 @@
               "Email": 213,
               "Organic Search": 196,
               "Direct": 176,
-              "Organic Social": 32,
               "Referral": 32,
+              "Organic Social": 32,
               "AI Assistants": 9,
               "Paid Social": 2,
               "Paid Search": 1
@@ -42825,651 +41639,6 @@
             "total": 1894,
             "visits": 2021,
             "pageviews": 3251
-          }
-        ]
-      },
-      "growthbook.io|product_updates": {
-        "day": [
-          {
-            "period": "2026-09-03",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Referral": 2
-            },
-            "total": 6,
-            "visits": 7,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-09-10",
-            "partial": false,
-            "by_channel": {
-              "Direct": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 1
-          },
-          {
-            "period": "2026-09-11",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-09-14",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-09-15",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 17
-          },
-          {
-            "period": "2026-09-18",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 4
-          },
-          {
-            "period": "2026-09-22",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-28",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 11
-          },
-          {
-            "period": "2026-09-30",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1,
-              "Referral": 1
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 3
-          },
-          {
-            "period": "2026-10-05",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 4
-          },
-          {
-            "period": "2026-10-19",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-10-23",
-            "partial": false,
-            "by_channel": {
-              "Direct": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 3
-          },
-          {
-            "period": "2026-10-26",
-            "partial": false,
-            "by_channel": {
-              "Direct": 11,
-              "Referral": 8,
-              "Organic Search": 2
-            },
-            "total": 21,
-            "visits": 24,
-            "pageviews": 148
-          },
-          {
-            "period": "2026-10-27",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Organic Search": 2
-            },
-            "total": 8,
-            "visits": 8,
-            "pageviews": 10
-          },
-          {
-            "period": "2026-10-28",
-            "partial": false,
-            "by_channel": {
-              "Direct": 11,
-              "Organic Search": 1
-            },
-            "total": 12,
-            "visits": 14,
-            "pageviews": 33
-          },
-          {
-            "period": "2026-10-29",
-            "partial": false,
-            "by_channel": {
-              "Direct": 12,
-              "Organic Search": 1
-            },
-            "total": 13,
-            "visits": 16,
-            "pageviews": 68
-          },
-          {
-            "period": "2026-10-30",
-            "partial": false,
-            "by_channel": {
-              "Direct": 9,
-              "Organic Search": 2
-            },
-            "total": 11,
-            "visits": 12,
-            "pageviews": 24
-          },
-          {
-            "period": "2026-10-31",
-            "partial": false,
-            "by_channel": {
-              "Direct": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-11-01",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-11-02",
-            "partial": false,
-            "by_channel": {
-              "Direct": 8,
-              "Organic Search": 1
-            },
-            "total": 9,
-            "visits": 10,
-            "pageviews": 14
-          },
-          {
-            "period": "2026-11-03",
-            "partial": false,
-            "by_channel": {
-              "Direct": 21,
-              "Organic Search": 3
-            },
-            "total": 24,
-            "visits": 24,
-            "pageviews": 39
-          },
-          {
-            "period": "2026-11-04",
-            "partial": false,
-            "by_channel": {
-              "Direct": 10,
-              "Organic Search": 3
-            },
-            "total": 13,
-            "visits": 14,
-            "pageviews": 30
-          },
-          {
-            "period": "2026-11-05",
-            "partial": false,
-            "by_channel": {
-              "Direct": 12,
-              "Organic Search": 1
-            },
-            "total": 13,
-            "visits": 13,
-            "pageviews": 25
-          },
-          {
-            "period": "2026-11-06",
-            "partial": false,
-            "by_channel": {
-              "Direct": 15,
-              "AI Assistants": 3,
-              "Organic Search": 1
-            },
-            "total": 19,
-            "visits": 19,
-            "pageviews": 26
-          },
-          {
-            "period": "2026-11-07",
-            "partial": false,
-            "by_channel": {
-              "Direct": 1,
-              "Organic Search": 1
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 6
-          },
-          {
-            "period": "2026-11-08",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2,
-              "Organic Search": 1
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 10
-          },
-          {
-            "period": "2026-11-09",
-            "partial": false,
-            "by_channel": {
-              "Direct": 16,
-              "Organic Search": 3
-            },
-            "total": 19,
-            "visits": 19,
-            "pageviews": 22
-          },
-          {
-            "period": "2026-11-10",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3,
-              "Organic Search": 3,
-              "AI Assistants": 1
-            },
-            "total": 7,
-            "visits": 7,
-            "pageviews": 14
-          },
-          {
-            "period": "2026-11-11",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 2,
-              "Direct": 2,
-              "AI Assistants": 1
-            },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 10
-          },
-          {
-            "period": "2026-11-12",
-            "partial": false,
-            "by_channel": {
-              "Referral": 4,
-              "Direct": 3,
-              "Organic Search": 1
-            },
-            "total": 8,
-            "visits": 8,
-            "pageviews": 19
-          },
-          {
-            "period": "2026-11-13",
-            "partial": false,
-            "by_channel": {
-              "Direct": 7,
-              "Organic Search": 1,
-              "Referral": 1
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-11-14",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2,
-              "Organic Search": 1
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 3
-          },
-          {
-            "period": "2026-11-15",
-            "partial": false,
-            "by_channel": {
-              "Direct": 5
-            },
-            "total": 5,
-            "visits": 5,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-11-16",
-            "partial": false,
-            "by_channel": {
-              "Direct": 9,
-              "Organic Search": 3,
-              "Referral": 1
-            },
-            "total": 13,
-            "visits": 14,
-            "pageviews": 48
-          },
-          {
-            "period": "2026-11-17",
-            "partial": false,
-            "by_channel": {
-              "Direct": 15,
-              "Organic Search": 4,
-              "AI Assistants": 1
-            },
-            "total": 20,
-            "visits": 20,
-            "pageviews": 22
-          },
-          {
-            "period": "2026-11-18",
-            "partial": false,
-            "by_channel": {
-              "Direct": 10,
-              "Organic Search": 1,
-              "Referral": 1
-            },
-            "total": 12,
-            "visits": 13,
-            "pageviews": 27
-          },
-          {
-            "period": "2026-11-19",
-            "partial": false,
-            "by_channel": {
-              "Direct": 15,
-              "Organic Search": 3,
-              "Referral": 1,
-              "AI Assistants": 1
-            },
-            "total": 20,
-            "visits": 20,
-            "pageviews": 23
-          },
-          {
-            "period": "2026-11-20",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Organic Search": 3,
-              "AI Assistants": 1,
-              "Referral": 1
-            },
-            "total": 9,
-            "visits": 9,
-            "pageviews": 10
-          },
-          {
-            "period": "2026-11-21",
-            "partial": false,
-            "by_channel": {
-              "Referral": 11,
-              "Direct": 2,
-              "Organic Search": 1
-            },
-            "total": 14,
-            "visits": 14,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-11-22",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2
-            },
-            "total": 2,
-            "visits": 2,
-            "pageviews": 2
-          },
-          {
-            "period": "2026-11-23",
-            "partial": false,
-            "by_channel": {
-              "Direct": 6,
-              "Organic Search": 3,
-              "Referral": 1
-            },
-            "total": 10,
-            "visits": 10,
-            "pageviews": 17
-          },
-          {
-            "period": "2026-11-24",
-            "partial": true,
-            "by_channel": {
-              "Direct": 13,
-              "Organic Search": 4,
-              "Referral": 1
-            },
-            "total": 18,
-            "visits": 18,
-            "pageviews": 20
-          }
-        ],
-        "week": [
-          {
-            "period": "2026-08-31",
-            "partial": false,
-            "by_channel": {
-              "Direct": 4,
-              "Referral": 2
-            },
-            "total": 6,
-            "visits": 7,
-            "pageviews": 16
-          },
-          {
-            "period": "2026-09-07",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 3
-          },
-          {
-            "period": "2026-09-14",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 2,
-              "Direct": 2
-            },
-            "total": 4,
-            "visits": 4,
-            "pageviews": 26
-          },
-          {
-            "period": "2026-09-21",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 15
-          },
-          {
-            "period": "2026-09-28",
-            "partial": false,
-            "by_channel": {
-              "Direct": 2,
-              "Organic Search": 1,
-              "Referral": 1
-            },
-            "total": 4,
-            "visits": 4,
-            "pageviews": 14
-          },
-          {
-            "period": "2026-10-05",
-            "partial": false,
-            "by_channel": {
-              "Organic Search": 1
-            },
-            "total": 1,
-            "visits": 1,
-            "pageviews": 4
-          },
-          {
-            "period": "2026-10-19",
-            "partial": false,
-            "by_channel": {
-              "Direct": 3
-            },
-            "total": 3,
-            "visits": 3,
-            "pageviews": 5
-          },
-          {
-            "period": "2026-10-26",
-            "partial": false,
-            "by_channel": {
-              "Direct": 52,
-              "Referral": 8,
-              "Organic Search": 8
-            },
-            "total": 68,
-            "visits": 77,
-            "pageviews": 287
-          },
-          {
-            "period": "2026-11-02",
-            "partial": false,
-            "by_channel": {
-              "Direct": 69,
-              "Organic Search": 11,
-              "AI Assistants": 3
-            },
-            "total": 83,
-            "visits": 85,
-            "pageviews": 150
-          },
-          {
-            "period": "2026-11-09",
-            "partial": false,
-            "by_channel": {
-              "Direct": 37,
-              "Organic Search": 11,
-              "Referral": 5,
-              "AI Assistants": 2
-            },
-            "total": 54,
-            "visits": 55,
-            "pageviews": 89
-          },
-          {
-            "period": "2026-11-16",
-            "partial": false,
-            "by_channel": {
-              "Direct": 57,
-              "Organic Search": 15,
-              "Referral": 15,
-              "AI Assistants": 3
-            },
-            "total": 90,
-            "visits": 92,
-            "pageviews": 147
-          },
-          {
-            "period": "2026-11-23",
-            "partial": true,
-            "by_channel": {
-              "Direct": 19,
-              "Organic Search": 7,
-              "Referral": 2
-            },
-            "total": 28,
-            "visits": 28,
-            "pageviews": 37
-          }
-        ],
-        "month": [
-          {
-            "period": "2026-09-01",
-            "partial": false,
-            "by_channel": {
-              "Direct": 14,
-              "Organic Search": 3,
-              "Referral": 3
-            },
-            "total": 20,
-            "visits": 21,
-            "pageviews": 74
-          },
-          {
-            "period": "2026-10-01",
-            "partial": false,
-            "by_channel": {
-              "Direct": 53,
-              "Organic Search": 9,
-              "Referral": 8
-            },
-            "total": 70,
-            "visits": 79,
-            "pageviews": 294
-          },
-          {
-            "period": "2026-11-01",
-            "partial": true,
-            "by_channel": {
-              "Direct": 184,
-              "Organic Search": 43,
-              "Referral": 22,
-              "AI Assistants": 8
-            },
-            "total": 256,
-            "visits": 261,
-            "pageviews": 425
           }
         ]
       },
@@ -48382,8 +46551,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 8,
-              "Organic Search": 2,
-              "Referral": 2
+              "Referral": 2,
+              "Organic Search": 2
             },
             "total": 12,
             "visits": 13,
@@ -48432,8 +46601,8 @@
             "by_channel": {
               "Direct": 14,
               "Referral": 2,
-              "Paid Search": 1,
-              "Organic Search": 1
+              "Organic Search": 1,
+              "Paid Search": 1
             },
             "total": 18,
             "visits": 18,
@@ -48489,8 +46658,8 @@
             "by_channel": {
               "Direct": 10,
               "Organic Search": 4,
-              "Referral": 1,
-              "AI Assistants": 1
+              "AI Assistants": 1,
+              "Referral": 1
             },
             "total": 16,
             "visits": 17,
@@ -48606,8 +46775,8 @@
             "period": "2026-09-26",
             "partial": false,
             "by_channel": {
-              "Organic Search": 1,
-              "Direct": 1
+              "Direct": 1,
+              "Organic Search": 1
             },
             "total": 2,
             "visits": 2,
@@ -48630,8 +46799,8 @@
               "Direct": 15,
               "Organic Search": 9,
               "Referral": 2,
-              "Paid Search": 1,
-              "AI Assistants": 1
+              "AI Assistants": 1,
+              "Paid Search": 1
             },
             "total": 28,
             "visits": 28,
@@ -48711,8 +46880,8 @@
             "by_channel": {
               "Direct": 19,
               "Organic Search": 2,
-              "Paid Search": 1,
-              "Referral": 1
+              "Referral": 1,
+              "Paid Search": 1
             },
             "total": 23,
             "visits": 23,
@@ -48762,8 +46931,8 @@
             "by_channel": {
               "Direct": 12,
               "Paid Search": 2,
-              "Organic Search": 1,
-              "Referral": 1
+              "Referral": 1,
+              "Organic Search": 1
             },
             "total": 16,
             "visits": 16,
@@ -48845,8 +47014,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 13,
-              "Referral": 2,
               "Organic Search": 2,
+              "Referral": 2,
               "Paid Search": 1
             },
             "total": 18,
@@ -48919,8 +47088,8 @@
             "by_channel": {
               "Direct": 15,
               "Referral": 3,
-              "Paid Search": 1,
-              "Organic Search": 1
+              "Organic Search": 1,
+              "Paid Search": 1
             },
             "total": 19,
             "visits": 20,
@@ -48989,8 +47158,8 @@
               "Direct": 20,
               "Organic Search": 5,
               "Referral": 2,
-              "AI Assistants": 1,
-              "Organic Social": 1
+              "Organic Social": 1,
+              "AI Assistants": 1
             },
             "total": 29,
             "visits": 31,
@@ -49050,8 +47219,8 @@
             "by_channel": {
               "Direct": 17,
               "Referral": 3,
-              "Paid Search": 2,
               "Organic Search": 2,
+              "Paid Search": 2,
               "Organic Social": 1
             },
             "total": 25,
@@ -49075,8 +47244,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 10,
-              "AI Assistants": 1,
-              "Organic Search": 1
+              "Organic Search": 1,
+              "AI Assistants": 1
             },
             "total": 12,
             "visits": 12,
@@ -49110,8 +47279,8 @@
             "period": "2026-11-07",
             "partial": false,
             "by_channel": {
-              "Direct": 1,
-              "Organic Search": 1
+              "Organic Search": 1,
+              "Direct": 1
             },
             "total": 2,
             "visits": 2,
@@ -49133,8 +47302,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 10,
-              "Organic Search": 1,
-              "Referral": 1
+              "Referral": 1,
+              "Organic Search": 1
             },
             "total": 12,
             "visits": 12,
@@ -49168,8 +47337,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 10,
-              "Referral": 2,
-              "Organic Search": 2
+              "Organic Search": 2,
+              "Referral": 2
             },
             "total": 14,
             "visits": 14,
@@ -49228,8 +47397,8 @@
             "by_channel": {
               "Direct": 21,
               "Organic Search": 2,
-              "Paid Search": 1,
-              "Referral": 1
+              "Referral": 1,
+              "Paid Search": 1
             },
             "total": 25,
             "visits": 26,
@@ -49241,8 +47410,8 @@
             "by_channel": {
               "Direct": 14,
               "Referral": 3,
-              "Paid Search": 2,
-              "Organic Search": 2
+              "Organic Search": 2,
+              "Paid Search": 2
             },
             "total": 21,
             "visits": 24,
@@ -49265,8 +47434,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 11,
-              "Organic Search": 1,
-              "Paid Search": 1
+              "Paid Search": 1,
+              "Organic Search": 1
             },
             "total": 13,
             "visits": 13,
@@ -49288,8 +47457,8 @@
             "partial": false,
             "by_channel": {
               "Direct": 5,
-              "Referral": 1,
-              "Organic Search": 1
+              "Organic Search": 1,
+              "Referral": 1
             },
             "total": 7,
             "visits": 8,
@@ -49301,8 +47470,8 @@
             "by_channel": {
               "Direct": 14,
               "Organic Search": 3,
-              "Referral": 1,
-              "Paid Search": 1
+              "Paid Search": 1,
+              "Referral": 1
             },
             "total": 19,
             "visits": 20,
@@ -50670,7 +48839,7 @@
             },
             "total": 33,
             "visits": 34,
-            "pageviews": 71
+            "pageviews": 73
           }
         ],
         "week": [
@@ -50682,9 +48851,9 @@
               "Paid Search": 45,
               "Referral": 8,
               "Organic Search": 5,
-              "Email": 1,
+              "AI Assistants": 1,
               "Organic Video": 1,
-              "AI Assistants": 1
+              "Email": 1
             },
             "total": 110,
             "visits": 114,
@@ -50884,7 +49053,7 @@
             },
             "total": 71,
             "visits": 73,
-            "pageviews": 158
+            "pageviews": 160
           }
         ],
         "month": [
@@ -50940,7 +49109,7 @@
             },
             "total": 570,
             "visits": 599,
-            "pageviews": 1651
+            "pageviews": 1653
           }
         ]
       },
@@ -52055,7 +50224,7 @@
             },
             "total": 297,
             "visits": 335,
-            "pageviews": 748
+            "pageviews": 754
           }
         ],
         "week": [
@@ -52245,7 +50414,7 @@
             },
             "total": 687,
             "visits": 777,
-            "pageviews": 1792
+            "pageviews": 1798
           }
         ],
         "month": [
@@ -52297,7 +50466,7 @@
             },
             "total": 6459,
             "visits": 7388,
-            "pageviews": 16900
+            "pageviews": 16906
           }
         ]
       }
@@ -52306,7 +50475,7 @@
       "docs.growthbook.io": "2026-11-24",
       "growthbook.io": "2026-11-24"
     },
-    "updated_at": "2026-11-24T22:46:46+00:00"
+    "updated_at": "2026-11-24T23:00:21+00:00"
   },
   "conversions": {
     "conversions": [
@@ -52360,16 +50529,10 @@
         "label": "Home page"
       },
       {
-        "key": "growthbook.io|products",
+        "key": "growthbook.io|product",
         "site": "growthbook.io",
-        "section": "products",
-        "label": "Products"
-      },
-      {
-        "key": "growthbook.io|platform",
-        "site": "growthbook.io",
-        "section": "platform",
-        "label": "Platform"
+        "section": "product",
+        "label": "Product"
       },
       {
         "key": "growthbook.io|pricing",
@@ -52388,12 +50551,6 @@
         "site": "growthbook.io",
         "section": "blog",
         "label": "Blog"
-      },
-      {
-        "key": "growthbook.io|product_updates",
-        "site": "growthbook.io",
-        "section": "product_updates",
-        "label": "Product updates"
       },
       {
         "key": "growthbook.io|compare",
@@ -55576,11 +53733,11 @@
           {
             "period": "2026-08-31",
             "cells": {
-              "live_demo": {
-                "Direct": 1,
-                "Organic Search": 1
-              },
               "contact_sales": {
+                "Direct": 1
+              },
+              "live_demo": {
+                "Organic Search": 1,
                 "Direct": 1
               },
               "other_form": {
@@ -55601,17 +53758,17 @@
                 "Organic Search": 3,
                 "Paid Search": 1
               },
-              "contact_sales": {
+              "live_demo": {
                 "Direct": 1,
+                "Organic Search": 1,
                 "Paid Search": 1
+              },
+              "contact_sales": {
+                "Paid Search": 1,
+                "Direct": 1
               },
               "asset_download": {
                 "Organic Search": 2
-              },
-              "live_demo": {
-                "Organic Search": 1,
-                "Direct": 1,
-                "Paid Search": 1
               },
               "other_form": {
                 "Direct": 1
@@ -55651,11 +53808,11 @@
                 "Organic Search": 3,
                 "Paid Search": 1
               },
-              "live_demo": {
+              "contact_sales": {
                 "Direct": 2,
                 "Organic Search": 1
               },
-              "contact_sales": {
+              "live_demo": {
                 "Direct": 2,
                 "Organic Search": 1
               },
@@ -55732,17 +53889,17 @@
             "period": "2026-10-19",
             "cells": {
               "demo_request": {
-                "Organic Search": 5,
                 "Direct": 5,
+                "Organic Search": 5,
                 "Paid Search": 1
+              },
+              "contact_sales": {
+                "Direct": 2
               },
               "live_demo": {
                 "Direct": 3,
                 "Organic Search": 1,
                 "AI Assistants": 1
-              },
-              "contact_sales": {
-                "Direct": 2
               },
               "newsletter": {
                 "Direct": 1,
@@ -55853,14 +54010,14 @@
                 "Paid Search": 3,
                 "Organic Social": 1
               },
+              "live_demo": {
+                "Direct": 2,
+                "Paid Search": 1
+              },
               "contact_sales": {
                 "Direct": 2,
                 "Paid Search": 1,
                 "Referral": 1
-              },
-              "live_demo": {
-                "Direct": 2,
-                "Paid Search": 1
               },
               "newsletter": {
                 "Direct": 1
@@ -56015,237 +54172,7 @@
           }
         ]
       },
-      "growthbook.io|products": {
-        "day": [
-          {
-            "period": "2026-10-21",
-            "cells": {
-              "signup_click": {
-                "Paid Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-27",
-            "cells": {
-              "signup_click": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-30",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-03",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-04",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-05",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-10",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-12",
-            "cells": {
-              "newsletter": {
-                "Organic Search": 1
-              },
-              "signup_click": {
-                "Paid Search": 2
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-13",
-            "cells": {
-              "newsletter": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-15",
-            "cells": {
-              "signup_click": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-17",
-            "cells": {
-              "signup_click": {
-                "Direct": 1,
-                "Paid Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-18",
-            "cells": {
-              "signup_click": {
-                "Paid Search": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-20",
-            "cells": {
-              "signup_click": {
-                "Paid Search": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-24",
-            "cells": {
-              "signup_click": {
-                "Direct": 2,
-                "Organic Search": 1
-              }
-            },
-            "partial": true
-          }
-        ],
-        "week": [
-          {
-            "period": "2026-10-19",
-            "cells": {
-              "signup_click": {
-                "Paid Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-10-26",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-02",
-            "cells": {
-              "signup_click": {
-                "Organic Search": 3
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-09",
-            "cells": {
-              "newsletter": {
-                "Organic Search": 1,
-                "Direct": 1
-              },
-              "signup_click": {
-                "Paid Search": 2,
-                "Direct": 1,
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-16",
-            "cells": {
-              "signup_click": {
-                "Direct": 3,
-                "Paid Search": 3
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-23",
-            "cells": {
-              "signup_click": {
-                "Direct": 2,
-                "Organic Search": 1
-              }
-            },
-            "partial": true
-          }
-        ],
-        "month": [
-          {
-            "period": "2026-10-01",
-            "cells": {
-              "signup_click": {
-                "Paid Search": 1,
-                "Organic Search": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-01",
-            "cells": {
-              "newsletter": {
-                "Organic Search": 1,
-                "Direct": 1
-              },
-              "signup_click": {
-                "Direct": 6,
-                "Paid Search": 5,
-                "Organic Search": 5
-              }
-            },
-            "partial": true
-          }
-        ]
-      },
-      "growthbook.io|platform": {
+      "growthbook.io|product": {
         "day": [
           {
             "period": "2026-09-30",
@@ -56278,7 +54205,7 @@
             "period": "2026-10-21",
             "cells": {
               "signup_click": {
-                "Paid Search": 1
+                "Paid Search": 2
               }
             },
             "partial": false
@@ -56305,7 +54232,8 @@
             "period": "2026-10-27",
             "cells": {
               "signup_click": {
-                "Paid Search": 2
+                "Paid Search": 2,
+                "Direct": 1
               }
             },
             "partial": false
@@ -56320,11 +54248,20 @@
             "partial": false
           },
           {
+            "period": "2026-10-30",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            },
+            "partial": false
+          },
+          {
             "period": "2026-10-31",
             "cells": {
               "signup_click": {
-                "Direct": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -56349,16 +54286,25 @@
             "partial": false
           },
           {
-            "period": "2026-11-05",
+            "period": "2026-11-03",
             "cells": {
               "signup_click": {
-                "Paid Search": 1
+                "Organic Search": 1
               }
             },
             "partial": false
           },
           {
-            "period": "2026-11-06",
+            "period": "2026-11-04",
+            "cells": {
+              "signup_click": {
+                "Organic Search": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-05",
             "cells": {
               "signup_click": {
                 "Organic Search": 1,
@@ -56368,8 +54314,34 @@
             "partial": false
           },
           {
+            "period": "2026-11-06",
+            "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
+              "signup_click": {
+                "AI Assistants": 1,
+                "Organic Search": 1,
+                "Paid Search": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-07",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            },
+            "partial": false
+          },
+          {
             "period": "2026-11-09",
             "cells": {
+              "other_form": {
+                "Organic Search": 1
+              },
               "signup_click": {
                 "Paid Search": 1
               }
@@ -56379,8 +54351,11 @@
           {
             "period": "2026-11-10",
             "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
               "signup_click": {
-                "Organic Search": 2
+                "Organic Search": 3
               }
             },
             "partial": false
@@ -56388,7 +54363,11 @@
           {
             "period": "2026-11-12",
             "cells": {
+              "newsletter": {
+                "Organic Search": 1
+              },
               "signup_click": {
+                "Paid Search": 2,
                 "Organic Search": 1
               }
             },
@@ -56397,8 +54376,50 @@
           {
             "period": "2026-11-13",
             "cells": {
+              "newsletter": {
+                "Direct": 2
+              },
               "signup_click": {
                 "Paid Search": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-15",
+            "cells": {
+              "signup_click": {
+                "Direct": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-17",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 1,
+                "Direct": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-18",
+            "cells": {
+              "signup_click": {
+                "Direct": 2,
+                "Paid Search": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-20",
+            "cells": {
+              "signup_click": {
+                "Paid Search": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -56407,7 +54428,9 @@
             "period": "2026-11-24",
             "cells": {
               "signup_click": {
-                "Paid Search": 1
+                "Direct": 2,
+                "Paid Search": 1,
+                "Organic Search": 1
               }
             },
             "partial": true
@@ -56445,7 +54468,7 @@
             "period": "2026-10-19",
             "cells": {
               "signup_click": {
-                "Paid Search": 2
+                "Paid Search": 3
               }
             },
             "partial": false
@@ -56455,8 +54478,8 @@
             "cells": {
               "signup_click": {
                 "Paid Search": 4,
-                "Direct": 2,
-                "Organic Search": 1
+                "Direct": 3,
+                "Organic Search": 2
               }
             },
             "partial": false
@@ -56464,9 +54487,14 @@
           {
             "period": "2026-11-02",
             "cells": {
+              "newsletter": {
+                "Direct": 1
+              },
               "signup_click": {
+                "Organic Search": 5,
                 "Paid Search": 3,
-                "Organic Search": 2
+                "AI Assistants": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -56474,9 +54502,27 @@
           {
             "period": "2026-11-09",
             "cells": {
+              "newsletter": {
+                "Direct": 3,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1
+              },
               "signup_click": {
-                "Organic Search": 3,
-                "Paid Search": 2
+                "Organic Search": 4,
+                "Paid Search": 4,
+                "Direct": 1
+              }
+            },
+            "partial": false
+          },
+          {
+            "period": "2026-11-16",
+            "cells": {
+              "signup_click": {
+                "Direct": 4,
+                "Paid Search": 3
               }
             },
             "partial": false
@@ -56485,7 +54531,9 @@
             "period": "2026-11-23",
             "cells": {
               "signup_click": {
-                "Paid Search": 1
+                "Direct": 2,
+                "Paid Search": 1,
+                "Organic Search": 1
               }
             },
             "partial": true
@@ -56511,9 +54559,9 @@
                 "Organic Search": 1
               },
               "signup_click": {
-                "Paid Search": 6,
-                "Organic Search": 1,
-                "Direct": 1
+                "Paid Search": 7,
+                "Organic Search": 2,
+                "Direct": 2
               }
             },
             "partial": false
@@ -56521,10 +54569,18 @@
           {
             "period": "2026-11-01",
             "cells": {
+              "newsletter": {
+                "Direct": 4,
+                "Organic Search": 1
+              },
+              "other_form": {
+                "Organic Search": 1
+              },
               "signup_click": {
-                "Paid Search": 6,
-                "Organic Search": 5,
-                "Direct": 1
+                "Paid Search": 11,
+                "Organic Search": 10,
+                "Direct": 9,
+                "AI Assistants": 1
               }
             },
             "partial": true
@@ -58152,121 +56208,6 @@
               "signup_click": {
                 "Organic Search": 3,
                 "Organic Video": 1
-              }
-            },
-            "partial": true
-          }
-        ]
-      },
-      "growthbook.io|product_updates": {
-        "day": [
-          {
-            "period": "2026-11-06",
-            "cells": {
-              "newsletter": {
-                "Direct": 1
-              },
-              "signup_click": {
-                "AI Assistants": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-07",
-            "cells": {
-              "signup_click": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-09",
-            "cells": {
-              "other_form": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-10",
-            "cells": {
-              "newsletter": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-13",
-            "cells": {
-              "newsletter": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-18",
-            "cells": {
-              "signup_click": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          }
-        ],
-        "week": [
-          {
-            "period": "2026-11-02",
-            "cells": {
-              "newsletter": {
-                "Direct": 1
-              },
-              "signup_click": {
-                "AI Assistants": 1,
-                "Direct": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-09",
-            "cells": {
-              "newsletter": {
-                "Direct": 2
-              },
-              "other_form": {
-                "Organic Search": 1
-              }
-            },
-            "partial": false
-          },
-          {
-            "period": "2026-11-16",
-            "cells": {
-              "signup_click": {
-                "Direct": 1
-              }
-            },
-            "partial": false
-          }
-        ],
-        "month": [
-          {
-            "period": "2026-11-01",
-            "cells": {
-              "newsletter": {
-                "Direct": 3
-              },
-              "other_form": {
-                "Organic Search": 1
-              },
-              "signup_click": {
-                "Direct": 2,
-                "AI Assistants": 1
               }
             },
             "partial": true
@@ -59916,10 +57857,10 @@
           {
             "period": "2026-09-14",
             "cells": {
-              "demo_request": {
+              "newsletter": {
                 "Direct": 1
               },
-              "newsletter": {
+              "demo_request": {
                 "Direct": 1
               }
             },
@@ -59928,11 +57869,11 @@
           {
             "period": "2026-09-15",
             "cells": {
-              "demo_request": {
-                "Direct": 1
-              },
               "asset_download": {
                 "Paid Search": 1
+              },
+              "demo_request": {
+                "Direct": 1
               }
             },
             "partial": false
@@ -59965,8 +57906,8 @@
                 "Direct": 2
               },
               "contact_sales": {
-                "Referral": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Referral": 1
               }
             },
             "partial": false
@@ -59978,8 +57919,8 @@
                 "Direct": 2
               },
               "contact_sales": {
-                "Direct": 1,
-                "AI Assistants": 1
+                "AI Assistants": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -60000,8 +57941,8 @@
                 "Direct": 3
               },
               "demo_request": {
-                "Direct": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Direct": 1
               }
             },
             "partial": false
@@ -60061,10 +58002,10 @@
                 "Referral": 1,
                 "Direct": 1
               },
-              "demo_request": {
+              "asset_download": {
                 "Direct": 1
               },
-              "asset_download": {
+              "demo_request": {
                 "Direct": 1
               }
             },
@@ -60073,12 +58014,12 @@
           {
             "period": "2026-10-06",
             "cells": {
+              "demo_request": {
+                "Organic Search": 1
+              },
               "contact_sales": {
                 "Organic Search": 1,
                 "Direct": 1
-              },
-              "demo_request": {
-                "Organic Search": 1
               }
             },
             "partial": false
@@ -60125,10 +58066,10 @@
           {
             "period": "2026-10-13",
             "cells": {
-              "asset_download": {
+              "contact_sales": {
                 "Direct": 1
               },
-              "contact_sales": {
+              "asset_download": {
                 "Direct": 1
               }
             },
@@ -60464,18 +58405,18 @@
           {
             "period": "2026-09-14",
             "cells": {
-              "demo_request": {
-                "Direct": 2
-              },
               "newsletter": {
                 "Direct": 2
               },
-              "asset_download": {
-                "Paid Search": 1
+              "demo_request": {
+                "Direct": 2
               },
               "contact_sales": {
-                "Organic Search": 1,
-                "Direct": 1
+                "Direct": 1,
+                "Organic Search": 1
+              },
+              "asset_download": {
+                "Paid Search": 1
               }
             },
             "partial": false
@@ -60489,8 +58430,8 @@
               },
               "contact_sales": {
                 "Direct": 6,
-                "Referral": 1,
-                "AI Assistants": 1
+                "AI Assistants": 1,
+                "Referral": 1
               }
             },
             "partial": false
@@ -60512,8 +58453,8 @@
             "cells": {
               "contact_sales": {
                 "Direct": 5,
-                "Referral": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Referral": 1
               },
               "demo_request": {
                 "Direct": 2,
@@ -60545,8 +58486,8 @@
             "period": "2026-10-19",
             "cells": {
               "demo_request": {
-                "Direct": 1,
-                "Organic Search": 1
+                "Organic Search": 1,
+                "Direct": 1
               },
               "signup_click": {
                 "Direct": 1
@@ -67794,20 +65735,36 @@
         }
       },
       "by_category": {
-        "Other webinar": {
+        "Podcast episode": {
           "current": {
-            "engaged_views": 79,
-            "raw_views": 91,
-            "watch_minutes": 524,
-            "subs_gained": 0,
-            "videos": 10
+            "engaged_views": 497,
+            "raw_views": 843,
+            "watch_minutes": 1690,
+            "subs_gained": 6,
+            "videos": 45
           },
           "prior": {
-            "engaged_views": 88,
-            "raw_views": 104,
-            "watch_minutes": 436,
-            "subs_gained": 0,
-            "videos": 8
+            "engaged_views": 928,
+            "raw_views": 1366,
+            "watch_minutes": 2457,
+            "subs_gained": 10,
+            "videos": 40
+          }
+        },
+        "Product long-form": {
+          "current": {
+            "engaged_views": 1254,
+            "raw_views": 1888,
+            "watch_minutes": 4169,
+            "subs_gained": 4,
+            "videos": 63
+          },
+          "prior": {
+            "engaged_views": 1398,
+            "raw_views": 2200,
+            "watch_minutes": 4214,
+            "subs_gained": 5,
+            "videos": 66
           }
         },
         "Kohavi webinar": {
@@ -67824,6 +65781,22 @@
             "watch_minutes": 623,
             "subs_gained": 1,
             "videos": 2
+          }
+        },
+        "Other webinar": {
+          "current": {
+            "engaged_views": 79,
+            "raw_views": 91,
+            "watch_minutes": 524,
+            "subs_gained": 0,
+            "videos": 10
+          },
+          "prior": {
+            "engaged_views": 88,
+            "raw_views": 104,
+            "watch_minutes": 436,
+            "subs_gained": 0,
+            "videos": 8
           }
         },
         "Podcast clip": {
@@ -67856,38 +65829,6 @@
             "watch_minutes": 7,
             "subs_gained": 0,
             "videos": 11
-          }
-        },
-        "Podcast episode": {
-          "current": {
-            "engaged_views": 497,
-            "raw_views": 843,
-            "watch_minutes": 1690,
-            "subs_gained": 6,
-            "videos": 45
-          },
-          "prior": {
-            "engaged_views": 928,
-            "raw_views": 1366,
-            "watch_minutes": 2457,
-            "subs_gained": 10,
-            "videos": 40
-          }
-        },
-        "Product long-form": {
-          "current": {
-            "engaged_views": 1254,
-            "raw_views": 1888,
-            "watch_minutes": 4169,
-            "subs_gained": 4,
-            "videos": 63
-          },
-          "prior": {
-            "engaged_views": 1398,
-            "raw_views": 2200,
-            "watch_minutes": 4214,
-            "subs_gained": 5,
-            "videos": 66
           }
         }
       },
