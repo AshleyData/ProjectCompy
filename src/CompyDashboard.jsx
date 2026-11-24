@@ -2034,11 +2034,17 @@ export default function CompyDashboard() {
           };
           // Distinct from the channel palette — the two stack dimensions must
           // not share colours or a stack looks like the same series re-cut.
+          // One colour per section. Every section needs an entry — an unmapped
+          // key falls back to grey, and in a stacked chart several grey bands
+          // are indistinguishable.
           const SEC_COLORS = {
-            "growthbook.io|home": "#4285F4", "growthbook.io|pricing": "#E8705A",
+            "growthbook.io|home": "#4285F4", "growthbook.io|products": "#D4604A",
+            "growthbook.io|platform": "#7E57C2", "growthbook.io|pricing": "#E8705A",
             "growthbook.io|insights": "#F5A15C", "growthbook.io|blog": "#A77BE3",
-            "growthbook.io|compare": "#1FBFC4", "growthbook.io|other": "#8E9BAA",
-            "docs.growthbook.io|total": "#2E9E83",
+            "growthbook.io|product_updates": "#C9A227", "growthbook.io|compare": "#1FBFC4",
+            "growthbook.io|events": "#D9739B", "growthbook.io|podcast": "#5B8DEF",
+            "growthbook.io|company": "#6B8E6B", "growthbook.io|unknown": "#B0B7BF",
+            "growthbook.io|other": "#8E9BAA", "docs.growthbook.io|total": "#2E9E83",
           };
           const CV_COLORS = {
             demo_request: "#2E6FD6", contact_sales: "#C2553D", live_demo: "#7E57C2",
