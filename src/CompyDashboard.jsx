@@ -1470,6 +1470,8 @@ export default function CompyDashboard() {
   // Channels hidden from the Web Traffic chart. Hidden rather than "shown" so
   // a channel that only appears in later data is visible by default.
   const [tcHidden, setTcHidden] = useState([]);
+  const [tcStackBy, setTcStackBy] = useState("channel");   // channel | section
+  const [tcHiddenSec, setTcHiddenSec] = useState([]);
   const [cvGrain, setCvGrain] = useState("week");
   const [cvSection, setCvSection] = useState("growthbook.io|total");
   // "__nosignup__" is a PRESET, not a key list: resolved against the live
@@ -1843,6 +1845,14 @@ export default function CompyDashboard() {
             "Paid Search": "#A3C759", "Organic Social": "#1FBFC4", "AI Assistants": "#F2C230",
             "Email": "#EE7BA8", "Paid Social": "#E8705A", "Organic Video": "#8E9BAA",
           };
+          const SEC_COLORS = {
+            "growthbook.io|home": "#4285F4", "growthbook.io|product": "#7E57C2",
+            "growthbook.io|pricing": "#E8705A", "growthbook.io|insights": "#F5A15C",
+            "growthbook.io|blog": "#A77BE3", "growthbook.io|compare": "#1FBFC4",
+            "growthbook.io|events": "#D9739B", "growthbook.io|podcast": "#5B8DEF",
+            "growthbook.io|company": "#6B8E6B", "growthbook.io|unknown": "#B0B7BF",
+            "growthbook.io|other": "#8E9BAA", "docs.growthbook.io|total": "#2E9E83",
+          };
           const series = tc.series[tcSection] || {};
           const pts = series[tcGrain] || [];
           // Only draw channels this section actually has — otherwise every
@@ -1856,17 +1866,58 @@ export default function CompyDashboard() {
           };
           const isHidden = (c) => tcHidden.includes(c);
           const visible = present.filter(c => !isHidden(c));
-          const rows = pts.map(p => ({
-            label: fmtPeriod(p.period) + (p.partial ? "*" : ""),
-            period: p.period, _total: p.total, _partial: !!p.partial,
-            // The bar label is the SUM OF THE DRAWN SEGMENTS, not p.total —
-            // the deduplicated total is ~2% lower, and a label that disagrees
-            // with the bar it sits on reads as a rendering bug.
-            // Sum only what is drawn — with channels toggled off the label
-            // must match the shortened bar, not the full-stack total.
-            _stack: visible.reduce((n, c) => n + ((p.by_channel || {})[c] || 0), 0),
-            ...Object.fromEntries(visible.map(c => [c, (p.by_channel || {})[c] || 0])),
-          }));
+          const bySection = tcStackBy === "section";
+
+          // "All pages" is the aggregate of the rest, so stacking it beside
+          // them would double every bar. Docs is a separate site and belongs.
+          const stackSections = (tc.sections || [])
+            .filter(x => x.key !== "growthbook.io|total");
+          const secOn = (k) => !tcHiddenSec.includes(k);
+          const visibleSections = stackSections.filter(x => secOn(x.key));
+          const secLabel = (k) => {
+            const x = (tc.sections || []).find(y => y.key === k);
+            return !x ? k : (x.site === "docs.growthbook.io" ? "Docs" : x.label);
+          };
+          // Channel filter applies in BOTH modes: a hidden channel must drop
+          // out of a section stack exactly as it does from a channel stack.
+          const sumChans = (p) => visible.reduce(
+            (n, c) => n + ((p.by_channel || {})[c] || 0), 0);
+
+          const secSeries = Object.fromEntries(visibleSections.map(x =>
+            [x.key, (tc.series[x.key] || {})[tcGrain] || []]));
+          // Union of periods — a sparse section may lack a period another has.
+          const sectionPeriods = [...new Set(
+            Object.values(secSeries).flat().map(p => p.period))].sort();
+
+          const seriesKeys = bySection
+            ? visibleSections.map(x => x.key)
+                .filter(k => (secSeries[k] || []).some(p => sumChans(p) > 0))
+            : visible;
+          const labelFor = (k) => bySection ? secLabel(k) : k;
+          const colorFor = (k) => bySection
+            ? (SEC_COLORS[k] || C.muted) : (CH_COLORS[k] || C.muted);
+
+          const rows = (bySection ? sectionPeriods : pts.map(p => p.period)).map(pd => {
+            const vals = Object.fromEntries(seriesKeys.map(k => {
+              if (bySection) {
+                const q = (secSeries[k] || []).find(x => x.period === pd);
+                return [labelFor(k), q ? sumChans(q) : 0];
+              }
+              const q = pts.find(x => x.period === pd);
+              return [labelFor(k), q ? ((q.by_channel || {})[k] || 0) : 0];
+            }));
+            const src = bySection
+              ? Object.values(secSeries).flat().find(x => x.period === pd)
+              : pts.find(x => x.period === pd);
+            return {
+              label: fmtPeriod(pd) + (src && src.partial ? "*" : ""),
+              period: pd, _total: (!bySection && src) ? src._total ?? src.total : null,
+              _partial: !!(src && src.partial),
+              // Sum of the DRAWN segments, so the label always matches the bar.
+              _stack: Object.values(vals).reduce((n, v) => n + v, 0),
+              ...vals,
+            };
+          });
 
           // Reference scale: the All-Pages series at the same grain. Bars are
           // stacked, so the ceiling is the largest stack, not the largest
@@ -1892,18 +1943,27 @@ export default function CompyDashboard() {
           // totals vanished on those bars and sat mid-stack on others.
           // Anchor instead to whichever present channel is non-zero in the most
           // bars, and render it last so "top" really is the top of the stack.
-          const anchorCh = [...visible].sort((a, b) =>
-            rows.filter(r => r[b] > 0).length - rows.filter(r => r[a] > 0).length
-          )[0];
-          const stackOrder = visible.length
-            ? [...visible.filter(c => c !== anchorCh), anchorCh] : [];
+          const anchorCh = [...seriesKeys].sort((a, b) =>
+            rows.filter(r => r[labelFor(b)] > 0).length
+            - rows.filter(r => r[labelFor(a)] > 0).length)[0];
+          const stackOrder = seriesKeys.length
+            ? [...seriesKeys.filter(k => k !== anchorCh), anchorCh] : [];
           // Compare like with like: the newest period is still accruing, so a
           // part-week against a full week reads as a crash (-27.4% for a month
           // that was 21 days in). Headline uses the last COMPLETE period and
           // the in-progress one is reported separately.
-          const inProgress = pts.length && pts[pts.length - 1].partial
-            ? pts[pts.length - 1] : null;
-          const done = pts.filter(p => !p.partial);
+          // In section mode the headline must describe the whole stack, not
+          // whichever single section the picker happens to hold. Built from
+          // `rows`, which already honours both filters.
+          const headlineRows = rows.map(r => ({
+            period: r.period, partial: r._partial,
+            total: bySection ? r._stack : r._total,
+            pageviews: null, visits: null,
+          }));
+          const srcPts = bySection ? headlineRows : pts;
+          const inProgress = srcPts.length && srcPts[srcPts.length - 1].partial
+            ? srcPts[srcPts.length - 1] : null;
+          const done = srcPts.filter(p => !p.partial);
           const latest = done.length ? done[done.length - 1] : null;
           const prior  = done.length > 1 ? done[done.length - 2] : null;
           const pct = (latest?.total != null && prior?.total)
@@ -1937,11 +1997,48 @@ export default function CompyDashboard() {
                     </span>)}
                 </div>
                 <div>
-                  {(tc.sections || []).map(sec =>
-                    <span key={sec.key} style={btn(sec.key === tcSection)}
-                          onClick={() => setTcSection(sec.key)}>
-                      {sec.site === "docs.growthbook.io" ? "Docs" : sec.label}
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 6 }}>Stack</span>
+                  {[["channel", "By Channel"], ["section", "By Section"]].map(([v, lbl]) =>
+                    <span key={v} style={btn(tcStackBy === v)} onClick={() => setTcStackBy(v)}>
+                      {lbl}
                     </span>)}
+                </div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 5, alignItems: "center" }}>
+                  <span style={{ fontSize: 10, color: C.muted, textTransform: "uppercase",
+                                 letterSpacing: 0.5, marginRight: 1 }}>
+                    {bySection ? "Sections stacked" : "Entry page"}
+                  </span>
+                  {bySection
+                    ? <>
+                        <span style={btn(false)} onClick={() => setTcHiddenSec(
+                                visibleSections.length ? stackSections.map(x => x.key) : [])}>
+                          {visibleSections.length ? "None" : "All"}
+                        </span>
+                        {stackSections.map(sec => {
+                          const on = secOn(sec.key);
+                          return (
+                            <span key={sec.key}
+                                  onClick={() => setTcHiddenSec(on
+                                    ? [...tcHiddenSec, sec.key]
+                                    : tcHiddenSec.filter(x => x !== sec.key))}
+                                  style={{ ...card({ padding: "4px 9px", cursor: "pointer",
+                                                     display: "inline-flex", alignItems: "center",
+                                                     gap: 5, fontSize: 11, opacity: on ? 1 : 0.4,
+                                                     fontWeight: on ? 600 : 400,
+                                                     color: on ? C.primary : C.muted }) }}>
+                              <span style={{ width: 9, height: 9, borderRadius: 2, flexShrink: 0,
+                                             background: on ? (SEC_COLORS[sec.key] || C.muted) : "transparent",
+                                             border: `1px solid ${SEC_COLORS[sec.key] || C.muted}` }} />
+                              {secLabel(sec.key)}
+                            </span>);
+                        })}
+                      </>
+                    : (tc.sections || []).map(sec =>
+                        <span key={sec.key} style={btn(sec.key === tcSection)}
+                              onClick={() => setTcSection(sec.key)}>
+                          {secLabel(sec.key)}
+                        </span>)}
                 </div>
                 <label style={{ display: "inline-flex", alignItems: "center", gap: 6,
                                 marginTop: 9, fontSize: 11, color: C.muted, cursor: "pointer" }}>
@@ -1995,6 +2092,7 @@ export default function CompyDashboard() {
                   <div>
                     <div style={{ fontSize: 10, color: C.muted, textTransform: "uppercase", letterSpacing: 0.5 }}>
                       Last complete {tcGrain} — {fmtPeriod(latest.period)}
+                      {bySection ? " · all sections" : ""}
                     </div>
                     <div style={{ fontSize: 23, fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
                       {latest.total != null ? latest.total.toLocaleString() : "\u2014"}
@@ -2020,7 +2118,7 @@ export default function CompyDashboard() {
                   )}
                 </div>
               )}
-              {!visible.length ? (
+              {!seriesKeys.length ? (
                 <div style={{ height: 380, display: "flex", alignItems: "center",
                               justifyContent: "center", fontSize: 12, color: C.muted,
                               fontStyle: "italic" }}>
@@ -2040,7 +2138,7 @@ export default function CompyDashboard() {
                   {/* in-progress period drawn translucent so a short bar reads
                       as "not finished", not "fell off a cliff" */}
                   {stackOrder.map(c =>
-                    <RBar key={c} dataKey={c} stackId="ch" fill={CH_COLORS[c] || C.muted}
+                    <RBar key={c} dataKey={labelFor(c)} stackId="ch" fill={colorFor(c)}
                           shape={(props) => (
                             <rect x={props.x} y={props.y} width={props.width}
                                   height={props.height} fill={props.fill}
